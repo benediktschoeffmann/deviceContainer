@@ -1,0 +1,236 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleBody .container {
+    padding: 0 0 10px;
+}
+
+.articleBox {
+    display: block;
+    margin: 0 10px 10px;
+}
+
+
+.articleBox .story {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+.articleBox .storyTextTop {
+    margin: 10px 0 6px;
+}
+
+
+.articleBox .storyPreTitle,
+.articleBox .storyDateTime {
+    float: left;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.articleBox .storyPreTitle {
+    font-size: .9375rem;
+    font-weight: 700;
+    text-align: left;
+    width: 70%;
+}
+.articleBox .storyDateTime {
+    font-size: .6875rem;
+    font-weight: 400;
+    text-align: right;
+    width: 30%;
+    padding-top: 4px;
+}
+
+
+.articleBox .storyTitle {
+    font-size: 1.375rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.articleBox .storyLeadText {
+    /*font-size: 1.25rem;*/
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+.articleBox .copyright {
+    font-size: .6875rem;
+    text-align: right;
+    padding: 2px 0;
+    margin: 0;
+    display: block;
+}
+
+
+.articleBox .storyImage {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+.articleBox .videoPlayer {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+/* (ws) 2016-12-22 Copyright als Overlay rechts unten ueber dem Image */
+.articleBox .copyright {
+    padding: 2px 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+/* (ws) 2017-10-27 Ein sehr langer Link-Text im Artikel-Body-Text zerschiesst das Layout */
+.articleBox .storyBodyText {
+    overflow: hidden;
+}
+
+
+.articleBox .storyBodyText p:first-child {
+    margin-top: 0;
+}
+
+/* (db) 2017-03-08 Link "sichtbar" wie Desktopseite */
+.articleBox .story .storyBodyText a,
+.articleBox .story .storyBodyText a:visited {
+    color: #d0113a;
+}
+
+/* (bs) Anpassung des unteren Teils mit Related Articles etc. */
+
+.articleBox .storyBottom {
+    margin: 0 -10px;
+}
+
+.articleBox .storyBottom .headlineBox .headline {
+    color: #fff;
+}
+.articleBox .storyBottom .storyImage {
+    margin: 0;
+}
+.articleBox .storyBottom .storyPreTitle {
+    float: none;
+    display: block;
+    font-size: .75rem;
+    margin: 9px 0 0;
+}
+.articleBox .storyBottom .storyTitle {
+    line-height: 1.1;
+}
+.articleBox .storyBottom .storyLeadText {
+    font-size: .875rem;
+    font-weight: normal;
+    margin: 4px 0 0;
+    margin: 4px 0 0;
+}
+/* (bs) end */
+
+/* */
+.articleBox table {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* (ws) 2017-08-09 */
+.articleBox table {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.articleBox table td {
+    padding: 6px;
+    vertical-align: top;
+}
+.articleBox table td h1 {
+    font-size: 1.25rem;
+}
+.articleBox table td h2 {
+    font-size: 1rem;
+}
+.articleBox table td h3 {
+    font-size: .75rem;
+}
+.articleBox table td h4,
+.articleBox table td h5,
+.articleBox table td h6 {
+    font-size: .6rem;
+}
+/* (ws) 2017-08-09 end */
+
+
+/* (ws) 2017-02-14 */
+/* Facebook-Postings werden redaktionsseitig auch direkt eingebunden */
+.articleBox .storyBodyText iframe[src*="www.facebook.com"] {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* (db) 2017-05-02 outbrain-einbindung liefert zusätzliches padding mit */
+.smartphone.articleBody .OUTBRAIN .ob-widget {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/*
+ * Der Outbrain-Drawer soll, wenn er eingeblendet wird
+ * ueber den Add-This-Buttons zu sehen sein.
+ * Das Element .at-share-dock.atss der Add-ThisButtons werden
+ * standardmaessig mit einem z-index von 1000200 versehen.
+ * Darauf haben wir keinen Einfluss.
+ */
+.at-share-dock.atss {
+    z-index: 2 !important;
+}
+
+/* (db) 2017-05-24 pages */
+
+.smartphone .articleBox .articlePages {
+    margin: 10px 0;
+}
+.smartphone .articleBox .articlePages a {
+    color: #d0113a;
+    text-decoration: none;
+    padding: 0 6px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+.smartphone .articleBox .articlePages a.active {
+    color: #fff;
+    background-color: #d0113a;
+}
+
+.smartphone .articleBox .articlePageText.passive {
+    display: none;
+}
+
+/* (db) 2017-07-06 Spezialfall tv Artikeldetail - Farben Standard-oe24 */
+.smartphone.layout_tv .articleBox .defaultChannelColor {
+    color: #d0113a;
+}
+.smartphone.layout_tv .articleBox .defaultChannelBackgroundColor {
+    background-color: #d0113a;
+}

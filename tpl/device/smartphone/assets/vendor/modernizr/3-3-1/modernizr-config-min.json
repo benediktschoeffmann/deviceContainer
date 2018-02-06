@@ -1,0 +1,40 @@
+{
+  "minify": false,
+  "options": [
+    "domPrefixes",
+    "prefixes",
+    "addTest",
+    "atRule",
+    "hasEvent",
+    "mq",
+    "prefixed",
+    "prefixedCSS",
+    "prefixedCSSValue",
+    "testAllProps",
+    "testProp",
+    "testStyles",
+    "html5shiv",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/audio",
+    "test/cookies",
+    "test/customevent",
+    "test/eventlistener",
+    "test/input",
+    "test/inputsearchevent",
+    "test/inputtypes",
+    "test/json",
+    "test/queryselector",
+    "test/svg",
+    "test/touchevents",
+    "test/video",
+    "test/websockets",
+    "test/svg/asimg",
+    "test/svg/clippaths",
+    "test/svg/filters",
+    "test/svg/foreignobject",
+    "test/svg/inline",
+    "test/svg/smil"
+  ]
+}

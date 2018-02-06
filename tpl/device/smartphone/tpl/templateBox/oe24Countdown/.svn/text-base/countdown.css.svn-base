@@ -1,0 +1,57 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+#oe2016oe24Countdown {
+	margin: 10px 0;
+
+	position: relative;
+}
+#oe2016oe24Countdown img {
+	width: 100%;
+	max-width: 960px;
+}
+
+#oe2016oe24CountdownTime {
+	width: 100%;
+
+	display: block;
+	/*position: absolute;*/
+	/*top: -5px;*/
+
+	/*opacity: 0.93;*/
+	padding: 3px 10px;
+	margin-top: -5px;
+
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	font-size: 0.875rem;
+}
+
+/* Countdown Fullsize */
+#oe2016oe24CountdownFull {
+	margin: 10px 0 15px 0;
+	position: relative;
+}
+#oe2016oe24CountdownFull img {
+	width: 100%;
+	max-width: 960px;
+}
+
+#oe2016oe24CountdownFullTime {
+	width: 100%;
+
+	display: block;
+	position: relative;
+	margin-top: -5px;
+
+	padding: 3px 10px;
+
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	font-size: 0.875rem;
+}

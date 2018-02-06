@@ -1,0 +1,108 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.weatherBox {
+    width: 100%;
+    padding: 0 4px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    margin: 0 0 10px 0;
+}
+
+.weatherBox .isHidden {
+    display: none !important;
+}
+
+.weatherNav {
+    text-align: center;
+    margin: 4px 0;
+}
+.weatherBottom{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.weatherNav {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.weatherNav .weatherNavItem {
+    font-size: .875rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2px 0;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #007ddc;
+    background-color: #f2f2f2;
+}
+.weatherNav .weatherNavItem.active {
+    color: #fff;
+    background-color: #007ddc;
+}
+.weatherNav .weatherNavItem.wide {
+    width: 20%;
+}
+
+
+.weatherBottom .weatherAtLink {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    display: inline-block;
+    color: #fff;
+    background-color: #007ddc;
+    width: 100%;
+}
+
+
+.weatherMap {
+    padding-bottom: 52%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.weatherMap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.weatherMap .mapToday {
+    z-index: 2;
+}
+.weatherMap .mapTomorrow {
+    z-index: 1;
+}
+
+.weatherMapNavigation{
+    width: 100%;
+}
+.weatherMapNav{
+    background-color: #f0ad4e;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    width: 40%;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+#weatherMapPrevious .weatherMapNav{
+    float: left;
+    padding: 5px 10px 5px 0;
+}
+#weatherMapNext .weatherMapNav{
+    float: right;
+    padding: 5px 0 5px 10px;
+}

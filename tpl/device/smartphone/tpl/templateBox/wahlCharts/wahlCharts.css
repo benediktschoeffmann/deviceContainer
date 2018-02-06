@@ -1,0 +1,121 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.chartContainer {
+    display: block;
+}
+.chartContainer.distanceTop {
+    margin-top: 15px;
+}
+.chartContainer.distanceBottom {
+    margin-bottom: 15px;
+}
+
+
+.chartHeader {
+    padding: 0;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.chartHeader:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #d0113a;
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+}
+
+
+.chartHeader .chartCaption {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+
+
+.chartFooter {
+    padding: 4px 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+.chartFooter .chartSource {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    text-align: right;
+    padding: 0 14px;
+    margin: 5px 0;
+}
+
+
+
+.chartContent {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+
+.chartContent .chartCell {
+    display: block;
+    width: 100%;
+}
+.chartContent .chartCell.barChartData {
+    position: relative;
+}
+.chartContent .chartCell.pieChartData {
+    position: relative;
+    padding: 0 5%;
+}
+
+.chartContent .chartCellCaption {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.chartContent .legendBox {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+.chartContent .legendBox .legend {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    color: #000;
+}
+.chartContent .legendBox .legend .value {
+    display: block;
+    margin: 0 auto;
+}
+.chartContent .legendBox .legend .divider {
+    display: block;
+    width: 70%;
+    height: 5px;
+    margin: 2px auto;
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/oe24_oe24/!svn/ver/9595/release/1.2/src/device
+END
+Smartphone.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/oe24_oe24/!svn/ver/9497/release/1.2/src/device/Smartphone.class.php
+END
+DeviceContainer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/oe24_oe24/!svn/ver/8697/release/1.2/src/device/DeviceContainer.class.php
+END
+Oe24AppException.exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/oe24_oe24/!svn/ver/8695/release/1.2/src/device/Oe24AppException.exception.php
+END
+IDevice.interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/oe24_oe24/!svn/ver/8011/release/1.2/src/device/IDevice.interface.php
+END
+DeviceFactory.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/oe24_oe24/!svn/ver/8697/release/1.2/src/device/DeviceFactory.class.php
+END
+DeviceInitialisationException.exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/oe24_oe24/!svn/ver/8011/release/1.2/src/device/DeviceInitialisationException.exception.php
+END
+Oe24App.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/oe24_oe24/!svn/ver/11043/release/1.2/src/device/Oe24App.class.php
+END
+Oe24AppArticleHandler.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/oe24_oe24/!svn/ver/9669/release/1.2/src/device/Oe24AppArticleHandler.class.php
+END

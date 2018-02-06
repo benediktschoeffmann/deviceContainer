@@ -1,0 +1,107 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleBody .container {
+    padding-top: 0;
+}
+
+.articleBox {
+    display: block;
+    margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+
+.articleBox .story {
+    width: 100%;
+    padding: 0 0 10px 0;
+    display: block;
+    position: relative;
+}
+
+
+.articleBox .storyTextTop {
+    margin: 0 0 6px;
+}
+
+
+.articleBox .storyPreTitle,
+.articleBox .storyDateTime {
+    float: left;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.articleBox .storyPreTitle {
+    font-size: .9375rem;
+    font-weight: 700;
+    text-align: left;
+    width: 70%;
+}
+.articleBox .storyDateTime {
+    font-size: .6875rem;
+    font-weight: 400;
+    text-align: right;
+    width: 30%;
+    padding-top: 4px;
+}
+
+
+.articleBox .storyTitle {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.articleBox .storyLeadText {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+
+.articleBox .copyright {
+    font-size: .6875rem;
+    text-align: right;
+    padding: 2px 0;
+    margin: 0;
+    display: block;
+}
+
+
+.articleBox .storyImage {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+.articleBox .videoPlayer {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+/* (ws) 2016-12-22 Copyright als Overlay rechts unten ueber dem Image */
+.articleBox .copyright {
+    padding: 2px 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+.articleBox .storyBodyText p:first-child {
+    margin-top: 0;
+}

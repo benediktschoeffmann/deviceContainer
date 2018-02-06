@@ -1,0 +1,52 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone .search_box .textfield {
+	width: 90%;
+	display: block;
+	margin: 0 auto 10px auto;
+	height: 30px;
+}
+
+.smartphone .search_box .button {
+	margin: 0 auto;
+	background-color: #a10f42;
+	color: #FFF;
+	display: block;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 5px 20px;
+	border: 0px;
+
+	-webkit-appearance: button;
+}
+
+.smartphone .search_pages {
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+	text-align: center;
+}
+.smartphone .search_pages_counter {
+	margin: 20px 0 20px 0;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.smartphone .search_pages a {
+	margin: 0 5px;
+}
+.smartphone .search_pages a.active {
+	background-color: #a10f42;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0 6px;
+}
+
+.smartphone .search_result {
+	margin: 20px 0 20px 0;
+	padding: 0 10px;
+}

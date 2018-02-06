@@ -1,0 +1,451 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headlineBox.layout_sport-sport .headline,
+.headlineBox.layout_sport-sport24 .headline,
+.headlineBox.layout_sport-euro .headline,
+.headlineBox.layout_sport-fussball .headline,
+.headlineBox.layout_sport-motorsport .headline,
+.headlineBox.layout_sport-sportmix .headline,
+.headlineBox.layout_sport-stars .headline,
+.headlineBox.layout_sport-wintersport .headline{
+    margin: 5px 0;
+}
+
+.headlineBox.layout_sport-sport .headline,
+.headlineBox.layout_sport-sport24 .headline,
+.headlineBox.layout_sport-euro .headline,
+.headlineBox.layout_sport-fussball .headline,
+.headlineBox.layout_sport-motorsport .headline,
+.headlineBox.layout_sport-sportmix .headline,
+.headlineBox.layout_sport-stars .headline,
+.headlineBox.layout_sport-wintersport .headline{
+    line-height: 1.4;
+    letter-spacing: -1pt;
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+}
+
+.channelsList {
+    padding: 0 10px 15px 10px;
+    /*margin: 0 0 10px 0;*/
+    /*background-color: #f4f4f4;*/
+}
+
+.channelListHeader {
+    background-color: #fff;
+}
+
+.channelListHeader .channelListLink {
+    text-decoration: none;
+}
+
+.channelsListHeadline {
+    line-height: 1.2;
+    letter-spacing: -1pt;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 2px 10px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-family: "Open Sans Condensed";
+}
+
+
+.channelsListHeadline .channelsListIcon {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    margin-right: 6px;
+    -webkit-background-size: 48px 60px;
+    background-size: 48px 60px;
+    background-image: url(/images/oe2016/wappen/sprite_bundesland.png);
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+}
+.channelsListHeadline .channelsListBundesland_noe {
+    background-position: -32px 0;
+}
+.channelsListHeadline .channelsListBundesland_wien {
+    background-position: -32px -40px;
+}
+
+
+
+
+.smartphone .sport-sport .defaultChannelBackgroundColor,
+.smartphone .sport-sport .channelsListItem a{
+    background-color: #22b480;
+}
+.smartphone .sport-sport24 .defaultChannelBackgroundColor,
+.smartphone .sport-sport24 .channelsListItem a{
+    background-color: #d2123b;
+}
+.smartphone .sport-euro .defaultChannelBackgroundColor,
+.smartphone .sport-euro .channelsListItem a{
+    background-color: #313b69;
+}
+.smartphone .sport-fussball .defaultChannelBackgroundColor,
+.smartphone .sport-fussball .channelsListItem a{
+    background-color: #22b480;
+}
+.smartphone .sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .sport-motorsport .channelsListItem a{
+    background-color: #1d1d1b;
+}
+.smartphone .sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .sport-sportmix .channelsListItem a{
+    background-color: #007edc;
+}
+.smartphone .sport-stars .defaultChannelBackgroundColor,
+.smartphone .sport-stars .channelsListItem a{
+    background-color: #b1177a;
+}
+.smartphone .sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .sport-wintersport .channelsListItem a{
+    background-color: #0052b3;
+}
+.smartphone .auto .defaultChannelBackgroundColor,
+.smartphone .auto .channelsListItem a{
+    background-color: #2c3564;
+}
+.smartphone .digital .defaultChannelBackgroundColor,
+.smartphone .digital .channelsListItem a{
+    background-color: #708ab9;
+}
+.smartphone .gesund24 .defaultChannelBackgroundColor,
+.smartphone .gesund24 .channelsListItem a{
+    background-color: #6a9dff;
+}
+.smartphone .kochen .defaultChannelBackgroundColor,
+.smartphone .kochen .channelsListItem a{
+    background-color: #b11679;
+}
+.smartphone .madonna .defaultChannelBackgroundColor,
+.smartphone .madonna .channelsListItem a{
+    background-color: #ec589f;
+}
+.smartphone .money .defaultChannelBackgroundColor,
+.smartphone .money .channelsListItem a{
+    background-color: #174584;
+}
+.smartphone .business .defaultChannelBackgroundColor,
+.smartphone .business .channelsListItem a{
+    background-color: #35549b;
+}
+.smartphone .news .defaultChannelBackgroundColor,
+.smartphone .news .channelsListItem a{
+    background-color: #d0013a;
+}
+.smartphone .oesterreich .defaultChannelBackgroundColor,
+.smartphone .oesterreich .channelsListItem a{
+    background-color: #f50f39;
+}
+.smartphone .politik .defaultChannelBackgroundColor,
+.smartphone .politik .channelsListItem a,
+.smartphone .oe24 .defaultChannelBackgroundColor,
+.smartphone .oe24 .channelsListItem a{
+    background-color: #d0013a;
+}
+.smartphone .reise .defaultChannelBackgroundColor,
+.smartphone .reise .channelsListItem a{
+    background-color: #ff6200;
+}
+.smartphone .society .defaultChannelBackgroundColor,
+.smartphone .society .channelsListItem a,
+.smartphone .leute .defaultChannelBackgroundColor,
+.smartphone .leute .channelsListItem a{
+    background-color: #ffca49;
+}
+.smartphone .sport24 .defaultChannelBackgroundColor,
+.smartphone .sport24 .channelsListItem a{
+    background-color: #d2123b;
+}
+.smartphone .tv .defaultChannelBackgroundColor,
+.smartphone .tv .channelsListItem a{
+    background-color: #59cad2;
+}
+.smartphone .welt .defaultChannelBackgroundColor,
+.smartphone .welt .channelsListItem a{
+    background-color: #0051b2;
+}
+.smartphone .wetter .defaultChannelBackgroundColor,
+.smartphone .wetter .channelsListItem a{
+    background-color: #007ddc;
+}
+
+
+.channelListBody {
+    clear: both;    
+}
+
+.channelsListItem{
+    margin-top: 6px;    
+}
+.channelsListItem .itemText {
+    /*font-size: 0.625rem;*/
+    font-size: 0.75rem;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 12px 10px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Open Sans",sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    min-height: 40px;
+    
+}
+
+.emTeilnehmer .channelsListItem .itemText,
+.fussballLigen .channelsListItem .itemText {
+    position: relative;
+}
+.emTeilnehmer .channelsListItem .itemText:after,
+.fussballLigen .channelsListItem .itemText:after {
+    font-size: .625rem;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.channelsListItem .itemText:after {
+    font-weight: 700;
+    content: '>>';
+    
+    width: 50px;
+}
+.emTeilnehmer .channelsListItem .itemText:after {
+    content: 'Alle Infos »';
+    width: 70px;
+}
+.fussballLigen .channelsListItem .itemText:after {
+    content: 'Details »';
+    width: 90px;
+}
+
+
+/* EM 2016 Teilnehmer */
+
+.emTeilnehmer .channelListBody {
+    /*height: 13.6em;*/
+    overflow: auto;
+}
+
+.emTeilnehmer .itemText {
+    /*padding-left: 60px;*/
+    margin: 1px 0;
+    /*background: transparent url('/images/oe2016/flags/sprite_flags_em2016.png') no-repeat 0 0;*/
+}
+
+/*
+.emTeilnehmer .itemName_gb-ni { background-position: 0 -0px; }
+.emTeilnehmer .itemName_hu    { background-position: 0 -42px; }
+.emTeilnehmer .itemName_ie    { background-position: 0 -84px; }
+.emTeilnehmer .itemName_hr    { background-position: 0 -126px; }
+.emTeilnehmer .itemName_de    { background-position: 0 -168px; }
+.emTeilnehmer .itemName_gb-en { background-position: 0 -210px; }
+.emTeilnehmer .itemName_gb-wa { background-position: 0 -252px; }
+.emTeilnehmer .itemName_se    { background-position: 0 -294px; }
+.emTeilnehmer .itemName_tr    { background-position: 0 -336px; }
+.emTeilnehmer .itemName_al    { background-position: 0 -378px; }
+.emTeilnehmer .itemName_cz    { background-position: 0 -420px; }
+.emTeilnehmer .itemName_es    { background-position: 0 -462px; }
+.emTeilnehmer .itemName_fr    { background-position: 0 -504px; }
+.emTeilnehmer .itemName_it    { background-position: 0 -546px; }
+.emTeilnehmer .itemName_pl    { background-position: 0 -588px; }
+.emTeilnehmer .itemName_pt    { background-position: 0 -630px; }
+.emTeilnehmer .itemName_ro    { background-position: 0 -672px; }
+.emTeilnehmer .itemName_ru    { background-position: 0 -714px; }
+.emTeilnehmer .itemName_sk    { background-position: 0 -756px; }
+.emTeilnehmer .itemName_ua    { background-position: 0 -798px; }
+.emTeilnehmer .itemName_at    { background-position: 0 -840px; }
+.emTeilnehmer .itemName_is    { background-position: 0 -882px; }
+.emTeilnehmer .itemName_be    { background-position: 0 -924px; }
+.emTeilnehmer .itemName_ch    { background-position: 0 -966px; }
+*/
+
+.emTeilnehmer .itemIcon {
+    width: 44px;
+    height: 22px;
+    margin-right: 10px;
+    display: inline-block;
+    background: transparent url('/images/oe2016/flags/sprite_flags_em2016.png') no-repeat 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.emTeilnehmer .itemName_gb-ni { background-position: 0 -0px; }
+.emTeilnehmer .itemName_hu    { background-position: 0 -42px; }
+.emTeilnehmer .itemName_ie    { background-position: 0 -84px; }
+.emTeilnehmer .itemName_hr    { background-position: 0 -126px; }
+.emTeilnehmer .itemName_de    { background-position: 0 -168px; }
+.emTeilnehmer .itemName_gb-en { background-position: 0 -210px; }
+.emTeilnehmer .itemName_gb-wa { background-position: 0 -252px; }
+.emTeilnehmer .itemName_se    { background-position: 0 -294px; }
+.emTeilnehmer .itemName_tr    { background-position: 0 -336px; }
+.emTeilnehmer .itemName_al    { background-position: 0 -378px; }
+.emTeilnehmer .itemName_cz    { background-position: 0 -420px; }
+.emTeilnehmer .itemName_es    { background-position: 0 -462px; }
+.emTeilnehmer .itemName_fr    { background-position: 0 -504px; }
+.emTeilnehmer .itemName_it    { background-position: 0 -546px; }
+.emTeilnehmer .itemName_pl    { background-position: 0 -588px; }
+.emTeilnehmer .itemName_pt    { background-position: 0 -630px; }
+.emTeilnehmer .itemName_ro    { background-position: 0 -672px; }
+.emTeilnehmer .itemName_ru    { background-position: 0 -714px; }
+.emTeilnehmer .itemName_sk    { background-position: 0 -756px; }
+.emTeilnehmer .itemName_ua    { background-position: 0 -798px; }
+.emTeilnehmer .itemName_at    { background-position: 0 -840px; }
+.emTeilnehmer .itemName_is    { background-position: 0 -882px; }
+.emTeilnehmer .itemName_be    { background-position: 0 -924px; }
+.emTeilnehmer .itemName_ch    { background-position: 0 -966px; }
+
+
+
+/* table participantsBox */
+.participantsBox.emTeilnehmer {
+    padding: 0 15px;
+    margin: 20px auto 0;
+}
+.participantsBox.emTeilnehmer table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+.participantsBox.emTeilnehmer .channelsListItem {
+    width: 25%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.participantsBox.emTeilnehmer .channelsListItem:nth-child(even),
+.participantsBox.emTeilnehmer .channelsListItem:nth-child(odd) {
+    background-color: transparent;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText {
+    padding: 4px 8px;
+    margin: 0 10px;
+    white-space: nowrap;
+    background-color: #f4f4f4;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText:hover {
+    text-decoration: none;
+    background-color: #e8e8e8;
+}
+.participantsBox.emTeilnehmer .itemIcon {
+    margin-right: 4px;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText:after {
+    padding-top: 3px;
+}
+/* table participantsBox end */
+
+
+
+/*
+.itemName_nordirland { background-position: -0px -0px; }
+.itemName_ungarn { background-position: -0px -22px; }
+.itemName_irland { background-position: -0px -44px; }
+.itemName_kroatien { background-position: -0px -66px; }
+.itemName_deutschland { background-position: -0px -88px; }
+.itemName_england { background-position: -0px -110px; }
+.itemName_wales { background-position: -0px -132px; }
+.itemName_schweden { background-position: -0px -154px; }
+.itemName_tuerkei { background-position: -0px -176px; }
+.itemName_albanien { background-position: -0px -198px; }
+.itemName_tschechien { background-position: -0px -220px; }
+.itemName_spanien { background-position: -0px -242px; }
+.itemName_frankreich { background-position: -0px -264px; }
+.itemName_italien { background-position: -0px -286px; }
+.itemName_polen { background-position: -0px -308px; }
+.itemName_portugal { background-position: -0px -330px; }
+.itemName_rumaenien { background-position: -0px -352px; }
+.itemName_russland { background-position: -0px -374px; }
+.itemName_slowakei { background-position: -0px -396px; }
+.itemName_ukraine { background-position: -0px -418px; }
+.itemName_oesterreich { background-position: -0px -440px; }
+.itemName_island { background-position: -0px -462px; }
+.itemName_belgien { background-position: -0px -484px; }
+.itemName_schweiz { background-position: -0px -506px; }
+*/
+
+/* Generated by http://css.spritegen.com CSS Sprite Generator */
+
+/*
+.itemName_nordirland, .itemName_ungarn, .itemName_irland, .itemName_kroatien, .itemName_deutschland,
+.itemName_england, .itemName_wales, .itemName_schweden, .itemName_tuerkei, .itemName_albanien,
+.itemName_tschechien, .itemName_spanien, .itemName_frankreich, .itemName_italien, .itemName_polen,
+.itemName_portugal, .itemName_rumaenien, .itemName_russland, .itemName_slowakei, .itemName_ukraine,
+.itemName_oesterreich, .itemName_island, .itemName_belgien, .itemName_schweiz {
+    display: inline-block;
+    background: url('/images/oe2016/flags/sprite_flags_channelName.png') no-repeat;
+    overflow: hidden;
+
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.itemName_nordirland { background-position: -0px -0px; width: 44px; height: 22px; }
+.itemName_ungarn { background-position: -0px -22px; width: 44px; height: 22px; }
+.itemName_irland { background-position: -0px -44px; width: 44px; height: 22px; }
+.itemName_kroatien { background-position: -0px -66px; width: 43px; height: 22px; }
+.itemName_deutschland { background-position: -0px -88px; width: 37px; height: 22px; }
+.itemName_england { background-position: -0px -110px; width: 37px; height: 22px; }
+.itemName_wales { background-position: -0px -132px; width: 37px; height: 22px; }
+.itemName_schweden { background-position: -0px -154px; width: 35px; height: 22px; }
+.itemName_tuerkei { background-position: -0px -176px; width: 34px; height: 22px; }
+.itemName_albanien { background-position: -0px -198px; width: 33px; height: 22px; }
+.itemName_tschechien { background-position: -0px -220px; width: 33px; height: 22px; }
+.itemName_spanien { background-position: -0px -242px; width: 33px; height: 22px; }
+.itemName_frankreich { background-position: -0px -264px; width: 33px; height: 22px; }
+.itemName_italien { background-position: -0px -286px; width: 33px; height: 22px; }
+.itemName_polen { background-position: -0px -308px; width: 33px; height: 22px; }
+.itemName_portugal { background-position: -0px -330px; width: 33px; height: 22px; }
+.itemName_rumaenien { background-position: -0px -352px; width: 33px; height: 22px; }
+.itemName_russland { background-position: -0px -374px; width: 33px; height: 22px; }
+.itemName_slowakei { background-position: -0px -396px; width: 33px; height: 22px; }
+.itemName_ukraine { background-position: -0px -418px; width: 33px; height: 22px; }
+.itemName_oesterreich { background-position: -0px -440px; width: 31px; height: 22px; }
+.itemName_island { background-position: -0px -462px; width: 31px; height: 22px; }
+.itemName_belgien { background-position: -0px -484px; width: 25px; height: 22px; }
+.itemName_schweiz { background-position: -0px -506px; width: 22px; height: 22px; }
+*/
+
+/*
+<div class="itemName_nordirland"></div>
+<div class="itemName_ungarn"></div>
+<div class="itemName_irland"></div>
+<div class="itemName_kroatien"></div>
+<div class="itemName_deutschland"></div>
+<div class="itemName_england"></div>
+<div class="itemName_wales"></div>
+<div class="itemName_schweden"></div>
+<div class="itemName_tuerkei"></div>
+<div class="itemName_albanien"></div>
+<div class="itemName_tschechien"></div>
+<div class="itemName_spanien"></div>
+<div class="itemName_frankreich"></div>
+<div class="itemName_italien"></div>
+<div class="itemName_polen"></div>
+<div class="itemName_portugal"></div>
+<div class="itemName_rumaenien"></div>
+<div class="itemName_russland"></div>
+<div class="itemName_slowakei"></div>
+<div class="itemName_ukraine"></div>
+<div class="itemName_oesterreich"></div>
+<div class="itemName_island"></div>
+<div class="itemName_belgien"></div>
+<div class="itemName_schweiz"></div>
+*/
+

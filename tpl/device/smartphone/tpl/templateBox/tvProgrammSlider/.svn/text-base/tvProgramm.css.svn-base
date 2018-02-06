@@ -1,0 +1,110 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.tvProgrammSliderBox {
+	background-color: #fff;
+	margin-bottom: 50px;
+}
+.tvProgrammSliderBox .flktySliderHidden {
+	visibility: hidden;
+}
+.tvProgrammSliderBox .flickity-enabled.flktySliderHidden {
+	visibility: visible;
+}
+
+/* navigation */
+.tvProgrammSliderBox .flickity-prev-next-button {
+	top: 110%;
+	width: 32px;
+	height: 32px;
+	
+	background-color: #d0113a;
+}
+
+.tvProgrammSliderBox .flickity-prev-next-button.previous {
+	/*left: -32px;*/
+}
+.tvProgrammSliderBox .flickity-prev-next-button.next {
+	/*right: -32px;*/
+}
+
+.tvProgrammSliderBox .flickity-prev-next-button .arrow {
+	fill: #ffffff;
+}
+
+.tvProgrammSliderBox .tvSliderCounter {
+	padding: 0 50px;
+	margin-top: 15px;
+	text-align: center;
+
+	font-size: .75rem;
+	font-weight: 700;
+
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+/* individuel slides */
+.tvProgrammSliderBox .tvProgammSliderEntry {
+	width: 100%;
+	
+	text-decoration: none;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvHl {
+	background-color: #114086;
+	color: #FFF;
+
+	padding: 2px 10px 4px 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvHl {
+	background-color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvMain {
+	height: 180px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	color: #000;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvMain {
+	color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTbl td {
+	border-bottom: 2px solid #c1c1c3;
+	padding-top: 8px;
+
+	font-size: 14px;
+	font-weight: 700;
+
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .currentShow td {
+	background-color: #fdf001;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTime {
+	width: 30%;
+	padding-left: 1%;
+	padding-right: 5%;
+	text-align: center;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvShow {
+	width: 70%;
+	text-align: left;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+

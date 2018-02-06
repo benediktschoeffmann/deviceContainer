@@ -1,0 +1,87 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.teleTrader {
+	margin-bottom: 15px;
+}
+
+/* Headline */
+
+.teleTrader .teleTraderHeadlineBox {
+	margin: 0 0 10px 0;
+}
+.teleTrader .teleTraderHeadlineBox .teleTraderHeadlineCaption {
+	display: block;
+	padding: 2px 0 1px 0;
+	width: 100%;
+}
+.teleTrader .teleTraderHeadlineBox .teleTraderTitle {
+	color: #FFF;
+}
+
+/* Slider */
+.teleTrader .teleTraderEntry,
+.teleTrader .story {
+	display: none;
+	width: 50%;
+
+	padding: 0 20px;
+}
+.teleTrader .flickity-viewport .teleTraderEntry,
+.teleTrader .flickity-viewport .story {
+	display: block;
+}
+.teleTrader .teleTraderEntry table,
+.teleTrader .story table {
+	width: 100%;
+}
+
+.teleTrader .storiesCounter {
+	font-size: .75rem;
+	font-weight: 700;
+	position: absolute;
+	left: 50%;
+	bottom: -35px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+.teleTrader .teleTraderSlider .flickity-viewport,
+.teleTrader .flickitySlider .flickity-viewport {
+	margin-bottom: 55px;
+}
+/* Buttons */
+.teleTrader .teleTraderSlider .flickity-prev-next-button, 
+.teleTrader .teleTraderSlider .flickity-prev-next-button:hover,
+.teleTrader .flickitySlider .flickity-prev-next-button, 
+.teleTrader .flickitySlider .flickity-prev-next-button:hover {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	top: auto;
+	background-color: #35549b;
+	position: absolute;
+	bottom: -55px;
+}
+.teleTrader .teleTraderSlider .flickity-prev-next-button svg .arrow,
+.teleTrader .flickitySlider .flickity-prev-next-button svg .arrow {
+	fill: #FFF;
+	stroke: #FFF;
+}
+
+
+/* TopFlop */
+
+.teleTrader table th {
+	padding-bottom: 5px;
+}
+.teleTrader .winner .teleTraderEntryHeaderText {
+	color: #019c0f;
+}
+
+.teleTrader .loser .teleTraderEntryHeaderText {
+	color: #ff0000;
+}
+

@@ -1,0 +1,23 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.defaultHtmlBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*
+.defaultHtmlBox,
+.defaultHtmlBox * {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.defaultHtmlBox img {
+    width: 100%;
+}
+
+*/

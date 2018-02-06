@@ -1,0 +1,127 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.contentContainer {
+    padding-top: 52px; /* die Hoehe von .header */
+}
+.container {
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+.imageContainer {
+    display: block;
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative;
+}
+.imageContainer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d5d5d5;
+}
+.imageContainer.inlineImage {
+    padding-bottom: 0;
+}
+.imageContainer.inlineImage img {
+    height: auto;
+    position: static;
+}
+
+
+.videoStory {
+    display: block;
+    position: relative;
+}
+.videoStory:after {
+    content: '';
+    display: block;
+    background-image: url('/images/rl2014/play_button.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 16vw;
+    height: 16vw;
+    background-size: 200% 100%;
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+
+.slideShowStory {
+    display: block;
+    position: relative;
+}
+.slideShowStory:after {
+    content: '';
+    display: block;
+    /*background-image: url('/images/rl2014/imageIcon.svg');*/
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 16vw;
+    height: 16vw;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+.marginBottom {
+    margin-bottom: 10px;
+}
+
+
+.iconSlider {
+    width: 26px;
+    padding: 2px 4px;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 10;
+}
+.iconSlider svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: #fff;
+}
+
+
+.iconSwipe {
+    width: 14vw;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.iconSwipe svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.iconSwipe svg path {
+    fill: #fff;
+}
+

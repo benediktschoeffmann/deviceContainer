@@ -1,0 +1,11 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleBox .storyChannelTopStories .headline span {
+    display: block;
+    padding: 2px 0 4px;
+    color: #fff;
+}

@@ -1,0 +1,514 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone.layout_oe24 .defaultChannelColor,
+.smartphone .layout_oe24 .storyTitle.defaultChannelColor,
+.smartphone .layout_oe24 .storyPreTitle.defaultChannelColor {
+	color: #d0113a;
+}
+.smartphone.layout_oe24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_oe24 .defaultChannelBackgroundColor,
+.smartphone .layout_oe24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_oe24 .flickity-prev-next-button,
+.contentSlider.console .layout_oe24 .storyPreTitle,
+.contentSlider.console .layout_oe24 .storyNumber {
+	background-color: #d0113a;
+}
+.smartphone.layout_news .defaultChannelColor,
+.smartphone .layout_news .storyTitle.defaultChannelColor,
+.smartphone .layout_news .storyPreTitle.defaultChannelColor {
+	color: #d0013a;
+}
+.smartphone.layout_news .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_news .defaultChannelBackgroundColor,
+.smartphone .layout_news .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_news .flickity-prev-next-button,
+.contentSlider.console .layout_news .storyPreTitle,
+.contentSlider.console .layout_news .storyNumber {
+	background-color: #d0013a;
+}
+.smartphone.layout_politik .defaultChannelColor,
+.smartphone .layout_politik .storyTitle.defaultChannelColor,
+.smartphone .layout_politik .storyPreTitle.defaultChannelColor {
+	color: #d0013a;
+}
+.smartphone.layout_politik .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_politik .defaultChannelBackgroundColor,
+.smartphone .layout_politik .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_politik .flickity-prev-next-button,
+.contentSlider.console .layout_politik .storyPreTitle,
+.contentSlider.console .layout_politik .storyNumber {
+	background-color: #d0013a;
+}
+.smartphone.layout_welt .defaultChannelColor,
+.smartphone .layout_welt .storyTitle.defaultChannelColor,
+.smartphone .layout_welt .storyPreTitle.defaultChannelColor {
+	color: #0051b2;
+}
+.smartphone.layout_welt .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_welt .defaultChannelBackgroundColor,
+.smartphone .layout_welt .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_welt .flickity-prev-next-button,
+.contentSlider.console .layout_welt .storyPreTitle,
+.contentSlider.console .layout_welt .storyNumber {
+	background-color: #0051b2;
+}
+.smartphone.layout_oesterreich .defaultChannelColor,
+.smartphone .layout_oesterreich .storyTitle.defaultChannelColor,
+.smartphone .layout_oesterreich .storyPreTitle.defaultChannelColor {
+	color: #f50f39;
+}
+.smartphone.layout_oesterreich .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_oesterreich .defaultChannelBackgroundColor,
+.smartphone .layout_oesterreich .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_oesterreich .flickity-prev-next-button,
+.contentSlider.console .layout_oesterreich .storyPreTitle,
+.contentSlider.console .layout_oesterreich .storyNumber {
+	background-color: #f50f39;
+}
+.smartphone.layout_bundeslaender .defaultChannelColor,
+.smartphone .layout_bundeslaender .storyTitle.defaultChannelColor,
+.smartphone .layout_bundeslaender .storyPreTitle.defaultChannelColor {
+	color: #f50f39;
+}
+.smartphone.layout_bundeslaender .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_bundeslaender .defaultChannelBackgroundColor,
+.smartphone .layout_bundeslaender .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_bundeslaender .flickity-prev-next-button,
+.contentSlider.console .layout_bundeslaender .storyPreTitle,
+.contentSlider.console .layout_bundeslaender .storyNumber {
+	background-color: #f50f39;
+}
+.smartphone.layout_wetter .defaultChannelColor,
+.smartphone .layout_wetter .storyTitle.defaultChannelColor,
+.smartphone .layout_wetter .storyPreTitle.defaultChannelColor {
+	color: #007ddc;
+}
+.smartphone.layout_wetter .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_wetter .defaultChannelBackgroundColor,
+.smartphone .layout_wetter .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_wetter .flickity-prev-next-button,
+.contentSlider.console .layout_wetter .storyPreTitle,
+.contentSlider.console .layout_wetter .storyNumber {
+	background-color: #007ddc;
+}
+.smartphone.layout_sport .defaultChannelColor,
+.smartphone .layout_sport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport .storyPreTitle.defaultChannelColor {
+	color: #22b480;
+}
+.smartphone.layout_sport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport .defaultChannelBackgroundColor,
+.smartphone .layout_sport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport .flickity-prev-next-button,
+.contentSlider.console .layout_sport .storyPreTitle,
+.contentSlider.console .layout_sport .storyNumber {
+	background-color: #22b480;
+}
+.smartphone.layout_sport24 .defaultChannelColor,
+.smartphone .layout_sport24 .storyTitle.defaultChannelColor,
+.smartphone .layout_sport24 .storyPreTitle.defaultChannelColor {
+	color: #d2123b;
+}
+.smartphone.layout_sport24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport24 .defaultChannelBackgroundColor,
+.smartphone .layout_sport24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport24 .flickity-prev-next-button,
+.contentSlider.console .layout_sport24 .storyPreTitle,
+.contentSlider.console .layout_sport24 .storyNumber {
+	background-color: #d2123b;
+}
+.smartphone.layout_sport-euro .defaultChannelColor,
+.smartphone .layout_sport-euro .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-euro .storyPreTitle.defaultChannelColor {
+	color: #313b69;
+}
+.smartphone.layout_sport-euro .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-euro .defaultChannelBackgroundColor,
+.smartphone .layout_sport-euro .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-euro .flickity-prev-next-button,
+.contentSlider.console .layout_sport-euro .storyPreTitle,
+.contentSlider.console .layout_sport-euro .storyNumber {
+	background-color: #313b69;
+}
+.smartphone.layout_sport-fussball .defaultChannelColor,
+.smartphone .layout_sport-fussball .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-fussball .storyPreTitle.defaultChannelColor {
+	color: #22b480;
+}
+.smartphone.layout_sport-fussball .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-fussball .defaultChannelBackgroundColor,
+.smartphone .layout_sport-fussball .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-fussball .flickity-prev-next-button,
+.contentSlider.console .layout_sport-fussball .storyPreTitle,
+.contentSlider.console .layout_sport-fussball .storyNumber {
+	background-color: #22b480;
+}
+.smartphone.layout_sport-motorsport .defaultChannelColor,
+.smartphone .layout_sport-motorsport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-motorsport .storyPreTitle.defaultChannelColor {
+	color: #1d1d1b;
+}
+.smartphone.layout_sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .layout_sport-motorsport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-motorsport .flickity-prev-next-button,
+.contentSlider.console .layout_sport-motorsport .storyPreTitle,
+.contentSlider.console .layout_sport-motorsport .storyNumber {
+	background-color: #1d1d1b;
+}
+.smartphone.layout_sport-sportmix .defaultChannelColor,
+.smartphone .layout_sport-sportmix .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-sportmix .storyPreTitle.defaultChannelColor {
+	color: #007edc;
+}
+.smartphone.layout_sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .layout_sport-sportmix .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-sportmix .flickity-prev-next-button,
+.contentSlider.console .layout_sport-sportmix .storyPreTitle,
+.contentSlider.console .layout_sport-sportmix .storyNumber {
+	background-color: #007edc;
+}
+.smartphone.layout_sport-stars .defaultChannelColor,
+.smartphone .layout_sport-stars .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-stars .storyPreTitle.defaultChannelColor {
+	color: #b1177a;
+}
+.smartphone.layout_sport-stars .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-stars .defaultChannelBackgroundColor,
+.smartphone .layout_sport-stars .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-stars .flickity-prev-next-button,
+.contentSlider.console .layout_sport-stars .storyPreTitle,
+.contentSlider.console .layout_sport-stars .storyNumber {
+	background-color: #b1177a;
+}
+.smartphone.layout_sport-wintersport .defaultChannelColor,
+.smartphone .layout_sport-wintersport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-wintersport .storyPreTitle.defaultChannelColor {
+	color: #0052b3;
+}
+.smartphone.layout_sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .layout_sport-wintersport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-wintersport .flickity-prev-next-button,
+.contentSlider.console .layout_sport-wintersport .storyPreTitle,
+.contentSlider.console .layout_sport-wintersport .storyNumber {
+	background-color: #0052b3;
+}
+.smartphone.layout_money .defaultChannelColor,
+.smartphone .layout_money .storyTitle.defaultChannelColor,
+.smartphone .layout_money .storyPreTitle.defaultChannelColor {
+	color: #174584;
+}
+.smartphone.layout_money .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_money .defaultChannelBackgroundColor,
+.smartphone .layout_money .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_money .flickity-prev-next-button,
+.contentSlider.console .layout_money .storyPreTitle,
+.contentSlider.console .layout_money .storyNumber {
+	background-color: #174584;
+}
+.smartphone.layout_madonna .defaultChannelColor,
+.smartphone .layout_madonna .storyTitle.defaultChannelColor,
+.smartphone .layout_madonna .storyPreTitle.defaultChannelColor {
+	color: #cc054a;
+}
+.smartphone.layout_madonna .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_madonna .defaultChannelBackgroundColor,
+.smartphone .layout_madonna .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_madonna .flickity-prev-next-button,
+.contentSlider.console .layout_madonna .storyPreTitle,
+.contentSlider.console .layout_madonna .storyNumber {
+	background-color: #cc054a;
+}
+.smartphone.layout_leute .defaultChannelColor,
+.smartphone .layout_leute .storyTitle.defaultChannelColor,
+.smartphone .layout_leute .storyPreTitle.defaultChannelColor {
+	color: #ffca49;
+}
+.smartphone.layout_leute .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_leute .defaultChannelBackgroundColor,
+.smartphone .layout_leute .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_leute .flickity-prev-next-button,
+.contentSlider.console .layout_leute .storyPreTitle,
+.contentSlider.console .layout_leute .storyNumber {
+	background-color: #ffca49;
+}
+.smartphone.layout_society .defaultChannelColor,
+.smartphone .layout_society .storyTitle.defaultChannelColor,
+.smartphone .layout_society .storyPreTitle.defaultChannelColor {
+	color: #ffca49;
+}
+.smartphone.layout_society .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_society .defaultChannelBackgroundColor,
+.smartphone .layout_society .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_society .flickity-prev-next-button,
+.contentSlider.console .layout_society .storyPreTitle,
+.contentSlider.console .layout_society .storyNumber {
+	background-color: #ffca49;
+}
+.smartphone.layout_tv .defaultChannelColor,
+.smartphone .layout_tv .storyTitle.defaultChannelColor,
+.smartphone .layout_tv .storyPreTitle.defaultChannelColor {
+	color: #59cad2;
+}
+.smartphone.layout_tv .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_tv .defaultChannelBackgroundColor,
+.smartphone .layout_tv .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_tv .flickity-prev-next-button,
+.contentSlider.console .layout_tv .storyPreTitle,
+.contentSlider.console .layout_tv .storyNumber {
+	background-color: #59cad2;
+}
+.smartphone.layout_video .defaultChannelColor,
+.smartphone .layout_video .storyTitle.defaultChannelColor,
+.smartphone .layout_video .storyPreTitle.defaultChannelColor {
+	color: #59cad2;
+}
+.smartphone.layout_video .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_video .defaultChannelBackgroundColor,
+.smartphone .layout_video .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_video .flickity-prev-next-button,
+.contentSlider.console .layout_video .storyPreTitle,
+.contentSlider.console .layout_video .storyNumber {
+	background-color: #59cad2;
+}
+.smartphone.layout_gesund24 .defaultChannelColor,
+.smartphone .layout_gesund24 .storyTitle.defaultChannelColor,
+.smartphone .layout_gesund24 .storyPreTitle.defaultChannelColor {
+	color: #6a9dff;
+}
+.smartphone.layout_gesund24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_gesund24 .defaultChannelBackgroundColor,
+.smartphone .layout_gesund24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_gesund24 .flickity-prev-next-button,
+.contentSlider.console .layout_gesund24 .storyPreTitle,
+.contentSlider.console .layout_gesund24 .storyNumber {
+	background-color: #6a9dff;
+}
+.smartphone.layout_kochen .defaultChannelColor,
+.smartphone .layout_kochen .storyTitle.defaultChannelColor,
+.smartphone .layout_kochen .storyPreTitle.defaultChannelColor {
+	color: #b11679;
+}
+.smartphone.layout_kochen .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_kochen .defaultChannelBackgroundColor,
+.smartphone .layout_kochen .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_kochen .flickity-prev-next-button,
+.contentSlider.console .layout_kochen .storyPreTitle,
+.contentSlider.console .layout_kochen .storyNumber {
+	background-color: #b11679;
+}
+.smartphone.layout_digital .defaultChannelColor,
+.smartphone .layout_digital .storyTitle.defaultChannelColor,
+.smartphone .layout_digital .storyPreTitle.defaultChannelColor {
+	color: #708ab9;
+}
+.smartphone.layout_digital .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_digital .defaultChannelBackgroundColor,
+.smartphone .layout_digital .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_digital .flickity-prev-next-button,
+.contentSlider.console .layout_digital .storyPreTitle,
+.contentSlider.console .layout_digital .storyNumber {
+	background-color: #708ab9;
+}
+.smartphone.layout_reise .defaultChannelColor,
+.smartphone .layout_reise .storyTitle.defaultChannelColor,
+.smartphone .layout_reise .storyPreTitle.defaultChannelColor {
+	color: #ff6200;
+}
+.smartphone.layout_reise .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_reise .defaultChannelBackgroundColor,
+.smartphone .layout_reise .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_reise .flickity-prev-next-button,
+.contentSlider.console .layout_reise .storyPreTitle,
+.contentSlider.console .layout_reise .storyNumber {
+	background-color: #ff6200;
+}
+.smartphone.layout_auto .defaultChannelColor,
+.smartphone .layout_auto .storyTitle.defaultChannelColor,
+.smartphone .layout_auto .storyPreTitle.defaultChannelColor {
+	color: #2c3564;
+}
+.smartphone.layout_auto .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_auto .defaultChannelBackgroundColor,
+.smartphone .layout_auto .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_auto .flickity-prev-next-button,
+.contentSlider.console .layout_auto .storyPreTitle,
+.contentSlider.console .layout_auto .storyNumber {
+	background-color: #2c3564;
+}
+.smartphone.layout_joe24 .defaultChannelColor,
+.smartphone .layout_joe24 .storyTitle.defaultChannelColor,
+.smartphone .layout_joe24 .storyPreTitle.defaultChannelColor {
+	color: #25407c;
+}
+.smartphone.layout_joe24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_joe24 .defaultChannelBackgroundColor,
+.smartphone .layout_joe24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_joe24 .flickity-prev-next-button,
+.contentSlider.console .layout_joe24 .storyPreTitle,
+.contentSlider.console .layout_joe24 .storyNumber {
+	background-color: #25407c;
+}
+.smartphone.layout_joe24-logo .defaultChannelColor,
+.smartphone .layout_joe24-logo .storyTitle.defaultChannelColor,
+.smartphone .layout_joe24-logo .storyPreTitle.defaultChannelColor {
+	color: #25407c;
+}
+.smartphone.layout_joe24-logo .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_joe24-logo .defaultChannelBackgroundColor,
+.smartphone .layout_joe24-logo .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_joe24-logo .flickity-prev-next-button,
+.contentSlider.console .layout_joe24-logo .storyPreTitle,
+.contentSlider.console .layout_joe24-logo .storyNumber {
+	background-color: #25407c;
+}
+.smartphone.layout_stars-oesterreich .defaultChannelColor,
+.smartphone .layout_stars-oesterreich .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-oesterreich .storyPreTitle.defaultChannelColor {
+	color: #ff776e;
+}
+.smartphone.layout_stars-oesterreich .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-oesterreich .defaultChannelBackgroundColor,
+.smartphone .layout_stars-oesterreich .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-oesterreich .flickity-prev-next-button,
+.contentSlider.console .layout_stars-oesterreich .storyPreTitle,
+.contentSlider.console .layout_stars-oesterreich .storyNumber {
+	background-color: #ff776e;
+}
+.smartphone.layout_stars-international .defaultChannelColor,
+.smartphone .layout_stars-international .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-international .storyPreTitle.defaultChannelColor {
+	color: #0052b3;
+}
+.smartphone.layout_stars-international .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-international .defaultChannelBackgroundColor,
+.smartphone .layout_stars-international .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-international .flickity-prev-next-button,
+.contentSlider.console .layout_stars-international .storyPreTitle,
+.contentSlider.console .layout_stars-international .storyNumber {
+	background-color: #0052b3;
+}
+.smartphone.layout_stars-deutschland .defaultChannelColor,
+.smartphone .layout_stars-deutschland .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-deutschland .storyPreTitle.defaultChannelColor {
+	color: #d0113a;
+}
+.smartphone.layout_stars-deutschland .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-deutschland .defaultChannelBackgroundColor,
+.smartphone .layout_stars-deutschland .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-deutschland .flickity-prev-next-button,
+.contentSlider.console .layout_stars-deutschland .storyPreTitle,
+.contentSlider.console .layout_stars-deutschland .storyNumber {
+	background-color: #d0113a;
+}
+.smartphone.layout_stars-royals .defaultChannelColor,
+.smartphone .layout_stars-royals .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-royals .storyPreTitle.defaultChannelColor {
+	color: #313b69;
+}
+.smartphone.layout_stars-royals .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-royals .defaultChannelBackgroundColor,
+.smartphone .layout_stars-royals .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-royals .flickity-prev-next-button,
+.contentSlider.console .layout_stars-royals .storyPreTitle,
+.contentSlider.console .layout_stars-royals .storyNumber {
+	background-color: #313b69;
+}
+.smartphone.layout_stars-partys .defaultChannelColor,
+.smartphone .layout_stars-partys .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-partys .storyPreTitle.defaultChannelColor {
+	color: #b1167f;
+}
+.smartphone.layout_stars-partys .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-partys .defaultChannelBackgroundColor,
+.smartphone .layout_stars-partys .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-partys .flickity-prev-next-button,
+.contentSlider.console .layout_stars-partys .storyPreTitle,
+.contentSlider.console .layout_stars-partys .storyNumber {
+	background-color: #b1167f;
+}
+.smartphone.layout_stars-mode .defaultChannelColor,
+.smartphone .layout_stars-mode .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-mode .storyPreTitle.defaultChannelColor {
+	color: #ec5a9d;
+}
+.smartphone.layout_stars-mode .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-mode .defaultChannelBackgroundColor,
+.smartphone .layout_stars-mode .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-mode .flickity-prev-next-button,
+.contentSlider.console .layout_stars-mode .storyPreTitle,
+.contentSlider.console .layout_stars-mode .storyNumber {
+	background-color: #ec5a9d;
+}
+.smartphone.layout_stars-beauty .defaultChannelColor,
+.smartphone .layout_stars-beauty .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-beauty .storyPreTitle.defaultChannelColor {
+	color: #cd0849;
+}
+.smartphone.layout_stars-beauty .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-beauty .defaultChannelBackgroundColor,
+.smartphone .layout_stars-beauty .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-beauty .flickity-prev-next-button,
+.contentSlider.console .layout_stars-beauty .storyPreTitle,
+.contentSlider.console .layout_stars-beauty .storyNumber {
+	background-color: #cd0849;
+}
+.smartphone.layout_stars-musik .defaultChannelColor,
+.smartphone .layout_stars-musik .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-musik .storyPreTitle.defaultChannelColor {
+	color: #f89845;
+}
+.smartphone.layout_stars-musik .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-musik .defaultChannelBackgroundColor,
+.smartphone .layout_stars-musik .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-musik .flickity-prev-next-button,
+.contentSlider.console .layout_stars-musik .storyPreTitle,
+.contentSlider.console .layout_stars-musik .storyNumber {
+	background-color: #f89845;
+}
+.smartphone.layout_stars-kultur .defaultChannelColor,
+.smartphone .layout_stars-kultur .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-kultur .storyPreTitle.defaultChannelColor {
+	color: #52aada;
+}
+.smartphone.layout_stars-kultur .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-kultur .defaultChannelBackgroundColor,
+.smartphone .layout_stars-kultur .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-kultur .flickity-prev-next-button,
+.contentSlider.console .layout_stars-kultur .storyPreTitle,
+.contentSlider.console .layout_stars-kultur .storyNumber {
+	background-color: #52aada;
+}
+.smartphone.layout_stars-tv .defaultChannelColor,
+.smartphone .layout_stars-tv .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-tv .storyPreTitle.defaultChannelColor {
+	color: #5272da;
+}
+.smartphone.layout_stars-tv .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-tv .defaultChannelBackgroundColor,
+.smartphone .layout_stars-tv .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-tv .flickity-prev-next-button,
+.contentSlider.console .layout_stars-tv .storyPreTitle,
+.contentSlider.console .layout_stars-tv .storyNumber {
+	background-color: #5272da;
+}
+.smartphone.layout_stars-kino .defaultChannelColor,
+.smartphone .layout_stars-kino .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-kino .storyPreTitle.defaultChannelColor {
+	color: #c9542f;
+}
+.smartphone.layout_stars-kino .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-kino .defaultChannelBackgroundColor,
+.smartphone .layout_stars-kino .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-kino .flickity-prev-next-button,
+.contentSlider.console .layout_stars-kino .storyPreTitle,
+.contentSlider.console .layout_stars-kino .storyNumber {
+	background-color: #c9542f;
+}
+

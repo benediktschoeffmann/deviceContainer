@@ -1,0 +1,270 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.contentBox.console {
+    margin-bottom: 10px;
+}
+
+
+.contentBox.console .headlineBox {
+    margin: 0 -10px 10px;
+}
+.contentBox.console .headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.contentBox.console .headline a,
+.contentBox.console .headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.contentBox.console .story {
+    display: block;
+    width: 100%;
+    display: none;
+}
+.contentBox.console .story {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.contentBox.console .story:first-child {
+    position: static;
+}
+
+
+.contentBox.console .story .imageContainer {
+    /* aspect ratio 2:1 */
+    width: 100%;
+    padding-bottom: 50%;
+    /*padding-bottom: 62.58%;*/
+    position: relative;
+}
+.contentBox.console .story .imageContainer img {
+    display: block;
+    background-color: #d5d5d5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    /*height: auto;*/
+}
+
+.tabbedBox.madonna .contentBox.console .story .imageContainer {
+    /*padding-bottom: 62.58%;*/
+}
+
+.tabbedBox.madonna .contentBox.console .story .imageContainer img {
+    height: auto;
+}
+
+.contentBox.console .storyText {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*background-color: #000;*/
+    /*background-color: rgba(0,0,0,.3);*/
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
+    overflow: hidden;
+}
+.contentBox.console .storyText.noShadow {
+    background: transparent;
+}
+.contentBox.console .storyPreTitle,
+.contentBox.console .storyTitle,
+.contentBox.console .storyLeadText {
+    color: #fff;
+    display: block;
+}
+.contentBox.console .storyPreTitle {
+    /*font-size: 1rem;*/
+    font-size: 0.7rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding: 0 6px;
+    margin: 0;
+    background-color: #d0113a;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.contentBox.console .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-size: 1.8125rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+.contentBox.console .storyLeadText {
+    /*font-family: "Open Sans";*/
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+
+
+/*
+.contentBox.console .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 10;
+}
+*/
+.contentBox.console .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+.contentBox.console .storyAdvertisement {
+    font-size: .625rem;
+    font-weight: 400;
+    padding: 2px 6px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    z-index: 10;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+}
+
+
+.contentBox.console .flickitySlider {
+    display: none;
+    padding-bottom: 2px;
+    background-color: #f2f2f2;
+}
+.contentBox.console .flickitySlider.flickity-enabled {
+    display: block;
+}
+.contentBox.console .flickity-enabled .story {
+    display: block;
+}
+
+
+.contentBox.console .flickity-prev-next-button {
+    display: none;
+    background-color: #d0113a;
+}
+.contentBox.console .flickity-prev-next-button .arrow {
+    fill: #ffffff;
+}
+.contentBox.console .flickity-enabled .flickity-prev-next-button {
+    display: block;
+}
+.contentBox.console .flickity-page-dots {
+    position: static;
+    padding: 4px 0;
+}
+
+
+.contentBox.console .flickitySlider.flickity-enabled {
+    display: block;
+    padding-bottom: 40px;
+}
+.contentBox.console .flickity-enabled .flickity-prev-next-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: auto;
+    bottom: -12px;
+}
+
+.smartphone.layout_gesund24 .contentBox.console .storyPreTitle,
+.smartphone.layout_gesund24 .contentBox.console .flickity-prev-next-button {
+    background-color: #3194dd;
+}
+
+.smartphone.layout_kochen .contentBox.console .storyPreTitle,
+.smartphone.layout_kochen .contentBox.console .flickity-prev-next-button,
+.smartphone.layout_cooking24 .contentBox.console .storyPreTitle,
+.smartphone.layout_cooking24 .contentBox.console .flickity-prev-next-button {
+    background-color: #a10f42;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyPreTitle,
+.smartphone.layout_madonna .contentBox.console .flickity-prev-next-button {
+    background-color: #cc054a;
+}
+
+.smartphone.layout_games24 .contentBox.console .storyPreTitle,
+.smartphone.layout_games24 .contentBox.console .flickity-prev-next-button {
+    background-color: #000;
+}
+
+.smartphone.layout_business .contentBox.console .storyPreTitle,
+.smartphone.layout_business .contentBox.console .flickity-prev-next-button {
+    background-color: #174584;
+}
+
+/* Madonna - Konsole Schriftanpassungen, Design wie Deskopversion */
+.smartphone.layout_madonna .contentBox.console .storyPreTitle {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle,
+.smartphone.layout_madonna .contentBox.console .storyTitle span {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle {
+    border-left: 5px solid #fff;
+    overflow: hidden;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle span {
+    color: #000;
+    background-color: #fff;
+    white-space: pre-wrap;
+
+    padding: 0 5px 0 0;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyText {
+    background: transparent;
+}

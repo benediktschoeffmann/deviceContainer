@@ -1,0 +1,74 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.storySocialMedia {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+.storySocialMedia.loaded {
+    opacity: 1;
+}
+
+.storySocialMedia .mail-button {
+    margin-right: 5px;
+    display: block;
+    background-color: #bababa;
+}
+
+.storySocialMedia .mail-button:hover {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+    outline-offset: -1px;
+    color: inherit;
+}
+
+.storySocialMedia .at-share-btn {
+    position: relative;
+    float: left;
+    display: block !important;
+    width: 15vw !important;
+    height: 15vw !important;
+    border-radius: 3px !important;
+}
+
+.storySocialMedia .at-share-btn svg {
+    width: 100% !important;
+    height: 100% !important;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.storySocialMedia .mail-button.at-share-btn svg {
+    width: 80% !important;
+    height: 80% !important;
+    padding: 20% 0 0 20%;
+
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+
+    fill: #fff;
+}
+
+
+.bnApp .oe24AddThis {
+    display: none;
+}
+
+

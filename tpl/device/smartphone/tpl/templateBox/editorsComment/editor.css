@@ -1,0 +1,67 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.editorsComment .story {
+	width: 50%;
+}
+
+.editorsComment .editorsImage {
+	width: 60px;
+	height: 72px;
+	display: table-cell;
+	vertical-align: bottom;
+}
+.editorsComment .editorsImage img {
+	vertical-align: bottom;
+}
+.editorsComment .editorsTop2 {
+	display: table-cell;
+	vertical-align: bottom;
+	height: 72px;
+}
+					
+.editorsComment .editorTextTopTitle {
+	display: block;
+
+	font-size: .75rem;
+	line-height: 1.1;
+	color: #262626;
+	
+	margin: 0 2px 1px 2px;
+	height: 28px;
+	overflow: hidden;
+}
+
+.editorsComment .editorTextName {
+	font-size: 0.8rem;
+	line-height: 1.1;
+	padding: 4px 6px;
+	display: block;
+	color: #fff;
+	background-color: #d0113a;
+	font-weight: 700;
+
+	width: 100%;
+}
+
+.editorsComment .editorCommentBottom {
+	display: block;
+
+	color: #010101;
+	overflow: hidden;
+	
+	font-size: 1rem;
+	line-height: 1.1;
+	font-weight: 700;
+
+	margin: 4px;
+
+	height: 53px;
+	overflow: hidden;
+
+}
+
+

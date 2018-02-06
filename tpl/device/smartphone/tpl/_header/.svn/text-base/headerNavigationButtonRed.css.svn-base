@@ -1,0 +1,40 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.navigationButton {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    background-color: #d0113a;
+    position: absolute;
+    bottom: -42px;
+    right: 6px;
+}
+.navigationButton svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.navigationButton svg:first-child {
+    display: block;
+}
+.activeNav .navigationButton svg {
+    display: block;
+}
+.activeNav .navigationButton svg:first-child {
+    display: none;
+}

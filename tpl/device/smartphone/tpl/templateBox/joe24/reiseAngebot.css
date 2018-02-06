@@ -1,0 +1,15 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone .joe24ReiseAngebot .headlineLogo {
+    display: inline-block;
+    height: 20px;
+    vertical-align: baseline;
+}
+
+.smartphone .joe24ReiseAngebot .headline {
+    padding: 2px 0 4px 10px;
+}

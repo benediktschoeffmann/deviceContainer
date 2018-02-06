@@ -1,0 +1,67 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.xlHeadLineBox.distanceTop {
+	margin-top: 10px;
+}
+
+.xlHeadLineBox.distanceBottom {
+	margin-bottom: 10px;
+}
+
+/* Businessicons */
+/*.xlHeadLineBox.withIcon .xlHeadLine {
+	position: relative;
+}
+.xlHeadLineBox.withIcon .xlHeadLine .xlHeadLineIcon {
+	z-index: 5;
+	position: absolute;
+}
+
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlHeadLineIcon {
+	margin-left: -10px;
+	top: -8px;
+}
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlHeadLineIcon img{
+	height: 45px;
+}
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlText {
+	padding-left: 60px;
+}
+
+
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlHeadLineIcon {
+	top: -8px;
+}
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlHeadLineIcon img{
+	height: 45px;
+}
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlText {
+	padding-left: 60px;
+}
+
+
+
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlHeadLineIcon {
+	top: -8px;
+}
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlHeadLineIcon img{
+	height: 45px;
+}
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlText {
+	padding-left: 80px;
+}
+
+
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlHeadLineIcon {
+	top: -8px;
+}
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlHeadLineIcon img{
+	height: 45px;
+}
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlText {
+	padding-left: 60px;
+}*/

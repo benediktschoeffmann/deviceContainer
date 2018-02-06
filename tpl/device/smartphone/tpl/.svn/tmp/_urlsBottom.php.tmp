@@ -1,0 +1,41 @@
+<?
+
+// Die Variable MUSS $js heissen !!!
+
+$js = array(
+
+    // jwplayer setup braucht jQuery :(
+    array(1, 'oe24.oe24.__splitArea.js.v3.jquery.jquery_1_11_0'),
+
+    // array(1, 'oe24.oe24.device.smartphone.assets.vendor.flickity.1_2_1.flickity_pkgd'),
+    // array(1, 'oe24.oe24.device.smartphone.assets.vendor.flickity.2_0_3.flickity_pkgd'),
+    // array(1, 'oe24.oe24.device.smartphone.assets.vendor.flickity.2_0_4.flickity_pkgd'),
+    array(1, 'oe24.oe24.device.smartphone.assets.vendor.flickity.2_0_5.flickity_pkgd'),
+    array(1, 'oe24.oe24.device.smartphone.assets.js.flickitySlider'),
+
+    // array(1, 'oe24.oe24.device.smartphone.assets.vendor.responsivelyLazy.responsivelyLazy'),
+
+    array(1, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
+    array(1, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+
+    // ----------------------------------------------------------------
+
+    array(1, 'oe24.oe24.device.smartphone.assets.js.helper'),
+    array(1, 'oe24.oe24.device.smartphone.tpl._navigationMain.navigationMain'),
+    // array(1, 'oe24.oe24.device.smartphone.tpl.consoleBox.consoleBox'),
+
+    // ----------------------------------------------------------------
+
+    // (bs) 2016-12-20 preparing for OEWA-Call
+    array(1, '_shared.1_0.tracking.oewa.v2.oewaTracking'),
+
+    // http://desmonding.me/zooming/
+    // https://github.com/kingdido999/zooming
+    // https://github.com/kingdido999/zooming/releases
+    array(1, 'oe24.oe24.device.smartphone.assets.vendor.zooming.0_8_2.zooming'),
+    // (ws) 2016-12-23
+    array(1, 'oe24.oe24.device.smartphone.assets.js.zoomingInit'),
+
+    // (bs) 2016-01-24 AddThis Einbindung und Fade-In
+    array(1, 'oe24.oe24.device.smartphone.assets.js.addThis'),
+);

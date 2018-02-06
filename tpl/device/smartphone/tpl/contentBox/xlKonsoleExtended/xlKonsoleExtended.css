@@ -1,0 +1,189 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/*
+.xlKonsoleExtended .headlineBox {
+    margin: 0 -10px 10px;
+}
+.xlKonsoleExtended .headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.xlKonsoleExtended .headline a,
+.xlKonsoleExtended .headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
+
+
+.xlKonsoleExtendedStories {
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+
+.xlKonsoleExtended.marginTop {
+    margin-top: 10px;
+}
+.xlKonsoleExtended.marginBottom {
+    margin-bottom: 10px;
+}
+
+
+.xlKonsoleExtended img {
+    width: 100%;
+}
+
+
+.xlKonsoleExtended .firstStory,
+.xlKonsoleExtended .nextStory {
+    display: block;
+    margin-bottom: 10px;
+}
+.xlKonsoleExtended .firstStory {
+    width: 100%;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer,
+.xlKonsoleExtended .nextStory .textContainer {
+    float: left;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer {
+    width: 30%;
+    margin-right: 4%;
+    padding: 2px 0 0 0 !important;
+}
+.xlKonsoleExtended .nextStory .textContainer {
+    width: 66%;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer img {
+    position: static;
+    height: auto;
+}
+
+
+.xlKonsoleExtended .firstStory .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    line-height: 1;
+    margin: 8px 0 0;
+}
+.xlKonsoleExtended .firstStory .textContainer .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    font-size: 1.8125rem;
+    letter-spacing: -1pt;
+    line-height: 1;
+    height: auto;
+}
+.xlKonsoleExtended .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1px 0 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlKonsoleExtended .textContainer .storyTitle {
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    /*line-height: 1.2;*/
+    /*height: 12vw;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*background-color: #ad5;*/
+
+    font-family: "Open Sans Condensed";
+    line-height: 1;
+}
+.xlKonsoleExtended .textContainer .storyLeadText {
+    /*font-size: .875rem;*/
+    font-size: .75rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+/* - - - - - - */
+
+
+/* Image Format 1:1 fuer die .firstStory */
+/* (ws) 2017-01-31 auf Wunsch von Niki werden ALLE Images im Format 2:1 gezeigt, ausser in der Konsole */
+/* (ws) 2017-02-16 auch in der Konsole werden die Images im Format 2:1 gezeigt */
+/* daher -> padding-bottom: 100% auskommentiert */
+
+.xlKonsoleExtended .firstStory:not(.overwrite) .imageContainer {
+    /*padding-bottom: 100%;*/
+    padding-bottom: 62.58% !important;
+}
+.xlKonsoleExtended .firstStory.overwrite .imageContainer {
+    position: static;
+    padding-bottom: 0px !important;
+}
+.xlKonsoleExtended .firstStory.overwrite .imageContainer img {
+    position: static;
+}
+.xlKonsoleExtended .firstStory {
+    position: relative;
+}
+
+
+.xlKonsoleExtended .firstStory .textContainerOverlay {
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    */
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 70%);
+}
+.xlKonsoleExtended .firstStory .textContainerOverlay .storyPreTitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 6px;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    display: inline-block;
+}
+.xlKonsoleExtended .firstStory .textContainerOverlay .storyTitle {
+    color: #fff;
+}
+

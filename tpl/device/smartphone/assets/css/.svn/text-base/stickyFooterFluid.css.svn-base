@@ -1,0 +1,27 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+html,
+body,
+.wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.wrapper {
+    display: table;
+    width: 100%;
+}
+header,
+footer,
+.container {
+    display: table-row;
+}
+/* height 1px on the header and footer is the sticky footer technique */
+header,
+footer {
+    height: 1px;
+}

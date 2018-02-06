@@ -1,0 +1,90 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone.layout_business .aktienkurs {
+	font-size: 0.875rem;
+}
+.smartphone.layout_business .aktienkurs .contentContainer {
+	padding-top: 0;
+}
+.smartphone.layout_business .aktienkurs .atxHeadline  h2 {
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeader {
+	padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderCaption {
+	margin-right: 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderCaption,
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderData {
+	float: left;
+
+	margin-bottom: 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderTitel {
+	font-weight: 700;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderTitel,
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderText {
+	display: block;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody {
+	clear: both;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody .kursHeader {
+	padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody .kursText {
+	color: #002f71;
+	margin-right: 5px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs {
+	margin-bottom: 10px;
+	float: left;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .datum {
+	font-size: 0.875rem;
+	margin-top: 4px;
+	float: right;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kursImage {
+	padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs .down {
+	color: #df011b;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs .up {
+	color: #01a60a;
+}
+.smartphone.layout_business .aktienkurs  .atxBody img.teleTrader {
+	padding: 5px 5px 5px 15px;
+	background-color: #e7eaee;
+	margin-bottom: 28px;
+	max-width: 100%;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data:last-child {
+	border-bottom: none;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data .key {
+	float: left;
+	padding-left: 10px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data .value {
+	float: right;
+	font-weight: bold;
+	padding-right: 10px;
+}
+

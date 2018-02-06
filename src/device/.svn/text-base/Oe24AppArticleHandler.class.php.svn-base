@@ -1,0 +1,253 @@
+<?php
+/**
+ *
+ */
+class Oe24AppArticleHandler {
+    private $app;
+    private $defaultOewaTag;
+    private $portal;
+
+    public function __construct(Oe24App $app) {
+        $this->app              = $app;
+        $this->defaultOewaTag   = $this->app->getConfig('defaultOewaTag');
+        $this->portal          = Portal::getPortalByName('oe24', false);
+    }
+
+    public function getVideoDataAsArticle(Video $video) {
+        $image = $video->getFirstRelatedImage();
+        if (!$image) {
+            return null;
+        }
+
+        $basicData = $this->getBasicData($video, false);
+        $videoData = $this->getVideoData($video);
+
+        return array(
+            'typ'     => 'video',
+            'article' => array_merge($basicData, $videoData),
+            );
+    }
+
+    /**
+     * Get Data of Article
+     * @param  oe24.core.Text  $article
+     * @return array
+     */
+    public function getArticleData(TextualContent $article) {
+        if (!$article) {
+            return array();
+        }
+
+        $oewaPath  = $this->getOewaTag($article);
+        $basicData = $this->getBasicData($article);
+
+        $image          = $article->getFirstRelatedImage();
+        $imageUrl       = ($image) ? $image->getFileUrl() : lp('image', 'empty.gif');
+
+        // entgeltlicher Content
+        $advertorial = ($article->getOptions(true, true)->get('EntgeltlicherContent')) ? true : false;
+
+        $articleData = array(
+            'image'            => $imageUrl,
+            'advertorial'      => $advertorial,
+            'pre_ad'           => $this->app->getAdUrl('frontpage', 'artikel_top'),
+            'post_ad'          => $this->app->getAdUrl('frontpage', 'artikel_bottom'),
+        );
+
+        $returnValue = array(
+            'typ'              => 'article',
+            'article'          => array_merge($basicData, $articleData),
+        );
+
+        $media = $this->getMediaData($article);
+        if (!empty($media)) {
+            $returnValue['article']['media'] = $media;
+        }
+
+        return $returnValue;
+    }
+
+    private function getOewaTag(TextualContent $content) {
+        $homeChannel = $content->getHomeChannel();
+        if ($homeChannel && $content->getHomeChannel()->getOewaTag(true)) {
+            return $content->getHomeChannel()->getOewaTag(true)->getUrlSchemaName();
+        }
+        return $this->$defaultOewaTag;
+    }
+
+    private function getLeadText(TextualContent $content, $replace = false) {
+        $leadText = trim($content->getLeadText(true, true));
+        if ($replace) {
+            $pattern = '/(<br\ ?\/?>)+/iusU';
+            $leadText = preg_replace($pattern, '', $leadText);
+            $pattern = '/<h[1-6].*?>(.*?)<\/h[1-6]>/isu';
+            $leadText = preg_replace($pattern, '${1}', $leadText);
+            $pattern = '/<p.*?>(.*?)<\/p>/isu';
+            $leadText = preg_replace($pattern, '${1}', $leadText);
+            $leadText = preg_replace('/\s*$/iusU','',$leadText);
+            $leadText = trim(str_replace(array("\n\r","\n","\r"), ' ', $leadText));
+        }
+        return $leadText;
+    }
+
+    private function getBasicData(TextualContent $content, $withBodyText = true) {
+        $id         = $content->getId();
+        $oewaTag    = $this->getOewaTag($content);
+        $leadText   = $this->getLeadText($content, true);
+        $title      = $content->getTitle(true);
+        $preTitle   = $content->getPreTitle(true);
+        $contentUrl = $content->getUrl(true);
+        $image = $content->getFirstRelatedImage();
+        $imageUrl = ($image) ? $image->getFileUrl() : lp('image', 'empty2x1.png');
+
+        $returnValue = array(
+            'id'           => $id,
+            'oewaPath'     => trim($oewaTag),
+            'headline'     => trim($title),
+            'sub_headline' => trim($preTitle),
+            'abstract'     => $leadText ? strip_tags($leadText) : '',
+            'url'          => trim($contentUrl),
+            'image_url'    => $imageUrl,
+            'publishDate'  => trim($content->getPublishDate()->__toString()),
+        );
+
+        if ($withBodyText) {
+            $returnValue['bodyText'] = $this->getBodyText($content);
+        }
+
+        return $returnValue;
+    }
+
+    private function getBodyText(TextualContent $content) {
+        $bodyText   = templateAsString(
+            'oe24.oe24.device.oe24app.tpl.article.article',
+            array('device' => $this->app,
+                  'article'=> $content,
+                  'portal' => $this->portal,
+                  'layout' => 'smartphone')
+            );
+
+        // remove html comment tags
+        $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);
+
+        // and encode it
+        $bodyText = $this->encodeBodyText($bodyText);
+
+        return $bodyText;
+    }
+
+    /**
+     * convenience method to encode the bodyText
+     * @param  string $html the processed body text
+     * @return the encoded bodyText
+     */
+    private function encodeBodyText($bodyText) {
+        return base64_encode($bodyText);
+    }
+
+    private function getVideoData(Video $video) {
+        $arr = array();
+        $mp4ID = $video->getVideoId();
+        if (strpos($mp4ID, '://') > 0) {
+            $arr['videoUrl'] = $mp4ID;
+        } else {
+            $arr['videoUrl'] = 'http://vs-pd10.sf.apa.at/vs_oe24/' . $mp4ID . '.mp4'; // APA MP4
+        }
+        $credit = trim($video->getFrontendSource()->getName());
+        $arr['credit'] = trim($credit, '.');
+        $arr['duration'] = ($video->getVideoLength()) ? $video->getVideoLength() : '00:00';
+        $arr['canonicalUrl'] = $video->getUrl();
+
+        try {
+            $isLivestream = $video->getIsLivestream();
+        } catch (Exception $e) {
+            $isLivestream = NULL;
+        }
+        $arr['live'] = (!$isLivestream) ? false : $isLivestream;
+        $preRollUrl = $this->app->getVideoPreRollUrl($video);
+        if (false !== $preRollUrl) {
+            $arr['ads'] = true;
+            $arr['preroll'] = $preRollUrl;
+            $arr['autostart'] = true;
+        } else {
+            $arr['ads'] = false;
+        }
+
+        $image    = $video->getFirstRelatedImage();
+        $imageUrl = ($image) ? $image->getFileUrl() : lp('image', 'empty.gif');
+        $arr['previewUrl'] = $imageUrl;
+
+        return $arr;
+    }
+
+    /**
+     * Injects MediaData
+     * @param  [type] $article [description]
+     * @return
+     */
+    public function getMediaData($article) {
+        $relatedData = array();
+        $articleId = $article->getId();
+        $query = new spunQ_SelectQuery();
+        $query->setProperties(array(
+            'relatedContent._value.id'
+            ));
+
+        $query->setType('oe24.core.Content');
+        $query->setConditions(array(
+            'id = {contentId}'
+            ));
+        $query->setReturnType(spunQ_SelectQuery::RETURN_ARRAY);
+
+        $relatedIds = $query->execute(array(
+            'contentId' => $articleId,
+            ));
+
+        $objects = array();
+        foreach ($relatedIds as $key => $relatedId) {
+            $r_id = $relatedId['relatedContent._value.id'];
+            if (!$r_id) {
+                continue;
+            }
+            $object = db()->getById($r_id, 'oe24.core.Content', false);
+            if ($object) {
+                $data = array();
+                $addData = false;
+                switch (true) {
+                    case $object instanceof Image:
+                        $imageId = (string) $object->getId();
+                        $imageUrl = $object->getFileUrl();
+
+                        $data['typ'] = 'image';
+                        $data['image'] = array(
+                            'id' => $imageId,
+                            'url' => $imageUrl,
+                        );
+
+                        $addData = true;
+                        break;
+                    case $object instanceof Video:
+                        $arr = $this->getVideoData($object);
+                        $arr['url'] = $arr['videoUrl'];
+                        unset($arr['videoUrl']);
+                        $data = array(
+                            'typ' => 'video',
+                            'video' => $arr,
+                            );
+
+                        $addData = true;
+
+                        break;
+                    default:
+                        continue;
+                }
+
+                if ($addData) {
+                    $relatedData[] = $data;
+                }
+            }
+        }
+        return $relatedData;
+    }
+
+}

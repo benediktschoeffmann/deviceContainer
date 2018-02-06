@@ -1,0 +1,97 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone.layout_business .headlineBox .crestImage {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+    background: transparent url('/images/oe2016/wappen/bundeslaenderWappen2.png') no-repeat 0 0;
+
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceBurgenland {
+    background-position: 0 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceKaernten {
+    background-position: -32px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceNiederoesterreich {
+    background-position: -64px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceOberoesterreich {
+    background-position: -96px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceSalzburg {
+    background-position: -128px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceSteiermark {
+    background-position: -160px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceTirol {
+    background-position: -192px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceVorarlberg {
+    background-position: -224px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceWien {
+    background-position: -256px 0;
+}
+
+/* Color Schema */
+
+.smartphone.layout_business .colorSchema01 .headlineBox .headline {
+    background-color: #c30ac6;
+    background-image: linear-gradient(to right, #c30ac6 65%, #f128f4);
+}
+.smartphone.layout_business .colorSchema02 .headlineBox .headline {
+    background-color: #ef107d;
+    background-image: linear-gradient(to right, #ef107d 65%, #f458a4);
+}
+.smartphone.layout_business .colorSchema03 .headlineBox .headline {
+    background-color: #d0113a;
+    background-image: linear-gradient(to right, #d0113a 65%, #dd1010);
+}
+.smartphone.layout_business .colorSchema04 .headlineBox .headline {
+    background-color: #f47b0c;
+    background-image: linear-gradient(to right, #f47b0c 65%, #f7a355);
+}
+.smartphone.layout_business .colorSchema05 .headlineBox .headline {
+    background-color: #f4a90c;
+    background-image: linear-gradient(to right, #f4a90c 65%, #f7c355);
+}
+.smartphone.layout_business .colorSchema06 .headlineBox .headline {
+    background-color: #f4d80c;
+    background-image: linear-gradient(to right, #f4d80c 65%, #f7e455);
+}
+.smartphone.layout_business .colorSchema07 .headlineBox .headline {
+    background-color: #dbec0c;
+    background-image: linear-gradient(to right, #dbec0c 65%, #e9f64e);
+}
+.smartphone.layout_business .colorSchema08 .headlineBox .headline {
+    background-color: #65d40b;
+    background-image: linear-gradient(to right, #65d40b 65%, #e9f64e);
+}
+.smartphone.layout_business .colorSchema09 .headlineBox .headline {
+    background-color: #4d0ac6;
+    background-image: linear-gradient(to right, #4d0ac6 65%, #7128f4);
+}
+.smartphone.layout_business .colorSchema10 .headlineBox .headline {
+    background-color: #0ac65e;
+    background-image: linear-gradient(to right, #0ac65e 65%, #8cf537);
+}
+.smartphone.layout_business .colorSchema11 .headlineBox .headline {
+    background-color: #0a7fc6;
+    background-image: linear-gradient(to right, #0a7fc6 65%, #28a7f4);
+}
+.smartphone.layout_business .colorSchema12 .headlineBox .headline {
+    background-color: #0a2dc6;
+    background-image: linear-gradient(to right, #0a2dc6 65%, #284ef4);
+}
+
+

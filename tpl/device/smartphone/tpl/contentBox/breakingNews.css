@@ -1,0 +1,188 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* keine Abstände zu nachfolgendem Objekt */
+.breakingNewsWrap + .standardHeadline,
+.breakingNewsWrap + .xlBox,
+.breakingNewsWrap + .xlKonsoleExtended.marginTop,
+.breakingNewsWrap + .xlKonsole.marginTop {
+	margin-top: 0;
+}
+.breakingNewsWrap + .xlBox .xlBoxStories {
+	padding-top: 0;
+}
+
+.breakingNewsContent {
+	margin-bottom: 5px;
+}
+
+.breakingNewsContent .breakingNewsAktuell {
+	display: block;
+	width: 100%;
+	background-color: #d0013a;
+	margin-bottom: 10px;
+	padding: 2px 10px 4px 10px;
+	color: #fff;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: "Open Sans Condensed";
+	font-size: 1.375rem;
+	font-weight: 700;
+	letter-spacing: -1pt;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.breakingNewsContent .breakingNewsArrow {
+	display: none;
+}
+
+.breakingNewsContent .breakingNewsHeadline {
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	/*padding: 5px 10px;*/
+	padding: 0 10px;
+	color: #d0113a;
+
+	/*background-color: #faf8e7;*/
+	/*background-image: -webkit-linear-gradient(#f7f6f4 0px, #fdfcdb 100%);*/
+	/*background-image: -o-linear-gradient(#f7f6f4 0px, #fdfcdb 100%);*/
+	/*background-image: linear-gradient(#f7f6f4 0px, #fdfcdb 100%);*/
+	/*box-shadow: 0 3px 7px 1px rgba(0,0,0,0.1);*/
+
+}
+
+/* (db) 2017-04-14 breakingNews-Box basierend auf expressen.se */
+
+.breakingNewsWrap {
+	margin-top: -10px;
+	width: 100%;
+	overflow: hidden;
+}
+.breakingNewsWrap.spaceBeforeBox {
+	margin-top: 15px;
+}
+.breakingNewsWrap.spaceAfterBox {
+	margin-bottom: 15px;
+}
+
+.breakingNewsBox {
+	height: 50px;
+	width: 100%;
+
+	background-color: #fdf001;
+
+	padding-left: 100%;
+	border: none;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+.breakingNewsBox .breakingNewsText {
+	font-weight: 900;
+	color: #000;
+	line-height: 50px;
+	text-align: center;
+
+	height: 100%;
+	margin: 0;
+	padding-right: 100%;
+
+	white-space: nowrap;
+	display: inline-block;
+}
+
+
+.breakingNewsBox .breakingNewsText.speed_slow {
+	/* Apply animation to this element */
+	-moz-animation: ticker 35s 0.0s linear infinite;
+	-webkit-animation: ticker 35s 0.2s linear infinite;
+	animation: ticker 35s 0.0s linear infinite;
+}
+.breakingNewsBox .breakingNewsText.speed_normal {
+	/* Apply animation to this element */
+	-moz-animation: ticker 30s 0.0s linear infinite;
+	-webkit-animation: ticker 30s 0.2s linear infinite;
+	animation: ticker 30s 0.0s linear infinite;
+}
+.breakingNewsBox .breakingNewsText.speed_fast {
+	/* Apply animation to this element */
+	-moz-animation: ticker 25s 0.0s linear infinite;
+	-webkit-animation: ticker 25s 0.2s linear infinite;
+	animation: ticker 25s 0.0s linear infinite;
+}
+
+
+.breakingNewsElement {
+	display: inline-block;
+}
+/* Move it (define the animation) */
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-moz-keyframes ticker {
+	0% {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+.breakingNewsBox span.teaser {
+	font-size: 1.375rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+
+	padding: 0 2px;
+}
+.breakingNewsBox span.headline {
+	font-weight: 900;
+}
+
+
+.isSafari .breakingNewsBox,
+.isSafari .breakingNewsBox a,
+.isSafari .breakingNewsBox span.teaser,
+.isSafari .breakingNewsBox span.headline {
+    font-family: sans-serif;
+}
+.isSafari .breakingNewsBox span.headline {
+    font-family: sans-serif;
+}

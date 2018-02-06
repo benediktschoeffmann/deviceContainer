@@ -1,0 +1,179 @@
+<?php
+/**
+* @collector noauto
+*/
+?>
+
+/*
+header {
+                background-color: #1fa677;
+}
+
+.channel.title {
+                background-color: #1fa677;
+}
+.channel.title.mehr {
+                background-color: #1fa677;
+}
+
+#sidebarButtonFixed {
+                background-color: #1fa677;
+}
+*/
+
+.standardHeadline.sport h2 {
+    padding: 0 10px;
+}
+/* (bs) 2016-05-12*/
+/* Zusatzklassen fuer mobile Darstellung - von Martin. */
+.apaSportwidgets .live-ticker-header h2 {
+    text-align: left;
+}
+
+.apaSportwidgets .live-ticker-tabbed-wrapper li {
+    text-align: center;
+}
+
+.apaSportwidgets .tabbed-wrapper ul {
+    text-align: left;
+}
+
+.apaSportwidgets .sp24-landing-tablecell {
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.apaSportwidgets .spielplan-datum {
+    line-height: 16px;
+    text-align: left;
+    font-size: 11px;
+}
+
+.apaSportwidgets .legende-wrapper ul li {
+    font-size: 14px;
+    text-align: left;
+}
+/* addendum 2016-06-06 */
+.apaSportwidgets .heute-live .inline-heading {
+    font-size: 22px !important;
+}
+/* addendum 216-06-16 */
+.apaSportwidgets .header-heute-live {
+    font-weight: bold !important;
+}
+
+.apaSportwidgets .sp24-landing-container h2,
+.apaSportwidgets .dropdown .btn {
+    font-weight: bold !important;
+}
+.apaSportwidgets .heute-live-dropdown h2 {
+    line-height: 1.5 !important;
+}
+
+@media only screen and (max-device-width: 767px) and (min-device-width: 300px), only screen and (max-width: 767px) and (min-width: 300px) {
+    .apaSportwidgets .sp24-landing-container h2 {
+        text-align: left;
+    }
+}
+
+/* (bs) end */
+
+
+/* (ws) Euro 2016 Teilnehmer Box */
+
+/*.channelsList.emTeilnehmer .channelListHeader {
+    background-color: #1fa677;
+}
+.main[role="main"] .defaultHtmlBox .channelsListHeadline {
+    color: #575757;
+}*/
+
+.apaSportwidgets .apaNavigation li {
+    line-height: 1.6;
+}
+
+.sportdaten-center select.sportdatenKategorie, .sportdaten-center select.sportdatenSubKategorie {
+    padding: 0.3rem;
+}
+
+.apaSportwidgets #apaLiveContent #apaTextTickerContent, 
+.apaSportwidgets #apaLiveContent.col-group-liveticker-content,
+.apaSportwidgets #apaLiveContent.spielfeld-aufstellung-wrapper,
+.apaSportwidgets #calendarapaContent,
+.apaSportwidgets #ligateamapaNav,
+.apaSportwidgets .sp24-landing-table .tabelle-row-cell {
+    text-align: center;
+}
+
+.apaSportwidgets .dropdown ul li {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.apaSportwidgets .dropdown ul li a {
+    padding: 5px 0;
+}
+
+.apaSportwidgets .header, 
+.apaSportwidgets .header-minus, 
+.apaSportwidgets .live-zwischen-stand,
+.apaSportwidgets .sp24-landing-tableheading,
+.apaSportwidgets .ergebnis-tabelle-header-cell .oe24-ergebnis-tabelle-zwischen-header,
+.apaSportwidgets .oe24-ergebnis-tabelle-header,
+.apaSportwidgets .oe24-medaillen-tabelle-medaillen-header,
+.apaSportwidgets .oe24-medaillen-tabelle-header,
+.apaSportwidgets .olymp-ticker-btn,
+.apaSportwidgets .kalender-auswahl-wrapper #calendarapaCalendar .tag-zahl,
+.apaSportwidgets .sp24-landing-table .tabelle-header-verein,
+.apaSportwidgets .sp24-landing-table .big-header-wrapper {
+    font-weight: 700;
+}
+
+
+/* NAVIGATION SPORTDATEN-CENTER */
+
+.row .sportdaten-center {
+    background-color: #22b480;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.row .sportdaten-center select {
+    margin: 0 3%;
+    width: 44%;
+    float: left;
+}
+
+.row .sportdaten-center.fussball,
+.row .sportdaten-center.fussball-europacup,
+.row .sportdaten-center.nationalteam,
+.row .sportdaten-center.euro-2106 {
+    background-color: #22b480;
+}
+
+.row .sportdaten-center.wintersport,
+.row .sportdaten-center.ski-wm,
+.row .sportdaten-center.nordische-wm {
+    background-color: #0052b3;
+}
+
+.row .sportdaten-center.us-sports {
+    background-color: #007edc;
+}
+
+.row .sportdaten-center.motorsport {
+    background-color: #1d1d1b;
+}
+
+/* --------------------------------- */
+
+/* apa-Content */
+
+.layout_sport .articleDefault .apaOuterFrame #rankingFormula1apaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingMotoGPapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkiAlpinapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkiAlpinDamenapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkispringenHerrenapaContent {
+    max-height: 250px;
+    overflow-y: auto;
+}

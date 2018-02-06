@@ -1,0 +1,103 @@
+<?php
+/**
+ * aus TemplateOptions des Templates 'oe2016joe24ReiseAngebot' Angebote von joe24 abfragen
+ *
+ * @return array
+ */
+
+
+function getJoe24ReiseAngebote($templateOptions) {
+
+    $offers = array();
+
+    for ($i=1; $i<=4; $i++) {
+
+        $currentAngebot = false;
+
+        $optionArtikelId = 'Angebot' . $i . '-ArtikelId';
+        $artikelId = trim($templateOptions->get($optionArtikelId));
+        $artikelId = ($artikelId) ? $artikelId : false;
+
+        // ------------------------------------------
+
+        $optionVeranstalterUrl = 'Angebot' . $i . '-Url';
+        $veranstalterUrl = trim($templateOptions->get($optionVeranstalterUrl));
+        $veranstalterUrl = ($veranstalterUrl) ? $veranstalterUrl : false;
+        // j.oe24.at url?
+        $veranstalterUrl = ($veranstalterUrl && mb_substr(mb_strtolower($veranstalterUrl),0,48) == 'http://j.oe24.at/hub/ajax/getnewsletterhotel.php') ? $veranstalterUrl : false;
+
+        // ------------------------------------------
+
+        // via Artikel-Id Produkt finden
+        if ($artikelId) {
+            $url = "http://j.oe24.at/hub/ajax/getJoeHotel.php?artId=" . $artikelId;
+            // $url = "http://j.oe24.at/hub/ajax/getJoeHotel.php?artId=12859";
+            $response = spunQ_HttpBrowser::sendRequest($url, 5, false)->getBody();
+            $response = json_decode($response, true);
+
+            if ($response) {
+
+                $hotel = (isset($response['hotelname']) && mb_strlen($response['hotelname'])) ? $response['hotelname'] : false;
+                $hotelcategory = (isset($response['hotelkategorie']) && mb_strlen($response['hotelkategorie'])) ? $response['hotelkategorie'] : false;
+                $categoryAlias = (isset($response['cat_alias']) && mb_strlen($response['cat_alias'])) ? $response['cat_alias'] : false;
+                $alias = (isset($response['alias']) && mb_strlen($response['alias'])) ? $response['alias'] : false;
+
+                $country = (isset($response['land']) && mb_strlen($response['land'])) ? $response['land'] : false;
+
+                if ($hotel && $hotelcategory && $categoryAlias && $alias && $country) {
+                    $title = trim($hotel . ' ' . $hotelcategory);
+                    $image = 'http://j.oe24.at/images/stories/generator/' . $artikelId . '_1_625.jpg';
+                    $url = 'http://j.oe24.at/index.php/urlaubsreisen/' . $categoryAlias . '/' . $artikelId . '-' . $alias;
+
+                    $currentAngebot = array(
+                        'pretitle' => $country,
+                        'title'    => $title,
+                        'image'    => $image,
+                        'url'      => $url,
+                    );
+                }
+
+            }
+
+        }
+    // 13019
+    // 13068
+    // 10935
+        // via Veranstalter-Url abfragen, falls noch nicht via Artikel-Id gefunden
+        if (!$currentAngebot && $veranstalterUrl) {
+
+            $response = spunQ_HttpBrowser::sendRequest($veranstalterUrl, 5, false)->getBody();
+            $response = json_decode($response, true);
+
+            if ($response) {
+
+                $name = (isset($response['name']) && mb_strlen($response['name'])) ? $response['name'] : false;
+                $stars = (isset($response['sterne']) && mb_strlen($response['sterne'])) ? $response['sterne'] . '*' : false;
+
+                $url = (isset($response['url']) && mb_strlen($response['url'])) ? $response['url'] : false;
+                $image = (isset($response['img']) && mb_strlen($response['img'])) ? $response['img'] : false;
+
+                $country = (isset($response['land']) && mb_strlen($response['land'])) ? $response['land'] : false;
+
+                if ($name && $stars && $url && $image && $country) {
+                    $title = trim ($name . ' ' . $stars);
+
+                    $currentAngebot = array(
+                        'pretitle' => $country,
+                        'title'    => $title,
+                        'image'    => $image,
+                        'url'      => $url,
+                    );
+                }
+            }
+        }
+
+        // wenn gültig, aktuelles Angebot aufnehmen
+        if ($currentAngebot) {
+            $offers[] = $currentAngebot;
+        }
+
+    }
+
+    return $offers;
+}

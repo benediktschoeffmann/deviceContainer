@@ -1,0 +1,14 @@
+Oe24app Js
+
+array(0, 'oe24.oe24.device.smartphone.assets.js.helper'),
+array(0, 'oe24.oe24.__splitArea.js.v3.jquery.jquery_1_11_0_min'),
+array(0, 'oe24.oe24.device.smartphone.assets.vendor.responsivelyLazy.responsivelyLazy'),
+array(0, 'oe24.oe24.device.smartphone.assets.vendor.flickity.2_0_5.flickity_pkgd'),
+array(0, 'oe24.oe24.device.smartphone.assets.js.flickitySlider'),
+array(0, '_shared.1_0.common.common'),
+array(0, '_shared.1_0.tracking.agtt.nst.NSTBaseAPI_min'),
+
+array(0, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
+array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+array(0, 'oe24.oe24.device.smartphone.tpl._adition.fishtank'),
+array(0, 'oe24.oe24.device.smartphone.assets.vendor.googleAnalytics.googleAnalytics'),

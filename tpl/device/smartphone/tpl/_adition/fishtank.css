@@ -1,0 +1,109 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/*
+#adition_MobileTop:before,
+#adition_MobileBottom:before {
+    content: "";
+    display: none;
+}
+*/
+
+/* ------------------------ */
+
+.adSlotAdition .fishtankCaption h2 {
+    font-size: 1rem;
+    color: #e2e2e2;
+}
+/*
+.adSlotAdition .fishtank img {
+    display: block;
+    width: 100%;
+}
+*/
+
+/* ------------------------ */
+
+.fishtank a,
+.fishtank a:hover {
+    text-decoration: none;
+}
+.fishtank,
+.fishtankContainer,
+.fishtankLink {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.fishtank {
+    position: relative;
+}
+.fishtankContainer {
+    text-align: center;
+    position: absolute;
+    clip: rect(auto, auto, auto, auto);
+}
+.fishtankLink {
+    display: block;
+    height: 100%;
+}
+.fishtankAd {
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    display: inline-block;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    /*
+    left: 50%;
+    */
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+
+.fishtankClose,
+.fishtankClose:before {
+    display: inline-block;
+}
+
+
+.fishtankClose {
+    font-family: arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    z-index: 2;
+}
+.fishtankClose:before {
+    content: "×";
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 29px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+}

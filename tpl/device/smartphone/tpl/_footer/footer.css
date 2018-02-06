@@ -1,0 +1,39 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.wrapper > .footer {
+    display: block;
+    clear: both;
+    padding: 3px 5%;
+    width: 100%;
+    background-color: #f8f8f8;
+
+/*
+    position: relative;
+    z-index: 100000;
+    border-top: #000;
+*/
+}
+
+/* ----------------------------- */
+
+.wrapper > .footer p,
+.wrapper > .footer a {
+    padding: 0;
+    margin: 0;
+    color: #999;
+}
+
+/* ----------------------------- */
+
+.footerInfo {
+    /* ... */
+}
+.footerInfo p {
+    font-size: .725rem;
+    text-align: center;
+    padding: 5px 0;
+}

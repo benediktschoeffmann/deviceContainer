@@ -1,0 +1,74 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.lexikon_leadtext p {
+	padding: 0 10px;
+	margin-bottom: 0;
+}
+.lexikon {
+	table-layout: fixed;
+	width: 95%;
+	margin: 0 10px 28px 10px;
+}
+.lexikon td {
+	padding-right: 14px;
+}
+.lexikon .lexikon_item {
+	position: relative;
+	padding: 0 0 0 22px;
+	overflow: hidden;
+}
+.lexikon .lexikon_kategorie_start {
+	margin-top: 1.75rem;
+}
+.lexikon .lexikon_kategorie,
+.lexikon .lexikon_link {
+	font-size: .875rem;
+	line-height: 1.75rem;
+}
+.lexikon .lexikon_kategorie {
+	font-size: 1.25rem;
+	font-weight: bold;
+	width: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.tabbedBox.gesund24 .lexikon .lexikon_kategorie {
+	color: #3194dd;
+}
+.tabbedBox.kochen .lexikon .lexikon_kategorie {
+	color: #a10f42;
+}
+
+.lexikon .lexikon_link {
+	font-size: .875rem;
+	text-decoration: none;
+	width: 100%;
+	padding: 0 8px;
+	display: inline-block;
+	white-space: nowrap;
+}
+.tabbedBox.gesund24 .lexikon .lexikon_link {
+	border-left: 1px solid #e6e6e6;
+}
+.tabbedBox.kochen .lexikon .lexikon_link {
+	border-left: 1px solid #a10f42;
+}
+
+.tabbedBox.gesund24 .lexikon .lexikon_link:hover {
+	color: #fff;
+	background-color: #3194dd;
+}
+.tabbedBox.kochen .lexikon .lexikon_link:hover {
+	color: #fff;
+	background-color: #a10f42;
+}

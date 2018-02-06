@@ -1,0 +1,134 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+.horoskopContent {
+    text-align: center;
+    display: block;
+    /*
+    background-image: url(<?slp('image', 'rl2014/zodiacBackground.jpg')?>);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+       -moz-background-size: 100% auto;
+         -o-background-size: 100% auto;
+            background-size: 100% auto;
+    */
+}
+
+
+.horoskopHeader {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.horoskopHeaderImage {
+    position: relative;
+}
+.horoskopHeaderImage img {
+    display: block;
+}
+.horoskopHeaderImage .emptyImage {
+    width: 0;
+    padding-bottom: 36%;
+    background-color: #fff;
+}
+.horoskopHeaderImage .realImage {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.horoskopHeaderText {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.horoskopHeaderCaption,
+.horoskopHeaderSubCaption,
+.horoskopHeaderSignName,
+.horoskopHeaderSignDate {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-weight: 700;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.horoskopHeaderCaption {
+    font-size: 6.4vw;
+}
+.horoskopHeaderSubCaption,
+.horoskopHeaderSignName,
+.horoskopHeaderSignDate {
+    font-size: 4.4vw;
+}
+.horoskopHeaderSignName {
+    font-size: 6.4vw;
+    color: #cc054a;
+}
+
+
+.horoskopBodyTop,
+.horoskopBodyText {
+    text-align: left;
+    padding: 0 10px;
+}
+.horoskopBodyTop {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+.horoskopBodyTop a {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-weight: 700;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 0 2px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #c4beb5;
+}
+.horoskopBodyTop a.active {
+    color: #cc054a;
+}
+
+
+.horoskopBodyTitle,
+.horoskopMonth {
+    display: block;
+}
+.horoskopBodyTitle {
+    font-size: 1.25rem;
+    padding: 2px 0;
+    margin: 4px 0;
+    display: block;
+    color: #cc054a;
+    /*padding: 2px 10px;*/
+    /*margin: 4px -10px;*/
+    /*color: #fff;*/
+    /*background-color: #cc054a;*/
+}
+.horoskopMonth {
+    margin: 4px 0;
+}
+
+/* (db) 2017-02-27 - verhindert zentrierte google-ads  */
+/*
+.storyAd > div > div,
+.storyAd > div > ins {
+    width: 100% !important;
+}
+*/
+

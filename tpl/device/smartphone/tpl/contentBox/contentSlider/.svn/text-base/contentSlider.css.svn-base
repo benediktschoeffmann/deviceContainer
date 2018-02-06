@@ -1,0 +1,181 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.contentSlider .storyNumber {
+    font-size: 1rem;
+    line-height: 1.65rem;
+    text-align: center;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+}
+
+/* Anpassungen für Madonna */
+.smartphone.layout_madonna .contentBox.contentSlider .flickitySlider {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText {
+    position: relative;
+    bottom: auto;
+
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText .storyTitle {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText .storyTitle span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .story .imageContainer img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Anpassungen für alle in Richtung Madonna - ausgenommen Slideshowstories */
+/*
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .flickitySlider {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText {
+    position: relative;
+    bottom: auto;
+
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText .storyTitle {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText .storyTitle span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .imageContainer img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyPreTitle {
+    font-size: 0.7rem;
+}
+*/
+
+
+/* Anpassungen für alle in Richtung Madonna - ausgenommen Slideshowstories */
+
+.smartphone .contentBox.contentSlider .flickitySlider {
+    padding: 10px 10px 50px;
+}
+.smartphone .contentBox.contentSlider .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone .contentBox.contentSlider .story .imageContainer {
+    padding-bottom: 50%;
+}
+.smartphone .contentBox.contentSlider.slideshowstory .story .imageContainer {
+    padding-bottom: 100%;
+}
+.smartphone .contentBox.contentSlider .story .imageContainer img {
+    width: 100%;
+    height: auto;
+}
+.smartphone .contentBox.contentSlider .storyText {
+    padding: 2% 0;
+    background: transparent;
+    position: static;
+    overflow: visible;
+}
+.smartphone .contentBox.contentSlider .storyText .storyPreTitle {
+    font-size: .75rem;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: block;
+}
+.smartphone .contentBox.contentSlider .storyText .storyTitle {
+    font-size: 1.1875rem;
+    letter-spacing: normal;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.smartphone .contentBox.contentSlider .storiesCounter {
+    bottom: 13px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button {
+    bottom: -7px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button.previous {
+    left: 15px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button.next {
+    right: 15px;
+}
+
+
+/* Anpassungen für Tv */
+.mobile_tv .contentBoxStory,
+.layout_tv .contentBoxStory {
+    margin: 0 0 3px 0;
+    display: table;
+    width: 100%;
+}
+.mobile_tv .contentBoxStory .story,
+.layout_tv .contentBoxStory .story {
+    display: table-row;
+}
+.mobile_tv .contentBoxStory .videoStory,
+.mobile_tv .contentBoxStory .storyImage,
+.layout_tv .contentBoxStory .videoStory,
+.layout_tv .contentBoxStory .storyImage {
+    width: 55%;
+    display: table-cell;
+}
+.mobile_tv .contentBoxStory .storyText,
+.layout_tv .contentBoxStory .storyText {
+    width: 45%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mobile_tv .contentBoxStory .storyPreTitle,
+.mobile_tv .contentBoxStory .storyLeadText,
+.layout_tv .contentBoxStory .storyPreTitle,
+.layout_tv .contentBoxStory .storyLeadText,
+.layout_tv .storyBottom .contentBoxStory .storyPreTitle,
+.layout_tv .storyBottom .contentBoxStory .storyLeadText {
+    display: none;
+}
+.mobile_tv .contentBoxStory .storyTitle,
+.layout_tv .contentBoxStory .storyTitle {
+    font-size: 1.125rem;
+}

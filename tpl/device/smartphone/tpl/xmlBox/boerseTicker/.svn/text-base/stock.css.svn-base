@@ -1,0 +1,100 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.stock {
+    padding: 0 10px;
+}
+
+
+.atxTicker {
+    font-size: 1rem;
+}
+
+
+.stock .rowCaptionTitle h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+
+.stock .atxHeader {
+    font-size: .75rem;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin: 10px 0;
+}
+.stock .atxHeader .atxHeaderCaption,
+.stock .atxHeader .atxHeaderData {
+    display: table-row;
+}
+.stock .atxHeader .atxHeaderTitel,
+.stock .atxHeader .atxHeaderText {
+    text-align: left;
+    display: table-cell;
+}
+.stock .atxHeader .atxHeaderTitel {
+    font-weight: 700;
+}
+
+
+.stock .atxBody .kursHeader {
+    font-size: .75rem;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.stock .atxBody .kursHeader .kurs,
+.stock .atxBody .kursHeader .datum {
+    display: table-cell;
+}
+.stock .atxBody .kursHeader .kurs {
+    width: 75%;
+}
+.stock .atxBody .kursHeader .datum {
+    text-align: right;
+    width: 25%;
+}
+.stock .atxBody .kursHeader .kursText,
+.stock .atxBody .kursHeader .kursImage,
+.stock .atxBody .kursHeader .up,
+.stock .atxBody .kursHeader .down,
+.stock .atxBody .kursHeader .equal {
+    padding-right: 6px;
+}
+
+
+.stock .atxBody .teleTrader {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.stock .atxBody .tableDaten {
+    font-size: .75rem;
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+.stock .atxBody .tableDaten .data {
+    display: table-row;
+}
+.stock .atxBody .tableDaten .data:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+.stock .atxBody .tableDaten .data .key,
+.stock .atxBody .tableDaten .data .value {
+    display: table-cell;
+    padding: 2px 4px;
+}
+.stock .atxBody .tableDaten .data .value {
+    text-align: right;
+}
+

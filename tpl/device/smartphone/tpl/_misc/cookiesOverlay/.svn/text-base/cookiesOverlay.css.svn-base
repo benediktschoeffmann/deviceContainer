@@ -1,0 +1,51 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+.cookiesOverlay {
+    display: none;
+    width: 100%;
+    background-color: #dfdfdf;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100001;
+}
+.cookiesOverlay.visible {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.cookiesOverlayText,
+.cookiesOverlayClose {
+    display: table-cell;
+}
+.cookiesOverlayText {
+    font-size: .75rem;
+    width: 90%;
+    padding: 4px 15% 4px 10px;
+    margin: 0;
+    color: #9c9c9c;
+}
+.cookiesOverlayClose {
+    font-size: 1rem;
+    text-align: center;
+    width: 10%;
+    background-color: #d2d2d2;
+    position: relative;
+}
+.cookiesOverlayClose,
+.cookiesOverlayClose:link,
+.cookiesOverlayClose:visited,
+.cookiesOverlayClose:active {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+.cookiesOverlayClose span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

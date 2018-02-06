@@ -1,0 +1,62 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headlineBox {
+    margin: 0 -10px 10px;
+}
+.headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.headline span,
+.headline a,
+.headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabbedBox.joe24-logo img.headlineLogo {
+    display: inline-block;
+    height: 24px;
+    vertical-align: baseline;
+}
+
+/* Madonna Headline */
+.smartphone.layout_madonna .container .headline,
+.smartphone.layout_madonna .container .OUTBRAIN .ob-widget-header {
+    background-color: transparent;
+}
+
+.smartphone.layout_madonna .container  .headline a,
+.smartphone.layout_madonna .container  .headline span,
+.smartphone.layout_madonna .container  .OUTBRAIN .ob-widget-header {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.smartphone.layout_madonna .container  .headline a:after,
+.smartphone.layout_madonna .container  .headline span:after,
+.smartphone.layout_madonna .container  .OUTBRAIN .ob-widget-header:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: #cc054a;
+    position: relative;
+    top: 5px;
+}

@@ -1,0 +1,24 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleSlideshow .storyImage {
+    margin-bottom: 10px;
+}
+
+/* VOTING */
+.articleSlideshow #votingFrame {
+	width: 85%;
+
+	margin-bottom: 10px;
+	margin-left: 15%;
+}
+
+.articleSlideshow #vresultframe {
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+

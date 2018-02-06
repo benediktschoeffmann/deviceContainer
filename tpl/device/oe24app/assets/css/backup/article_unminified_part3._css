@@ -1,0 +1,1917 @@
+/* article unminified part 3*/
+
+/* horoskopSigns*/
+.horoskopSigns .headlineBox {
+    margin: 0 -10px 10px;
+}
+
+
+.horoskopSigns .headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+    background-color: #cc054a;
+}
+.horoskopSigns .headline a,
+.horoskopSigns .headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.horoskopSigns .horoskopContainer {
+    padding: 8px 0 28px;
+    background-color: #f2f2f2;
+}
+
+
+.horoskopSigns .horoskopSign {
+    text-decoration: none;
+    padding: 0 1px;
+    display: inline-block;
+    width: 33.333333%;
+}
+.horoskopSigns .horoskopSign:hover,
+.horoskopSigns .horoskopSign.active {
+    text-decoration: none;
+    opacity: .7;
+}
+.horoskopSigns .horoskopSign:hover .horoskopSignText,
+.horoskopSigns .horoskopSign.active .horoskopSignText {
+    color: #cc054a;
+}
+.horoskopSigns .horoskopSignIcon,
+.horoskopSigns .horoskopSignText {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+.horoskopSigns .horoskopSignIcon {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(<? slp('image', 'rl2014/zodiacRound.png'); ?>);
+    background-position: 0 0;
+}
+.horoskopSigns .horoskopSignText {
+    font-family: "Open Sans Condensed";
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: 0pt;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1px;
+}
+.horoskopSigns .horoskopSignIcon.widder {
+    background-position: 0 0;
+}
+.horoskopSigns .horoskopSignIcon.stier {
+    background-position: -72px 0;
+}
+.horoskopSigns .horoskopSignIcon.zwillinge {
+    background-position: -144px 0;
+}
+.horoskopSigns .horoskopSignIcon.krebs {
+    background-position: -216px 0;
+}
+.horoskopSigns .horoskopSignIcon.loewe {
+    background-position: -288px 0;
+}
+.horoskopSigns .horoskopSignIcon.jungfrau {
+    background-position: -360px 0;
+}
+.horoskopSigns .horoskopSignIcon.waage {
+    background-position: -432px 0;
+}
+.horoskopSigns .horoskopSignIcon.skorpion {
+    background-position: -504px 0;
+}
+.horoskopSigns .horoskopSignIcon.schuetze {
+    background-position: -576px 0;
+}
+.horoskopSigns .horoskopSignIcon.steinbock {
+    background-position: -648px 0;
+}
+.horoskopSigns .horoskopSignIcon.wassermann {
+    background-position: -720px 0;
+}
+.horoskopSigns .horoskopSignIcon.fische {
+    background-position: -792px 0;
+}
+
+
+.horoskopSigns .flickitySlider {
+    display: none;
+}
+.horoskopSigns .flickitySlider.flickity-enabled {
+    display: block;
+}
+.horoskopSigns .flickity-enabled .horoskopSign {
+    display: block;
+}
+
+
+.horoskopSigns .flickity-prev-next-button {
+    display: none;
+}
+.horoskopSigns .flickity-enabled .flickity-prev-next-button {
+    display: block;
+}
+
+.horoskopSigns .flickity-page-dots {
+    bottom: 8px;
+}
+
+
+
+/* horoskop content */
+
+.horoskopContent {
+    text-align: center;
+    display: block;
+    /*
+    background-image: url(<?slp('image', 'rl2014/zodiacBackground.jpg')?>);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+       -moz-background-size: 100% auto;
+         -o-background-size: 100% auto;
+            background-size: 100% auto;
+    */
+}
+
+
+.horoskopHeader {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.horoskopHeaderImage {
+    position: relative;
+}
+.horoskopHeaderImage img {
+    display: block;
+}
+.horoskopHeaderImage .emptyImage {
+    width: 0;
+    padding-bottom: 36%;
+    background-color: #fff;
+}
+.horoskopHeaderImage .realImage {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.horoskopHeaderText {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.horoskopHeaderCaption,
+.horoskopHeaderSubCaption,
+.horoskopHeaderSignName,
+.horoskopHeaderSignDate {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-weight: 700;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.horoskopHeaderCaption {
+    font-size: 6.4vw;
+}
+.horoskopHeaderSubCaption,
+.horoskopHeaderSignName,
+.horoskopHeaderSignDate {
+    font-size: 4.4vw;
+}
+.horoskopHeaderSignName {
+    font-size: 6.4vw;
+    color: #cc054a;
+}
+
+
+.horoskopBodyTop,
+.horoskopBodyText {
+    text-align: left;
+    padding: 0 10px;
+}
+.horoskopBodyTop {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+.horoskopBodyTop a {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-weight: 700;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 0 2px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #c4beb5;
+}
+.horoskopBodyTop a.active {
+    color: #cc054a;
+}
+
+
+.horoskopBodyTitle,
+.horoskopMonth {
+    display: block;
+}
+.horoskopBodyTitle {
+    font-size: 1.25rem;
+    padding: 2px 0;
+    margin: 4px 0;
+    display: block;
+    color: #cc054a;
+    /*padding: 2px 10px;*/
+    /*margin: 4px -10px;*/
+    /*color: #fff;*/
+    /*background-color: #cc054a;*/
+}
+.horoskopMonth {
+    margin: 4px 0;
+}
+
+/* (db) 2017-02-27 - verhindert zentrierte google-ads  */
+/*
+.storyAd > div > div,
+.storyAd > div > ins {
+    width: 100% !important;
+}
+*/
+
+/* lexikon */
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.lexikon_leadtext p {
+    padding: 0 10px;
+    margin-bottom: 0;
+}
+.lexikon {
+    table-layout: fixed;
+    width: 95%;
+    margin: 0 10px 28px 10px;
+}
+.lexikon td {
+    padding-right: 14px;
+}
+.lexikon .lexikon_item {
+    position: relative;
+    padding: 0 0 0 22px;
+    overflow: hidden;
+}
+.lexikon .lexikon_kategorie_start {
+    margin-top: 1.75rem;
+}
+.lexikon .lexikon_kategorie,
+.lexikon .lexikon_link {
+    font-size: .875rem;
+    line-height: 1.75rem;
+}
+.lexikon .lexikon_kategorie {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.tabbedBox.gesund24 .lexikon .lexikon_kategorie {
+    color: #3194dd;
+}
+.tabbedBox.kochen .lexikon .lexikon_kategorie {
+    color: #a10f42;
+}
+
+.lexikon .lexikon_link {
+    font-size: .875rem;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 8px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.tabbedBox.gesund24 .lexikon .lexikon_link {
+    border-left: 1px solid #e6e6e6;
+}
+.tabbedBox.kochen .lexikon .lexikon_link {
+    border-left: 1px solid #a10f42;
+}
+
+.tabbedBox.gesund24 .lexikon .lexikon_link:hover {
+    color: #fff;
+    background-color: #3194dd;
+}
+.tabbedBox.kochen .lexikon .lexikon_link:hover {
+    color: #fff;
+    background-color: #a10f42;
+}
+
+
+
+/* rezeptsuche */
+
+.recipeSearch {
+    margin-bottom: 20px;
+}
+
+.recipeSearch .headlineBox h2.headline {
+    color: #FFF;
+    padding: 2px 10px 4px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recipeSearch .search_box .textfield {
+    width:90%;
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 30px;
+}
+
+.recipeSearch .search_box .button {
+    margin: 0 auto;
+    background-color: #a10f42;
+    color: #FFF;
+    display: block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px 20px;
+    border: 0px;
+
+    -webkit-appearance: button;
+}
+
+
+
+
+
+/* search*/
+
+.smartphone .search_box .textfield {
+    width: 90%;
+    display: block;
+    margin: 0 auto 10px auto;
+    height: 30px;
+}
+
+.smartphone .search_box .button {
+    margin: 0 auto;
+    background-color: #a10f42;
+    color: #FFF;
+    display: block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px 20px;
+    border: 0px;
+
+    -webkit-appearance: button;
+}
+
+.smartphone .search_pages {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+.smartphone .search_pages_counter {
+    margin: 20px 0 20px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.smartphone .search_pages a {
+    margin: 0 5px;
+}
+.smartphone .search_pages a.active {
+    background-color: #a10f42;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 6px;
+}
+
+.smartphone .search_result {
+    margin: 20px 0 20px 0;
+    padding: 0 10px;
+}
+
+
+
+/* businessslieder box*/
+
+.businessSliderBox {
+    padding-bottom: 30px;
+}
+.businessSliderBoxSlider .story {
+    width: 100%;
+    display: none;
+}
+.businessSliderBoxSlider .flickity-viewport .story {
+    display: block;
+}
+
+.businessSliderBoxSlider .flickity-viewport {
+    margin-bottom: 10px;
+}
+
+
+/* Headline */
+.businessSliderBoxHeader {
+    margin: 0 0 5px 0;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption {
+    display: block;
+    width: 100%;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption .businessSliderBoxTitle {
+    color: #FFF;
+
+}
+
+
+/* flickity buttons */
+
+.businessSliderBox .flickitySlider .flickity-prev-next-button,
+.businessSliderBox .flickitySlider .flickity-prev-next-button:hover {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #35549b;
+    top: auto;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button.previous:hover {
+    left: -2px;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button.next:hover {
+    right: -2px;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button svg .arrow {
+    fill: #FFF;
+    stroke: #FFF;
+    /*fill: #184089;*/
+    /*stroke: #184089;*/
+}
+
+.businessSliderBox .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+/* TV-Quoten */
+
+.businessSliderBox.bsTvQuotes .tvHl {
+    width: 100%;
+    text-align: center;
+    color: #35549b;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.businessSliderBox.bsTvQuotes .tvMain {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 2% 4% 4% 4%;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(odd) td {
+    background-color: #fff;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(even) td {
+    background-color: #e1e5e6;
+}
+
+.businessSliderBox.bsTvQuotes .tvTbl {
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th,
+.businessSliderBox.bsTvQuotes .tvTbl td {
+    text-align: left;
+}
+
+.businessSliderBox.bsTvQuotes .tvShow {
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75%;
+}
+.businessSliderBox.bsTvQuotes .tvDrw {
+    padding: 0 5px;
+    width: 25%;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th{
+    font-weight: 700;
+}
+.businessSliderBox.bsTvQuotes .tvTbl td div {
+
+}
+
+/* teletrader */
+
+.businessSliderBox {
+    padding-bottom: 30px;
+}
+.businessSliderBoxSlider .story {
+    width: 100%;
+    display: none;
+}
+.businessSliderBoxSlider .flickity-viewport .story {
+    display: block;
+}
+
+.businessSliderBoxSlider .flickity-viewport {
+    margin-bottom: 10px;
+}
+
+
+/* Headline */
+.businessSliderBoxHeader {
+    margin: 0 0 5px 0;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption {
+    display: block;
+    width: 100%;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption .businessSliderBoxTitle {
+    color: #FFF;
+
+}
+
+
+/* flickity buttons */
+
+.businessSliderBox .flickitySlider .flickity-prev-next-button,
+.businessSliderBox .flickitySlider .flickity-prev-next-button:hover {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #35549b;
+    top: auto;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button.previous:hover {
+    left: -2px;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button.next:hover {
+    right: -2px;
+}
+.businessSliderBox .flickitySlider .flickity-prev-next-button svg .arrow {
+    fill: #FFF;
+    stroke: #FFF;
+    /*fill: #184089;*/
+    /*stroke: #184089;*/
+}
+
+.businessSliderBox .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+/* TV-Quoten */
+
+.businessSliderBox.bsTvQuotes .tvHl {
+    width: 100%;
+    text-align: center;
+    color: #35549b;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.businessSliderBox.bsTvQuotes .tvMain {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 2% 4% 4% 4%;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(odd) td {
+    background-color: #fff;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(even) td {
+    background-color: #e1e5e6;
+}
+
+.businessSliderBox.bsTvQuotes .tvTbl {
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th,
+.businessSliderBox.bsTvQuotes .tvTbl td {
+    text-align: left;
+}
+
+.businessSliderBox.bsTvQuotes .tvShow {
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75%;
+}
+.businessSliderBox.bsTvQuotes .tvDrw {
+    padding: 0 5px;
+    width: 25%;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th{
+    font-weight: 700;
+}
+.businessSliderBox.bsTvQuotes .tvTbl td div {
+
+}
+
+
+
+
+/* contentbox fullwide business*/
+
+
+.smartphone.layout_business .headlineBox .crestImage {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+    background: transparent url('/images/oe2016/wappen/bundeslaenderWappen2.png') no-repeat 0 0;
+
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceBurgenland {
+    background-position: 0 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceKaernten {
+    background-position: -32px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceNiederoesterreich {
+    background-position: -64px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceOberoesterreich {
+    background-position: -96px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceSalzburg {
+    background-position: -128px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceSteiermark {
+    background-position: -160px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceTirol {
+    background-position: -192px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceVorarlberg {
+    background-position: -224px 0;
+}
+.smartphone.layout_business .headlineBox .crestImage.provinceWien {
+    background-position: -256px 0;
+}
+
+/* Color Schema */
+
+.smartphone.layout_business .colorSchema01 .headlineBox .headline {
+    background-color: #c30ac6;
+    background-image: linear-gradient(to right, #c30ac6 65%, #f128f4);
+}
+.smartphone.layout_business .colorSchema02 .headlineBox .headline {
+    background-color: #ef107d;
+    background-image: linear-gradient(to right, #ef107d 65%, #f458a4);
+}
+.smartphone.layout_business .colorSchema03 .headlineBox .headline {
+    background-color: #d0113a;
+    background-image: linear-gradient(to right, #d0113a 65%, #dd1010);
+}
+.smartphone.layout_business .colorSchema04 .headlineBox .headline {
+    background-color: #f47b0c;
+    background-image: linear-gradient(to right, #f47b0c 65%, #f7a355);
+}
+.smartphone.layout_business .colorSchema05 .headlineBox .headline {
+    background-color: #f4a90c;
+    background-image: linear-gradient(to right, #f4a90c 65%, #f7c355);
+}
+.smartphone.layout_business .colorSchema06 .headlineBox .headline {
+    background-color: #f4d80c;
+    background-image: linear-gradient(to right, #f4d80c 65%, #f7e455);
+}
+.smartphone.layout_business .colorSchema07 .headlineBox .headline {
+    background-color: #dbec0c;
+    background-image: linear-gradient(to right, #dbec0c 65%, #e9f64e);
+}
+.smartphone.layout_business .colorSchema08 .headlineBox .headline {
+    background-color: #65d40b;
+    background-image: linear-gradient(to right, #65d40b 65%, #e9f64e);
+}
+.smartphone.layout_business .colorSchema09 .headlineBox .headline {
+    background-color: #4d0ac6;
+    background-image: linear-gradient(to right, #4d0ac6 65%, #7128f4);
+}
+.smartphone.layout_business .colorSchema10 .headlineBox .headline {
+    background-color: #0ac65e;
+    background-image: linear-gradient(to right, #0ac65e 65%, #8cf537);
+}
+.smartphone.layout_business .colorSchema11 .headlineBox .headline {
+    background-color: #0a7fc6;
+    background-image: linear-gradient(to right, #0a7fc6 65%, #28a7f4);
+}
+.smartphone.layout_business .colorSchema12 .headlineBox .headline {
+    background-color: #0a2dc6;
+    background-image: linear-gradient(to right, #0a2dc6 65%, #284ef4);
+}
+
+
+/* boerse  ticker */
+
+.boerseTickerBox {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    /*position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;*/
+    background-color: #fff;
+}
+.boerseTickerBox .atxEntryBox {
+    height: 30px;
+    /*border-left: 10px solid #fff;
+    border-right: 10px solid #fff;*/
+    overflow: hidden;
+    position: relative;
+}
+.boerseTickerBox .atxEntryContent {
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.boerseTickerBox .atxEntry {
+    font-size: .875rem;
+    line-height: 30px;
+    padding: 0 4px;
+    border-right: 1px solid #262626;
+    white-space: nowrap;
+}
+.boerseTickerBox .atxEntryName,
+.boerseTickerBox .atxEntryValue,
+.boerseTickerBox .atxEntryTrend,
+.boerseTickerBox .atxEntryPercent {
+    padding: 0 2px;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+.articleBody .boerseTickerBox {
+    position: static;
+    /*display: none;*/
+}
+
+
+
+
+
+/* aktienkurs */
+
+.smartphone.layout_business .aktienkurs {
+    font-size: 0.875rem;
+}
+.smartphone.layout_business .aktienkurs .contentContainer {
+    padding-top: 0;
+}
+.smartphone.layout_business .aktienkurs .atxHeadline  h2 {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeader {
+    padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderCaption {
+    margin-right: 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderCaption,
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderData {
+    float: left;
+
+    margin-bottom: 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderTitel {
+    font-weight: 700;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderTitel,
+.smartphone.layout_business .aktienkurs .atxTicker .atxHeaderText {
+    display: block;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody {
+    clear: both;
+}
+
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody .kursHeader {
+    padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs .atxTicker .atxBody .kursText {
+    color: #002f71;
+    margin-right: 5px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs {
+    margin-bottom: 10px;
+    float: left;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .datum {
+    font-size: 0.875rem;
+    margin-top: 4px;
+    float: right;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kursImage {
+    padding: 0 10px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs .down {
+    color: #df011b;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .kurs .up {
+    color: #01a60a;
+}
+.smartphone.layout_business .aktienkurs  .atxBody img.teleTrader {
+    padding: 5px 5px 5px 15px;
+    background-color: #e7eaee;
+    margin-bottom: 28px;
+    max-width: 100%;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data:last-child {
+    border-bottom: none;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data .key {
+    float: left;
+    padding-left: 10px;
+}
+.smartphone.layout_business .aktienkurs  .atxBody .data .value {
+    float: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* stockersult / stocksearch */
+
+/* searchform */
+.smartphone.layout_business .stockSearch {
+    margin-bottom: 10px;
+}
+
+.smartphone.layout_business .stockSearch .contentBox {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.smartphone.layout_business .stockSearch .contentBox .stockInput {
+    margin-bottom: 10px;
+}
+.smartphone.layout_business .stockSearch .contentBox input[type="text"] {
+    height: 30px;
+    width: 60%;
+}
+.smartphone.layout_business .stockSearch .contentBox .button {
+    display: block;
+
+    margin: 0 auto;
+    padding: 5px 20px;
+
+    color: #FFF;
+
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-appearance: button;
+}
+
+/* search-result */
+.smartphone.layout_business .atxSearchResult {
+    margin-bottom: 10px;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResult {
+    padding: 0 10px;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResult ul {
+
+
+}
+.smartphone.layout_business .atxSearchResult .atxResultHeader,
+.smartphone.layout_business .atxSearchResult .atxResultLine {
+    clear: both;
+    margin: 4px 0;
+    padding: 4px 0;
+
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.smartphone.layout_business .atxSearchResult .cell {
+    padding: 0 5px;
+    display: block;
+    float: left;
+}
+.smartphone.layout_business .atxSearchResult .atxResultHeader .cell {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResultLine .cell {
+    font-size: 0.75rem;
+}
+
+.smartphone.layout_business .atxSearchResult .cell1 {
+    width: 60%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.smartphone.layout_business .atxSearchResult .cell5 {
+    width: 25%;
+    text-align: center;
+}
+.smartphone.layout_business .atxSearchResult .cell5 img {
+    display: inline-block;
+    float: left;
+    margin: 6px 4px 0 0;
+    vertical-align: middle;
+}
+.smartphone.layout_business .atxSearchResult .cell5 span {
+    float: right;
+}
+.smartphone.layout_business .atxSearchResult .cell7 {
+    width: 15%;
+    text-align: center;
+}
+.smartphone.layout_business .atxSearchResult .cell2,
+.smartphone.layout_business .atxSearchResult .cell3,
+.smartphone.layout_business .atxSearchResult .cell4,
+.smartphone.layout_business .atxSearchResult .cell6 {
+    display: none;
+}
+
+.smartphone.layout_business .atxSearchResult .cell5 img {
+    margin-right: 5px;
+}
+
+
+/* tvprogramm */
+
+
+.tvProgrammSliderBox {
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.tvProgrammSliderBox .flktySliderHidden {
+    visibility: hidden;
+}
+.tvProgrammSliderBox .flickity-enabled.flktySliderHidden {
+    visibility: visible;
+}
+
+/* navigation */
+.tvProgrammSliderBox .flickity-prev-next-button {
+    top: 110%;
+    width: 32px;
+    height: 32px;
+
+    background-color: #d0113a;
+}
+
+.tvProgrammSliderBox .flickity-prev-next-button.previous {
+    /*left: -32px;*/
+}
+.tvProgrammSliderBox .flickity-prev-next-button.next {
+    /*right: -32px;*/
+}
+
+.tvProgrammSliderBox .flickity-prev-next-button .arrow {
+    fill: #ffffff;
+}
+
+.tvProgrammSliderBox .tvSliderCounter {
+    padding: 0 50px;
+    margin-top: 15px;
+    text-align: center;
+
+    font-size: .75rem;
+    font-weight: 700;
+
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+/* individuel slides */
+.tvProgrammSliderBox .tvProgammSliderEntry {
+    width: 100%;
+
+    text-decoration: none;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvHl {
+    background-color: #114086;
+    color: #FFF;
+
+    padding: 2px 10px 4px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvHl {
+    background-color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvMain {
+    height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    color: #000;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvMain {
+    color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTbl td {
+    border-bottom: 2px solid #c1c1c3;
+    padding-top: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .currentShow td {
+    background-color: #fdf001;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTime {
+    width: 30%;
+    padding-left: 1%;
+    padding-right: 5%;
+    text-align: center;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvShow {
+    width: 70%;
+    text-align: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* editors comment */
+
+.editorsComment .story {
+    width: 50%;
+}
+
+.editorsComment .editorsImage {
+    width: 60px;
+    height: 72px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.editorsComment .editorsImage img {
+    vertical-align: bottom;
+}
+.editorsComment .editorsTop2 {
+    display: table-cell;
+    vertical-align: bottom;
+    height: 72px;
+}
+
+.editorsComment .editorTextTopTitle {
+    display: block;
+
+    font-size: .75rem;
+    line-height: 1.1;
+    color: #262626;
+
+    margin: 0 2px 1px 2px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.editorsComment .editorTextName {
+    font-size: 0.8rem;
+    line-height: 1.1;
+    padding: 4px 6px;
+    display: block;
+    color: #fff;
+    background-color: #d0113a;
+    font-weight: 700;
+
+    width: 100%;
+}
+
+.editorsComment .editorCommentBottom {
+    display: block;
+
+    color: #010101;
+    overflow: hidden;
+
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 700;
+
+    margin: 4px;
+
+    height: 53px;
+    overflow: hidden;
+
+}
+
+
+
+/* fishtank */
+
+.adSlotAdition .fishtankCaption h2 {
+    font-size: 1rem;
+    color: #e2e2e2;
+}
+/*
+.adSlotAdition .fishtank img {
+    display: block;
+    width: 100%;
+}
+*/
+
+/* ------------------------ */
+
+.fishtank a,
+.fishtank a:hover {
+    text-decoration: none;
+}
+.fishtank,
+.fishtankContainer,
+.fishtankLink {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.fishtank {
+    position: relative;
+}
+.fishtankContainer {
+    text-align: center;
+    position: absolute;
+    clip: rect(auto, auto, auto, auto);
+}
+.fishtankLink {
+    display: block;
+    height: 100%;
+}
+.fishtankAd {
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    display: inline-block;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    /*
+    left: 50%;
+    */
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+
+.fishtankClose,
+.fishtankClose:before {
+    display: inline-block;
+}
+
+
+.fishtankClose {
+    font-family: arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    z-index: 2;
+}
+.fishtankClose:before {
+    content: "×";
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 29px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+}
+
+/* sport*/
+
+.standardHeadline.sport h2 {
+    padding: 0 10px;
+}
+/* (bs) 2016-05-12*/
+/* Zusatzklassen fuer mobile Darstellung - von Martin. */
+.apaSportwidgets .live-ticker-header h2 {
+    text-align: left;
+}
+
+.apaSportwidgets .live-ticker-tabbed-wrapper li {
+    text-align: center;
+}
+
+.apaSportwidgets .tabbed-wrapper ul {
+    text-align: left;
+}
+
+.apaSportwidgets .sp24-landing-tablecell {
+    font-size: 12px !important;
+    text-align: left;
+}
+
+.apaSportwidgets .spielplan-datum {
+    line-height: 16px;
+    text-align: left;
+    font-size: 11px;
+}
+
+.apaSportwidgets .legende-wrapper ul li {
+    font-size: 14px;
+    text-align: left;
+}
+/* addendum 2016-06-06 */
+.apaSportwidgets .heute-live .inline-heading {
+    font-size: 22px !important;
+}
+/* addendum 216-06-16 */
+.apaSportwidgets .header-heute-live {
+    font-weight: bold !important;
+}
+
+.apaSportwidgets .sp24-landing-container h2,
+.apaSportwidgets .dropdown .btn {
+    font-weight: bold !important;
+}
+.apaSportwidgets .heute-live-dropdown h2 {
+    line-height: 1.5 !important;
+}
+
+@media only screen and (max-device-width: 767px) and (min-device-width: 300px), only screen and (max-width: 767px) and (min-width: 300px) {
+    .apaSportwidgets .sp24-landing-container h2 {
+        text-align: left;
+    }
+}
+
+/* (bs) end */
+
+
+/* (ws) Euro 2016 Teilnehmer Box */
+
+/*.channelsList.emTeilnehmer .channelListHeader {
+    background-color: #1fa677;
+}
+.main[role="main"] .defaultHtmlBox .channelsListHeadline {
+    color: #575757;
+}*/
+
+.apaSportwidgets .apaNavigation li {
+    line-height: 1.6;
+}
+
+.sportdaten-center select.sportdatenKategorie, .sportdaten-center select.sportdatenSubKategorie {
+    padding: 0.3rem;
+}
+
+.apaSportwidgets #apaLiveContent #apaTextTickerContent,
+.apaSportwidgets #apaLiveContent.col-group-liveticker-content,
+.apaSportwidgets #apaLiveContent.spielfeld-aufstellung-wrapper,
+.apaSportwidgets #calendarapaContent,
+.apaSportwidgets #ligateamapaNav,
+.apaSportwidgets .sp24-landing-table .tabelle-row-cell {
+    text-align: center;
+}
+
+.apaSportwidgets .dropdown ul li {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.apaSportwidgets .dropdown ul li a {
+    padding: 5px 0;
+}
+
+.apaSportwidgets .header,
+.apaSportwidgets .header-minus,
+.apaSportwidgets .live-zwischen-stand,
+.apaSportwidgets .sp24-landing-tableheading,
+.apaSportwidgets .ergebnis-tabelle-header-cell .oe24-ergebnis-tabelle-zwischen-header,
+.apaSportwidgets .oe24-ergebnis-tabelle-header,
+.apaSportwidgets .oe24-medaillen-tabelle-medaillen-header,
+.apaSportwidgets .oe24-medaillen-tabelle-header,
+.apaSportwidgets .olymp-ticker-btn,
+.apaSportwidgets .kalender-auswahl-wrapper #calendarapaCalendar .tag-zahl,
+.apaSportwidgets .sp24-landing-table .tabelle-header-verein,
+.apaSportwidgets .sp24-landing-table .big-header-wrapper {
+    font-weight: 700;
+}
+
+
+/* NAVIGATION SPORTDATEN-CENTER */
+
+.row .sportdaten-center {
+    background-color: #22b480;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.row .sportdaten-center select {
+    margin: 0 3%;
+    width: 44%;
+    float: left;
+}
+
+.row .sportdaten-center.fussball,
+.row .sportdaten-center.fussball-europacup,
+.row .sportdaten-center.nationalteam,
+.row .sportdaten-center.euro-2106 {
+    background-color: #22b480;
+}
+
+.row .sportdaten-center.wintersport,
+.row .sportdaten-center.ski-wm,
+.row .sportdaten-center.nordische-wm {
+    background-color: #0052b3;
+}
+
+.row .sportdaten-center.us-sports {
+    background-color: #007edc;
+}
+
+.row .sportdaten-center.motorsport {
+    background-color: #1d1d1b;
+}
+
+/* --------------------------------- */
+
+/* apa-Content */
+
+.layout_sport .articleDefault .apaOuterFrame #rankingFormula1apaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingMotoGPapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkiAlpinapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkiAlpinDamenapaContent,
+.layout_sport .articleDefault .apaOuterFrame #rankingSkispringenHerrenapaContent {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+
+/* contentadstories */
+
+.aditionMobileCPCSlot {
+    padding: 0 10px;
+    clear: both;
+}
+.aditionMobileCPCSlot article .columns {
+    float: left;
+    width: 50%;
+}
+.aditionMobileCPCSlot article img {
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+}
+.aditionMobileCPCSlot article h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #d0113a;
+}
+.aditionMobileCPCSlot article h2 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+/* glomexvideo */
+
+.glomex-responsive-container {
+      position: relative;
+      /*padding-bottom: 56.25%;*/
+      padding-bottom: 40%;
+      padding-top: 75px;
+      height: 0;
+}
+.glomex-responsive-container iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       border: 0;
+}
+
+
+
+/* countdown */
+
+#oe2016oe24Countdown {
+    margin: 10px 0;
+
+    position: relative;
+}
+#oe2016oe24Countdown img {
+    width: 100%;
+    max-width: 960px;
+}
+
+#oe2016oe24CountdownTime {
+    width: 100%;
+
+    display: block;
+    /*position: absolute;*/
+    /*top: -5px;*/
+
+    /*opacity: 0.93;*/
+    padding: 3px 10px;
+    margin-top: -5px;
+
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Countdown Fullsize */
+#oe2016oe24CountdownFull {
+    margin: 10px 0 30px 0;
+    position: relative;
+}
+#oe2016oe24CountdownFull img {
+    width: 100%;
+    max-width: 960px;
+}
+
+#oe2016oe24CountdownFullTime {
+    width: 100%;
+
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+
+    padding: 3px 10px;
+
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+
+/* spunqrelatedarticles */
+
+/* default Styles ueberschreiben */
+.articleBox .spunQRelatedArticles .elementWrapper .link {
+    color: #000;
+}
+
+
+.spunQRelatedArticles {
+    width: 100%;
+}
+
+
+.spunQRelatedArticles .spunQRelatedArticlesHeadline {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 5px;
+    margin: 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+
+
+.spunQRelatedArticles .elements,
+.spunQRelatedArticles .elementWrapper {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.spunQRelatedArticles .elementWrapper {
+    padding: 2px 0 4px;
+    /*margin: 0 0 5px 0;*/
+    border-bottom: 1px solid #dedede;
+}
+
+
+.spunQRelatedArticles .elementWrapper,
+.spunQRelatedArticles .elementWrapper .link {
+    display: block;
+}
+.spunQRelatedArticles .elementWrapper .link,
+.spunQRelatedArticles .elementWrapper .link:hover {
+    font-size: .875rem;
+}
+
+
+.spunQRelatedArticles .elementWrapper .imageWrapper {
+    float: left;
+}
+.spunQRelatedArticles .elementWrapper .imageWrapper {
+    width: 33%;
+    padding-top: 4px;
+}
+.spunQRelatedArticles .elementWrapper .textWrapper {
+    width: 65%;
+    margin-left: 35%;
+}
+
+
+.spunQRelatedArticles .elementWrapper .imageWrapper img {
+    width: 100%;
+    display: block;
+}
+
+
+.spunQRelatedArticles .elementWrapper .textWrapper .preTitle,
+.spunQRelatedArticles .elementWrapper .textWrapper .title,
+.spunQRelatedArticles .elementWrapper .textWrapper .leadText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.spunQRelatedArticles .elementWrapper .textWrapper .preTitle {
+    /*font-family: "Open Sans",sans-serif;*/
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: .8125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.spunQRelatedArticles .elementWrapper .textWrapper .title {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* bundestagswahl */
+
+.smartphone .bundestagswahl {
+    padding: 0;
+    position: relative;
+}
+
+.smartphone .bundestagswahlNavButton {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 224px;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+.smartphone .bundestagswahlNavButton svg {
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+    stroke: #fff;
+}
+
+.smartphone .bundestagswahlNav {
+    width: 100%;
+    background-color: #d0113a;
+    position: absolute;
+    left: 0;
+    top: 45px;
+
+    display: none;
+    z-index: 0;
+
+    opacity: 0;
+    height: 0;
+
+    transition: opacity .2s, height .2s;
+}
+
+.smartphone .bundestagswahl.bundestagswahlNavActive .bundestagswahlNav {
+    display: block;
+    z-index: 100;
+
+    opacity: 1;
+    height: auto;
+}
+
+.smartphone .bundestagswahlNavItem {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    padding: 4px 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.smartphone .bundestagswahlNavItem,
+.smartphone .bundestagswahlNavItem:visited,
+.smartphone .bundestagswahlNavItem:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b3b3b;
+}
+
+.smartphone .bundestagswahlNavItem:hover,
+.smartphone .bundestagswahlNavItem.bundestagswahlNavCurrent {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b3b3b;
+}
+
+
+
+/* nationalratswahl */
+
+
+.smartphone .nationalratswahl {
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.smartphone .nationalratswahl.distanceTop {
+    margin-top: 15px;
+}
+.smartphone .nationalratswahl.distanceBottom {
+    margin-bottom: 15px;
+}
+
+.smartphone .nationalratswahl .standardHeadline h2 {
+    color: #FFF;
+
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    line-height: 1;
+    font-size: 1.375rem;
+    text-transform: uppercase;
+    letter-spacing: -1pt;
+
+    padding: 2px 10px 4px;
+    margin-right: 0 0 5px 0;
+
+    display: block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: #d0113a;
+}
+
+/* Navigation */
+
+.smartphone .nationalratswahlNavButton {
+    display: block;
+    width: 44px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+.smartphone .nationalratswahlNavButton svg {
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+    stroke: #fff;
+}
+
+.smartphone .nationalratswahlNavigation {
+    width: 100%;
+    background-color: #d0113a;
+    position: absolute;
+    left: 0;
+    top: 45px;
+
+    display: none;
+    z-index: 0;
+
+    opacity: 0;
+    height: 0;
+
+    transition: opacity .2s, height .2s;
+
+    margin-top: -14px;
+}
+
+.smartphone .nationalratswahl.nationalratswahlActive .nationalratswahlNavigation {
+    display: block;
+    z-index: 100;
+
+    opacity: 1;
+    height: auto;
+}
+
+.smartphone .nationalratswahlNavigationItem {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    padding: 4px 10px;
+    border-bottom: 1px solid #fff;
+    background-color: #3b3b3b;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+/* _css Override */
+.container {
+    padding: 10px 0;
+}
+
+
+/* /Volumes/www/oe24_oe24/tpl/device/smartphone/tpl/tabbedBox/tabbedBox.css */
+.headlineBox {
+    margin: 0 0 10px;
+}
+
+
+/* /Volumes/www/oe24_oe24/tpl/device/smartphone/tpl/consoleBox/consoleBox.css */
+.contentBox.console .headlineBox {
+    margin: 0;
+}
+
+
+/* /Volumes/www/oe24_oe24/tpl/device/smartphone/tpl/contentBox/xlKonsoleExtended/xlKonsoleExtended.css */
+.xlKonsoleExtended .headlineBox {
+    margin: 0;
+}
+.xlKonsoleExtendedStories {
+    /*padding: 0;*/
+    /*background-color: transparent;*/
+    padding: 0 0 2px;
+}
+.xlKonsoleExtended .nextStory {
+    padding: 0 10px;
+}
+
+
+/* /Volumes/www/oe24_oe24/tpl/device/smartphone/tpl/templateBox/horoskop/horoskopSigns.css */
+.horoskopSigns .headlineBox {
+    margin: 0 0 10px;
+}
+
+
+/**/
+.contentBox .storyText {
+    padding: 0 10px;
+}
+
+
+/**/
+.articleBody .container {
+    /*padding: 10px -10px 0;*/
+}
+
+
+/* joe24 Artikel */
+.articleBody.smartphone.layout_reise .defaultChannelColor,
+.articleBody.smartphone .layout_reise .storyTitle.defaultChannelColor,
+.articleBody.smartphone .layout_reise .storyPreTitle.defaultChannelColor {
+    color: #25407c;
+}
+.articleBody.smartphone.layout_reise .defaultChannelBackgroundColor,
+.articleBody.smartphone .headlineBox.layout_reise .defaultChannelBackgroundColor,
+.articleBody.smartphone .layout_reise .storyPreTitle.defaultChannelBackgroundColor,
+.articleBody .contentBox.console .layout_reise .flickity-prev-next-button,
+.articleBody .contentSlider.console .layout_reise .storyPreTitle,
+.articleBody .contentSlider.console .layout_reise .storyNumber {
+    background-color: #25407c;
+}
+
+
+/* ------------------------------------ */
+/* neue Regeln bitte oberhalb eintragen */
+/* ------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

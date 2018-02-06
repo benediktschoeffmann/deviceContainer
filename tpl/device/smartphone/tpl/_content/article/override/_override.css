@@ -1,0 +1,247 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* Inline Text-Slideshow, Inline Image-Slideshow */
+
+.overrideSlideshow {
+    font-size: .875rem;
+    display: block;
+}
+.overrideSlideshow .slide {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.overrideSlideshow .slide:first-child {
+    position: static;
+}
+
+
+.overrideSlideshow .flickity-enabled {
+    padding: 0 0 26px;
+    margin: 0;
+}
+.overrideSlideshow .flickity-page-dots {
+    bottom: 16px;
+}
+
+
+.overrideSlideshow .flickitySlider {
+    /*display: none;*/
+    opacity: 0;
+    -webkit-transition: opacity .2s ease-in;
+       -moz-transition: opacity .2s ease-in;
+        -ms-transition: opacity .2s ease-in;
+         -o-transition: opacity .2s ease-in;
+            transition: opacity .2s ease-in;
+}
+.overrideSlideshow .flickitySlider.flickity-enabled {
+    /*display: block;*/
+    opacity: 1;
+}
+
+
+.overrideSlideshow .slideTextContainer {
+    /*text-align: center;*/
+    padding: 0 10px;
+}
+.overrideSlideshow .slideCopyright {
+    font-size: .625rem;
+    margin: 2px 0 0;
+}
+.overrideSlideshow .slideTitle {
+    /*text-align: center;*/
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 4px 0 0;
+}
+.overrideSlideshow .slideDescription {
+    font-size: .875rem;
+    margin: 2px 0 0;
+}
+
+
+/* Inline Text-Slideshow */
+
+.overrideTextSlideshow {
+    background-color: #f2f2f2;
+}
+
+
+/* Inline Image-Slideshow */
+
+.overrideImageSlideshow {
+    padding: 0 0 10px;
+    background-color: #f2f2f2;
+}
+.overrideImageSlideshow.storySlideshow {
+    padding: 0 0 5px;
+}
+.overrideImageSlideshow .slide {
+    padding: 0;
+}
+.overrideImageSlideshow img,
+.overrideImageSlideshow .imageContainer {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.overrideImageSlideshow .flickity-enabled {
+    padding: 0;
+}
+.overrideImageSlideshow .flickity-page-dots {
+    display: none;
+}
+/*
+.overrideImageSlideshow .flickity-prev-next-button {
+    top: 43%;
+}
+*/
+
+
+.overrideImageSlideshow .slideImageContainer {
+    position: relative;
+}
+.overrideImageSlideshow .slideImageContainer img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.overrideImageSlideshow .flickity-prev-next-button.previous,
+.overrideImageSlideshow .slideImageContainer .slideshowButton.previous {
+    left: 10px;
+}
+.overrideImageSlideshow .flickity-prev-next-button.next,
+.overrideImageSlideshow .slideImageContainer .slideshowButton.next {
+    right: 10px;
+}
+.overrideImageSlideshow .flickity-prev-next-button,
+.overrideImageSlideshow .slideImageContainer .slideshowButton {
+    width: 10vw;
+    height: 10vw;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    background: hsla(0, 0%, 100%, 0.75);
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overrideImageSlideshow .slideImageContainer .slideshowButton {
+    display: none;
+}
+.overrideImageSlideshow .flickity-prev-next-button svg,
+.overrideImageSlideshow .slideImageContainer .slideshowButton svg {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+.overrideImageSlideshow .flickity-enabled .slideImageContainer .slideshowButton {
+    display: block;
+}
+
+
+/* (ws) 2016-12-22 Copyright als Overlay rechts unten ueber dem Image */
+
+.articleBox .slideImageContainer {
+    position: relative;
+    overflow: hidden;
+}
+.articleBox .slideCopyright {
+
+    padding: 2px 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0,0,0,.1);
+
+    /*
+    color: #999;
+    padding: 2px 10px;
+    */
+}
+
+
+/* override iframe */
+
+.frameContainer {
+    /*padding-top: 30px;*/
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.frameContainer iframe,
+.frameContainer div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.articleBody .fb-post {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* override article inline button */
+
+.articleBox .story .articleInlineButton {
+    text-align: center;
+    display: block;
+}
+.articleBox .story .articleInlineButton a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d0113a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 1px 0px 0px #ccc;
+}
+.articleBox .story .articleInlineButton a:focus,
+.articleBox .story .articleInlineButton a:hover,
+.articleBox .story .articleInlineButton a:active,
+.articleBox .story .articleInlineButton a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* override artikel image */
+
+.articleBox .story .overrideImage {
+    display: block;
+}
+

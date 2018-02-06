@@ -1,0 +1,26 @@
+<?php
+
+function getBannerElements($xml, $tickerOrder) {
+	$sports = $xml->xpath('/c/ticker/sport');
+	$elements = array();
+
+	foreach($tickerOrder as $ticker) {
+		$sport = $xml->xpath('/c/ticker/sport[@id="' . $ticker . '"]');
+		
+		if(!$sport) {
+			if($ticker == 'olympiamix')
+				$sport = $xml->xpath('/c/ticker/sport[@name="Sportmix"]');
+			else
+				$sport = $xml->xpath('/c/ticker/sport[@name="' . ucfirst($ticker) . '"]');
+		}
+        if(isset($sport[0])){
+            $elements[] = array(
+                'title' => (string) $sport[0]->attributes()->name,
+                'img' => lp('image', 'olympia/disziplin/' . $ticker . ((string) $sport[0]->attributes()->is_live ? '_aktiv.png' : '.png')),
+                'link' => $ticker,
+            );
+        }
+	}
+	
+	return $elements;
+}

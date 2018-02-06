@@ -1,0 +1,37 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.marketingTeaser {
+    width: 100%;
+}
+
+.marketingTeaser.marginTop {
+    margin-top: 5px;
+}
+
+.marketingTeaser.marginBottom {
+    margin-bottom: 5px;
+}
+
+/* bla*/
+.marketingTeaser img {
+    width: 100%;
+}
+
+/* teaserbox fullwide */
+.teaserBoxFullWide {
+    width: 100%;
+}
+.teaserBoxFullWide.distanceTop {
+    margin-top: 5px;
+}
+.teaserBoxFullWide.distanceBottom {
+    margin-bottom: 5px;
+}
+.teaserBoxFullWide img {
+    width: 100%;
+    display: block;
+}

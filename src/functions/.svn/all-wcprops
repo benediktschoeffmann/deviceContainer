@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/oe24_oe24/!svn/ver/7334/release/1.2/src/functions
+END
+getChannelColor.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/oe24_oe24/!svn/ver/10239/release/1.2/src/functions/getChannelColor.function.php
+END
+isBoxInTabBox.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/oe24_oe24/!svn/ver/8622/release/1.2/src/functions/isBoxInTabBox.function.php
+END
+getLexikonTableData.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/oe24_oe24/!svn/ver/5288/release/1.2/src/functions/getLexikonTableData.function.php
+END
+getNationalTeam.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/oe24_oe24/!svn/ver/8233/release/1.2/src/functions/getNationalTeam.function.php
+END
+getJoe24ReiseAngebote.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/oe24_oe24/!svn/ver/10754/release/1.2/src/functions/getJoe24ReiseAngebote.function.php
+END
+getAdventkalenderData.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/oe24_oe24/!svn/ver/7918/release/1.2/src/functions/getAdventkalenderData.function.php
+END
+getTextSectionPages.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/oe24_oe24/!svn/ver/5193/release/1.2/src/functions/getTextSectionPages.function.php
+END
+getMedaillen.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/oe24_oe24/!svn/ver/4024/release/1.2/src/functions/getMedaillen.function.php
+END
+getTextSectionAsArray.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/oe24_oe24/!svn/ver/5198/release/1.2/src/functions/getTextSectionAsArray.function.php
+END
+_iterateFrontendBoxes.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/oe24_oe24/!svn/ver/6603/release/1.2/src/functions/_iterateFrontendBoxes.function.php
+END
+parseTickerXml.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/oe24_oe24/!svn/ver/4024/release/1.2/src/functions/parseTickerXml.function.php
+END
+getTvProgramm.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/oe24_oe24/!svn/ver/10020/release/1.2/src/functions/getTvProgramm.function.php
+END
+getSpunqData.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/oe24_oe24/!svn/ver/6303/release/1.2/src/functions/getSpunqData.function.php
+END
+hex2rgba.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/oe24_oe24/!svn/ver/10313/release/1.2/src/functions/hex2rgba.function.php
+END
+getBannerElements.function.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/oe24_oe24/!svn/ver/3974/release/1.2/src/functions/getBannerElements.function.php
+END

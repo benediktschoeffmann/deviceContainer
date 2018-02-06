@@ -1,0 +1,218 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.mobileTeaserOe24Tv {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #d0113a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+
+    /* border */
+    border: 1px solid #ef3e64;
+    /* border end */
+}
+
+
+/*
+.mobileTeaserOe24Tv .teaserLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+*/
+
+
+.mobileTeaserOe24Tv .teaserText,
+.mobileTeaserOe24Tv .teaserFigure {
+    float: left;
+    width: 49%;
+}
+.mobileTeaserOe24Tv .teaserText {
+    float: left;
+}
+.mobileTeaserOe24Tv .teaserFigure {
+    float: right;
+}
+.mobileTeaserOe24Tv .teaserFigure img {
+    width: 100%;
+}
+.mobileTeaserOe24Tv .teaserFigure video {
+    width: 100%;
+}
+
+
+.mobileTeaserOe24Tv .teaserPreTitle,
+.mobileTeaserOe24Tv .teaserTitle {
+    font-family: "oe24",sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.mobileTeaserOe24Tv .teaserPreTitle {
+    font-size: 14px;
+    padding: 3px 5px 1px;
+    margin: 0 0 10px;
+    color: #d0113a;
+    background-color: #fff;
+}
+.mobileTeaserOe24Tv .teaserTitle {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+
+.mobileTeaserOe24Tv .teaserControl {
+    display: block;
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon {
+
+    display: block;
+
+    width: 12vw;
+    height: 12vw;
+
+    background-color: #d0113a;
+    position: absolute;
+    right: 0;
+    top: -12vw;
+
+    /* border */
+    right: -1px;
+    border: 1px solid #ef3e64;
+    border-bottom: none;
+    /* border end */
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon div {
+    line-height: .5;
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon svg {
+    width: 100%;
+    height: 100%;
+    stroke: #fff;
+}
+.mobileTeaserOe24Tv .teaserIcon .teaserIconCross {
+    display: block;
+}
+.mobileTeaserOe24Tv .teaserIcon .teaserIconPlus {
+    display: none;
+}
+
+
+.mobileTeaserOe24Tv.collapsed .teaserText {
+    width: 92%;
+}
+.mobileTeaserOe24Tv.collapsed .teaserFigure {
+    display: none;
+}
+.mobileTeaserOe24Tv.collapsed .teaserPreTitle {
+    margin: 0 0 4px;
+}
+.mobileTeaserOe24Tv.collapsed .teaserIcon {
+    top: 4px;
+
+    /* border */
+    border: none;
+    /* border end */
+
+    max-height: 100%;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.mobileTeaserOe24Tv.collapsed .teaserIconCross {
+    display: none;
+}
+.mobileTeaserOe24Tv.collapsed .teaserIconPlus {
+    display: block;
+}
+
+
+/*
+@media all and (min-width: 768px) {
+    .mobileTeaserOe24Tv {
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+*/
+
+
+
+/* (ws) 2017-10-17 DAILY-897 */
+
+.videoPlayer.customLiveStreamError {
+    position: relative;
+}
+.videoPlayer.customLiveStreamError .customMessageBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bebebe;
+    background: #fff url('/images/oe2016/customMessageBox.jpg') no-repeat 0 0;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.videoPlayer.customLiveStreamError .customContentBox {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.videoPlayer.customLiveStreamError .customMessageBox p {
+    font-family: "oe24condensed",sans-serif;
+    font-size: .75rem;
+    text-align: center;
+    text-transform: none;
+    line-height: 1.2;
+    padding: 0;
+    margin: 1em;
+    color: #fff;
+}
+
+/* (ws) 2017-10-17 DAILY-897 end */

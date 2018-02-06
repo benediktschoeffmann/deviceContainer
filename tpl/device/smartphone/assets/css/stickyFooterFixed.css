@@ -1,0 +1,23 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* Modern Clean CSS "Sticky Footer" */
+/* http://mystrd.at/modern-clean-css-sticky-footer/ */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+footer {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

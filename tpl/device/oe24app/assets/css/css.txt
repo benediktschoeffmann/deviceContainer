@@ -1,0 +1,156 @@
+
+Oe24App Article CSS Stand 2017-10-09
+
+
+
+
+PART1
+'oe24.oe24.device.smartphone.assets.vendor.normalize.normalize-4-1-1'
+
+'oe24.oe24.device.smartphone.assets.vendor.flickity.2_0_5.flickity'
+
+'oe24.oe24.device.smartphone.assets.vendor.responsivelyLazy.responsivelyLazy'
+
+'_shared.1_0.jwplayer.7_8_7.jwplayerSetup'
+'oe24.oe24.device.smartphone.assets.css.jwplayerSetup'
+
+array(0, 'oe24.oe24.device.smartphone.assets.css._base'),
+array(0, 'oe24.oe24.device.smartphone.assets.css._styles'),
+array(0, 'oe24.oe24.device.smartphone.assets.css._channelColors'),
+
+
+array(0, 'oe24.oe24.device.smartphone.tpl._navigationTop.navigationTop'),
+array(0, 'oe24.oe24.device.smartphone.tpl._navigationMain.navigationMain'),
+array(0, 'oe24.oe24.device.smartphone.tpl._navigationBottom.navigationBottom'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl._header.header'),
+array(0, 'oe24.oe24.device.smartphone.tpl._footer.footer'),
+
+
+
+
+array(0, 'oe24.oe24.device.smartphone.tpl.tabbedBox.tabbedBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.consoleBox.consoleBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.contentBox'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.contentSlider.contentSlider'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlKonsole.xlKonsole'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlKonsoleExtended.xlKonsoleExtended'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlBox.xlBox'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.marketingTeaser.marketingTeaser'),
+
+
+
+array(0, 'oe24.oe24.device.smartphone.tpl.tabbedBox.tabbedBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.consoleBox.consoleBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.contentBox'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.contentSlider.contentSlider'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlKonsole.xlKonsole'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlKonsoleExtended.xlKonsoleExtended'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.xlBox.xlBox'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.marketingTeaser.marketingTeaser'),
+// array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.breakingNews'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.breakingNews.breakingNews'),
+array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.xlHeadline.headline'),
+
+
+
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.oe24tvMobileTeaser.oe24tvMobileTeaser'),
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.mobileTeaserOe24Tv.mobileTeaserOe24Tv'),
+// (ws) 2017-03-20 Mobile Teaser end
+array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.oe24tvTopVideoBox.videoBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.channelList.channelList'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleDefault'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleSlideshow'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleVideo'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleSocialMedia'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleNewsticker'),
+
+
+
+
+PART2 - Articles
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleDefault'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleSlideshow'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleVideo'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleSocialMedia'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleNewsticker'),
+// (db) 2017-03-20 rezepte
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleRecipe'),
+array(0, 'oe24.oe24.device.smartphone.tpl._content.article.override._override'),
+
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.newsletter.newsletter'),
+    // (ws) 2017-02-14
+    array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleRelatedArticles'),
+    array(0, 'oe24.oe24.device.smartphone.tpl._content.article.tpl.articleChannelTopStories'),
+
+    array(0, 'oe24.oe24.device.smartphone.tpl._adition.adition'),
+
+    // array(0, '_shared.1_0.tracking.oewa.oewaTracking'),
+    array(0, 'oe24.oe24.device.smartphone.tpl._tracking.tracking'),
+
+    array(0, 'oe24.oe24.device.smartphone.tpl.htmlBox.htmlBox'),
+
+array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.wetterBox.wetterBox'),
+
+
+
+
+
+PART 3
+array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.horoskop.horoskopSigns'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.horoskop.horoskopContent'),
+
+    // (db) 2017-03-14 (Gesund24)-Lexikon
+    array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.lexikon.lexikon'),
+
+    // (db) 2017-03-16 Rezeptsuche
+    array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.rezeptsuche.rezeptsuche'),
+    array(0, 'oe24.oe24.device.smartphone.tpl._content.search.search'),
+
+    // (db) 2017-07-11 business
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.businessSlider.businessSlider'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.xmlBox.teleTrader.teleTrader'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.contentBox.contentBoxFullwideBusiness.fullwideBusiness'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.xmlBox.boerseTicker.boerseTicker'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.aktienkurs.aktienkurs'),
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.aktienkurs.searchresult'),
+ array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.tvProgrammSlider.tvProgramm'),
+
+    // (db) 2017-08-04 editorsComment-Box
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.editorsComment.editor'),
+
+    // (ws) 2017-02-07 Fishtank
+    array(0, 'oe24.oe24.device.smartphone.tpl._adition.fishtank'),
+
+    // (db) 2017-02-24 Sport
+    array(0, 'oe24.oe24.device.smartphone.assets.css.override.sport'),
+
+    // (ws) 2017-03-09
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.contentAdStories.contentAdStories'),
+
+    // (db) 2017-08-08 glomex Videos
+    array(0, 'oe24.oe24.device.smartphone.assets.css.glomexVideo'),
+
+    // (db) 2017-09-05
+    array(0, 'oe24.oe24.device.smartphone.tpl.templateBox.oe24Countdown.countdown'),
+       array(0, 'oe24.oe24.device.smartphone.tpl._content.article.override.spunQRelatedArticles'),
+
+    // (ws) 2017-09-19
+    array(1, 'oe24.oe24.device.smartphone.tpl.templateBox.bundestagswahl.bundestagswahl'),
+
+    // (db) 2017-09-22
+    array(1, 'oe24.oe24.device.smartphone.tpl.templateBox.nationalratswahl.nationalratswahl'),
+
+    // (ws) 2017-02-07
+    // Override-Datei, die immer hier an letzter Stelle eingebunden werden soll
+    array(0, 'oe24.oe24.device.smartphone.assets.css._cssOverride'),
+
+dann noch:
+
+tpl/device/oe24app/assets/css/additional._css

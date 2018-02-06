@@ -1,0 +1,140 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.horoskopSigns .headlineBox {
+    margin: 0 -10px 10px;
+}
+
+
+.horoskopSigns .headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+    background-color: #cc054a;
+}
+.horoskopSigns .headline a,
+.horoskopSigns .headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.horoskopSigns .horoskopContainer {
+    padding: 8px 0 28px;
+    background-color: #f2f2f2;
+}
+
+
+.horoskopSigns .horoskopSign {
+    text-decoration: none;
+    padding: 0 1px;
+    display: inline-block;
+    width: 33.333333%;
+}
+.horoskopSigns .horoskopSign:hover,
+.horoskopSigns .horoskopSign.active {
+    text-decoration: none;
+    opacity: .7;
+}
+.horoskopSigns .horoskopSign:hover .horoskopSignText,
+.horoskopSigns .horoskopSign.active .horoskopSignText {
+    color: #cc054a;
+}
+.horoskopSigns .horoskopSignIcon,
+.horoskopSigns .horoskopSignText {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+.horoskopSigns .horoskopSignIcon {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(<? slp('image', 'rl2014/zodiacRound.png'); ?>);
+    background-position: 0 0;
+}
+.horoskopSigns .horoskopSignText {
+    font-family: "Open Sans Condensed";
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: 0pt;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1px;
+}
+.horoskopSigns .horoskopSignIcon.widder {
+    background-position: 0 0;
+}
+.horoskopSigns .horoskopSignIcon.stier {
+    background-position: -72px 0;
+}
+.horoskopSigns .horoskopSignIcon.zwillinge {
+    background-position: -144px 0;
+}
+.horoskopSigns .horoskopSignIcon.krebs {
+    background-position: -216px 0;
+}
+.horoskopSigns .horoskopSignIcon.loewe {
+    background-position: -288px 0;
+}
+.horoskopSigns .horoskopSignIcon.jungfrau {
+    background-position: -360px 0;
+}
+.horoskopSigns .horoskopSignIcon.waage {
+    background-position: -432px 0;
+}
+.horoskopSigns .horoskopSignIcon.skorpion {
+    background-position: -504px 0;
+}
+.horoskopSigns .horoskopSignIcon.schuetze {
+    background-position: -576px 0;
+}
+.horoskopSigns .horoskopSignIcon.steinbock {
+    background-position: -648px 0;
+}
+.horoskopSigns .horoskopSignIcon.wassermann {
+    background-position: -720px 0;
+}
+.horoskopSigns .horoskopSignIcon.fische {
+    background-position: -792px 0;
+}
+
+
+.horoskopSigns .flickitySlider {
+    display: none;
+}
+.horoskopSigns .flickitySlider.flickity-enabled {
+    display: block;
+}
+.horoskopSigns .flickity-enabled .horoskopSign {
+    display: block;
+}
+
+
+.horoskopSigns .flickity-prev-next-button {
+    display: none;
+}
+.horoskopSigns .flickity-enabled .flickity-prev-next-button {
+    display: block;
+}
+
+.horoskopSigns .flickity-page-dots {
+    bottom: 8px;
+}
+
+
+

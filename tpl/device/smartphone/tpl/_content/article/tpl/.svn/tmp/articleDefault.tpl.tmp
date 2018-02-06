@@ -1,0 +1,68 @@
+<?
+/**
+ * article default
+ * @var smartphone any
+ * @var article oe24.core.Content
+ */
+
+// Beispiele am Dev-Server
+// http://oe24dev.oe24.at/_mobile/madonna/Das-Schlankgeheimnis-der-Franzoesinnen/161548487?smartphone
+// http://oe24dev.oe24.at/_mobile/madonna/Das-Geheimnis-der-schlanken-Franzoesinnen/161552703?smartphone
+
+if ( ! $article) {
+    return;
+}
+
+$contents = $smartphone->getArticleContents($article);
+
+$classVideo = (true == $contents['isVideoStory']) ? 'videoStory' : '';
+
+$tplName = '_shared.1_0.jwplayer.jwplayerSetupProxy';
+
+?>
+
+<div class="articleBox articleDefault">
+
+    <div class="story">
+
+        <? if ($contents['video']): ?>
+
+            <div class="storyVideo">
+                <? tpl($tplName, array('video' => $contents['video'], 'events' => array())); ?>
+            </div>
+
+        <? else: ?>
+
+            <div class="storyImage <?= $classVideo; ?>">
+                <?
+                tpl('oe24.oe24.device.smartphone.tpl._content.image.articleImages', array(
+                    'relatedImages' => $contents['relatedImages'],
+                ));
+                ?>
+            </div>
+
+        <? endif; ?>
+
+        <div class="storyText">
+            <div class="storyTextTop clearfix">
+                <strong class="storyPreTitle defaultChannelColor"><?= $contents['preTitle']; ?></strong>
+                <span class="storyDateTime"><?= $contents['dateTime']; ?></span>
+            </div>
+            <h1 class="storyTitle"><?= $contents['title']; ?></h1>
+        </div>
+
+        <div class="storyText">
+            <p class="storyLeadText"><?= $contents['leadText']; ?></p>
+        </div>
+
+        <? tpl('oe24.oe24.device.smartphone.tpl._content.article.tpl.articleSocialMedia'); ?>
+
+        <div class="storyBodyText">
+            <?= $contents['bodyText']; ?>
+        </div>
+
+        <? tpl('oe24.oe24.device.smartphone.tpl._content.article.tpl.articleComments'); ?>
+
+    </div>
+
+</div>

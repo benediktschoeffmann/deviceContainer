@@ -1,0 +1,12 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleBox.articleVideo .storyTextTop {
+    margin: 6px 0;
+}
+.articleBox.articleVideo .storyLeadText {
+    padding: 10px 0;
+}

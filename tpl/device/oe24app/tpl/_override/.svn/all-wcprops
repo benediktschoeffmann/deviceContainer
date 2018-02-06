@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/oe24_oe24/!svn/ver/10577/release/1.2/tpl/device/oe24app/tpl/_override
+END
+image.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/oe24_oe24/!svn/ver/11042/release/1.2/tpl/device/oe24app/tpl/_override/image.tpl
+END
+facebook.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/oe24_oe24/!svn/ver/10814/release/1.2/tpl/device/oe24app/tpl/_override/facebook.tpl
+END

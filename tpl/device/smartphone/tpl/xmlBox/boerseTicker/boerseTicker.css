@@ -1,0 +1,51 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.boerseTickerBox {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    /*position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;*/
+    background-color: #fff;
+}
+.boerseTickerBox .atxEntryBox {
+    height: 30px;
+    /*border-left: 10px solid #fff;
+    border-right: 10px solid #fff;*/
+    overflow: hidden;
+    position: relative;
+}
+.boerseTickerBox .atxEntryContent {
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.boerseTickerBox .atxEntry {
+    font-size: .875rem;
+    line-height: 30px;
+    padding: 0 4px;
+    border-right: 1px solid #262626;
+    white-space: nowrap;
+}
+.boerseTickerBox .atxEntryName,
+.boerseTickerBox .atxEntryValue,
+.boerseTickerBox .atxEntryTrend,
+.boerseTickerBox .atxEntryPercent {
+    padding: 0 2px;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+.articleBody .boerseTickerBox {
+    position: static;
+    /*display: none;*/
+}

@@ -1,0 +1,44 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.navigationTop {
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+.navigationTop ul,
+.navigationTop li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navigationTop ul {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.navigationTop li {
+    text-align: center;
+    text-transform: uppercase;
+    display: table-cell;
+    border-left: 1px solid #d5d5d5;
+}
+.navigationTop li:first-child {
+    border-left: none;
+}
+.navigationTop li a {
+    font-size: .8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    color: #000;
+}
+.navigationTop li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+

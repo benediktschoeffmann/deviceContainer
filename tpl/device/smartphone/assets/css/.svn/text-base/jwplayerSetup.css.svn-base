@@ -1,0 +1,21 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/*
+ * In der Desktop-Darstellung soll die headline ("schwarze Balken") nicht
+ * ueber die gesamte Breite gezeigt werden! Deshalb ist dort "width"
+ * auf auto gesetzt und die white-space etc. Regeln greifen nicht
+ */
+.smartphone .videoPlayer .jw-title-primary {
+    width: 100%;
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.smartphone .videoPlayer .jwplayer.jw-state-error .jw-title .jw-title-primary {
+    white-space: nowrap;
+}

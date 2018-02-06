@@ -1,0 +1,84 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.navigationMainActive::-webkit-scrollbar {
+    display: none;
+}
+
+.navigationMain {
+    width: 0;
+    /*height: 100%;*/
+    /*height: auto;*/
+    padding-top: 62px; /* die Hoehe von .header */
+    padding-bottom: 22px;
+    background: #3b3b3b;
+    /*position: fixed;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+}
+
+/* ----------------------------- */
+
+.navigationMainItem {
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: block;
+    padding: 4px 5%;
+    border-bottom: 1px solid #616161;
+    color: #c7c7c7;
+}
+.navigationMainItem:last-child {
+    border-bottom: none;
+}
+.navigationMainItem,
+.navigationMainItem:link,
+.navigationMainItem:visited,
+.navigationMainItem:focus {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+/* ----------------------------- */
+
+.navigationMainActive .navigationMain {
+    width: 100%;
+}
+.navigationMainActive .contentContainer {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ----------------------------- */
+
+.navigationMainActive .headerNavButton svg {
+    display: block;
+}
+.navigationMainActive .headerNavButton svg:first-child {
+    display: none;
+}
+
+/* ----------------------------- */
+
+.navigationMainItem.latestCover {
+    text-align: left;
+}
+.navigationMainItem.latestCover span,
+.navigationMainItem.latestCover img {
+    display: block;
+    width: 100%;
+}
+.navigationMainItem.latestCover span {
+    /*font-weight: 700;*/
+    margin: 0 0 6px;
+}
+

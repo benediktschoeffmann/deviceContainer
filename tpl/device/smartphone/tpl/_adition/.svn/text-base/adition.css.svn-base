@@ -1,0 +1,52 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/*
+#adition_MobileTop,
+#adition_MobileBottom,
+#adition_MobileArtikelTop,
+#adition_MobileArtikelBottom {
+    margin: 0 0 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#adition_MobileTop:before,
+#adition_MobileBottom:before,
+#adition_MobileArtikelTop:before,
+#adition_MobileArtikelBottom:before {
+    content: "Werbung";
+    text-align: center;
+    color: #e2e2e2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.adSlotAdition {
+    text-align: left;
+    margin: 0 0 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.adSlotAdition:before {
+    content: "Werbung";
+    text-align: center;
+    color: #e2e2e2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.adSlotAdition.textAlignCenter {
+    text-align: center;
+}

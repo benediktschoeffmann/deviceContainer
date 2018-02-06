@@ -1,0 +1,58 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.smartphone.layout_cooking24 .recipeIngredients, .recipeInfoBox {
+	margin-bottom: 20px;
+
+}
+
+.smartphone.layout_cooking24 .headlineBox.layout_kochen h2.headline {
+	color: #fff;
+	padding: 2px 10px 4px 10px;
+}
+
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo {
+    font-size: .9375rem;
+    line-height: 25px;
+    padding: 0;
+    margin: 6px 0;
+    background-image: url(<?php slp('image', 'rl2014/recipe/recipeSprite25.png'); ?>);
+    background-repeat: no-repeat;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo .values {
+    display: none;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration1 {
+    background-position: 146px 0;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration2 {
+    background-position: 146px -25px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration3 {
+    background-position: 146px -50px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort1 {
+    background-position: 146px -75px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort2 {
+    background-position: 146px -100px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort3 {
+    background-position: 146px -125px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price1 {
+    background-position: 146px -150px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price2 {
+    background-position: 146px -175px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price3 {
+    background-position: 146px -200px;
+}
+
+.smartphone.layout_cooking24 .articleRecipe .storyBodyText li {
+    margin-bottom: 10px;
+}

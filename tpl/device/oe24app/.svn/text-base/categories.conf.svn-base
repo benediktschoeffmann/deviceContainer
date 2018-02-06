@@ -1,0 +1,112 @@
+[oe24app.dev.categories]
+    name[]     = 'frontpage'
+    id[]       = 2846
+    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    name[]     = 'oe24app'
+    id[]       = 161621400
+    oewa[]      = 'RedCont/ComputerUndTechnik/ComputerUndTechnikUeberblick/moewa'
+    name[]     = 'digital'
+    id[]       = 2879
+    oewa[]      = 'RedCont/ComputerUndTechnik/ComputerUndTechnikUeberblick/moewa'
+    ;name[]     = 'news'
+    ;id[]       = 2861
+    ;oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    ;name[]      = 'madonna'
+    ;id[]        = 1077790
+    ;oewa[]      = 'RedCont/Lifestyle/LifestyleUeberblick/moewa'
+
+[oe24app.dev.const]
+    maxBoxes                = 15
+    maxBoxesFrontpage       = 5
+    maxBoxesSpecial[]       = 'frontpage'   ; in diesen Kategorien werden
+    ;maxBoxesSpecial[]       = 'sport'       ; mehr Boxen ausgespielt
+    contentBox.maxArticles  = 5
+    consoleBox.maxArticles  = 5
+    collections.maxArticles = 5
+
+[oe24app.dev.livestream]
+    id  = 161573764
+
+[oe24app.dev.collections]
+    name[]      = 'video'
+    id[]        = 161585992
+    name[]      = 'newsticker'
+    id[]        = 161580017
+
+[oe24app.ads]
+    MobileAPPCAD1 = interval
+    MobileAPPCAD2 = artikel_top
+    MobileAPPCAD3 = artikel_bottom
+    MobileAPPCAD4 = interval2
+    MobileAPPCAD5 = interval3
+    ; spunQ is on the left side.
+
+
+[oe24app.interstitial]
+    id = 3835721
+
+[oe24app.prod.categories]
+    name[]      = 'frontpage'
+    id[]        = 2846
+    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    name[]      = 'politik'
+    id[]        = 2932
+    oewa[]      = 'RedCont/Politik/Politikueberblick/moewa'
+    name[]      = 'österreich'
+    id[]        = 2935
+    oewa[]      = 'RedCont/Nachrichten/Chronik/moewa'
+    name[]      = 'welt'
+    id[]        = 2849
+    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    name[]      = 'sport'
+    id[]        = 2877
+    oewa[]      = 'RedCont/Sport/SportUeberblick/moewa'
+    name[]      = 'leute'
+    id[]        = 2881
+    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    name[]      = 'business'
+    id[]        = 285923737
+    oewa[]      = 'RedCont/Wirtschaft/WirtschaftsUeberblick/moewa'
+    name[]      = 'digital'
+    id[]        = 2879
+    oewa[]      = 'RedCont/ComputerUndTechnik/ComputerUndTechnikUeberblick/moewa'
+    name[]      = 'auto'
+    id[]        = 2888
+    oewa[]      = 'RedCont/AutoUndMotor/AutoUndMotor/moewa'
+    name[]      = 'gewinnspiele'
+    id[]        = 225188312
+    oewa[]      = 'UnterhaltungGames/Games/Gewinnspiele/moewa'
+    name[]      = 'testmebaby'
+    id[]        = 290097790
+    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    ;name[]      = 'apptesting'
+    ;id[]        = 305624072
+    ;oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+
+[oe24app.prod.const]
+    maxBoxes                = 20
+    maxBoxesFrontpage       = 80
+    maxBoxesSpecial[]       = 'frontpage'
+    maxBoxesSpecial[]       = 'sport'
+    maxBoxesSpecial[]       = 'business'
+    ;maxBoxesSpecial[]       = 'leute'
+    ;maxBoxesSpecial[]       = 'madonna'
+    maxBoxesSpecial[]       = 'digital'
+    maxBoxesSpecial[]       = 'auto'
+    ;maxBoxesSpecial[]       = 'games24'
+    contentBox.maxArticles  = 10
+    consoleBox.maxArticles  = 25
+    collections.maxArticles = 20
+
+[oe24app.prod.livestream]
+    id  = 251215975
+
+[oe24app.prod.collections]
+    name[]      = 'video'
+    id[]        = 252648065
+    name[]      = 'newsticker'
+    id[]        = 221682769
+
+[oe24app.links]
+    ePaper      = 'https://www.epaper-oesterreich.at/shelf.act?filter=CITYW&s=9420.130016442268'
+    impressum   = 'http://www.oe24.at/service/Impressum-OE24/1637563'

@@ -1,0 +1,135 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+@font-face {
+    font-family: 'PTSerifItalic';
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.svg#PTSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.contentBox {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+
+.contentBoxStory {
+    /*border-bottom: 1px solid #d5d5d5;*/
+    margin: 0 0 10px 0;
+}
+.contentBoxStory:last-child {
+    border-bottom: none;
+    margin: 0;
+}
+
+
+.contentBox .story {
+    display: block;
+    position: relative;
+}
+
+
+.contentBox .storyPreTitle {
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 9px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+.contentBox .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    /*letter-spacing: -1pt;*/
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+}
+.contentBox .storyLeadText {
+    font-size: 1rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+.contentBox .storyTime,
+.contentBox .overlayText {
+    font-size: .75rem;
+    padding: 2px 6px;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+}
+.contentBox .storyTime {
+    left: 2px;
+}
+.contentBox .overlayText {
+    right: 2px;
+}
+
+
+/* Madonna - Übersicht, Texte über Bild */
+
+.contentBox.layout_madonna .storyText {
+    position: absolute;
+    bottom: 10px;
+}
+
+.contentBox.layout_madonna .storyPreTitle.defaultChannelColor {
+    color: #fff;
+    background-color: #cc054a;
+    padding: 5px;
+}
+
+.contentBox.layout_madonna .storyTitle,
+.contentBox.layout_madonna .storyTitle span {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.contentBox.layout_madonna .storyTitle {
+    border-left: 5px solid #fff;
+    overflow: hidden;
+}
+.contentBox.layout_madonna .storyTitle span {
+    color: #000;
+    background-color: #fff;
+    white-space: pre-wrap;
+
+    padding: 0 5px 0 0;
+}
+
+.smartphone.layout_tv .contentBox .overlayText {
+    display: none;
+}
+.contentBox .story .videoLength {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-size: 0.7rem;
+    padding: 3px;
+
+    background-color: #FFF;
+}

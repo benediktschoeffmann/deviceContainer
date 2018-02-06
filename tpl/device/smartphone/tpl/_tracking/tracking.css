@@ -1,0 +1,22 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe24OewaWrapper,
+.oe24Tracking {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+.oe24OewaWrapper img,
+.oe24Tracking img {
+    padding: 0;
+    border: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0;
+    display: inline-block;
+}

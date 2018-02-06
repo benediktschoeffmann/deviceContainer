@@ -1,0 +1,11 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.articleBox .storyAdditionalBoxes {
+    display: block;
+}
+

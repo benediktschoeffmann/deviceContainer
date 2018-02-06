@@ -1,0 +1,80 @@
+<?php
+
+function sortTicker($a, $b) {
+	if(strtotime($a['time']) == strtotime($b['time']))
+		return 0;
+
+	return (strtotime($a['time']) > strtotime($b['time'])) ? -1 : 1;
+}
+
+function parseTickerXml($xml, $id, $sportIds) {
+	$sports=$xml->xpath('/c/ticker/sport');
+
+	/* Banner Daten holen END*/
+
+	 /* Ticker Daten holen */
+	 if (array_key_exists($id, $sportIds)) {
+		switch ($sportIds[$id]) {
+			case 'Ski Alpin Herren':
+				$file = 'http://file.oe24.at/xml/ticker_wintersport_skiherren.xml';
+				$xmlParseStyle = 1;
+				break;
+			case 'Ski Alpin Damen':
+				$file = 'http://file.oe24.at/xml/ticker_wintersport_skidamen.xml';
+				$xmlParseStyle = 1;
+				break;
+			case 'Skispringen':
+				$file = 'http://file.oe24.at/xml/ticker_wintersport_skispringen.xml';
+				$xmlParseStyle = 1;
+				break;
+			default:
+				$file = 'http://file.oe24.at/olympiadev/laola1_olympia.xml';
+				$xmlParseStyle = 2;
+				break;
+		}
+		$sportartName = $sportIds[$id];
+	} else {
+		$file = 'http://file.oe24.at/olympiadev/laola1_olympia.xml';
+		if (is_numeric($id)) {
+			$sportartName = 'Sportmix';
+		} elseif ($id == 'Sportmix' || $id == 'Konferenz') {
+			$sportartName = $id;
+		} else {
+			$sportartName = 'Sportmix';
+		}
+		$xmlParseStyle = 2;
+	}
+
+	$tickerData = array();
+
+	if ($xmlParseStyle == 1) {
+		$msgs = $xml->xpath('/c/sportarten/sportart/tickertxt/msg');
+		foreach ($msgs as $msg) {
+			$tickerData[] = array(
+				'title' => $msg->attributes()->title->__toString(),
+				'text' => $msg->attributes()->comment->__toString(),
+				'time' => date('G:i', strtotime($msg->attributes()->uhrzeit->__toString())),
+			);
+		}
+	}
+
+	if ($xmlParseStyle == 2) {
+		$data = $xml->xpath('/c/ticker/sport');
+		foreach ($sports as $sport) {
+			if ($sport->attributes()->name->__toString() == $sportartName) {
+				foreach ($sport->msg as $msg) {
+					$tickerData[] = array(
+						'title' => $msg->attributes()->title->__toString(),
+						'text' => $msg->attributes()->text->__toString(),
+						'time' => $msg->attributes()->time->__toString(),
+					);
+				}
+			}
+		}
+	}
+	
+	usort($tickerData, 'sortTicker');
+	
+	return compact('tickerData', 'sportartName');
+
+}

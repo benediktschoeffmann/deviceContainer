@@ -1,0 +1,108 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* searchform */
+.smartphone.layout_business .stockSearch {
+	margin-bottom: 10px;
+}
+
+.smartphone.layout_business .stockSearch .contentBox {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.smartphone.layout_business .stockSearch .contentBox .stockInput {
+	margin-bottom: 10px;
+}
+.smartphone.layout_business .stockSearch .contentBox input[type="text"] {
+	height: 30px;
+	width: 60%;	
+}
+.smartphone.layout_business .stockSearch .contentBox .button {
+	display: block;
+
+	margin: 0 auto;
+	padding: 5px 20px;
+	
+	color: #FFF;
+
+	border: 0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: button;
+}
+
+/* search-result */
+.smartphone.layout_business .atxSearchResult {
+	margin-bottom: 10px;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResult {
+	padding: 0 10px;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResult ul {
+	
+
+}
+.smartphone.layout_business .atxSearchResult .atxResultHeader,
+.smartphone.layout_business .atxSearchResult .atxResultLine {
+	clear: both;
+	margin: 4px 0;
+	padding: 4px 0;
+
+	border-bottom: 1px solid #f0f1f3;
+}
+
+.smartphone.layout_business .atxSearchResult .cell {
+	padding: 0 5px;
+	display: block;
+	float: left;
+}
+.smartphone.layout_business .atxSearchResult .atxResultHeader .cell {
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.smartphone.layout_business .atxSearchResult .atxResultLine .cell {
+	font-size: 0.75rem;
+}
+
+.smartphone.layout_business .atxSearchResult .cell1 {
+	width: 60%;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.smartphone.layout_business .atxSearchResult .cell5 {
+	width: 25%;
+	text-align: center;
+}
+.smartphone.layout_business .atxSearchResult .cell5 img {
+	display: inline-block;
+	float: left;
+	margin: 6px 4px 0 0;
+	vertical-align: middle;
+}
+.smartphone.layout_business .atxSearchResult .cell5 span {
+	float: right;
+}
+.smartphone.layout_business .atxSearchResult .cell7 {
+	width: 15%;
+	text-align: center;
+}
+.smartphone.layout_business .atxSearchResult .cell2,
+.smartphone.layout_business .atxSearchResult .cell3,
+.smartphone.layout_business .atxSearchResult .cell4,
+.smartphone.layout_business .atxSearchResult .cell6 {
+	display: none;
+}
+
+.smartphone.layout_business .atxSearchResult .cell5 img {
+	margin-right: 5px;
+}
+

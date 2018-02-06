@@ -1,0 +1,208 @@
+<?php
+/**
+ * @collector noauto
+ */
+
+?>
+
+.xlBoxStories {
+    background-color: #f2f2f2;
+    /*padding: 5px 0;*/
+    /*margin: 10px 0;*/
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+} 
+
+
+.xlBox.marginTop {
+    margin-top: 10px;
+}
+.xlBox.marginBottom {
+    margin-bottom: 10px;
+}
+
+.xlBox .headlineBox {
+    margin: 0;
+    padding: 0;
+}
+.xlBox img {
+    width: 100%;
+}
+
+.xlBox .xlBoxStories.singleElement{
+    padding: 10px 0 0 0;
+}
+
+.xlBox .nextStory {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.xlBox .firstStory {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.xlBox .nextStory .imageContainer,
+.xlBox .nextStory .textContainer {
+    float: left;
+}
+
+
+.xlBox .nextStory .imageContainer {
+    width: 30%;
+    margin-right: 4%;
+    padding: 2px 0 0 0 !important;
+}
+.xlBox .nextStory .textContainer {
+    width: 66%;
+}
+
+
+.xlBox .nextStory .imageContainer img {
+    position: static;
+    height: auto;
+}
+
+/*.xlBox .nextStory .textContainer h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    display: -webkit-box;
+    line-height: 1.1;
+    height: 36px;
+}*/
+
+.xlBox .firstStory .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    line-height: 1;
+    margin: 8px 0 0;
+}
+.xlBox .firstStory .textContainer .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    font-size: 1.8125rem;
+    letter-spacing: -1pt;
+    line-height: 1;
+    height: auto;
+}
+.xlBox .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1px 0 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlBox .textContainer .storyTitle {
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    /*line-height: 1.2;*/
+    /*height: 12vw;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*background-color: #ad5;*/
+
+    font-family: "Open Sans Condensed";
+    line-height: 1;
+}
+.xlBox .textContainer .storyLeadText {
+    /*font-size: .875rem;*/
+    font-size: .75rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+/* - - - - - - */
+
+
+/* Image Format 1:1 fuer die .firstStory */
+/* (ws) 2017-01-31 auf Wunsch von Niki werden ALLE Images im Format 2:1 gezeigt, ausser in der Konsole */
+/* (ws) 2017-02-16 auch in der Konsole werden die Images im Format 2:1 gezeigt */
+/* daher -> padding-bottom: 100% auskommentiert */
+
+.xlBox .firstStory .imageContainer {
+    /*padding-bottom: 100%;*/
+    padding-bottom: 62.58% !important;
+    /*padding-bottom: 50%;*/
+}
+
+.xlBox .firstStory {
+    position: relative;
+}
+
+.xlBox .firstStory.overwrite .imageContainer {
+    padding-bottom: 0 !important;
+}
+
+.xlBox .firstStory.overwrite .imageContainer img {
+    height: auto;
+    position: static;
+}
+
+.xlBox .firstStory .textContainerOverlay {
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    */
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 70%);
+}
+.xlBox .firstStory .textContainerOverlay .storyPreTitle {
+    /*font-size: 1rem;*/
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 6px;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    display: inline-block;
+}
+.xlBox .firstStory .textContainerOverlay .storyTitle {
+    color: #fff;
+}
+
+.xlBox .videoContainer .imageContainer {
+    position: relative;
+}
+.xlBox .videoContainer .imageContainer:after {
+    content: "";
+    width: 20%;
+    height: 40%;
+    background-color: rgba(255,255,255,.5);
+    background-image: url('/images/rl2014/play_button_big.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*display: none;*/
+}
+

@@ -1,0 +1,4962 @@
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+
+
+
+
+
+
+
+
+
+/* Flickity 2.0.5 */
+.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09F}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}
+
+
+
+
+
+/* Responsively Lazy*/
+.responsively-lazy:not(img){position:relative;height:0}.responsively-lazy:not(img) img{position:absolute;top:0;left:0;width:100%;height:100%}img.responsively-lazy{width:100%;}
+
+
+/* _shared.jwplayer */
+.videoPlayer {
+    position: relative;
+}
+
+.videoPlayer .jwplayer {
+    z-index: 2;
+}
+
+.videoPlayer .videoPlayerRelatedWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    color: #fff;
+    background-color: #000;
+
+    text-align: center;
+
+    opacity: 1;
+
+    z-index: 3;
+
+    transition: opacity .3s ease 0s;
+}
+.videoPlayer .videoPlayerRelatedWrapper.videoPlayerRelatedWrapperHidden {
+    opacity: 0;
+    z-index: 1;
+
+    transition: opacity .3s ease 0s, z-index 0s linear .3s;
+}
+
+.videoPlayer .videoPlayerRelatedTitle {
+    font-size: 1.25rem;
+
+    padding: 16px 0 0;
+}
+
+.videoPlayer .videoPlayerReplay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 1.25rem;
+
+    margin: 0 0 20px 20px;
+
+    color: #fff;
+}
+.videoPlayer .videoPlayerReplay {
+    text-decoration: none;
+}
+.videoPlayer .videoPlayerReplay:hover {
+    color: #d0113a;
+}
+.videoPlayer .videoPlayerReplay .replayText {
+    padding: 0 0 0 4px;
+}
+
+.videoPlayer .videoPlayerRelatedItems {
+    margin: 0 auto;
+}
+.videoPlayer .videoPlayerRelatedItems.videoPlayerRelatedTwoInRow {
+    max-width: 608px;
+}
+.videoPlayer .videoPlayerRelatedItems.videoPlayerRelatedThreeInRow {
+    max-width: 912px;
+}
+
+.videoPlayer .videoPlayerRelatedItem {
+    width: 292px;
+    padding: 6px 0;
+    margin: 0 6px;
+
+    float: left;
+
+    text-align: left;
+    text-decoration: none;
+
+    color: #fff;
+}
+.videoPlayer .videoPlayerRelatedTwoInRow .videoPlayerRelatedItem:nth-child(2n+1) {
+    clear: left;
+}
+.videoPlayer .videoPlayerRelatedThreeInRow .videoPlayerRelatedItem:nth-child(3n+1) {
+    clear: left;
+}
+
+.videoPlayer .videoPlayerRelatedItemImageWrapper {
+    position: relative;
+}
+
+.videoPlayer .videoPlayerRelatedItemPreTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 0.75rem;
+
+    padding: 6px;
+
+    /*background-color: #dd1010;*/
+    background-color: #d0113a;
+}
+
+
+/* jwplayer werbung images zu groß */
+.jwplayer img {
+    width: auto;
+}
+
+.videoPlayer .jw-title {
+    background: none;
+}
+.videoPlayer .jw-title-primary {
+    /*background-color: rgba(255, 0, 70, 0.9);*/
+    background-color: #333;
+    margin: 0px;
+    border-radius: 0;
+    padding: 8px 7px;
+    display: inline-block;
+    width: auto;
+    font-family: "OpenSansRegular", sans-serif;
+    min-height: auto;
+}
+.videoPlayer .jw-skin-seven.jw-state-idle .jw-icon-display:before {
+    padding-left: 3px;
+}
+
+.videoPlayer .jw-skin-seven .jw-background-color {
+    background: #333;
+    background-color: #333;
+}
+.videoPlayer .jw-skin-seven .jw-button-color:hover {
+    color: #d0113a;
+}
+.videoPlayer .jw-skin-seven .jw-progress {
+    background: #d0113a;
+}
+.videoPlayer .jw-skin-seven .jw-icon-tooltip .jw-active-option {
+    background-color: #d0113a;
+}
+
+
+
+
+
+
+
+
+/* pj jwplayer */
+.smartphone .videoPlayer .jw-title-primary {
+    width: 100%;
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.smartphone .videoPlayer .jwplayer.jw-state-error .jw-title .jw-title-primary {
+    white-space: nowrap;
+}
+
+
+/* _base.css */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    /*width: 100%;*/
+    /*min-height: 100%;*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    background-color: #f1f1f1;
+    /* http://icomoon.io/#docs */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+a,
+a:link
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+    font-size: .1rem;
+    line-height: .1;
+}
+.clearfix:after {
+    clear: both;
+}
+/*
+.clearfix {
+    *zoom: 1;
+}
+*/
+
+/*
+Visually hidden:
+http://icomoon.io/#docs
+http://h5bp.com/
+<a href="#">
+    <span class="icon-home"></span>
+    <span class="visuallyhidden">Home</span>
+</a>
+*/
+.visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* http://webdesign.tutsplus.com/de/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport {
+    /*width: extend-to-zoom;*/
+    /*zoom: 1.0;*/
+}
+@-ms-viewport {
+    /*width: extend-to-zoom;*/
+    /*zoom: 1.0;*/
+}
+/* // */
+
+/* Vertical align anything with just 3 lines of CSS */
+/* Ref: zerosixthree (http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/) */
+
+/*
+.parentElement.verticalAlign {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.parentElement.verticalAlign .childElement {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:    translate(-50%, -50%);
+    -ms-transform:     translate(-50%, -50%);
+    -o-transform:      translate(-50%, -50%);
+    transform:         translate(-50%, -50%);
+}
+*/
+
+
+
+
+/* _styles.css */
+
+.contentContainer {
+    padding-top: 52px; /* die Hoehe von .header */
+}
+.container {
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+.imageContainer {
+    display: block;
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative;
+}
+.imageContainer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d5d5d5;
+}
+.imageContainer.inlineImage {
+    padding-bottom: 0;
+}
+.imageContainer.inlineImage img {
+    height: auto;
+    position: static;
+}
+
+
+.videoStory {
+    display: block;
+    position: relative;
+}
+.videoStory:after {
+    content: '';
+    display: block;
+    background-image: url('/images/rl2014/play_button.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 16vw;
+    height: 16vw;
+    background-size: 200% 100%;
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+
+.slideShowStory {
+    display: block;
+    position: relative;
+}
+.slideShowStory:after {
+    content: '';
+    display: block;
+    /*background-image: url('/images/rl2014/imageIcon.svg');*/
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 16vw;
+    height: 16vw;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.marginTop {
+    margin-top: 10px;
+}
+.marginBottom {
+    margin-bottom: 10px;
+}
+
+
+.iconSlider {
+    width: 26px;
+    padding: 2px 4px;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 10;
+}
+.iconSlider svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: #fff;
+}
+
+
+.iconSwipe {
+    width: 14vw;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.iconSwipe svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.iconSwipe svg path {
+    fill: #fff;
+}
+
+/* channelColors.css */
+
+
+.smartphone.layout_oe24 .defaultChannelColor,
+.smartphone .layout_oe24 .storyTitle.defaultChannelColor,
+.smartphone .layout_oe24 .storyPreTitle.defaultChannelColor {
+    color: #d0113a;
+}
+.smartphone.layout_oe24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_oe24 .defaultChannelBackgroundColor,
+.smartphone .layout_oe24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_oe24 .flickity-prev-next-button,
+.contentSlider.console .layout_oe24 .storyPreTitle,
+.contentSlider.console .layout_oe24 .storyNumber {
+    background-color: #d0113a;
+}
+.smartphone.layout_news .defaultChannelColor,
+.smartphone .layout_news .storyTitle.defaultChannelColor,
+.smartphone .layout_news .storyPreTitle.defaultChannelColor {
+    color: #d0013a;
+}
+.smartphone.layout_news .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_news .defaultChannelBackgroundColor,
+.smartphone .layout_news .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_news .flickity-prev-next-button,
+.contentSlider.console .layout_news .storyPreTitle,
+.contentSlider.console .layout_news .storyNumber {
+    background-color: #d0013a;
+}
+.smartphone.layout_politik .defaultChannelColor,
+.smartphone .layout_politik .storyTitle.defaultChannelColor,
+.smartphone .layout_politik .storyPreTitle.defaultChannelColor {
+    color: #d0013a;
+}
+.smartphone.layout_politik .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_politik .defaultChannelBackgroundColor,
+.smartphone .layout_politik .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_politik .flickity-prev-next-button,
+.contentSlider.console .layout_politik .storyPreTitle,
+.contentSlider.console .layout_politik .storyNumber {
+    background-color: #d0013a;
+}
+.smartphone.layout_welt .defaultChannelColor,
+.smartphone .layout_welt .storyTitle.defaultChannelColor,
+.smartphone .layout_welt .storyPreTitle.defaultChannelColor {
+    color: #0051b2;
+}
+.smartphone.layout_welt .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_welt .defaultChannelBackgroundColor,
+.smartphone .layout_welt .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_welt .flickity-prev-next-button,
+.contentSlider.console .layout_welt .storyPreTitle,
+.contentSlider.console .layout_welt .storyNumber {
+    background-color: #0051b2;
+}
+.smartphone.layout_oesterreich .defaultChannelColor,
+.smartphone .layout_oesterreich .storyTitle.defaultChannelColor,
+.smartphone .layout_oesterreich .storyPreTitle.defaultChannelColor {
+    color: #f50f39;
+}
+.smartphone.layout_oesterreich .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_oesterreich .defaultChannelBackgroundColor,
+.smartphone .layout_oesterreich .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_oesterreich .flickity-prev-next-button,
+.contentSlider.console .layout_oesterreich .storyPreTitle,
+.contentSlider.console .layout_oesterreich .storyNumber {
+    background-color: #f50f39;
+}
+.smartphone.layout_bundeslaender .defaultChannelColor,
+.smartphone .layout_bundeslaender .storyTitle.defaultChannelColor,
+.smartphone .layout_bundeslaender .storyPreTitle.defaultChannelColor {
+    color: #f50f39;
+}
+.smartphone.layout_bundeslaender .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_bundeslaender .defaultChannelBackgroundColor,
+.smartphone .layout_bundeslaender .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_bundeslaender .flickity-prev-next-button,
+.contentSlider.console .layout_bundeslaender .storyPreTitle,
+.contentSlider.console .layout_bundeslaender .storyNumber {
+    background-color: #f50f39;
+}
+.smartphone.layout_wetter .defaultChannelColor,
+.smartphone .layout_wetter .storyTitle.defaultChannelColor,
+.smartphone .layout_wetter .storyPreTitle.defaultChannelColor {
+    color: #007ddc;
+}
+.smartphone.layout_wetter .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_wetter .defaultChannelBackgroundColor,
+.smartphone .layout_wetter .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_wetter .flickity-prev-next-button,
+.contentSlider.console .layout_wetter .storyPreTitle,
+.contentSlider.console .layout_wetter .storyNumber {
+    background-color: #007ddc;
+}
+.smartphone.layout_sport .defaultChannelColor,
+.smartphone .layout_sport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport .storyPreTitle.defaultChannelColor {
+    color: #22b480;
+}
+.smartphone.layout_sport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport .defaultChannelBackgroundColor,
+.smartphone .layout_sport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport .flickity-prev-next-button,
+.contentSlider.console .layout_sport .storyPreTitle,
+.contentSlider.console .layout_sport .storyNumber {
+    background-color: #22b480;
+}
+.smartphone.layout_sport24 .defaultChannelColor,
+.smartphone .layout_sport24 .storyTitle.defaultChannelColor,
+.smartphone .layout_sport24 .storyPreTitle.defaultChannelColor {
+    color: #d2123b;
+}
+.smartphone.layout_sport24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport24 .defaultChannelBackgroundColor,
+.smartphone .layout_sport24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport24 .flickity-prev-next-button,
+.contentSlider.console .layout_sport24 .storyPreTitle,
+.contentSlider.console .layout_sport24 .storyNumber {
+    background-color: #d2123b;
+}
+.smartphone.layout_sport-euro .defaultChannelColor,
+.smartphone .layout_sport-euro .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-euro .storyPreTitle.defaultChannelColor {
+    color: #313b69;
+}
+.smartphone.layout_sport-euro .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-euro .defaultChannelBackgroundColor,
+.smartphone .layout_sport-euro .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-euro .flickity-prev-next-button,
+.contentSlider.console .layout_sport-euro .storyPreTitle,
+.contentSlider.console .layout_sport-euro .storyNumber {
+    background-color: #313b69;
+}
+.smartphone.layout_sport-fussball .defaultChannelColor,
+.smartphone .layout_sport-fussball .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-fussball .storyPreTitle.defaultChannelColor {
+    color: #22b480;
+}
+.smartphone.layout_sport-fussball .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-fussball .defaultChannelBackgroundColor,
+.smartphone .layout_sport-fussball .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-fussball .flickity-prev-next-button,
+.contentSlider.console .layout_sport-fussball .storyPreTitle,
+.contentSlider.console .layout_sport-fussball .storyNumber {
+    background-color: #22b480;
+}
+.smartphone.layout_sport-motorsport .defaultChannelColor,
+.smartphone .layout_sport-motorsport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-motorsport .storyPreTitle.defaultChannelColor {
+    color: #1d1d1b;
+}
+.smartphone.layout_sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .layout_sport-motorsport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-motorsport .flickity-prev-next-button,
+.contentSlider.console .layout_sport-motorsport .storyPreTitle,
+.contentSlider.console .layout_sport-motorsport .storyNumber {
+    background-color: #1d1d1b;
+}
+.smartphone.layout_sport-sportmix .defaultChannelColor,
+.smartphone .layout_sport-sportmix .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-sportmix .storyPreTitle.defaultChannelColor {
+    color: #007edc;
+}
+.smartphone.layout_sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .layout_sport-sportmix .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-sportmix .flickity-prev-next-button,
+.contentSlider.console .layout_sport-sportmix .storyPreTitle,
+.contentSlider.console .layout_sport-sportmix .storyNumber {
+    background-color: #007edc;
+}
+.smartphone.layout_sport-stars .defaultChannelColor,
+.smartphone .layout_sport-stars .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-stars .storyPreTitle.defaultChannelColor {
+    color: #b1177a;
+}
+.smartphone.layout_sport-stars .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-stars .defaultChannelBackgroundColor,
+.smartphone .layout_sport-stars .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-stars .flickity-prev-next-button,
+.contentSlider.console .layout_sport-stars .storyPreTitle,
+.contentSlider.console .layout_sport-stars .storyNumber {
+    background-color: #b1177a;
+}
+.smartphone.layout_sport-wintersport .defaultChannelColor,
+.smartphone .layout_sport-wintersport .storyTitle.defaultChannelColor,
+.smartphone .layout_sport-wintersport .storyPreTitle.defaultChannelColor {
+    color: #0052b3;
+}
+.smartphone.layout_sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .layout_sport-wintersport .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_sport-wintersport .flickity-prev-next-button,
+.contentSlider.console .layout_sport-wintersport .storyPreTitle,
+.contentSlider.console .layout_sport-wintersport .storyNumber {
+    background-color: #0052b3;
+}
+.smartphone.layout_money .defaultChannelColor,
+.smartphone .layout_money .storyTitle.defaultChannelColor,
+.smartphone .layout_money .storyPreTitle.defaultChannelColor {
+    color: #174584;
+}
+.smartphone.layout_money .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_money .defaultChannelBackgroundColor,
+.smartphone .layout_money .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_money .flickity-prev-next-button,
+.contentSlider.console .layout_money .storyPreTitle,
+.contentSlider.console .layout_money .storyNumber {
+    background-color: #174584;
+}
+.smartphone.layout_business .defaultChannelColor,
+.smartphone .layout_business .storyTitle.defaultChannelColor,
+.smartphone .layout_business .storyPreTitle.defaultChannelColor {
+    color: #35549b;
+}
+.smartphone.layout_business .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_business .defaultChannelBackgroundColor,
+.smartphone .layout_business .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_business .flickity-prev-next-button,
+.contentSlider.console .layout_business .storyPreTitle,
+.contentSlider.console .layout_business .storyNumber {
+    background-color: #35549b;
+}
+.smartphone.layout_madonna .defaultChannelColor,
+.smartphone .layout_madonna .storyTitle.defaultChannelColor,
+.smartphone .layout_madonna .storyPreTitle.defaultChannelColor {
+    color: #cc054a;
+}
+.smartphone.layout_madonna .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_madonna .defaultChannelBackgroundColor,
+.smartphone .layout_madonna .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_madonna .flickity-prev-next-button,
+.contentSlider.console .layout_madonna .storyPreTitle,
+.contentSlider.console .layout_madonna .storyNumber {
+    background-color: #cc054a;
+}
+.smartphone.layout_leute .defaultChannelColor,
+.smartphone .layout_leute .storyTitle.defaultChannelColor,
+.smartphone .layout_leute .storyPreTitle.defaultChannelColor {
+    color: #ffca49;
+}
+.smartphone.layout_leute .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_leute .defaultChannelBackgroundColor,
+.smartphone .layout_leute .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_leute .flickity-prev-next-button,
+.contentSlider.console .layout_leute .storyPreTitle,
+.contentSlider.console .layout_leute .storyNumber {
+    background-color: #ffca49;
+}
+.smartphone.layout_society .defaultChannelColor,
+.smartphone .layout_society .storyTitle.defaultChannelColor,
+.smartphone .layout_society .storyPreTitle.defaultChannelColor {
+    color: #ffca49;
+}
+.smartphone.layout_society .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_society .defaultChannelBackgroundColor,
+.smartphone .layout_society .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_society .flickity-prev-next-button,
+.contentSlider.console .layout_society .storyPreTitle,
+.contentSlider.console .layout_society .storyNumber {
+    background-color: #ffca49;
+}
+.smartphone.layout_tv .defaultChannelColor,
+.smartphone .layout_tv .storyTitle.defaultChannelColor,
+.smartphone .layout_tv .storyPreTitle.defaultChannelColor {
+    color: #59cad2;
+}
+.smartphone.layout_tv .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_tv .defaultChannelBackgroundColor,
+.smartphone .layout_tv .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_tv .flickity-prev-next-button,
+.contentSlider.console .layout_tv .storyPreTitle,
+.contentSlider.console .layout_tv .storyNumber {
+    background-color: #59cad2;
+}
+.smartphone.layout_video .defaultChannelColor,
+.smartphone .layout_video .storyTitle.defaultChannelColor,
+.smartphone .layout_video .storyPreTitle.defaultChannelColor {
+    color: #59cad2;
+}
+.smartphone.layout_video .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_video .defaultChannelBackgroundColor,
+.smartphone .layout_video .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_video .flickity-prev-next-button,
+.contentSlider.console .layout_video .storyPreTitle,
+.contentSlider.console .layout_video .storyNumber {
+    background-color: #59cad2;
+}
+.smartphone.layout_gesund24 .defaultChannelColor,
+.smartphone .layout_gesund24 .storyTitle.defaultChannelColor,
+.smartphone .layout_gesund24 .storyPreTitle.defaultChannelColor {
+    color: #3194dd;
+}
+.smartphone.layout_gesund24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_gesund24 .defaultChannelBackgroundColor,
+.smartphone .layout_gesund24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_gesund24 .flickity-prev-next-button,
+.contentSlider.console .layout_gesund24 .storyPreTitle,
+.contentSlider.console .layout_gesund24 .storyNumber {
+    background-color: #3194dd;
+}
+.smartphone.layout_kochen .defaultChannelColor,
+.smartphone .layout_kochen .storyTitle.defaultChannelColor,
+.smartphone .layout_kochen .storyPreTitle.defaultChannelColor {
+    color: #a10f42;
+}
+.smartphone.layout_kochen .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_kochen .defaultChannelBackgroundColor,
+.smartphone .layout_kochen .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_kochen .flickity-prev-next-button,
+.contentSlider.console .layout_kochen .storyPreTitle,
+.contentSlider.console .layout_kochen .storyNumber {
+    background-color: #a10f42;
+}
+.smartphone.layout_cooking24 .defaultChannelColor,
+.smartphone .layout_cooking24 .storyTitle.defaultChannelColor,
+.smartphone .layout_cooking24 .storyPreTitle.defaultChannelColor {
+    color: #a10f42;
+}
+.smartphone.layout_cooking24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_cooking24 .defaultChannelBackgroundColor,
+.smartphone .layout_cooking24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_cooking24 .flickity-prev-next-button,
+.contentSlider.console .layout_cooking24 .storyPreTitle,
+.contentSlider.console .layout_cooking24 .storyNumber {
+    background-color: #a10f42;
+}
+.smartphone.layout_digital .defaultChannelColor,
+.smartphone .layout_digital .storyTitle.defaultChannelColor,
+.smartphone .layout_digital .storyPreTitle.defaultChannelColor {
+    color: #708ab9;
+}
+.smartphone.layout_digital .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_digital .defaultChannelBackgroundColor,
+.smartphone .layout_digital .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_digital .flickity-prev-next-button,
+.contentSlider.console .layout_digital .storyPreTitle,
+.contentSlider.console .layout_digital .storyNumber {
+    background-color: #708ab9;
+}
+.smartphone.layout_reise .defaultChannelColor,
+.smartphone .layout_reise .storyTitle.defaultChannelColor,
+.smartphone .layout_reise .storyPreTitle.defaultChannelColor {
+    color: #ff6200;
+}
+.smartphone.layout_reise .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_reise .defaultChannelBackgroundColor,
+.smartphone .layout_reise .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_reise .flickity-prev-next-button,
+.contentSlider.console .layout_reise .storyPreTitle,
+.contentSlider.console .layout_reise .storyNumber {
+    background-color: #ff6200;
+}
+.smartphone.layout_auto .defaultChannelColor,
+.smartphone .layout_auto .storyTitle.defaultChannelColor,
+.smartphone .layout_auto .storyPreTitle.defaultChannelColor {
+    color: #2c3564;
+}
+.smartphone.layout_auto .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_auto .defaultChannelBackgroundColor,
+.smartphone .layout_auto .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_auto .flickity-prev-next-button,
+.contentSlider.console .layout_auto .storyPreTitle,
+.contentSlider.console .layout_auto .storyNumber {
+    background-color: #2c3564;
+}
+.smartphone.layout_joe24 .defaultChannelColor,
+.smartphone .layout_joe24 .storyTitle.defaultChannelColor,
+.smartphone .layout_joe24 .storyPreTitle.defaultChannelColor {
+    color: #25407c;
+}
+.smartphone.layout_joe24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_joe24 .defaultChannelBackgroundColor,
+.smartphone .layout_joe24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_joe24 .flickity-prev-next-button,
+.contentSlider.console .layout_joe24 .storyPreTitle,
+.contentSlider.console .layout_joe24 .storyNumber {
+    background-color: #25407c;
+}
+.smartphone.layout_joe24-logo .defaultChannelColor,
+.smartphone .layout_joe24-logo .storyTitle.defaultChannelColor,
+.smartphone .layout_joe24-logo .storyPreTitle.defaultChannelColor {
+    color: #25407c;
+}
+.smartphone.layout_joe24-logo .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_joe24-logo .defaultChannelBackgroundColor,
+.smartphone .layout_joe24-logo .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_joe24-logo .flickity-prev-next-button,
+.contentSlider.console .layout_joe24-logo .storyPreTitle,
+.contentSlider.console .layout_joe24-logo .storyNumber {
+    background-color: #25407c;
+}
+.smartphone.layout_games24 .defaultChannelColor,
+.smartphone .layout_games24 .storyTitle.defaultChannelColor,
+.smartphone .layout_games24 .storyPreTitle.defaultChannelColor {
+    color: #000;
+}
+.smartphone.layout_games24 .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_games24 .defaultChannelBackgroundColor,
+.smartphone .layout_games24 .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_games24 .flickity-prev-next-button,
+.contentSlider.console .layout_games24 .storyPreTitle,
+.contentSlider.console .layout_games24 .storyNumber {
+    background-color: #000;
+}
+.smartphone.layout_stars-oesterreich .defaultChannelColor,
+.smartphone .layout_stars-oesterreich .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-oesterreich .storyPreTitle.defaultChannelColor {
+    color: #ff776e;
+}
+.smartphone.layout_stars-oesterreich .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-oesterreich .defaultChannelBackgroundColor,
+.smartphone .layout_stars-oesterreich .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-oesterreich .flickity-prev-next-button,
+.contentSlider.console .layout_stars-oesterreich .storyPreTitle,
+.contentSlider.console .layout_stars-oesterreich .storyNumber {
+    background-color: #ff776e;
+}
+.smartphone.layout_stars-international .defaultChannelColor,
+.smartphone .layout_stars-international .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-international .storyPreTitle.defaultChannelColor {
+    color: #0052b3;
+}
+.smartphone.layout_stars-international .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-international .defaultChannelBackgroundColor,
+.smartphone .layout_stars-international .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-international .flickity-prev-next-button,
+.contentSlider.console .layout_stars-international .storyPreTitle,
+.contentSlider.console .layout_stars-international .storyNumber {
+    background-color: #0052b3;
+}
+.smartphone.layout_stars-deutschland .defaultChannelColor,
+.smartphone .layout_stars-deutschland .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-deutschland .storyPreTitle.defaultChannelColor {
+    color: #d0113a;
+}
+.smartphone.layout_stars-deutschland .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-deutschland .defaultChannelBackgroundColor,
+.smartphone .layout_stars-deutschland .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-deutschland .flickity-prev-next-button,
+.contentSlider.console .layout_stars-deutschland .storyPreTitle,
+.contentSlider.console .layout_stars-deutschland .storyNumber {
+    background-color: #d0113a;
+}
+.smartphone.layout_stars-royals .defaultChannelColor,
+.smartphone .layout_stars-royals .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-royals .storyPreTitle.defaultChannelColor {
+    color: #313b69;
+}
+.smartphone.layout_stars-royals .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-royals .defaultChannelBackgroundColor,
+.smartphone .layout_stars-royals .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-royals .flickity-prev-next-button,
+.contentSlider.console .layout_stars-royals .storyPreTitle,
+.contentSlider.console .layout_stars-royals .storyNumber {
+    background-color: #313b69;
+}
+.smartphone.layout_stars-partys .defaultChannelColor,
+.smartphone .layout_stars-partys .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-partys .storyPreTitle.defaultChannelColor {
+    color: #b1167f;
+}
+.smartphone.layout_stars-partys .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-partys .defaultChannelBackgroundColor,
+.smartphone .layout_stars-partys .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-partys .flickity-prev-next-button,
+.contentSlider.console .layout_stars-partys .storyPreTitle,
+.contentSlider.console .layout_stars-partys .storyNumber {
+    background-color: #b1167f;
+}
+.smartphone.layout_stars-mode .defaultChannelColor,
+.smartphone .layout_stars-mode .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-mode .storyPreTitle.defaultChannelColor {
+    color: #ec5a9d;
+}
+.smartphone.layout_stars-mode .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-mode .defaultChannelBackgroundColor,
+.smartphone .layout_stars-mode .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-mode .flickity-prev-next-button,
+.contentSlider.console .layout_stars-mode .storyPreTitle,
+.contentSlider.console .layout_stars-mode .storyNumber {
+    background-color: #ec5a9d;
+}
+.smartphone.layout_stars-beauty .defaultChannelColor,
+.smartphone .layout_stars-beauty .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-beauty .storyPreTitle.defaultChannelColor {
+    color: #cd0849;
+}
+.smartphone.layout_stars-beauty .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-beauty .defaultChannelBackgroundColor,
+.smartphone .layout_stars-beauty .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-beauty .flickity-prev-next-button,
+.contentSlider.console .layout_stars-beauty .storyPreTitle,
+.contentSlider.console .layout_stars-beauty .storyNumber {
+    background-color: #cd0849;
+}
+.smartphone.layout_stars-musik .defaultChannelColor,
+.smartphone .layout_stars-musik .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-musik .storyPreTitle.defaultChannelColor {
+    color: #f89845;
+}
+.smartphone.layout_stars-musik .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-musik .defaultChannelBackgroundColor,
+.smartphone .layout_stars-musik .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-musik .flickity-prev-next-button,
+.contentSlider.console .layout_stars-musik .storyPreTitle,
+.contentSlider.console .layout_stars-musik .storyNumber {
+    background-color: #f89845;
+}
+.smartphone.layout_stars-kultur .defaultChannelColor,
+.smartphone .layout_stars-kultur .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-kultur .storyPreTitle.defaultChannelColor {
+    color: #52aada;
+}
+.smartphone.layout_stars-kultur .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-kultur .defaultChannelBackgroundColor,
+.smartphone .layout_stars-kultur .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-kultur .flickity-prev-next-button,
+.contentSlider.console .layout_stars-kultur .storyPreTitle,
+.contentSlider.console .layout_stars-kultur .storyNumber {
+    background-color: #52aada;
+}
+.smartphone.layout_stars-tv .defaultChannelColor,
+.smartphone .layout_stars-tv .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-tv .storyPreTitle.defaultChannelColor {
+    color: #5272da;
+}
+.smartphone.layout_stars-tv .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-tv .defaultChannelBackgroundColor,
+.smartphone .layout_stars-tv .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-tv .flickity-prev-next-button,
+.contentSlider.console .layout_stars-tv .storyPreTitle,
+.contentSlider.console .layout_stars-tv .storyNumber {
+    background-color: #5272da;
+}
+.smartphone.layout_stars-kino .defaultChannelColor,
+.smartphone .layout_stars-kino .storyTitle.defaultChannelColor,
+.smartphone .layout_stars-kino .storyPreTitle.defaultChannelColor {
+    color: #c9542f;
+}
+.smartphone.layout_stars-kino .defaultChannelBackgroundColor,
+.smartphone .headlineBox.layout_stars-kino .defaultChannelBackgroundColor,
+.smartphone .layout_stars-kino .storyPreTitle.defaultChannelBackgroundColor,
+.contentBox.console .layout_stars-kino .flickity-prev-next-button,
+.contentSlider.console .layout_stars-kino .storyPreTitle,
+.contentSlider.console .layout_stars-kino .storyNumber {
+    background-color: #c9542f;
+}
+
+
+/* navigation top*/
+
+.navigationTop {
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+.navigationTop ul,
+.navigationTop li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navigationTop ul {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.navigationTop li {
+    text-align: center;
+    text-transform: uppercase;
+    display: table-cell;
+    border-left: 1px solid #d5d5d5;
+}
+.navigationTop li:first-child {
+    border-left: none;
+}
+.navigationTop li a {
+    font-size: .8125rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    color: #000;
+}
+.navigationTop li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* navigation main */
+
+.navigationMainActive::-webkit-scrollbar {
+    display: none;
+}
+
+.navigationMain {
+    width: 0;
+    /*height: 100%;*/
+    /*height: auto;*/
+    padding-top: 62px; /* die Hoehe von .header */
+    padding-bottom: 22px;
+    background: #3b3b3b;
+    /*position: fixed;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+}
+
+/* ----------------------------- */
+
+.navigationMainItem {
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: block;
+    padding: 4px 5%;
+    border-bottom: 1px solid #616161;
+    color: #c7c7c7;
+}
+.navigationMainItem:last-child {
+    border-bottom: none;
+}
+.navigationMainItem,
+.navigationMainItem:link,
+.navigationMainItem:visited,
+.navigationMainItem:focus {
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+/* ----------------------------- */
+
+.navigationMainActive .navigationMain {
+    width: 100%;
+}
+.navigationMainActive .contentContainer {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ----------------------------- */
+
+.navigationMainActive .headerNavButton svg {
+    display: block;
+}
+.navigationMainActive .headerNavButton svg:first-child {
+    display: none;
+}
+
+/* ----------------------------- */
+
+.navigationMainItem.latestCover {
+    text-align: left;
+}
+.navigationMainItem.latestCover span,
+.navigationMainItem.latestCover img {
+    display: block;
+    width: 100%;
+}
+.navigationMainItem.latestCover span {
+    /*font-weight: 700;*/
+    margin: 0 0 6px;
+}
+
+
+
+/* navigation bottom */
+.navigationBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #fff;
+
+    z-index: 2;
+
+    -webkit-box-shadow: 0 0 7px #ccc;
+    -moz-box-shadow: 0 0 7px #ccc;
+    box-shadow: 0 0 7px #ccc;
+}
+
+.navigationBottom ul,
+.navigationBottom li {
+    list-style: none;
+}
+.navigationBottom ul {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+.navigationBottom li {
+    display: table-cell;
+
+    padding: 5px 0;
+    border-left: 2px solid #ededed;
+
+    text-align: center;
+}
+.navigationBottom li:first-child {
+    border-left: none;
+}
+
+.navigationBottom li a {
+    display: block;
+    color: #aaa;
+}
+.navigationBottom li a:hover {
+    color: #3478ff;
+}
+
+@media all and (min-width: 768px) {
+    .navigationBottom {
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+
+
+/* header */
+
+.wrapper > .header {
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    z-index: 20;
+    background-color: #d0113a;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+
+/* ----------------------------- */
+
+.headerNavButton,
+.headerLogoPortal,
+.headerLogoOesterreich {
+    float: left;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper > .header a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------- */
+
+.headerNavButton {
+    text-align: center;
+    /*width: 16%;*/
+    width: 12%;
+    height: 100%;
+    color: #fff;
+    /*background-color: #900;*/
+}
+.headerLogoPortal {
+    text-align: center;
+    /*width: 46%;*/
+    width: 54%;
+    /*background-color: #090;*/
+}
+.headerLogoOesterreich {
+    text-align: right;
+    /*width: 38%;*/
+    width: 34%;
+    /*background-color: #009;*/
+}
+
+/* ----------------------------- */
+
+.headerNavButton svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    position: absolute;
+    /*left: 50%;*/
+    right: -5px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.headerNavButton svg:first-child {
+    display: block;
+}
+
+/* ----------------------------- */
+
+.headerLogoOesterreich {
+    /*padding: 10px;*/
+    padding: 10px 10px 10px 0;
+    text-align: left;
+}
+.headerLogoOesterreich a {
+    width: 100%;
+}
+.headerLogoOesterreich svg {
+    height: 14px;
+
+    width: 103.75px;
+    text-align: right;
+}
+.headerLogoOesterreich span {
+    font-size: .5625rem;
+    text-align: right;
+    display: block;
+    color: #fff;
+
+    width: 103.75px;
+}
+
+/* ----------------------------- */
+
+.headerLogoPortal svg {
+    width: auto;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    padding-right: 5px;
+}
+
+/* ----------------------------- */
+
+.layout_sport .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_sport .wrapper > .header {
+    background-color: #22b480;
+    background-image: -webkit-linear-gradient(top, #71db80, #22b480);
+    background-image: linear-gradient(to bottom, #71db80, #22b480);
+}
+
+/* ----------------------------- */
+
+.layout_society .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_society .wrapper > .header {
+    background-color: #ffca49;
+    background-image: -webkit-linear-gradient(top, #ffca49 20%, #ffb652);
+    background-image: linear-gradient(to bottom, #ffca49 20%, #ffb652);
+}
+
+/* ----------------------------- */
+
+.layout_tv .headerLogoPortal svg {
+    height: 52%;
+}
+.layout_tv .wrapper > .header {
+    background-color: #ca003f;
+    background-image: -webkit-linear-gradient(top, #ca003f 20%, #e80056);
+    background-image: linear-gradient(to bottom, #ca003f 20%, #e80056);
+}
+
+/* ----------------------------- */
+
+.layout_radiooe24 .headerLogoPortal svg {
+    height: 62%;
+}
+.layout_radiooe24 .wrapper > .header {
+    background-color: #d0113a;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+
+/* ----------------------------- */
+
+.layout_madonna .headerLogoPortal {
+    width: 84%;
+}
+.layout_madonna .headerLogoOesterreich {
+    display: none;
+}
+.layout_madonna .headerLogoPortal svg {
+    height: 70%;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.layout_madonna .wrapper > .header {
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(top, #fff, #f2f2f2);
+    background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+    border-bottom: 1px solid #e2e2e2;
+}
+.layout_madonna .wrapper .headerNavButton svg {
+    stroke: #000;
+}
+/*
+.layout_madonna .wrapper .headerLogoOesterreich svg {
+    stroke: #000;
+}
+.layout_madonna .wrapper .headerLogoOesterreich svg path {
+    fill: #000;
+}
+.layout_madonna .wrapper .headerLogoOesterreich span {
+    color: #000;
+}
+*/
+
+/* ----------------------------- */
+
+.layout_money .headerLogoPortal {
+    width: 80%;
+}
+.layout_money .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_money .wrapper > .header {
+    background-color: #0f7dc4;
+    background-image: -webkit-linear-gradient(top, #0f7dc4 20%, #184089);
+    background-image: linear-gradient(to bottom, #0f7dc4 20%, #184089);
+}
+
+/* ----------------------------- */
+
+/* ----------------------------- */
+
+.layout_reise .headerLogoPortal {
+    width: 68%;
+}
+.layout_reise .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_reise .wrapper > .header {
+    background-color: #2b4a90;
+    background-image: -webkit-linear-gradient(to bottom,#2b4a90 20%,#25407c);
+    background-image: linear-gradient(to bottom,#2b4a90 20%,#25407c);
+}
+
+/* ----------------------------- */
+
+.layout_gesund24 .headerLogoPortal {
+    width: 68%;
+}
+.layout_gesund24 .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_gesund24 .wrapper > .header {
+    background-color: #61b6f4;
+    background-image: -webkit-linear-gradient(to bottom,#61b6f4 20%,#3194dd);
+    background-image: linear-gradient(to bottom,#61b6f4 20%,#3194dd);
+}
+
+/* ----------------------------- */
+
+.layout_cooking24 .headerLogoPortal {
+    width: 88%;
+}
+.layout_cooking24 .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_cooking24 .wrapper > .header {
+    background-color: #a10f42; /*#b41152;*/
+    background-image: -webkit-linear-gradient(to bottom,#b41152 20%,#8f0c34);
+    background-image: linear-gradient(to bottom,#b41152 0,#8f0c34 100%);
+}
+
+/* ----------------------------- */
+
+.layout_games24 .headerLogoPortal {
+    width: 88%;
+}
+.layout_games24 .headerLogoPortal img {
+    height: 70%;
+    margin-top: 10px;
+}
+
+.layout_games24 .wrapper > .header {
+    background-color: #000;
+    background-image: -webkit-linear-gradient(to bottom,#787878 20%,#000);
+    background-image: linear-gradient(to bottom,#787878 20%,#000);
+}
+
+/* ----------------------------- */
+
+.layout_business .headerLogoPortal {
+    width: 88%;
+}
+.layout_business .headerLogoPortal svg,
+.layout_business .headerLogoPortal img {
+    height: 55%;
+    margin-top: 10px;
+}
+.layout_business .wrapper > .header {
+    background-color: #35549b;
+    background-image: -webkit-linear-gradient(to bottom,#35549b 20%,#357dbe);
+    background-image: linear-gradient(to bottom,#35549b 0,#357dbe 100%);
+}
+
+
+
+/* footer */
+
+
+.wrapper > .footer {
+    display: block;
+    clear: both;
+    padding: 3px 5%;
+    width: 100%;
+    background-color: #f8f8f8;
+
+/*
+    position: relative;
+    z-index: 100000;
+    border-top: #000;
+*/
+}
+
+/* ----------------------------- */
+
+.wrapper > .footer p,
+.wrapper > .footer a {
+    padding: 0;
+    margin: 0;
+    color: #999;
+}
+
+/* ----------------------------- */
+
+.footerInfo {
+    /* ... */
+}
+.footerInfo p {
+    font-size: .725rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* tabbed box */
+
+.headlineBox {
+    margin: 0 -10px 10px;
+}
+.headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.headline span,
+.headline a,
+.headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabbedBox.joe24-logo img.headlineLogo {
+    display: inline-block;
+    height: 24px;
+    vertical-align: baseline;
+}
+
+/* Madonna Headline */
+.smartphone.layout_madonna .container .headline,
+.smartphone.layout_madonna .container .OUTBRAIN .ob-widget-header {
+    background-color: transparent;
+}
+
+.smartphone.layout_madonna .container  .headline a,
+.smartphone.layout_madonna .container  .headline span,
+.smartphone.layout_madonna .container  .OUTBRAIN .ob-widget-header {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.smartphone.layout_madonna .container  .headline a:after,
+.smartphone.layout_madonna .container  .headline span:after,
+.smartphone.layout_madonna .container  .OUTBRAIN .ob-widget-header:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: #cc054a;
+    position: relative;
+    top: 5px;
+}
+
+/* consoleBox */
+
+.contentBox.console {
+    margin-bottom: 10px;
+}
+
+
+.contentBox.console .headlineBox {
+    margin: 0 -10px 10px;
+}
+.contentBox.console .headline {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.contentBox.console .headline a,
+.contentBox.console .headline a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.contentBox.console .story {
+    display: block;
+    width: 100%;
+    display: none;
+}
+.contentBox.console .story {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.contentBox.console .story:first-child {
+    position: static;
+}
+
+
+.contentBox.console .story .imageContainer {
+    /* aspect ratio 2:1 */
+    width: 100%;
+    padding-bottom: 50%;
+    /*padding-bottom: 62.58%;*/
+    position: relative;
+}
+.contentBox.console .story .imageContainer img {
+    display: block;
+    background-color: #d5d5d5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    /*height: auto;*/
+}
+
+.tabbedBox.madonna .contentBox.console .story .imageContainer {
+    /*padding-bottom: 62.58%;*/
+}
+
+.tabbedBox.madonna .contentBox.console .story .imageContainer img {
+    height: auto;
+}
+
+.contentBox.console .storyText {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*background-color: #000;*/
+    /*background-color: rgba(0,0,0,.3);*/
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
+    overflow: hidden;
+}
+.contentBox.console .storyText.noShadow {
+    background: transparent;
+}
+.contentBox.console .storyPreTitle,
+.contentBox.console .storyTitle,
+.contentBox.console .storyLeadText {
+    color: #fff;
+    display: block;
+}
+.contentBox.console .storyPreTitle {
+    /*font-size: 1rem;*/
+    font-size: 0.7rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding: 0 6px;
+    margin: 0;
+    background-color: #d0113a;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.contentBox.console .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-size: 1.8125rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+.contentBox.console .storyLeadText {
+    /*font-family: "Open Sans";*/
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+
+
+/*
+.contentBox.console .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    z-index: 10;
+}
+*/
+.contentBox.console .storiesCounter {
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+.contentBox.console .storyAdvertisement {
+    font-size: .625rem;
+    font-weight: 400;
+    padding: 2px 6px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    z-index: 10;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+}
+
+
+.contentBox.console .flickitySlider {
+    display: none;
+    padding-bottom: 2px;
+    background-color: #f2f2f2;
+}
+.contentBox.console .flickitySlider.flickity-enabled {
+    display: block;
+}
+.contentBox.console .flickity-enabled .story {
+    display: block;
+}
+
+
+.contentBox.console .flickity-prev-next-button {
+    display: none;
+    background-color: #d0113a;
+}
+.contentBox.console .flickity-prev-next-button .arrow {
+    fill: #ffffff;
+}
+.contentBox.console .flickity-enabled .flickity-prev-next-button {
+    display: block;
+}
+.contentBox.console .flickity-page-dots {
+    position: static;
+    padding: 4px 0;
+}
+
+
+.contentBox.console .flickitySlider.flickity-enabled {
+    display: block;
+    padding-bottom: 40px;
+}
+.contentBox.console .flickity-enabled .flickity-prev-next-button {
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: auto;
+    bottom: -12px;
+}
+
+.smartphone.layout_gesund24 .contentBox.console .storyPreTitle,
+.smartphone.layout_gesund24 .contentBox.console .flickity-prev-next-button {
+    background-color: #3194dd;
+}
+
+.smartphone.layout_kochen .contentBox.console .storyPreTitle,
+.smartphone.layout_kochen .contentBox.console .flickity-prev-next-button,
+.smartphone.layout_cooking24 .contentBox.console .storyPreTitle,
+.smartphone.layout_cooking24 .contentBox.console .flickity-prev-next-button {
+    background-color: #a10f42;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyPreTitle,
+.smartphone.layout_madonna .contentBox.console .flickity-prev-next-button {
+    background-color: #cc054a;
+}
+
+.smartphone.layout_games24 .contentBox.console .storyPreTitle,
+.smartphone.layout_games24 .contentBox.console .flickity-prev-next-button {
+    background-color: #000;
+}
+
+.smartphone.layout_business .contentBox.console .storyPreTitle,
+.smartphone.layout_business .contentBox.console .flickity-prev-next-button {
+    background-color: #174584;
+}
+
+/* Madonna - Konsole Schriftanpassungen, Design wie Deskopversion */
+.smartphone.layout_madonna .contentBox.console .storyPreTitle {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle,
+.smartphone.layout_madonna .contentBox.console .storyTitle span {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle {
+    border-left: 5px solid #fff;
+    overflow: hidden;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyTitle span {
+    color: #000;
+    background-color: #fff;
+    white-space: pre-wrap;
+
+    padding: 0 5px 0 0;
+}
+
+.smartphone.layout_madonna .contentBox.console .storyText {
+    background: transparent;
+}
+
+/* contentBox */
+
+@font-face {
+    font-family: 'PTSerifItalic';
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.svg#PTSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.contentBox {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+
+.contentBoxStory {
+    /*border-bottom: 1px solid #d5d5d5;*/
+    margin: 0 0 10px 0;
+}
+.contentBoxStory:last-child {
+    border-bottom: none;
+    margin: 0;
+}
+
+
+.contentBox .story {
+    display: block;
+    position: relative;
+}
+
+
+.contentBox .storyPreTitle {
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 9px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+.contentBox .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-size: 1.375rem;
+    font-weight: 700;
+    /*letter-spacing: -1pt;*/
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+}
+.contentBox .storyLeadText {
+    font-size: 1rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+.contentBox .storyTime,
+.contentBox .overlayText {
+    font-size: .75rem;
+    padding: 2px 6px;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+}
+.contentBox .storyTime {
+    left: 2px;
+}
+.contentBox .overlayText {
+    right: 2px;
+}
+
+
+/* Madonna - Übersicht, Texte über Bild */
+
+.contentBox.layout_madonna .storyText {
+    position: absolute;
+    bottom: 10px;
+}
+
+.contentBox.layout_madonna .storyPreTitle.defaultChannelColor {
+    color: #fff;
+    background-color: #cc054a;
+    padding: 5px;
+}
+
+.contentBox.layout_madonna .storyTitle,
+.contentBox.layout_madonna .storyTitle span {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.contentBox.layout_madonna .storyTitle {
+    border-left: 5px solid #fff;
+    overflow: hidden;
+}
+.contentBox.layout_madonna .storyTitle span {
+    color: #000;
+    background-color: #fff;
+    white-space: pre-wrap;
+
+    padding: 0 5px 0 0;
+}
+
+.smartphone.layout_tv .contentBox .overlayText {
+    display: none;
+}
+.contentBox .story .videoLength {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-size: 0.7rem;
+    padding: 3px;
+
+    background-color: #FFF;
+}
+
+/* contentslider */
+
+
+.contentSlider .storyNumber {
+    font-size: 1rem;
+    line-height: 1.65rem;
+    text-align: center;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+}
+
+/* Anpassungen für Madonna */
+.smartphone.layout_madonna .contentBox.contentSlider .flickitySlider {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText {
+    position: relative;
+    bottom: auto;
+
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText .storyTitle {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .storyText .storyTitle span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone.layout_madonna .contentBox.contentSlider .story .imageContainer img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Anpassungen für alle in Richtung Madonna - ausgenommen Slideshowstories */
+/*
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .flickitySlider {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText {
+    position: relative;
+    bottom: auto;
+
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText .storyTitle {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyText .storyTitle span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .imageContainer img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+
+}
+.smartphone .contentBox.contentSlider:not(.slideshowstory) .story .storyPreTitle {
+    font-size: 0.7rem;
+}
+*/
+
+
+/* Anpassungen für alle in Richtung Madonna - ausgenommen Slideshowstories */
+
+.smartphone .contentBox.contentSlider .flickitySlider {
+    padding: 10px 10px 50px;
+}
+.smartphone .contentBox.contentSlider .story {
+    width: 50%;
+    padding: 0 5px;
+}
+.smartphone .contentBox.contentSlider .story .imageContainer {
+    padding-bottom: 50%;
+}
+.smartphone .contentBox.contentSlider.slideshowstory .story .imageContainer {
+    padding-bottom: 100%;
+}
+.smartphone .contentBox.contentSlider .story .imageContainer img {
+    width: 100%;
+    height: auto;
+}
+.smartphone .contentBox.contentSlider .storyText {
+    padding: 2% 0;
+    background: transparent;
+    position: static;
+    overflow: visible;
+}
+.smartphone .contentBox.contentSlider .storyText .storyPreTitle {
+    font-size: .75rem;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: block;
+}
+.smartphone .contentBox.contentSlider .storyText .storyTitle {
+    font-size: 1.1875rem;
+    letter-spacing: normal;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+.smartphone .contentBox.contentSlider .storiesCounter {
+    bottom: 13px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button {
+    bottom: -7px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button.previous {
+    left: 15px;
+}
+.smartphone .contentBox.contentSlider .flickity-enabled .flickity-prev-next-button.next {
+    right: 15px;
+}
+
+
+/* Anpassungen für Tv */
+.mobile_tv .contentBoxStory,
+.layout_tv .contentBoxStory {
+    margin: 0 0 3px 0;
+    display: table;
+    width: 100%;
+}
+.mobile_tv .contentBoxStory .story,
+.layout_tv .contentBoxStory .story {
+    display: table-row;
+}
+.mobile_tv .contentBoxStory .videoStory,
+.mobile_tv .contentBoxStory .storyImage,
+.layout_tv .contentBoxStory .videoStory,
+.layout_tv .contentBoxStory .storyImage {
+    width: 55%;
+    display: table-cell;
+}
+.mobile_tv .contentBoxStory .storyText,
+.layout_tv .contentBoxStory .storyText {
+    width: 45%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mobile_tv .contentBoxStory .storyPreTitle,
+.mobile_tv .contentBoxStory .storyLeadText,
+.layout_tv .contentBoxStory .storyPreTitle,
+.layout_tv .contentBoxStory .storyLeadText,
+.layout_tv .storyBottom .contentBoxStory .storyPreTitle,
+.layout_tv .storyBottom .contentBoxStory .storyLeadText {
+    display: none;
+}
+.mobile_tv .contentBoxStory .storyTitle,
+.layout_tv .contentBoxStory .storyTitle {
+    font-size: 1.125rem;
+}
+
+/* xlKonsole */
+
+.xlKonsole {
+    padding: 0 0 10px;
+}
+.xlKonsole.marginTop {
+    margin-top: 10px;
+}
+.xlKonsole.marginBottom {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+
+.xlKonsole img {
+    width: 100%;
+    display: block;
+    background-color: #d5d5d5;
+}
+
+
+.xlKonsole .story {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.xlKonsole .story:not(.overwrite) .imageContainer {
+    /* aspect ratio 2:1 */
+    width: 100%;
+    padding-bottom: 50%;
+    /*padding-bottom: 62.58%;*/
+    position: relative;
+}
+
+.xlKonsole .story:not(.overwrite) .imageContainer img {
+    display: block;
+    background-color: #d5d5d5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    height: auto;
+}
+.xlKonsole .story.overwrite .imageContainer {
+    width: 100%;
+    padding-bottom: 0 !important;
+}
+.xlKonsole .story.overwrite .imageContainer img {
+    height: auto;
+    position: static;
+}
+
+.xlKonsole .storyText {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /*background-color: #000;*/
+    /*background-color: rgba(0,0,0,.3);*/
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 100%);
+    overflow: hidden;
+}
+.xlKonsole .storyText.noShadow {
+    background: transparent;
+}
+.xlKonsole .storyPreTitle,
+.xlKonsole .storyTitle,
+.xlKonsole .storyLeadText {
+    color: #fff;
+    display: block;
+}
+.xlKonsole .storyPreTitle {
+    /*font-size: 1rem;*/
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding: 0 6px;
+    margin: 0;
+    background-color: #d0113a;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlKonsole .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-size: 1.8125rem;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+.xlKonsole .storyLeadText {
+    /*font-family: "Open Sans";*/
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -1pt;
+    line-height: 1;
+    display: block;
+}
+
+
+/* xlKonsoleExtended*/
+
+
+.xlKonsoleExtendedStories {
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+
+.xlKonsoleExtended.marginTop {
+    margin-top: 10px;
+}
+.xlKonsoleExtended.marginBottom {
+    margin-bottom: 10px;
+}
+
+
+.xlKonsoleExtended img {
+    width: 100%;
+}
+
+
+.xlKonsoleExtended .firstStory,
+.xlKonsoleExtended .nextStory {
+    display: block;
+    margin-bottom: 10px;
+}
+.xlKonsoleExtended .firstStory {
+    width: 100%;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer,
+.xlKonsoleExtended .nextStory .textContainer {
+    float: left;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer {
+    width: 30%;
+    margin-right: 4%;
+    padding: 2px 0 0 0 !important;
+}
+.xlKonsoleExtended .nextStory .textContainer {
+    width: 66%;
+}
+
+
+.xlKonsoleExtended .nextStory .imageContainer img {
+    position: static;
+    height: auto;
+}
+
+
+.xlKonsoleExtended .firstStory .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    line-height: 1;
+    margin: 8px 0 0;
+}
+.xlKonsoleExtended .firstStory .textContainer .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    font-size: 1.8125rem;
+    letter-spacing: -1pt;
+    line-height: 1;
+    height: auto;
+}
+.xlKonsoleExtended .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1px 0 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlKonsoleExtended .textContainer .storyTitle {
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    /*line-height: 1.2;*/
+    /*height: 12vw;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*background-color: #ad5;*/
+
+    font-family: "Open Sans Condensed";
+    line-height: 1;
+}
+.xlKonsoleExtended .textContainer .storyLeadText {
+    /*font-size: .875rem;*/
+    font-size: .75rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+/* - - - - - - */
+
+
+/* Image Format 1:1 fuer die .firstStory */
+/* (ws) 2017-01-31 auf Wunsch von Niki werden ALLE Images im Format 2:1 gezeigt, ausser in der Konsole */
+/* (ws) 2017-02-16 auch in der Konsole werden die Images im Format 2:1 gezeigt */
+/* daher -> padding-bottom: 100% auskommentiert */
+
+.xlKonsoleExtended .firstStory:not(.overwrite) .imageContainer {
+    /*padding-bottom: 100%;*/
+    padding-bottom: 62.58% !important;
+}
+.xlKonsoleExtended .firstStory.overwrite .imageContainer {
+    position: static;
+    padding-bottom: 0px !important;
+}
+.xlKonsoleExtended .firstStory.overwrite .imageContainer img {
+    position: static;
+}
+.xlKonsoleExtended .firstStory {
+    position: relative;
+}
+
+
+.xlKonsoleExtended .firstStory .textContainerOverlay {
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    */
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 70%);
+}
+.xlKonsoleExtended .firstStory .textContainerOverlay .storyPreTitle {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 6px;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    display: inline-block;
+}
+.xlKonsoleExtended .firstStory .textContainerOverlay .storyTitle {
+    color: #fff;
+}
+
+/* xlboox */
+
+.xlBoxStories {
+    background-color: #f2f2f2;
+    /*padding: 5px 0;*/
+    /*margin: 10px 0;*/
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+}
+
+
+.xlBox.marginTop {
+    margin-top: 10px;
+}
+.xlBox.marginBottom {
+    margin-bottom: 10px;
+}
+
+.xlBox .headlineBox {
+    margin: 0;
+    padding: 0;
+}
+.xlBox img {
+    width: 100%;
+}
+
+.xlBox .xlBoxStories.singleElement{
+    padding: 10px 0 0 0;
+}
+
+.xlBox .nextStory {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.xlBox .firstStory {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.xlBox .nextStory .imageContainer,
+.xlBox .nextStory .textContainer {
+    float: left;
+}
+
+
+.xlBox .nextStory .imageContainer {
+    width: 30%;
+    margin-right: 4%;
+    padding: 2px 0 0 0 !important;
+}
+.xlBox .nextStory .textContainer {
+    width: 66%;
+}
+
+
+.xlBox .nextStory .imageContainer img {
+    position: static;
+    height: auto;
+}
+
+/*.xlBox .nextStory .textContainer h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    display: -webkit-box;
+    line-height: 1.1;
+    height: 36px;
+}*/
+
+.xlBox .firstStory .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    line-height: 1;
+    margin: 8px 0 0;
+}
+.xlBox .firstStory .textContainer .storyTitle {
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+    font-size: 1.8125rem;
+    letter-spacing: -1pt;
+    line-height: 1;
+    height: auto;
+}
+.xlBox .textContainer .storyPreTitle {
+    font-family: "Open Sans Condensed";
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1px 0 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlBox .textContainer .storyTitle {
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    /*line-height: 1.2;*/
+    /*height: 12vw;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*background-color: #ad5;*/
+
+    font-family: "Open Sans Condensed";
+    line-height: 1;
+}
+.xlBox .textContainer .storyLeadText {
+    /*font-size: .875rem;*/
+    font-size: .75rem;
+    padding: 0;
+    margin: 4px 0 0;
+}
+
+
+/* - - - - - - */
+
+
+/* Image Format 1:1 fuer die .firstStory */
+/* (ws) 2017-01-31 auf Wunsch von Niki werden ALLE Images im Format 2:1 gezeigt, ausser in der Konsole */
+/* (ws) 2017-02-16 auch in der Konsole werden die Images im Format 2:1 gezeigt */
+/* daher -> padding-bottom: 100% auskommentiert */
+
+.xlBox .firstStory .imageContainer {
+    /*padding-bottom: 100%;*/
+    padding-bottom: 62.58% !important;
+    /*padding-bottom: 50%;*/
+}
+
+.xlBox .firstStory {
+    position: relative;
+}
+
+.xlBox .firstStory.overwrite .imageContainer {
+    padding-bottom: 0 !important;
+}
+
+.xlBox .firstStory.overwrite .imageContainer img {
+    height: auto;
+    position: static;
+}
+
+.xlBox .firstStory .textContainerOverlay {
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*
+    background-color: #000;
+    background-color: rgba(0,0,0,.3);
+    */
+    background: transparent linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.8) 70%);
+}
+.xlBox .firstStory .textContainerOverlay .storyPreTitle {
+    /*font-size: 1rem;*/
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 6px;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    display: inline-block;
+}
+.xlBox .firstStory .textContainerOverlay .storyTitle {
+    color: #fff;
+}
+
+.xlBox .videoContainer .imageContainer {
+    position: relative;
+}
+.xlBox .videoContainer .imageContainer:after {
+    content: "";
+    width: 20%;
+    height: 40%;
+    background-color: rgba(255,255,255,.5);
+    background-image: url('/images/rl2014/play_button_big.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    /*display: none;*/
+}
+
+
+/* marketingTeaser */
+.marketingTeaser {
+    width: 100%;
+}
+
+.marketingTeaser.marginTop {
+    margin-top: 5px;
+}
+
+.marketingTeaser.marginBottom {
+    margin-bottom: 5px;
+}
+
+/* bla*/
+.marketingTeaser img {
+    width: 100%;
+
+}
+
+
+/* breakingnews */
+.breakingNewsWrap + .standardHeadline,
+.breakingNewsWrap + .xlBox,
+.breakingNewsWrap + .xlKonsoleExtended.marginTop,
+.breakingNewsWrap + .xlKonsole.marginTop {
+    margin-top: 0;
+}
+.breakingNewsWrap + .xlBox .xlBoxStories {
+    padding-top: 0;
+}
+
+/* --------------------------- */
+
+/* (db) 2017-04-14 breakingNews-Box basierend auf expressen.se */
+
+.breakingNewsWrap.spaceBeforeBox {
+    margin-top: 15px;
+}
+.breakingNewsWrap.spaceAfterBox {
+    margin-bottom: 15px;
+}
+
+.breakingNewsWrap {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -10px;
+    overflow: hidden;
+    background-color: #fdf001;
+    position: relative;
+}
+
+.breakingNewsWrap .breakingNewsLine {
+    /*width: 100%;*/
+    padding: 0;
+    padding-left: 100%;
+    display: block;
+}
+
+.breakingNewsWrap .breakingNewsLine {
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.breakingNewsWrap .breakingNewsLine .breakingNewsTeaser {
+    font-family: "Open Sans", sans-serif;
+    padding: 0 4px;
+    color: #fff;
+    background-color: #000;
+}
+.breakingNewsWrap .breakingNewsLine .breakingNewsHeadline {
+    font-family: "Open Sans Condensed", sans-serif;
+    letter-spacing: -1pt;
+    padding: 0 2px;
+    color: #000;
+    background-color: transparent;
+}
+
+/* --------------------------- */
+
+
+/* Animation */
+
+.breakingNewsWrap .breakingNewsLine {
+
+    padding-left: 100%;
+    white-space: nowrap;
+
+    -webkit-animation: 30s linear 0ms infinite;
+    -moz-animation: 30s linear 0ms infinite;
+            animation: 30s linear 0ms infinite;
+
+    /*
+    Wegen eines Safari-Bugs wird der Animationsname
+    hier auf "none" gesetzt und per JavaScript gesetzt
+    */
+    /*-webkit-animation-name: breakingNewsAnimation;
+    -moz-animation-name: breakingNewsAnimation;
+            animation-name: breakingNewsAnimation;*/
+
+    -webkit-animation-name: none;
+    -moz-animation-name: none;
+            animation-name: none;
+}
+
+.breakingNewsWrap.speedSlow .breakingNewsLine {
+    -webkit-animation-duration: 35s;
+    -moz-animation-duration: 35s;
+            animation-duration: 35s;
+}
+.breakingNewsWrap.speedNormal .breakingNewsLine {
+    -webkit-animation-duration: 30s;
+    -moz-animation-duration: 30s;
+            animation-duration: 30s;
+}
+.breakingNewsWrap.speedFast .breakingNewsLine {
+    -webkit-animation-duration: 25s;
+    -moz-animation-duration: 25s;
+            animation-duration: 25s;
+}
+
+.breakingNewsWrap .breakingNewsLine:hover {
+    text-decoration: none;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+@-webkit-keyframes breakingNewsAnimation {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}
+@-moz-keyframes breakingNewsAnimation {
+    0% {
+        -moz-transform: translate3d(0, 0, 0);
+             transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -moz-transform: translate3d(-100%, 0, 0);
+             transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes breakingNewsAnimation {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* headline */
+
+.xlHeadLineBox.distanceTop {
+    margin-top: 10px;
+}
+
+.xlHeadLineBox.distanceBottom {
+    margin-bottom: 10px;
+}
+
+/* Businessicons */
+/*.xlHeadLineBox.withIcon .xlHeadLine {
+    position: relative;
+}
+.xlHeadLineBox.withIcon .xlHeadLine .xlHeadLineIcon {
+    z-index: 5;
+    position: absolute;
+}
+
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlHeadLineIcon {
+    margin-left: -10px;
+    top: -8px;
+}
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlHeadLineIcon img{
+    height: 45px;
+}
+.xlHeadLineBox.withIcon.rakete .xlHeadLine .xlText {
+    padding-left: 60px;
+}
+
+
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlHeadLineIcon {
+    top: -8px;
+}
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlHeadLineIcon img{
+    height: 45px;
+}
+.xlHeadLineBox.withIcon.geld .xlHeadLine .xlText {
+    padding-left: 60px;
+}
+
+
+
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlHeadLineIcon {
+    top: -8px;
+}
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlHeadLineIcon img{
+    height: 45px;
+}
+.xlHeadLineBox.withIcon.oesterreichFlagge .xlHeadLine .xlText {
+    padding-left: 80px;
+}
+
+
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlHeadLineIcon {
+    top: -8px;
+}
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlHeadLineIcon img{
+    height: 45px;
+}
+.xlHeadLineBox.withIcon.weltkugel .xlHeadLine .xlText {
+    padding-left: 60px;
+}*/
+
+
+
+
+
+
+
+/* oe24tvmobileteaser */
+
+.oe24tvTeaser {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #d0113a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+
+    /* border */
+    border: 1px solid #ef3e64;
+    /* border end */
+}
+
+
+.oe24tvTeaser .teaserText,
+.oe24tvTeaser .teaserFigure {
+    float: left;
+    width: 49%;
+}
+.oe24tvTeaser .teaserText {
+    float: left;
+}
+.oe24tvTeaser .teaserFigure {
+    float: right;
+}
+.oe24tvTeaser .teaserFigure img {
+    width: 100%;
+}
+.oe24tvTeaser .teaserFigure video {
+    width: 100%;
+}
+
+.oe24tvTeaser .teaserPreTitle,
+.oe24tvTeaser .teaserTitle {
+    font-family: "oe24",sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.oe24tvTeaser .teaserPreTitle {
+    font-size: 14px;
+    padding: 3px 5px 1px;
+    margin: 0 0 10px;
+    color: #d0113a;
+    background-color: #fff;
+}
+.oe24tvTeaser .teaserTitle {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+
+.oe24tvTeaser .teaserIcon {
+
+    /*width: 8vw;*/
+    /*height: 8vw;*/
+    width: 10vw;
+    height: 10vw;
+
+    background-color: #d0113a;
+    position: absolute;
+    right: 0;
+    /*top: -8vw;*/
+    top: -10vw;
+
+    /* border */
+    right: -1px;
+    border: 1px solid #ef3e64;
+    border-bottom: none;
+    /* border end */
+}
+
+
+.oe24tvTeaser .teaserIcon div {
+    line-height: .5;
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.oe24tvTeaser .teaserIcon svg {
+    width: 100%;
+    height: 100%;
+    stroke: #fff;
+}
+.oe24tvTeaser .teaserIcon .teaserIconCross {
+    display: block;
+}
+.oe24tvTeaser .teaserIcon .teaserIconPlus {
+    display: none;
+}
+
+
+
+.oe24tvTeaser.collapsed .teaserText {
+    width: 92%;
+}
+.oe24tvTeaser.collapsed .teaserFigure {
+    display: none;
+}
+.oe24tvTeaser.collapsed .teaserPreTitle {
+    margin: 0 0 4px;
+}
+.oe24tvTeaser.collapsed .teaserIcon {
+    top: 4px;
+
+    /* border */
+    border: none;
+    /* border end */
+
+    max-height: 100%;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.oe24tvTeaser.collapsed .teaserIconCross {
+    display: none;
+}
+.oe24tvTeaser.collapsed .teaserIconPlus {
+    display: block;
+}
+
+
+
+@media all and (min-width: 768px) {
+    .oe24tvTeaser {
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .mobileTeaserOe24Tv */
+.mobileTeaserOe24Tv {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #d0113a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+
+    /* border */
+    border: 1px solid #ef3e64;
+    /* border end */
+}
+
+
+/*
+.mobileTeaserOe24Tv .teaserLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+*/
+
+
+.mobileTeaserOe24Tv .teaserText,
+.mobileTeaserOe24Tv .teaserFigure {
+    float: left;
+    width: 49%;
+}
+.mobileTeaserOe24Tv .teaserText {
+    float: left;
+}
+.mobileTeaserOe24Tv .teaserFigure {
+    float: right;
+}
+.mobileTeaserOe24Tv .teaserFigure img {
+    width: 100%;
+}
+.mobileTeaserOe24Tv .teaserFigure video {
+    width: 100%;
+}
+
+
+.mobileTeaserOe24Tv .teaserPreTitle,
+.mobileTeaserOe24Tv .teaserTitle {
+    font-family: "oe24",sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.mobileTeaserOe24Tv .teaserPreTitle {
+    font-size: 14px;
+    padding: 3px 5px 1px;
+    margin: 0 0 10px;
+    color: #d0113a;
+    background-color: #fff;
+}
+.mobileTeaserOe24Tv .teaserTitle {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+
+.mobileTeaserOe24Tv .teaserControl {
+    display: block;
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon {
+
+    display: block;
+
+    width: 12vw;
+    height: 12vw;
+
+    background-color: #d0113a;
+    position: absolute;
+    right: 0;
+    top: -12vw;
+
+    /* border */
+    right: -1px;
+    border: 1px solid #ef3e64;
+    border-bottom: none;
+    /* border end */
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon div {
+    line-height: .5;
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.mobileTeaserOe24Tv .teaserIcon svg {
+    width: 100%;
+    height: 100%;
+    stroke: #fff;
+}
+.mobileTeaserOe24Tv .teaserIcon .teaserIconCross {
+    display: block;
+}
+.mobileTeaserOe24Tv .teaserIcon .teaserIconPlus {
+    display: none;
+}
+
+
+.mobileTeaserOe24Tv.collapsed .teaserText {
+    width: 92%;
+}
+.mobileTeaserOe24Tv.collapsed .teaserFigure {
+    display: none;
+}
+.mobileTeaserOe24Tv.collapsed .teaserPreTitle {
+    margin: 0 0 4px;
+}
+.mobileTeaserOe24Tv.collapsed .teaserIcon {
+    top: 4px;
+
+    /* border */
+    border: none;
+    /* border end */
+
+    max-height: 100%;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.mobileTeaserOe24Tv.collapsed .teaserIconCross {
+    display: none;
+}
+.mobileTeaserOe24Tv.collapsed .teaserIconPlus {
+    display: block;
+}
+
+
+/*
+@media all and (min-width: 768px) {
+    .mobileTeaserOe24Tv {
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+*/
+
+
+
+
+
+
+/* oe24tvtopvideobox.videobox*/
+
+.contentBox .bigClipArea {
+    margin-bottom: 3px;
+}
+
+
+/* channellist */
+
+
+.headlineBox.layout_sport-sport .headline,
+.headlineBox.layout_sport-sport24 .headline,
+.headlineBox.layout_sport-euro .headline,
+.headlineBox.layout_sport-fussball .headline,
+.headlineBox.layout_sport-motorsport .headline,
+.headlineBox.layout_sport-sportmix .headline,
+.headlineBox.layout_sport-stars .headline,
+.headlineBox.layout_sport-wintersport .headline{
+    margin: 5px 0;
+}
+
+.headlineBox.layout_sport-sport .headline,
+.headlineBox.layout_sport-sport24 .headline,
+.headlineBox.layout_sport-euro .headline,
+.headlineBox.layout_sport-fussball .headline,
+.headlineBox.layout_sport-motorsport .headline,
+.headlineBox.layout_sport-sportmix .headline,
+.headlineBox.layout_sport-stars .headline,
+.headlineBox.layout_sport-wintersport .headline{
+    line-height: 1.4;
+    letter-spacing: -1pt;
+    font-family: "Open Sans Condensed";
+    font-weight: 700;
+}
+
+.channelsList {
+    padding: 0 10px 15px 10px;
+    /*margin: 0 0 10px 0;*/
+    /*background-color: #f4f4f4;*/
+}
+
+.channelListHeader {
+    background-color: #fff;
+}
+
+.channelListHeader .channelListLink {
+    text-decoration: none;
+}
+
+.channelsListHeadline {
+    line-height: 1.2;
+    letter-spacing: -1pt;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 2px 10px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-family: "Open Sans Condensed";
+}
+
+
+.channelsListHeadline .channelsListIcon {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    margin-right: 6px;
+    -webkit-background-size: 48px 60px;
+    background-size: 48px 60px;
+    background-image: url(/images/oe2016/wappen/sprite_bundesland.png);
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+}
+.channelsListHeadline .channelsListBundesland_noe {
+    background-position: -32px 0;
+}
+.channelsListHeadline .channelsListBundesland_wien {
+    background-position: -32px -40px;
+}
+
+
+
+
+.smartphone .sport-sport .defaultChannelBackgroundColor,
+.smartphone .sport-sport .channelsListItem a{
+    background-color: #22b480;
+}
+.smartphone .sport-sport24 .defaultChannelBackgroundColor,
+.smartphone .sport-sport24 .channelsListItem a{
+    background-color: #d2123b;
+}
+.smartphone .sport-euro .defaultChannelBackgroundColor,
+.smartphone .sport-euro .channelsListItem a{
+    background-color: #313b69;
+}
+.smartphone .sport-fussball .defaultChannelBackgroundColor,
+.smartphone .sport-fussball .channelsListItem a{
+    background-color: #22b480;
+}
+.smartphone .sport-motorsport .defaultChannelBackgroundColor,
+.smartphone .sport-motorsport .channelsListItem a{
+    background-color: #1d1d1b;
+}
+.smartphone .sport-sportmix .defaultChannelBackgroundColor,
+.smartphone .sport-sportmix .channelsListItem a{
+    background-color: #007edc;
+}
+.smartphone .sport-stars .defaultChannelBackgroundColor,
+.smartphone .sport-stars .channelsListItem a{
+    background-color: #b1177a;
+}
+.smartphone .sport-wintersport .defaultChannelBackgroundColor,
+.smartphone .sport-wintersport .channelsListItem a{
+    background-color: #0052b3;
+}
+.smartphone .auto .defaultChannelBackgroundColor,
+.smartphone .auto .channelsListItem a{
+    background-color: #2c3564;
+}
+.smartphone .digital .defaultChannelBackgroundColor,
+.smartphone .digital .channelsListItem a{
+    background-color: #708ab9;
+}
+.smartphone .gesund24 .defaultChannelBackgroundColor,
+.smartphone .gesund24 .channelsListItem a{
+    background-color: #6a9dff;
+}
+.smartphone .kochen .defaultChannelBackgroundColor,
+.smartphone .kochen .channelsListItem a{
+    background-color: #b11679;
+}
+.smartphone .madonna .defaultChannelBackgroundColor,
+.smartphone .madonna .channelsListItem a{
+    background-color: #ec589f;
+}
+.smartphone .money .defaultChannelBackgroundColor,
+.smartphone .money .channelsListItem a{
+    background-color: #174584;
+}
+.smartphone .business .defaultChannelBackgroundColor,
+.smartphone .business .channelsListItem a{
+    background-color: #35549b;
+}
+.smartphone .news .defaultChannelBackgroundColor,
+.smartphone .news .channelsListItem a{
+    background-color: #d0013a;
+}
+.smartphone .oesterreich .defaultChannelBackgroundColor,
+.smartphone .oesterreich .channelsListItem a{
+    background-color: #f50f39;
+}
+.smartphone .politik .defaultChannelBackgroundColor,
+.smartphone .politik .channelsListItem a,
+.smartphone .oe24 .defaultChannelBackgroundColor,
+.smartphone .oe24 .channelsListItem a{
+    background-color: #d0013a;
+}
+.smartphone .reise .defaultChannelBackgroundColor,
+.smartphone .reise .channelsListItem a{
+    background-color: #ff6200;
+}
+.smartphone .society .defaultChannelBackgroundColor,
+.smartphone .society .channelsListItem a,
+.smartphone .leute .defaultChannelBackgroundColor,
+.smartphone .leute .channelsListItem a{
+    background-color: #ffca49;
+}
+.smartphone .sport24 .defaultChannelBackgroundColor,
+.smartphone .sport24 .channelsListItem a{
+    background-color: #d2123b;
+}
+.smartphone .tv .defaultChannelBackgroundColor,
+.smartphone .tv .channelsListItem a{
+    background-color: #59cad2;
+}
+.smartphone .welt .defaultChannelBackgroundColor,
+.smartphone .welt .channelsListItem a{
+    background-color: #0051b2;
+}
+.smartphone .wetter .defaultChannelBackgroundColor,
+.smartphone .wetter .channelsListItem a{
+    background-color: #007ddc;
+}
+
+
+.channelListBody {
+    clear: both;
+}
+
+.channelsListItem{
+    margin-top: 6px;
+}
+.channelsListItem .itemText {
+    /*font-size: 0.625rem;*/
+    font-size: 0.75rem;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 12px 10px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Open Sans",sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    min-height: 40px;
+
+}
+
+.emTeilnehmer .channelsListItem .itemText,
+.fussballLigen .channelsListItem .itemText {
+    position: relative;
+}
+.emTeilnehmer .channelsListItem .itemText:after,
+.fussballLigen .channelsListItem .itemText:after {
+    font-size: .625rem;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.channelsListItem .itemText:after {
+    font-weight: 700;
+    content: '>>';
+
+    width: 50px;
+}
+.emTeilnehmer .channelsListItem .itemText:after {
+    content: 'Alle Infos »';
+    width: 70px;
+}
+.fussballLigen .channelsListItem .itemText:after {
+    content: 'Details »';
+    width: 90px;
+}
+
+
+/* EM 2016 Teilnehmer */
+
+.emTeilnehmer .channelListBody {
+    /*height: 13.6em;*/
+    overflow: auto;
+}
+
+.emTeilnehmer .itemText {
+    /*padding-left: 60px;*/
+    margin: 1px 0;
+    /*background: transparent url('/images/oe2016/flags/sprite_flags_em2016.png') no-repeat 0 0;*/
+}
+
+/*
+.emTeilnehmer .itemName_gb-ni { background-position: 0 -0px; }
+.emTeilnehmer .itemName_hu    { background-position: 0 -42px; }
+.emTeilnehmer .itemName_ie    { background-position: 0 -84px; }
+.emTeilnehmer .itemName_hr    { background-position: 0 -126px; }
+.emTeilnehmer .itemName_de    { background-position: 0 -168px; }
+.emTeilnehmer .itemName_gb-en { background-position: 0 -210px; }
+.emTeilnehmer .itemName_gb-wa { background-position: 0 -252px; }
+.emTeilnehmer .itemName_se    { background-position: 0 -294px; }
+.emTeilnehmer .itemName_tr    { background-position: 0 -336px; }
+.emTeilnehmer .itemName_al    { background-position: 0 -378px; }
+.emTeilnehmer .itemName_cz    { background-position: 0 -420px; }
+.emTeilnehmer .itemName_es    { background-position: 0 -462px; }
+.emTeilnehmer .itemName_fr    { background-position: 0 -504px; }
+.emTeilnehmer .itemName_it    { background-position: 0 -546px; }
+.emTeilnehmer .itemName_pl    { background-position: 0 -588px; }
+.emTeilnehmer .itemName_pt    { background-position: 0 -630px; }
+.emTeilnehmer .itemName_ro    { background-position: 0 -672px; }
+.emTeilnehmer .itemName_ru    { background-position: 0 -714px; }
+.emTeilnehmer .itemName_sk    { background-position: 0 -756px; }
+.emTeilnehmer .itemName_ua    { background-position: 0 -798px; }
+.emTeilnehmer .itemName_at    { background-position: 0 -840px; }
+.emTeilnehmer .itemName_is    { background-position: 0 -882px; }
+.emTeilnehmer .itemName_be    { background-position: 0 -924px; }
+.emTeilnehmer .itemName_ch    { background-position: 0 -966px; }
+*/
+
+.emTeilnehmer .itemIcon {
+    width: 44px;
+    height: 22px;
+    margin-right: 10px;
+    display: inline-block;
+    background: transparent url('/images/oe2016/flags/sprite_flags_em2016.png') no-repeat 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.emTeilnehmer .itemName_gb-ni { background-position: 0 -0px; }
+.emTeilnehmer .itemName_hu    { background-position: 0 -42px; }
+.emTeilnehmer .itemName_ie    { background-position: 0 -84px; }
+.emTeilnehmer .itemName_hr    { background-position: 0 -126px; }
+.emTeilnehmer .itemName_de    { background-position: 0 -168px; }
+.emTeilnehmer .itemName_gb-en { background-position: 0 -210px; }
+.emTeilnehmer .itemName_gb-wa { background-position: 0 -252px; }
+.emTeilnehmer .itemName_se    { background-position: 0 -294px; }
+.emTeilnehmer .itemName_tr    { background-position: 0 -336px; }
+.emTeilnehmer .itemName_al    { background-position: 0 -378px; }
+.emTeilnehmer .itemName_cz    { background-position: 0 -420px; }
+.emTeilnehmer .itemName_es    { background-position: 0 -462px; }
+.emTeilnehmer .itemName_fr    { background-position: 0 -504px; }
+.emTeilnehmer .itemName_it    { background-position: 0 -546px; }
+.emTeilnehmer .itemName_pl    { background-position: 0 -588px; }
+.emTeilnehmer .itemName_pt    { background-position: 0 -630px; }
+.emTeilnehmer .itemName_ro    { background-position: 0 -672px; }
+.emTeilnehmer .itemName_ru    { background-position: 0 -714px; }
+.emTeilnehmer .itemName_sk    { background-position: 0 -756px; }
+.emTeilnehmer .itemName_ua    { background-position: 0 -798px; }
+.emTeilnehmer .itemName_at    { background-position: 0 -840px; }
+.emTeilnehmer .itemName_is    { background-position: 0 -882px; }
+.emTeilnehmer .itemName_be    { background-position: 0 -924px; }
+.emTeilnehmer .itemName_ch    { background-position: 0 -966px; }
+
+
+
+/* table participantsBox */
+.participantsBox.emTeilnehmer {
+    padding: 0 15px;
+    margin: 20px auto 0;
+}
+.participantsBox.emTeilnehmer table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+.participantsBox.emTeilnehmer .channelsListItem {
+    width: 25%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.participantsBox.emTeilnehmer .channelsListItem:nth-child(even),
+.participantsBox.emTeilnehmer .channelsListItem:nth-child(odd) {
+    background-color: transparent;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText {
+    padding: 4px 8px;
+    margin: 0 10px;
+    white-space: nowrap;
+    background-color: #f4f4f4;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText:hover {
+    text-decoration: none;
+    background-color: #e8e8e8;
+}
+.participantsBox.emTeilnehmer .itemIcon {
+    margin-right: 4px;
+}
+.participantsBox.emTeilnehmer .channelsListItem .itemText:after {
+    padding-top: 3px;
+}
+/* table participantsBox end */
+
+
+/* article default */
+
+.articleBody .container {
+    padding: 0 0 10px;
+}
+
+.articleBox {
+    display: block;
+    margin: 0 10px 10px;
+}
+
+
+.articleBox .story {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+.articleBox .storyTextTop {
+    margin: 10px 0 6px;
+}
+
+
+.articleBox .storyPreTitle,
+.articleBox .storyDateTime {
+    float: left;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.articleBox .storyPreTitle {
+    font-size: .9375rem;
+    font-weight: 700;
+    text-align: left;
+    width: 70%;
+}
+.articleBox .storyDateTime {
+    font-size: .6875rem;
+    font-weight: 400;
+    text-align: right;
+    width: 30%;
+    padding-top: 4px;
+}
+
+
+.articleBox .storyTitle {
+    font-size: 1.375rem;
+    line-height: 1.1;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.articleBox .storyLeadText {
+    /*font-size: 1.25rem;*/
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+.articleBox .copyright {
+    font-size: .6875rem;
+    text-align: right;
+    padding: 2px 0;
+    margin: 0;
+    display: block;
+}
+
+
+.articleBox .storyImage {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+.articleBox .videoPlayer {
+    /*margin: 10px -10px 2px;*/
+    margin: 0 -10px;
+}
+
+
+/* (ws) 2016-12-22 Copyright als Overlay rechts unten ueber dem Image */
+.articleBox .copyright {
+    padding: 2px 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.1);
+}
+
+
+.articleBox .storyBodyText p:first-child {
+    margin-top: 0;
+}
+
+/* (db) 2017-03-08 Link "sichtbar" wie Desktopseite */
+.articleBox .story .storyBodyText a,
+.articleBox .story .storyBodyText a:visited {
+    color: #d0113a;
+}
+
+/* (bs) Anpassung des unteren Teils mit Related Articles etc. */
+
+.articleBox .storyBottom {
+    margin: 0 -10px;
+}
+
+.articleBox .storyBottom .headlineBox .headline {
+    color: #fff;
+}
+.articleBox .storyBottom .storyImage {
+    margin: 0;
+}
+.articleBox .storyBottom .storyPreTitle {
+    float: none;
+    display: block;
+    font-size: .75rem;
+    margin: 9px 0 0;
+}
+.articleBox .storyBottom .storyTitle {
+    line-height: 1.1;
+}
+.articleBox .storyBottom .storyLeadText {
+    font-size: .875rem;
+    font-weight: normal;
+    margin: 4px 0 0;
+    margin: 4px 0 0;
+}
+/* (bs) end */
+
+/* */
+.articleBox table {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* (ws) 2017-08-09 */
+.articleBox table {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.articleBox table td {
+    padding: 6px;
+    vertical-align: top;
+}
+.articleBox table td h1 {
+    font-size: 1.25rem;
+}
+.articleBox table td h2 {
+    font-size: 1rem;
+}
+.articleBox table td h3 {
+    font-size: .75rem;
+}
+.articleBox table td h4,
+.articleBox table td h5,
+.articleBox table td h6 {
+    font-size: .6rem;
+}
+/* (ws) 2017-08-09 end */
+
+
+/* (ws) 2017-02-14 */
+/* Facebook-Postings werden redaktionsseitig auch direkt eingebunden */
+.articleBox .storyBodyText iframe[src*="www.facebook.com"] {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* (db) 2017-05-02 outbrain-einbindung liefert zusätzliches padding mit */
+.smartphone.articleBody .OUTBRAIN .ob-widget {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/*
+ * Der Outbrain-Drawer soll, wenn er eingeblendet wird
+ * ueber den Add-This-Buttons zu sehen sein.
+ * Das Element .at-share-dock.atss der Add-ThisButtons werden
+ * standardmaessig mit einem z-index von 1000200 versehen.
+ * Darauf haben wir keinen Einfluss.
+ */
+.at-share-dock.atss {
+    z-index: 2 !important;
+}
+
+/* (db) 2017-05-24 pages */
+
+.smartphone .articleBox .articlePages {
+    margin: 10px 0;
+}
+.smartphone .articleBox .articlePages a {
+    color: #d0113a;
+    text-decoration: none;
+    padding: 0 6px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+.smartphone .articleBox .articlePages a.active {
+    color: #fff;
+    background-color: #d0113a;
+}
+
+.smartphone .articleBox .articlePageText.passive {
+    display: none;
+}
+
+/* (db) 2017-07-06 Spezialfall tv Artikeldetail - Farben Standard-oe24 */
+.smartphone.layout_tv .articleBox .defaultChannelColor {
+    color: #d0113a;
+}
+.smartphone.layout_tv .articleBox .defaultChannelBackgroundColor {
+    background-color: #d0113a;
+}
+
+/* articleSlideshow*/
+.articleSlideshow .storyImage {
+    margin-bottom: 10px;
+}
+
+/* VOTING */
+.articleSlideshow #votingFrame {
+    width: 85%;
+
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+
+
+/* articleVideo */
+.articleBox.articleVideo .storyTextTop {
+    margin: 6px 0;
+}
+.articleBox.articleVideo .storyLeadText {
+    padding: 10px 0;
+}
+
+
+
+
+
+/*  article Social Media */
+
+.storySocialMedia {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+.storySocialMedia.loaded {
+    opacity: 1;
+}
+
+.storySocialMedia .mail-button {
+    margin-right: 5px;
+    display: block;
+    background-color: #bababa;
+}
+
+.storySocialMedia .mail-button:hover {
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+    outline-offset: -1px;
+    color: inherit;
+}
+
+.storySocialMedia .at-share-btn {
+    position: relative;
+    float: left;
+    display: block !important;
+    width: 15vw !important;
+    height: 15vw !important;
+    border-radius: 3px !important;
+}
+
+.storySocialMedia .at-share-btn svg {
+    width: 100% !important;
+    height: 100% !important;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.storySocialMedia .mail-button.at-share-btn svg {
+    width: 80% !important;
+    height: 80% !important;
+    padding: 20% 0 0 20%;
+
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+
+    fill: #fff;
+}
+
+
+.bnApp .oe24AddThis {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* article Newsticker */
+
+.articleBox .newsTickerWrapper {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.articleBox .newsTickerWrapper .buttonWrapper {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.articleBox .newsTickerWrapper .reloadButton {
+    display: block;
+    width: 95%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.articleBox .newsTickerEntry {
+    width: 100%;
+    /*padding: 0 5px;*/
+    border-bottom: 1px solid #dadada;
+}
+
+.articleBox .newsTickerEntry .tickerHeader {
+    display: block;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerHeader .marker {
+    display: block;
+    padding: 5px;
+    background: url('<?= slp('image', 'rl2014/ticker/ticker_dot.png'); ?>') no-repeat center;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerHeader .time {
+    display: block;
+    vertical-align: center;
+    color: #d0113a;
+    float: left;
+}
+
+.articleBox .newsTickerEntry .tickerBody {
+    padding: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerBody img,
+.articleBox .newsTickerEntry .tickerBody .overrideImage img,
+.articleBox .newsTickerEntry .tickerBody .overrideVideo video,
+.articleBox .newsTickerEntry .tickerBody video {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.articleBox .newsTickerEntry .tickerBody img,
+.articleBox .newsTickerEntry .tickerBody video {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.articleBox .newsTickerEntry .oe2016InlineHeadline {
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dadada;
+}
+
+.articleBox .newsTickerEntry .oe2016InlineHeadline .type {
+    display: block;
+    color: #d0113a;
+}
+
+.articleBox .newsTickerEntry .video_player .videoPlayer {
+    margin: 0 0 10px 0;
+}
+
+
+
+
+
+/* articleRecipe */
+
+.smartphone.layout_cooking24 .recipeIngredients, .recipeInfoBox {
+    margin-bottom: 20px;
+
+}
+
+.smartphone.layout_cooking24 .headlineBox.layout_kochen h2.headline {
+    color: #fff;
+    padding: 2px 10px 4px 10px;
+}
+
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo {
+    font-size: .9375rem;
+    line-height: 25px;
+    padding: 0;
+    margin: 6px 0;
+    background-image: url(<?php slp('image', 'rl2014/recipe/recipeSprite25.png'); ?>);
+    background-repeat: no-repeat;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo .values {
+    display: none;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration1 {
+    background-position: 146px 0;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration2 {
+    background-position: 146px -25px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.duration3 {
+    background-position: 146px -50px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort1 {
+    background-position: 146px -75px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort2 {
+    background-position: 146px -100px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.effort3 {
+    background-position: 146px -125px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price1 {
+    background-position: 146px -150px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price2 {
+    background-position: 146px -175px;
+}
+.smartphone.layout_cooking24 .articleRecipe .recipeInfo.price3 {
+    background-position: 146px -200px;
+}
+
+.smartphone.layout_cooking24 .articleRecipe .storyBodyText li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* _override.css */
+
+/* Inline Text-Slideshow, Inline Image-Slideshow */
+
+.overrideSlideshow {
+    font-size: .875rem;
+    display: block;
+}
+.overrideSlideshow .slide {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.overrideSlideshow .slide:first-child {
+    position: static;
+}
+
+
+.overrideSlideshow .flickity-enabled {
+    padding: 0 0 26px;
+    margin: 0;
+}
+.overrideSlideshow .flickity-page-dots {
+    bottom: 16px;
+}
+
+
+.overrideSlideshow .flickitySlider {
+    /*display: none;*/
+    opacity: 0;
+    -webkit-transition: opacity .2s ease-in;
+       -moz-transition: opacity .2s ease-in;
+        -ms-transition: opacity .2s ease-in;
+         -o-transition: opacity .2s ease-in;
+            transition: opacity .2s ease-in;
+}
+.overrideSlideshow .flickitySlider.flickity-enabled {
+    /*display: block;*/
+    opacity: 1;
+}
+
+
+.overrideSlideshow .slideTextContainer {
+    /*text-align: center;*/
+    padding: 0 10px;
+}
+.overrideSlideshow .slideCopyright {
+    font-size: .625rem;
+    margin: 2px 0 0;
+}
+.overrideSlideshow .slideTitle {
+    /*text-align: center;*/
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 4px 0 0;
+}
+.overrideSlideshow .slideDescription {
+    font-size: .875rem;
+    margin: 2px 0 0;
+}
+
+
+/* Inline Text-Slideshow */
+
+.overrideTextSlideshow {
+    background-color: #f2f2f2;
+}
+
+
+/* Inline Image-Slideshow */
+
+.overrideImageSlideshow {
+    padding: 0 0 10px;
+    background-color: #f2f2f2;
+}
+.overrideImageSlideshow.storySlideshow {
+    padding: 0 0 5px;
+}
+.overrideImageSlideshow .slide {
+    padding: 0;
+}
+.overrideImageSlideshow img,
+.overrideImageSlideshow .imageContainer {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.overrideImageSlideshow .flickity-enabled {
+    padding: 0;
+}
+.overrideImageSlideshow .flickity-page-dots {
+    display: none;
+}
+/*
+.overrideImageSlideshow .flickity-prev-next-button {
+    top: 43%;
+}
+*/
+
+
+.overrideImageSlideshow .slideImageContainer {
+    position: relative;
+}
+.overrideImageSlideshow .slideImageContainer img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.overrideImageSlideshow .flickity-prev-next-button.previous,
+.overrideImageSlideshow .slideImageContainer .slideshowButton.previous {
+    left: 10px;
+}
+.overrideImageSlideshow .flickity-prev-next-button.next,
+.overrideImageSlideshow .slideImageContainer .slideshowButton.next {
+    right: 10px;
+}
+.overrideImageSlideshow .flickity-prev-next-button,
+.overrideImageSlideshow .slideImageContainer .slideshowButton {
+    width: 10vw;
+    height: 10vw;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    background: hsla(0, 0%, 100%, 0.75);
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overrideImageSlideshow .slideImageContainer .slideshowButton {
+    display: none;
+}
+.overrideImageSlideshow .flickity-prev-next-button svg,
+.overrideImageSlideshow .slideImageContainer .slideshowButton svg {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+.overrideImageSlideshow .flickity-enabled .slideImageContainer .slideshowButton {
+    display: block;
+}
+
+
+/* (ws) 2016-12-22 Copyright als Overlay rechts unten ueber dem Image */
+
+.articleBox .slideImageContainer {
+    position: relative;
+}
+.articleBox .slideCopyright {
+
+    padding: 2px 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0,0,0,.1);
+
+    /*
+    color: #999;
+    padding: 2px 10px;
+    */
+}
+
+
+/* override iframe */
+
+.frameContainer {
+    /*padding-top: 30px;*/
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.frameContainer iframe,
+.frameContainer div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.articleBody .fb-post {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* override article inline button */
+
+.articleBox .story .articleInlineButton {
+    text-align: center;
+    display: block;
+}
+.articleBox .story .articleInlineButton a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d0113a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 1px 0px 0px #ccc;
+}
+.articleBox .story .articleInlineButton a:focus,
+.articleBox .story .articleInlineButton a:hover,
+.articleBox .story .articleInlineButton a:active,
+.articleBox .story .articleInlineButton a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* override artikel image */
+
+.articleBox .story .overrideImage {
+    display: block;
+}
+
+
+
+/* newsletter css */
+.smartphone .articleBox .defaultbox .newsletterteaser {
+    background-color: #fff;
+    position: relative;
+
+    font-size: 0.75rem;
+    line-height: 1.2;
+
+}
+.smartphone .articleBox .defaultbox .newsletterteaser .nlImg {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlTeaser {
+    padding: 10px 5px 20px 75px;
+}
+
+
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlEmail {
+    width: 75px;
+    text-align: right;
+    padding: 4px;
+}
+.smartphone .articleBox .defaultbox .newsletterteaser .nlFirst {
+    margin: 0 5px 0 75px;
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlFloat {
+    float: left;
+}
+.smartphone .articleBox .defaultbox .newsletterteaser .nlClear {
+    clear: both;
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser input {
+    font-size: 0.75rem;
+    padding: 2px;
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlSpacer {
+    padding: 8px 0;
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlSubmit {
+    padding: 10px 0 20px 75px;
+}
+
+
+.smartphone .articleBox .defaultbox .newsletterteaser input[type="text"] {
+    width: 170px;
+}
+.smartphone .articleBox .defaultbox .newsletterteaser select {
+    width: 170px;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.smartphone .articleBox .defaultbox .newsletterteaser input[type="submit"],
+.smartphone .articleBox .defaultbox .newsletterteaser input[type="button"] {
+    width: 170px;
+
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #eee);
+    border: 1px solid #ccc;
+
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.smartphone .articleBox .defaultbox .newsletterteaser .nlHint {
+    padding: 0 15px 10px 15px;
+}
+.smartphone .articleBox .defaultbox .newsletterteaser .nlHint a {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Landing Page für Abmelden via Newsletterlink */
+.smartphone .articleBox .content.unsubscribe .unsubscribeMsg {
+    margin: 10px 0;
+}
+
+/* article related articles*/
+
+.articleBox .storyRelatedArticles .headline span {
+    display: block;
+    padding: 2px 0 4px;
+    color: #fff;
+}
+
+/* article channel top stories */
+
+.articleBox .storyChannelTopStories .headline span {
+    display: block;
+    padding: 2px 0 4px;
+    color: #fff;
+}
+
+/* _adition */
+
+.adSlotAdition {
+    text-align: left;
+    margin: 0 0 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.adSlotAdition:before {
+    content: "Werbung";
+    text-align: center;
+    color: #e2e2e2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.adSlotAdition.textAlignCenter {
+    text-align: center;
+}
+
+
+
+
+/* tracking */
+
+.oe24OewaWrapper,
+.oe24Tracking {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+.oe24OewaWrapper img,
+.oe24Tracking img {
+    padding: 0;
+    border: none;
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0;
+    display: inline-block;
+}
+
+
+/* htmlbox */
+
+.defaultHtmlBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* wetterbox */
+
+.weatherBox {
+    width: 100%;
+    padding: 0 4px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    margin: 0 0 10px 0;
+}
+
+.weatherBox .isHidden {
+    display: none !important;
+}
+
+.weatherNav {
+    text-align: center;
+    margin: 4px 0;
+}
+.weatherBottom{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.weatherNav {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.weatherNav .weatherNavItem {
+    font-size: .875rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2px 0;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #007ddc;
+    background-color: #f2f2f2;
+}
+.weatherNav .weatherNavItem.active {
+    color: #fff;
+    background-color: #007ddc;
+}
+.weatherNav .weatherNavItem.wide {
+    width: 20%;
+}
+
+
+.weatherBottom .weatherAtLink {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    display: inline-block;
+    color: #fff;
+    background-color: #007ddc;
+    width: 100%;
+}
+
+
+.weatherMap {
+    padding-bottom: 52%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.weatherMap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.weatherMap .mapToday {
+    z-index: 2;
+}
+.weatherMap .mapTomorrow {
+    z-index: 1;
+}
+
+.weatherMapNavigation{
+    width: 100%;
+}
+.weatherMapNav{
+    background-color: #f0ad4e;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    width: 40%;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+#weatherMapPrevious .weatherMapNav{
+    float: left;
+    padding: 5px 10px 5px 0;
+}
+#weatherMapNext .weatherMapNav{
+    float: right;
+    padding: 5px 0 5px 10px;
+}
+
+.oe24app{background-color:#ffffff;}

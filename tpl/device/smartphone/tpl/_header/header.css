@@ -1,0 +1,287 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.wrapper > .header {
+    display: block;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    z-index: 20;
+    background-color: #d0113a;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+
+/* ----------------------------- */
+
+.headerNavButton,
+.headerLogoPortal,
+.headerLogoOesterreich {
+    float: left;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper > .header a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------- */
+
+.headerNavButton {
+    text-align: center;
+    /*width: 16%;*/
+    width: 12%;
+    height: 100%;
+    color: #fff;
+    /*background-color: #900;*/
+}
+.headerLogoPortal {
+    text-align: center;
+    /*width: 46%;*/
+    width: 54%;
+    /*background-color: #090;*/
+}
+.headerLogoOesterreich {
+    text-align: right;
+    /*width: 38%;*/
+    width: 34%;
+    /*background-color: #009;*/
+}
+
+/* ----------------------------- */
+
+.headerNavButton svg {
+    display: none;
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    position: absolute;
+    /*left: 50%;*/
+    right: -5px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.headerNavButton svg:first-child {
+    display: block;
+}
+
+/* ----------------------------- */
+
+.headerLogoOesterreich {
+    /*padding: 10px;*/
+    padding: 10px 10px 10px 0;
+    text-align: left;
+}
+.headerLogoOesterreich a {
+    width: 100%;
+}
+.headerLogoOesterreich svg {
+    height: 14px;
+
+    width: 103.75px;
+    text-align: right;
+}
+.headerLogoOesterreich span {
+    font-size: .5625rem;
+    text-align: right;
+    display: block;
+    color: #fff;
+
+    width: 103.75px;
+}
+
+/* ----------------------------- */
+
+.headerLogoPortal svg {
+    width: auto;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    padding-right: 5px;
+}
+
+/* ----------------------------- */
+
+.layout_sport .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_sport .wrapper > .header {
+    background-color: #22b480;
+    background-image: -webkit-linear-gradient(top, #71db80, #22b480);
+    background-image: linear-gradient(to bottom, #71db80, #22b480);
+}
+
+/* ----------------------------- */
+
+.layout_society .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_society .wrapper > .header {
+    background-color: #ffca49;
+    background-image: -webkit-linear-gradient(top, #ffca49 20%, #ffb652);
+    background-image: linear-gradient(to bottom, #ffca49 20%, #ffb652);
+}
+
+/* ----------------------------- */
+
+.layout_tv .headerLogoPortal svg {
+    height: 52%;
+}
+.layout_tv .wrapper > .header {
+    background-color: #ca003f;
+    background-image: -webkit-linear-gradient(top, #ca003f 20%, #e80056);
+    background-image: linear-gradient(to bottom, #ca003f 20%, #e80056);
+}
+
+/* ----------------------------- */
+
+.layout_radiooe24 .headerLogoPortal svg {
+    height: 62%;
+}
+.layout_radiooe24 .wrapper > .header {
+    background-color: #d0113a;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+
+/* ----------------------------- */
+
+.layout_madonna .headerLogoPortal {
+    width: 84%;
+}
+.layout_madonna .headerLogoOesterreich {
+    display: none;
+}
+.layout_madonna .headerLogoPortal svg {
+    height: 70%;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.layout_madonna .wrapper > .header {
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(top, #fff, #f2f2f2);
+    background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+    border-bottom: 1px solid #e2e2e2;
+}
+.layout_madonna .wrapper .headerNavButton svg {
+    stroke: #000;
+}
+/*
+.layout_madonna .wrapper .headerLogoOesterreich svg {
+    stroke: #000;
+}
+.layout_madonna .wrapper .headerLogoOesterreich svg path {
+    fill: #000;
+}
+.layout_madonna .wrapper .headerLogoOesterreich span {
+    color: #000;
+}
+*/
+
+/* ----------------------------- */
+
+.layout_money .headerLogoPortal {
+    width: 80%;
+}
+.layout_money .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_money .wrapper > .header {
+    background-color: #0f7dc4;
+    background-image: -webkit-linear-gradient(top, #0f7dc4 20%, #184089);
+    background-image: linear-gradient(to bottom, #0f7dc4 20%, #184089);
+}
+
+/* ----------------------------- */
+
+/* ----------------------------- */
+
+.layout_reise .headerLogoPortal {
+    width: 68%;
+}
+.layout_reise .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_reise .wrapper > .header {
+    background-color: #2b4a90;
+    background-image: -webkit-linear-gradient(to bottom,#2b4a90 20%,#25407c);
+    background-image: linear-gradient(to bottom,#2b4a90 20%,#25407c);
+}
+
+/* ----------------------------- */
+
+.layout_gesund24 .headerLogoPortal {
+    width: 68%;
+}
+.layout_gesund24 .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_gesund24 .wrapper > .header {
+    background-color: #61b6f4;
+    background-image: -webkit-linear-gradient(to bottom,#61b6f4 20%,#3194dd);
+    background-image: linear-gradient(to bottom,#61b6f4 20%,#3194dd);
+}
+
+/* ----------------------------- */
+
+.layout_cooking24 .headerLogoPortal {
+    width: 88%;
+}
+.layout_cooking24 .headerLogoPortal svg {
+    height: 70%;
+}
+.layout_cooking24 .wrapper > .header {
+    background-color: #a10f42; /*#b41152;*/
+    background-image: -webkit-linear-gradient(to bottom,#b41152 20%,#8f0c34);
+    background-image: linear-gradient(to bottom,#b41152 0,#8f0c34 100%);
+}
+
+/* ----------------------------- */
+
+.layout_games24 .headerLogoPortal {
+    width: 88%;
+}
+.layout_games24 .headerLogoPortal img {
+    height: 70%;
+    margin-top: 10px;
+}
+
+.layout_games24 .wrapper > .header {
+    background-color: #000;
+    background-image: -webkit-linear-gradient(to bottom,#787878 20%,#000);
+    background-image: linear-gradient(to bottom,#787878 20%,#000);
+}
+
+/* ----------------------------- */
+
+.layout_business .headerLogoPortal {
+    width: 88%;
+}
+.layout_business .headerLogoPortal svg,
+.layout_business .headerLogoPortal img {
+    height: 55%;
+    margin-top: 10px;
+}
+.layout_business .wrapper > .header {
+    background-color: #35549b;
+    background-image: -webkit-linear-gradient(to bottom,#35549b 20%,#357dbe);
+    background-image: linear-gradient(to bottom,#35549b 0,#357dbe 100%);
+}
+

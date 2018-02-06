@@ -1,0 +1,41 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* https://css-tricks.com/couple-takes-sticky-footer/ */
+/* http://codepen.io/SelenIT/pen/QELpww */
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  min-width: 100%;
+  display: table;
+}
+.container {
+  display: table-row-group;
+}
+.footer {
+  display: table-footer-group;
+}
+.inner {
+  padding: 20px;
+}
+
+/*
+<div class="container">
+  <div class="inner">
+    <h1>Sticky Footer with display:table-*</h1>
+    <p><button class="add">Add Content</button></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="inner">
+    <p>Footer <button class="add">Add Content</button></p>
+  </div>
+</footer>
+*/

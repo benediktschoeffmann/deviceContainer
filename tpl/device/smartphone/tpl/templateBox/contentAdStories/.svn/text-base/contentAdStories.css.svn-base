@@ -1,0 +1,30 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.aditionMobileCPCSlot {
+    padding: 0 10px;
+    clear: both;
+}
+.aditionMobileCPCSlot article .columns {
+    float: left;
+    width: 50%;
+}
+.aditionMobileCPCSlot article img {
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+}
+.aditionMobileCPCSlot article h3 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #d0113a;
+}
+.aditionMobileCPCSlot article h2 {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 10px;
+}

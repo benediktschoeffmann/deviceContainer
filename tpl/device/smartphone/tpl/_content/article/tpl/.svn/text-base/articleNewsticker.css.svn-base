@@ -1,0 +1,89 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.articleBox .newsTickerWrapper {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.articleBox .newsTickerWrapper .buttonWrapper {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.articleBox .newsTickerWrapper .reloadButton {
+    display: block;
+    width: 95%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.articleBox .newsTickerEntry {
+    width: 100%;
+    /*padding: 0 5px;*/
+    border-bottom: 1px solid #dadada;
+}
+
+.articleBox .newsTickerEntry .tickerHeader {
+    display: block;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerHeader .marker {
+    display: block;
+    padding: 5px;
+    background: url('<?= slp('image', 'rl2014/ticker/ticker_dot.png'); ?>') no-repeat center;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerHeader .time {
+    display: block;
+    vertical-align: center;
+    color: #d0113a;
+    float: left;
+}
+
+.articleBox .newsTickerEntry .tickerBody {
+    padding: 5px;
+}
+
+.articleBox .newsTickerEntry .tickerBody img, 
+.articleBox .newsTickerEntry .tickerBody .overrideImage img, 
+.articleBox .newsTickerEntry .tickerBody .overrideVideo video, 
+.articleBox .newsTickerEntry .tickerBody video {
+    width: 100%;
+    margin: 5px 0;
+} 
+
+.articleBox .newsTickerEntry .tickerBody img, 
+.articleBox .newsTickerEntry .tickerBody video {
+    width: 100%;
+    margin: 5px 0;
+} 
+
+.articleBox .newsTickerEntry .oe2016InlineHeadline {
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dadada;
+}
+
+.articleBox .newsTickerEntry .oe2016InlineHeadline .type {
+    display: block;
+    color: #d0113a;
+}
+
+.articleBox .newsTickerEntry .video_player .videoPlayer {
+    margin: 0 0 10px 0;
+}
