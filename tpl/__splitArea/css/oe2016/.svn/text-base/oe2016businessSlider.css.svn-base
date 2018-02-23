@@ -1,0 +1,317 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+
+.businessSliderBoxHeader {
+    padding: 6px 10px;
+    margin-bottom: 1px;
+    background-color: #eee;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #184089;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    position: relative;
+    left: -3px;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption .icon {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-block;
+    width: 20px;
+    margin-right: 8px;
+}
+
+
+/* --- */
+/*
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption {
+    position: relative;
+    left: -18px;
+}
+.businessSliderBoxHeader .businessSliderBoxHeaderCaption:after {
+    content: " ";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #184089;
+}
+*/
+/* --- // */
+
+
+.businessSliderBox {
+    padding: 0 15px;
+    margin: 8px 0;
+    opacity: 0; /* (1) */
+    height: 0;  /* (2) */
+    background-color: #fff;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.tabbedBox .content .businessSliderBox {
+    padding: 0;
+}
+.businessSliderBox.slider-enabled {
+    opacity: 1;   /* (1) */
+    height: auto; /* (2) */
+}
+.businessSliderBox.slider-enabled.distanceTop {
+    margin-top: 15px;
+}
+.businessSliderBox.slider-enabled.distanceBottom {
+    margin-bottom: 15px;
+}
+
+
+.businessSliderBox .flktySlider {
+    padding: 0 40px;
+    position: relative;
+}
+.businessSliderBox .flktySlider.flktySliderHidden {
+    opacity: 0; /* (1) */
+    height: 0;  /* (2) */
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.businessSliderBox .flktySlider.flickity-enabled {
+    opacity: 1;   /* (1) */
+    height: auto; /* (2) */
+}
+
+
+.businessSliderBox .businessSliderBoxSlider {
+    /*min-height: 94px;*/
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+
+.businessSliderBox.colCount2 .businessSliderEntry {
+    width: 50%;
+}
+.businessSliderBox.colCount3 .businessSliderEntry {
+    width: 33.333333%;
+}
+.businessSliderBox.colCount4 .businessSliderEntry {
+    width: 25%;
+}
+.businessSliderBox.colCount5 .businessSliderEntry {
+    width: 20%;
+}
+
+
+.businessSliderBox .businessSliderEntry {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size: .875rem;
+    padding: 6px 10px;
+    /*float: left;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.businessSliderBox .businessSliderEntry:hover {
+    text-decoration: none;
+    background-color: #e1e5e6;
+}
+
+
+.businessSliderBox .businessSliderEntry .businessSliderEntryCounter {
+    display: block;
+}
+
+
+/* flickity buttons */
+
+.businessSliderBox .flktySlider .flickity-prev-next-button,
+.businessSliderBox .flktySlider .flickity-prev-next-button:hover {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.businessSliderBox .flktySlider .flickity-prev-next-button.previous:hover {
+    left: -2px;
+}
+.businessSliderBox .flktySlider .flickity-prev-next-button.next:hover {
+    right: -2px;
+}
+.businessSliderBox .flktySlider .flickity-prev-next-button svg .arrow {
+    fill: #184089;
+    stroke: #184089;
+}
+
+
+/* ... entry elements ... */
+
+/* ... entry elements end ... */
+
+
+/* businessSliderBox.bsUnternehmenRanking */
+
+.businessSliderBox.bsUnternehmenRanking .businessSliderBoxSlider {
+    background-color: #e9e08c;
+}
+
+
+
+/* businessSliderBox.bsForbes100Ranking */
+.businessSliderBox.bsForbes100Ranking .businessSliderBoxSlider {
+    background-color: #ffdead;
+}
+
+
+
+/* businessSliderBox.bsTvQuotes */
+.businessSliderBox.bsTvQuotes .businessSliderBoxSlider {
+    background-color: #e1e5e6;
+}
+
+
+/* businessSliderBox.bsWinnerLoser */
+.businessSliderBox.bsWinnerLoser .businessSliderBoxSlider {
+    background-color: #ff9b9b;
+}
+
+
+/* businessSliderBox.bsMarketLive */
+.businessSliderBox.bsMarketLive .businessSliderBoxSlider {
+    background-color: #8eb1e3;
+}
+
+
+
+
+
+/* Zu Dev-Zwecken, spaeter loeschen */
+.businessSliderBox .businessSliderEntry {
+    padding: 16px 10px;
+}
+/* Zu Dev-Zwecken, spaeter loeschen // */
+
+
+
+.businessSliderBox.withArticles .businessSliderBoxSlider {
+    padding: 2px 10px;
+}
+
+
+/* (bs) 2017-06-26 DAILY-797 */
+.businessSliderBox.withArticles .businessSliderEntry {
+    padding: 5px 3px 5px 3px;
+    /*padding: 5px 3px;*/
+    /*margin: 2px;*/
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+.businessSliderBox.withArticles .businessSliderImageContainer {
+    width: 98%;
+}
+
+.businessSliderBox.withArticles img {
+    width: 100%;
+}
+
+.businessSliderBox.withArticles .businessSliderEntryTopArea {
+    max-height: 42px;
+}
+.businessSliderBox.withArticles .businessSliderEntryPlace,
+.businessSliderBox.withArticles .businessSliderEntryName {
+    display: block;
+}
+
+.businessSliderBox.withArticles .businessSliderEntryPlace,
+.businessSliderBox.withArticles .businessSliderEntryMore {
+    color: #184089;
+    font-weight: bold;
+}
+.businessSliderBox.withArticles .businessSliderEntryName {
+    overflow: hidden;
+}
+
+.businessSliderBox.withArticles .businessSliderEntryMore {
+    display: block;
+    padding-top: 1px;
+    margin-right: 7px;
+    text-align: right;
+}
+
+
+
+
+/* TV-Quoten */
+
+.businessSliderBox.bsTvQuotes .tvHl {
+    width: 100%;
+    text-align: center;
+    color: #35549b;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.businessSliderBox.bsTvQuotes .tvMain {
+    width: 95%;
+    background-color: #fff;
+    text-align: center;
+    padding: 2% 4% 4% 4%;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(odd) td {
+    background-color: #fff;
+}
+.businessSliderBox.bsTvQuotes .tvMain tr:nth-child(even) td {
+    background-color: #e1e5e6;
+}
+
+.businessSliderBox.bsTvQuotes .tvTbl {
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th,
+.businessSliderBox.bsTvQuotes .tvTbl td {
+    text-align: left;
+}
+
+.businessSliderBox.bsTvQuotes .tvShow {
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75%;
+}
+.businessSliderBox.bsTvQuotes .tvDrw {
+    padding: 0 5px;
+    width: 25%;
+}
+.businessSliderBox.bsTvQuotes .tvTbl th{
+    font-weight: 700;
+}
+.businessSliderBox.bsTvQuotes .tvTbl td div {
+
+}
+

@@ -16,7 +16,7 @@ $keyValue = "firstBox_$category";
 $firstBox = $device->getConfig($keyValue);
 if (!$firstBox) {
     $device->setConfig($keyValue, true);
-    $showHeadline = false;
+    // $showHeadline = false;
 }
 
 $articlesPerCategory = $device->getConfig('articlesPerCategory');
@@ -24,6 +24,8 @@ if ($category != 'frontpage' && $articlesPerCategory >= 19) {
     return;
 }
 
+
+// (bs) 2018-02-21 Aufforderung von Niki - bei ALLEN Xl-Boxen Headlines drucken.
 $templateOptions = $box->getTemplateOptions();
 if ($templateOptions->get('showHeadline') && $showHeadline) {
     $headline = $templateOptions->get('Headline');
@@ -37,6 +39,21 @@ if ($templateOptions->get('showHeadline') && $showHeadline) {
         ));
     }
 }
+
+
+// (bs) siehe oben.
+// (bs) 2018-02-14 Anforderung von Niki ....
+// bei der Split-Column XLBox auf jeden Fall die Headline andrucken.
+// if ($templateOptions->get('showHeadline') && $templateOptions->get('Headline') &&
+//     $templateOptions->get('Columns') == 2) {
+//     tpl('oe24.oe24.device.oe24app.tpl.boxHeadline.boxHeadline', array(
+//             'device'    => $device,
+//             'category'  => $category,
+//             'box'       => $box,
+//             'headline'  => $device->sanitize($templateOptions->get('Headline')),
+//             'useLayoutIdentifier' => true,
+//         ));
+// }
 
 $boxTemplateString = $box->getTemplate();
 
@@ -84,10 +101,9 @@ foreach ($articles as $key => $article) {
     if ($category != 'frontpage' && $articlesPerCategory >= 19) {
         break;
     }
-    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
 
     // $imageFormatBig   = ($key == 0 && $mobileAsDesktop) ? 'XL-Konsole' : '620x388';
-    $imageFormatBig   = ($key == 0 && $mobileAsDesktop) ? 'Oe24AppXL-Konsole' : 'Oe24App310x194';
+    $imageFormatBig   = ($key == 0 && $mobileAsDesktop) ? 'Oe24AppXL-Konsole' : 'Oe24App1610';
     $imageFormatBig   = ($key > 0) ? '190x95Crop' : $imageFormatBig;
     //$imageFormatBig   = ($key == 0 && $mobileAsDesktop) ? 'bigStoryCrop' : $imageFormatBig;
     $imageFormatBig   = ($key == 0 && $mobileAsDesktop) ? 'Oe24AppBigStoryCrop' : $imageFormatBig;
@@ -112,6 +128,13 @@ foreach ($articles as $key => $article) {
                   'layout' => 'smartphone')
             );
 
+    $searchString = 'apaOuterFrame';
+    if (strpos($bodyText, $searchString) !== FALSE) {
+        continue;
+    }
+
+    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
+
     // remove html comment tags
     $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);
 
@@ -131,6 +154,8 @@ foreach ($articles as $key => $article) {
         'image'         => $imageUrl,
         'advertorial'   => $advertorial,
         'bodyText'      => $bodyText,
+        'pre_ad'           => $device->getAdUrl($category, 'artikel_top'),
+        'post_ad'          => $device->getAdUrl($category, 'artikel_bottom'),
         'link'          => ($articleUrl != $articleUrlOwn),
     );
 

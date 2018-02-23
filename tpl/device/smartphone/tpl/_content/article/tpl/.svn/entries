@@ -26,77 +26,9 @@ bschoeffmann
 
 b3528fbe-2e1a-df11-9c31-00e08152a866
 
-articleChannelTopStories.css
+01_articleDefault.tpl
 file
-8313
-
-
-
-2017-02-14T10:38:32.185354Z
-54c29da1ad7b88e17231273d4ac4caff
-2017-02-14T10:59:16.727839Z
-8313
-ws
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-155
-
-articleSlideshow.tpl
-file
-9731
-
-
-
-2017-07-10T14:09:47.543706Z
-351372d59c35fcf6bf0debec66decfc8
-2017-07-10T14:14:56.711964Z
-9731
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3534
-
-override.css
-file
-8591
+8049
 
 
 
@@ -117,268 +49,6 @@ file
 
 
 deleted
-
-articlePaging.tpl
-file
-9555
-
-
-
-2017-07-10T14:12:47.107583Z
-b000d424ac9d23ecd0893eaad72fd936
-2017-06-21T11:52:30.112907Z
-9555
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-806
-
-articleVideo.tpl
-file
-9731
-
-
-
-2017-09-26T15:17:57.489068Z
-522539dacd15fcc6db791bb05ceb6456
-2017-07-10T14:14:56.711964Z
-9731
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3544
-
-articleRelatedArticles.tpl
-file
-10788
-
-
-
-2017-12-01T10:17:26.363447Z
-f7d4f6114bdccda9702b4af7121b6f55
-2017-12-01T10:19:01.879664Z
-10788
-d_berger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1254
-
-articleNewsTicker.css
-file
-8227
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-deleted
-
-articleRecipe.tpl
-file
-9731
-
-
-
-2017-07-10T14:08:59.927969Z
-5e71bd412166052184a6502c755adb97
-2017-07-10T14:14:56.711964Z
-9731
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8323
-
-articleAdditionalBoxes.tpl
-file
-8511
-
-
-
-2017-06-02T12:45:12.638267Z
-676fbb2f221c0ed460d6fe9e3c968d00
-2017-03-02T09:27:12.619925Z
-8511
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-748
-
-articleSocialMedia.tpl
-file
-10152
-
-
-
-2017-10-02T14:54:10.628304Z
-e83dc7cee3a2ef4aae340c4e8c0bef93
-2017-10-02T14:55:18.135416Z
-10152
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1567
-
-articleNewsticker.tpl
-file
-9731
-
-
-
-2017-07-27T08:00:15.312241Z
-afc7a5f67ec819d05d82a6664fdeac32
-2017-07-10T14:14:56.711964Z
-9731
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4451
 
 articleDefault.tpl
 file
@@ -414,40 +84,16 @@ has-props
 
 4845
 
-02_articleDefault.tpl
+articleComments.tpl
 file
-8049
+9142
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-deleted
-
-articlePagingNavigation.tpl
-file
-9342
-
-
-
-2017-05-29T12:04:48.886666Z
-8a8a108304b2f70bff983b0473fe2e63
-2017-05-29T12:05:39.588597Z
-9342
+2017-11-08T11:12:08.493219Z
+6c75357af039d3c5f9df66796e85fc4c
+2017-05-04T08:07:11.625114Z
+9142
 d_berger
 
 
@@ -470,7 +116,31 @@ d_berger
 
 
 
-577
+1683
+
+01_articleSlideshow.css
+file
+8049
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 articleSlideshow.css
 file
@@ -540,40 +210,6 @@ bschoeffmann
 
 166
 
-articleRecipe.css
-file
-8746
-
-
-
-2017-03-28T13:51:20.956255Z
-baf9827efe4efd959d973269de9ef6e7
-2017-03-28T13:51:40.443307Z
-8746
-d_berger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1647
-
 articleRelatedArticles.css
 file
 8313
@@ -607,40 +243,6 @@ ws
 
 
 153
-
-articleSportAdditionalBoxes.tpl
-file
-10760
-
-
-
-2017-11-29T16:05:53.136659Z
-87c3d0ab4116851bb6fddc1f2b25982b
-2017-11-30T09:19:01.163902Z
-10760
-d_berger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1763
 
 articleAdditionalBoxes.css
 file
@@ -744,16 +346,16 @@ hhofstaetter
 
 3362
 
-articleNewsticker.css
+articlePaging.tpl
 file
-8459
+9555
 
 
 
-2017-02-28T14:55:28.156507Z
-313ff4eab6b899e2b88460d230d4ca5f
-2017-02-28T15:01:25.586762Z
-8459
+2017-07-10T14:12:47.107583Z
+b000d424ac9d23ecd0893eaad72fd936
+2017-06-21T11:52:30.112907Z
+9555
 bschoeffmann
 
 
@@ -776,7 +378,65 @@ bschoeffmann
 
 
 
-1865
+806
+
+articleRecipe.tpl
+file
+9731
+
+
+
+2017-07-10T14:08:59.927969Z
+5e71bd412166052184a6502c755adb97
+2017-07-10T14:14:56.711964Z
+9731
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8323
+
+articleNewsTicker.css
+file
+8227
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 articleTextSection.tpl
 file
@@ -838,14 +498,14 @@ deleted
 
 articleDefault.css
 file
-10459
+11105
 
 
 
-2017-10-27T13:09:30.445469Z
-02013ad65af2e8150e84eff1891b0b08
-2017-10-27T13:10:49.082658Z
-10459
+2018-02-19T12:54:17.374675Z
+1079bda4e7fe04dd460a0659844d3f90
+2018-02-19T12:57:02.581703Z
+11105
 ws
 has-props
 
@@ -868,11 +528,19 @@ has-props
 
 
 
-4421
+4588
 
-01_articleDefault.tpl
+articleNewsticker.tpl
 file
-8049
+9731
+
+
+
+2017-07-27T08:00:15.312241Z
+afc7a5f67ec819d05d82a6664fdeac32
+2017-07-10T14:14:56.711964Z
+9731
+bschoeffmann
 
 
 
@@ -892,7 +560,9 @@ file
 
 
 
-deleted
+
+
+4451
 
 nationalratswahl2017Widget.tpl
 file
@@ -928,16 +598,40 @@ d_berger
 
 826
 
-articleComments.tpl
+02_articleDefault.tpl
 file
-9142
+8049
 
 
 
-2017-11-08T11:12:08.493219Z
-6c75357af039d3c5f9df66796e85fc4c
-2017-05-04T08:07:11.625114Z
-9142
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+articlePagingNavigation.tpl
+file
+9342
+
+
+
+2017-05-29T12:04:48.886666Z
+8a8a108304b2f70bff983b0473fe2e63
+2017-05-29T12:05:39.588597Z
+9342
 d_berger
 
 
@@ -960,7 +654,7 @@ d_berger
 
 
 
-1683
+577
 
 articleSlideshowVoting.tpl
 file
@@ -996,9 +690,145 @@ d_berger
 
 2648
 
-01_articleSlideshow.css
+articleChannelTopStories.css
 file
-8049
+8313
+
+
+
+2017-02-14T10:38:32.185354Z
+54c29da1ad7b88e17231273d4ac4caff
+2017-02-14T10:59:16.727839Z
+8313
+ws
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+155
+
+articleRecipe.css
+file
+8746
+
+
+
+2017-03-28T13:51:20.956255Z
+baf9827efe4efd959d973269de9ef6e7
+2017-03-28T13:51:40.443307Z
+8746
+d_berger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1647
+
+articleSlideshow.tpl
+file
+9731
+
+
+
+2017-07-10T14:09:47.543706Z
+351372d59c35fcf6bf0debec66decfc8
+2017-07-10T14:14:56.711964Z
+9731
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3534
+
+articleSportAdditionalBoxes.tpl
+file
+10760
+
+
+
+2017-11-29T16:05:53.136659Z
+87c3d0ab4116851bb6fddc1f2b25982b
+2017-11-30T09:19:01.163902Z
+10760
+d_berger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1763
+
+override.css
+file
+8591
 
 
 
@@ -1019,4 +849,174 @@ file
 
 
 deleted
+
+articleVideo.tpl
+file
+9731
+
+
+
+2017-09-26T15:17:57.489068Z
+522539dacd15fcc6db791bb05ceb6456
+2017-07-10T14:14:56.711964Z
+9731
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3544
+
+articleRelatedArticles.tpl
+file
+10788
+
+
+
+2017-12-01T10:17:26.363447Z
+f7d4f6114bdccda9702b4af7121b6f55
+2017-12-01T10:19:01.879664Z
+10788
+d_berger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1254
+
+articleNewsticker.css
+file
+11095
+
+
+
+2018-02-15T10:52:09.832225Z
+06fb0cd961bb744fab20dec66f483f47
+2018-02-15T10:53:10.023732Z
+11095
+ws
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2233
+
+articleAdditionalBoxes.tpl
+file
+8511
+
+
+
+2017-06-02T12:45:12.638267Z
+676fbb2f221c0ed460d6fe9e3c968d00
+2017-03-02T09:27:12.619925Z
+8511
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+748
+
+articleSocialMedia.tpl
+file
+10152
+
+
+
+2017-10-02T14:54:10.628304Z
+e83dc7cee3a2ef4aae340c4e8c0bef93
+2017-10-02T14:55:18.135416Z
+10152
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1567
 

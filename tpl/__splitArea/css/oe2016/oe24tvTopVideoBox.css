@@ -1,0 +1,318 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe24tvTopVideoBox {
+    width: 960px;
+    margin: 0 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    display: none;
+}
+
+.oe24tvTopVideoBox .bigClipArea {
+    width: 770px;
+    float: left;
+    /* (pj) 2016-09-29 damit der Player nicht Box nicht huepfen laesst, bei einem erneuten Setup */
+    min-height: 1px;
+    /* (pj) 2016-09-29 end */
+}
+
+.oe24tvTopVideoBox .smallClipArea {
+    width: 188px;
+    float: left;
+    margin-left: 2px;
+}
+
+.oe24tvTopVideoBox .smallClipAreaCaption {
+    text-align: center;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    height: 86px;
+    position: relative;
+}
+
+.oe24tvTopVideoBox .smallClipAreaCaption p {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 2.375rem;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.oe24tvTopVideoBox .smallClip {
+    height: 87px;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #bebebe;
+    padding: 5px 3px 5px 0;
+    text-decoration: none;
+    overflow: hidden;
+}
+/*
+.oe24tvTopVideoBox .smallClip:first-child {
+    border-top: 1px solid #bebebe;
+    height: 86px;
+}
+*/
+
+.oe24tvTopVideoBox .smallClip:last-child {
+    height: 86px;
+}
+
+.oe24tvTopVideoBox .smallClip.active,
+.oe24tvTopVideoBox .smallClip:hover {
+    background-color: #d9d9d9;
+}
+.oe24tvTopVideoBox .smallClip .clipImageContainer {
+    width: 76px;
+    height: 76px;
+}
+.oe24tvTopVideoBox .smallClip .clipImageContainer.video_container.video_container_bottom_left:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.oe24tvTopVideoBox .smallClip .smallClipImage {
+    width: 100%;
+    display: block;
+    float: left;
+    vertical-align: center;
+}
+
+.oe24tvTopVideoBox .smallClip .smallClipText {
+    display: block;
+    margin-left: 84px;
+}
+
+.oe24tvTopVideoBox .smallClip .smallClipTitle,
+.oe24tvTopVideoBox .smallClip .smallClipLength {
+    /*font-family: "oe24condensed",sans-serif;*/
+    line-height: 1.2;
+}
+.oe24tvTopVideoBox .smallClip .smallClipTitle {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    height: 58px;
+    width: 99px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    position: absolute;
+    left: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.oe24tvTopVideoBox .smallClip .smallClipLength {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size: 12px;
+    color: #929292;
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+}
+
+
+
+/* ------------------------------------- */
+
+/* Wenn die Box NICHT im TV-Kanal gesetzt ist */
+
+/*
+.topVideoBoxHeadline .logoPortal {
+    width: 324px;
+    margin-left: 28px;
+}
+.topVideoBoxHeadline .textPortalLeft,
+.topVideoBoxHeadline .textPortalRight {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 3rem;
+    line-height: 1.6;
+    color: #fff;
+}
+.topVideoBoxHeadline .textPortalLeft {
+    float: left;
+    margin-left: 20px;
+}
+.topVideoBoxHeadline .textPortalRight {
+    float: right;
+    margin-right: 20px;
+}
+*/
+
+.oe24tvTopVideoBox .topVideoBoxHeadline .headerNavContainer {
+    display: table;
+    /*table-layout: fixed;*/
+    border-collapse: collapse;
+    width: 100%;
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .headerNavLogo .headerNavLogoCol {
+    /*float: none;*/
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .logoPortal,
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalLeft,
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalRight {
+    display: table-cell;
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .logoPortal {
+    width: 456px;
+    text-align: center;
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalLeft,
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalRight {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalLeft {
+    font-size: 4.3rem;
+    line-height: 1.1;
+    text-align: left;
+}
+.oe24tvTopVideoBox .topVideoBoxHeadline .textPortalRight {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: right;
+}
+@-moz-document url-prefix() {
+    .oe24tvTopVideoBox .topVideoBoxHeadline .textPortalLeft,
+    .oe24tvTopVideoBox .topVideoBoxHeadline .textPortalRight {
+        padding-top: 2px;
+    }
+}
+
+
+/* ------------------------------------- */
+
+/* Wenn die Box auf oe24.at gesetzt wird */
+
+/*
+.layout_oe24 .oe24tvTopVideoBox .bigClipArea {
+    width: 697px;
+}
+.layout_oe24 .oe24tvTopVideoBox .smallClipArea {
+    width: 261px;
+}
+.layout_oe24 .oe24tvTopVideoBox .smallClip {
+    height: 98px;
+}
+.layout_oe24 .oe24tvTopVideoBox .smallClip:first-child {
+    border-top: 1px solid #bebebe;
+}
+.layout_oe24 .oe24tvTopVideoBox .smallClip .clipImageContainer {
+    width: 86px;
+    height: 86px;
+}
+.layout_oe24 .oe24tvTopVideoBox .smallClip .smallClipTitle {
+    width: 128px;
+    left: 94px;
+}
+
+.layout_oe24 .oe24tvTopVideoBox .headerNavContainer {
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+.layout_oe24 .oe24tvTopVideoBox .headerNavLogo {
+    padding: 8px;
+}
+.layout_oe24 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv {
+    width: 248px;
+    padding: 0 2px 0 9px;
+    float: right;
+}
+.layout_oe24 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv a {
+    text-align: left;
+    height: 100%;
+    position: relative;
+}
+.layout_oe24 .oe24tvTopVideoBox .headerNavLogoCol.logoPortal img {
+    height: 68px;
+}
+.layout_oe24 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv span {
+    font-family: "oe24",sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+*/
+
+/* ------------------------------------- */
+
+
+/* ------------------------------------- */
+
+/* Wenn die Box auf sport.oe24.at gesetzt wird */
+
+/*
+.layout_sport.oe2016 .oe24tvTopVideoBox .bigClipArea {
+    width: 697px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .smallClipArea {
+    width: 261px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .smallClip {
+    height: 98px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .smallClip:first-child {
+    border-top: 1px solid #bebebe;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .smallClip .clipImageContainer {
+    width: 86px;
+    height: 86px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .smallClip .smallClipTitle {
+    width: 128px;
+    left: 94px;
+}
+
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavContainer {
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavLogo {
+    padding: 8px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv {
+    width: 248px;
+    padding: 0 2px 0 9px;
+    float: right;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv a {
+    text-align: left;
+    height: 100%;
+    position: relative;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavLogoCol.logoPortal img {
+    height: 68px;
+}
+.layout_sport.oe2016 .oe24tvTopVideoBox .headerNavLogoCol.textOe24tv span {
+    font-family: "oe24",sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+*/
+
+/* ------------------------------------- */

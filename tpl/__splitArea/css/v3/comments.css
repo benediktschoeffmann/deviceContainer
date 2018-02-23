@@ -1,0 +1,233 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.comments {
+	position: relative;
+	border-top: 1px solid #ebebeb;
+	border-left: 2px solid #6a7a91;
+	padding: 0px 15px 0px 25px;
+	margin-top: 50px;
+	min-height: 70px;
+	padding-bottom: 40px;
+	margin-bottom: 28px;
+}
+.comments.no_borders {
+	border: none;
+	padding: 0;
+}
+.comments #commentMsg {
+	text-align: center;
+	font-size: 1.25rem;
+}
+.comments #commentMsg.success {
+	color: #000000;
+}
+.comments #commentMsg.error {
+	color: #d01010;
+}
+
+.comments .container_postings {
+	/*margin-top: 34px;*/
+}
+.comments h2 {
+	position: relative;
+	top: -18px;
+	left: -27px;
+	color: #ffffff;
+	background-color: #6a7a91;
+	margin: 0px;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+}
+.fbComments.comments h2 {
+	font-size: 1.25rem;
+}
+
+.comments #noFirstAndLastname {
+	margin-bottom: 18px;
+}
+.comments .profilHinweis {
+	font-size: .875rem;
+	color: #ff0000;
+}
+.comments a.profilHinweis {
+	text-decoration: underline;
+}
+.comments .left {
+	float: left;
+}
+.comments .right {
+	float: right;
+}
+.comments #loginFormDiv {
+	margin-bottom: 8px;
+}
+.comments .fb_login {
+	cursor: pointer;
+}
+.comments form textarea {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+.comments form textarea,
+.comments form input[type="text"],
+.comments form input[type="password"] {
+	border: 0px;
+	background-color: #ecf1f7;
+	padding: 10px;
+	margin-bottom: 6px;
+	border-radius: 3px;
+}
+.comments form .userLogin {
+	display: block;
+	width: 100%;
+}
+.comments form a {
+	text-decoration: none;
+}
+.comments form .button {
+	border: 0px;
+	color: #ffffff;
+	display: block;
+	background-color: #d01010;
+	padding: 5px 35px;
+	float: right;
+	border-radius: 3px;
+}
+.comments form .button[disabled] {
+	background-color: #d0d0d0;
+}
+.comments form .submitText {
+	border: none;
+	background-color: transparent;
+}
+.comments #loginForm .right {
+	font-size: 0.75rem;
+}
+.comments .success {
+	color: #00A600;
+}
+.comments .error {
+	color: #A60000;
+}
+.comments .commentsContainer .comment {
+	position: relative;
+	margin-top: 5px;
+	display: block;
+	padding-top: 20px;
+}
+.comments .commentsContainer .comment .comment_div:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0px 26px 15px;
+	display: block;
+	width: 0;
+	bottom: 100%;
+	left: 17px;
+}
+.comments .commentsContainer .comment .comment_div:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0px 18px 15px;
+	border-color: #ffffff;
+	display: block;
+	width: 0;
+	bottom: 100%;
+	left: 43px;
+}
+.comments .commentsContainer .comment.antwort {
+	border-left: 5px solid #d9e3ef;
+	padding-left: 25px;
+}
+.comments .commentsContainer .comment:nth-child(odd) .comment_div:before {
+	border-color: transparent #f4f2f3 #f4f2f3 transparent;
+}
+.comments .commentsContainer .comment:nth-child(odd) .comment_div {
+	background-color: #f4f2f3;
+}
+.comments .commentsContainer .comment:nth-child(even) .comment_div:before {
+	border-color: transparent #eaeff5 #eaeff5 transparent;
+}
+.comments .commentsContainer .comment:nth-child(even)  .comment_div {
+	background-color: #eaeff5;
+}
+.comments .commentsContainer .comment .name,
+.comments .commentsContainer .comment .trenner {
+	color: #d00000;
+}
+.comments .commentsContainer .comment .trenner {
+	display: inline-block;
+	margin: 0px 10px;
+}
+.comments .commentsContainer .comment .datum {
+	color: #b3afb0;
+}
+.comments .commentsContainer .comment .answerComment {
+	background-color: #cccccc;
+	color: #ffffff;
+	padding: 2px 10px;
+	border-radius: 3px;
+}
+.comments .commentsContainer .comment .comment_div {
+	position: relative;
+	padding: 10px;
+	border-radius: 3px;
+}
+.comments .commentsContainer .comment .comment_div p {
+	margin: 14px 0 4px;
+}
+
+.comments .paginationNav {
+	float: right;
+}
+.comments .paginationNav .paginationButton {
+	display: inline-block;
+	width: 27px;
+	margin: 4px;
+	text-align: center;
+	padding: 5px;
+	background-color: #efefef;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.comments .paginationNav .paginationButton.paginationButtonActive,
+.comments .paginationNav .paginationButton:hover {
+	background-color: #d9d7d8;
+}
+.comments .hide_postings {
+	position: absolute;
+	top: 0px;
+	right: 15px;
+}
+.comments .hide_postings span {
+	vertical-align: top;
+	color: #b0b1b3;
+}
+.fbComments.comments .hide_postings span {
+	font-size: 0.8125rem;
+}
+.comments .hidePostingDiv {
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+	line-height: 26px;
+	background-color: #f2f2f2;
+	font-family: "icomoon", sans-serif;
+	font-size: 3rem;
+	color: #d01010;
+	cursor: pointer;
+}
+/* (bs) 2015-11-17 OE2016-24 Weiter nach rechts schieben. */
+.a2016 .comments.no_borders h2 {
+	margin-left: 28px;
+}
+.a2016 .comments h3 {
+	color: #6a7b8f;
+}
+/* (bs) end. */

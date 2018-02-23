@@ -1,0 +1,54 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .content.storyColumns .column a {
+    border: none;
+    padding: 10px 0;
+    margin: 0;
+    display: block;
+}
+
+.oe2016 .content.storyColumns .column a:hover {
+    background-color: #f2f2f2;
+}
+
+/* ----------------------------------- */
+
+.storyColumns ul,
+.storyColumns li {
+    list-style-type: none;
+}
+.storyColumns li {
+    border-top: 1px solid #ebebeb;
+}
+.storyColumns li:first-child {
+    border-top: none;
+}
+
+.storyColumns .column {
+    border-top: 2px solid #eaeaea;
+}
+
+.storyColumns .columnHeadline {
+    font-family: "oe24", sans-serif;
+    font-size: 1.375rem;
+    padding: 10px 0 0;
+    margin: 0;
+    color: #d0113a;
+    display: block;
+}
+
+.storyColumns .imageContainer {
+    float: left;
+}
+
+.storyColumns .storyText {
+    font-size: .875rem;
+    margin-left: 100px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

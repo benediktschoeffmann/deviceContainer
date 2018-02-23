@@ -1,0 +1,115 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+
+/* Horoskop */
+
+.layout_madonna.oe2016 .tabbedBox.madonna .tabbedBoxNav a:hover .tabbedBoxNavName,
+.layout_madonna.oe2016 .tabbedBox.madonna .tabbedBoxNav a.active .tabbedBoxNavName {
+    background-color: #cc054a;
+}
+
+
+/* content-slider im artikel */
+.layout_madonna.oe2016 .content.article .contentSliderBox {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.layout_madonna.oe2016 .content.article .contentSliderBox .slide {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.layout_madonna.oe2016 .content.article .article_box .article_body h2 {
+    margin: 0;
+}
+.layout_madonna.oe2016 .content.article .contentSliderBox .descriptionContent {
+    background-color: #000;
+    color: #fff;
+}
+.layout_madonna.oe2016 .content.article .contentSliderBox .descriptionContent p {
+    margin: 0;
+    padding: 2px 6px;
+}
+.layout_madonna.oe2016 .content.article .contentSliderBox .sliderWrapper {
+    position: relative;
+}
+.layout_madonna.oe2016 .content.article .contentSliderBox .contentSliderBoxCounter {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    padding: 2px 4px 2px 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.layout_madonna.oe2016 .content.article .articleContentSlider {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    opacity: 0;
+    height: 0;
+
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    position: relative;
+}
+.layout_madonna.oe2016 .content.article .articleContentSlider.flickity-enabled {
+    opacity: 1;
+    height: auto;
+}
+
+
+.layout_madonna.oe2016 .content.article .articleContentSlider .slide {
+    float: left;
+}
+
+.layout_madonna.oe2016 .content.article .articleContentSlider .slide img {
+    display: block;
+    width: 100%;
+}
+
+.layout_madonna.oe2016 .articleContentSliderBox .sliderCounter {
+    background-color: #000;
+    top: 15px;
+    padding-left: 5px;
+}
+
+.layout_madonna.oe2016 .articleContentSliderBox button {
+    background-color: #cc054a;
+    height: 65px;
+    width: 25px;
+    padding: 3px;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button:hover {
+    background-color: #fff;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button:hover path.arrow {
+    fill: #cc054a;
+    stroke: #cc054a;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button.next {
+    right: 0;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button.previous {
+    left: 0;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button svg {
+    left: 5%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+.layout_madonna.oe2016 .articleContentSliderBox button path.arrow{
+    fill: #fff;
+    stroke: #fff;
+}

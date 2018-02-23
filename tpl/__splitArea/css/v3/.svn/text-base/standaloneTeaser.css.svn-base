@@ -1,0 +1,67 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.standaloneTeaser .entry{
+    padding:5px;
+    border-bottom: 1px solid #cccccc;
+}
+.standaloneTeaser h3{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+.standaloneTeaser .imageEntry{
+    margin-bottom: 10px;
+    width:300px;
+    overflow: hidden;
+}
+.standaloneTeaser .image{
+    float:left;
+    width:140px;
+    height:70px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.standaloneTeaser .a{
+    float:left;
+    width:140px;
+    height:70px;
+    display: block;
+    overflow: hidden;
+}
+.standaloneTeaser .preTitle{
+    color:#7F4664;
+    font-family:Times New Roman;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: bold;
+    display: none;
+}
+.standaloneTeaser .title{
+    font-weight: bold;
+    font-family: Times New Roman;
+    font-size: 18px;
+    line-height: 20px;
+    color:#A02F58;
+    display: block;
+}
+.oe24 .standaloneTeaser .title{
+    font-family: arial;
+    color:#C81E28;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.standaloneTeaser .leadText{
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+}
+/*MH Relaunch 2014 20150516*/
+.standaloneTeaser .listbox_body .clearfix  .listbox_caption{
+	padding-left: 2px;
+}

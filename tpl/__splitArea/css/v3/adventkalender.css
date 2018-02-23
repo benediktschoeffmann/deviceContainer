@@ -1,0 +1,300 @@
+<?php
+/**
+ * @collector noauto
+ * @collector preHeaderSplitArea
+ */
+?>
+
+#adventkalender {
+	width: 620px;
+	/*height: 1100px;*/
+	margin-bottom: 28px;
+}
+#adventkalenderTop {
+	width: 336px;
+	height: 182px;
+	margin: 0px auto 28px;
+	background: url(<?slp('image', 'rl2014/adventkalender/adventkalenderTop.jpg')?>) no-repeat 0 0;
+}
+#adventkalenderTop a {
+	display: block;
+	width: 336px;
+	height: 182px;
+	position: relative;
+}
+/*
+#adventkalenderTop a img {
+	display: block;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	left: 21px;
+	top: 21px;
+}
+*/
+#adventkalenderTop a img {
+	display: block;
+	width: 136px;
+	height: 136px;
+	position: absolute;
+	/*left: 23px;*/
+	/*top: 23px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#adventkalenderTop a span {
+	font-family: "Courier New";
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 -1px 1px #000, 0  1px 1px #fff;
+	line-height: 110px;
+	display: block;
+	width: 106px;
+	height: 100px;
+	color: #6b6506;
+	position: absolute;
+	left: 186px;
+	top: 38px;
+}
+
+
+#adventkalenderWin {
+	height: 920px;
+	padding: 15px;
+	background: url(<?slp('image', 'rl2014/adventkalender/adventkalenderWin2.jpg')?>) no-repeat 0 0;
+}
+#adventkalenderWin a {
+	width: 140px;
+	height: 140px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+#adventkalenderWin a.adventkalenderFirstCol {
+	margin-left: 0;
+}
+#adventkalenderWin a img {
+	display: block;
+	width: 140px;
+	height: 140px;
+}
+#adventkalenderWin a.hidden img {
+	display: none;
+}
+
+
+#adventkalenderNotAvailable {
+	width: 300px;
+	height: 164px;
+	margin: 0 0 28px;
+	background: url(<?slp('image', 'rl2014/adventkalender/notAvailable.png')?>) no-repeat 0 0;
+}
+#adventkalenderNotAvailable p {
+	font-size: 14px;
+	text-align: center;
+	padding: 169px 28px 0;
+	color: #fff;
+}
+
+
+.sidebar .adventkalenderTeaser {
+	font-size: 1px;
+	line-height: 1px;
+	width: 300px;
+	height: 164px;
+	/*margin: 0 0 20px 20px;*/
+	background: url(<?slp('image', 'rl2014/adventkalender/adventkalenderTeaser.png')?>) no-repeat 0 0;
+}
+.sidebar .adventkalenderTeaserTop,
+.sidebar .adventkalenderTeaserMiddle,
+.sidebar .adventkalenderTeaserBottom {
+	width: 100%;
+	display: block;
+}
+.sidebar .adventkalenderTeaserTop,
+.sidebar .adventkalenderTeaserBottom {
+	height: 40px;
+}
+.sidebar .adventkalenderTeaserMiddle {
+	height: 84px;
+	position: relative;
+}
+.sidebar .adventkalenderTeaserMiddle img {
+	display: block;
+	width: 84px;
+	height: 84px;
+	padding: 1px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	background-image: linear-gradient(to bottom, #c1221c 0px, #961612 100%);
+}
+.sidebar .adventkalenderTeaserMiddle span {
+	font-family: "Courier New";
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 -1px 1px #000, 0  1px 1px #fff;
+	line-height: 84px;
+	display: block;
+	width: 90px;
+	height: 84px;
+	color: #6b6506;
+	position: absolute;
+	left: 206px;
+	top: 6px;
+}
+.sidebar #adventkalenderNotAvailable {
+	/*margin: 0 0 20px 20px;*/
+}
+.sidebar .adventkalenderTeaser,
+.sidebar #adventkalenderNotAvailable {
+	margin: -8px 0 20px 0;
+}
+
+
+/* (ws) 2016-11-29 */
+.sidebar .adventkalenderTeaser {
+	height: 300px;
+	/*background: url(<?slp('image', 'rl2014/adventkalender/sidebarAdventkalenderTeaser.jpg')?>) no-repeat 0 0;*/
+	background: none;
+}
+.sidebar .adventkalenderTeaserMiddle {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: block;
+	position: relative;
+}
+.sidebar .adventkalenderTeaserMiddle img {
+	width: 130px;
+	height: 130px;
+	border: none;
+	background-image: none;
+	position: absolute;
+	left: 11px;
+	top: 113px;
+}
+.sidebar .adventkalenderTeaserMiddle span {
+	font-family: 'oe24', sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 46px;
+	text-align: center;
+	text-shadow: none;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	color: #5c1c01;
+	background-color: rgba(255,255,255,.75);
+	position: absolute;
+	left: 18px;
+	top: 119px;
+}
+.sidebar .adventkalenderTeaserMiddleTitle {
+	font-family: 'oe24', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.3;
+	width: 134px;
+	max-height: 128px;
+	padding: 5px 7px;
+	position: absolute;
+	left: 156px;
+	top: 114px;
+	overflow: hidden;
+
+	color: #5c1c01;
+	background-color: rgba(255,255,255,.75);
+
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+
+	color: #c80600;
+	background-color: transparent;
+}
+.sidebar .adventkalenderTeaserBackground {
+	width: 300px;
+	height: 300px;
+	background: url(<?slp('image', 'rl2014/adventkalender/sidebarAdventkalenderTeaser.png')?>) no-repeat 0 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* (ws) 2016-11-29 end */
+
+
+/* (ws) 2016-11-22 */
+
+.adventkalenderDay {
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: 'oe24', sans-serif;
+	color: #fff;
+	position: relative;
+}
+.adventkalenderDay:link,
+.adventkalenderDay:focus,
+.adventkalenderDay:hover,
+.adventkalenderDay:active,
+.adventkalenderDay:visited {
+	text-decoration: none;
+	color: #fff;
+}
+.adventkalenderCounter,
+.adventkalenderTitle span {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.adventkalenderCounter {
+	font-size: 2rem;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+
+	/*color: #555;*/
+	color: #5c1c01;
+	background-color: rgba(255,255,255,.75);
+	/*display: none;*/
+
+	top: 6px;
+	left: 6px;
+	transform: none;
+
+}
+#adventkalenderWin a.hidden .adventkalenderCounter {
+	/*display: block;*/
+}
+.adventkalenderTitle {
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: #000;
+	background-color: rgba(255,255,255,.5);
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.adventkalenderTitle span {
+	font-size: 1rem;
+	line-height: 1.3;
+}
+
+.adventkalenderDay:hover .adventkalenderCounter {
+	display: none;
+}
+.adventkalenderDay:hover .adventkalenderTitle {
+	display: block;
+}
+
+/* (ws) 2016-11-22 end */

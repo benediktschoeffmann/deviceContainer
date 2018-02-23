@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/oe24_oe24/!svn/ver/9935/release/1.2/src/channelColors
+END
+businessChannelColors.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/oe24_oe24/!svn/ver/10239/release/1.2/src/channelColors/businessChannelColors.php
+END
+channelColors.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/oe24_oe24/!svn/ver/11059/release/1.2/src/channelColors/channelColors.php
+END
+generateChannelColorCSS.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/oe24_oe24/!svn/ver/9979/release/1.2/src/channelColors/generateChannelColorCSS.php
+END
+colorFromGradient.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/oe24_oe24/!svn/ver/9935/release/1.2/src/channelColors/colorFromGradient.php
+END

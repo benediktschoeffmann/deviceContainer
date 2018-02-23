@@ -1,0 +1,74 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerRadiooe24
+ */
+?>
+
+/* selected text */
+
+::-moz-selection {
+	color: #fff;
+	background-color: #dd1010;
+}
+::selection {
+	color: #fff;
+	background-color: #dd1010;
+}
+
+/* nav main */
+
+.nav_main {
+	-webkit-box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+	-moz-box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+	box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+
+	background-color: #dd1010;
+	background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+}
+.nav_main_items .nav_main_item {
+	background-color: #fc0707;
+	background-image: linear-gradient(to bottom, #e83030 0px, #fc0707 100%);
+}
+.nav_main_items .nav_main_item > a {
+	background-color: #dd1010;
+	background-image: linear-gradient(to bottom, #e83030 0px, #d10a0a 100%);
+}
+.nav_main_items .nav_main_item > a:hover,
+.nav_main_items .nav_main_item > a.active {
+	background-color: #fc0707;
+	background-image: linear-gradient(to bottom, #e83030 0px, #fc0707 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a {
+	background-color: #dd1010;
+	background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a:hover,
+.nav_main.fixed .nav_main_items .nav_main_item > a.active {
+	background-color: #fc0707;
+	background-image: linear-gradient(to bottom, #ff5858 0px, #fc0707 100%);
+}
+
+/* nav main logo */
+
+.nav_main .nav_main_logo img {
+	/*width: 183px;*/
+	height: 63px;
+	left: 26px;
+	top: 7px;
+	/*transition: all 3s ease;*/
+	height: 50px;
+	left: 7px;
+	top: 10px;
+}
+.nav_main.fixed .nav_main_logo img {
+	/*width: 87px;*/
+	height: 30px;
+	left: 72px;
+	top: 3px;
+
+	left: 55px;
+	top: 1px;
+}
+
+

@@ -1,0 +1,150 @@
+<?
+/**
+ * XML - Sitemap
+ *
+ * @url (?<channel>.*)/sitemap-(?<type>[^-]*).xml
+ * @url (?<channel>.*)/sitemap-(?<type>[^-]*)-(?<paramYear>[0-9]*)-(?<paramMonth>[0-9]*).xml
+ * @var portal oe24.core.Portal
+ * @var channel oe24.core.Channel
+ * @var type string
+ * @default type 0
+ * @var paramYear integer
+ * @default paramYear 0
+ * @var paramMonth integer
+ * @default paramMonth 0
+ * @cache 1d
+ * @urlManager oe24.oe24
+ */
+
+response()->addHeader('Content-type:text/xml');
+
+if ('0' == $paramYear) {
+	$xmlUrls = array();
+	for ($year = '2007'; $year <= date("Y"); ++$year) {
+		for ($month = '1'; $month <= '12'; ++$month) {
+			if ($year == date('Y') && $month > date('m')) {
+				break;
+			}
+			$xmlUrls[] = $channel->getUrl(true) . '/sitemap-' . $type . '-' . $year . '-' . str_pad($month, 2, '0', STR_PAD_LEFT) . '.xml';
+			// $xmlUrls[] = $portal->getUrl(true) . '/sitemap-' . $type . '-' . $year . '-' . str_pad($month, 2, '0', STR_PAD_LEFT) . '.xml';
+		}
+	}
+
+	echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<? foreach ($xmlUrls as $xmlUrl): ?>
+	<sitemap>
+		<loc><?= $xmlUrl; ?></loc>
+	</sitemap>
+	<? endforeach; ?>
+</sitemapindex>
+
+<?
+} else {
+
+	if ('article' === $type) {
+		$alias = 'oe24.frontend.sitemaps.arraySitemap';
+		$fetchType[] = 'oe24.core.Text';
+		$properties[] = array(
+			'pageTitle',
+			'updateDateTime',
+			'priority',
+			'channels._value',
+		);
+	} else if ('video' === $type) {
+		$alias = 'oe24.frontend.sitemaps.arraySitemapVideo';
+		$fetchType[] = 'oe24.core.Video';
+		$properties[] = array(
+			'leadText',
+			'pageTitle',
+			'updateDateTime',
+			'priority',
+			'options',
+			'videoId',
+			'videoQualities',
+			'videoLength',
+			'publishDate',
+			// 'relatedContent', // (pj) 2015-05-21 zu großer speicherverbrauch an dieser stelle
+			'channels._value',
+		);
+		$fetchType[] = 'oe24.core.Text';
+		$properties[] = array(
+			'leadText',
+			'pageTitle',
+			'updateDateTime',
+			'priority',
+			'customType',
+			'options',
+			'publishDate',
+			// 'relatedContent', // (pj) 2015-05-21 zu großer speicherverbrauch an dieser stelle
+			'channels._value',
+		);
+	// } else if ('news' === $type) {
+	//	$fetchType = 'oe24.core.Text';
+	//	$alias = 'oe24.frontend.sitemaps.arraySitemap_news';
+	//	$properties = array(
+	//		'pageTitle',
+	//		'updateDateTime',
+	//		'priority',
+	//		'channels._value',
+	//	);
+	} else if ('recipe' === $type) {
+		$alias = 'oe24.frontend.sitemaps.arraySitemapRecipe';
+		$fetchType[] = 'oe24.core.Recipe';
+		$properties[] = array(
+			'pageTitle',
+			'updateDateTime',
+			'priority',
+			'channels._value',
+		);
+	} else {
+		return;
+	}
+
+	$startTime = spunQ_DateTime::create($paramYear, $paramMonth, 1, 0, 0, 0);
+	$lastMonthDay = date('t', $startTime->getTimestamp());
+	$endTime   = spunQ_DateTime::create($paramYear, $paramMonth, $lastMonthDay, 23, 59, 59);
+
+	$allContents = array();
+
+	for ($k=0; $k<count($fetchType); $k++) {
+	    $selectQuery = new spunQ_SelectQuery();
+	    $selectQuery->setType($fetchType[$k]);
+
+	    $selectQuery->setProperties($properties[$k]);
+
+	    $selectQuery->addCondition('channels._value IN {channels}');
+	    $selectQuery->addCondition('status = {status}');
+	    $selectQuery->addCondition('publishDate < {minDate}');
+	    $selectQuery->addCondition('publishDate > {maxDate}');
+
+	    $selectQuery->addOrder('-frontendDate');
+
+	    $selectQuery->setReturnType(spunQ_SelectQuery::RETURN_ARRAY);
+	    $selectContent = $selectQuery->execute(array(
+	    	'channels' => $channel->selectSubChannelIds(),
+	    	'status' => Content::PUBLISHED,
+	    	'minDate' => $endTime,
+	    	'maxDate' => $startTime,
+	    ));
+
+	    $allContents = array_merge($allContents, $selectContent);
+	}
+
+	$contents = array();
+	foreach ($allContents as $key => $content) {
+		$contentChannel = $content['channels._value'];
+		$parentChannels = $contentChannel->getParentChannels(true);
+		if (count($parentChannels) >= 2 && 'test' === $parentChannels[1]->getName()) {
+			continue;
+		}
+
+		$contents[] = $content;
+	}
+
+	etpl($alias, array(
+		'channel' => $channel,
+		'contents' => $contents,
+	));
+}

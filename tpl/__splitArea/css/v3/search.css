@@ -1,0 +1,157 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* Suche */
+.search_box {
+	padding-bottom: 28px;
+}
+.search_box .form_search .textfield {
+	display: block;
+	width: 100%;
+	margin-bottom: 6px;
+}
+.search_box .form_search .button {
+	border: 0px;
+	color: #ffffff;
+	display: block;
+	/*background-color: #dd1010;*/
+	background-color: #d0113a;
+	padding: 5px 35px;
+	float: right;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.search_box .search_pages_counter {
+	font-size: 0.875rem;
+	margin: 28px 0px 0px 5px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.search_box .search_pages {
+	font-size: 0.875rem;
+	margin: 0px 0px 28px 0px;
+}
+.search_box .search_pages a {
+	text-decoration: none;
+	padding: 0px 6px 0px 6px;
+	display: inline-block;
+	margin: 5px 2px 0px 2px;
+}
+.search_box .search_pages a.active,
+.search_box .search_pages a:hover {
+	color: #fff;
+	/*background-color: #dd1010;*/
+	background-color: #d0113a;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.pager_box .search_pages_counter {
+	font-size: 0.875rem;
+	margin: 0 0 0 5px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.pager_box .search_pages {
+	font-size: 0.875rem;
+	margin: 0px 0px 14px 0px;
+	margin: 0;
+}
+.pager_box .search_pages a {
+	text-decoration: none;
+	padding: 0px 6px 0px 6px;
+	display: inline-block;
+	margin: 5px 2px 0px 2px;
+}
+.pager_box .search_pages a.active,
+.pager_box .search_pages a:hover {
+	color: #fff;
+	background-color: #a10f42;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*(bs) 2016-10-31 DAILY-630 Typensuche */
+.search_box .form_search .entry {
+	display: block;
+	float: left;
+	margin: 5px 20px 0 0;
+}
+
+.oe2016 .col.col3.channel_box a:hover .story_pretitle,
+.oe2016 .col.col3.channel_box a:hover .story_pagetitle {
+	color: #d0113a;
+}
+
+
+.oe2016 .col.col3.channel_box .video_container:after {
+	background-image: url('/images/oe2016/play_button_d0113a.png');
+}
+
+
+
+/* oe24TV Video Suche */
+
+.videoSearch {
+	padding: 10px 0 10px 0;
+	margin: 0 15px 10px 15px;
+	background-color: #fff;
+}
+
+
+.videoSearch .searchField {
+	float: left;
+	width: 620px;
+}
+.videoSearch .searchButton {
+	float: right;
+	border: 0px;
+	display: block;
+	width: 300px;
+	padding: 5px 35px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #d0113a;
+}
+
+
+.videoSearch .search_pages_counter {
+    font-size: 0.875rem;
+    margin: 18px 0px 0px 5px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.videoSearch .search_pages {
+    font-size: 0.875rem;
+    margin: 0px 0px 10px 0px;
+}
+.videoSearch .search_pages a.active,
+.videoSearch .search_pages a:hover {
+    color: #fff;
+    background-color: #d0113a;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.videoSearch .search_pages a {
+    text-decoration: none;
+    padding: 0px 6px 0px 6px;
+    display: inline-block;
+    margin: 5px 2px 0px 2px;
+}
+
+
+.oe2016.layout_tv .videoSearchContent .content.fullwide {
+    padding: 0px 15px;
+}
+.oe2016.layout_tv .videoSearchContent .content.fullwide .standardContentBox {
+    padding: 0 10px;
+    background-color: #fff;
+}
+.oe2016.layout_tv .videoSearchContent .noResult {
+
+}

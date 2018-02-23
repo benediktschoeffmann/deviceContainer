@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/oe24_oe24/!svn/ver/4241/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo
+END
+demo_data.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/demo_data.tpl
+END
+sidebarDemoSpecial.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/sidebarDemoSpecial.tpl
+END
+liveticker.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/liveticker.tpl
+END
+sidebarDemoWideLeft.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/sidebarDemoWideLeft.tpl
+END
+sidebarDemoDefault.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/sidebarDemoDefault.tpl
+END
+sidebarDemoWideRight.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/sidebarDemoWideRight.tpl
+END
+sidebarDemoFullwide.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/oe24_oe24/!svn/ver/4230/release/1.2/tpl/__splitArea/tpl/content/sidebarDemo/sidebarDemoFullwide.tpl
+END

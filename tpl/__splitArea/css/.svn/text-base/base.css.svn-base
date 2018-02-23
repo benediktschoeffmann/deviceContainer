@@ -1,0 +1,59 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+/*
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*/
+body {
+  	font-family: "OpenSansRegular",Verdana,Helvetica,sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.4;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background-color: #efefef;
+}
+#wrap {
+	width: 1000px;
+	padding: 6px 15px;
+	/*background-color: #d30214;*/
+}
+/* Color */
+body, a {
+	color: #4a4a4a;
+}
+a:hover, a:focus {
+	color: #000;
+}
+/* Typo */
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: "oe24cond";*/
+	font-family: "OpenSansRegular",Verdana,Helvetica,sans-serif;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 18px;
+}
+p {
+	font-size: .9375rem;
+	line-height: 1.4;
+	margin: .7em 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul, li {
+	list-style-type: none;
+}

@@ -1,0 +1,49 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.row .sportdaten-center {
+    background-color: #22b480;
+    padding: 10px 0;
+}
+
+.row .sportdaten-center select {
+    margin: 0 3%;
+    width: 44%;
+    float: left;
+}
+
+.row .sportdaten-center {
+    background-color: #22b480;
+    padding: 10px 0;
+}
+
+.row .sportdaten-center select {
+    margin: 0 3%;
+    width: 44%;
+    float: left;
+}
+
+.row .sportdaten-center.fussball,
+.row .sportdaten-center.fussball-europacup,
+.row .sportdaten-center.nationalteam,
+.row .sportdaten-center.euro-2106 {
+    background-color: #22b480;
+}
+
+.row .sportdaten-center.wintersport,
+.row .sportdaten-center.ski-wm,
+.row .sportdaten-center.nordische-wm {
+    background-color: #0052b3;
+}
+
+.row .sportdaten-center.us-sports {
+    background-color: #007edc;
+}
+
+.row .sportdaten-center.motorsport {
+    background-color: #1d1d1b;
+}
+

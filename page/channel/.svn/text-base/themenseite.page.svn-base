@@ -1,0 +1,17 @@
+<?php
+/**
+ * @url /themenseite
+ * @url /themenseite/(?<urlQuery>.*\/[0-9]+)
+ * @url /themenseite/(?<urlQuery>.*\/.*\/[0-9]+)
+ * @var urlQuery string
+ * @default urlQuery 0 
+ * @urlManager oe24.oe24 
+ * @var portal oe24.core.Portal
+ * @cache 1d
+ */
+$url=$portal->getUrl(true).'/themen';
+if($urlQuery){
+	$url .='/' . $urlQuery;
+}
+redirect($url);
+?>

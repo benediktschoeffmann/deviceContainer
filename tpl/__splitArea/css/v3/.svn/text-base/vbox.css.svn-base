@@ -1,0 +1,253 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.sidebar .col_default.vBox {
+	border: 3px solid #fff;
+	padding: 10px 0 3px;
+	margin: 0 0 20px 20px;
+	background-color: #edebeb;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+}
+.vBox .vBoxTitle {
+	font-family: "oe24Condensed",sans-serif;
+	font-size: 1.625rem;
+	text-transform: uppercase;
+	line-height: 1.3;
+	color: #dd1010;
+
+	padding: 0 10px 0 23px;
+	margin: 0 0 0 -13px;
+
+	background-color: #fff;
+	background-color: rgba(256,256,256,.7);
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+
+	display: inline-block;
+	position: relative;
+}
+.vBox .vBoxTitle span {
+	display: inline-block;
+	vertical-align: top;
+
+	max-width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+
+	padding-top: 4px;
+}
+.vBox .vBoxTitle:after {
+	content: " ";
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 10px 10px 0;
+	border-color: transparent #d8d8d8 transparent transparent;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	-webkit-transform:rotate(360deg);
+}
+/*
+.vBox .vBoxTitle .vBoxTitleContainer {
+	display: inline-block;
+	max-width: 182px;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+.vBox .vBoxTitle .vBoxTitleFirst,
+.vBox .vBoxTitle .vBoxTitleRest {
+	font-family: "oe24Condensed",sans-serif;
+	font-size: 1.625rem;
+	line-height: 1;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: .8;
+}
+.vBox .vBoxTitle .vBoxTitleFirst {
+	color: #dd1010;
+}
+.vBox .vBoxTitle .vBoxTitleRest {
+	color: #dd1010;
+}
+*/
+.vBox .vBoxBody a {
+	text-decoration: none;
+	display: inline-block;
+}
+.vBox .vBoxBody a:hover .vBoxCaption {
+	color: #dd1010;
+}
+.vBox .vBoxBody .vBoxOnTopVideo {
+	padding: 8px 7px 4px;
+}
+.vBox .vBoxBody .vBoxOnTopVideo.withBorder {
+	border-bottom: 1px solid #fff;
+}
+.vBox .vBoxBody .vBoxSmallVideoContainer {
+	padding: 8px 7px 2px;
+}
+.vBox .vBoxBody .vBoxSmallVideo {
+	width: 136px;
+	margin-top: 3px;
+}
+.vBox .vBoxBody .vBoxSmallVideo.vBoxEven {
+	clear: both;
+	float: left;
+}
+.vBox .vBoxBody .vBoxSmallVideo.vBoxOdd {
+	float: right;
+}
+.vBox .vBoxOnTopVideo .vBoxImage {
+	border: 5px solid #fff;
+	box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.2);
+	display: block;
+}
+.vBox .vBoxSmallVideo .vBoxImage {
+	border: 3px solid #fff;
+	box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.3);
+	display: block;
+}
+.vBox .vBoxCaption {
+	font-family: "OpenSansCondensed",sans-serif;
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	padding: 3px 5px;
+	display: block;
+	color: #484848;
+}
+.vBox .vBoxOnTopVideo .vBoxCaption {
+	font-family: "oe24",sans-serif;
+	font-size: 1.375rem;
+	padding: 6px 5px 3px;
+}
+.vBox .vBoxCurrentDate {
+	font-size: .625rem;
+	color: #fff;
+	background-color: #dd1010;
+	border-radius: 3px;
+	float: right;
+	padding: 0 4px 1px;
+	margin-top: 12px;
+	margin-right: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* VideoBox im Content-Bereich */
+.content .col1.vBox {
+	border: 3px solid #fff;
+	margin: 0 0 20px 0;
+	background-color: #edebeb;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+}
+.content .col1.vBox .vBoxBody {
+	background-image: url(data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACH/C1hNUCBEYXRhWE1QAz94cAAsAAAAAAEAAQBAAgJEAQA7);
+	background-repeat: repeat-y;
+	background-position: 315px 0;
+}
+.content .col1.vBox .vBoxBodyLeft,
+.content .col1.vBox .vBoxBodyRight {
+	float: left;
+	padding: 10px 0;
+}
+.content .col1.vBox .vBoxBodyLeft {
+	width: 314px;
+}
+.content .col1.vBox .vBoxBodyRight {
+	width: 300px;
+	padding-left: 2px;
+}
+.content .col1.vBox .vBoxBody .vBoxOnTopVideo,
+.content .col1.vBox .vBoxBody .vBoxSmallVideo {
+	padding-top: 0;
+}
+.content .col1.vBox .vBoxHeader {
+	margin-bottom: 8px;
+}
+.content .col1.vBox .vBoxBody .vBoxOnTopVideo {
+	padding-bottom: 0;
+}
+.content .col1.vBox .vBoxBody .vBoxSmallVideoContainer {
+	padding-top: 9px;
+}
+
+.content .col1.vBox .vBoxTitle span {
+	max-width: 200px;
+}
+
+.content .col1.vBox .vBoxImage img {
+	width: auto;
+}
+/*
+.content .col1.vBox .vBoxSmallVideoContainer {
+	padding-top: 0;
+}
+.content .col1.vBox .vBoxTitle .vBoxTitleContainer {
+	max-width: 200px;
+}
+*/
+/* VideoBox im Content-Bereich FULLWIDE !!! */
+.contentFullwide {
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+.contentFullwide .col1.vBox {
+	border: 3px solid #fff;
+	margin: 0 15px;
+	background-color: #edebeb;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+}
+.contentFullwide .col1.vBox .vBoxBody {
+	background-image: url(data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACH/C1hNUCBEYXRhWE1QAz94cAAsAAAAAAEAAQBAAgJEAQA7);
+	background-repeat: repeat-y;
+	background-position: 315px 0;
+}
+.contentFullwide .col1.vBox .vBoxBodyLeft,
+.contentFullwide .col1.vBox .vBoxBodyRight {
+	float: left;
+	padding: 10px 0;
+}
+.contentFullwide .col1.vBox .vBoxBodyLeft {
+	width: 314px;
+}
+.contentFullwide .col1.vBox .vBoxBodyRight {
+	width: 640px;
+	padding-left: 2px;
+}
+.contentFullwide .col1.vBox .vBoxBody .vBoxOnTopVideo,
+.contentFullwide .col1.vBox .vBoxBody .vBoxSmallVideo {
+	padding-top: 0;
+}
+.contentFullwide .col1.vBox .vBoxHeader {
+	margin-bottom: 8px;
+}
+.contentFullwide .col1.vBox .vBoxBody .vBoxOnTopVideo {
+	padding-bottom: 0;
+}
+.contentFullwide .col1.vBox .vBoxBody .vBoxSmallVideoContainer {
+	padding-top: 9px;
+}
+.contentFullwide .col1.vBox .vBoxTitle span {
+	max-width: 200px;
+	max-width: 220px;
+}
+.contentFullwide .col1.vBox .vBoxImage img {
+	width: auto;
+}
+.contentFullwide .vBox .vBoxBody .vBoxSmallVideo {
+	float: left;
+	margin-left: 22px;
+}
+.contentFullwide .vBox .vBoxBody .vBoxSmallVideoContainer {
+	padding: 8px 12px 2px;
+}
+.contentFullwide .vBox .vBoxBody .vBoxSmallVideo.vBoxBreak {
+	clear: both;
+	margin-left: 0;
+}

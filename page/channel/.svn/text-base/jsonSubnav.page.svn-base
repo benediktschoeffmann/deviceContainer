@@ -1,0 +1,30 @@
+<?php
+/**
+ * Channel JSON Subnav
+ *
+ * @url (?<channel>.*)/json/subnav/(?<jsonparams>.*)
+ * @var channel oe24.core.Channel
+ * @var portal oe24.core.Portal
+ * @var jsonparams string
+ * @urlManager oe24.oe24
+ * @cache 30m
+ * @cache.browser 20m
+ */
+
+$module = "frontend";
+$alias = "oe24.$module.json.channel.subnav";
+
+$file = spunQ_Module::aliasToTplFile($alias, false);
+
+if ($file && $file->exists()) {
+
+	etpl($alias, array("channel" => $channel, "portal" => $portal, "hostUrl" => "http://" . request()->getHost(), 'jsonparams' => array($jsonparams)));
+
+}
+
+# workaround: we're not setting correct headers if we're not delivering html.
+response()->addHeader('Cache-Control: v-max-age=1200,max-age=1200');
+response()->addHeader('Content-Type: text/plain; charset=utf-8');
+
+
+?>

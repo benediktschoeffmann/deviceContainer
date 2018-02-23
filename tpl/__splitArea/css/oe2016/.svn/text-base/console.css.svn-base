@@ -1,0 +1,379 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+.oe2016 .console {
+    width: 960px;
+    margin: 15px auto;
+    /*background-color: #bababa;*/
+    overflow: hidden;
+}
+
+
+.oe2016 .consoleBoxHeadline {
+    width: 100%;
+    padding: 0 0 2px;
+    margin: 0;
+    background-color: #fff;
+    display: block;
+}
+.oe2016 .consoleBoxHeadline span {
+    font-family: "OpenSansBold",Arial,sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin: 0;
+    color: #fff;
+    /*background-color: #d0113a;*/
+    background-color: #b80f33;
+}
+
+
+.oe2016 .consoleStoryItem,
+.oe2016 .consoleStoryImage,
+.oe2016 .consoleStoryImage img,
+.oe2016 .consoleNavigationItem,
+.oe2016 .consoleNavigationImage,
+.oe2016 .consoleNavigationImage img {
+    display: block;
+}
+
+
+.oe2016 .consoleStoriesBox {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+.oe2016 .consoleStoryItem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.oe2016 .consoleStoryImage img {
+    width: 100%;
+}
+
+
+.oe2016 .consoleStoriesOverlay {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.9) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+.oe2016 .consoleStoriesVideoOverlay {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+.oe2016 .consoleStoriesVideoOverlay img {
+    display: block;
+    transform: none;
+}
+
+
+/*
+.oe2016 .consoleStoriesVideoOverlay {
+    width: 540px;
+    height: 430px;
+    border: 9px solid rgba(255,255,255,.4);
+    position: absolute;
+    right: 19px;
+    top: 25px;
+    z-index: 20;
+}
+.oe2016 .consoleStoriesVideoOverlayInner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.oe2016 .consoleStoriesPlayButton {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    margin: -95px 0 0 -95px;
+    background-color: rgba(70,70,70,.6);
+    opacity: .8;
+}
+.oe2016 .consoleStoriesPlayButton .icon_play {
+    font-size: 160px;
+    width: 172px;
+    height: 172px;
+    border: 6px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    color: #d0113a;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    text-shadow: 2px 0 0 #ccc, 0 -2px 0 #ccc, 0 2px 0 #ccc, -2px 0 0 #ccc;
+}
+.oe2016 .consoleStoryItem:hover .consoleStoriesPlayButton .icon_play {
+    color: #ccc;
+    text-shadow: none;
+}
+*/
+
+
+.oe2016 .consoleStoryText {
+    padding: 10px 10px 4px;
+    overflow: hidden;
+    position: absolute;
+    /*left: 52px;*/ /* wird weiter unten, je nach Ausrichtung festgelegt */
+    bottom: 6px;
+    z-index: 30;
+    opacity: 0;
+    transition: all .7s;
+}
+.oe2016 .consoleStoryPreTitle,
+.oe2016 .consoleStoryTitle,
+.oe2016 .consoleStoryLiveTicker {
+    margin: 0;
+    color: #fff;
+}
+.oe2016 .consoleStoryPreTitle,
+.oe2016 .consoleStoryLiveTicker {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2px 10px;
+    margin-bottom: 4px;
+    background-color: #d0113a;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.oe2016 .consoleStoryTitle {
+    font-family: "oe24condensed";
+    font-size: 5rem;
+    line-height: 1;
+    padding: 0;
+    background-color: transparent;
+    clear: both;
+}
+.oe2016 .consoleStoryLiveTicker {
+    font-family: "oe24";
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    padding: 2px 10px 0;
+}
+
+
+.oe2016 .consoleStoryText {
+    width: 650px;
+}
+.oe2016 .consoleStoryPreTitle {
+    max-width: 650px;
+}
+
+
+.oe2016 .positionLeft .consoleStoryText {
+    text-align: left;
+    left: 52px;
+}
+.oe2016 .positionRight .consoleStoryText {
+    text-align: right;
+    right: 52px;
+}
+
+
+.oe2016 .consoleStoryItem:hover .consoleStoryTitle {
+    /*color: #d0113a;*/
+}
+
+
+.oe2016 .consoleNavigationBox {
+    width: 100%;
+    height: 98px;
+    padding: 1px 0 0;
+    overflow: hidden;
+    background-color: #bababa;
+}
+.oe2016 .consoleNavigation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.oe2016 .consoleNavigationItem {
+    font-size: 1px;
+    width: 20%;
+    height: 100%;
+    padding: 1px;
+    float: left;
+    position: relative;
+}
+.oe2016 .consoleNavigationImage,
+.oe2016 .consoleNavigationImage img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.oe2016 .consoleNavigationItem p {
+    font-family: "OpenSansCondensedBold", sans-serif;
+    font-size: .9375rem;
+    line-height: 1.2;
+    width: 190px; /* !!! Ist NICHT relativ zur Gesamtbreite des .consoleNavigationItem */
+    height: 40px;
+    padding: 2px 4px;
+    margin: 0 1px;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.oe2016 .consoleNavigationItem p.noBackground {
+    background-color: transparent;
+}
+.oe2016 .consoleNavigationItem:hover p {
+    text-decoration: none;
+    color: #d0113a;
+}
+
+
+.oe2016 .consoleStoryCounter {
+    padding: 0 8px;
+    color: #fff;
+    background-color: #d0113a;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 40;
+}
+
+
+.oe2016 .consoleAdvertisement {
+    font-size: .75rem;
+    padding: 0 8px;
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+}
+.oe2016 .consoleMadonna .consoleAdvertisement { 
+    bottom: 35px;
+}
+
+.oe2016 .console .buttonPrev,
+.oe2016 .console .buttonNext {
+    display: block;
+    font-family: "icomoon";
+    font-size: 3.25rem;
+    text-align: center;
+    width: 34px;
+    padding: 48px 0;
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, .5);
+    border-style: solid;
+    color: #d0113a;
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.oe2016 .console .buttonPrev {
+    border-width: 1px 1px 1px 0;
+    left: 0;
+}
+.oe2016 .console .buttonNext {
+    border-width: 1px 0 1px 1px;
+    right: 0;
+}
+.oe2016 .console .buttonPrev:hover,
+.oe2016 .console .buttonNext:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* (ws) 2016-03-07 oe24tv */
+/*
+.layout_tv.oe2016 .channelTitle h2 {
+    color: #d0113a;
+}
+.layout_tv.oe2016 .consoleNavigationBox .slickPrev,
+.layout_tv.oe2016 .consoleNavigationBox .slickNext,
+.layout_tv.oe2016 .consoleNavigationBox .slickPrev:hover,
+.layout_tv.oe2016 .consoleNavigationBox .slickNext:hover {
+    background-color: #d0113a;
+}
+.layout_tv.oe2016 .consoleNavigationItem p {
+    position: static;
+    color: #262626;
+    background-color: #fcfcfc;
+}
+*/
+/* (ws) 2016-03-07 oe24tv end */
+
+
+/* (ws) 2016-0510 fuer TV */
+.layout_tv.oe2016 .consoleStoryTitle {
+    font-size: 4rem;
+}
+/* (ws) 2016-0510 fuer TV end */
+
+
+/* (ws) 2016-0510 Video Play Button fuer TV */
+.layout_tv.oe2016 .consoleStoriesVideoOverlay {
+    display: block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -65px;
+    margin-top: -65px;
+    z-index: 15;
+}
+.layout_tv.oe2016 .consoleStoriesVideoOverlayTv {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(<? slp('image', 'oe2016/play_button_big.png') ?>);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.layout_tv.oe2016 .consoleStoryItem:hover .consoleStoriesVideoOverlayTv {
+    background-position: -130px 0;
+}
+/* (ws) 2016-0510 Video Play Button fuer TV end */
+
+
+/* (ws) 2016-04-07 Umstellung auf Flickity */
+.oe2016 .flickity .consoleStories {
+    width: 960px;
+    height: 480px;
+}
+.oe2016 .flickity .consoleStoryText {
+    opacity: 1;
+}
+.oe2016 .flickity .consoleStories,
+.oe2016 .flickity .consoleStoryItem {
+    /*position: static;*/
+}
+
+

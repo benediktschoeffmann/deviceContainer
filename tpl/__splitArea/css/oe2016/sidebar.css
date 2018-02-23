@@ -1,0 +1,352 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/** GENERELLE SIDEBAR INFORMATIONEN */
+.oe2016 .tabbedBox .pushDownSidebar {
+    padding-top: 20px;
+    margin-top: 0;
+}
+.oe2016 .tabbedBox.hasConsole .pushDownSidebar {
+    padding-top: 12px;
+}
+.oe2016 .tabbedBox.sportTabbedBox .pushDownSidebar,
+.oe2016 .tabbedBox.oesterreichTabbedBox .pushDownSidebar {
+    padding-top: 28px;
+}
+.oe2016 .tabbedBox .sidebar .content_ad {
+    margin: 0;
+}
+.oe2016 .tabbedBox .sidebar .content_ad .adSlotAdition div {
+    margin-bottom: 20px;
+}
+
+/** SIDEBAR COVER BOX*/
+.oe2016 .sidebar .ePaper {
+    background-color: #ebebeb;
+    /*padding: 10px;*/
+    margin-bottom: 15px;
+}
+.oe2016 .sidebar .ePaper .title {
+    display: block;
+    text-align: center;
+}
+.oe2016 .sidebar .ePaper .bodyLink {
+    text-decoration: none;
+}
+.oe2016 .sidebar .ePaper .ePaperBody {
+    background-color: #fff;
+    padding: 5px 0;
+}
+.oe2016 .sidebar .ePaper .ePaperCover {
+    width: 139px;
+    height: 187px;
+    padding: 5px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 5px auto 10px auto;
+}
+.oe2016 .sidebar .ePaper .bottom {
+    /*padding: 5px 5px 0 5px;*/
+    padding: 5px 30px 0;
+    margin: 0 auto;
+    border-top: 1px solid #e0e0e0;
+}
+.oe2016 .sidebar .ePaper.madonna .bottom {
+    padding: 5px 50px 0;
+}
+.oe2016 .sidebar .ePaper .bottomLink {
+    font-size: 0.8125rem;
+    display: block;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.oe2016 .sidebar .ePaper .bottomLink:hover {
+    text-decoration: none;
+    /*(bs) 2016-03-04 hover soll farbe der tabbox haben*/
+    /*color: #d0113a;*/
+}
+
+.oe2016 .sidebar .ePaper.austria .title.defaultChannelColor,
+.oe2016 .sidebar .ePaper.austria .bottomText.defaultChannelColor,
+.oe2016 .sidebar .ePaper.austria .bottomText .bottomLink.defaultChannelColor,
+.oe2016 .sidebar .ePaper.austria .bottomLink.defaultChannelHoverColor:hover {
+    color: #d0113a;
+}
+
+.oe2016 .sidebar .ePaper .bottomText {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8125rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+}
+
+
+/*.oe2016 .sidebar .ePaper.gesund24 .title {
+    color: #4aa6e8;
+    color: #3874b9;
+}
+.oe2016 .sidebar .ePaper.cooking24 .title {
+    /*color: #a10f42;*/
+    /*color: #8f0c34;*/
+/*
+}
+.oe2016 .sidebar .ePaper.madonna .title {
+    color: #cc054a;
+}
+*/
+/*.oe2016 .sidebar .ePaper.madonna .defaultbox_header .defaultbox_header_caption {
+    background-color: #cc054a;
+}*/
+/*(bs) das ist noch in arbeit */
+
+/** SIDEBAR XML BÖRSENZEUG */
+.oe2016 .content .moneyTicker {
+    border-left: none;
+    border-top: none;
+}
+.oe2016 .sidebar .moneyTicker .atxEntryBox {
+    box-shadow: none;
+}
+.oe2016 .sidebar .moneyTicker {
+    border-left: 1px solid #bababa;
+    border-top: 1px solid #bababa;
+    padding: 0 5px;
+}
+
+/* z.B. Bundesliga Tabelle & Kalender */
+.oe2016 .sidebar .col_wide_right {
+    width: 300px;
+    margin: 0 0 20px;
+    border: none;
+    background-color: transparent;
+}
+/* Default Sidebar Box */
+.oe2016 .sidebar .defaultbox {
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+.oe2016 .sidebar.pushDownSidebar .defaultbox {
+    border: none;
+}
+.oe2016 .sidebar .defaultbox_header,
+.oe2016 .sidebar .defaultbox_body {
+    background-color: #ebebeb;
+}
+.oe2016 .sidebar .defaultbox_body {
+    padding: 0 10px 10px;
+}
+.oe2016 .sidebar .defaultbox_header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 0;
+}
+.oe2016 .sidebar .defaultbox_header_caption,
+.oe2016 .sidebar .defaultbox_header_subcaption {
+    font-family: "colaborate-thinregular",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    float: none;
+    display: block;
+}
+.oe2016 .sidebar .defaultbox_header_subcaption {
+    margin: 0;
+}
+.oe2016 .sidebar .defaultBoxBackgroundColor {
+    background-color: #d0113a;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox {
+    border-top: none;
+    border-left: none;
+}
+
+/*******************/
+/* Wetter anpassen */
+/*******************/
+.oe2016 .sidebar .oe2016defaultXmlBox .sidebarTable {
+    background-color: #fff;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .sidebarTable .cell {
+    font-size: .75rem;
+}
+
+/*************************/
+/* Money Zellen anpassen */
+/*************************/
+.oe2016 .sidebar .oe2016defaultXmlBox .money_body {
+    background-color: #fff;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .atxTopFlopChart {
+    padding: 0 0 10px;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .atxTopFlopChart img {
+    width: 100%;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox {
+    padding: 0;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox.atxFlop {
+    padding: 10px 0 0;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .tableTop span,
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .tableRow span {
+    /*font-size: .75rem;*/
+    font-size: .6875rem; /* Damit die Schrift bei der ATX-Box bisschen kleiner wird */
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .cell1 {
+    width: 100px;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .cell2 {
+    width: 15px;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .cell3 {
+    width: 53px;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .cell4 {
+    width: 53px;
+}
+.oe2016 .sidebar .oe2016defaultXmlBox .ttBox .cell5 {
+    width: 39px;
+}
+
+
+/* Sidebar Listbox Sport24 */
+
+.oe2016.layout_oe24 .sidebar .listbox.sportRankingBox,
+.oe2016.layout_sport .sidebar .listbox.sportRankingBox {
+    padding: 10px 10px 6px;
+    background-color: #f4f4f4;
+    box-shadow: none;
+}
+
+
+/* (pj) 2016-04-26 Sidebar VideoBox Stars24 Layout */
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-stars24 {
+    background-color: #3e3c3c;
+    padding: 5px;
+    color: #fff;
+}
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-stars24 .headline,
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-stars24 .videoTeaser,
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-stars24 .preTitle {
+    color: #fff;
+}
+/* (pj) 2016-04-26 end */
+
+
+/* (ws) 2016-05-25 Euro 2016 */
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-top: none;
+    color: #fff;
+}
+
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .headline,
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .title {
+    /*text-transform: uppercase;*/
+    /*margin: 0;*/
+    color: #fff;
+    background-color: #313b69;
+}
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .headline {
+    /*font-family: 'colaborate-boldregular';*/
+    font-weight: 700;
+    font-size: 3.75rem;
+}
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .title {
+    padding-bottom: 6px;
+    margin-top: -6px;
+}
+
+/*
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .headline {
+    line-height: 1;
+    padding: 4px 0 0;
+}
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .title {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0 0 7px;
+    margin-bottom: 10px;
+}
+*/
+
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .videoTeaser.isVideo .imgContainer span {
+    border: 2px solid #fff;
+    background-color: #313b69;
+    color: #fff;
+}
+.oe2016 .sidebar .sidebarVideoBox.sidebarVideoBox-euro2016 .videoTeaser.isVideo:hover .imgContainer span {
+    background-color: #fff;
+    border: 2px solid #313b69;
+    color: #313b69;
+}
+/* (ws) 2016-05-25 Euro 2016 // */
+
+/* Sidebar Top-Gelesen */
+
+.oe2016 .sidebar .defaultbox.topGelesen {
+    background-color: transparent;
+}
+.oe2016 .sidebar .defaultbox.topGelesen .defaultbox_header {
+    background-color: transparent;
+}
+.oe2016 .sidebar .defaultbox.topGelesen .defaultbox_body {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: transparent;
+}
+.oe2016 .sidebar .listbox {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+.oe2016 .sidebar .listbox a{
+    padding: 11px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.oe2016 .sidebar .listbox_key,
+.oe2016 .sidebar .listbox_image {
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+.oe2016 .sidebar .listbox_key {
+    width: 26px;
+}
+.oe2016 .sidebar .listbox_image {
+    width: 74px;
+    height: 60px;
+}
+.oe2016 .sidebar .listbox_caption {
+    padding-left: 150px;
+    display: block;
+}
+
+/* Sidebar - Voting */
+#votingFrame {
+    margin-left: 175px;
+}
+.oe2016 .sidebar  #votingFrame {
+    margin-left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

@@ -1,0 +1,12 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.xlKonsoleExtendedHeadline span {
+    padding-top: 1.4rem;
+}
+.xlBoxBottomHeadline span{
+	padding-top: 1.4rem;
+}

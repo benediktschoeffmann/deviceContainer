@@ -1,0 +1,161 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+
+.newstickerChannelHeader {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 40px 0;
+}
+.newstickerChannelHeaderDatetime {
+    font-family: "oe24",sans-serif;
+    font-size: .75rem;
+    padding: 10px 0;
+}
+.newstickerChannelHeader a,
+.newstickerChannelHeader a:hover {
+    text-decoration: none;
+}
+.newstickerChannelHeaderImage {
+    position: relative;
+    padding-bottom: 131px;
+}
+.newstickerChannelHeaderImage img {
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+
+
+.newstickerChannel {
+    width: 800px;
+    padding: 0 40px;
+    margin: 15px auto;
+    border-left: 5px solid #d7d7d7;
+}
+.newstickerChannel a,
+.newstickerChannel a:hover {
+    text-decoration: none;
+}
+
+
+.newstickerChannelStory {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+}
+.newstickerChannelStory:hover {
+    text-decoration: none;
+}
+
+
+.newstickerChannelStoryTop {
+    margin: 0 -80px;
+    padding: 10px 80px;
+    position: relative;
+}
+.newstickerChannelStoryTop .marker {
+    font-size: .1rem;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #d0113a;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+.newstickerChannelStoryTop time,
+.newstickerChannelStoryTop .topTitle {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #d0113a;
+}
+.newstickerChannelStoryTop .topTitle {
+    color: #000;
+    margin-left: 20px;
+}
+
+
+.newstickerChannelStoryImage {
+    display: block;
+    width: 100%;
+    padding-bottom: 50%;
+    background-color: #dedede;
+    position: relative;
+}
+.newstickerChannelStoryImage img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.newstickerChannelStory .storyText {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.newstickerChannelStory .storyPreTitle {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    margin: 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+.newstickerChannelStory .storyTitle {
+    font-family: "oe24",sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+}
+.newstickerChannelStory .storyTitle span {
+    display: inline-block;
+    width: 70%;
+}
+
+
+.newstickerChannelStoryLeadText p {
+    font-family: "OpenSansCondensedBold", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 6px 0;
+    margin: 0;
+}
+
+
+.newstickerChannelPager {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 40px 0 10px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+.newstickerChannelPager a {
+    font-family: "oe24condensed",sans-serif;
+    text-decoration: none;
+    padding: 2px 8px;
+}
+.newstickerChannelPager a:hover,
+.newstickerChannelPager a.current {
+    color: #d0113a;
+}

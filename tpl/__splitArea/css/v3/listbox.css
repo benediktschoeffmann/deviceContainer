@@ -1,0 +1,193 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* listbox */
+/* overwrite styles */
+.sidebar .listbox {
+    padding: 0;
+	background-color: #fff;
+	background-color: #e8e8e8;
+	border-right: 1px solid #f0f1f3;
+	box-shadow: 0 0 7px 1px rgba(0,0,0,.1);
+}
+.sidebar .listbox .listbox_caption {
+	/*font-size: .8125rem;*/ /*13px*/
+	font-size: .875rem; /*14px*/
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+/* ---------------- */
+.sidebar .listbox ul {
+	/*overflow: hidden;*/
+}
+.sidebar .listbox li {
+	float: left;
+	width: 100%;
+	margin-bottom: 1px;
+}
+.sidebar .listbox li.last {
+	margin-bottom: 0;
+}
+.sidebar .listbox li a {
+	/*display: block;*/
+	/* (ws) 2014-11-26 */
+	display: inline-block;
+	width: 100%;
+	/* (ws) 2014-11-26 */
+	/*white-space: nowrap;*/
+	/*overflow: hidden;*/
+	padding: 5px 0;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.sidebar .listbox li a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #f8f8f8;
+}
+.sidebar .listbox .listbox_key,
+.sidebar .listbox .listbox_image {
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+.sidebar .listbox .listbox_key {
+	width: 26px;
+}
+.sidebar .listbox .listbox_image {
+	width: 74px;
+	height: 37px;
+}
+.sidebar .listbox .listbox_caption {
+	line-height: 1.2;
+	display: block;
+	margin-left: 0;
+}
+.sidebar .listbox .listbox_caption .listbox_title,
+.sidebar .listbox .listbox_caption .listbox_pre_title {
+	display: block;
+}
+.sidebar .listbox .listbox_caption .listebox_title {
+	font-size: .6875rem;
+}
+.sidebar .listbox .listbox_caption .listbox_pre_title {
+	color: #DD1010;
+}
+.sidebar .listbox .listbox_body .listbox_key {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1.4375rem; /*23px*/
+	width: 40px;
+	margin-right: 4px;
+}
+.sidebar .listbox_raw .listbox_caption {
+	padding-left: 10px;
+}
+.sidebar .listbox_num .listbox_caption {
+	/* wenn .listbox_key umflossen werden soll, padding-left entfernen */
+	padding-left: 36px;
+}
+.sidebar .listbox_image .listbox_caption {
+	/* wenn .listbox_image umflossen werden soll, padding-left entfernen */
+	padding-left: 84px;
+}
+.sidebar .listbox_num_image .listbox_caption {
+	/* wenn .listbox_key + .listbox_image umflossen werden soll, padding-left entfernen */
+	padding-left: 128px;
+}
+/* image + caption */
+.sidebar .listbox_image li a {
+	padding: 5px 10px;
+}
+/* listebox header */
+.sidebar .listbox .listbox_header {
+	/*height: 46px;*/
+	/*line-height: 46px;*/
+	padding: 7px 0;
+}
+.sidebar .listbox .listbox_body {
+	clear: both;
+	/*max-height: 284px; (wg 140428) */
+	/*max-height: 238px; (ws 140704) */
+	/*max-height: 240px; (pj 141106) */
+	/*max-height: 225px; (ws 140704) */
+	max-height: 240px;
+	overflow: auto;
+	padding-bottom: 5px;
+}
+.sidebar .listbox .listbox_body.double_height {
+	max-height: 445px;
+}
+.sidebar .listbox_header,
+.sidebar .listbox_footer,
+.sidebar .listbox_body li {
+	background-color: #fff;
+}
+.sidebar .listbox_header {
+	border-bottom: 1px solid #f0f1f3;
+	overflow: hidden;
+}
+.sidebar .listbox_header span {
+	float: left;
+	color: #dd1010;
+}
+.sidebar .listbox_header_icon {
+	font-family: "icomoon",sans-serif;
+	font-size: 1.3125rem;
+	line-height: 1.5;
+	text-align: center;
+	width: 40px;
+}
+.sidebar .listbox_header_caption {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.3125rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	/*width: 269px;*/
+}
+.sidebar .listbox_header_icon,
+.sidebar .listbox_header_caption {
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);*/
+}
+.sidebar .listbox .listbox_footer {
+	padding: 10px;
+	color: #dd1010;
+}
+.sidebar .listbox_footer {
+	border-top: 1px solid #f0f1f3;
+}
+.sidebar .listbox_footer a {
+	text-decoration: none;
+	display: block;
+}
+.sidebar .listbox_footer a span {
+	/*font-family: "oe24condensed",sans-serif;*/
+	font-family: "oe24",sans-serif;
+	float: right;
+	color: #DD1010;
+}
+.sidebar .listbox_footer a img {
+	float: left;
+}
+.sidebar .listbox_footer a span,
+.sidebar .listbox_footer a img {
+	line-height: 35px;
+}
+/* Bauen- und Wohnen-Box, Topmakler */
+.sidebar .listbox.bawo .listbox_body {
+    max-height: 212px;
+}
+.sidebar .listbox.bawo .listbox_image {
+	width: 60px;
+	height: 60px;
+}
+.sidebar .listbox.bawo .listbox_caption {
+	padding-left: 70px;
+}
+
+

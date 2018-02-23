@@ -1,0 +1,642 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.asContent{
+   width:655px;
+   padding: 28px 20px 0 15px;
+   float:left;
+}
+.right{
+    margin-left:14px;
+    float:left;
+}
+.asContent .column{
+    padding-right:0;
+    float:right;
+}
+.asContent .column,
+.right .column{
+    padding-top: 0px;
+}
+#lightbox .headline,
+#lightboxRequest .headline,
+.right .headline{
+    display:block;
+    background-image:none;
+    border:1px solid #cccccc;
+    border-bottom:none;
+    background-color:#ffffff;
+    -moz-box-shadow:3px 6px 3px -1px #ccc;
+    -webkit-box-shadow:3px 6px 3px -1px #ccc;
+    box-shadow:3px 6px 3px -1px #ccc;
+}
+#lightbox .headline span.title,
+#lightboxRequest .headline span.title,
+.asContent .headline span.title,
+.right .headline span.title,
+.asContent .headline .titleWithLogo,
+.right .headline .titleWithLogo{
+   	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1.5rem;
+	color: #dd1010;
+	line-height: 1;
+	padding:8px;
+	margin-right:10px;
+	text-transform: uppercase;
+
+}
+.asContent .headline .titleWithLogo,
+.right .headline .titleWithLogo{
+
+    height:40px;
+}
+.asContent .headline .titleWithLogo .theLogo,
+.right .headline .titleWithLogo .theLogo{
+    display:block;
+    float:left;
+}
+.asContent .headline .titleWithLogo .theTitle,
+.right .headline .titleWithLogo .theTitle{
+    background-color:transparent;
+    padding:12px;
+    display:block;
+    float:none;
+    font-size:14px;
+    line-height:18px;
+    font-weight:bold;
+    position:relative;
+    top:-1px;
+    font-family:arial,verdana,sans_serif;
+}
+.asContent .article-headline{
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1.5rem;
+	color: #dd1010;
+	line-height: 1;
+	padding:8px;
+	margin-right:10px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.autoshopButton{
+    border:1px solid #bc151f;
+}
+.autoshopButton .buttonBgTop{
+    background: #ff443e;
+    background: -moz-linear-gradient(top,  #ff443e 0%, #cd2923 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff443e), color-stop(100%,#cd2923));
+    background: -webkit-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: -o-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: -ms-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff443e', endColorstr='#cd2923',GradientType=0 );
+    border-bottom:1px solid #bc151f;
+}
+.buttonBgBottom{
+    background: #a01915;
+    background: -moz-linear-gradient(top,  #a01915 0%, #c4231e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a01915), color-stop(100%,#c4231e));
+    background: -webkit-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: -o-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: -ms-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01915', endColorstr='#c4231e',GradientType=0 );
+}
+.buttonOverlay{
+    position:relative;
+    height:23px;
+    width:157px;
+    top:-28px;
+    cursor:pointer;
+    display:block;
+    padding-top:5px;
+}
+.buttonArrow{
+    font-size: 0px;
+    line-height: 0%;
+    width: 0px;
+    border-top:5px solid transparent;
+    border-left:5px solid #FFFFFF;
+    border-bottom:5px solid transparent;
+    float:left;
+    margin:4px 5px 9px 17px;
+    display:block;
+}
+.buttonLabel{
+    color:#ffffff;
+    display:block;
+    float:left;
+}
+/* Article Layout */
+.asContent .article-headline {
+    margin-bottom: 10px;
+}
+.asContent .aSSTop {
+    background-color: #fefefe;
+}
+.asContent .articleContainer{
+    overflow:hidden;
+}
+.asContent .articleContainer .articleMain{
+    width:auto;
+    padding-left:0;
+}
+.asContent .articleContainer .articleMain .articleMainInner .storybox{
+    background-color:#ffffff;
+    padding-left:8px;
+    padding-right:8px;
+    padding-bottom:8px;
+    border:1px solid #cccccc;
+    float:left;
+    background-image:none;
+}
+.asContent .articleContainer .articleMain .articleMainInner .storybox .main{
+    width:auto;
+    background-color:#ffffff;
+    padding-top:8px;
+}
+.asContent .articleContainer .articleMain .articleMainInner{
+    background-color:#ffffff;
+}
+.articleContainer .articleSlideShow{
+    float:left;
+    position:relative;
+    margin-right:15px;
+}
+.articleContainer .articleSlideShow .aSSMain{
+    width:292px;
+    height:146px;
+    cursor:pointer;
+    position:relative;
+}
+.articleContainer .articleSlideShow .aSSLeftBtn,
+.articleContainer .articleSlideShow .aSSRightBtn{
+    background-image:url(<? slp('image', 'layout/autoshop/slider_left_btn.jpg') ?>);
+    width:13px;
+    height:46px;
+    position:absolute;
+    cursor:pointer;
+}
+.articleContainer .articleSlideShow .aSSRightBtn{
+    left:276px;
+    background-image:url(<? slp('image', 'layout/autoshop/slider_right_btn.jpg') ?>);
+}
+.articleContainer .articleSlideShow .aSSSlider{
+    width:292px;
+    height:46px;
+    margin-top:7px;
+    overflow:hidden;
+    position:relative;
+}
+.articleContainer .articleSlideShow .aSSSlider .aSSEntry{
+    float:left;
+    margin-right:2px;
+    margin-left:3px;
+    cursor:pointer;
+}
+.articleContainer .autoDetails{
+    max-width:275px;
+    overflow:hidden;
+    float:left;
+    margin-left:8px;
+    font-size:12px;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+	min-height: 210px;
+}
+.articleContainer .autoDetails table{
+    border-spacing:0px;
+    line-height:normal;
+    height:152px;
+    width:275px;
+}
+.articleContainer .autoDetails td {
+    vertical-align: top;
+    padding-bottom: 8px;
+}
+.articleContainer .autoDetails .a{
+    padding-right:16px;
+}
+.articleContainer .autoDetails .b{
+    font-weight:bold;
+}
+.asContent .storybox .main .texttitle,
+.asContent .storyboxTop .texttitle{
+    font-size:16px;
+    line-height:normal;
+}
+.asContent .storybox .main .bodyText{
+    margin-top:24px;
+    margin-bottom:24px;
+    font-size: .9375rem;
+    line-height: 1.5;
+}
+.asContent .storybox .main .bodyTextAdditionals{
+    float:left;
+}
+.asContent .storybox .main .bodyTextExtras{
+    float:left;
+    width: 280px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:8px;
+}
+.asContent .storybox .main .bodyTextExtras ul{
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+	font-size: 14px;
+}
+.asContent .storybox .main h3{
+    margin:0;
+    margin-bottom:10px;
+    font-size:16px;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+}
+.asContent .storybox .main .bodyTextDetails{
+    float:right;
+    padding-top:8px;
+    padding-left:8px;
+    padding-right:8px;
+    width: 320px;
+}
+.asContent .storybox .main .bodyTextDetails table{
+    border-spacing:0;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size:14px;
+    line-height:normal;
+    margin-bottom: 20px;
+}
+.asContent .storybox .main .bodyTextDetails td {
+    vertical-align: top;
+    padding-bottom: 8px;
+}
+.asContent .storybox .main .bodyTextDetails .a{
+    padding-right:40px;
+}
+.asContent .storybox .main .bodyTextDetails .b{
+    font-weight:bold;
+	width:200px;
+	vertical-align:bottom;
+}
+.asContent .storybox .main .bodyTextDetails .legende{
+    float:left;
+    font-size:10px;
+    font-style:italic;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    line-height:normal;
+    padding-top:25px;
+    width:155px;
+}
+.asContent .storybox .main .bodyTextDetails .rechtstext,
+.asContent .storybox .main .bodyTextDetails .rechtstext p{
+	float:left;
+	font-size:10px;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    line-height:normal;
+	padding-top: 20px;
+}
+.asContent .storybox .main .bodyTextDetails .legende ul{
+    list-style-type:none;
+    padding:0;
+    margin-top:0;
+    margin-left:0;
+    padding-left:10px;
+}
+.asContent .storybox .main .bodyTextDetails .priceContainer{
+    float:right;
+}
+.asContent .storybox .main .bodyTextDetails .priceContainer .price{
+    background-image:url(<? slp('image', 'layout/autoshop/price.png') ?>);
+    height:65px;
+    width:130px;
+}
+.asContent .storybox .main .bodyTextDetails .priceContainer .price .price_title{
+    display:block;
+    font-size:9px;
+    padding-left:15px;
+    padding-top:5px;
+    font-weight:bold;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+}
+.asContent .storybox .main .bodyTextDetails .priceContainer .price .price_value{
+    display:block;
+    font-size:32px;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-weight:bold;
+    text-align:center;
+    line-height:32px;
+}
+.asContent .storybox .main .bodyTextDetails .priceContainer .price_post{
+    display:block;
+    text-align:center;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+.asContent .storybox .autoshopButton{
+    height:32px;
+    width:590px;
+    float:left;
+    margin-top:26px;
+    margin-bottom:20px;
+}
+.asContent .storybox .autoshopButton .buttonBgTop{
+    height:16px;
+}
+.asContent .storybox .autoshopButton .buttonBgBottom{
+    height:15px;
+}
+.asContent .storybox .autoshopButton .buttonOverlay{
+    width:auto;
+    height:27px;
+    top:-32px;
+}
+.asContent .storybox .autoshopButton .buttonArrow{
+    margin-left:150px;
+    border-top:7px solid transparent;
+    border-left:7px solid #FFFFFF;
+    border-bottom:7px solid transparent;
+    border-right:7px solid transparent;
+}
+.asContent .storybox .autoshopButton .buttonLabel{
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    line-height:normal;
+    margin-top:-5px;
+}
+.spacerAfterBox{
+    line-height:normal;
+    padding-bottom:14px;
+}
+/* Lightbox */
+body{
+    position:relative;
+}
+#lightboxOverlay{
+    width:100%;
+    height:100%;
+    min-height:100%;
+    background:#ffffff;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999998;
+}
+#lightbox,
+#lightboxRequest{
+    width:612px;
+    height:498px;
+    position:absolute;
+    /*top:50%;*/
+    /*left:50%;*/
+    /*margin: -249px 0 0 -306px;*/
+    background: #fff;
+    z-index:999999;
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+}
+#lightboxRequest{
+    width:420px;
+    height:657px;
+}
+#lightbox .headline span.title,
+#lightboxRequest .headline span.title{
+    font-size:14px;
+    line-height:18px;
+    font-weight:bold;
+}
+#lightbox .lightboxContent,
+#lightboxRequest .lightboxContent{
+    display:block;
+    border:1px solid #cccccc;
+    border-top:none;
+    background-color: #ffffff;
+    -moz-box-shadow:3px 3px 3px -1px #ccc;
+    -webkit-box-shadow:3px 3px 3px -1px #ccc;
+    box-shadow:3px 3px 3px -1px #ccc;
+    padding-top:7px;
+    padding-bottom:7px;
+    height:auto;
+}
+#lightbox .imageContainer{
+    display:block;
+    width:600px;
+    height:300px;
+    overflow:hidden;
+    margin:0 auto;
+    margin-bottom:10px;
+}
+#lightbox .imageContainer img{
+    width: 610px;
+    margin: -2px -5px;
+    display: block;
+    height: 305px;
+    padding: 0 0 0 0;
+}
+#lightbox .left_btn,
+#lightbox .right_btn{
+    width:22px;
+    height:79px;
+    position:absolute;
+    top:160px;
+    cursor:pointer;
+    left:6px;
+    background-image:url(<? slp('image', 'layout/autoshop/lightbox_left_btn.jpg') ?>);
+}
+#lightbox .right_btn{
+    left:584px;
+    background-image:url(<? slp('image', 'layout/autoshop/lightbox_right_btn.jpg') ?>);
+}
+#lightbox .slider{
+    position:relative;
+    width:621px;
+    height:95px;
+    margin:5px;
+    overflow:hidden;
+}
+#lightbox .slider .entry{
+    float:left;
+    height:95px;
+    width:190px;
+    margin-right:15px;
+    opacity:0.25;
+    filter:alpha(opacity=25);
+    cursor:pointer;
+}
+#lightbox .slider .active{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+#lightbox .pages{
+    width:610px;
+    text-align:center;
+    margin:7px 5px 5px 5px;
+}
+#lightbox .pages .page{
+    cursor:pointer;
+}
+#lightbox .pages .page,
+#lightbox .pages .break{
+    padding-left:3px;
+}
+#lightbox .pages .label,
+#lightbox .pages .page,
+#lightbox .pages .break{
+    font-weight:bold;
+    font-size:12px;
+}
+#lightbox .pages .active{
+    color:#c50f00;
+}
+#lightbox #close,
+#lightboxRequest #close{
+    width: 20px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: #dd1010;
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+    line-height:normal;
+    z-index:999999;
+    cursor:pointer;
+}
+#lightboxRequest{
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    line-height:normal;
+    color:#000000;
+}
+#lightboxRequest .title{
+    display:block;
+    position:relative;
+    margin:0 8px;
+    font-weight:bold;
+    font-size:18px;
+}
+#lightboxRequest .info{
+    display:block;
+    position:relative;
+    margin:8px;
+    font-weight:bold;
+    font-size:12px;
+}
+#lightboxRequest .requestForm{
+    font-size:12px;
+    position:relative;
+    margin:8px;
+}
+#lightboxRequest .requestForm form{
+    display:block;
+}
+#lightboxRequest .requestForm label{
+    width:100px;
+    display:block;
+    float:left;
+    margin-left:27px;
+    padding-top:3px;
+}
+
+#lightboxRequest .requestForm input{
+    display:block;
+    clear:float;
+    border:1px solid #cccccc;
+    height:18px;
+    margin: 20px 0;
+    width:245px;
+}
+#lightboxRequest .autoshopButton{
+    width:344px;
+    margin:auto;
+    border: 1px solid #BC151F;
+    max-height:30px;
+    overflow:hidden;
+}
+#lightboxRequest .autoshopButton .buttonBgTop{
+    background: #ff443e;
+    background: -moz-linear-gradient(top,  #ff443e 0%, #cd2923 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff443e), color-stop(100%,#cd2923));
+    background: -webkit-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: -o-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: -ms-linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    background: linear-gradient(top,  #ff443e 0%,#cd2923 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff443e', endColorstr='#cd2923',GradientType=0 );
+    border-bottom:1px solid #bc151f;
+    height:15px;
+}
+#lightboxRequest .autoshopButton .buttonBgBottom{
+    height:14px;
+    background: #a01915;
+    background: -moz-linear-gradient(top,  #a01915 0%, #c4231e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a01915), color-stop(100%,#c4231e));
+    background: -webkit-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: -o-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: -ms-linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    background: linear-gradient(top,  #a01915 0%,#c4231e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01915', endColorstr='#c4231e',GradientType=0 );
+}
+#lightboxRequest .autoshopButton .buttonOverlay{
+    position:relative;
+    height:27px;
+    width:auto;
+    top:-30px;
+    cursor:pointer;
+    display:block;
+    text-align:center;
+    padding-top:3px;
+}
+#lightboxRequest .autoshopButton .buttonArrow{
+    font-size:0;
+    line-height:0;
+    width:0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid white;
+    display:block;
+    float:left;
+    margin-top:8px;
+    margin-left:105px;
+}
+#lightboxRequest .autoshopButton .buttonLabel{
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    display:block;
+    float:left;
+    margin-top:3px;
+    padding-left:5px;
+}
+#lightboxRequest .info2{
+    display:block;
+    margin:20px 8px;
+    color:#888888;
+    position:relative;
+}
+#lightboxRequest .agbs{
+    display:block;
+    margin:0 8px;
+    color:#888888;
+    font-size:11px;
+    text-align:justify;
+    position:relative;
+}
+.diashowInfos .autoshopButton{
+    height:32px;
+}
+.diashowInfos .autoshopButton .buttonBgTop{
+    height:15px;
+}
+.diashowInfos .autoshopButton .buttonBgBottom{
+    height:16px;
+}
+.diashowInfos .autoshopButton .buttonArrow{
+    margin-left:40px;
+    margin-top:2px;
+}
+.diashowInfos .autoshopButton .buttonOverlay{
+    display:block;
+    width:auto;
+}

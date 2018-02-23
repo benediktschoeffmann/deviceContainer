@@ -1,0 +1,356 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe24tvTopVideoLayer {
+    width: 960px;
+    margin: 0 15px;
+    padding: 10px 0;
+    background-color: #d3183a;
+    display: none;
+
+    position: fixed;
+    bottom: -250px;
+    /*bottom: 0;*/
+    z-index: 999;
+
+    -webkit-box-shadow: 5px 5px 20px #555, -5px 5px 20px #555, 0 -5px 20px #555;
+    -moz-box-shadow: 5px 5px 20px #555, -5px 5px 20px #555, 0 -5px 20px #555;
+    box-shadow: 5px 5px 20px #555, -5px 5px 20px #555, 0 -5px 20px #555;
+}
+
+.oe24tvTopVideoLayer .videoLayerClose,
+.oe24tvTopVideoLayer .videoLayerUp{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 5px;
+    background-color: #d3183a;
+
+    color: #fff;
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.oe24tvTopVideoLayer.tvLayerStart {
+    bottom: 0;
+    transition: bottom 1s ease-in;
+}
+
+.oe24tvTopVideoLayer.tvLayerEnd {
+    bottom: -250px;
+    transition: bottom 1s ease-out;
+}
+
+
+.oe24tvTopVideoLayer .bigClipArea {
+    width: 455px;
+    float: left;
+    /* (pj) 2016-09-29 damit der Player nicht Box nicht huepfen laesst, bei einem erneuten Setup */
+    min-height: 1px;
+    /* (pj) 2016-09-29 end */
+    padding: 0 15px;
+}
+.oe24tvTopVideoLayer .bigClipArea .videoPlayer {
+    width: 427px;
+}
+
+.oe24tvTopVideoLayer .smallClipArea {
+    width: 490px;
+    float: left;
+    padding: 0;
+}
+
+.oe24tvTopVideoLayer .smallClipAreaCaption {
+    text-align: center;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    height: 86px;
+    position: relative;
+}
+
+.oe24tvTopVideoLayer .smallClipAreaCaption p {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 2.375rem;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.oe24tvTopVideoLayer .smallClip {
+    display: block;
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    overflow: hidden;
+
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+.oe24tvTopVideoLayer .smallClip:last-child {
+    margin-bottom: 0;
+}
+
+.oe24tvTopVideoLayer .smallClip.active,
+.oe24tvTopVideoLayer .smallClip:hover {
+    background-color: #d9d9d9;
+}
+.oe24tvTopVideoLayer .smallClip .clipImageContainer {
+    width: 68px;
+    height: 68px;
+}
+.oe24tvTopVideoLayer .smallClip .clipImageContainer.video_container.video_container_bottom_left:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.oe24tvTopVideoLayer .smallClip .smallClipImage {
+    max-height: 68px;
+    display: block;
+    float: left;
+    vertical-align: center;
+}
+
+.oe24tvTopVideoLayer .smallClip .smallClipText {
+    display: block;
+    margin-left: 84px;
+}
+
+.oe24tvTopVideoLayer .smallClip .smallClipTitle {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 335px;
+    height: 70px;
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+/* Headline */
+.oe24tvTopVideoLayer a.topVideoBoxHeadline {
+    text-decoration: none;
+}
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer {
+    border-collapse: collapse;
+    width: 960px;
+
+    position: relative;
+    /*display: table;*/
+
+    padding: 0 10px;
+
+    text-align: center;
+}
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerLeft,
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerRight {
+    display: table-cell;
+    white-space: nowrap;
+}
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerLeft {
+    /*text-align: right;*/
+    padding: 0 5px 0 0;
+
+    font-family: "oe24condensed",sans-serif;
+    font-size: 4.3rem;
+    line-height: 1.1;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .oe24tvTopVideoLayerInnerTable {
+    display: table;
+    width: 0%;
+
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .oe24tvTopVideoLayerInnerDiv{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerHalf {
+    display: table-cell;
+    width: 50%;
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerRight {
+    /*text-align: left;*/
+    padding: 0 0 0 5px;
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .logoPortal {
+    display: inline-block;
+
+    height: 52px;
+    width: 249px;
+    margin: -40px 0 0 0;
+
+    text-align: left;
+}
+
+/* Close State */
+.oe24tvTopVideoLayer.tvLayerEnd .topVideoBoxHeadline .logoPortal {
+    height: 24px;
+    width: 115px;
+    margin: -15px 0 0 0;
+}
+.oe24tvTopVideoLayer.tvLayerEnd .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .navContainerLeft {
+    font-size: 2rem;
+}
+.oe24tvTopVideoLayer .videoLayerUp {
+    display: none;
+}
+.oe24tvTopVideoLayer.tvLayerEnd .videoLayerUp{
+    display: block;
+}
+.oe24tvTopVideoLayer .videoLayerClose{
+    display: block;
+}
+.oe24tvTopVideoLayer.tvLayerEnd .videoLayerClose{
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    .oe24tvTopVideoLayer .topVideoBoxHeadline .textPortalLeft,
+    .oe24tvTopVideoLayer .topVideoBoxHeadline .textPortalRight {
+        padding-top: 2px;
+    }
+}
+
+
+
+
+/* second layout */
+
+.oe24tvTopVideoLayer {
+    padding-top: 15px;
+}
+.oe24tvTopVideoLayer.tvLayerEnd {
+    padding-top: 10px;
+    bottom: -265px;
+}
+
+.oe24tvTopVideoLayer .videoLayerClose {
+    top: 10px;
+}
+.oe24tvTopVideoLayer .oe24tvDescription {
+    float: left;
+    width: 470px;
+    text-align: center;
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline .oe24tvTopVideoLayerNavContainer .oe24tvTopVideoLayerInnerTable {
+    width: 100%;
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvHeadline {
+    display: table-cell;
+    width: 470px;
+    height: 250px;
+    vertical-align: middle;
+
+    color: #FFF;
+    text-decoration: none;
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvDescriptionTxt {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 4.3rem;
+    line-height: 1.05;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvLayerTable {
+    display: table;
+    margin: 0 auto;
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvDescriptionTxt {
+
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvDescriptionImg .logoPortal {
+    height: 52px;
+    width: 249px;
+    margin: -12px 15px 0 0;
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvDescriptionImg {
+    display: table-cell;
+}
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvTxtLittle {
+    display: table-cell;
+}
+
+.oe24tvTopVideoLayer .oe24tvDescription .oe24tvDescriptionTxtBottom {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.875rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+.oe24tvTopVideoLayer .bigClipArea {
+    float: right;
+
+    width: 448px;
+    margin: 0 60px 0 0;
+}
+.oe24tvTopVideoLayer .bigClipArea .videoPlayer {
+    width: 448px;
+}
+.oe24tvTopVideoLayer .oe24tvDescription {
+    width: 450px;
+}
+
+.oe24tvTopVideoLayer .headlineContainer {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.oe24tvTopVideoLayer .topVideoBoxHeadline {
+    display: none;
+}
+.oe24tvTopVideoLayer.tvLayerEnd .topVideoBoxHeadline {
+    display: block;
+}
+
+.oe24tvTopVideoLayer .oe24tvDescription {
+    display: block;
+}
+.oe24tvTopVideoLayer.tvLayerEnd .oe24tvDescription {
+    display: none;
+}
+
+.oe24tvTopVideoLayer.tvLayerEnd .oe24tvTopVideoLayerNavContainer {
+    width: 700px;
+    margin: 0 auto;
+}
+.oe24tvTopVideoLayer .headlineContainer .headlineImg .logoPortal {
+    width: 95px;
+    height: 20px;
+    margin: -4px 8px 0 0;
+}
+.oe24tvTopVideoLayer .headlineContainer .headlineImg,
+.oe24tvTopVideoLayer .headlineContainer .headlineTxt {
+    display: table-cell;
+}

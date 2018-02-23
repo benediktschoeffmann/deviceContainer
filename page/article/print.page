@@ -1,0 +1,25 @@
+<?php
+/**
+* story print page
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)/print
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @urlManager oe24.oe24
+* @cache 1m
+*/
+
+if(!$content instanceof Text){
+    redirect($content->getUrl(), 301);
+}
+
+$canonicalUrl = $content->getUrl()."/print";
+if($canonicalUrl != getCurrentUrl(true)){
+    redirect($canonicalUrl, 301);
+}
+
+$channel = $content->getHomeChannel($portal);
+response()->setTitle($content->getTitle(true)." - Ausdrucken - Österreich / oe24.at");
+etpl("oe24.oe24.story.print",array("text" => $content, "channel" => $channel));
+

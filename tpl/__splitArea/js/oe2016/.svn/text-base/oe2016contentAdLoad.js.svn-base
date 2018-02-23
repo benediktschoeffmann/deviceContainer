@@ -1,0 +1,391 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+;(function(containerClass) {
+
+    // "use strict";
+
+    // --------------------------------------------------------
+
+    var oe24adsLoadAfterPage = {
+
+        allowedAds : new Array(
+            'Contentad2',
+            'Contentad3',
+            'Contentad4',
+            'Contentad5',
+            'Contentad6',
+            'Contentad7',
+            'Contentad8',
+            'Contentad9'
+        ),
+        ads : new Array(),
+        adsVisible : new Array(),
+
+        handleAd: function(container) {
+            var containerId = container.id;
+
+            var loadIt = false;
+
+            // ------------------------------------
+            if (oe24adsLoadAfterPage.allowedAds.indexOf(containerId) == -1 ){
+                // handle only allowedAds - others have been loaded right on the start within html
+                return;
+            }
+
+            // ------------------------------------
+
+            // during testing only on channel-pages
+            var channel = oe24adsLoadAfterPage.isChannel();
+
+            if (channel == false) {
+                loadIt = true;
+            }
+
+            // ------------------------------------
+
+            oe24adsLoadAfterPage.ads[containerId] = containerId;
+            oe24adsLoadAfterPage.adsVisible[containerId] = false;
+
+            if (oe24adsLoadAfterPage.isVisible(containerId)) {
+                loadIt = true;
+            }
+
+            if (loadIt) {
+                oe24adsLoadAfterPage.displayAd(containerId);
+            }
+        },
+
+        channel : null,
+        isChannel: function() {
+            if (oe24adsLoadAfterPage.channel == null) {
+                oe24adsLoadAfterPage.channel = false;
+
+                // during testing only on channel-pages
+                var wrap = document.getElementById('wrap');
+                if (wrap.classList.contains('channel')) {
+                    oe24adsLoadAfterPage.channel = true;
+                }
+            }
+
+            return oe24adsLoadAfterPage.channel;
+        },
+
+        isVisible: function(id) {
+            var offsetTop = document.getElementById(id).offsetTop;
+
+            var doc = document.documentElement;
+            var scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+
+            var windowHeight = window.innerHeight;
+
+            // contentad in visible area +/- additional pixel
+            var additionalPixel = 100;
+            if ( offsetTop >= (scrollTop - additionalPixel) && offsetTop <= (scrollTop + windowHeight + additionalPixel) ) {
+                return true;
+            }
+            return false;
+        },
+
+        displayId : '',
+
+        displayAd: function(id) {
+
+            if (oe24adsLoadAfterPage.adsVisible[id] == false) {
+
+                oe24adsLoadAfterPage.displayId = id; // helper to remember which ad we are handling right now
+                adition = adition || {};
+                adition.srq = adition.srq || [];
+                adition.srq.push(function(api) {
+                    api.renderSlot(oe24adsLoadAfterPage.displayId);
+                    oe24adsLoadAfterPage.adsVisible[oe24adsLoadAfterPage.displayId] = true;
+                });
+
+            }
+        },
+
+        controlAd: function() {
+            for (var i = 0; i < oe24adsLoadAfterPage.allowedAds.length; i++) {
+                var id = oe24adsLoadAfterPage.allowedAds[i];
+                if (typeof oe24adsLoadAfterPage.adsVisible[id] != 'undefined') {
+                    if (oe24adsLoadAfterPage.adsVisible[id] == false) {
+                        if (oe24adsLoadAfterPage.isVisible(id)) {
+                            oe24adsLoadAfterPage.displayAd(id);
+                        }
+                    }
+                }
+            }
+        }
+
+    };
+
+    // --------------------------------------------------------
+    // (bs) 2017-09-19 bugfix. if this is a channel where advertisments are disabled,
+    // the global variable "adition" does not exist - hence the return.
+    if (typeof adition === 'undefined') {
+        return;
+    }
+
+    var containers = document.querySelectorAll(containerClass);
+
+    for (var i = 0, container; container = containers[i]; ++i) {
+
+        oe24adsLoadAfterPage.handleAd(container);
+    }
+
+    window.onscroll = function () {
+        oe24adsLoadAfterPage.controlAd();
+    };
+
+
+})('.adSlotAdition');
+
+
+
+var oe24ads = {
+
+    load: function(type, height) {
+
+
+        var aBody = document.body;
+        aBody.classList.add('fullpageAds');
+
+        switch (type) {
+            case 'billboard':
+
+                var wrap = document.getElementById('wrap');
+                wrap.style.top = height+'px';
+
+                // top
+                document.write( '<div class="fullpageAdTop"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/top/Bigisze_tma_top.html" width="100%" height="90" style="overflow: hidden; max-width: 960px;" scrolling="no"></iframe></div>' );
+                // left
+                document.write('<div class="fullpageAdLeft"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/left/index.html" width="150" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // right
+                document.write('<div class="fullpageAdRight"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/right/130x850_skyscraper_right.html" width="130" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+                // background-color
+                aBody.style.backgroundColor = '#000000';
+
+            break;
+
+            case 'fullpageCinematic':
+
+                aBody.classList.add('fullpageCinematic');
+
+                var wrap = document.getElementById('wrap');
+                // wrap.style.top = height+'px';
+
+                //top
+                document.write( '<div class="fullpageAdMiddle"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/cinematic/index.html" width="100%" height="100%" style="overflow: hidden; max-width: 100%;" scrolling="no"></iframe></div>' );
+
+                var headerBox = document.getElementsByClassName('headerBox');
+                // headerBox[0].style.marginBottom = '400px';
+
+
+                window.onscroll = function() {
+
+                    var currentPosition = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
+                    var middle = document.getElementsByClassName('fullpageAdMiddle');
+                    var headerBox = document.getElementsByClassName('headerBox');
+
+
+                    if(currentPosition>60) {
+                        // var className = 'fullpageAdHide';
+                        // var hasClass = middle[0].className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(middle[0].className);
+                        // console.log(currentPosition+' - '+className+' - '+hasClass);
+
+                        middle[0].classList.add('fullpageAdHide');
+                        headerBox[0].classList.add('fullpageAdNormal');
+                    }
+                    else {
+                        if(currentPosition<=1) {
+                            middle[0].classList.remove('fullpageAdHide');
+                            headerBox[0].classList.remove('fullpageAdNormal');
+                        }
+                    }
+                };
+
+            break;
+
+            case 'doublebridge':
+
+                aBody.classList.add('doublebridge');
+
+                var wrap = document.getElementById('wrap');
+                wrap.style.top = height+'px';
+
+                // top
+                document.write( '<div class="fullpageAdTop"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/top/Bigisze_tma_top.html" width="100%" height="90" style="overflow: hidden; max-width: 100%;" scrolling="no"></iframe></div>' );
+                // left
+                document.write('<div class="fullpageAdLeft"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/left/index.html" width="150" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // right
+                document.write('<div class="fullpageAdRight"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/right/130x850_skyscraper_right.html" width="130" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // middle
+                document.write('<div class="fullpageAdMiddle"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/billboard/index.html" width="100%" height="100%" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+                var headerBox = document.getElementsByClassName('headerBox');
+                //headerBox[0].style.marginBottom = '230px';
+                // headerBox[0].insertAdjacentHTML('afterend', '<div class="fullpageAdMiddle" style="height:250px;"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/billboard/index.html" width="100%" height="100%" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+                aBody.style.backgroundColor = '#000000';
+
+                window.onscroll = function() {
+
+                    var currentPosition = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
+                    var middle = document.getElementsByClassName('fullpageAdMiddle');
+                    var headerBox = document.getElementsByClassName('headerBox');
+
+
+                    if(currentPosition>80) {
+                        middle[0].classList.add('fullpageAdHide');
+                        headerBox[0].classList.add('fullpageAdNormal');
+                    }
+                    else {
+                        if(currentPosition<=1) {
+                            middle[0].classList.remove('fullpageAdHide');
+                            headerBox[0].classList.remove('fullpageAdNormal');
+                        }
+                    }
+                };
+
+            break;
+
+            case 'bridgemiddle':
+
+                aBody.classList.add('bridgemiddle');
+
+                var wrap = document.getElementById('wrap');
+                // wrap.style.top = height+'px';
+
+                // $('#Superbanner').html('<iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/fireplace/mid/index.html" width="100%" height="250px" style="overflow: hidden;" scrolling="no"></iframe>');
+
+                // left
+                document.write('<div class="fullpageAdLeft"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/bridge-ad/left/index.html" width="150" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // right
+                document.write('<div class="fullpageAdRight"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/bridge-ad/right/130x850_skyscraper_right.html" width="130" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // middle
+                document.write('<div class="fullpageAdMiddle"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/bridge-ad/billboard/index.html" width="100%" height="100%" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+                // var headerBox = document.getElementsByClassName('headerBox');
+                // headerBox[0].style.marginBottom = '280px';
+
+                // var middle = document.getElementsByClassName('fullpageAdMiddle');
+                // middle[0].style.top = '180px';
+
+                var lastBillBoardScroll = 0;
+
+                setBillBoardOpenAllowed = null;
+                window.onscroll = function() {
+
+                    var currentPosition = (document.body.scrollTop) ? document.body.scrollTop : document.documentElement.scrollTop;
+                    var middle = document.getElementsByClassName('fullpageAdMiddle');
+                    var headerBox = document.getElementsByClassName('headerBox');
+
+                    if(currentPosition>160) {
+                        middle[0].classList.add('fullpageAdHide');
+                        headerBox[0].classList.add('fullpageAdNormal');
+
+                        if (setBillBoardOpenAllowed === null){
+                            setBillBoardOpenAllowed = false;
+                        }
+
+                        if(currentPosition>180){
+                            setBillBoardOpenAllowed = true;
+                        }
+
+                    }
+                    else {
+                        if(currentPosition<1 && setBillBoardOpenAllowed) {
+                            middle[0].classList.remove('fullpageAdHide');
+                            headerBox[0].classList.remove('fullpageAdNormal');
+
+                            setBillBoardOpenAllowed = null;
+                        }
+                    }
+
+
+                };
+
+                break;
+
+            case 'fullpageAdSidebar':
+
+                aBody.classList.add('fullpageAdSidebar');
+                var wrap = document.getElementById('wrap');
+                // wrap.style.top = height+'px';
+
+                // left
+                document.write('<div class="fullpageAdLeft"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/left/index.html" width="150" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // right
+                document.write('<div class="fullpageAdRight"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/double-bridge-ad/right/130x850_skyscraper_right.html" width="130" height="850" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+
+
+                break;
+
+            case 'fullPageAdSkalier':
+
+                aBody.classList.add('fullPageAdSkalier');
+                var wrap = document.getElementById('wrap');
+
+                // left
+                document.write('<div class="fullpageAdLeft"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/Flagship/sitebar/index.html" width="100%" height="100%" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+                // right
+                document.write('<div class="fullpageAdRight"><iframe src="https://streaming.ad-balancer.at/referenzen-website/kampagnen/Flagship/sitebar/index.html" width="100%" height="100%" style="overflow: hidden;" scrolling="no"></iframe></div></div>');
+
+
+                break;
+
+        }
+
+        // sticky-header
+        var headerContainer = document.getElementsByClassName('headerNavContainer');
+        headerContainer[0].classList.add('headerNavCenterSticky');
+
+    }
+}
+
+switch (window.location.href) {
+    case 'http://oe24dev.oe24.at/test/db/adload':
+    case 'http://oe24dev.oe24.at/test/ws/adload':
+    // case 'http://www.oe24.at/test/db/adload':
+    case 'http://www.oe24.at/xzz/testwerbemittel/adload':
+        oe24ads.load('fullpageAdSidebar',0);
+        break;
+
+    //case 'http://oe24dev.oe24.at/test/db/adload2':
+    // case 'http://www.oe24.at/test/db/adload2':
+    // case 'http://www.oe24.at/xzz/testwerbemittel/adload2':
+        oe24ads.load('billboard',90);
+        break;
+
+    case 'http://oe24dev.oe24.at/test/db/adload3':
+    // case 'http://www.oe24.at/test/db/adload3':
+    // case 'http://www.oe24.at/xzz/testwerbemittel/adload3':
+        oe24ads.load('bridgemiddle',0);
+        break;
+
+    case 'http://oe24dev.oe24.at/test/db/adload4':
+    // case 'http://www.oe24.at/test/db/adload4':
+    // case 'http://www.oe24.at/xzz/testwerbemittel/adload4':
+        oe24ads.load('doublebridge',90);
+        break;
+
+    case 'http://oe24dev.oe24.at/test/db/adload5':
+    // case 'http://www.oe24.at/test/db/adload5':
+    // case 'http://www.oe24.at/xzz/testwerbemittel/adload5':
+        oe24ads.load('fullPageAdSkalier',0);
+        break;
+
+    case 'http://oe24dev.oe24.at/test/db/adload6':
+    // case 'http://www.oe24.at/test/db/adload6':
+    // case 'http://www.oe24.at/xzz/testwerbemittel/adload6':
+        oe24ads.load('fullpageCinematic',380);
+        break;
+}
+
+

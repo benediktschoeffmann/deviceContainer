@@ -1,0 +1,123 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+.oe2016 .oe2016contentScrollBox {
+	position: relative;
+	background-color: #ebebeb;
+	margin: 15px 0;
+	/* erst nach initialisierung des Slicksliders anzeigen. */
+	display: none;
+}
+.oe2016 .oe2016contentScrollBox .contentScrollBoxHeadline {
+	width:100%;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+.oe2016 .oe2016contentScrollBox .contentScrollBoxHeadline .leftText,
+.oe2016 .oe2016contentScrollBox .contentScrollBoxHeadline .rightText {
+	display: block;
+	padding: 2px 0;
+	float: left;
+}
+.oe2016 .oe2016contentScrollBox .contentScrollBoxHeadline .leftText {
+	width: 30%;
+	color: #fff;
+	font-weight: bold;
+	overflow: hidden;
+	text-align: center;
+}
+.oe2016 .oe2016contentScrollBox .contentScrollBoxHeadline .rightText {
+	width:70%;
+	background-color: #fff;
+	overflow: hidden;
+	padding-left: 15px;
+}
+.oe2016 .oe2016contentScrollBox .contentScrollBoxBody {
+	padding: 15px 40px;
+	position: relative;
+}
+
+.oe2016 .oe2016contentScrollBox .contentScrollBoxBody a {
+	text-decoration: none;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntryWrapper {
+	float: left;
+	width: 175px;
+	margin-right: 5px;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry {
+	display:block;
+	padding: 10px;
+	background-color: #fff;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry a {
+	text-decoration: none;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .channelName,
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .publishTime,
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .entryTitle {
+	display: block;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .channelName {
+	float: left;
+	text-transform: uppercase;
+	font-size: .75rem;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .publishTime {
+	float: right;
+	color: #fff;
+	padding: 0 3px;
+	font-size: .75rem;
+}
+.oe2016 .oe2016contentScrollBox .scrollBoxEntry .entryTitle {
+	clear: both;
+	max-height: 42px;
+	font-size: .875rem;
+	font-weight: bolder;
+	overflow: hidden;
+	margin-top: 2px;
+}
+.oe2016 .oe2016contentScrollBox .leftArrow,
+.oe2016 .oe2016contentScrollBox .rightArrow {
+	position: absolute;
+	font-size: 50px;
+	top: 38%;
+
+	/* noselection */
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+
+    color: #969696;
+    -webkit-transition: left 0.4s, color 0.8s;
+    -moz-transition: left 0.4s, color 0.8s;
+    -o-transition: left 0.4s, color 0.8s;
+    -ms-transition: left 0.4s, color 0.8s;
+    transition: left 0.4s, color 0.8s;
+}
+.oe2016 .oe2016contentScrollBox .leftArrow {
+    left: 12px;
+    width: 30px;
+    text-align: left;
+}
+.oe2016 .oe2016contentScrollBox .rightArrow {
+	right: 11px;
+    width: 30px;
+    text-align: right;
+}
+.oe2016 .oe2016contentScrollBox .leftArrow:hover {
+    left: 6px;
+    cursor: pointer;
+}
+.oe2016 .oe2016contentScrollBox .rightArrow:hover {
+    right: 6px;
+    cursor: pointer;
+}

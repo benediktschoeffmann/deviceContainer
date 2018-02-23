@@ -1,0 +1,143 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* Gruppen WidgetBox Fullwide */
+
+.oe2016 .standardHeadline a[href="#!"] {
+    cursor: default;
+}
+
+
+.oe2016 .content.fullwide {
+    width: 100%;
+    padding: 12px 15px 0 15px;
+}
+
+
+.oe2016 .content.fullwide .column3 {
+    width: 300px;
+    margin-right: 30px;
+}
+.oe2016 .content.fullwide .column3 .storyImage img {
+    width: 300px;
+    height: 150px;
+}
+.oe2016 .content.fullwide .column3 .storyTitle {
+    font-size: 1.5rem;
+}
+.oe2016 .content.fullwide .withStoryTime .column3 .storyPreTitle {
+    max-width: 260px;
+}
+
+
+.oe2016 .content.fullwide .column4 {
+    width: 210px;
+    margin-right: 40px;
+}
+.oe2016 .content.fullwide .column4 .storyImage img {
+    width: 210px;
+    height: 105px;
+}
+.oe2016 .content.fullwide .column4 .storyTitle {
+    font-size: 1.25rem;
+}
+.oe2016 .content.fullwide .withStoryTime .column4 .storyPreTitle {
+    max-width: 170px;
+}
+
+
+.oe2016 .content.fullwide .column.last {
+    margin-right: 0;
+}
+
+
+/* (ws) 2016-10-18 */
+
+.oe2016.layout_tv .standardHeadline.withBigHeadline h2 {
+    padding: 0 10px;
+}
+
+.oe2016.layout_tv .content.fullwide {
+    padding: 0px 10px;
+}
+
+.oe2016.layout_tv .content.fullwide .standardContentBox {
+    padding: 15px 10px;
+    background-color: #fff;
+}
+.oe2016.layout_tv .enclosed .content.fullwide .standardContentBox {
+    padding: 15px 0;
+}
+
+.oe2016.layout_tv .content.fullwide .column3 {
+    margin-right: 20px;
+}
+.oe2016.layout_tv .content.fullwide .column4 {
+    margin-right: 33px;
+}
+
+.oe2016.layout_tv .enclosed .content.fullwide .column3 {
+    margin-right: 20px;
+}
+.oe2016.layout_tv .enclosed .content.fullwide .column4 {
+    margin-right: 33px;
+}
+
+.oe2016.layout_tv .content.fullwide .column.last {
+    margin-right: 0;
+}
+.oe2016.layout_tv .enclosed .content.fullwide .column.last {
+    margin-right: 0;
+}
+
+/* (ws) 2016-10-18 end */
+
+
+/*
+.oe2016 .content.fullwide .column .overlayText,
+.oe2016 .content.fullwide .column .storyTime {
+    background-color: #313b69;
+}
+
+
+.oe2016 .content.fullwide .column a:hover {
+    border-top: 6px solid #313b69;
+}
+.oe2016 .content.fullwide .column a:hover .storyPreTitle,
+.oe2016 .content.fullwide .column a:hover .storyTitle {
+    color: #313b69;
+}
+*/
+
+.oe2016.layout_tv .content .column .storyPreTitle {
+    color: #8c8c8c;
+}
+
+
+/* (ws) 2017-07-13 Box mit Hintergrundfarbe */
+
+/*
+.oe2016 .content.fullwide.withBackgroundColor {
+    width: 960px;
+    padding: 12px 10px 0 10px;
+    margin: 0 15px;
+}
+.oe2016 .content.fullwide.withBackgroundColor .column3 {
+    margin-right: 20px;
+}
+.oe2016 .content.fullwide.withBackgroundColor .column4 {
+    margin-right: 33px;
+}
+.oe2016 .content.fullwide.withBackgroundColor .column.last {
+    margin-right: 0;
+}
+*/
+
+.oe2016 .content.fullwide.withBackgroundColor {
+    width: 960px;
+    padding: 12px 0;
+    margin: 0 15px;
+}

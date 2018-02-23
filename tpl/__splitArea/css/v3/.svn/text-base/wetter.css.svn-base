@@ -1,0 +1,172 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.weatherMap {
+	position: relative;
+}
+.weatherMap .location {
+	position: absolute;
+}
+.weatherMap .location .dot {
+	background-image: url("data:image/gif;base64,R0lGODlhBQAFAJEAAAAAAP///97e3v///yH5BAEAAAMALAAAAAAFAAUAAAIHXG4nx408CgA7");
+	height: 5px;
+	width: 5px;
+	left: -2px;
+	top: -2px;
+	position: absolute;
+}
+.weatherMap .location .text {
+	color: #fff;
+	font-size: 11px;
+	text-shadow: 0 0 2px #000;
+	left: 5px;
+	top: 0px;
+	position: absolute;
+}
+.weatherMap .location .wetterIcon {
+	left: -7px;
+	top: -45px;
+	position: absolute;
+}
+.weatherMap .location .wetterTemperature {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAUCAYAAADlep81AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEySURBVHjazJbNCsIwDMe7bmevDoYw2EXEk8OX0Tfzrs+wdxhefQA97ep9zH8ghTLo1+ymgWDGsvSXponNqqoSJEmSpMMw1DB30A00FfNKD31BH9A7P4uMX64Ac8JvDjABWywglHDJeoDeoG/JL84EQ16hMJRABMmZISUgKtN6avCICRBDTUB75bREqdQaBrA9ARU2EPWhHmAczGdnxz6GNQtJ3eWTkZ7ZOJjPzuo+lgRSGVqmGGW1lU1+G3xKuWzJSVfQSG3tLdI1CF0lCj0/TqCFprI/kPgz+QmQ7VzKORZwNYLtmEQB8h2UtmmvAzW6k+mjkNHgM3cM0A0BtdBOtb8pu5DRMLFziaGVfFO7Ikg3x9+ELwwz9Blv8RsPF5hH2FvY5RKdhnWefIVt1RX2I8AATBCOqv0l/rgAAAAASUVORK5CYII=");
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	left: -40px;
+	top: -10px;
+	position: absolute;
+	width: 36px;
+	height: 20px;
+	z-index: 1;
+}
+.col.weatherBox {
+	clear: both;
+}
+.weatherBox .weatherBoxHeader {
+	margin-bottom: 14px;
+}
+.weatherBox .weatherTitel {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.25rem;
+	font-size: 1.5625rem;
+	margin: 0 0 18px;
+	color: #dd1010;
+}
+.weatherBox .weatherText {
+	clear: both;
+	width: 200px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.weatherBox .weatherText span {
+	font-size: .875rem;
+	line-height: 1.4;
+}
+.weatherBox .weatherNavi a {
+	font-family: "oe24condensed",sans-serif;
+	font-family: "OpenSansBold",sans-serif;
+	font-size: .875rem;
+	text-decoration: none;
+	display: inline-block;
+	padding: 4px 16px;
+	margin: 0 8px;
+	border: 1px solid #fff;
+	background-color: #ececec;
+	background-image: linear-gradient(to bottom, #ececec 0px, #fff 100%);
+	box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+	opacity: .5;
+	color: #dd1010;
+	float: left;
+}
+.weatherBox .weatherNavi a:first-child {
+	margin-left: 0;
+}
+.weatherBox .weatherNavi a:hover,
+.weatherBox .weatherNavi a.active {
+	opacity: 1;
+}
+.weatherBox .weatherNavi .weatherAtLink {
+	float: right;
+	margin-right: 0;
+	opacity: 1;
+}
+/* Sidebar Wetter - rl2014 */
+.sidebar .listboxWeather .listbox_header_icon,
+.sidebar .listboxWeather .defaultbox_header_icon {
+	font-family: 'oe24weather';
+	font-size: 1.3rem;
+}
+.sidebar .listboxWeather .listbox_body .sidebarTableRow {
+	vertical-align: top;
+}
+.sidebar .listboxWeather .listbox_body .cell1,
+.sidebar .listboxWeather .listbox_body .cell3 {
+	text-align: center;
+}
+.sidebar .listboxWeather .listbox_body .icon_weather {
+	font-size: 1.0625rem;
+	color: #999;
+}
+/* Wetter-Ticker (ueber die gesamte Breite) */
+.row .breakingNewsWeather .breakingNewsBox {
+	background-color: #bfdeef;
+	background-image: linear-gradient(#fcfefe 0px, #e8f3f9 100%);
+}
+.row .breakingNewsWeather .breakingNewsLeft {
+	width: 764px;
+	padding: 0 10px 0 0;
+	float: left;
+}
+.row .breakingNewsWeather .weatherLink {
+	color: #2c84b6;
+}
+.row .breakingNewsWeather .weatherLink:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.row .breakingNewsWeather .breakingNewsLeftContent {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.row .breakingNewsWeather .breakingNewsAktuell {
+	background-color: #2c84b6;
+}
+.row .breakingNewsWeather .breakingNewsArrow {
+	border-left: 18px solid #2c84b6;
+}
+.row .breakingNewsWeather .breakingNewsHeadline {
+	line-height: 36px;
+	height: 36px;
+	color: #2c84b6;
+}
+.row .breakingNewsWeather .weatherTicker {
+	width: 190px;
+	background-color: #d3e8f4;
+	float: right;
+	position: relative;
+	height: 36px;
+	overflow: hidden;
+}
+.row .weatherTicker ul {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.row .weatherTicker li {
+	line-height: 36px;
+	text-align: right;
+	height: 36px;
+	padding: 0 10px;
+	color: #2c84b6;
+}
+.row .weatherTicker .icon_weather {
+	font-size: 1.25rem;
+}
+

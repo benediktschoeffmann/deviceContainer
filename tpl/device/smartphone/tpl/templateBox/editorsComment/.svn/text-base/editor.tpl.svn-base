@@ -80,6 +80,26 @@ $validEditors = array(
         'lastname'  => 'Unterweger',
         'class'     => 'unterweger-walter',
     ),
+    'schima_werner' => array(
+        'firstname' => 'Werner',
+        'lastname'  => 'Schima',
+        'class'     => 'schima-werner',
+    ),
+    'schroeder_guenther' => array(
+        'firstname' => 'Günther',
+        'lastname'  => 'Schröder',
+        'class'     => 'schroeder-guenther',
+    ),
+    'herrmannmeng_david' => array(
+        'firstname' => 'David',
+        'lastname'  => 'Herrmann-Meng',
+        'class'     => 'herrmannmeng-david',
+    ),
+    'assinger_armin' => array(
+        'firstname' => 'Armin',
+        'lastname'  => 'Assinger',
+        'class'     => 'assinger-armin',
+    ),
 );
 
 $defaultTopTitle = 'Kommentar';

@@ -1,0 +1,80 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.video_player {
+	position: relative;
+}
+#videoRelatedWrapper {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	background-color: #000;
+	opacity: 0;
+	transition: opacity 0.4s ease 0s;
+}
+.videoRelatedItems {
+    margin: 0 auto;
+    text-align: center;
+}
+.videoRelatedItem {
+	display: inline-block;
+    width: 360px;
+    margin: 17px 5px 17px;
+    position: relative;
+}
+.videoRelatedItem img {
+    width: 360px;
+}
+.videoRelatedItem .imageWrapper {
+    position: relative;
+}
+.videoRelatedItem .relatedPreTitle {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background-color: rgb(221, 16, 16);
+}
+.videoRelatedItem .relatedTitle {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    padding: 4px 0 0;
+    text-align: left;
+}
+#videoRelatedWrapper .videoRelatedTitle {
+	font-size: 20px;
+	line-height: 1;
+	padding: 16px 0 0;
+	text-align: center;
+	color: #fff;
+}
+#videoRelatedWrapper .videoReplay {
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    left: 0;
+    margin: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+#videoRelatedWrapper .videoReplay span {
+    vertical-align: middle;
+}
+#videoRelatedWrapper .videoReplay .replayText {
+    padding: 0 0 0 8px;
+}

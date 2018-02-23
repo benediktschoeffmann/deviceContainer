@@ -1,0 +1,165 @@
+<?php
+/**
+ * @collector noauto
+ * @collector preHeaderSplitArea
+ */
+?>
+footer {
+	padding: 28px 15px 28px;
+	margin-bottom: 30px;
+	background-color: #fff;
+}
+footer .footer_caption {
+	font-family: "oe24",sans-serif;
+	font-size: 2.125rem;
+	line-height: 1;
+	text-transform: uppercase;
+	/*text-shadow: 1px 1px 3px rgba(0,0,0,.3);*/
+	padding: 0;
+	margin: 0 0 28px;
+	color: #dd1010;
+}
+footer .footer_caption {
+  	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1.5rem;
+}
+footer p {
+	font-size: .75rem;
+	line-height: 1.4;
+	margin: .875rem 0;
+	margin: 0 0 .875rem;
+}
+footer a {
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer strong {
+	color: #666;
+}
+footer .footer_top,
+footer .footer_bottom {
+	clear: both;
+}
+footer .footer_top .footer_left,
+footer .footer_top .footer_right,
+footer .footer_bottom .footer_left,
+footer .footer_bottom .footer_right {
+	float: left;
+}
+footer .footer_top .footer_left {
+	width: 640px;
+}
+
+
+footer .footer_top .footer_right {
+	width: 320px;
+}
+footer .footer_top .footer_inner {
+	float: left;
+	width: 310px;
+	margin: 0 9px 0 0;
+}
+footer .footer_bottom .footer_left {
+	width: 50%;
+}
+footer .footer_bottom .footer_right {
+	width: 50%;
+}
+footer .footer_bottom .footer_left,
+footer .footer_bottom .footer_right {
+	width: 50%;
+}
+footer .nav_items {
+	float: left;
+	width: 124px;
+	padding-right: 14px;
+	margin-bottom: 28px;
+}
+footer .nav_items.last {
+	clear: both;
+}
+footer .nav_items .nav_item_caption {
+	padding: 0;
+	margin: 0 0 5px;
+}
+footer .nav_items .nav_item_caption a {
+	font-size: .75rem;
+	line-height: 1;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+footer .nav_items .subnav_item_caption a {
+	font-size: .6875rem;
+	line-height: 1.4;
+}
+footer .nav_items a {
+	text-decoration: none;
+	display: block;
+	padding: 3px 0;
+}
+footer .nav_items a:hover {
+	color: #dd1010;
+}
+footer .footer_top .footer_left {
+	border-right: 1px solid #e3e3e3;
+}
+footer .footer_top .footer_right {
+	padding: 0 10px;
+}
+footer .footer_bottom {
+	padding: 28px 0;
+	border-top: 1px solid #e3e3e3;
+}
+footer .footer_bottom .footer_left {
+	padding-right: 15px;
+}
+footer .footer_bottom .footer_right {
+	padding-left: 15px;
+}
+footer .paid_content {
+	font-size: 0.5rem;
+	float: right;
+}
+
+.oe2016 footer .footer_top {
+	padding-top: 28px;
+	border-top: 1px solid #bababa;
+}
+.oe2016 footer .footer_caption {
+	color: #d0113a;
+}
+.oe2016 .footer_top .footer_left {
+	width: 660px;
+	border-right: none;
+}
+.oe2016 .footer_top .footer_right {
+	width: 300px;
+}
+
+
+/* (pj) 2016-04-05 Partner Portale sollen im footer dargestellt werden (frueher ueber dem Header zu finden) */
+footer .footer_portale strong {
+	font-size: .75rem;
+	line-height: 1.4;
+}
+
+footer .footer_portale ul,
+footer .footer_portale li {
+	list-style: none;
+}
+
+footer .footer_portale li {
+	font-size: .75rem;
+
+	padding: 0 5px;
+	border-left: 1px solid #666;
+
+	float: left;
+}
+footer .footer_portale li:first-child {
+	padding: 0 5px 0 0;
+	border-left: none;
+}
+/* (pj) 2016-04-05 end */

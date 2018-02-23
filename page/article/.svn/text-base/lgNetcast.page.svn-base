@@ -1,0 +1,18 @@
+<?php
+/**
+* lg netcast article page
+*
+* @url /(?<channel>lg-netcast)/article-(?<id>\d+)
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var id string
+* @urlManager oe24.oe24
+* @cache 10m
+*/
+
+$content = db()->getById($id, "oe24.core.Text", false);
+if(!$content){
+    redirect("/lg-netcast");
+}
+response()->setTitle($content->getPageTitle());
+etpl('oe24.oe24.LGNetcast._page', array("channel" => $channel, "object" => $content));

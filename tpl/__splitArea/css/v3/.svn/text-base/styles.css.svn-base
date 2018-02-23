@@ -1,0 +1,332 @@
+<?php
+/**
+ * @collector noauto
+ * @collector preHeaderSplitArea
+ */
+?>
+/* Colors */
+body {
+	background-color: #fff;
+	background-color: #efefef;
+}
+#wrap {
+	background-color: #fff;
+}
+
+body,
+a {
+	color: #262626;
+}
+a:hover,
+a:focus {
+	color: #000;
+}
+
+/* Layout generell */
+#wrap {
+	width: 990px;
+	background: transparent url(<?slp('image', 'rl2014/bg_oe24_white.gif')?>) repeat-y 0 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.content,
+.sidebar {
+	float: left;
+	background-color: transparent;
+}
+.content {
+	width: 655px;
+	padding: 28px 20px 0 15px;
+}
+.sidebar {
+	width: 335px;
+	padding: 28px 0 8px;
+}
+textarea,
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+	font-size: 1rem;
+	padding: 5px;
+	border: 1px solid #eee;
+	color: #262626;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+/*
+.video_container {
+	display: block;
+	position: relative;
+}
+.video_container img {
+	display: block;
+}
+.video_container:after {
+	content: " ";
+	display: table;
+	font-family: "icomoon";
+	font-size: 3rem;
+	text-align: center;
+	line-height: 52px;
+	width: 52px;
+	height: 52px;
+	padding: 0;
+	margin: 0;
+	margin-top: -26px;
+	margin-left: -26px;
+	border-radius: 26px;
+	background: transparent url(<?slp('image', 'rl2014/play_video.png')?>) no-repeat 0 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+a:hover .video_container:after {
+	background: transparent url(<?slp('image', 'rl2014/play_video.png')?>) no-repeat 0 -52px;
+}
+*/
+.video_container {
+	display: block;
+	position: relative;
+}
+/*.video_container:after {
+	content: "\e628";
+	font-family: "icomoon";
+	font-size: 40px;
+	line-height: 46px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	display: block;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -26px;
+	margin-left: -26px;
+	border-color: #fff;
+	border-style: solid;
+	border-radius: 26px;
+	color: #262626;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px 0 rgba(0,0,0,.3);
+	text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+}
+a:hover .video_container:after {
+	color: #fff;
+	background-color: #dd1010;
+	border-color: #dd1010;
+}*/
+.video_container:after {
+	content: '';
+	display: block;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -26px;
+	margin-left: -26px;
+	background-image: url('/images/rl2014/play_button.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+a:hover .video_container:after {
+	background-position: -52px 0;
+}
+.video_container.video_container_bottom_left:after {
+	width: 30px;
+	height: 30px;
+	margin: 0 0 2px 2px;
+	left: 0;
+	bottom: 0;
+	top: inherit;
+	background-size: 60px 30px;
+}
+a:hover .video_container.video_container_bottom_left:after {
+	background-position: -30px 0;
+}
+.video_container.video_container_big:after {
+	width: 80px;
+	height: 80px;
+	margin-top: -40px;
+	margin-left: -40px;
+	background-image: url('/images/rl2014/play_button_big.png');
+	background-size: 160px 80px;
+}
+a:hover .video_container.video_container_big:after {
+	background-position: -80px 0;
+}
+.video_container.video_container_medium:after {
+  width: 65px;
+  height: 65px;
+  margin: -32px 0 0 -32px;
+  background-image: url('/images/rl2014/play_button_big.png');
+  background-size: 130px 65px;
+}
+a:hover .video_container.video_container_medium:after {
+	background-position: -65px 0;
+}
+/* Zaehlpixel */
+.adSlotAdition img[height="1"],
+.adSlotAdition .image_zp {
+	display: none;
+}
+/* Vollversion mobil */
+#backToMobile {
+    position:relative;
+    background-color:yellow;
+    color:#333;
+    font-size:40px;
+    text-align:center;
+    font-weight:bold;
+    z-index:99998;
+    width:100%;
+    padding-top:7%;
+    padding-bottom:7%;
+}
+#close_backToMobile {
+    position:absolute;
+    border:1px solid #333;
+    width:40px;
+    height:40px;
+    font-size:24px;
+    padding:0;
+    line-height:40px;
+    left:100%;
+    margin-left:-47px;
+    top:3px;
+    cursor:pointer;
+    background-color:yellow;
+    z-index:99999;
+}
+
+/** (bs) 2016-02-02 schriebe alle oe2016 regeln runter*/
+
+/*.oe2016 body,
+.oe2016 .content a,
+.oe2016 .sidebar a {
+	color: #010101;
+}
+.oe2016 .content a:hover,
+.oe2016 .sidebar a:focus {
+	color: #262626;
+}
+*/
+.oe2016 .tabbedBox .content {
+    /*padding: 16px 20px 0 15px;*/
+    padding: 12px 20px 0 15px;
+}
+.oe2016 .tabbedBox .sidebar {
+    padding: 0 15px 8px 20px;
+    margin-top: -15px;
+}
+
+/* (bs), (ws) 2015-11-17 OE2016-24 */
+
+#wrap.a2016,
+#wrap.oe2016 {
+	background: #fff;
+}
+
+
+/*
+.oe2016 .content.article {
+	padding: 16px 20px 0 15px;
+}
+.oe2016 .sidebar.article {
+	padding: 0 15px 0 20px;
+}
+*/
+
+.a2016 .content.article {
+	float: right;
+	padding: 18px 15px 0 20px;
+}
+.a2016 .sidebar.article {
+	/*padding: 0 15px;*/
+	padding: 0 0 0 15px;
+}
+.a2016 .sidebar.article .adSlotAditionBox {
+	padding: 36px 0;
+	position: relative;
+}
+.a2016 .sidebar.article .adSlotAdition {
+	text-align: left;
+	background-color: transparent;
+}
+
+
+.a2016 #Contentad1,
+.a2016 #Contentad2 {
+	/*display: none;*/
+}
+.a2016 #Contentad1 {
+	/*position: fixed;*/
+}
+.a2016 #Contentad2 {
+	margin-top: 20px;
+}
+
+
+/*
+.oe2016 #Contentad1.fixed iframe {
+	position: fixed;
+	top: 72px;
+}
+.oe2016 #Contentad1.absolute iframe {
+	position: absolute;
+	bottom: 0;
+}
+*/
+
+
+
+/*
+.oe2016 #Contentad1.fixed {
+	position: fixed;
+	top: 36px;
+}
+.oe2016 #Contentad2.positioned {
+	position: absolute;
+	bottom: 36px;
+}
+*/
+
+
+.a2016 .oe2016InlineHeadline {
+	padding: 5px 0 5px 0;
+	display: block;
+}
+
+.a2016 .oe2016InlineHeadline .type {
+	color: #dd1010;
+	/*color: #d0113a;*/
+}
+
+.oe2016InlineHeadline {
+	display: none;
+}
+
+/* (bs), (ws) 2015-11-17 OE2016-24 // */
+
+.oe2016 .wsRecipe.recipe2016 .content {
+	float: right;
+}
+
+.oe2016 .wsRecipe.recipe2016 .sidebar {
+	padding: 28px 0 0 15px
+}
+
+/* (bs) hide mobile htmlbox on desktop */
+.mobileHtmlBox {
+	display: none;
+}

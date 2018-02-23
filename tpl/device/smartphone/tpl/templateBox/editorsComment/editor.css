@@ -22,14 +22,14 @@
 	vertical-align: bottom;
 	height: 72px;
 }
-					
+
 .editorsComment .editorTextTopTitle {
 	display: block;
 
 	font-size: .75rem;
 	line-height: 1.1;
 	color: #262626;
-	
+
 	margin: 0 2px 1px 2px;
 	height: 28px;
 	overflow: hidden;
@@ -52,7 +52,7 @@
 
 	color: #010101;
 	overflow: hidden;
-	
+
 	font-size: 1rem;
 	line-height: 1.1;
 	font-weight: 700;
@@ -64,4 +64,10 @@
 
 }
 
-
+/* 2018-02-08 (db) olympia-box - wenn sport-editors box verwendet wird, zurück zu grün/rot */
+.smartphone.layout_sport .editorsComment .editorTextName {
+	background-color: #0052b3;
+}
+.smartphone.layout_sport .contentBox.console .flickity-prev-next-button {
+	background-color: #0052b3;
+}

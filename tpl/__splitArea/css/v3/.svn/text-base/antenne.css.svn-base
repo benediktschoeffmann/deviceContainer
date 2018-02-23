@@ -1,0 +1,110 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+/* (1) */
+.jp-jplayer{
+    display:none;
+}
+#jp_container_1{
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 75px;
+    width: 140px;
+    height: 80px;
+    overflow: hidden;
+}
+#jp_container_1 a:active{
+    border:0;
+    outline:0;
+}
+
+#jp_container_1 span img{
+    display:none;
+}
+.box_AntenneStatic:hover #jp_container_1 img{
+    display:inline;
+}
+.box_AntenneStatic{
+    cursor:pointer;
+}
+/* (2) */
+.box_AntenneStatic{
+    background-image: url(/images/layout/radiooe24/playerBG.jpg);
+    background-repeat:no-repeat;
+    width:299px;
+    border-right:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+    font-family:"Impact";
+}
+.box_AntenneStatic .nowContainer{
+    padding:15px 0;
+}
+.box_AntenneStatic .nowContainer .logo{
+    background-image: url(/images/layout/radiooe24/nowplaying.png);
+    display:block;
+    width:256px;
+    height:75px;
+    margin:auto;
+}
+.box_AntenneStatic .coverContainer{
+    width:190px;
+    height:190px;
+    margin:auto;
+    background-image: url(/images/layout/radiooe24/coverbg.png);
+}
+.box_AntenneStatic .coverContainer img{
+    width:166px;
+    height:166px;
+    margin:8px 0 0 9px;
+}
+.box_AntenneStatic .inner{
+    min-height:289px;
+}
+.box_AntenneStatic .titleContainer{
+       text-align:center;
+}
+.box_AntenneStatic .nextContainer{
+    color:#be1622;
+    text-align:center;
+    margin:5px 25px 5px 25px;
+    padding-bottom:2px;
+    border-bottom: 1px solid #be1622;
+}
+.box_AntenneStatic .titleContainer .artist{
+    font-size:25px;
+    line-height:26px;
+    margin-bottom:5px;
+}
+.box_AntenneStatic .titleContainer .title{
+    font-family:"Myriad Pro", sans-serif;
+    font-size:15px;
+    line-height:16px;
+    margin-bottom:10px;
+}
+.box_AntenneStatic .titleContainer.type1 .artist{
+    font-size:16px;
+    line-height:16px;
+}
+.box_AntenneStatic .titleContainer.type1 .title{
+    font-size:12px;
+    line-height:12px;
+}
+.box_AntenneStatic .coverContainer{
+    font-size:0;
+    color:transparent;
+}
+/* (3) */
+.col.col_wide_right.radioOe24Teaser {
+    margin-left: 20px;
+    position: relative;
+}
+#jp_container_1 {
+    left: 112px;
+    width: 67px;
+    height: 66px;
+}

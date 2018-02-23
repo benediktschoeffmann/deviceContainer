@@ -1,0 +1,433 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* An-/Abmelde-Formular */
+.oe2016 .defaultbox .newsletterteaser {
+        background-color: #fff;
+        position: relative;
+
+        font-size: 0.75rem;
+        line-height: 1.2;
+}
+
+.oe2016 .defaultbox.newsletter.Fullwidth .defaultbox_header,
+.oe2016 .defaultbox.newsletter.Fullwidth .defaultbox_body {
+        float: right;
+        width: 655px;
+        padding-left: 20px;
+}
+.oe2016 .sidebar .defaultbox.newsletter.Sidebar .defaultbox_header,
+.oe2016 .sidebar .defaultbox.newsletter.Sidebar .defaultbox_body {
+        float: none;
+        width: 100%;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlImg {
+        position: absolute;
+        left: 35px;
+        top: 10px;
+}
+.oe2016 .sidebar .defaultbox .newsletterteaser .nlImg {
+        left: 15px;
+}
+.oe2016 .defaultbox .newsletterteaser .nlTeaser {
+        padding: 10px 5px 20px 85px;
+        width: 280px;
+}
+.oe2016 .sidebar .defaultbox .newsletterteaser .nlTeaser {
+        padding: 10px 5px 20px 75px;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlEmail {
+        width: 85px;
+        text-align: right;
+        padding: 4px;
+}
+.oe2016 .sidebar .defaultbox .newsletterteaser .nlEmail {
+        width: 75px;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlFirst {
+        margin: 0 5px 0 75px;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlFloat {
+        float: left;
+}
+.oe2016 .defaultbox .newsletterteaser .nlClear {
+        clear: both;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlCheck {
+        width: 180px;
+}
+.oe2016 .defaultbox .newsletterteaser .nlLink {
+        text-decoration: underline;
+        color: blue;
+}
+.oe2016 .defaultbox .newsletterteaser input {
+        font-size: 0.75rem;
+        padding: 2px;
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlSpacer {
+        padding: 8px 0;
+}
+.oe2016 .defaultbox .newsletterteaser .nlSpacer.nlDis {
+        display: none;
+}
+.oe2016 .defaultbox .newsletterteaser .nlSubmit {
+        padding: 10px 0 20px 85px;
+}
+.oe2016 .sidebar .defaultbox .newsletterteaser .nlSubmit {
+        padding: 10px 0 20px 75px;
+}
+
+.oe2016 .defaultbox .newsletterteaser input[type="text"] {
+        width: 170px;
+}
+.oe2016 .defaultbox .newsletterteaser select {
+        width: 170px;
+        border: 3px solid #eee;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+}
+.oe2016 .defaultbox .newsletterteaser .nlSubmit input[type="button"],
+.oe2016 .defaultbox .newsletterteaser .nlSubmit input[type="submit"] {
+        width: 170px;
+
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, #fff, #eee);
+        border: 1px solid #ccc;
+
+        color: #000;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+
+}
+
+.oe2016 .defaultbox .newsletterteaser .nlHint {
+        padding: 0 15px 10px 15px;
+}
+.oe2016 .defaultbox .newsletterteaser .nlHint a {
+        text-decoration: underline;
+        color: blue;
+}
+
+/* Landing Page für Abmelden via Newsletterlink */
+.oe2016 .content.unsubscribe .unsubscribeMsg {
+        margin: 10px 0;
+}
+
+/* Temporary - will be deleted */
+
+.fullpageAds #Superbanner {
+    display: none;
+}
+.fullpageAds .fullpageAdLeft {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -640px;
+}
+
+.fullpageAds .fullpageAdRight{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: 480px;
+}
+
+.fullpageAds .fullpageAdTop {
+    width: 960px;
+    height: 90px;
+    margin-left: -480px;
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+
+.fullpageAds .fullpageAdMiddle{
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    margin-left: -480px;
+    z-index: 999;
+    width: 960px;
+    max-width: 960px;
+    height: 250px;
+}
+
+.fullpageAds .fullpageAdMiddle {
+    max-height: 250px;
+    transition: max-height 0.5s ease-in;
+    overflow: hidden;
+}
+
+.fullpageAds .fullpageAdMiddle.fullpageAdHide {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.fullpageAds .fullpageAdTop iframe,
+.fullpageAds .fullpageAdLeft iframe,
+.fullpageAds .fullpageAdRight iframe,
+.fullpageAds .fullpageAdMiddle iframe {
+    border: none;
+}
+
+
+/* wrapper and below */
+
+
+
+.fullpageAds #wrap {
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 0;
+    z-index: 1;
+}
+
+.fullpageAds #wrap.a2016,
+.fullpageAds #wrap.oe2016 {
+    /*background-color: #ad5;*/
+    width: 960px;
+}
+
+
+.fullpageAds .headerBox {
+    margin-top: 0;
+}
+
+
+.fullpageAds .oe2016 .standardHeadline {
+    padding: 0 0 0 0;
+}
+.fullpageAds .oe2016 .tabbedBox .content {
+    width: 640px;
+    padding: 12px 20px 0 15px;
+    /*background-color: #da5;*/
+}
+.fullpageAds .oe2016 .tabbedBox .sidebar {
+    width: 320px;
+    padding: 0 15px 8px 20px;
+    /*background-color: #5ad;*/
+}
+.fullpageAds .oe2016 .content.fullwide{
+<<<<<<< .mine
+        padding: 12px;
+=======
+    padding: 12px;
+>>>>>>> .r11014
+}
+
+.fullpageAds .oe2016 .content .column1 {
+}
+.fullpageAds .oe2016 .content .column1 .storyImage img {
+    width: 605px;
+    height: 302px;
+}
+.fullpageAds .oe2016 .content .column2 {
+    margin-right: 21px;
+}
+.fullpageAds .oe2016 .content .column3 {
+    margin-right: 17px;
+}
+.fullpageAds .oe2016 .content .column.last {
+    margin-right: 0;
+}
+
+
+.fullpageAds .content .col1 {
+    width: 100%;
+}
+.fullpageAds .content .col2 {
+    width: 292px;
+    /*margin-right: 36px;*/
+    margin-right: 21px;
+}
+.fullpageAds .content .col3 {
+    width: 190px;
+    /*margin-right: 25px;*/
+    margin-right: 10px;
+}
+.fullpageAds .content .col.last {
+    margin-right: 0;
+}
+
+.fullpageAds .oe2016 .content .col.marker.ads{
+<<<<<<< .mine
+        padding: 4px 5px 13px 5px;
+=======
+    padding: 4px 5px 13px 5px;
+>>>>>>> .r11014
+}
+
+.fullpageAds .xlKonsoleExtended {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.fullpageAds .oe24tvTopVideoBox {
+    margin: 0 auto;
+}
+
+
+
+.fullpageAds .contentSliderBoxHeadline {
+    margin: 0 -15px 10px;
+}
+
+
+
+.fullpageAds .stickyHeader {
+    width: 960px;
+    left: 50%;
+    margin-left: -480px;
+}
+
+<<<<<<< .mine
+.fullpageAds .xlBoxBottom {
+    padding-left: 0;
+    padding-right: 0;
+}
+.fullpageAds .breakingNews{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+=======
+.fullpageAds .xlBoxBottom {
+    padding-left: 0;
+    padding-right: 0;
+}
+.fullpageAds .breakingNews{
+    margin-left: 0;
+    margin-right: 0;
+}
+>>>>>>> .r11014
+/* bridgemiddle*/
+
+.fullpageAds.bridgemiddle .headerBox {
+    margin-bottom: 270px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.bridgemiddle .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+
+/* Doublebridge */
+
+.fullpageAds.doublebridge .fullpageAdTop {
+    position: relative;
+}
+
+.fullpageAds.doublebridge .fullpageAdLeft{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /*margin-left: -610px;*/
+}
+.fullpageAds.doublebridge .fullpageAdRight{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: 480px;
+}
+
+.fullpageAds.doublebridge .fullpageAdMiddle{
+    top: 270px;
+}
+.fullpageAds.doublebridge .headerBox {
+    margin-bottom: 270px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.doublebridge .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+
+
+/* Big Video Middle 100% */
+
+.fullpageAds.fullpageCinematic .fullpageAdMiddle {
+    position: absolute;
+    top: 180px;
+    left: 0;
+
+    width: 100%;
+    max-width: 100%;
+    height: 380px;
+    max-height: 380px;
+
+    margin-left: 0;
+    overflow: hidden;
+    z-index: 999;
+
+}
+.fullpageAds.fullpageCinematic .headerBox {
+    margin-bottom: 400px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.fullpageCinematic .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+.fullpageAds.fullpageCinematic .fullpageAdMiddle.fullpageAdHide {
+    max-height: 0;
+}
+
+/* Skalier */
+
+.fullpageAds.fullPageAdSkalier .fullpageAdLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding-right: 480px;
+    margin-left: 0;
+    height: 800px;
+}
+.fullpageAds.fullPageAdSkalier .fullpageAdRight {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 50%;
+    padding-left: 480px;
+    height: 800px;
+}
+
+@media only screen and (min-width: 0) and (max-width: 990px)  {
+    .fullpageAds .fullpageAdTop,
+    .fullpageAds.doublebridge .fullpageAdTop,
+    .fullpageAds #wrap {
+        /*position: static;*/
+        left: 0;
+        margin-left: 0;
+    }
+    .fullpageAds .fullpageAdMiddle,
+    .fullpageAds.doublebridge .fullpageAdMiddle {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .fullpageAds .headerNavContainer.stickyHeader.headerNavCenterSticky{
+        left: 0;
+        margin-left: 0;
+    }
+<<<<<<< .mine
+}=======
+}
+
+>>>>>>> .r11014

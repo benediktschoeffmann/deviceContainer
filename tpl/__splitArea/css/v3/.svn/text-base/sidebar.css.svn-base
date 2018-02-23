@@ -1,0 +1,221 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.sidebar .col_default {
+	width: 300px;
+	margin: 0 10px;
+}
+.sidebar .col_wide_left {
+	width: 310px;
+	margin: 0 10px 0 0;
+}
+.sidebar .col_wide_right {
+	width: 310px;
+	margin: 0 0 0 10px;
+}
+.sidebar .col_fullwide {
+	width: 320px;
+	margin: 0 0 0 0;
+}
+.sidebar .col_special {
+	width: 320px;
+	margin: 0 0 0 10px;
+}
+.sidebar .col {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.sidebar .col.imageOnlyBox {
+	text-align: right;
+}
+/* sidebar contentad */
+.sidebar .content_ad {
+	display: block;
+	width: 300px;
+	margin: 0 0 20px 0;
+}
+.sidebar .content_ad.ad_alignment_center {
+	margin-left: 10px;
+}
+.sidebar .content_ad.ad_alignment_left {
+	margin-left: 0;
+}
+.sidebar .content_ad.ad_alignment_right {
+	margin-left: 20px;
+}
+
+/* fuer Demo-Contentboxen */
+.sidebar .col.demo {
+	height: 120px;
+	color: #fff;
+	background-color: rgba(128,128,128,.4);
+}
+
+/* default box */
+.sidebar .defaultbox {
+    padding: 0;
+	background-color: #fff;
+	box-shadow: 0 0 7px 1px rgba(0,0,0,.1);
+}
+.sidebar .defaultbox_header,
+.sidebar .defaultbox_footer,
+.sidebar .defaultbox_body {
+	clear: both;
+	background-color: #fff;
+}
+.sidebar .defaultbox_footer,
+.sidebar .defaultbox_body {
+	padding: 10px;
+}
+.sidebar .defaultbox_header {
+	padding: 7px 0;
+	border-bottom: 1px solid #f0f1f3;
+	overflow: hidden;
+}
+.sidebar .defaultbox_header_icon,
+.sidebar .defaultbox_header_caption {
+	float: left;
+	vertical-align: baseline;
+	color: #dd1010;
+}
+.sidebar .defaultbox_header_icon {
+	font-family: "icomoon",sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	text-align: center;
+	width: 40px;
+}
+.sidebar .defaultbox_header_caption {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.sidebar .defaultbox_header_subcaption {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: #dd1010;
+	display: block;
+	clear: both;
+	margin-left: 40px;
+}
+.sidebar .careesma .defaultbox_header_subcaption {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.3125rem;
+	line-height: 1;
+}
+/* wetter_temperatur_orte */
+
+/*
+.wetter_temperatur_orte {
+	table-layout: fixed;
+	width: 100%;
+}
+.wetter_temperatur_orte .rowtype2 {
+	background-color: #f8f8f8;
+}
+.wetter_temperatur_orte .cell {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: .8125rem;
+	font-weight: normal;
+	padding: 2px 0;
+}
+.wetter_temperatur_orte .cell1 {
+	text-align: right;
+	padding-left: 0;
+}
+.wetter_temperatur_orte .cell2 {
+	padding: 2px 10px;
+}
+.wetter_temperatur_orte .cell3 {
+	text-align: right;
+	padding-right: 10px;
+}
+*
+/* fussballbox_table */
+.fussballbox_table {
+	table-layout: fixed;
+	width: 100%;
+	display: block;
+	height: 235px;
+	overflow-y: scroll;
+	border-collapse: collapse;
+}
+.fussballbox_table .rowtype2 {
+	background-color: #f8f8f8;
+}
+.fussballbox_table .cell {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: .8125rem;
+	font-weight: normal;
+	padding: 2px 0;
+}
+.fussballbox_table .cell1 {
+	text-align: right;
+	padding-left: 10px;
+	width: 30px;
+}
+.fussballbox_table .cell2 {
+	padding: 2px 10px;
+	width: 158px;
+}
+.fussballbox_table .cell3 {
+	width: 24px;
+}
+.fussballbox_table .cell4 {
+	text-align: right;
+	width: 50px;
+}
+.fussballbox_table .cell5 {
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+	width: 34px;
+}
+/* WM, EM, etc. */
+.fussballbox_table.fussball_gruppe,
+.fussballbox_table.fussball_ergebnisse {
+	height: auto;
+	overflow-y: auto;
+}
+/* blog box */
+.sidebarBlogTeaserBox {
+	padding: 10px;
+}
+.sidebarBlogTeaserBox a {
+	text-decoration: none;
+	cursor: pointer;
+}
+.sidebarBlogTeaserBox img {
+	float: right;
+}
+.sidebarBlogTeaserBox .blogTeaserTitle {
+	font-family: "OpenSansSemiBold";
+	font-size: 1rem;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 0 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #dd1010;
+}
+.sidebarBlogTeaserBox .blogTeaserLeadText {
+	font-size: .8125rem;
+	line-height: 1.4;
+	padding: 0;
+	margin: 0;
+}

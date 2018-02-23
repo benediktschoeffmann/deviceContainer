@@ -59,19 +59,19 @@
     padding: 5px;
 }
 
-.articleBox .newsTickerEntry .tickerBody img, 
-.articleBox .newsTickerEntry .tickerBody .overrideImage img, 
-.articleBox .newsTickerEntry .tickerBody .overrideVideo video, 
+.articleBox .newsTickerEntry .tickerBody img,
+.articleBox .newsTickerEntry .tickerBody .overrideImage img,
+.articleBox .newsTickerEntry .tickerBody .overrideVideo video,
 .articleBox .newsTickerEntry .tickerBody video {
     width: 100%;
     margin: 5px 0;
-} 
+}
 
-.articleBox .newsTickerEntry .tickerBody img, 
+.articleBox .newsTickerEntry .tickerBody img,
 .articleBox .newsTickerEntry .tickerBody video {
     width: 100%;
     margin: 5px 0;
-} 
+}
 
 .articleBox .newsTickerEntry .oe2016InlineHeadline {
     padding: 5px 0 5px 0;
@@ -86,4 +86,12 @@
 
 .articleBox .newsTickerEntry .video_player .videoPlayer {
     margin: 0 0 10px 0;
+}
+
+
+/* (ws) 2018-02-15 Unbedingtes Ueberschreiben der Breitenangabe der iframes von facebook, etc.*/
+.articleBox .newsTickerEntry .tickerBody iframe[src^="https://www.facebook.com/"],
+.articleBox .newsTickerEntry .tickerBody iframe[src^="https://www.youtube.com/"],
+.articleBox .newsTickerEntry .tickerBody iframe[src^="https://www.youtu.be/"] {
+    width: 100% !important;
 }

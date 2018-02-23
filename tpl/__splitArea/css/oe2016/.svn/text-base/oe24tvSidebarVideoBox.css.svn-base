@@ -1,0 +1,152 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.tabbedBoxTv .sidebarVideoBox {
+    /*background: #e8e8e8;*/
+}
+
+
+.tabbedBoxTv .sidebarVideoBox img {
+    width: 100%;
+    background-color: #dedede;
+}
+
+
+.tabbedBoxTv .sidebarVideoBoxStory {
+    text-decoration: none;
+    display: block;
+}
+.tabbedBoxTv .sidebarVideoBoxStory:hover,
+.tabbedBoxTv .sidebarVideoBoxStory:active,
+.tabbedBoxTv .sidebarVideoBoxStory:focus {
+    text-decoration: none;
+}
+
+
+.tabbedBoxTv .sidebarVideoBox .storyImage {
+    display: block;
+    position: relative;
+}
+
+
+.tabbedBoxTv .sidebarVideoBox .textBox {
+    /*margin-top: -68px;*/ /* mit PreTitle */
+    margin-top: -40px;     /* ohne PreTitle */
+    position: relative;
+    z-index: 1;
+}
+
+
+.tabbedBoxTv .sidebarVideoBox .preTitle,
+.tabbedBoxTv .sidebarVideoBox .title,
+.tabbedBoxTv .sidebarVideoBox .videoLength {
+    text-transform: uppercase;
+    color: #fff;
+}
+.tabbedBoxTv .sidebarVideoBox .preTitle {
+    font-family: "OpenSansRegular",sans-serif;
+    /*font-family: "Open Sans",sans-serif;*/
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.8;
+    padding: 1px 6px;
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabbedBoxTv .sidebarVideoBox .title {
+
+/*
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.35;
+*/
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.55;
+
+    /*
+    damit im unguenstigen Fall kein 6px-Shadow rechts ueber
+    die Box hinausreicht, wird die Breite begrenzt
+    */
+    width: 288px;
+
+    padding: 0;
+    margin: 0 6px;
+    display: block;
+}
+.tabbedBoxTv .sidebarVideoBox .title span {
+    padding: 0;
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    /* fuer den IE9 */
+    border-collapse: separate;
+}
+@-moz-document url-prefix() {
+    .tabbedBoxTv .sidebarVideoBox .preTitle {
+        line-height: 1.5;
+        padding-top: 5px;
+    }
+    .tabbedBoxTv .sidebarVideoBox .title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.55;
+        margin-top: 1px;
+    }
+    .tabbedBoxTv .sidebarVideoBox .title span {
+        padding: 0;
+    }
+}
+
+
+/*
+.tabbedBoxTv .sidebarVideoBox .videoLength {
+    font-size: .875rem;
+    text-align: right;
+    display: block;
+    padding: 0 6px;
+    margin: 5px 0 0 0;
+    color: #bdbdbd;
+    color: #a3a3a3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
+
+
+/* (ws) 2016-10-20 */
+.tabbedBoxTv .sidebarVideoBox .videoLength {
+    font-size: .875rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 8px;
+    margin: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+/* (ws) 2016-10-20 end */

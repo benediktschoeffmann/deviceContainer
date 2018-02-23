@@ -1,0 +1,65 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .horoskop {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.oe2016 .horoskop.distanceTop {
+    margin-top: 15px;
+}
+.oe2016 .horoskop.distanceBottom {
+    margin-bottom: 15px;
+}
+
+
+.oe2016 .horoskopHeadline {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    display: block;
+}
+.oe2016 .horoskopHeadline span {
+    font-family: "OpenSansBold",Arial,sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin: 0;
+    color: #fff;
+    background-color: #d0113a;
+    display: block;
+}
+
+
+.oe2016 .horoskopSigns {
+    width: 100%;
+    margin-top: 2px;
+    background-color: #ebebeb;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.oe2016 .horoskopSign {
+    display: table-cell;
+    padding: 10px 0 8px;
+}
+.oe2016 .horoskopSignIcon {
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+.oe2016 .horoskopSignText {
+    color: #010101;
+}
+.oe2016 .horoskopSign:hover .horoskopSignText,
+.oe2016 .horoskopSign.active .horoskopSignText {
+    color: #d0113a;
+}
+
+

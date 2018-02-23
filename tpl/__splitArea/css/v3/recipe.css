@@ -1,0 +1,294 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+/*
+cooking24.at bzw. wirkochen.at - Portal Color #a10f42
+*/
+?>
+/* Rezept Uebersichtsseite */
+.content .channel_box.recipe .story_pagetitle {
+	margin: 2px 0 0;
+}
+.content .channel_box.recipe .story_copyright {
+	font-family: arial,sans-serif;
+	font-size: .625rem;
+	text-align: right;
+	text-transform: uppercase;
+	margin: 2px 0 0;
+	color: #959595;
+}
+.content .recipeInfo {
+}
+.content .recipeInfo p {
+	font-size: .875rem;
+	padding: 0;
+	margin: 2px 0 0;
+}
+/* Rezept */
+.wsRecipe .overlay_box img {
+	display: none;
+}
+.wsRecipe .overlay_box img:first-child {
+	display: block;
+}
+.wsRecipe .article_box h1 {
+	color: #a10f42;
+}
+/* --- --- */
+.wsRecipe .recipeBodyLeft,
+.wsRecipe .recipeBodyRight {
+	float: left;
+}
+.wsRecipe .recipeBodyLeft {
+	width: 348px;
+	margin-right: 20px;
+}
+.wsRecipe .recipeBodyRight {
+	width: 252px;
+}
+.wsRecipe .recipeTeaser {
+	display: block;
+	margin: 14px 0;
+}
+/* Rezept-Info */
+.wsRecipe .recipeBodyRight .defaultbox {
+	background-color: #fff;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+	padding: 0;
+}
+.wsRecipe .recipeBodyRight .defaultbox_header,
+.wsRecipe .recipeBodyRight .defaultbox_footer,
+.wsRecipe .recipeBodyRight .defaultbox_body {
+	clear: both;
+	background-color: #fff;
+}
+.wsRecipe .recipeBodyRight .defaultbox_body {
+	padding: 10px;
+}
+.wsRecipe .recipeBodyRight .defaultbox_footer {
+	font-size: .9375rem;
+	padding: 7px 10px;
+	border-top: 1px solid #f0f1f3;
+}
+.wsRecipe .recipeBodyRight .defaultbox_footer .recipeAuthor {
+	font-style: italic;
+	color: #a10f42;
+}
+.wsRecipe .recipeBodyRight .defaultbox .defaultbox_header {
+	padding: 7px 0;
+	border-bottom: 1px solid #f0f1f3;
+	overflow: hidden;
+}
+.wsRecipe .recipeBodyRight .defaultbox_header_icon,
+.wsRecipe .recipeBodyRight .defaultbox_header_caption {
+	float: left;
+	vertical-align: baseline;
+	color: #a10f42;
+}
+.wsRecipe .recipeBodyRight .defaultbox_header_icon {
+	font-family: "icomoon",sans-serif;
+	font-size: 1.3125rem;
+	line-height: 1.5;
+	text-align: center;
+	width: 40px;
+}
+.wsRecipe .recipeBodyRight .defaultbox_header_caption {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.3125rem;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.wsRecipe .recipeBodyRight .defaultbox.recipeInfoBox,
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories {
+	margin-bottom: 20px;
+}
+.wsRecipe .recipeBodyRight .defaultbox_header_icon,
+.wsRecipe .recipeBodyRight .defaultbox_header_caption {
+	font-size: 1rem;
+}
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories a:hover {
+}
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_header,
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_footer,
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_body {
+	background-color: #f0dce2;
+}
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories a {
+	font-size: .875rem;
+	color: #a10f42;
+}
+.wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_header {
+	border-bottom: 1px solid #e1b8c4;
+}
+.wsRecipe .recipeInfo {
+	font-size: .9375rem;
+	line-height: 25px;
+	padding: 0;
+	margin: 6px 0;
+	background-image: url(<?php slp('image', 'rl2014/recipe/recipeSprite25.png'); ?>);
+	background-repeat: no-repeat;
+}
+.wsRecipe .recipeInfo .values {
+	display: none;
+}
+.wsRecipe .recipeInfo.duration1 {
+	background-position: 146px 0;
+}
+.wsRecipe .recipeInfo.duration2 {
+	background-position: 146px -25px;
+}
+.wsRecipe .recipeInfo.duration3 {
+	background-position: 146px -50px;
+}
+.wsRecipe .recipeInfo.effort1 {
+	background-position: 146px -75px;
+}
+.wsRecipe .recipeInfo.effort2 {
+	background-position: 146px -100px;
+}
+.wsRecipe .recipeInfo.effort3 {
+	background-position: 146px -125px;
+}
+.wsRecipe .recipeInfo.price1 {
+	background-position: 146px -150px;
+}
+.wsRecipe .recipeInfo.price2 {
+	background-position: 146px -175px;
+}
+.wsRecipe .recipeInfo.price3 {
+	background-position: 146px -200px;
+}
+.wsRecipe .icon_printer {
+	font-size: .9375rem;
+	text-decoration: none;
+}
+.wsRecipe .icon_printer:hover {
+	text-decoration: none;
+}
+.wsRecipe .icon_printer span {
+	font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+	padding-left: 6px;
+}
+/* Zutaten */
+.wsRecipe .recipeIngredients {
+	padding: 10px 0;
+	margin: 0 0 14px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+.wsRecipe .recipeIngredients p {
+	font-size: 1rem;
+	padding: 0;
+	margin: 0
+}
+.wsRecipe .recipeIngredientsPerson {
+	font-style: italic;
+	font-weight: bold;
+	padding: 1px 7px 1px 5px;
+	background-color: #f1f1f1;
+	border-radius: 4px;
+}
+.wsRecipe .recipeListTitle {
+	padding-bottom: 8px;
+}
+.wsRecipe .recipeIngredientsList {
+	padding-bottom: 8px;
+	margin-left: 10px;
+}
+.wsRecipe .recipeIngredientsList li {
+	font-size: .6rem;
+	list-style: disc;
+	padding-left: 2px;
+	color: #c1c1c1;
+}
+.wsRecipe .recipeIngredientsList li span {
+	font-size: .9375rem;
+	padding: 0 3px;
+	color: #262626;
+}
+.wsRecipe .recipeIngredientsList li,
+.wsRecipe .recipeIngredientsList li span {
+	vertical-align: middle;
+}
+/* Zubereitung */
+.wsRecipe .recipeBodyWrapper {
+	padding: 10px 0;
+	margin: 14px 0;
+	border-top: 1px solid #e1e1e1;
+}
+.wsRecipe .recipeBody {
+	font-size: .9375rem;
+	margin: 14px 0;
+}
+.wsRecipe .recipeBody ol {
+	margin-left: 26px;
+}
+.wsRecipe .recipeBody ol li {
+	line-height: 1.4;
+	padding-left: 10px;
+	margin: 7px 0;
+	list-style: decimal;
+}
+/* Sharing */
+.wsRecipe .at-share-tbx-element {
+	margin-bottom: 6px;
+}
+/* Suche */
+.sidebar .recipeSearch .defaultbox_header {
+	border-bottom: none;
+}
+.sidebar .recipeSearch .defaultbox_body {
+	font-family: "OpenSansBold";
+	font-size: 0.75rem;
+	padding: 0 10px 10px;
+}
+.sidebar .recipeSearch .defaultbox_body .textfield {
+	padding: 4px 6px;
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+}
+/* ??? */
+.recipelist {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.recipelist * {
+  font-size: 0.9375rem;
+}
+.recipelist a {
+  width: 100%;
+  float: left;
+}
+.recipelist a span {
+  display: block;
+  float: left;
+}
+.recipelist a:hover {
+  background-color: #e6e6e6;
+}
+.recipelist .headboxes {
+	background-color: #f0dce2;
+}
+.recipelist .headboxes div {
+  color: #a10f42;
+  font-weight: bold;
+  float: left;
+  line-height: 2.2;
+}
+.recipelist .title {
+  width: 60%;
+  padding-left: 5px;
+}
+.recipelist .duration,
+.recipelist .effort {
+  width: 20%;
+}
+.recipelist .recipelist_row a {
+  padding: 2px 0;
+}

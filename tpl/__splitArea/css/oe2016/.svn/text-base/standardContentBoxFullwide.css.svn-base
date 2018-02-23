@@ -1,0 +1,70 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_sport_euro2016 .standardHeadline a[href="#!"] {
+    cursor: default;
+}
+
+
+.layout_sport_euro2016 .content.fullwide {
+    width: 100%;
+    padding: 12px 15px 0 15px
+}
+
+
+.layout_sport_euro2016 .content.fullwide .column3 {
+    width: 300px;
+    margin-right: 30px;
+}
+.layout_sport_euro2016 .content.fullwide .column3 .storyImage img {
+    width: 300px;
+    height: 150px;
+}
+.layout_sport_euro2016 .content.fullwide .column3 .storyTitle {
+    font-size: 1.5rem;
+}
+.layout_sport_euro2016 .content.fullwide .withStoryTime .column3 .storyPreTitle {
+    max-width: 260px;
+}
+
+
+.layout_sport_euro2016 .content.fullwide .column4 {
+    width: 210px;
+    margin-right: 40px;
+}
+.layout_sport_euro2016 .content.fullwide .column4 .storyImage img {
+    width: 210px;
+    height: 105px;
+}
+.layout_sport_euro2016 .content.fullwide .column4 .storyTitle {
+    font-size: 1.25rem;
+}
+.layout_sport_euro2016 .content.fullwide .withStoryTime .column4 .storyPreTitle {
+    max-width: 170px;
+}
+
+
+.layout_sport_euro2016 .content.fullwide .column.last {
+    margin-right: 0;
+}
+
+
+/*
+.layout_sport_euro2016 .content.fullwide .column .overlayText,
+.layout_sport_euro2016 .content.fullwide .column .storyTime {
+    background-color: #313b69;
+}
+
+
+.layout_sport_euro2016 .content.fullwide .column a:hover {
+    border-top: 6px solid #313b69;
+}
+.layout_sport_euro2016 .content.fullwide .column a:hover .storyPreTitle,
+.layout_sport_euro2016 .content.fullwide .column a:hover .storyTitle {
+    color: #313b69;
+}
+*/
+

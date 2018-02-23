@@ -1,0 +1,273 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* xml box die in den Zeilen Links enthaelt */
+.xml_linkbox .defaultbox_body {
+	padding: 0;
+}
+.xml_linkbox .tableTop span,
+.xml_linkbox .tableRow span {
+	font-family: "OpenSansRegular",sans-serif;
+	/*font-size: .8125rem;*/
+	font-size: .875rem;
+	font-weight: normal;
+	float: left;
+}
+.xml_linkbox .tableTop span {
+	font-weight: bold;
+}
+.xml_linkbox .tableTop div {
+	display: block;
+	padding: 2px 10px 4px;
+}
+.xml_linkbox .tableRow a {
+	display: block;
+	padding: 2px 10px;
+}
+.xml_linkbox .tableRow a:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+.xml_linkbox .tableTop div span
+.xml_linkbox .tableRow a span {
+	padding: 0 2px;
+}
+/* ttBox */
+.ttBox {
+	padding: 10px 0;
+}
+.ttBox.atxFlop {
+	padding-top: 0;
+}
+.ttBox .tableTop span,
+.ttBox .tableRow span {
+	/*font-size: .6875rem;*/
+	font-size: .8125rem;
+}
+.ttBox span {
+	text-align: right;
+}
+.ttBox .cell1 {
+	text-align: left;
+	width: 140px;
+}
+.ttBox .cell2 {
+	text-align: center;
+	width: 10px;
+}
+.ttBox .cell3 {
+	width: 48px;
+}
+.ttBox .cell4 {
+	width: 46px;
+}
+.ttBox .cell5 {
+	width: 46px;
+}
+.atxTopFlopChart {
+	padding-top: 14px;
+}
+.atxTopFlopChart img {
+	display: block;
+	margin: 0 auto;
+}
+.ttBoxDevisen .cell1,
+.ttBoxGeldmarkt .cell1 {
+	width: 140px;
+	width: 116px;
+}
+.ttBoxDevisen .cell2,
+.ttBoxGeldmarkt .cell2 {
+	width: 10px;
+}
+.ttBoxDevisen .cell3,
+.ttBoxGeldmarkt .cell3 {
+	width: 48px;
+	width: 56px;
+}
+.ttBoxDevisen .cell4,
+.ttBoxGeldmarkt .cell4 {
+	width: 46px;
+	width: 54px;
+}
+.ttBoxDevisen .cell5,
+.ttBoxGeldmarkt .cell5 {
+	width: 48px;
+	width: 54px;
+}
+.ttBox .tableRow .green {
+	color: #019C0F;
+}
+.ttBox .tableRow .red {
+	color: #FF0000;
+}
+.xml_linkbox .ttBox .tableTop div span.cell1,
+.xml_linkbox .ttBox .tableRow a span.cell1 {
+	padding-left: 0;
+}
+.xml_linkbox .ttBox .tableTop div span.cell5,
+.xml_linkbox .ttBox .tableRow a span.cell5 {
+	padding-right: 0;
+}
+/*
+.xml_linkbox .tableTop div {
+	background-color: #ad5;
+}
+.xml_linkbox .tableRow a {
+	background-color: #da5;
+}
+*/
+/*
+.ttBox .cell1 {
+	background-color: #ad5;
+}
+.ttBox .cell2 {
+	background-color: #da5;
+}
+.ttBox .cell3 {
+	background-color: #5ad;
+}
+.ttBox .cell4 {
+	background-color: #a5d;
+}
+.ttBox .cell5 {
+	background-color: #d5a;
+}
+*/
+.sidebarTable {
+	display: table;
+	width: 100%;
+	padding: 10px 0;
+}
+.sidebarTable .sidebarTableRow {
+	display: table-row;
+	table-layout: fixed;
+	border-spacing: 0px;
+	text-decoration: none;
+}
+.sidebarTable .sidebarTableRow:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+.sidebarTable .cell {
+	display: table-cell;
+	font-size: .8125rem;
+	padding: 2px 6px;
+}
+.sidebarTable .cell:first-child {
+	padding-left: 10px;
+}
+.sidebarTable .cell.last {
+	padding-right: 10px;
+}
+.wetter_temperatur .cell1 {
+	text-align: right;
+	width: 30px;
+}
+.wetter_temperatur .cell2 {
+	text-align: left;
+}
+.wetter_temperatur .cell3 {
+	text-align: right;
+	width: 50px;
+}
+.f1WM {
+	table-layout: fixed;
+	width: 100%;
+
+	display: block;
+	height: 118px;
+	overflow-y: scroll;
+
+	border-collapse: collapse;
+}
+.f1WM .rowtype2 {
+	background-color: #f8f8f8;
+}
+.f1WM .cell {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: .8125rem;
+	font-weight: normal;
+	padding: 2px 0;
+}
+.f1WM .cell1 {
+	text-align: right;
+	padding-left: 10px;
+	width: 30px;
+}
+.f1WM .cell2 {
+	padding: 2px 10px;
+	width: 241px;
+}
+.f1WM .cell3 {
+	font-weight: bold;
+	text-align: right;
+	width: 24px;
+	padding-right: 10px;
+}
+.f1GP {
+	height: 215px;
+}
+.f1GP td {
+	vertical-align: top;
+}
+.f1GP .f1GPTeamName {
+	font-size: 0.6875rem;
+}
+.sidebar .careesma_body {
+	font-size: 0.875rem;
+	max-height: 240px;
+	overflow: auto;
+}
+.sidebar .careesma_body ul {
+	margin-left: 24px;
+}
+.sidebar .careesma_body ul,
+.sidebar .careesma_body li {
+	list-style-type: disc;
+}
+.sidebar .careesma_body li a {
+	display: block;
+	padding: 5px 10px;
+}
+.sidebar .careesma_body li a:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+	text-decoration: none;
+}
+.sidebar .careesma_body .careesma_caption {
+	display: block;
+	line-height: 1.2;
+	margin-left: 0;
+}
+.sidebar .careesma_body .careesma_title {
+	display: block;
+}
+.sidebar .careesma_footer {
+	font-size: 0.875rem;
+	font-family: "oe24",sans-serif;
+	padding: 10px;
+	border-top: 1px solid #f0f1f3;
+}
+.sidebar .careesma_footer .button {
+    background-color: #204f91;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px 10px;
+}
+.sidebar .careesma_footer .careesma_finanz_jobs {
+	float: left;
+}
+.sidebar .careesma_footer .careesma_all_jobs {
+	float: right;
+}
+.sidebar .careesma_footer a {
+	/*color: #204f91;*/
+}
+.sidebar .careesma_footer a:hover {
+	text-decoration: none;
+}

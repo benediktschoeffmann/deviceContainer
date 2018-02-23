@@ -1,0 +1,198 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.content .console {
+	margin-bottom: 14px;
+	position: relative;
+	overflow: hidden;
+}
+.content .console .consoleStories {
+	margin-bottom: 1px;
+	margin-bottom: 3px;
+	position: relative;
+	z-index: 1;
+}
+.content .console .consoleStoriesItem {
+	display: none;
+}
+.content .console .consoleStoriesItem:first-child {
+	display: block;
+}
+.content .console .consoleCounter {
+	padding: 0 8px;
+	color: #fff;
+	background-color: #1a1a1a;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+.content .console .consoleNavigationBox {
+	height: 110px;
+	padding: 0 28px;
+	border-radius: 0 0 4px 4px;
+	border-bottom: 1px solid #aab8c5;
+	background-color: #edeef2;
+	position: relative;
+	overflow: hidden;
+}
+.content .console .consoleNavigation {
+	width: 10000px;
+	margin: 0 auto;
+}
+.content .console .consoleNavigationItem {
+	text-align: left;
+	width: 141px;
+	float: left;
+}
+.content .console .consoleNavigationItem img {
+	display: block;
+}
+.content .console .consoleNavigationItem:hover {
+	text-decoration: none;
+	color: #dd1010;
+}
+.content .console .consoleNavigationItemTitle {
+	font-family: "OpenSansCondensedBold",sans-serif;
+	font-size: .9375rem;
+	line-height: 1.1;
+	height: 36px;
+	padding: 2px 3px;
+	margin: 0 0 0 -1px; /* Border-Left soll genau unterhalb des Zwischenraumes der Slides zu sehen sein */
+	border-left: 1px solid #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content .consoleNavigationBox .slickPrev,
+.content .consoleNavigationBox .slickNext {
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+	width: 28px;
+	height: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: #dd1010;
+	background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+}
+
+
+
+.content .consoleNavigationBox .slickPrev,
+.content .consoleNavigationBox .slickNext,
+.content .consoleNavigationBox .slickPrev:hover,
+.content .consoleNavigationBox .slickNext:hover {
+	background-color: #dd1010;
+	background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+}
+.content .consoleNavigationBox .slickPrev {
+	width: 27px;
+	left: 0px;
+	border-radius: 0 0 0 4px;
+}
+.content .consoleNavigationBox .slickNext {
+	right: 0px;
+	border-radius: 0 0 4px 0;
+}
+.content .consoleNavigationBox .slickPrev:before,
+.content .consoleNavigationBox .slickNext:before {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 4.125rem;
+	text-align: center;
+	display: block;
+	padding: 0;
+	margin-top: -8px;
+	color: #fff;
+	opacity: 1;
+}
+.content .consoleNavigationBox .slickPrev:before {
+	content: "\2039";
+}
+.content .consoleNavigationBox .slickNext:before {
+	content: "\203A";
+}
+.content .consoleNavigationBox .slickPrev:hover:before,
+.content .consoleNavigationBox .slickNext:hover:before {
+	color: #ffdf03;
+}
+
+
+/** OE2016 Farbänderung: */
+.oe2016.layout_oe24 .content .consoleNavigationBox {
+	border-radius: 0;
+}
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickPrev,
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickNext {
+	background-color: #d0113a;
+    background-image: linear-gradient(to bottom, #d0113a 0px, #e73239 0px);
+    border-radius: 0;
+}
+.oe2016.layout_oe24 .content .console .consoleNavigationItem:hover,
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickPrev:hover:before,
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickNext:hover:before {
+	color: #d0113a;
+}
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickPrev:hover,
+.oe2016.layout_oe24 .content .consoleNavigationBox .slickNext:hover {
+	background-color: #edeef2;
+	background-image: none;
+}
+
+.oe2016.layout_oe24 .content .console .overlay_box .caption {
+	background-color: transparent;
+	position: static;
+}
+
+.oe2016.layout_oe24 .content .consoleStoriesItem div.captionContainer {
+	width: 65%;
+	padding: 0 5px;
+	position: absolute;
+	left: 2px;
+	bottom: 4px;
+	display: none;
+}
+.oe2016.layout_oe24 .content .consoleStoriesItem h1.caption {
+	line-height: 1.4;
+	padding: 0;
+	margin: 1px 0;
+	border-left: 7px solid rgba(0, 0, 0, 0.2);
+	background-color: transparent;
+	display: inline-block;
+	overflow: hidden;
+}
+.oe2016.layout_oe24 .content .consoleStoriesItem span.captionTitle,
+.oe2016.layout_oe24 .content .consoleStoriesItem .captionPreTitle {
+	background: rgba(0, 0, 0, 0.2);
+	padding-right: 7px;
+	/*padding: 6px 7px 7px 0;*/
+	padding: 4px 7px 5px 0;
+	display: inline;
+	white-space: pre-wrap;
+	line-height: 1.2;
+}
+
+.oe2016.layout_oe24 .content .consoleStoriesItem .captionTitle,
+.oe2016.layout_oe24 .content .consoleStoriesItem .captionPreTitle {
+	color: #fff;
+}
+
+.oe2016.layout_oe24 .content .consoleStoriesItem .captionTitle {
+	font-size: 2.75rem;
+}
+
+.oe2016.layout_oe24 .content .consoleStoriesItem .captionPreTitle {
+	/*border-left: 8px solid rgba(208, 17, 58, 1);
+	background: rgba(208, 17, 58, 1);*/
+	border-left: 9px solid #d0113a;
+	background:  #d0113a;
+	padding: 2px 7px 3px 0;
+	text-transform: uppercase;
+	font-size: .75rem;
+}

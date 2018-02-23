@@ -1,0 +1,15 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+@font-face{
+    font-family: 'digital-7';
+    src: url("/images/fonts/digital-7.eot") /* EOT file for IE */
+}
+@font-face{
+    font-family: 'digital-7';
+    src: url("/images/fonts/digital-7.ttf") /* TTF file for CSS3 browsers */
+}

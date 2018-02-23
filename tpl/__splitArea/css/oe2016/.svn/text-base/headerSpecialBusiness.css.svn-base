@@ -1,0 +1,344 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_business.oe2016 p::-moz-selection,
+.layout_business.oe2016 span::-moz-selection,
+.layout_business.oe2016 strong::-moz-selection,
+.layout_business.oe2016 h1::-moz-selection,
+.layout_business.oe2016 h2::-moz-selection,
+.layout_business.oe2016 h3::-moz-selection,
+.layout_business.oe2016 a::-moz-selection,
+.layout_business.oe2016 div::-moz-selection,
+.layout_business.oe2016 u::-moz-selection,
+.layout_business.oe2016 img::-moz-selection,
+.layout_business.oe2016 br::-moz-selection,
+.layout_business.oe2016 ul::-moz-selection,
+.layout_business.oe2016 li::-moz-selection,
+.layout_business.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #35549b;
+}
+.layout_business.oe2016 p::selection,
+.layout_business.oe2016 span::selection,
+.layout_business.oe2016 strong::selection,
+.layout_business.oe2016 h1::selection,
+.layout_business.oe2016 h2::selection,
+.layout_business.oe2016 h3::selection,
+.layout_business.oe2016 a::selection,
+.layout_business.oe2016 div::selection,
+.layout_business.oe2016 u::selection,
+.layout_business.oe2016 img::selection,
+.layout_business.oe2016 br::selection,
+.layout_business.oe2016 ul::selection,
+.layout_business.oe2016 li::selection,
+.layout_business.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #35549b;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .headerNavContainer {
+    background-color: #3568ac;
+    background-image: linear-gradient(to bottom, #357dbe 30%, #35549b 72%);
+}
+
+.layout_business.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #80a8d1;
+    border-right: 1px solid #80a8d1;
+}
+
+.layout_business.oe2016 .headerNavMain,
+.layout_business.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_business.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #3053a1;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .headerNavLogoCol.logoPortal,
+.layout_business.oe2016 .headerNavLogoCol.logoLive {
+    display: block;
+    height: 56px;
+    position: absolute;
+    top: 12px;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoPortal {
+    left: 12px;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoLive {
+    left: 396px;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoPortal img,
+.layout_business.oe2016 .headerNavLogoCol.logoLive img {
+    display: block;
+    height: 56px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .headerNavLogoCol.logoOesterreich {
+    text-align: right;
+    width: 448px;
+    margin: 2px 0 0 408px;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoOesterreich a {
+    text-align: right;
+    display: block;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoOesterreich span {
+    font-family: "OpenSansLight",sans-serif;
+    font-size: .8125rem;
+    font-weight: 300;
+    text-align: center;
+    width: 214px;
+    height: auto;
+    padding: 2px 12px;
+    margin: 0;
+    border-bottom: 1px solid #80a8d1;
+    opacity: 1;
+    left: 212px;
+    top: -2px;
+    bottom: auto;
+}
+.layout_business.oe2016 .headerNavLogoCol.logoOesterreich img {
+    display: inline-block;
+    height: 36px;
+    margin: 2px auto 0;
+    bottom: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header */
+
+.layout_business.oe2016 .headerNavLogoCol.logoLive,
+.layout_business.oe2016 .headerNavLogoCol.logoLive a,
+.layout_business.oe2016 .headerNavLogoCol.logoLive a img,
+.layout_business.oe2016 .headerNavLogoCol.logoPortal {
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -ms-transition: all .1s;
+    transition: all .1s;
+}
+
+/*
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich a,
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich img,
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    transition: all .1s;
+}
+*/
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoPortal,
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoPortal img,
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoLive,
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoLive img {
+    height: 22px;
+    top: 4px;
+}
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoLive {
+    left: 168px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    text-align: right;
+    margin: 0 0 0 496px;
+}
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich a {
+    text-align: right;
+}
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    width: 212px;
+    border: none;
+    top: 5px;
+    left: 77px;
+}
+.layout_business.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich img {
+    margin: 0;
+    height: 22px;
+    bottom: 2px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #35549b;
+}
+.layout_business.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #35549b;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_business.oe2016 .subNavContainer {
+    border-bottom: 8px solid #35549b;
+}
+.layout_business.oe2016 .subNavMenu a {
+    color: #35549b;
+}
+.layout_business.oe2016 .subNavMenu a:hover,
+.layout_business.oe2016 .subNavMenu .active a {
+    color: #fff;
+    background-color: #35549b;
+}
+
+/* ---------------------------------------------------------------- */
+
+.tabbedBox.business .contentSliderBox.business {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ARTIKELDETAIL */
+
+.layout_business.oe2016 .article_box .overlay_box .caption {
+    background-color: #35549b;
+}
+
+.layout_business.oe2016 .service .comment,
+.layout_business.oe2016 .service .comment:hover {
+    background-color: #35549b;
+}
+
+
+.layout_business.oe2016 .comments .hidePostingDiv,
+.layout_business.oe2016 .service .breadcrumbs a,
+.layout_business.oe2016 .service .breadcrumbs a:hover {
+    color: #35549b;
+}
+
+.layout_business.oe2016 .service .comment,
+.layout_business.oe2016 .service .comment:hover {
+    color: #FFF;
+}
+
+.layout_business.oe2016 .article_share .socialInlineText {
+    color: #35549b;
+}
+
+.layout_business.oe2016 .channelTopStoriesHeader {
+    background-color: #35549b;
+    color: #FFF;
+}
+
+.layout_business.oe2016 footer .footer_caption {
+    color: #35549b;
+}
+
+.layout_business.oe2016 .channelTopStories .channel_box a:hover .story_pretitle,
+.layout_business.oe2016 .channelTopStories .channel_box a:hover .story_pagetitle {
+    color: #35549b !important;
+}
+
+.layout_business.oe2016 .service .comment:hover {
+    background-color: #eee;
+    color: #35549b;
+}
+
+.layout_business.oe2016 .relatedArticlesHeadline {
+    color: #35549b;
+}
+
+.layout_business.oe2016 .sidebar .adSlotAdition {
+    margin-bottom: 20px;
+}
+
+/* Voting Artikel */
+
+.layout_business.oe2016 .slideshowVoting .slideshowItemsContainer .title {
+    background-color: transparent;
+}
+
+/* ---------------------------------------------------------------- */
+
+.tabbedBox.business .contentSliderBox {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Konsole */
+
+.layout_business.oe2016 .consoleBoxHeadline span {
+    background-color: #35549b;
+}
+.layout_business.oe2016 .consoleStoryCounter {
+    background-color: #35549b;
+}
+.layout_business.oe2016 .consoleStoryPreTitle,
+.layout_business.oe2016 .consoleStoryLiveTicker {
+    background-color: #35549b;
+}
+.layout_business.oe2016 .console .buttonPrev,
+.layout_business.oe2016 .console .buttonNext {
+    color: #35549b;
+}
+.layout_business.oe2016 .consoleNavigationItem:hover p {
+    /*color: #35549b;*/
+    color: #fff;
+    background-color: rgba(53, 84, 155, 0.8);
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Sidebar Boxen */
+
+.layout_business.oe2016 .sidebar .listbox_header span {
+    color: #35549b;
+}
+
+.layout_business.oe2016 .sidebar .defaultBoxBackgroundColor {
+    background-color: #35549b;
+}
+.layout_business.oe2016 .sidebar .ePaper.austria .title.defaultChannelColor,
+.layout_business.oe2016 .sidebar .ePaper.austria .bottomText.defaultChannelColor,
+.layout_business.oe2016 .sidebar .ePaper.austria .bottomText .bottomLink.defaultChannelColor,
+.layout_business.oe2016 .sidebar .ePaper.austria .bottomLink.defaultChannelHoverColor:hover {
+    color: #35549b;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Aktienkurs Seite -> business/aktienkurs */
+
+.row.tabbedBox.business .atxTicker .atxHeader {
+    border: 1px solid #f1f1f1;
+    margin-top: 8px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.row.tabbedBox.business .standardHeadline.atxHeadline.business {
+    padding: 0;
+    margin: 8px auto 20px;
+}
+.row.tabbedBox.business .standardHeadline.atxHeadline.business h2 {
+    background-image: none;
+}
+
+.row.tabbedBox.business .sidebarVideoBoxContainer .sidebarVideoBox {
+    margin-bottom: 20px;
+}
+
+
+/* Aktienkurs Seite -> business/aktienkurssuche */
+
+.row.tabbedBox.business .atxSearchResult {
+    padding: 8px 0 0;
+}
+.row.tabbedBox.business .atxSearchResult .atxResult {
+    border: 1px solid #f1f1f1;
+    box-shadow: none;
+}
+.row.tabbedBox.business .atxResult .cell.cell1 {
+    width: 188px;
+}

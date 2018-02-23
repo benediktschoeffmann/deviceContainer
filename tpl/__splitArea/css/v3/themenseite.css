@@ -1,0 +1,74 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.contentThemen {
+	width: 975px;
+	background-image: linear-gradient(#ffffff, #ffffff);
+}
+.contentThemen a {
+	text-decoration: none;
+}
+.contentThemen .themenBreadcrumb a {
+	text-decoration: none;
+	background-color: #DD1010;
+	color: #ffffff;
+	padding: 5px;
+	font-size: 0.875rem;
+}
+.contentThemen .themenTitelTop h2 {
+	text-decoration: none;
+	background-color: #DD1010;
+	color: #ffffff;
+	padding: 5px;
+	font-size: 1.5625rem;
+}
+.contentThemen #themenTitel {
+	font-size: 2rem;
+}
+.contentThemen .left {
+	float: left;
+}
+.contentThemen .right,
+.contentThemen .themenArticleBox {
+	float: right;
+}
+.contentThemen .clear {
+	clear: both;
+}
+.contentThemen .themenSideBar {
+	width: 300px;
+}
+.contentThemen .themenArticleBox {
+	width: 640px;
+}
+.contentThemen .themenBigArticleBox .right {
+	width: 330px;
+	padding: 0 10px;
+}
+.contentThemen .themenRelatedStories .b {
+	width: 180px;
+	float: right;
+}
+.contentThemen .themenRelatedStories h3 {
+	font-size: 0.875rem;
+	margin: 0px;
+	overflow: hidden;
+	height: 20px;
+}
+.contentThemen .themenRelatedStories .preTitle {
+	color: #DD1010;
+}
+.contentThemen .themenRelatedStories {
+	font-size: 0.875rem;
+	margin: 0px;
+}
+.contentThemen .firstH2 {
+	background-color: #DD1010;
+	color: #ffffff;
+	padding: 5px;
+	line-height: 1.2;
+	font-size: 1.5rem;
+}

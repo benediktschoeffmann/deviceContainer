@@ -1,0 +1,181 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* (pj) 2016-03-30 jwplayer styles in der box umstylen */
+
+.sidebarVideoBox .jw-state-idle .jw-title {
+    display: none;
+}
+
+.sidebarVideoBox .jw-skin-seven .jw-display-icon-container {
+    border: 2px solid #fff;
+    background-color: #d0113a;
+}
+
+.sidebarVideoBox .jwplayer:hover .jw-display-icon-container {
+    border: 2px solid #d0113a;
+    background-color: #fff;
+}
+
+.sidebarVideoBox .jw-skin-seven:hover .jw-icon-display {
+    color: #d0113a;
+}
+
+.sidebarVideoBox .jw-display-icon-container {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebarVideoBox .jw-display-icon-container .jw-icon-display {
+    font-size: 1.1em;
+    padding: 1px 0 0 1px;
+}
+
+/* (pj) 2016-03-30 end */
+
+
+
+/* (ws) 2016-10-17 Auf Wunsch von Niki soll die Sidebar-Video-Box so aussehen, wie auf oe24TV */
+
+.sidebarVideoBoxContainer .sidebarVideoBox {
+    margin-bottom: 15px;
+    /*background-color: #e8e8e8;*/
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .headline {
+    font-family: "oe24",sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px 6px 0 6px;
+    margin: 0 0 5px;
+    color: #fff;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox img {
+    width: 100%;
+    background-color: #dedede;
+}
+.sidebarVideoBoxContainer .sidebarVideoBoxStory {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    /*background-color: #e8e8e8;*/
+    /*background-color: #fff;*/
+    background-color: transparent;
+}
+.sidebarVideoBoxContainer .sidebarVideoBoxStory:hover,
+.sidebarVideoBoxContainer .sidebarVideoBoxStory:active,
+.sidebarVideoBoxContainer .sidebarVideoBoxStory:focus {
+    text-decoration: none;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .storyImage {
+    display: block;
+    position: relative;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .textBox {
+    /*margin-top: -68px;*/ /* mit PreTitle */
+    margin-top: -40px;     /* ohne PreTitle */
+    position: relative;
+    z-index: 1;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .autostart .textBox {
+    /*margin-top: 0;*/ /* mit PreTitle */
+    margin-top: 1px;   /* ohne PreTitle */
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .preTitle,
+.sidebarVideoBoxContainer .sidebarVideoBox .title,
+.sidebarVideoBoxContainer .sidebarVideoBox .videoLength {
+    text-transform: uppercase;
+    color: #fff;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .preTitle {
+    font-family: "OpenSansRegular",sans-serif;
+    /*font-family: "Open Sans",sans-serif;*/
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.8;
+    padding: 1px 6px;
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .title {
+
+/*
+    font-family: "oe24condensed",sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.35;
+*/
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.55;
+
+    /*
+    damit im unguenstigen Fall kein 6px-Shadow rechts ueber
+    die Box hinausreicht, wird die Breite begrenzt
+    */
+    width: 288px;
+
+    padding: 0;
+    margin: 0 6px;
+    display: block;
+}
+.sidebarVideoBoxContainer .sidebarVideoBox .title span {
+    padding: 0;
+    display: inline;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    box-shadow: -6px 0 0 rgba(0, 0, 0, 0.8), 6px 0 0 rgba(0, 0, 0, 0.8);
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    /* fuer den IE9 */
+    border-collapse: separate;
+}
+@-moz-document url-prefix() {
+    .sidebarVideoBoxContainer .sidebarVideoBox .preTitle {
+        line-height: 1.5;
+        padding-top: 5px;
+    }
+    .sidebarVideoBoxContainer .sidebarVideoBox .title {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.55;
+        margin-top: 1px;
+    }
+    .sidebarVideoBoxContainer .sidebarVideoBox .title span {
+        padding: 0;
+    }
+}
+
+/* (ws) 2016-10-17 end */
+
+/* (ws) 2016-10-20 */
+.sidebarVideoBoxContainer .sidebarVideoBox .videoLength {
+    font-size: .875rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 8px;
+    margin: 0;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+/* (ws) 2016-10-20 end */

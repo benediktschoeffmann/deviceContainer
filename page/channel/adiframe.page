@@ -1,0 +1,14 @@
+<?php
+/**
+* channel ad Iframe
+*
+* @url (?<channel>.*)/adiframe
+* @var channel oe24.core.Channel
+* @var portal oe24.core.Portal
+* @urlManager oe24.oe24
+* @cache 1h
+*/
+
+etpl('oe24.oe24.adIframe', array("portal" => $portal, "channel" => $channel, "object" => 0));
+?>
+

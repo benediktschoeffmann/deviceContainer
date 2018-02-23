@@ -1,0 +1,195 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.layout_madonna.oe2016 .bigHeadLineBox {
+    padding: 0 15px;
+    display: block;
+}
+.layout_madonna.oe2016 .bigHeadLineBox .distanceTop {
+    margin-top: 14px;
+}
+.layout_madonna.oe2016 .bigHeadLineBox .distanceBottom {
+    margin-bottom: 14px;
+}
+.layout_madonna.oe2016 .bigHeadLineBox h2 {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 0 0;
+    margin: 0;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+}
+.layout_madonna.oe2016 .bigHeadLineBox h2 span:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    color: #cc054a;
+    position: relative;
+    top: 1px;
+}
+
+
+.layout_madonna.oe2016 .tabbedBox .content,
+.layout_madonna.oe2016 .tabbedBox .sidebar,
+.layout_madonna.oe2016 .tabbedBox .sidebar.pushDownSidebar {
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+
+.layout_madonna.oe2016 .content .storyText {
+    width: 85%;
+    padding: 0 0 0 5px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+}
+.layout_madonna.oe2016 .content .storyText .storyPreTitle {
+    font-family: "oe24";
+    font-size: .9375rem;
+    text-transform: uppercase;
+    width: auto;
+    padding: 4px 10px 0;
+    color: #fff;
+    background-color: #cc054a;
+    display: inline-block;
+}
+.layout_madonna.oe2016 .content .storyText .storyTitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    width: auto;
+    padding: 0;
+    margin: 1px 0;
+    border-left: 7px solid #fff;
+    color: #000;
+    background-color: transparent;
+    display: block;
+    overflow: hidden;
+    position: static;
+}
+.layout_madonna.oe2016 .content .storyText .storyTitle .storyTitleBackground {
+    padding-right: 7px;
+    background-color: #fff;
+    white-space: pre-wrap;
+}
+
+
+.layout_madonna.oe2016 .content .column3 .storyText {
+    bottom: 6px;
+}
+.layout_madonna.oe2016 .content .column3 .storyText .storyTitle {
+    font-size: 1.125rem;
+}
+
+
+.layout_madonna.oe2016 .content a:hover .storyText .storyPreTitle {
+    color: #fff;
+    background-color: #f70b60;
+}
+.layout_madonna.oe2016 .content a:hover .storyText .storyTitle {
+    color: #cc054a;
+}
+
+
+.layout_madonna.oe2016 .content .column a {
+    padding-top: 0;
+    border-top: none;
+}
+.layout_madonna.oe2016 .content .storyWrapper:hover,
+.layout_madonna.oe2016 .content .column a:hover {
+    border-top: none;
+}
+
+
+.layout_madonna.oe2016 .content .column1 .storyImage img {
+    width: 620px;
+    height: 388px;
+}
+.layout_madonna.oe2016 .content .column2 .storyImage img {
+    width: 292px;
+    height: 292px;
+}
+.layout_madonna.oe2016 .content .column3 .storyImage img {
+    width: 190px;
+    height: 190px;
+}
+
+
+/* Portrait */
+.layout_madonna.oe2016 .content .portrait .column a {
+    padding: 0;
+    border: none;
+    margin-top: 0;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft .column2 .storyImage img {
+    width: 292px;
+    height: 603px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight .column2 .storyImage img {
+    width: 292px;
+    height: 292px;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft .column a:hover {
+    border: none;
+}
+
+
+.layout_madonna.oe2016 .content .column2 {
+    width: 300px;
+    margin-right: 20px;
+}
+.layout_madonna.oe2016 .content .column2.last {
+    margin-right: 0;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft,
+.layout_madonna.oe2016 .content .portrait .columnRight {
+    width: 300px;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft {
+    margin-right: 20px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight {
+    margin-right: 0;
+}
+
+
+.layout_madonna.oe2016 .content .column1 .storyImage img {
+    width: 620px;
+    height: 388px;
+}
+.layout_madonna.oe2016 .content .column2 .storyImage img {
+    width: 300px;
+    height: 300px;
+}
+.layout_madonna.oe2016 .content .column3 .storyImage img {
+    width: 190px;
+    height: 190px;
+}
+
+
+.layout_madonna.oe2016 .content .portrait .columnLeft .column2 .storyImage img {
+    width: 300px;
+    height: 620px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight .column2 .storyImage img {
+    width: 300px;
+    height: 300px;
+}
+
+

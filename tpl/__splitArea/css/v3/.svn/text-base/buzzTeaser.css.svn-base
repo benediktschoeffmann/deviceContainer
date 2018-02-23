@@ -1,0 +1,130 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.buzzTeaserContainer {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.buzzTeaserContainer.showPaddingTop {
+	padding-top: 14px;
+}
+.buzzTeaserContainer.showPaddingBottom {
+	padding-bottom: 14px;
+}
+.buzzTeaserContainer a,
+.buzzTeaserContainer a:hover {
+	text-decoration: none;
+}
+.buzzTeaserContainer img {
+	border: none;
+}
+.buzzTeaserContainer .buzzTeaserBox {
+	padding: 12px 22px 8px;
+	border: 2px solid #fd2354;
+}
+html.boxshadow .buzzTeaserContainer .buzzTeaserBox {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.buzzTeaserContainer .buzzTeaserHeader {
+	text-decoration: none;
+	margin-bottom: 24px;
+	margin-bottom: 32px;
+	display: block;
+	position: relative;
+}
+.buzzTeaserContainer .buzzTeaserHeader:hover {
+	text-decoration: none;
+	color: #fc3159;
+}
+.buzzTeaserContainer .buzzTeaserHeaderLogo {
+	padding: 2px 16px 6px;
+	background-color: #fd2354;
+	position: relative;
+	margin-left: -32px;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=7, Color='#000000') ;
+}
+.buzzTeaserContainer .buzzTeaserHeaderLogo:after {
+	content: " ";
+	width: 0;
+	height: 0;
+	border-color: transparent #dd032e transparent transparent;
+	border-style: solid;
+	border-width: 0 10px 10px 0;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+.buzzTeaserContainer .buzzTeaserHeaderBoxTitle {
+	font-family: "oe24",sans-serif;
+	font-size: 1.5rem;
+	position: absolute;
+	left: 88px;
+	top: 0;
+}
+.buzzTeaserContainer .buzzTeaserStories section {
+	width: 210px;
+	margin-left: 24px;
+	float: left;
+}
+.buzzTeaserContainer .buzzTeaserStories section:first-child {
+	margin-left: 0;
+}
+.buzzTeaserContainer .buzzTeaserStory {
+	position: relative;
+}
+.buzzTeaserContainer .buzzTeaserStory a {
+	text-decoration: none;
+	display: block;
+}
+.buzzTeaserContainer .buzzTeaserStory .buzzTeaserImage {
+	display: block;
+	width: 100%;
+	height: 142px;
+}
+.buzzTeaserContainer .buzzTeaserStory img {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.buzzTeaserContainer .buzzTeaserStory a:hover {
+	text-decoration: none;
+}
+.buzzTeaserContainer .buzzTeaserStory a:hover img {
+    opacity: .8;
+}
+.buzzTeaserContainer .buzzTeaserStory a:hover .buzzTeaserTitle {
+    color: #fc3159;
+}
+.buzzTeaserContainer .buzzTeaserStory .buzzTeaserPreTitle {
+	font-size: .75rem;
+	text-transform: uppercase;
+	color: #808080;
+}
+.buzzTeaserContainer .buzzTeaserStory .buzzTeaserTitle {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.25rem;
+	margin: 0;
+}
+.buzzTeaserContainer .buzzTeaserStory .buzzTeaserMood {
+	font-family: "OpenSansBold",sans-serif;
+	text-align: center;
+	display: block;
+	font-size: 10px;
+	line-height: 48px;
+	width: 40px;
+	height: 44px;
+	color: #fff;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	z-index: 1;
+	background-color: #dd032e;
+}
+html.svg .buzzTeaserContainer .buzzTeaserStory .buzzTeaserMood {
+	background-color: transparent;
+}

@@ -1,0 +1,161 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+#wrap.layout_tv {
+    background: #e6e6e6;
+}
+.layout_tv .consoleStories img {
+    width: 100%;
+    height: auto;
+}
+.layout_tv .console {
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+.layout_tv .console .consoleStories {
+    margin-bottom: 1px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+.layout_tv .console .consoleStoriesItem {
+    display: none;
+}
+.layout_tv .console .consoleStoriesItem:first-child {
+    display: block;
+}
+.layout_tv .console .consoleCounter {
+    padding: 0 8px;
+    color: #fff;
+    background-color: #1a1a1a;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.layout_tv .console .consoleNavigationBox {
+    height: 155px;
+    padding: 0 45px 0 43px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.layout_tv .console .consoleNavigation {
+    width: 10000px;
+    margin: 0 auto;
+}
+.layout_tv .console .consoleNavigationItem {
+    text-align: left;
+    width: 141px;
+    float: left;
+    padding: 8px 8px 9px 8px;
+    background: rgb(252, 252, 252);
+    margin: 0 5px;
+    border: 1px solid #e9ecef;
+}
+.layout_tv .console .consoleNavigationItem .consoleImageWrapper {
+    position: relative;
+}
+.layout_tv .console .consoleNavigationItem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px 0;
+}
+.layout_tv .console .consoleNavigationItem:hover {
+    text-decoration: none;
+    color: rgb(221, 16, 16);
+}
+.layout_tv .console .consoleNavigationItemTitle {
+    font-family: "OpenSansCondensedBold", sans-serif;
+    font-size: .9375rem;
+    line-height: 1.1;
+    height: 36px;
+    padding: 2px 3px 2px 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.layout_tv .consoleNavigationBox .slickPrev,
+.layout_tv .consoleNavigationBox .slickNext {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    width: 28px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: rgb(210, 8, 30);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+.layout_tv .consoleNavigationBox .slickPrev,
+.layout_tv .consoleNavigationBox .slickNext,
+.layout_tv .consoleNavigationBox .slickPrev:hover,
+.layout_tv .consoleNavigationBox .slickNext:hover {
+    background-color: rgb(210, 8, 30);
+}
+.layout_tv .consoleNavigationBox .slickPrev {
+    width: 27px;
+    left: 15px;
+}
+.layout_tv .consoleNavigationBox .slickNext {
+    right: 15px;
+}
+.layout_tv .consoleNavigationBox .slickPrev:before,
+.layout_tv .consoleNavigationBox .slickNext:before {
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 4.125rem;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin-top: -8px;
+    color: #fff;
+    opacity: 1;
+}
+.layout_tv .consoleNavigationBox .slickPrev:before {
+    content: "\2039";
+}
+.layout_tv .consoleNavigationBox .slickNext:before {
+    content: "\203A";
+}
+.layout_tv .consoleNavigationBox .slickPrev:hover:before,
+.layout_tv .consoleNavigationBox .slickNext:hover:before {
+    color: #ffdf03;
+}
+/* Styles aus dem row.css */
+.layout_tv .col.col1 .overlay_box .consoleStoriesItem .caption .captionTitle {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 825px;
+    margin: 5px 0 0;
+    line-height: 1.1;
+}
+.layout_tv .col.col1 .overlay_box .consoleStoriesItem .caption {
+    padding: 15px 25px 15px 25px;
+    background-color: rgba(0,0,0,.75);
+    font-size: 50px;
+    width: 100%;
+    -webkit-transition: background-color 0.21s, color 0.21s;
+    -moz-transition: background-color 0.21s, color 0.21s;
+    -o-transition: background-color 0.21s, color 0.21s;
+    -ms-transition: background-color 0.21s, color 0.21s;
+    transition: background-color 0.21s, color 0.21s;
+}
+.layout_tv .col.col1 .overlay_box .consoleStoriesItem:hover .caption {
+    color: rgb(221, 16, 16);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.layout_tv .col.col1 .overlay_box .consoleStoriesItem:hover .videoPlay {
+    /*box-shadow: none;*/
+}
+/* // Styles aus dem row.css */

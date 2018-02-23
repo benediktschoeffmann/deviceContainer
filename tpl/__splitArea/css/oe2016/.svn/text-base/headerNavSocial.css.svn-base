@@ -1,0 +1,46 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNav .headerNavSocial {
+	float: right;
+	/*width: 104px;*/
+	width: 130px;
+}
+
+.headerNav .headerNavSocial .socialIcon {
+	width: 26px; 
+	height: 26px; 
+	display: block;
+	float: left;
+
+	background-image: url('/images/layout/social/iconsNav.png');
+
+	opacity: 0.7;
+}
+
+.headerNav .headerNavSocial .socialIcon:hover {
+	opacity: 1;
+}
+.headerNav .headerNavSocial .socialFacebook {
+	background-position: 0 0;
+}
+
+.headerNav .headerNavSocial .socialTwitter {
+	background-position: -30px 0;
+}
+
+.headerNav .headerNavSocial .socialNewsletter {
+	background-position: -90px 0;
+}
+
+.headerNav .headerNavSocial .socialWhatsApp {
+	background-position: -60px 0;
+}
+
+.headerNav .headerNavSocial .socialInstagram {
+	background-position: -120px 0;
+}
+

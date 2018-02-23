@@ -1,0 +1,327 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.content .col.marker {
+	width: 655px;
+	padding-left: 10px;
+	border-left-style: solid;
+	border-left-width: 5px;
+	margin-bottom: 0;
+	margin-left: -15px;
+	margin-bottom: -1px;
+}
+.content .col.marker h2 {
+	font-size: .9375rem;
+	text-transform: uppercase;
+	padding: 4px 18px;
+	margin: -15px 0 0 -15px;
+	color: #fff;
+	border-radius: 0 3px 3px 0;
+	box-shadow: 1px 2px 3px 1px rgba(0,0,0,.1);
+	float: left;
+}
+.content .col .marker_body {
+	padding-top: 28px;
+}
+/* 140705 */
+.content .col.marker.marker_no_stories {
+	border-top: none;
+	border-left: none;
+	background-color: #fff;
+}
+.content .col.marker.marker_no_stories h2 {
+	display: none;
+}
+.content .col.marker.marker_no_stories .marker_body {
+	padding-top: 0;
+}
+/* 140705 */
+.content .col.marker.fussball {
+	border-left-color: #5daf29;
+}
+.content .col.marker.fussball h2 {
+	background-color: #5daf29;
+}
+.content .col.marker.skialpin {
+	border-left-color: #009fe3;
+}
+.content .col.marker.skialpin h2 {
+	background-color: #009fe3;
+}
+.content .tabs_fussball_box {
+	text-align: center;
+	margin-bottom: 28px;
+}
+.content .tabs_fussball {
+	margin-bottom: 28px;
+}
+.content .tabs_fussball a {
+	font-family: "oe24condensed",sans-serif;
+	font-family: "OpenSansBold",sans-serif;
+	font-size: .875rem;
+	text-decoration: none;
+	display: inline-block;
+	padding: 4px 16px;
+	margin: 0 8px;
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+	background-color: #ececec;
+	background-image: linear-gradient(to bottom, #ececec 0px, #fff 100%);
+}
+.content .tabs_fussball a:hover {
+	text-decoration: none;
+	background-color: #dfdfdf;
+	background-image: linear-gradient(to bottom, #dfdfdf 0px, #fff 100%);
+}
+.content .tabs_fussball_box #fussball_bundesliga {
+	display: block;
+}
+.content .tabs_fussball_box #fussball_ersteliga {
+	display: none;
+}
+#fussball_bundesliga,
+#fussball_ersteliga {
+	margin-bottom: 28px;
+}
+#fussball_bundesliga a,
+#fussball_ersteliga a {
+	float: left;
+	width: 60px;
+	height: 60px;
+	padding: 4px;
+	margin: 1px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+	background-color: #ececec;
+	background-image: linear-gradient(to bottom, #ececec 0px, #fff 100%);
+}
+#fussball_bundesliga a:hover,
+#fussball_ersteliga a:hover {
+	background-color: #dfdfdf;
+	background-image: linear-gradient(to bottom, #dfdfdf 0px, #fff 100%);
+}
+#fussball_bundesliga a img,
+#fussball_ersteliga a img {
+	width: 52px;
+	height: 52px;
+}
+/* Spezial Subcontent Ad's start */
+.content .col.marker.ads {
+	width: 635px;
+	border-bottom: none;
+	margin-bottom: -1px;
+}
+.content .col.marker.ads section .col {
+	margin-bottom: 0;
+}
+.content .col.marker.ads {
+	border-left-color: #f0a330;
+}
+.content .col.marker.ads h2 {
+	background-color: #f0a330;
+}
+/*
+.content .col.marker.ads a {
+	font-size: .875rem;
+	line-height: 1.4;
+	margin: 0;
+}
+.content .col.marker.ads strong a {
+	font-family: arial,sans-serif;
+	font-size: .75rem;
+	text-transform: uppercase;
+	display: block;
+	margin: 16px 0 10px;
+	margin: 8px 0 2px;
+	color: #959595;
+}
+.content .col.marker.ads strong a:hover {
+	color: #dd1010;
+}
+.content .col.marker.ads h3 {
+	margin: 0 0 3px;
+}
+.content .col.marker.ads h3 a {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 0 0 3px;
+	color: #484848;
+}
+.content .col.marker.ads strong a:hover,
+.content .col.marker.ads h3 a:hover {
+	color: #dd1010;
+}
+.content .col.marker.ads img[height="1"],
+.content .col.marker.ads img.image_zp {
+	display: none;
+}
+*/
+
+/* Spezial Subcontent Ad's end */
+
+
+
+
+/*
+.a2016 .content .col.marker.ads,
+.oe2016 .content .col.marker.ads,
+.a2016.oe2016 .content .col.marker.ads {
+	/*width: 620px; ---/
+	padding: 0;
+	margin: 0;
+	border: none;
+
+	width: auto;
+	padding: 13px 13px 0;
+	background-color: #eaeaea;
+}
+.a2016 .content .col.marker.ads .marker_body,
+.oe2016 .content .col.marker.ads .marker_body {
+	padding-top: 0;
+}
+.a2016 .content .col.marker.ads h2,
+.oe2016 .content .col.marker.ads h2 {
+	display: none;
+}
+.a2016 .content .col.marker.ads .col,
+.oe2016 .content .col.marker.ads .col {
+	margin: 0 12px 0 0;
+}
+.a2016 .content .col.marker.ads .col.last,
+.oe2016 .content .col.marker.ads .col.last {
+	margin: 0;
+}
+.a2016 .content .col.marker.ads .adsLabel,
+.oe2016 .content .col.marker.ads .adsLabel {
+	text-align: right;
+	padding: 2px 0 6px;
+	margin: 0;
+	color: #949f9b;
+	clear: both;
+}
+
+
+.a2016 .content .col.marker.ads {
+	padding: 0;
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+.a2016 .content .col.marker.ads .col {
+	margin: 0 25px 0 0;
+}
+.a2016 .content .col.marker.ads .adsLabel {
+	display: none;
+}
+*/
+
+
+
+
+/* zwecks DEV */
+/*
+.a2016 .content .col.marker.ads,
+.oe2016 .content .col.marker.ads {
+	background-color: #0f0;
+}
+.a2016 .content .col.marker.ads {
+	background-color: #f00;
+}
+.a2016.oe2016 .content .col.marker.ads {
+	background-color: #00f;
+}
+*/
+/* zwecks DEV end */
+
+
+.a2016 .content .col.marker.ads,
+.oe2016 .content .col.marker.ads {
+	width: auto;
+	/*padding: 13px 13px 4px;*/
+	padding: 13px 13px 13px;
+	margin: 0;
+	border: none;
+}
+.a2016 .content .col.marker.ads h2,
+.oe2016 .content .col.marker.ads h2 {
+	display: none;
+}
+.a2016 .content .col.marker.ads .col,
+.oe2016 .content .col.marker.ads .col {
+	margin: 0 12px 0 0;
+}
+.a2016 .content .col.marker.ads .col.last,
+.oe2016 .content .col.marker.ads .col.last {
+	margin: 0;
+}
+
+.a2016 .content .col.marker.ads {
+	margin-bottom: 15px;
+}
+
+.a2016 .content .col.marker.ads {
+	background-color: #fff;
+}
+.oe2016 .content .col.marker.ads,
+.a2016.oe2016 .content .col.marker.ads {
+	padding-top: 4px;
+	background-color: #eaeaea;
+}
+
+.a2016 .content .col.marker.ads .marker_body,
+.oe2016 .content .col.marker.ads .marker_body,
+.a2016.oe2016 .content .col.marker.ads .marker_body {
+	padding-top: 0;
+}
+
+
+.content .col.marker.ads .adsLabel {
+	display: none;
+}
+.a2016 .content .col.marker.ads .adsLabel,
+.oe2016 .content .col.marker.ads .adsLabel {
+	font-size: .6875rem;
+	text-align: right;
+	padding: 0;
+	margin: 0 0 4px;
+	color: #949f9b;
+	display: block;
+	clear: both;
+}
+
+
+.oe2016 .content .col.marker.ads #CPCSlot11 > div,
+.a2016.oe2016 .content .col.marker.ads #CPCSlot11 > div,
+.oe2016 .content .col.marker.ads #CPCSlot12 > div,
+.a2016.oe2016 .content .col.marker.ads #CPCSlot12 > div,
+.oe2016 .content .col.marker.ads #CPCSlot13 > div,
+.a2016.oe2016 .content .col.marker.ads #CPCSlot13 > div {
+	background-color: #eaeaea;
+}
+
+
+/* Dummy Slots */
+/* Nach der Umstellung muss die Hintergrundfarbe von .adSlotAdition */
+/* auf #eaeaea gesetzt werden. Derzeit ist sie #fff */
+#CPCTNTSlot1.adSlotAdition,
+#CPCTNTSlot2.adSlotAdition,
+#CPCTNTSlot3.adSlotAdition {
+	background-color: #eaeaea;
+}
+
+.oe2016 #TNTSlot1.adSlotAdition,
+.oe2016 #TNTSlot2.adSlotAdition,
+.oe2016 #TNTSlot3.adSlotAdition {
+	background-color: #eaeaea;
+}
+
+/* (ws) 2018-01-22 Niki moechte graue Hintergrundfarbe */
+#CPCSlot1.adSlotAdition,
+#CPCSlot2.adSlotAdition,
+#CPCSlot3.adSlotAdition {
+	background-color: #eaeaea;
+}
+/* (ws) 2018-01-22 end */

@@ -1,0 +1,35 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.careesmaSuche .careesmaLogo {
+	display: block;
+	margin: 0 auto;
+}
+.careesmaSuche .careesmaText {
+	font-size: 0.875rem;
+	padding: 10px 0;
+	text-align: center;
+}
+.careesmaSuche .careesmaForm input[type="text"] {
+	width: 100%;
+}
+.careesmaSuche #careesmaSubmit {
+	background-image: url("http://www.oe24.at/images/layout/freeHTML/search_jobs_gruen.png");
+	height: 40px;
+	width: 150px;
+	font-size: 0;
+	border: none;
+	display: block;
+	margin: 5px auto 0;
+}
+.careesmaSuche #careesmaSubmit:hover {
+	background-position: 0 -40px;
+}
+.careesmaSuche .careesmaForm label,
+.careesmaSuche .careesmaForm input,
+.careesmaSuche .careesmaForm select {
+	font-size: 0.875rem;
+}

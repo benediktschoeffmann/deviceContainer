@@ -1,0 +1,174 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* (pj) 2016-11-21 antennesalzburg.oe24.at */
+
+.layout_antenne_salzburg.oe2016 .headerNavContainer {
+    background-color: #f8ec00;
+    background-image: linear-gradient(to bottom, #f8ec00 20%, #f8ec00);
+}
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #e0d500;
+    border-right: 1px solid #e0d500;
+}
+.layout_antenne_salzburg.oe2016 .headerNavMain,
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #f8ec00;
+    color: #fff;
+}
+/* (pj) 2016-11-21 antennesalzburg.oe24.at // */
+
+/* (mh) 2016-11-22 antennesalzburg.oe24.at // */
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem > a,
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem > a:active,
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem > a:focus {
+    color: #000;
+}
+.layout_antenne_salzburg.oe2016 .headerNavMain .headerNavMainItem > a:hover span {
+    color: #E3001D;
+}
+/* (mh) 2016-11-22 antennesalzburg.oe24.at // */
+
+
+/* ---------------------------------------------------------------- */
+
+.layout_antenne_salzburg.oe2016 .headerNavLogo {
+    padding: 2px 8px;
+}
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoPortal {
+    width: 342px;
+}
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 80px;
+}
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 506px;
+    height: 84%;
+}
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoOesterreich span {
+    left: 40px;
+}
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 36px;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header antenne salzburg */
+
+.layout_antenne_salzburg.oe2016 .headerNavLogo,
+.layout_antenne_salzburg.oe2016 .headerNavLogo a,
+.layout_antenne_salzburg.oe2016 .headerNavLogo a img,
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoOesterreich,
+.layout_antenne_salzburg.oe2016 .headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.layout_antenne_salzburg.oe2016 .stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogo {
+    height: 30px;
+    padding: 1px 8px 7px;
+    padding: 3px 8px;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogo a,
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogoCol.logoPortal {
+    width: 110px;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    display: none;   
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-11-21 Antenne Salzburg Farben */
+.layout_antenne_salzburg.oe2016 .subNavMenu a {
+    color: #e0d500;
+}
+
+.layout_antenne_salzburg.oe2016 .subNavMenu .active a,
+.layout_antenne_salzburg.oe2016 .subNavMenu a:hover {
+    background-color: #e0d500;
+    color: #fff;
+}
+
+.layout_antenne_salzburg.oe2016 .subNavContainer {
+    border-bottom: 8px solid #e0d500;
+}
+
+.layout_antenne_salzburg.oe2016 .subNavContent > a:hover,
+.layout_antenne_salzburg.oe2016 .subNavContent .subNavMore > a:hover {
+    color: #e0d500;
+}
+/* (pj) 2016-11-21 end */
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-11-21 Antenne Salzburg Farben */
+.layout_antenne_salzburg.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #e0d500;
+}
+.layout_antenne_salzburg.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #e0d500;
+}
+/* (pj) 2016-11-21 end */
+
+
+/* --------------------------------- */
+
+.layout_antenne_salzburg.oe2016 .headerNavLogo a span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 {
+    margin-left: 10px;
+}
+.layout_antenne_salzburg.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 span {
+    font-size: 1rem;
+}
+
+/* MH 20161205 */
+
+/* --------------------------------- */
+
+/* Countdown Bademeistervoting */
+
+#antenneBademeisterCountdown {
+    background-color: #feed01;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+
+    max-width: 960px;
+    width: 100%;
+    margin: 8px auto 10px;
+    padding: 5px 10px;
+
+    text-align: center;
+
+}

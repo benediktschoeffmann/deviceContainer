@@ -1,0 +1,42 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.olympiaInfoBox {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.olympiaList {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.olympiaListItem {
+    font-family: "oe24",sans-serif;
+    font-size: 2rem;
+
+    display: table-cell;
+    border-left: 3px solid #fff;
+
+    padding: 15px 20px;
+    vertical-align: middle;
+    text-align: center;
+
+    line-height: 1.1;
+    color: #fff;
+
+    word-wrap: break-word;
+    text-decoration: none;
+}
+.olympiaListItem:nth-child(1) {
+    border-left: none;
+}
+.olympiaListItem:hover,
+.olympiaListItem:active,
+.olympiaListItem:focus {
+    color: #fff;
+}

@@ -1,0 +1,1273 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+.article_box .overlay_box .arrowContainer {
+	background-color: #ffffff;
+	position: absolute;
+	top: 115px;
+	width: 32px;
+	height: 80px;
+}
+
+
+.article_box .overlay_box .arrowContainerLeft {
+	left: 0px;
+}
+.article_box .overlay_box .arrowContainerRight {
+	right: 0px;
+}
+.article_box .overlay_box .arrow {
+	position: absolute;
+	top: 0;
+	font-size: 5rem;
+}
+.article_box .overlay_box .arrow:hover {
+	text-decoration: none;
+}
+.article_box .overlay_box .arrowLeft {
+	left: -25px;
+}
+.article_box .overlay_box .arrowRight {
+	right: -25px;
+}
+.article_box .overlay_box {
+	/*margin-bottom: 28px;*/
+	/* (ws) 2014-07-01 */
+	margin-bottom: 0;
+}
+/* (pj) 2016-02-01 dem video oben ein padding-bottom geben, damit der Titel nicht am Video klebt */
+.article_box .articleTopVideo {
+	padding-bottom: 10px;
+}
+/* (pj) end */
+.article_box .slideshow {
+	/*margin-bottom: 34px;*/
+	margin-bottom: 14px;
+}
+.article_box h1 {
+	font-size: 3rem;
+	line-height: 1;
+	margin: 0 0 14px 0;
+}
+
+.article_box h2 {
+	font-size: 1.25rem;
+	margin: 0 0 28px 0;
+}
+/* (ws) 2016-09-14 */
+.article_box .topOverlayCaption.firstVideoCaption {
+	display: none;
+}
+/* (ws) 2016-09-14 end */
+.article_box .article_teaser {
+	font-size: 1.0625rem;
+	line-height: 1.4;
+	display: block;
+	margin: 12px 0;
+}
+.article_box a,
+.live_ticker_body a {
+	color: #dd1010;
+}
+.article_box a:hover,
+.live_ticker_body a:hover {
+	color: #dd1010;
+}
+/* (ws) 2014-07-01 */
+.article_box p.copyright {
+	margin: 0 0 2px 0;
+}
+.article_box .article_body p {
+	margin: 0 0 14px;
+}
+.article_box span.copyright {
+	display: block;
+	margin: 0 0 2px 0;
+}
+
+/* (ws) 2015-10-12 */
+/*
+.article_box .article_body img {
+	width: 100%;
+}
+*/
+.article_box .article_body img {
+	max-width: 100%;
+	/*margin: 0 auto;*/
+	/*display: block;*/
+}
+
+.article_box .article_body .imageSlideShowWrapper img {
+	width: 100%;
+}
+/* (ws) 2015-10-12 // */
+.article_box .article_body p > strong {
+	/*font-family: "OpenSansBold",sans-serif;*/
+	/*font-size: 1rem;*/
+	font-size: .9375rem;
+	line-height: 1.4;
+}
+/* (ws) 2016-06-15 */
+.article_box .article_body h2,
+.article_box .article_body h3,
+.article_box .article_body h4,
+.article_box .article_body h2 strong,
+.article_box .article_body h3 strong,
+.article_box .article_body h4 strong {
+	font-weight: normal;
+}
+.article_box .article_body h2 {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.0625rem;
+	line-height: 1.4;
+	margin: 10px 0;
+}
+.article_box .article_body h3 {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	margin: 0;
+}
+.article_box .article_body h4 {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: .9375rem;
+	line-height: 1.4;
+	margin: 0;
+}
+
+/* (ws) 2016-07-12 */
+.article_box .article_body .imageSlideShow h2 {
+	margin: 0;
+}
+/* (ws) 2016-07-12 // */
+
+/* (ws) 2016-06-15 // */
+.article_box .article_body ul,
+.article_box .article_body li {
+	list-style-type: disc;
+	margin-left: 8px;
+	font-size: 0.9375rem;
+}
+/* (pj) 2016-03-29 JWPlayer 7 nutzt beim rightClick auch ul und li, hier wirds ueberschrieben */
+.article_box .article_body .videoPlayer ul,
+.article_box .article_body .videoPlayer li {
+	list-style-type: none;
+	margin: 0;
+}
+/* (pj) 2016-03-29 end */
+.article_box .article_body ol li {
+	list-style-type: decimal;
+	margin-left: 16px;
+}
+.article_box .article_box_top_copyright {
+	display: none;
+	font-size: 0.75rem;
+	text-align: right;
+	margin: 0 0 2px;
+}
+.article_box .article_box_top_copyright.active {
+	display: block;
+}
+.service {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: .875rem;
+	line-height: 1.3;
+	/*margin-bottom: 34px;*/
+	margin-bottom: 0;
+}
+.service a {
+	display: inline-block;
+	padding: 2px 6px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #ced2d5;
+}
+.service a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #ced2d5;
+}
+.service .comment,
+.service .comment:hover {
+	margin-right: 12px;
+	background-color: #dd1010;
+}
+.service a,
+.service .breadcrumbs,
+.service .breadcrumbs span {
+	vertical-align: middle;
+}
+.service .breadcrumbs {
+	display: inline-block;
+	margin-left: 6px;
+}
+.service .breadcrumbs li {
+	display: inline-block;
+}
+.service .breadcrumbs a {
+	padding: 2px 4px;
+	color: #dd1010;
+	background-color: #fff;
+}
+.service .breadcrumbs span {
+	font-weight: bold;
+	display: inline-block;
+	padding: 2px 0;
+	color: #ced2d5;
+}
+.service .breadcrumbs .icon_house,
+.service .breadcrumbs .icon_house:before {
+	font-family: 'icomoon';
+	padding: 2px 0;
+	color: #ced2d5;
+}
+.service.recipe {
+	margin: 14px 0;
+}
+.service.recipe .breadcrumbs {
+	margin-left: 0;
+}
+
+/* (ws) 2015-12-04 */
+.article_box h1 {
+	width: 542px;
+}
+.article_box .service,
+.article_box .article_teaser,
+.article_box .article_pages,
+.article_box .article_body,
+.article_box .article_ticker {
+	width: 582px;
+}
+
+
+/* (ws) 2015-12-04 // */
+
+
+
+.article_box_wrapper {
+	position: relative;
+}
+.article_pages {
+	line-height: 1.4;
+	display: block;
+	margin: 0 0 28px 0;
+	text-align: center;
+	font-size: 0.875rem;
+	padding: 5px 0px;
+}
+.article_pages a {
+	text-decoration: none;
+	padding: 0px 6px;
+	margin: 0 1px;
+	color: #262626;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.article_pages a.active,
+.article_pages a:hover {
+	color: #fff;
+	background-color: #dd1010;
+}
+.article_social {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-right: 2px solid #dd1010;
+	/*width: 65px;*/
+	margin-right: -22px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-align: right;
+	padding: 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	border-radius: 3px 0px 0px 3px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, .2);
+}
+.article_social .twitter {
+	cursor: pointer;
+	display: block;
+	text-align: right;
+	padding-top: 5px;
+	/*width: 40px;*/
+}
+.article_social .g-plusone {
+	/*display: block;*/
+}
+/* Artikel Share */
+.article_share {
+	padding: 0;
+	margin: 14px 0;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.article_share .socialInlineText {
+	/*font-family: "oe24",sans-serif;*/
+	/*font-size: .75rem;*/
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 10px;
+	/*color: #a6a6a6;*/
+	/*color: #262626;*/
+	color: #dd1010;
+}
+.article_share .socialInlineSocials {
+	display: inline-block;
+	padding: 0 0 3px;
+}
+.article_share .socialInlineSocials a {
+	font-size: 2rem;
+	display: inline-block;
+	padding: 0 4px;
+	margin: 0 4px;
+	text-decoration: none;
+}
+.article_share .socialInlineSocials a:hover {
+	background-color: #ced2d5;
+	border-radius: 4px;
+}
+.article_share .socialInlineText,
+.article_share .socialInlineSocials,
+.article_share .socialInlineSocials a {
+	vertical-align: middle;
+}
+.article_share .icon_facebook {
+	color: #3a5999;
+}
+.article_share .icon_twitter {
+	color: #00bbff;
+}
+.article_share .icon_googleplus {
+	color: #dd4b39;
+}
+.article_share .icon_mail {
+	color: #262626;
+}
+.article_social_inline {
+	height: 32px;
+	line-height: 32px;
+	margin: 8px 0;
+}
+.article_share .socialInlineText {
+	height: 32px;
+	line-height: 32px;
+	float: left;
+}
+.article_share .addthis_sharing_toolbox {
+	width: 348px;
+	margin-right: -2px;
+	float: right;
+}
+.article_share .addthis_sharing_toolbox .at-share-tbx-element {
+	height: 32px;
+	line-height: 32px;
+	margin-bottom: 0;
+}
+/* Channel Top Stories des Artikel */
+.channelTopStoriesContent {
+    background-color: #fff;
+    padding: 28px 15px 0;
+    padding: 0 15px;
+    width: 990px;
+}
+
+
+
+.channelTopStoriesHeader {
+	font-family: "oe24",sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	color: #dd1010;
+}
+.content .channelTopStories .col2 {
+    margin-right: 42px;
+}
+/* Slideshow Thumbnails ? */
+.article_thumbnails {
+	margin-bottom: 28px;
+}
+.article_thumbnails img {
+	margin-right: 2px;
+	padding: 4px;
+	border: 2px solid #e3e3e3;
+	border-radius: 3px;
+	/*box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);*/
+}
+.article_thumbnails .article_page_body {
+	text-align: center;
+}
+.article_ticker {
+	margin-bottom: 28px;
+}
+.article_ticker .btn_ticker_reload {
+	display: block;
+	width: 100%;
+	background-color: #DD1010;
+	background-image: linear-gradient(to bottom, #FF5858 0px, #D10A0A 100%);
+	color: #ffffff;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+	padding: 10px;
+	font-size: 1.25rem;
+	margin-bottom: 28px;
+}
+.article_ticker .btn_ticker_reload:hover {
+	/*background-image: linear-gradient(to bottom, #FF5858 0px, #D10A0A 100%);*/
+	color: yellow;
+}
+.article_ticker p {
+	margin: 0 0 0.75rem;
+}
+.article_ticker .ticker_row {
+	border-top: 1px solid #dadada;
+}
+.article_ticker .ticker_row.first_ticker {
+	border-top: 0px;
+}
+.article_ticker .ticker_row.first_ticker h3 {
+	color: #DD1010;
+}
+.article_ticker .ticker_info,
+.article_ticker .ticker_body {
+	float: left;
+}
+.article_ticker .ticker_info {
+	position: relative;
+	width: 100px;
+	padding: 25px 20px 20px 20px;
+	color: #a0a0a0;
+}
+.article_ticker .ticker_info.ticker_text_only {
+	padding: 20px 20px 20px 20px;
+}
+.article_ticker .ticker_info .marker {
+	display: block;
+	width: 22px;
+	height: 22px;
+	/*margin: 0 0 0 -33px;*/
+	background: transparent url(<?slp('image', 'rl2014/ticker/ticker_dot.png')?>) no-repeat center;
+	position: absolute;
+	right: -13px;
+	top: 26px;
+}
+.article_ticker .ticker_info.ticker_text_only .marker {
+	top: 21px;
+}
+.article_ticker .ticker_body {
+	width: 482px;
+	padding: 20px;
+	border-left: 4px solid #dadada;
+}
+.article_ticker .ticker_body h3 {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	margin: 0 0 .75rem;
+}
+.article_ticker .ticker_body img {
+	width: 438px;
+}
+.article_ticker .relatedImage {
+	margin-top: 28px;
+}
+/* MailTo */
+.article_box .userForm {
+	margin-top: 14px;
+}
+.article_box .userForm .formRequired,
+.article_box .userForm .userFormError {
+	color: #dd1010;
+}
+.article_box .userForm table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+.article_box .userForm table td {
+	font-size: .875rem;
+	vertical-align: top;
+	padding: 10px;
+}
+.article_box .userForm table td.firstCell {
+	text-align: right;
+}
+.article_box .userForm table td.userFormSubmit {
+	text-align: right;
+}
+.article_box .userForm table td p {
+	margin: 0 0 7px 0;
+}
+.article_box .userForm table td input[type="text"],
+.article_box .userForm table td textarea {
+	width: 100%;
+}
+.article_box .backTo a,
+.article_box .backTo a:hover {
+	text-decoration: none;
+}
+/* Artikel Gewinnspiel */
+.article_box .article_contest {
+	margin-top: 28px;
+}
+
+/* (bs) 2015-11-03 Reload-Button, DAILY-343  */
+.article_box .service.adReloadButton {
+	text-align: center;
+}
+.article_box .transparencyWrapper {
+	position: relative;
+}
+.article_box .adReloadReadMore {
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.article_box .adReloadReadMore:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0; left: 0;
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+
+/*** (bs) 2016-02-02 schiebe alle oe2016 regeln runter */
+
+
+.a2016 .article_box .overlay_box .arrowContainer {
+	background-color: #dd1010;
+}
+.a2016 .article_box .overlay_box .arrowContainer:hover/*,
+.oe2016 .article_box .overlay_box .arrowLeft:hover,
+.oe2016 .article_box .overlay_box .arrowRight:hover*/
+/*,
+.oe2016 .article_box a:hover,
+.oe2016 .live_ticker_body a:hover*/ {
+	background-color: #fff;
+
+}
+
+.a2016 .article_box .overlay_box .arrowLeft,
+.a2016 .article_box .overlay_box .arrowRight {
+	color: #fff;
+}
+.a2016 .article_box .overlay_box .arrowLeft:hover,
+.a2016 .article_box .overlay_box .arrowRight:hover {
+	color: #dd1010;
+}
+
+.a2016 .article_box .overlay_box .arrowContainer:hover,
+.a2016 .article_box .overlay_box .arrowLeft:hover,
+.a2016 .article_box .overlay_box .arrowRight:hover
+/*,
+.oe2016 .article_box a:hover,
+.oe2016 .live_ticker_body a:hover */
+{
+	color: #dd1010;
+}
+
+.a2016 .article_box .overlay_box .arrow {
+	font-size: 4rem;
+}
+
+.a2016 .article_box .overlay_box .arrowContainer {
+	height: 62px;
+	top: 122px;
+}
+
+.a2016 .article_box .overlay_box .arrowRight {
+	right: -18px;
+}
+.a2016 .article_box .overlay_box .arrowLeft {
+	left: -18px;
+}
+.a2016 .article_box h1 {
+	margin-bottom: 18px;
+}
+.a2016 .article_box h1 {
+	width: 100%;
+}
+.a2016 .article_box .service,
+.a2016 .article_box .article_teaser,
+.a2016 .article_box .article_pages,
+.a2016 .article_box .article_body,
+.a2016 .article_box .article_ticker {
+	width: 100%;
+}
+.a2016 .article_box .article_body img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.a2016 .article_box .video_player {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #edebeb;
+	border-top: 1px solid #edebeb;
+	padding-bottom: 5px;
+}
+.a2016 .article_box .video_player.noHeadline {
+	border-bottom: none;
+	border-top: none;
+}
+.a2016 .article_box .video_player.noHeadline .oe2016InlineHeadline {
+	display: none;
+}
+/* (bs) 2015-11-17 OE2016-24 */
+.a2016 .content.channelTopStoriesContent {
+	padding-left: 15px;
+}
+/* (bs) end*/
+
+
+
+/* (bs) 2015-11-17 OE2016-24 */
+/*
+.a2016 .service .addthis_sharing_toolbox {
+	float: right;
+	margin-top: -6px;
+}
+*/
+
+/* (ws) 2015-12-04 */
+/*
+.oe2016 .article_box .service {
+	width: 632px;
+}
+*/
+/* (ws) 2015-12-04 // */
+
+
+/* (ws) 2016-03-24 OE2016-24 */
+.a2016 .service .addthis_sharing_toolbox {
+	float: none;
+	margin-top: 22px;
+	margin-left: -3px;
+}
+/* (ws) 2016-03-24 OE2016-24 end */
+.a2016 .service .addthis_sharing_toolbox span {
+	margin-top: -2px;
+	margin-left: -6px;
+}
+
+
+.a2016 .relatedArticles {
+	/*padding: 10px;*/
+	/*background-color: #f8f8f8;*/
+	/*margin-top: 38px;*/
+}
+.a2016 .relatedArticlesItem {
+	border-top: 1px solid #ebebeb;
+}
+.a2016 .relatedArticlesItem:first-child {
+	/*border-top: none;*/
+}
+.a2016 .relatedArticles a {
+	padding: 6px 0;
+	display: block;
+}
+.a2016 .relatedArticles a,
+.a2016 .relatedArticles a:hover {
+	text-decoration: none
+}
+.a2016 .relatedArticles a:hover {
+	background-color: #f4f2f3;
+}
+.a2016 .relatedArticlesHeadline {
+	font-family: "OpenSans",sans-serif;
+	font-size: 1.25rem;
+	padding-bottom: 4px;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #dd1010;
+	text-transform: uppercase;
+}
+.a2016 .relatedArticlesImage {
+	float: left;
+}
+.a2016 .relatedArticlesImage img {
+	width: 92px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	display: inline-block;
+}
+.a2016 .relatedArticlesTitle,
+.a2016 .relatedArticlesPreTitle {
+	font-size: 0.9375rem;
+	padding-left: 102px;
+	display: block;
+}
+.a2016 .relatedArticlesPreTitle {
+	font-size: 0.8125rem;
+	font-style: italic;
+}
+
+
+/*Werbung im "mehr news" teil unten*/
+.a2016 .content.channelTopStoriesContent .col2 {
+	width: 300px;
+	margin-right: 30px;
+}
+
+.a2016 .content.channelTopStoriesContent .col.last {
+	margin-right: 0;
+}
+
+/* OE2016 Artikel Top Gelesen Box*/
+
+.a2016 .articleTopRead {
+	width: 960px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	position: relative;
+}
+
+.a2016 .articleTopRead .headline {
+	background-color: #dd1010;
+	text-transform: uppercase;
+	padding: 1px 0 0px 5px;
+	/*margin: 0 0 10px 0;*/
+	line-height: 1.25;
+	color: #fff;
+	font-size: 1.3125rem;
+	font-weight: bold;
+	font-family: "OpenSans", sans-serif;
+}
+.a2016 .articleTopRead .articles {
+/*	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;*/
+	/*height: 300px;
+	white-space: nowrap;*/
+	position: relative;
+	/*padding-left: 20px;
+	padding-right: 20px;
+	*/
+	/*margin-top: 10px;*/
+	width: 920px;
+	margin-left: 27px;
+	margin-right: auto;
+}
+
+.a2016 .articleTopRead .articles img {
+	padding-top: 10px;
+}
+
+.a2016 .articleTopRead .articleWrap {
+	float: left;
+	position: relative;
+	/*width: 290px;*/
+	/*height: 300px;*/
+	/*padding: 5px 0 0 14px;*/
+	margin-top: 10px;
+	display: block;
+}
+
+.a2016 .articleTopRead .articleWrap a {
+	text-decoration: none;
+}
+
+.a2016 .articleTopRead .numberCircle {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	background-color: #dd1010;
+	color: #fff;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	padding-left: 8px;
+	z-index: 5;
+	/*transform: translateZ(0px);*/
+}
+
+.a2016 .articleTopRead .preTitle,
+.a2016 .articleTopRead .title,
+.a2016 .articleTopRead .leadText {
+	/*font-family: Arial,sans-serif;*/
+	font-family: "oe24condensed",Arial,sans-serif;
+	padding-top: 2px;
+	overflow: hidden;
+	display: block;
+}
+
+.a2016 .articleTopRead .preTitle {
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	/*text-transform: uppercase;*/
+	/*font-size: 0.8125rem;*/
+	font-size: 12px;
+	color: #8c8c8c;
+	font-weight: 700;
+}
+.a2016 .articleTopRead .title {
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.a2016 .articleTopRead .title:hover {
+	color: #dd1010;
+}
+
+.a2016 .articleTopRead .leadText {
+	/*font-size: 0.9375rem;*/
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: none;
+	color: #8c8c8c;
+	font-family: "OpenSansRegular", Verdana, Arial, sans-serif;
+	}
+
+
+/*
+.oe2016 .articleTopRead .title {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.oe2016 .articleTopRead .leadText {
+	font-size: 0.9375rem;
+	font-weight: normal;
+}*/
+
+.a2016 .articleTopRead .arrowContainer {
+	position: absolute;
+	width: 25px;
+	height: 62px;
+	background-color: #eeeeee;
+	color: #dd1010;
+	top: 150px;
+	-ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.a2016 .articleTopRead .arrowContainer:hover {
+	color: #fff;
+	background-color: #dd1010;
+}
+
+.a2016 .articleTopRead .arrowContainer span {
+	display: block;
+	/*margin-left: 4px;*/
+	font-size: 4rem;
+	margin-top: -25px;
+	margin-left: 3px;
+}
+.a2016 .articleTopRead .arrowContainer.leftArrow {
+	left: 0px;
+}
+
+.a2016 .articleTopRead .arrowContainer.rightArrow {
+	right: 0px;
+}
+
+.a2016 .videoEntry a:hover>.videoPreTitle {
+	text-decoration: none;
+}
+
+/* overrides für money */
+.layout_money.oe2016 .videoContentBox .videoContentBoxHeadline {
+	background-color: #184089;
+}
+.layout_money.oe2016 .videoContentBox .videoEntry .topVideoCircle {
+	background-color: #184089;
+}
+.layout_money.oe2016 .videoEntry a:hover>.videoTitle {
+	color: #184089;
+}
+.layout_money.oe2016 .article_box .overlay_box .arrowContainer {
+	background-color: #184089;
+}
+.layout_money.a2016 .articleTopRead .title:hover {
+	color: #184098;
+}
+.layout_money.oe2016 .article_box .overlay_box .arrowContainer:hover {
+	background-color: #fff;
+}
+
+.layout_money.oe2016 .article_box .overlay_box .arrowContainer.arrowContainerLeft .arrow:hover,
+.layout_money.oe2016 .article_box .overlay_box .arrowContainer.arrowContainerRight .arrow:hover {
+	color: #184089;
+}
+
+.layout_money.oe2016 .article_box .oe2016InlineHeadline .type{
+	color: #184089;
+}
+
+.layout_money.oe2016 .imageSlideShowWrapper .arrow {
+	background-color: #184089;
+}
+
+.layout_money.oe2016 .imageSlideShowWrapper .arrow:hover {
+	background-color: #fff;
+}
+
+.layout_money.oe2016 .imageSlideShowWrapper .arrow span:hover {
+	color: #184089;
+}
+.layout_money.oe2016 .relatedArticlesHeadline {
+	color: #184089;
+}
+
+/* Sidebar Ad's */
+.a2016 .sidebar.article .sidebarContainer {
+    padding: 36px 15px 10px 0;
+    position: relative;
+    -webkit-transition: height .5s, padding .5s;
+    transition: height .5s,  padding .5s;
+}
+/*
+.a2016 .sidebar.article #Contentad1,
+.a2016 .sidebar.article #Contentad2,
+.a2016 .sidebar.article #Contentad_Sky1 {
+    display: none;
+    z-index: 999; /* (ws) bb_sticky hat 1000 /
+}
+*/
+.a2016 .sidebar.article #Contentad2,
+.a2016 .sidebar.article #sidebarContainerTopBox {
+    display: none;
+    z-index: 999; /* (ws) bb_sticky hat 1000 */
+}
+.a2016 .sidebar.article #Contentad_Sky1 div {
+	padding-bottom: 20px;
+}
+
+
+
+/* (pj) 2015-12-14 Zum stylen von dem Video mit dem Contentad4 */
+/* zwischen Social_Share und 'Mehr zum Thema' */
+.a2016 .videoAndContentAd {
+	margin-bottom: 14px;
+}
+.a2016 .videoAndContentAd .video_player {
+	float: left;
+	width: 300px;
+	margin: 0 15px 0 0;
+
+	background-color: #edebeb;
+    border: 3px solid #fff;
+    padding: 0 10px 0;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+}
+.a2016 .videoAndContentAd .video_player .oe2016InlineHeadline {
+	padding: 2px 0 1px 0;
+}
+.a2016 .videoAndContentAd .video_player .oe2016InlineHeadline .type {
+	font-family: "OpenSansBold",sans-serif;
+	font-size: 1.25rem;
+	color: #dd1010;
+	text-transform: uppercase;
+}
+.a2016.layout_money .videoAndContentAd .video_player .oe2016InlineHeadline .type {
+	color: #184089;
+}
+.a2016 .videoAndContentAd .video_player .oe2016InlineHeadline .title {
+	display: none;
+}
+/* (pj) 2015-12-14 end */
+
+/* (ws) 2015-12-17 Korrekturen div.service, div.service AddThis */
+.a2016 .service .comment,
+.a2016 .service .printer,
+.a2016 .service .mail,
+.a2016 .service .comment:hover,
+.a2016 .service .printer:hover,
+.a2016 .service .mail:hover {
+	color: #fff;
+}
+.a2016 .service .breadcrumbs a:hover {
+	/*color: #dd1010;*/
+}
+.a2016 .service .addthis_sharing_toolbox {
+	margin-right: -3px;
+}
+.a2016 .service .addthis_sharing_toolbox a {
+	padding: 0;
+}
+.a2016 .service .addthis_sharing_toolbox span {
+	margin: 0;
+}
+.a2016 .service .addthis_sharing_toolbox .at_flat_counter {
+	margin: 0 2px 0 4px;
+	background-color: #ced2d5
+}
+.a2016 .service .addthis_sharing_toolbox .at_flat_counter::after {
+	border-color: transparent #ced2d5 transparent transparent;
+}
+.a2016 .service .addthis_sharing_toolbox .at-share-tbx-element .at-share-btn {
+	margin: 0 3px;
+}
+.a2016 .article_box a,
+.a2016 .live_ticker_body a,
+.a2016 .article_box a:hover,
+.a2016 .live_ticker_body a:hover {
+	/*color: #dd1010;*/
+}
+/* (ws) 2015-12-17 */
+
+
+/** (bs) 2016-02-03 Überschreibe alle Styles, die irgendwie mit Color zu tun haben. */
+/** text selection ist in styles ! */
+/*.oe2016 .article_box .overlay_box .arrowContainer {
+    background-color: #d0113a;
+}
+.oe2016 .article_box .overlay_box .arrowLeft:hover,
+.oe2016 .article_box .overlay_box .arrowRight:hover {
+    color: #d0113a;
+}
+.oe2016 .article_box .overlay_box .arrowContainer:hover,
+.oe2016 .article_box .overlay_box .arrowLeft:hover,
+.oe2016 .article_box .overlay_box .arrowRight:hover,
+.oe2016 .article_box a:hover,
+.oe2016 .live_ticker_body a:hover {
+    color: #d0113a;
+}
+.oe2016 .relatedArticlesHeadline {
+    color: #d0113a;
+}
+.oe2016 .articleTopRead .headline {
+    background-color: #d0113a;
+}
+.oe2016 .articleTopRead .numberCircle {
+    background-color: #d0113a;
+}
+.oe2016 .articleTopRead .arrowContainer {
+    color: #d0113a;
+}
+.oe2016 .articleTopRead .arrowContainer:hover {
+    color: #fff;
+    background-color: #d0113a;
+}
+.oe2016 .videoAndContentAd .video_player .oe2016InlineHeadline .type {
+    color: #d0113a;
+}
+.oe2016 .service .breadcrumbs a:hover {
+    color: #d0113a;
+}
+.oe2016 .article_box a,
+.oe2016 .live_ticker_body a,
+.oe2016 .article_box a:hover,
+.oe2016 .live_ticker_body a:hover {
+    color: #d0113a;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* (bs) 2016-01-29 Korrektur der Farben beim Artikel */
+/*------------------------------------------------------*/
+.oe2016 .article_box .overlay_box .caption,
+.oe2016 .article_box .overlay_box .arrowContainer {
+	background-color: #d0113a;
+}
+.oe2016 .article_box .overlay_box .arrowLeft:hover,
+.oe2016 .article_box .overlay_box .arrowRight:hover,
+.oe2016 .article_box .overlay_box .arrowContainer:hover,
+.oe2016 .article_box .overlay_box .arrowLeft:hover,
+.oe2016 .article_box .overlay_box .arrowRight:hover,
+.oe2016 .article_box .userForm .formRequired,
+.oe2016 .article_box .userForm .userFormError,
+.oe2016 .article_box a,
+.oe2016 .article_box a:hover,
+.oe2016 .live_ticker_body a,
+.oe2016 .live_ticker_body a:hover {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .service .comment,
+.oe2016 .service .comment:hover {
+	background-color: #d0113a;
+}
+.oe2016 .comments .hidePostingDiv,
+.oe2016 .service .breadcrumbs a,
+.oe2016 .service .breadcrumbs a:hover {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .article_ticker .btn_ticker_reload {
+	background-color: #d0113a;
+	background-image: linear-gradient(to bottom, #e73239 0px, #d0113a 100%);
+}
+.oe2016 .article_ticker .ticker_row.first_ticker h3 {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .article_pages a.active,
+.oe2016 .article_pages a:hover {
+	color: #fff;
+	background-color: #d0113a;
+}
+
+
+/*------------------------------------------------------*/
+.oe2016 .article_social {
+	border-right: 2px solid #d0113a;
+}
+.oe2016 .article_share .socialInlineText {
+	color: #d0113a;
+}
+
+
+/*------------------------------------------------------*/
+.oe2016 .relatedArticlesHeadline {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .channelTopStoriesHeader {
+	background-color: #d0113a;
+	color: #fff;
+	padding: 4px 10px 0;
+}
+.oe2016 .channelTopStories .channel_box a:hover .story_pretitle,
+.oe2016 .channelTopStories .channel_box a:hover .story_pagetitle {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .articleTopRead .headline,
+.oe2016 .articleTopRead .numberCircle,
+.oe2016 .articleTopRead .arrowContainer:hover {
+	background-color: #d0113a;
+}
+.oe2016 .articleTopRead .arrowContainer,
+.oe2016 .articleTopRead .title:hover {
+	color: #d0113a;
+}
+
+/*------------------------------------------------------*/
+.oe2016 .oe2016InlineHeadline .type,
+.oe2016 .videoAndContentAd .video_player .oe2016InlineHeadline .type {
+	color: #d0113a;
+}
+
+/*-------------------------------------------------------*/
+
+.layout_money.a2016 .defaultChannelColor,
+.layout_money.a2016 .defaultChannelHoverColor:hover,
+.layout_money.a2016 .content .storyWrapper:hover .story_pretitle,
+.layout_money.a2016 .content .storyWrapper:hover .story_pagetitle,
+.layout_money.a2016 .content .column a:hover .storyPreTitle,
+.layout_money.a2016 .content .column a:hover .storyTitle,
+.layout_money.a2016 .content .column .storyPreTitle.withMarker:before,
+.layout_money.a2016 .sidebar .teasers a:hover .storyTitle,
+.layout_money.a2016 .videoEntry a:hover .videoPreTitle,
+.layout_money.a2016 .videoEntry a:hover .videoTitle,
+.layout_money.a2016 .slide a:hover .storyPreTitle,
+.layout_money.a2016 .slide a:hover .storyTitle {
+        color: #174584;
+}
+.layout_money.a2016 .defaultChannelBackgroundColor,
+.layout_money.a2016 .sidebar .defaultChannelBackgroundColor,
+.layout_money.a2016 .videoEntry .topVideoCircle {
+        background-color: #174584;
+}
+.layout_money.a2016 standardHeadline h2,
+.layout_money.a2016 bigHeadline .bigHeadlineText {
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584 65%, #00a3e1);
+}
+.layout_money.a2016 .commentLineLink {
+        border-bottom: 1px solid #174584;
+}
+.layout_money.a2016 .commentLineLink:hover {
+        border-bottom: 1px solid #174584;
+        text-decoration: none;
+        color: #fff;
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584, #00a3e1);
+}
+.layout_money.a2016 .content .storyWrapper:hover,
+.layout_money.a2016 .content .column a:hover {
+        border-top: 6px solid #174584;
+}
+
+
+/* override article link button */
+
+.article_box .articleInlineButton {
+    text-align: center;
+    display: block;
+}
+.article_box .articleInlineButton a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #d0113a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0px 1px 0px 0px #ccc;
+}
+.article_box .articleInlineButton a:focus,
+.article_box .articleInlineButton a:hover,
+.article_box .articleInlineButton a:active,
+.article_box .articleInlineButton a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+ * (ws) 2017-08-09 cellpadding und cellspacing "greift" nicht
+ * daher wird das padding von <td> auf 6px gesetzt, damit zumindest
+ * ein fixierter Abstand vorhanden ist
+ */
+.a2016 .article_box .article_body table {
+	table-layout: fixed;
+	margin: 0 0 14px;
+}
+.a2016 .article_box .article_body table td {
+	padding: 6px;
+	margin: 6px;
+	vertical-align: top;
+}

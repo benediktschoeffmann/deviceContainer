@@ -1,0 +1,374 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.fullpageAds #Superbanner {
+    display: none;
+}
+.fullpageAds .fullpageAdLeft {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    /*margin-left: -640px;*/
+    margin-left: -610px;
+}
+
+.fullpageAds .fullpageAdRight{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: 480px;
+}
+
+.fullpageAds .fullpageAdTop {
+    width: 960px;
+    height: 90px;
+    margin-left: -480px;
+    /*overflow: hidden;*/
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+
+.fullpageAds .fullpageAdMiddle{
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    margin-left: -480px;
+    z-index: 999;
+    width: 960px;
+    max-width: 960px;
+    height: 275px;
+}
+
+.fullpageAds .fullpageAdMiddle {
+    max-height: 275px;
+    transition: max-height 0.5s ease-in;
+    overflow: hidden;
+}
+
+.fullpageAds .fullpageAdMiddle.fullpageAdHide {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+
+.fullpageAds .fullpageAdTop iframe,
+.fullpageAds .fullpageAdLeft iframe,
+.fullpageAds .fullpageAdRight iframe,
+.fullpageAds .fullpageAdMiddle iframe {
+    border: none;
+}
+
+
+/* wrapper and below */
+
+
+
+.fullpageAds #wrap {
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 0;
+    z-index: 1;
+}
+
+.fullpageAds #wrap.a2016,
+.fullpageAds #wrap.oe2016 {
+    /*background-color: #ad5;*/
+    width: 960px;
+}
+
+
+.fullpageAds .headerBox {
+    margin-top: 0;
+}
+
+
+.fullpageAds .oe2016 .standardHeadline {
+    padding: 0 0 0 0;
+}
+.fullpageAds .oe2016 .tabbedBox .content {
+    width: 640px;
+    padding: 12px 20px 0 15px;
+    /*background-color: #da5;*/
+}
+.fullpageAds .oe2016 .tabbedBox .sidebar {
+    width: 320px;
+    padding: 0 15px 8px 20px;
+    /*background-color: #5ad;*/
+}
+.fullpageAds .oe2016 .content.fullwide{
+    padding: 12px;
+}
+.fullpageAds .oe2016.layout_tv .content.fullwide {
+    padding: 0 10px;
+}
+
+.fullpageAds .oe2016 .content .column1 {
+}
+.fullpageAds .oe2016 .content .column1 .storyImage img {
+    width: 605px;
+    height: 302px;
+}
+.fullpageAds .oe2016 .content .column2 {
+    margin-right: 21px;
+}
+.fullpageAds .oe2016 .content .column3 {
+    margin-right: 17px;
+}
+.fullpageAds .oe2016 .content .column.last {
+    margin-right: 0;
+}
+
+
+.fullpageAds .content .col1 {
+    width: 100%;
+}
+.fullpageAds .content .col2 {
+    width: 292px;
+    /*margin-right: 36px;*/
+    margin-right: 21px;
+}
+.fullpageAds .content .col3 {
+    width: 190px;
+    /*margin-right: 25px;*/
+    margin-right: 10px;
+}
+.fullpageAds .content .col.last {
+    margin-right: 0;
+}
+
+.fullpageAds .oe2016 .content .col.marker.ads{
+        padding: 4px 5px 13px 5px;
+}
+
+.fullpageAds .xlKonsoleExtended {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.fullpageAds .oe24tvTopVideoBox {
+    margin: 0 auto;
+}
+
+
+.fullpageAds .contentSliderBox {
+    padding: 0;
+}
+.fullpageAds .contentSliderBoxHeadline {
+    /*margin: 0 -15px 10px;*/
+}
+
+
+.fullpageAds .stickyHeader,
+.fullpageAds .oe2016 .stickyHeader {
+    width: 960px;
+    left: 50%;
+    margin-left: -480px;
+}
+
+.fullpageAds .xlBoxBottom {
+    padding-left: 0;
+    padding-right: 0;
+}
+.fullpageAds .breakingNews{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.fullpageAds .oe24tvTopVideoLayer {
+    margin: 0;
+}
+
+.fullpageAds .nationalratswahlSearch,
+.fullpageAds .nationalratswahl {
+    margin: 10px 0;
+}
+
+.fullpageAds .defaultHtmlBox .embed-container {
+    margin-left: 0 !important;
+}
+
+.fullpageAds .oe2016 .content.fullwide.withBackgroundColor,
+.fullpageAds .oe2016 .tabbedBox.withBackgroundColor .tabbedBoxContainer {
+    margin: 0;
+}
+.fullpageAds .xlHeadLineBox {
+    padding: 0;
+}
+
+.fullpageAds .defaultHtmlBox .olympia2018-nav-item {
+    width: 33%;
+}
+.fullpageAds .defaultHtmlBox .olympia2018-nav-item img {
+    max-width: 100%;
+}
+
+.fullpageAds .radioPlayer .radioPlayerVotingEntrySong {
+    width: 153px;
+}
+
+.fullpageAds .tabbedBoxTv,
+.fullpageAds .tvProgrammSliderBox {
+    margin: 0;
+}
+
+.fullpageAds .oe2016 .olympia2018.sidebar {
+    padding: 0 15px 8px 0;
+    width: auto;
+}
+/* article */
+
+.fullpageAds .a2016 .content.article {
+    width: 640px;
+    /*padding: 18px 15px 0 0;*/
+    padding-right: 0;
+}
+.fullpageAds .a2016 .sidebar.article {
+    width: 320px;
+    padding-left: 0;
+}
+.fullpageAds .a2016 .article_box_wrapper,
+.fullpageAds .article_box .article_date_time,
+.fullpageAds .article_box p.copyright {
+    padding-right: 5px;
+}
+
+
+.fullpageAds .a2016 .row.contentAd {
+    width: 960px;
+    padding: 0;
+}
+.fullpageAds .a2016 .content.channelTopStoriesContent {
+    width: 960px;
+    padding: 0;
+}
+
+
+/* bridgemiddle*/
+
+.fullpageAds.bridgemiddle .headerBox {
+    margin-bottom: 300px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.bridgemiddle .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+
+/* Doublebridge */
+
+.fullpageAds.doublebridge .fullpageAdTop {
+    position: relative;
+}
+
+.fullpageAds.doublebridge .fullpageAdLeft{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /*margin-left: -610px;*/
+}
+.fullpageAds.doublebridge .fullpageAdRight{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: 480px;
+}
+
+.fullpageAds.doublebridge .fullpageAdMiddle{
+    top: 270px;
+    /*top: 230px;*/
+}
+.fullpageAds.doublebridge .headerBox {
+    margin-bottom: 300px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.doublebridge .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+
+
+/* Big Video Middle 100% */
+
+.fullpageAds.fullpageCinematic .fullpageAdMiddle {
+    position: absolute;
+    top: 180px;
+    left: 0;
+
+    width: 100%;
+    max-width: 100%;
+    height: 380px;
+    max-height: 380px;
+
+    margin-left: 0;
+    overflow: hidden;
+    z-index: 999;
+
+}
+.fullpageAds.fullpageCinematic .headerBox {
+    margin-bottom: 400px;
+    transition: margin-bottom 0.5s ease-in;
+}
+.fullpageAds.fullpageCinematic .headerBox.fullpageAdNormal {
+    margin-bottom: 0;
+    transition: margin-bottom 0.5s ease-out;
+}
+.fullpageAds.fullpageCinematic .fullpageAdMiddle.fullpageAdHide {
+    max-height: 0;
+}
+
+/* Skalier */
+
+.fullpageAds.fullPageAdSkalier .fullpageAdLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding-right: 480px;
+    margin-left: 0;
+    height: 800px;
+}
+.fullpageAds.fullPageAdSkalier .fullpageAdRight {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 50%;
+    padding-left: 480px;
+    height: 800px;
+}
+
+@media only screen and (min-width: 0) and (max-width: 990px)  {
+    .fullpageAds .fullpageAdTop,
+    .fullpageAds.doublebridge .fullpageAdTop,
+    .fullpageAds #wrap {
+        /*position: static;*/
+        left: 0;
+        margin-left: 0;
+    }
+    .fullpageAds .fullpageAdMiddle,
+    .fullpageAds.doublebridge .fullpageAdMiddle {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .fullpageAds .headerNavContainer.stickyHeader.headerNavCenterSticky{
+        left: 0;
+        margin-left: 0;
+    }
+
+    /* Article */
+
+    .fullpageAds .a2016 .sidebar.article #Contentad2,
+    .fullpageAds .a2016 .sidebar.article #sidebarContainerTopBox {
+        left: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+

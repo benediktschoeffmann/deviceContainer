@@ -1,0 +1,25 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+@font-face{
+	font-family: 'digital-7';
+	src: url("/images/fonts/digital-7.eot") /* EOT file for IE */
+}
+@font-face{
+	font-family: 'digital-7';
+	src: url("/images/fonts/digital-7.ttf") /* TTF file for CSS3 browsers */
+}
+.wmSidebarWmLiveTicker .wmSidebarLiveTickerHeader,
+.wmSidebarWmLiveTicker .wmLiveTickerTime {
+	display: none;
+}
+.wmSidebarWmLiveTicker a,
+.wmSidebarWmLiveTicker a:hover,
+.wmSidebarWmLiveTicker a:focus {
+	text-decoration: none;
+}
+.wmSidebarWmLiveTicker {
+	text-align: center;
+}

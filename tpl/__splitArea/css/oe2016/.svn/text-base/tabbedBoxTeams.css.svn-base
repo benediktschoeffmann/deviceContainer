@@ -1,0 +1,55 @@
+<?
+/**
+ * @collector noauto
+ */
+?>
+.tabbedBoxTeams .content {
+    width: 100%;
+    padding: 12px 15px 0 15px;
+}
+
+
+/*
+.tabbedBoxTeams .channelsList {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+.tabbedBoxTeams .channelsList:nth-child(3n+3) {
+    margin-right: 0;
+}
+*/
+
+
+.tabbedBoxTeams .channelsList {
+    float: left;
+    margin-right: 30px;
+}
+.tabbedBoxTeams .channelsList.channelsListCols2 {
+    width: 465px;
+}
+.tabbedBoxTeams .channelsList.channelsListCols3 {
+    width: 300px;
+}
+.tabbedBoxTeams .channelsList.channelsListCols2.lastColumn {
+    margin-right: 0;
+}
+.tabbedBoxTeams .channelsList.channelsListCols3.lastColumn {
+    margin-right: 0;
+}
+
+
+.tabbedBoxTeams .channelsList .channelsListItem .itemText:after {
+    /*content: '»';*/
+    content: 'Alle Infos »';
+    width: 20px;
+}
+.tabbedBoxTeams .channelsList .channelsListHeadline {
+    font-size: 1rem;
+}
+.tabbedBoxTeams .channelsList .channelsListItem .itemText {
+    padding: 2px;
+}
+.tabbedBoxTeams .channelsList .channelsListItem .itemIcon {
+    margin-right: 3px;
+}

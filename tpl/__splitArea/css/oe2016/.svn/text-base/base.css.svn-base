@@ -1,0 +1,35 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .clearfix:before,
+.oe2016 .clearfix:after {
+    content: " ";
+    font-size: .1rem;
+    line-height: .1;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.oe2016 .clearfix:after {
+    clear: both;
+}
+.oe2016 .clearfix {
+    *zoom: 1;
+}
+
+
+.oe2016 .defaultHtmlBox .imageTeaser {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.oe2016 .content .defaultHtmlBox .imageTeaser {
+    width: 620px;
+}
+.oe2016 .content .defaultHtmlBox .imageTeaser img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,34 @@
+<?
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.layout_tv .channelTitle {
+	display: block;
+	position: relative;
+	/*margin: 15px 15px 0;*/
+	padding: 0;
+	margin: 0;
+	/*border-bottom: 1px solid #cacaca;*/
+	border-bottom: none;
+}
+.layout_tv .channelTitle h2 {
+	font-family: "oe24",sans-serif;
+	font-size: 2.125rem;
+	line-height: 2.125rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	/*color: #dd1010;*/
+	color: #d0113a;
+	padding: 0 2px 0 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #e6e6e6;
+}
+.layout_tv .videoTopBox {
+	margin: 15px 15px 0;
+	background-color: #fff;
+}

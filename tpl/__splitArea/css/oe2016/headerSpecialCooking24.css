@@ -1,0 +1,621 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_cooking24.oe2016 p::-moz-selection,
+.layout_cooking24.oe2016 span::-moz-selection,
+.layout_cooking24.oe2016 strong::-moz-selection,
+.layout_cooking24.oe2016 h1::-moz-selection,
+.layout_cooking24.oe2016 h2::-moz-selection,
+.layout_cooking24.oe2016 h3::-moz-selection,
+.layout_cooking24.oe2016 a::-moz-selection,
+.layout_cooking24.oe2016 div::-moz-selection,
+.layout_cooking24.oe2016 u::-moz-selection,
+.layout_cooking24.oe2016 img::-moz-selection,
+.layout_cooking24.oe2016 br::-moz-selection,
+.layout_cooking24.oe2016 ul::-moz-selection,
+.layout_cooking24.oe2016 li::-moz-selection,
+.layout_cooking24.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 p::selection,
+.layout_cooking24.oe2016 span::selection,
+.layout_cooking24.oe2016 strong::selection,
+.layout_cooking24.oe2016 h1::selection,
+.layout_cooking24.oe2016 h2::selection,
+.layout_cooking24.oe2016 h3::selection,
+.layout_cooking24.oe2016 a::selection,
+.layout_cooking24.oe2016 div::selection,
+.layout_cooking24.oe2016 u::selection,
+.layout_cooking24.oe2016 img::selection,
+.layout_cooking24.oe2016 br::selection,
+.layout_cooking24.oe2016 ul::selection,
+.layout_cooking24.oe2016 li::selection,
+.layout_cooking24.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .headerNavLogo {
+    padding: 14px 8px 0;
+}
+.layout_cooking24.oe2016 .headerNavLogoCol.logoPortal {
+    width: 262px;
+}
+.layout_cooking24.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 56px;
+}
+.layout_cooking24.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 590px;
+}
+.layout_cooking24.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 46px;
+    bottom: 14px;
+}
+.layout_cooking24.oe2016 .headerNavLogoCol.logoOesterreich span {
+    width: 120px;
+    left: 116px;
+    bottom: 14px;
+}
+
+
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogo {
+    padding: 3px 8px;
+}
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogo a,
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    height: 24px;
+    width: 682px;
+}
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich img {
+    right: 0;
+    bottom: 0;
+}
+.layout_cooking24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    left: 374px;
+    bottom: 0;
+}
+
+
+/* color-change (reise->gesund) 2b4a90->61b6f4 ... 25407c->3194dd */
+.layout_cooking24.oe2016 .headerNavContainer {
+    background-color: #a10f42;
+    background-image: -webkit-linear-gradient(top, #b41152 20%, #dd155b);
+    background-image: linear-gradient(to bottom,#b41152 0,#dd155b 100%);
+}
+
+.layout_cooking24.oe2016 .headerNav .headerNavTopicsCaption {
+	background-color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #b41152;
+    border-right: 1px solid #b41152;
+}
+
+.layout_cooking24.oe2016 .headerNavMain,
+.layout_cooking24.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_cooking24.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #8b0d3f;
+}
+
+.layout_cooking24.oe2016 .subNavMenu a {
+    color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .subNavMenu .active a,
+.layout_cooking24.oe2016 .subNavMenu a:hover {
+    background-color: #a10f42;
+    color: #fff;
+}
+
+.layout_cooking24.oe2016 .subNavContainer {
+    border-bottom: 8px solid #a10f42;
+}
+
+/* CONSOLE */
+
+.layout_cooking24.oe2016 .consoleStoryText {
+    width: 850px;
+}
+.layout_cooking24.oe2016 .console .consoleBoxHeadline span {
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 .console .consoleStoryCounter,
+.layout_cooking24.oe2016 .consoleStoryPreTitle,
+.layout_cooking24.oe2016 .consoleStoryLiveTicker,
+.layout_cooking24.oe2016 .imageSlideShowWrapper .arrow,
+.layout_cooking24.oe2016 .imageSlideShowWrapper .slideshowOverlayBanner,
+.layout_cooking24.oe2016 .imageSlideShowWrapper .bigSlideShow .caption .title {
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 .console .buttonPrev,
+.layout_cooking24.oe2016 .console .buttonNext,
+.layout_cooking24.oe2016 .consoleNavigationItem:hover p,
+.layout_cooking24.oe2016 .imageSlideShowWrapper .arrow span:hover {
+    color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .imageSlideShowWrapper .arrow:hover {
+    color: #a10f42;
+    background-color: #fff;
+}
+
+.layout_cooking24.oe2016 .tabbedBox.kochen .sidebar,
+.layout_cooking24.oe2016 .tabbedBox.cooking24 .sidebar {
+	margin-top: 0px;
+	padding: 20px 15px 8px 20px;
+}
+
+/* ARTIKELDETAIL */
+
+.layout_cooking24.oe2016 .article_box .overlay_box .caption {
+	background-color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .service .comment,
+.layout_cooking24.oe2016 .service .comment:hover {
+	background-color: #a10f42;
+}
+
+
+.layout_cooking24.oe2016 .comments .hidePostingDiv,
+.layout_cooking24.oe2016 .service .breadcrumbs a,
+.layout_cooking24.oe2016 .service .breadcrumbs a:hover {
+	color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .service .comment,
+.layout_cooking24.oe2016 .service .comment:hover {
+	color: #FFF;
+}
+
+.layout_cooking24.oe2016 .article_share .socialInlineText {
+	color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .channelTopStoriesHeader {
+	background-color: #a10f42;
+	color: #FFF;
+}
+
+.layout_cooking24.oe2016 footer .footer_caption {
+	color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .channelTopStories .channel_box a:hover .story_pretitle,
+.layout_cooking24.oe2016 .channelTopStories .channel_box a:hover .story_pagetitle {
+	color: #a10f42 !important;
+}
+
+.layout_cooking24.oe2016 .service .comment:hover {
+	background-color: #eee;
+	color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .relatedArticlesHeadline {
+	color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .sidebar .adSlotAdition {
+	margin-bottom: 20px;
+}
+
+.layout_cooking24.oe2016 .article_box .overlay_box .arrowContainer {
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 .article_box .overlay_box .arrowContainer a:hover {
+    color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .article_pages a {
+    color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .article_pages a.active,
+.layout_cooking24.oe2016 .article_pages a:hover {
+    background-color: #a10f42;
+    color: #fff;
+}
+
+/* FROM channelColors */
+
+.layout_cooking24.oe2016 .kochen.standardHeadline h2,
+.layout_cooking24.oe2016 .kochen.bigHeadline .bigHeadlineText {
+    background-color: #a10f42;
+    background-image: -webkit-linear-gradient(left, #b41152 20%, #dd155b);
+    background-image: linear-gradient(to right,#b41152 0,#dd155b 100%);
+}
+
+.layout_cooking24.oe2016 .contentSliderBox .defaultChannelBackgroundColor,
+.layout_cooking24.oe2016 .kochen .defaultChannelBackgroundColor,
+.layout_cooking24.oe2016 .kochen .sidebar .defaultChannelBackgroundColor,
+.layout_cooking24.oe2016 .headerNav .headerNavMainItem.kochen:hover:after,
+.layout_cooking24.oe2016 .headerNav .headerNavMainItem.kochen.active:after,
+.layout_cooking24.oe2016 .kochen .videoEntry .topVideoCircle,
+.wsRecipe.recipe2016 .ePaper.cooking24 span.defaultbox_header_caption {
+    background-color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .contentSliderBox a:hover .storyTitle,
+.layout_cooking24.oe2016 .kochen .defaultChannelColor,
+.layout_cooking24.oe2016 .kochen .defaultChannelHoverColor:hover,
+.layout_cooking24.oe2016 .kochen .content .storyWrapper:hover .story_pretitle,
+.layout_cooking24.oe2016 .kochen .content .storyWrapper:hover .story_pagetitle,
+.layout_cooking24.oe2016 .kochen .content .column a:hover .storyPreTitle,
+.layout_cooking24.oe2016 .kochen .content .column a:hover .storyTitle,
+.layout_cooking24.oe2016 .kochen .content .column .storyPreTitle.withMarker:before,
+.layout_cooking24.oe2016 .kochen .sidebar .teasers a:hover .storyTitle,
+.layout_cooking24.oe2016 .kochen .videoEntry a:hover .videoPreTitle,
+.layout_cooking24.oe2016 .kochen .videoEntry a:hover .videoTitle,
+.layout_cooking24.oe2016 .kochen .slide a:hover .storyPreTitle,
+.layout_cooking24.oe2016 .kochen .slide a:hover .storyTitle,
+.wsRecipe.recipe2016 .ePaper.cooking24 .ePaperBody a.defaultChannelColor,
+.wsRecipe.recipe2016 .ePaper.cooking24 .ePaperBody span.defaultChannelColor {
+    color: #a10f42;
+}
+
+.layout_cooking24.oe2016 .kochen .content .storyWrapper:hover,
+.layout_cooking24.oe2016 .kochen .content .column a:hover {
+    border-top: 6px solid #a10f42;
+}
+
+.layout_cooking24.oe2016 .recipeBodyWrapper {
+    margin-bottom: 20px;
+}
+
+.layout_cooking24.oe2016 .col.col3.channel_box a:hover .story_pretitle,
+.layout_cooking24.oe2016 .col.col3.channel_box a:hover .story_pagetitle {
+    color: #a10f42 !important;
+}
+
+.layout_cooking24.oe2016 .sidebar .adSlotAdition {
+    margin-bottom: 20px;
+}
+
+.layout_cooking24.oe2016 .content .channel_box.recipe .story_pagetitle {
+    margin: 2px 0 0;
+}
+.layout_cooking24.oe2016 .content .channel_box.recipe .story_copyright {
+    font-family: arial,sans-serif;
+    font-size: .625rem;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 2px 0 0;
+    color: #959595;
+}
+.layout_cooking24.oe2016 .content .recipeInfo {
+}
+.layout_cooking24.oe2016 .content .recipeInfo p {
+    font-size: .875rem;
+    padding: 0;
+    margin: 2px 0 0;
+}
+
+/* Channel Tags */
+.oe2016 .content .recipeChannelTags {
+    margin-bottom: 28px !important;
+}
+
+.oe2016 .content .recipeChannelTags a.recipeChannelTag {
+    text-decoration: none !important;
+}
+.layout_cooking24.oe2016 .content .recipeChannelTags a.recipeChannelTag:hover {
+    color: #a10f42 !important;
+}
+
+/* Rezept */
+.layout_cooking24.oe2016 .wsRecipe .overlay_box img {
+    display: none;
+}
+.layout_cooking24.oe2016 .wsRecipe .overlay_box img:first-child {
+    display: block;
+}
+.layout_cooking24.oe2016 .wsRecipe .article_box h1 {
+    color: #a10f42;
+}
+/* --- --- */
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyLeft,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight {
+    float: left;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyLeft {
+    width: 348px;
+    margin-right: 20px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight {
+    width: 252px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeTeaser {
+    display: block;
+    margin: 14px 0;
+}
+/* Rezept-Info */
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox {
+    background-color: #fff;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_footer,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_body {
+    clear: both;
+    background-color: #fff;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_body {
+    padding: 10px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_footer {
+    font-size: .9375rem;
+    padding: 7px 10px;
+    border-top: 1px solid #f0f1f3;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_footer .recipeAuthor {
+    font-style: italic;
+    color: #a10f42;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox .defaultbox_header {
+    padding: 7px 0;
+    border-bottom: 1px solid #f0f1f3;
+    overflow: hidden;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_icon,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_caption {
+    float: left;
+    vertical-align: baseline;
+    color: #a10f42;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_icon {
+    font-family: "icomoon",sans-serif;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    text-align: center;
+    width: 40px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_caption {
+    font-size: 1.3125rem;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.recipeInfoBox,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories {
+    margin-bottom: 20px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_icon,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox_header_caption {
+    font-size: 1rem;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories a:hover {
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_header,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_footer,
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_body {
+    background-color: #f0dce2;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories a {
+    font-size: .875rem;
+    color: #a10f42;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .defaultbox.similarCategories .defaultbox_header {
+    border-bottom: 1px solid #e1b8c4;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo {
+    font-size: .9375rem;
+    line-height: 25px;
+    padding: 0;
+    margin: 6px 0;
+    background-image: url(<?php slp('image', 'rl2014/recipe/recipeSprite25.png'); ?>);
+    background-repeat: no-repeat;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo .values {
+    display: none;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.duration1 {
+    background-position: 146px 0;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.duration2 {
+    background-position: 146px -25px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.duration3 {
+    background-position: 146px -50px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.effort1 {
+    background-position: 146px -75px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.effort2 {
+    background-position: 146px -100px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.effort3 {
+    background-position: 146px -125px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.price1 {
+    background-position: 146px -150px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.price2 {
+    background-position: 146px -175px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyRight .recipeInfo.price3 {
+    background-position: 146px -200px;
+}
+.layout_cooking24.oe2016 .wsRecipe .icon_printer {
+    font-size: .9375rem;
+    text-decoration: none;
+}
+.layout_cooking24.oe2016 .wsRecipe .icon_printer:hover {
+    text-decoration: none;
+}
+.layout_cooking24.oe2016 .wsRecipe .icon_printer span {
+    padding-left: 6px;
+}
+/* Zutaten */
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredients {
+    padding: 10px 0;
+    margin: 0 0 14px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredients p {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsPerson {
+    font-style: italic;
+    font-weight: bold;
+    padding: 1px 7px 1px 5px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeListTitle {
+    padding-bottom: 8px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsList {
+    padding-bottom: 8px;
+    margin-left: 10px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsList li {
+    font-size: .6rem;
+    list-style: disc;
+    padding-left: 2px;
+    color: #c1c1c1;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsList li span {
+    font-size: .9375rem;
+    padding: 0 3px;
+    color: #262626;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsList li,
+.layout_cooking24.oe2016 .wsRecipe .recipeIngredientsList li span {
+    vertical-align: middle;
+}
+/* Zubereitung */
+.layout_cooking24.oe2016 .wsRecipe .recipeBodyWrapper {
+    padding: 10px 0;
+    margin: 14px 0;
+    border-top: 1px solid #e1e1e1;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBody {
+    font-size: .9375rem;
+    margin: 14px 0;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBody ol {
+    margin-left: 26px;
+}
+.layout_cooking24.oe2016 .wsRecipe .recipeBody ol li {
+    line-height: 1.4;
+    padding-left: 10px;
+    margin: 7px 0;
+    list-style: decimal;
+}
+/* Sharing */
+.layout_cooking24.oe2016 .wsRecipe .at-share-tbx-element {
+    margin-bottom: 6px;
+}
+/* Suche */
+.layout_cooking24.oe2016 .sidebar .recipeSearch .defaultbox_header {
+    border-bottom: none;
+}
+.layout_cooking24.oe2016 .sidebar .recipeSearch .defaultbox_body {
+    font-size: 0.75rem;
+    padding: 0 10px 10px;
+}
+.layout_cooking24.oe2016 .sidebar .recipeSearch .defaultbox_body .textfield {
+    padding: 4px 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+}
+/* ??? */
+.layout_cooking24.oe2016 .recipelist {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.layout_cooking24.oe2016 .recipelist * {
+  font-size: 0.9375rem;
+}
+.layout_cooking24.oe2016 .recipelist a {
+  width: 100%;
+  float: left;
+}
+.layout_cooking24.oe2016 .recipelist a span {
+  display: block;
+  float: left;
+}
+.layout_cooking24.oe2016 .recipelist a:hover {
+    background-color: #a10f42;
+    color: #fff;
+}
+.layout_cooking24.oe2016 .recipelist .headboxes {
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 .recipelist .headboxes div {
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  line-height: 2.2;
+}
+.layout_cooking24.oe2016 .recipelist .title {
+  width: 60%;
+  padding-left: 5px;
+}
+.layout_cooking24.oe2016 .recipelist .duration,
+.layout_cooking24.oe2016 .recipelist .effort {
+  width: 20%;
+}
+.layout_cooking24.oe2016 .recipelist .recipelist_row a {
+  padding: 2px 0;
+}
+
+/* Channel-Tags */
+
+.layout_cooking24.oe2016 .content.oe2016 {
+    float: right;
+}
+.layout_cooking24.oe2016 .sidebar.oe2016 {
+    float: left;
+}
+.layout_cooking24.oe2016 .sidebar.oe2016:after {
+    clear: both;
+}
+
+.layout_cooking24.oe2016 .content.oe2016 .search_box {
+    padding: 20px 0 28px 0;
+}
+
+/* Voting Artikel */
+
+.layout_cooking24.oe2016 .slideshowVoting .slideshowItemsContainer .title {
+    background-color: transparent;
+}
+
+/* Article Content Slider */
+.layout_cooking24.oe2016 .articleContentSliderBox button,
+.layout_cooking24.oe2016 .articleContentSliderBox .sliderCounter {
+    background-color: #a10f42;
+}
+.layout_cooking24.oe2016 .articleContentSliderBox button:hover {
+    background-color: #fff;
+}
+.layout_cooking24.oe2016 .articleContentSliderBox button:hover path.arrow {
+    fill: #a10f42;
+    stroke: #a10f42;
+}
+
+/* Ligatus */
+.layout_cooking24.oe2016 #ligatusframe_78827_7159 .ad_wrapper_78827_7159::before {
+    background-color: #a10f42;
+}
+
+.layout_cooking24.oe2016 #ligatusframe_78827_7159 a:hover .ligatus_cuc_headline,
+.layout_cooking24.oe2016 #ligatusframe_78827_7159 a:hover .ligatus_cuc_teaser {
+    color: #a10f42 !important;
+}

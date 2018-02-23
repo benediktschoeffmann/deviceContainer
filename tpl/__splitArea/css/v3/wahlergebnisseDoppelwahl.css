@@ -1,0 +1,72 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.rightSide .myElection {
+	border-left: 1px solid #cacaca;
+}
+.myElection .contentElection {
+	padding: 0;
+}
+.myElection .contentElection .diagrammBox {
+	background-size: 53px auto;
+	background-position: 8px 14px;
+}
+.myElection .contentElection .leftPart,
+.myElection .contentElection .rightPart {
+	width: 100%;
+	float: none;
+	padding: 0;
+}
+.myElection .contentElection h1 {
+	font-size: 2rem;
+}
+.myElection .contentElection a,
+.myElection .contentElection a:hover {
+	padding: 0;
+}
+.myElection .contentElection .titleRight.upper {
+       width: auto;
+}
+.myElection .contentElection .titleLeft span:after,
+.myElection .contentElection .titleRight span:after {
+	bottom: -9px;
+}
+.myElection .contentElection .diagrammBox {
+	box-shadow: none;
+}
+.myElection .contentElection .diagrammDisplay {
+	margin-bottom: 12px;
+	margin-top: 0px;
+}
+.halfWidthBox .leftSide,
+.halfWidthBox .rightSide {
+	width: 50%;
+	float: left;
+}
+.halfWidthBox {
+	padding: 28px 20px 8px 15px;
+	background-color: #fff;
+}
+.halfWidthBox .leftRightWrapper {
+	box-shadow: 0 2px 5px 2px #ddd;
+}
+.myElection .parts {
+	width: 80%;
+}
+.myElection .parts.partLeft {
+	margin-left: 48px;
+}
+.myElection .parts.partRight {
+	margin-left: 58px;
+}
+.contentElection.linkableTeaser {
+	text-align: center;
+	font-size: 21px;
+	padding-top: 5px;
+}
+.contentElection .linkableTeaserWrapper {
+	border-radius: 2px;
+}

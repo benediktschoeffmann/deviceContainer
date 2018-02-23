@@ -1,0 +1,15 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* https://www.psd-tutorials.de/forum/threads/conditional-comments-im-ie10-und-ie11.164326/#post-2403381 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .xlKonsoleExtendedHeadline span {
+        padding-top: 1.4rem;
+    }
+    .xlBoxBottomHeadline span{
+    	padding-top: 1.4rem;
+    }
+}

@@ -27,11 +27,11 @@ $js = array(
     array(0, '_shared.1_0.common.common'),
     array(0, '_shared.1_0.tracking.agtt.nst.NSTBaseAPI_min'),
 
-    array(0, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
-    array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+    // array(0, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
+    // array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
 
-    // array(0, '_shared.1_0.jwplayer.8_0_11.jwplayer.jwplayer'),
-    // array(0, '_shared.1_0.jwplayer.8_0_11.jwplayerSetup'),
+    array(0, '_shared.1_0.jwplayer.8_0_11.jwplayer.jwplayer'),
+    array(0, '_shared.1_0.jwplayer.8_0_11.jwplayerSetup'),
 
     // ----------------------------------------------------------------
 

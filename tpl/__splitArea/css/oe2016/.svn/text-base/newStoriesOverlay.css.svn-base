@@ -1,0 +1,159 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.newStoriesOverlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-width: 990px;
+    min-height: 400px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+}
+
+
+.newStoriesOverlay.activeOverlay {
+    display: block;
+    background-color: rgba(0,0,0,.8);
+}
+
+
+.newStoriesModal {
+    text-align: center;
+    width: 500px;
+    padding: 30px 30px 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -30%);
+        -ms-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+}
+
+
+.newStoriesModal .newStoriesImage {
+    display: block;
+    width: 215px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    background-color: #e73239;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a)
+}
+
+
+.newStoriesModal .newStoriesText {
+    /*font-family: "oe24",sans-serif;*/
+    /*font-family: "oe24condensed",sans-serif;*/
+    font-family: "OpenSansCondensedBold",sans-serif;
+    font-size: 2rem;
+    line-height: 1.1;
+    display: block;
+    margin: 22px auto 18px;
+}
+
+
+.newStoriesModal .newStoriesButton:focus,
+.newStoriesModal .newStoriesButton:hover,
+.newStoriesModal .newStoriesButton:active {
+    text-decoration: none;
+    outline: none;
+}
+
+
+.newStoriesModal .newStoriesButtonLoad {
+    font-family: "OpenSansCondensedBold",sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    border: none;
+    padding: 4px 10px;
+    margin: 0 auto 20px;
+    color: #fff;
+    background-color: #e73239;
+    background-image: -webkit-linear-gradient(top, #e73239, #d0113a);
+    background-image: linear-gradient(to bottom, #e73239, #d0113a)
+}
+
+
+.newStoriesModal .newStoriesButtonCancel,
+.newStoriesModal .newStoriesButtonClose {
+    font-family: "OpenSansCondensed",sans-serif;
+    display: inline-block;
+    color: #999;
+    background-color: transparent;
+}
+.newStoriesModal .newStoriesButtonCancel {
+    font-size: .75rem;
+}
+.newStoriesModal .newStoriesButtonClose {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 20px;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #999;
+    stroke: #999;
+    fill: #999;
+}
+
+
+.newStoriesModal .newStoriesButtonClose svg {
+    width: 100%;
+}
+/*
+.newStoriesModal .headline {
+    width: 100%;
+    background-color: #d0113a;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.newStoriesModal .storyWrapper {
+    width: 100%;
+}
+.newStoriesModal .newStoryOverlayNewStory {
+    width: 49%;
+    float: left;
+    text-decoration: none;
+}
+
+.newStoriesModal .newStoryOverlayNewStory:hover {
+    color: #d0113a;
+}
+.newStoriesModal .newStoryOverlayNewStory:first-child {
+    margin-right: 2%;
+}
+.newStoriesModal .newStoryOverlayNewStory img {
+    width:100%;
+}
+.newStoriesModal .newStoryOverlayNewStory .title {
+    display: block;
+    text-align: left;
+    font-family: "oe24",sans-serif;
+    font-size: 1rem;
+}
+.newStoriesModal .newStoryOverlayNewStory .preTitle {
+    display: block;
+    text-align: left;
+    font-family: arial,sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+*/

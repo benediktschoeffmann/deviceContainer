@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/oe24_oe24/!svn/ver/10598/release/1.2/tpl/__splitArea/article/slideshowVoting
+END
+slideshowVoting.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/oe24_oe24/!svn/ver/10847/release/1.2/tpl/__splitArea/article/slideshowVoting/slideshowVoting.tpl
+END
+votingContainerDesktop_321.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/oe24_oe24/!svn/ver/10682/release/1.2/tpl/__splitArea/article/slideshowVoting/votingContainerDesktop_321.tpl
+END
+hintContainer_321.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/oe24_oe24/!svn/ver/10623/release/1.2/tpl/__splitArea/article/slideshowVoting/hintContainer_321.tpl
+END
+slideshowVotingMobile_321.css
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/oe24_oe24/!svn/ver/10847/release/1.2/tpl/__splitArea/article/slideshowVoting/slideshowVotingMobile_321.css
+END
+slideshowVotingDesktop_321.css
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/oe24_oe24/!svn/ver/10663/release/1.2/tpl/__splitArea/article/slideshowVoting/slideshowVotingDesktop_321.css
+END
+modalContainer_321.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/oe24_oe24/!svn/ver/10623/release/1.2/tpl/__splitArea/article/slideshowVoting/modalContainer_321.tpl
+END
+slideshowVoting.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/oe24_oe24/!svn/ver/10682/release/1.2/tpl/__splitArea/article/slideshowVoting/slideshowVoting.js
+END
+votingContainerMobile_321.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/oe24_oe24/!svn/ver/10847/release/1.2/tpl/__splitArea/article/slideshowVoting/votingContainerMobile_321.tpl
+END

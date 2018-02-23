@@ -73,6 +73,9 @@ $visibleLoad = array(
 // $loadNow = (in_array($banner, $visibleLoad)) ? true : false;
 $loadNow = true;
 
+// (bs) 2018-02-19 der Code unten hat mit DAILY-851 zu tun. IST NICHT ONLINE.
+// wir warten immer noch auf die Freigabe seitens GF bzw. Kampagnen.
+
 ?>
 
 <div class="adSlotAdition <?= $classCenter ?><?= $classSticky; ?> <?= $classCPCSlot; ?>" id="adition_<?= $banner; ?>" adid="<?= $adSlotId; ?>">

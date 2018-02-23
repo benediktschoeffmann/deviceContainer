@@ -1,0 +1,21 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.recipeChannelTags hr {
+	width: 280px;
+	height: 0;
+	border: none;
+	border-top: 1px solid #e3e3e3;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.recipeChannelTags .recipeChannelTag {
+	text-decoration: none;
+	color: #262626;
+}
+.recipeChannelTags .recipeChannelTag:hover {
+	color: #a10f42;
+}

@@ -1,0 +1,270 @@
+<?
+
+// (ws) 2016-03-02
+// email von Philipp Melchers 2016-03-01 17:46
+
+$channelColors = array(
+    'oe24' => array(
+        'colorLeft' => '#d0113a',
+        'colorRight' => '#f20c55',
+    ),
+    'news' => array(
+        'colorLeft' => '#d0013a',
+        'colorRight' => '#f20c55',
+    ),
+    'politik' => array(
+        'colorLeft' => '#d0013a',
+        'colorRight' => '#f20c55',
+    ),
+    'welt' => array(
+        'colorLeft' => '#0051b2',
+        'colorRight' => '#5989ff',
+    ),
+    'oesterreich' => array(
+        'colorLeft' => '#f50f39',
+        'colorRight' => '#dc2567',
+    ),
+
+
+    // keine Farben angegeben
+    // wir nehmen die von 'oesterreich'
+    'bundeslaender' => array(
+        'colorLeft' => '#f50f39',
+        'colorRight' => '#dc2567',
+    ),
+
+
+    'wetter' => array(
+        'colorLeft' => '#007ddc',
+        'colorRight' => '#8aacff',
+    ),
+
+
+    'sport' => array(
+        'colorLeft' => '#22b480',
+        'colorRight' => '#71db80',
+    ),
+    'sport24' => array(
+        'colorLeft' => '#d2123b',
+        'colorRight' => '#e6323b',
+    ),
+    'sport-euro' => array(
+        'colorLeft' => '#313b69',
+        'colorRight' => '#7881a8',
+    ),
+    'sport-fussball' => array(
+        'colorLeft' => '#22b480',
+        'colorRight' => '#71db80',
+    ),
+    'sport-motorsport' => array(
+        'colorLeft' => '#1d1d1b',
+        'colorRight' => '#8698be',
+    ),
+    'sport-sportmix' => array(
+        'colorLeft' => '#007edc',
+        'colorRight' => '#6da2f8',
+    ),
+    'sport-stars' => array(
+        'colorLeft' => '#b1177a',
+        'colorRight' => '#ee5688',
+    ),
+    'sport-wintersport' => array(
+        'colorLeft' => '#0052b3',
+        'colorRight' => '#5989ff',
+    ),
+
+
+    'money' => array(
+        'colorLeft' => '#174584',
+        'colorRight' => '#00a3e1',
+    ),
+    'business' => array(
+        'colorLeft' => '#35549b',
+        'colorRight' => '#357dbe',
+    ),
+    'madonna' => array(
+        'colorLeft' => '#ec589f',
+        'colorRight' => '#ffbfad',
+    ),
+
+
+    // // (ws) 2016-03-07
+    // // keine Farben angegeben
+    // // wir nehmen die von 'society'
+    'leute' => array(
+        'colorLeft' => '#ffca49',
+        'colorRight' => '#ff746e',
+    ),
+    'society' => array(
+        'colorLeft' => '#ffca49',
+        'colorRight' => '#ff746e',
+    ),
+    // 'leute' => array(
+    //     'colorLeft' => '#ff2b22',
+    //     'colorRight' => '#ff2b22',
+    // ),
+    // 'society' => array(
+    //     'colorLeft' => '#ff2b22',
+    //     'colorRight' => '#ff2b22',
+    // ),
+    // // ff2b22
+    // // (ws) 2016-03-07 end
+
+    // (ws) 2017-09-06 Niki wuenscht sich die oe24 Farbe
+    // 'leute' => array(
+    //     'colorLeft' => '#d0113a',
+    //     'colorRight' => '#d0113a',
+    // ),
+    // 'society' => array(
+    //     'colorLeft' => '#d0113a',
+    //     'colorRight' => '#d0113a',
+    // ),
+    // (ws) 2017-09-06 end
+
+
+    'tv' => array(
+        'colorLeft' => '#59cad2',
+        'colorRight' => '#b7ffff',
+    ),
+
+
+    // keine Farben angegeben
+    // wir nehmen die von 'tv'
+    'video' => array(
+        'colorLeft' => '#59cad2',
+        'colorRight' => '#b7ffff',
+    ),
+
+
+    'gesund24' => array(
+        'colorLeft' => '#6a9dff',
+        'colorRight' => '#55d1ff',
+    ),
+    'kochen' => array(
+        'colorLeft' => '#b11679',
+        'colorRight' => '#ff678c',
+    ),
+    'cooking24' => array(
+        'colorLeft' => '#b11679',
+        'colorRight' => '#ff678c',
+    ),
+    'digital' => array(
+        'colorLeft' => '#708ab9',
+        'colorRight' => '#c7bbff',
+    ),
+    'reise' => array(
+        'colorLeft' => '#ff6200',
+        'colorRight' => '#ff9915',
+    ),
+    'auto' => array(
+        'colorLeft' => '#2c3564',
+        'colorRight' => '#7f80ff',
+    ),
+
+
+    'joe24' => array(
+        'colorLeft' => '#324291',
+        'colorRight' => '#4e61c2',
+    ),
+    'joe24-logo' => array(
+        'colorLeft' => '#324291',
+        'colorRight' => '#4e61c2',
+    ),
+
+
+    // 'stars-oesterreich' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#ff776e',
+    // ),
+    // 'stars-international' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#0052b3',
+    // ),
+    // 'stars-deutschland' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#d0113a',
+    // ),
+    // 'stars-royals' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#313b69',
+    // ),
+    // 'stars-partys' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#b1167f',
+    // ),
+    // 'stars-mode' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#ec5a9d',
+    // ),
+    // 'stars-beauty' => array(
+    //     'colorLeft' => '#ffca49',
+    //     'colorRight' => '#cd0849',
+    // ),
+
+
+    'stars-oesterreich' => array(
+        'colorLeft' => '#ff776e',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-international' => array(
+        'colorLeft' => '#0052b3',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-deutschland' => array(
+        'colorLeft' => '#d0113a',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-royals' => array(
+        'colorLeft' => '#313b69',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-partys' => array(
+        'colorLeft' => '#b1167f',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-mode' => array(
+        'colorLeft' => '#ec5a9d',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-beauty' => array(
+        'colorLeft' => '#cd0849',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+
+
+    'stars-musik' => array(
+        'colorLeft' => '#f89845',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-kultur' => array(
+        'colorLeft' => '#52aada',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-tv' => array(
+        'colorLeft' => '#5272da',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+    'stars-kino' => array(
+        'colorLeft' => '#c9542f',  // eigtl. colorRight
+        'colorRight' => '#ffca49', // eigtl. colorLeft
+    ),
+
+    // von MH
+    // 'antenne' => array(
+    //     'colorLeft' => '#E3001D',
+    //     'colorRight' => '#F8EC00',
+    // ),
+
+    'games24' => array(
+        'colorLeft' => '#000000',
+        'colorRight' => '#333333',
+    ),
+
+    // (ws) 2018-02-09
+    'immoads' => array(
+        'colorLeft' => '#20b8f1',
+        'colorRight' => '#71db80',
+    ),
+
+);
+

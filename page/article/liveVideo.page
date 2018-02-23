@@ -1,0 +1,121 @@
+<?php
+/**
+ * Return liveVideo Player for iFrame
+ *
+ * @url (?<channel>.*)/videoArticle/(?<title>[^/]+)/(?<content>\d+)/_liveVideo
+ * @url _mobile/(?<channel>.*)/videoArticle/(?<title>[^/]+)/(?<content>\d+)/_liveVideo
+ * @var portal oe24.core.Portal
+ * @var channel oe24.core.Channel
+ * @var content oe24.core.Content
+ * @var overrideAutostart any
+ * @default overrideAutostart -1
+ * @urlManager oe24.oe24
+ * @cache 3m
+ */
+$area = "page";
+$baseUrl = 'http://www.oe24.at/video/live';
+
+if(!$content instanceof TextualContent || !$content->getVideoOptions()) return;
+
+$containerId = "jwplayer_".$content->getId()."_".slugify($area)."_".uniqid();
+$jwPlayer = new JWPlayer6($content);
+//if($forceAutostart){
+    $jwPlayer->setAutostart(true);
+//}
+//if($area != "Content Area" && $area != "StoryInline"){
+    $jwPlayer->setWidth(610);
+    $jwPlayer->setHeight(343);
+//}
+
+$jwPlayer->addAdvertisings(array(
+        array('offset' => 'pre', 'tag' => $jwPlayer->prerollTag),
+        array('offset' => 'post', 'tag' => $jwPlayer->postrollTag)
+    )
+);
+if(!$jwPlayer->customMidrolls){
+    $jwPlayer->addAdvertising(
+        array('offset' => $jwPlayer->midrollOffset, 'tag' => $jwPlayer->midrollTag)
+    );
+}
+$title = $content->getTitle() . ' - Video';
+$images = $content->getRelatedImages();
+	if(isset($images[1])){
+		$topImgUrl = $images[1]->getFileUrl();
+		if(isset($images[2])){
+			$sideImgUrl = $images[2]->getFileUrl();
+			if(isset($images[3])){
+				$footerImgUrl = $images[3]->getFileUrl();
+			}
+		}
+	}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <?
+            $jsCollector = spunQ_html::getJsCollector();
+            $jsVersion = $jsCollector->getVersion();
+        ?>
+        <script src="<?= l('spunQ.wormhole.js', array('js' => array('_shared.1_0.common.common'), 'timestamp' => $jsVersion)); ?>"></script>
+
+        <?
+            tpl('_shared.1_0.tracking.oewa.v2.oewaTracking', array(
+                'uriSchema' => 'RedCont/Nachrichten/Nachrichtenueberblick',
+                'domain' => 'oe24.at',
+                'channelUrl' => '/video/live',
+                'pageWidth' => 0,
+                'specialDomain' => '',
+            ));
+        ?>
+
+        <script type="text/javascript" src="/misc/js/jwplayer.js"></script>
+		<script type="text/javascript" src="/misc/js/jwplayer.html5.js"></script>
+        <title><?=$title?></title>
+        <base target="_blank" />
+    </head>
+    <body>
+        <div class="header"><?
+            if(isset($topImgUrl)){?>
+            <a href="<?=$baseUrl?>"><img alt="topImg" src="<?=$topImgUrl?>" /></a><?
+            }
+        ?></div>
+        <div class="jwplayer" id="<?=$containerId?>"></div>
+        <div class="side"><?
+            if(isset($sideImgUrl)){?>
+            <a href="<?=$baseUrl?>"><img alt="sideImg" src="<?=$sideImgUrl?>" /></a><?
+            }
+        ?></div>
+        <div class="clear"></div>
+        <div class="footer"><?
+            if(isset($footerImgUrl)){?>
+            <a href="<?=$baseUrl?>"><img alt="footerImg" src="<?=$footerImgUrl?>" /></a><?
+            }
+        ?></div>
+        <script type="text/javascript">
+			(function($){
+				"use strict";
+				$.key = "<?=$jwPlayer->getLicenseKey()?>";
+				$("<?=$containerId?>").setup(<?=$jwPlayer?>);
+			}(jwplayer));
+		</script>
+		<?if(isset($_GET['debug']) && $_GET['debug'] == true){?>
+			<script type="text/javascript">
+				(function(){
+					console.log(eval(<?=$jwPlayer?>));
+				}());
+			</script>
+		<?php } ?>
+
+        <style type="text/css">
+        <!--
+        body{ margin:0; padding:0; }
+        #<?=$containerId?>_wrapper{ float: left; }
+        .side{ float: left; }
+        .clear{ clear: both; height: 0; width: 0; }
+        a{ border:0 none; }
+        img{ border:0 none; }
+        -->
+        </style>
+    </body>
+</html>

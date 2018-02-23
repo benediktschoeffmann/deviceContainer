@@ -1,0 +1,14 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.apaFussballWidget {
+    margin: 5px auto;
+    width: 960px;
+}
+.sidebar .apaFussballWidget {
+    width: 300px;
+    margin: 0 auto;
+}

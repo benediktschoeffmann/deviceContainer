@@ -79,7 +79,7 @@ $channelColorDefinitions = array(
         'colorRight' => '#00a3e1',
     ),
     'business' => array(
-        'colorLeft' => '#174584',
+        'colorLeft' => '#35549b',
         'colorRight' => '#00a3e1',
     ),
     // 'madonna' => array(

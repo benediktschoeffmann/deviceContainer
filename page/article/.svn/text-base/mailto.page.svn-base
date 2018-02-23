@@ -1,0 +1,41 @@
+<?php
+/**
+* story mailto page
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)/mailto
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @urlManager oe24.oe24
+* @cache 1m
+*/
+
+redirect('/error', 404);
+return;
+
+if(!$content instanceof Text){
+    redirect($content->getUrl(), 301);
+}
+
+$canonicalUrl = $content->getUrl()."/mailto";
+if($canonicalUrl != getCurrentUrl(true)){
+    redirect($canonicalUrl, 301);
+}
+
+response()->setTitle($content->getTitle(true)." - Weiterversenden - Österreich / oe24.at");
+
+$options = $content->getOptions(true, true);
+# check for special article layout types
+$articleLayout = $options->get("articleLayout");
+$useTemplate = "oe24.oe24.story.oldLayout.mailTo";
+$useTemplateRight = NULL;
+etpl('oe24.frontend._page', array(
+    "channel" => $channel,
+    "params" => array(
+        "templateLeft" => $useTemplate,
+        "text" => $content,
+        "columnNameRight" => "Story-Teaser Area",
+        "templateRight" => $useTemplateRight
+    ),
+    "object" => $content
+));

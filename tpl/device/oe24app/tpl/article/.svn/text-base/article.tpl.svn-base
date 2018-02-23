@@ -33,6 +33,15 @@ $bodyText = str_replace($searchTag, $replaceTag, $bodyText);
 // filter out non-printable characters
 $bodyText = preg_replace("/[^[:print:] | ^[öäüÖÄÜß]]/u", "", $bodyText);
 $articleUrl = $article->getUrl();
+
+$base64ArticleUrl = base64_encode($articleUrl);
+
+$host = 'http://' . (spunQ::inMode(spunQ::MODE_DEVELOPMENT) ? 'oe24dev.oe24.at' : 'www.oe24.at');
+
+$fbCommentsLink = $host . l('oe24.oe24.oe24app.getFacebookComments', array(
+    'base64' => $base64ArticleUrl,
+    ));
+
 ?>
 <body>
     <script>
@@ -86,6 +95,10 @@ $articleUrl = $article->getUrl();
                         <div class="storyBodyText">
                             <?= $bodyText; ?>
                         </div>
+
+                        <a href="<?=$fbCommentsLink;?>" target="_blank" class="commentsButton" style="background-color: #d0113a; display: block; text-align: center; color: #fff; border-radius: 5px;">
+                            Zu den Kommentaren
+                        </a>
 
                         <?
                             tpl('oe24.oe24.device.oe24app.tpl.socialSharing.socialSharing', array(

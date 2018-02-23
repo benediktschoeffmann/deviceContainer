@@ -212,7 +212,7 @@ if (!is_string($layout)) {
 
 // ---------------------------------------------------------------
 
-$deviceType = 'smartphone';
+$deviceType = Device::SMARTPHONE;
 
 // ---------------------------------------------------------------
 
@@ -220,7 +220,11 @@ $emptyImage1x1   = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAA
 $emptyImage2x1   = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABAQAAAADcWUInAAAAAnRSTlMAAQGU/a4AAAAKSURBVHgBYzgAAADCAMFphPI4AAAAAElFTkSuQmCC';
 $emptyImage16x9  = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJAQAAAAATUZGfAAAAAnRSTlMAAQGU/a4AAAANSURBVHgBY/j/HxcCAPIoEe+JMKgiAAAAAElFTkSuQmCC';
 $emptyImage16x10 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKAQAAAACVxeMxAAAAAnRSTlMAAQGU/a4AAAANSURBVHgBY/j/Hw8CACsBE+1t+fJZAAAAAElFTkSuQmCC';
+
+// ---------------------------------------------------------------
+
 $isArticle = ($article && $article instanceof TextualContent);
+
 // ---------------------------------------------------------------
 
 // Eventuell aus Backend initialisieren?
@@ -391,7 +395,7 @@ $config = array(
 try {
 
     $deviceContainer = DeviceContainer::initialize($config);
-    $device = DeviceContainer::getDevice();
+    $device = DeviceContainer::getDevice(Device::SMARTPHONE);
     $device->processDevice();
 
 } catch (DeviceInitialisationException $e) {
@@ -406,7 +410,7 @@ try {
 }
 
 // ---------------------------------------------------------------
-
+// TODO den switch block - brauchen wir nicht mehr !
 switch (true) {
 
     case $device instanceof Smartphone:

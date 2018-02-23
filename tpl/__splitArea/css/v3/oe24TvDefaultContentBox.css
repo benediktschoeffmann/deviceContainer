@@ -1,0 +1,512 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+
+?>
+.videoWrapper {
+    overflow: hidden;
+}
+.videoContentBox {
+    width: 960px;
+    margin: 0 auto 15px auto;
+    background-color: #fff;
+    border-bottom: 1px solid #d5d5d5;
+
+    /* (ws) 2015-10-13 - Box erst nach Slider-Initialisierung per JS auf display:block setzen */
+    display: none;
+}
+
+.videoContentBox.greyBackgroundColor {
+    background-color: #edebeb;
+}
+
+.videoContentBox.notTv {
+    margin: 0 auto;
+    border: none;
+}
+.videoContentBoxWithAd {
+    margin: 0 15px 15px 15px;
+}
+.videoContentBox.withContentAds {
+    width: 640px;
+    margin: 0;
+    float: left;
+
+}
+.moreBoxes .videoContentBox {
+    width: 930px;
+}
+.moreBoxes .videoContentBox.withContentAds {
+    width: 615px;
+}
+.videoAdContainer {
+    float: right;
+    width: 300px;
+    padding: 22px 0 0 0;
+}
+.videoAdContainer .adSlotAdition {
+    background-color: transparent;
+}
+.videoContentBox .imageWrapper {
+    position: relative;
+}
+.videoContentBox img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 7px 0;
+}
+.videoContentBox .videoContentBoxHeadline {
+    font-family: "OpenSansBold", Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 0 15px 20px;
+}
+.moreBoxes .videoContentBox .videoContentBoxHeadline {
+    padding: 15px 0 15px 14px;
+}
+.videoContentBox .banderole {
+    position: relative;
+    padding: 2px 31px 2px 27px;
+    font-family: "OpenSansBold", Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(210, 8, 30);
+    margin-left: -28px;
+    /* linker rand der box */
+}
+.videoContentBox .banderole:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    border-style: solid;
+    border-width: 8px 0 0 8px;
+    margin: 27px 0 0;
+    border-color: rgb(75, 11, 9) transparent;
+    height: 8px;
+}
+@-moz-document url-prefix() {
+    .videoContentBox .banderole::after {
+        content: " ";
+        position: absolute;
+        left: 0px;
+        border-style: solid;
+        border-width: 8px 0px 0px 8px;
+        margin: 28px 0px 0px 0px;
+        border-color: #4B0B09 transparent;
+        height: 8px;
+    }
+}
+.moreBoxes .videoContentBox .banderole {
+    margin-left: -37px;
+    /* linker rand der tabbox */
+}
+.moreBoxes .videoContentBox .banderole {
+    padding: 2px 37px 2px 37px;
+}
+.videoContentBox .videoContentWrapper {
+    position: relative;
+    width: 920px;
+    margin: 0 auto;
+}
+.videoContentBox.withContentAds .videoContentWrapper {
+    width: 600px;
+}
+.moreBoxes .videoContentBox .videoContentWrapper {
+    width: 890px;
+}
+.moreBoxes .videoContentBox.withContentAds .videoContentWrapper {
+    width: 580px;
+}
+.moreBoxes .videoContentBox.withContentAds .twoVideos .slick-list {
+    margin: 0 0 0 12px;
+    width: 560px;
+}
+.moreBoxes .videoContentBox.withContentAds .twoVideos .leftArrow {
+    left: -9px;
+}
+.moreBoxes .videoContentBox.withContentAds .twoVideos .leftArrow:hover {
+    left: -11px;
+}
+.moreBoxes .videoContentBox .threeVideos .slick-list,
+.moreBoxes .videoContentBox .fourVideos .slick-list,
+.moreBoxes .videoContentBox .fiveVideos .slick-list {
+    margin: 0 0 0 11px;
+    width: 870px;
+}
+.videoContentBox .leftArrow,
+.videoContentBox .rightArrow {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -82px;
+    cursor: pointer;
+}
+.videoContentBox .leftArrow {
+    left: -11px;
+    width: 23px;
+    text-align: left;
+    color: rgb(150, 150, 150);
+    -webkit-transition: left 0.4s, color 0.8s;
+    -moz-transition: left 0.4s, color 0.8s;
+    -o-transition: left 0.4s, color 0.8s;
+    -ms-transition: left 0.4s, color 0.8s;
+    transition: left 0.4s, color 0.8s;
+}
+.videoContentBox .rightArrow {
+    right: -12px;
+    width: 23px;
+    text-align: right;
+    color: rgb(150, 150, 150);
+    -webkit-transition: right 0.4s, color 0.8s;
+    -moz-transition: right 0.4s, color 0.8s;
+    -o-transition: right 0.4s, color 0.8s;
+    -ms-transition: right 0.4s, color 0.8s;
+    transition: right 0.4s, color 0.8s;
+}
+.videoContentBox .leftArrow:hover {
+    left: -14px;
+    color: rgb(20, 20, 20);
+}
+.videoContentBox .rightArrow:hover {
+    right: -16px;
+    color: rgb(20, 20, 20);
+}
+.videoContentBox .videoEntry {
+    padding: 0 6px 15px 6px;
+}
+.videoContentBox .videoEntry.withCircle {
+    position: relative;
+    padding: 12px 6px 15px 6px;
+    width: 290px;
+}
+.videoContentBox .twoVideos .videoPreTitle,
+.videoContentBox .twoVideos .videoStatistic {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.videoContentBox .twoVideos .slick-list {
+    margin: 0 0 0 8px;
+    width: 585px;
+}
+.moreBoxes .videoContentBox .twoVideos .imageWrapper {
+    width: 268px;
+    height: 134px;
+}
+.moreBoxes .videoContentBox .twoVideos .videoEntry {
+    width: 280px;
+}
+.videoContentBox .twoVideos .imageWrapper {
+    width: 280px;
+    height: 140px;
+}
+.videoContentBox .threeVideos .videoPreTitle,
+.videoContentBox .threeVideos .videoStatistic {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.videoContentBox .threeVideos .slick-list {
+    margin: 0 0 0 8px;
+    width: 905px;
+}
+.moreBoxes .videoContentBox .threeVideos .imageWrapper {
+    width: 278px;
+    height: 139px;
+}
+.moreBoxes .videoContentBox .threeVideos .videoEntry {
+    width: 290px;
+}
+.videoContentBox .threeVideos .imageWrapper {
+    width: 290px;
+    height: 145px;
+}
+.videoContentBox .fourVideos .videoPreTitle,
+.videoContentBox .fourVideos .videoStatistic {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.moreBoxes .videoContentBox .fourVideos .imageWrapper {
+    width: 206px;
+    height: 103px;
+}
+.moreBoxes .videoContentBox .fourVideos .videoEntry {
+    width: 218px;
+    float: left;
+}
+.videoContentBox .fourVideos .imageWrapper {
+    width: 218px;
+    height: 110px;
+}
+.videoContentBox .fourVideos .videoWrapper {
+    /* max-height: 245px; */
+}
+.videoContentBox .fiveVideos .videoPreTitle,
+.videoContentBox .fiveVideos .videoStatistic {
+    font-family: Arial, sans-serif;
+    color: rgb(140, 140, 140);
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.videoContentBox .fiveVideos .slick-list {
+    margin: 0 0 0 8px;
+    width: 904px;
+}
+.moreBoxes .videoContentBox .fiveVideos .imageWrapper {
+    max-width: 162px;
+    height: 88px;
+}
+.moreBoxes .videoContentBox .fiveVideos .videoEntry {
+    width: 174px;
+}
+.videoContentBox .fiveVideos .imageWrapper {
+    width: 174px;
+    /*height: 100px;*/
+    height: 85px;
+}
+.videoContentBox .twoVideos .videoTitle {
+    font-family: "oe24condensed", Arial, sans-serif;
+    font-size: 26px;
+    line-height: 27px;
+}
+.videoContentBox .threeVideos .videoTitle {
+    font-family: "oe24condensed", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 25px;
+}
+.videoContentBox .fourVideos .videoTitle {
+    font-family: "oe24condensed", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 22px;
+}
+.videoContentBox .fiveVideos .videoTitle {
+    font-family: "oe24condensed", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+}
+.videoContentBox .videoEntry .videoStatistic {
+    font-family: "OpenSansRegular", Verdana, Arial, sans-serif;
+    display: block;
+    font-size: 11px;
+}
+.videoEntry a > .videoTitle {
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.videoEntry a > img {
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+.videoEntry a:hover {
+    text-decoration: none;
+}
+.videoEntry a:hover > img {
+    opacity: .9;
+}
+.videoEntry a:hover > .videoTitle {
+    /*color: rgb(210, 8, 30);*/
+    /*color: #dd1010;*/
+    color: #d0113a;
+
+}
+.videoEntry a:hover > .videoPreTitle {
+    text-decoration: underline;
+}
+.videoContentBox .videoEntry .videoPreTitle,
+.videoContentBox .videoEntry .videoTitle {
+    display: block;
+}
+.videoContentBox .videoEntry .topVideoCircle {
+    left: 0;
+    top: 0;
+    transform: translateZ(0);
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    /*background-color: #dd1010;*/
+    background-color: #d0113a;
+    text-align: center;
+    font-size: 17px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -khtml-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.videoContentBox .videoCounter {
+    float: right;
+    margin-right: 12px;
+}
+.doubleRow .videoEntry {
+    min-height: 260px;
+}
+
+
+
+/* (ws) 2015-09-30 */
+.layout_oe24 .videoContentBox .imageWrapper {
+    overflow: hidden;
+}
+.layout_oe24 .videoContentBox .videoEntry .videoTitle.noPreTitle {
+    margin-top: 6px;
+}
+.layout_oe24 .videoContentBox .videoContentWrapper .videoPreTitle,
+.layout_oe24 .videoContentBox .videoContentWrapper .videoStatistic {
+    text-transform: none;
+}
+.layout_oe24 .videoContentBox .videoEntry .videoStatistic {
+    font-size: .75rem;
+    height: 36px;
+    overflow: hidden;
+}
+/* (ws) 2015-09-30 // */
+
+
+/* (pj) 2015-12-02 JIRA DAILY-393 Text soll so aussehen wie "Mehr News" */
+/* (pj) 2015-12-02 "#wrap" damit ich die anderen regeln ueberschreiben kann, welche mit .layout_oe24 anfangen -> */
+/* -> soll auch fuer money verwendbar sein, deswegen "#wrap" am anfang. */
+#wrap.a2016 .videoContentBox .videoContentWrapper .videoPreTitle,
+#wrap.oe2016 .videoContentBox .videoContentWrapper .videoPreTitle {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 8px 0 2px;
+}
+#wrap.a2016 .videoContentBox .videoTitle,
+#wrap.oe2016 .videoContentBox .videoTitle {
+    font-family: "oe24", Arial, sans-serif;
+}
+#wrap.a2016 .videoContentBox .videoEntry .videoStatistic,
+#wrap.oe2016 .videoContentBox .videoEntry .videoStatistic {
+    font-size: .875rem;
+    height: 40px;
+    overflow: hidden;
+    line-height: 1.4;
+    font-weight: normal;
+    color: #000;
+}
+#wrap.a2016 .videoContentBox .videoStatistic,
+#wrap.oe2016 .videoContentBox .videoStatistic {
+    text-transform: none;
+}
+/* (pj) 2015-12-02 end */
+
+
+/* (ws) 2015-11-30 */
+/*.a2016 .videoContentBox,
+.oe2016 .videoContentBox {
+    padding-top: 14px;
+}*/
+
+
+.a2016 .videoContentBox .videoContentBoxHeadline,
+.oe2016 .videoContentBox .videoContentBoxHeadline {
+    width: 100%;
+    /*padding: 0 0 0 20px;*/
+    padding: 0 10px;
+    margin: 0 0 14px;
+}
+.a2016 .videoContentBox .videoContentBoxHeadline
+/*,.oe2016.story .videoContentBox .videoContentBoxHeadline*/ {
+    background-color: #dd1010;
+}
+
+.oe2016 .videoContentBox .videoContentBoxHeadline {
+    background-color: #d0113a;
+}
+.oe2016 .videoContentBox .videoEntry .topVideoCircle {
+    background-color: #d0113a;
+}
+
+.oe2016 .videoContentBox .banderole {
+    background-color: transparent;
+}
+
+.a2016 .videoContentBox .banderole {
+    background-color: transparent;
+}
+
+
+.a2016 .videoContentBox .banderole:after,
+.oe2016 .videoContentBox .banderole:after {
+    content: " ";
+    border: none;
+    position: static;
+    display: none;
+}
+.a2016 .videoContentBox .videoContentBoxHeadline,
+.oe2016 .videoContentBox .videoContentBoxHeadline {
+    color: #fff;
+}
+.a2016 .videoContentBox .videoCounter,
+.oe2016 .videoContentBox .videoCounter {
+    margin-right: 0;
+}
+
+
+/* (ws) 2015-11-30 // */
+
+/* (pj) 2016-02-02 override color in article */
+/*.oe2016.story .videoContentBox .videoEntry .topVideoCircle {
+    background-color: #dd1010;
+}
+.oe2016.story .videoEntry a:hover > .videoTitle {
+    color: #dd1010;
+}*/
+/* (pj) end */
+
+/* (bs) 2016-01-28 "standard"rot wurde auf d0113a geändert */
+
+.oe2016.layout_oe24 .videoContentWrapper .videoEntry .videoPreTitle {
+    color: #000;
+}
+
+.oe2016.layout_oe24 .videoEntry a:hover .videoPreTitle,
+.oe2016.layout_oe24 .videoEntry a:hover .videoTitle {
+    color: #d0113a;
+}
+/* (bs) 2016-03-01 Slideshows */
+.oe2016 .videoContentBox.isSlideShow .imageWrapper {
+    margin-bottom: 5px;
+}
+.oe2016 .videoContentBox.isSlideShow .twoVideos .imageWrapper {
+    height: 268px;
+}
+.oe2016 .videoContentBox.isSlideShow .threeVideos .imageWrapper {
+    height: 290px;
+}
+.oe2016 .videoContentBox.isSlideShow .fourVideos .imageWrapper {
+    height: 218px;
+}
+.oe2016 .videoContentBox.isSlideShow .fiveVideos .imageWrapper {
+    height: 174px;
+}
+
+.oe2016 .videoContentBox.isSlideShow .videoPreTitle,
+.oe2016 .videoContentBox.isSlideShow .videoStatistic {
+    display: none;
+}
+
+/* (bs) 2016-03-04 small bug where title changes color slower than pretitle */
+.oe2016 .videoEntry a > .videoTitle {
+    transition: none;
+}

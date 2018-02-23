@@ -188,7 +188,8 @@ function collectHeadCss($layout) {
 
         // (bs) preparations for switch to 7.8.7.
         // array(0, '_shared.1_0.jwplayer.7_8_2.jwplayerSetup'),
-        array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+        // array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+        array(0, '_shared.1_0.jwplayer.8_0_11.jwplayerSetup'),
 
         // (ws) 2016-04-15 Wahl 2016
         array(0, 'oe24.oe24.__splitArea.css.v3.rl2014wahlDetailSuche'),
@@ -308,10 +309,12 @@ function collectHeadCss($layout) {
         array(0, 'oe24.oe24.__splitArea.css.oe2016.oe2016newstickerChannel'),
 
         // (db) 2017-12-13
-        // array(1, 'oe24.oe24.__splitArea.css.oe2016.adLoad'),
+        array(1, 'oe24.oe24.__splitArea.css.oe2016.adLoad'),
 
         // (db) 2018-01-19
         array(1, 'oe24.oe24.__splitArea.css.oe2016.olympia2018'),
+
+        // array(0, 'oe24.oe24.__splitArea.css.oe2016.headerSpecialImmoads'),
 
     );
     return $css;

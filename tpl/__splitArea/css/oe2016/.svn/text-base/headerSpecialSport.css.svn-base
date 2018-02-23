@@ -1,0 +1,208 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* (ws) 2016-04-19 sport.oe24.at */
+
+.layout_sport.oe2016 .headerNavContainer {
+    background-color: #4fac81;
+    background-image: linear-gradient(to bottom, #4fac81 20%, #158344);
+}
+.layout_sport.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #59C291;
+    border-right: 1px solid #59C291;
+}
+.layout_sport.oe2016 .headerNavMain,
+.layout_sport.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_sport.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #1FA677;
+}
+
+/* (ws) 2016-04-19 sport.oe24.at // */
+
+
+/* ---------------------------------------------------------------- */
+
+.layout_sport.oe2016 .headerNavLogo {
+    padding: 2px 8px;
+}
+.layout_sport.oe2016 .headerNavLogoCol.logoPortal {
+    width: 342px;
+}
+.layout_sport.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 80px;
+}
+.layout_sport.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 506px;
+    height: 84%;
+}
+.layout_sport.oe2016 .headerNavLogoCol.logoOesterreich span {
+    left: 40px;
+}
+.layout_sport.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 48px;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header sport24 */
+
+.layout_sport.oe2016 .headerNavLogo,
+.layout_sport.oe2016 .headerNavLogo a,
+.layout_sport.oe2016 .headerNavLogo a img,
+.layout_sport.oe2016 .headerNavLogoCol.logoOesterreich,
+.layout_sport.oe2016 .headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.layout_sport.oe2016 .stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogo {
+    height: 30px;
+    padding: 1px 8px 7px;
+    padding: 3px 8px;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogo a,
+.layout_sport.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.logoPortal {
+    width: 110px;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    width: 834px;
+    height: 92%;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    left: 545px;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-04-19 Sportfarben */
+.layout_sport.oe2016 .subNavMenu a {
+    color: #1fa677;
+}
+
+.layout_sport.oe2016 .subNavMenu .active a,
+.layout_sport.oe2016 .subNavMenu a:hover {
+    background-color: #1fa677;
+    color: #fff;
+}
+
+.layout_sport.oe2016 .subNavContainer {
+    border-bottom: 8px solid #1fa677;
+}
+
+.layout_sport.oe2016 .subNavContent > a:hover,
+.layout_sport.oe2016 .subNavContent .subNavMore > a:hover {
+    color: #1fa677;
+}
+/* (pj) 2016-04-19 end */
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-04-19 Sportfarben */
+.layout_sport.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #1fa677;
+}
+.layout_sport.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #1fa677;
+}
+/* (pj) 2016-04-19 end */
+
+
+/* --------------------------------- */
+
+/*
+Bei der Euro 2016 soll die Header-Farbe die vom Sport-Kanal sein,
+Das "ÖSTERREICH"-Logo nicht gezeigt werden, dafuer der Schriftzug
+"EURO 2016" wie im Euro2016-Kanal
+*/
+
+.logoOesterreich.specialEventEuro2016  {
+    display: none;
+}
+
+.layout_sport.oe2016 .headerNavLogoCol.textEuro2016 {
+    margin-left: 64px;
+}
+.layout_sport.oe2016 .headerNavLogoCol.textEuro2016 a {
+    height: 100%;
+    position: relative;
+}
+.layout_sport.oe2016 .headerNavLogoCol.textEuro2016 span {
+    font-family: "oe24",sans-serif;
+    font-size: 4.3rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    color: #ffea44;
+    background: -webkit-linear-gradient(#ffff79, #fed717);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.layout_sport.oe2016 .headerNavLogo a span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 {
+    margin-left: 10px;
+}
+.layout_sport.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 span {
+    font-size: 1rem;
+}
+
+/* --------------------------------- */
+
+/* apa-Content */
+
+.layout_sport.oe2016 .article .apaOuterFrame #rankingFormula1apaContent,
+.layout_sport.oe2016 .article .apaOuterFrame #rankingMotoGPapaContent,
+.layout_sport.oe2016 .article .apaOuterFrame #rankingSkiAlpinapaContent,
+.layout_sport.oe2016 .article .apaOuterFrame #rankingSkiAlpinDamenapaContent,
+.layout_sport.oe2016 .article .apaOuterFrame #rankingSkispringenHerrenapaContent {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.layout_sport.oe2016 .article .apaOuterFrame .header-col50 {
+    width: 100%;
+}
+
+/* 2019-02-08 (db) - kommentare für olympia2018, kann zu grün/rot geändert werden, wenn olympia vorbei ist */
+.oe2016.layout_sport .editorsCommentTop .editorTextName {
+    background-color: #0052b3;
+}
+.oe2016.layout_sport .editorsCommentCol:hover .preTitle,
+.oe2016.layout_sport .editorsCommentCol:hover .title {
+    color: #0052b3;
+}
+

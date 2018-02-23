@@ -1,0 +1,46 @@
+<?php
+/**
+ * @collector noauto
+ * @collector 01_headerSplitArea
+ */
+?>
+
+.addthis_sharing_toolbox .at-share-btn {
+	font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+	font-size: .875rem;
+	text-transform: uppercase;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+}
+.addthis_sharing_toolbox .at-share-btn:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.addthis_sharing_toolbox .at-svc-facebook,
+.addthis_sharing_toolbox .at-svc-twitter {
+	width: 116px;
+	height: 32px;
+	line-height: 32px;
+}
+.addthis_sharing_toolbox .at-share-tbx-element .at-svc-facebook {
+	background-color: #305891;
+}
+.addthis_sharing_toolbox .at-share-tbx-element .at-svc-twitter {
+	background-color: #2ca8d2;
+}
+/* (pj) 2015-12-21 wird nicht mehr verwendet, wissen nicht mehr wohin */
+/*.addthis_sharing_toolbox .at-svc-facebook:after,
+.addthis_sharing_toolbox .at-svc-twitter:after {
+	position: absolute;
+	top: 1px;
+}
+.addthis_sharing_toolbox .at-svc-facebook:after {
+	content: "teilen";
+	left: 48px;
+}
+.addthis_sharing_toolbox .at-svc-twitter:after {
+	content: "twittern";
+	left: 38px;
+}
+*/

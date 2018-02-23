@@ -13,7 +13,7 @@ collectHeadCss.function.php
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/oe24_oe24/!svn/ver/11006/release/1.2/src/functions/collectorOe2016/collectHeadCss.function.php
+/oe24_oe24/!svn/ver/11115/release/1.2/src/functions/collectorOe2016/collectHeadCss.function.php
 END
 collectHeadJs.function.php
 K 25
@@ -31,5 +31,5 @@ collectBottomJs.function.php
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/oe24_oe24/!svn/ver/10921/release/1.2/src/functions/collectorOe2016/collectBottomJs.function.php
+/oe24_oe24/!svn/ver/11115/release/1.2/src/functions/collectorOe2016/collectBottomJs.function.php
 END

@@ -1,0 +1,24 @@
+<?php
+/**
+* channel page
+*
+* @url (?<channel>.*)/oe18
+* @var channel oe24.core.Channel
+* @var portal oe24.core.Portal
+* @urlManager oe24.oe24
+* @cache 3m
+*/
+
+
+echo "channelIndex.page <br> ";
+
+echo $channel->getPageTitle();
+
+echo "<br> end <br>";
+
+tpl('oe24.oe24.oe18.index',
+    array(
+        'channel' => $channel,
+        'content' => null
+    )
+);

@@ -15,6 +15,8 @@ function collectHeadJs($layout) {
 
 		array(0, '_shared.1_0.common.common'),
         array(0, 'oe24.oe24.__splitArea.js.oe2016.apaIFrameListener'),
+        // array(1, '_shared.1_0.jwplayer.8_0_11.jwplayer.jwplayer'),
+        // array(1, '_shared.1_0.jwplayer.8_0_11.jwplayer.license'),
 
 	);
 

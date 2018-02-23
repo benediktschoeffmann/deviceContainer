@@ -1,0 +1,180 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNavLogo {
+    width: 100%;
+    height: 76px;
+    height: 84px;
+    padding: 8px 8px;
+    position: relative;
+}
+.headerNavLogo .headerNavLogoCol {
+    float: left;
+    height: 100%;
+}
+.headerNavLogo .headerNavLogoCol a,
+.headerNavLogo .headerNavLogoCol a:hover {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.headerNavLogoCol.logoPortal {
+    text-align: left;
+    width: 215px;
+}
+.headerNavLogoCol.logoOesterreich {
+    text-align: right;
+    width: 634px;
+}
+.headerNavLogoCol.latestCover {
+    text-align: right;
+    width: 90px;
+    height: 76px;
+    overflow: hidden;
+}
+
+.headerNavLogoCol a,
+.headerNavLogoCol a img {
+    display: block;
+}
+
+.headerNavLogoCol.logoPortal img {
+    width: auto;
+    height: 68px;
+}
+
+
+.headerNavLogoCol.logoOesterreich {
+    position: relative;
+}
+.headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100px;
+    color: #fff;
+    opacity: .8;
+    position: absolute;
+    left: 62px;
+    bottom: 0;
+}
+.headerNavLogoCol.logoOesterreich img {
+    width: auto;
+    height: 62px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.headerNavLogoCol.latestCover {
+    position: absolute;
+    right: 8px;
+    bottom: 2px;
+}
+.headerNavLogoCol.latestCover img {
+    width: auto;
+    height: 100px;
+    padding: 0;
+    margin: 4px 4px 0 0;
+    display: inline-block;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.headerNavLogoCol.oe24TvLive {
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+.headerNavLogoCol.oe24TvLive img {
+    width: auto;
+    height: 70px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header */
+
+.headerNavLogo,
+.headerNavLogo a,
+.headerNavLogo a img,
+.headerNavLogoCol.logoOesterreich,
+.headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.stickyHeader .headerNavLogo {
+    height: 30px;
+    /*padding: 1px 8px 7px;*/
+    padding: 3px 8px;
+}
+.stickyHeader .headerNavLogo a,
+.stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+
+.stickyHeader .headerNavLogoCol.logoOesterreich {
+    width: 729px;
+}
+.stickyHeader .headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    left: 440px;
+}
+.stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}
+.stickyHeader .headerNavLogoCol.oe24TvLive {
+    /*right: 6px;*/
+    /*top: 3px;*/
+    display: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+.bb_sticky.stickyHeader {
+    top: 63px;
+    padding: 2px 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/* ---------------------------------------------------------------- */
+
+/*
+.layout_tv.oe2016 .headerNavLogoCol.logoPortal {
+}
+.layout_tv.oe2016 .headerNavLogoCol.logoPortal img {
+}
+.layout_tv.oe2016 .stickyHeader .headerNavLogo a,
+.layout_tv.oe2016 .stickyHeader .headerNavLogo a img {
+}
+*/
+
+
+.layout_advent.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 60px;
+    margin-top: 12px;
+}
+
+.layout_advent.oe2016 .stickyHeader .headerNavLogo a,
+.layout_advent.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+    margin-top: 0px;
+}

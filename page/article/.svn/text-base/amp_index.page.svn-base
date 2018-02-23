@@ -1,0 +1,34 @@
+<?php
+/**
+* amp article page
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)/amp
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @var title string
+* @urlManager oe24.oe24
+* @cache 60m
+* @cache.dependency user
+*/
+
+// -----------------------------------------------------------------------------------
+
+// dummy file.
+// the mobile url manager checks things only this way.
+
+// when a url gets called with m.oe24.at, the oe24 url-manager gets transformed into a mobile oe24 url manager.
+// this mobile url manager searches for a page file with the same name in the 'mobile' folder.
+
+// sounds funny, is not.
+
+// (pj) 2016-07-04 Wenn Desktop Amp-Seite angesurft wird, ein Redirect auf die mobile Seite durchführen
+
+$redirectUrl = l('oe24.oe24.mobile.article.amp_index', array(
+    'channel' => $channel,
+    'content' => $content,
+    'title' => $title,
+));
+
+redirect($redirectUrl, 301);
+// (pj) 2016-07-04 end

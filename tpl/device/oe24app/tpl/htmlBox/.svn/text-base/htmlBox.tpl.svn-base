@@ -27,9 +27,24 @@ foreach ($needles as $needle) {
     }
 }
 
+$olympiaNeedle = 'olympialiveblog';
+$olympiaBlog = false;
+
+
+if (strpos($html, $olympiaNeedle) !== false) {
+    $goodBox = true;
+    $olympiaBlog = true;
+}
+
+
 if (!$goodBox) {
     return;
 }
+
+if ($olympiaBlog) {
+    $html = '<a href="http://sport.oe24.at/olympia-2018/liveblog" target="_blank">'.$html.'</a>';
+}
+
 
 $base64 = base64_encode($html);
 $returnArray = array(

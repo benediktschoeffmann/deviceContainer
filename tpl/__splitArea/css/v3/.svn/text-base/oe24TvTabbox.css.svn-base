@@ -1,0 +1,19 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.oe24tvTabBox .redHeadline {
+  /*color: #d2081e;*/
+  color: #d0113a;
+  font-family: "oe24condensed",Arial,sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+.oe24tvTabBox .noUnderline:hover {
+	text-decoration: none;
+}

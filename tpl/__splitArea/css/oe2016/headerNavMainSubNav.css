@@ -1,0 +1,230 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNavMainItem .headerNavMainSubNav {
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    z-index: 1001;
+}
+/*.headerNavMainItem.active > .headerNavMainSubNav,*/
+.headerNavMainItem:hover > .headerNavMainSubNav {
+    visibility: visible;
+    transition: visibility 0s linear 0.5s;
+}
+
+
+.subNavContainer {
+    width: 100%;
+    /*height: 244px;*/
+    border-bottom: 8px solid #d0113a;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 2px 6px rgba(0,0,0,.3);
+    box-shadow: 0px 2px 6px rgba(0,0,0,.3);
+}
+.subNavContainer .icon {
+    font-family: "icomoon",sans-serif;
+}
+
+
+.subNavMenu {
+    padding: 6px 8px;
+}
+.subNavMenu li {
+    float: left;
+    padding-left: 1px;
+}
+.subNavMenu li:first-child {
+    padding-left: 0;
+}
+.subNavMenu a {
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: .8125rem;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: block;
+    padding: 2px 8px;
+    color: #b40047;
+    background-color: #f2f2f2;
+}
+.subNavMenu a:active,
+.subNavMenu a:focus {
+    color: #b40047;
+}
+.subNavMenu a:hover,
+.subNavMenu .active a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #b40047;
+}
+.subNavMenu .subNavMenuImage {
+    float: left;
+    margin-right: 6px;
+}
+
+
+
+.subNavContent {
+    /*padding: 6px 8px;*/
+    padding: 8px 0;
+    background-color: #fff;
+}
+.subNavContent a {
+    text-decoration: none;
+    display: block;
+}
+.subNavContent a:hover {
+    text-decoration: none;
+}
+.subNavContent > a:hover,
+.subNavContent .subNavMore > a:hover {
+    color: #d0113a;
+}
+.subNavContent .subNavSidebar,
+.subNavContent .subNavStory1,
+.subNavContent .subNavStory2,
+.subNavContent .subNavMore {
+    float: left;
+}
+.subNavContent .subNavStory1,
+.subNavContent .subNavStory2,
+.subNavContent .subNavMore {
+    width: 284px;
+    padding-right: 30px;
+}
+.subNavContent .subNavMore {
+    padding-right: 8px;
+}
+.subNavContent .subNavSidebar {
+    font-family: "OpenSansCondensedLight",sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    width: 108px;
+    padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.subNavContent .subNavSidebar a {
+    text-decoration: none;
+    margin: 8px 0;
+    color: #868686;
+    display: block;
+}
+.subNavContent .subNavSidebar a:hover,
+.subNavContent .subNavSidebar a.active {
+    text-decoration: none;
+    color: #6d6d6d;
+}
+.subNavContent .subNavSidebar span {
+    display: block;
+}
+.subNavContent .subNavSidebar .icon {
+    font-family: "icomoon";
+    font-size: 2rem;
+}
+
+
+.subNavContent .subNavSidebar a .icon,
+.subNavContent .subNavSidebar a .caption {
+    width: 100%;
+}
+.subNavContent .subNavSidebar .subNavSidebarTopReaded {
+    display: none;
+}
+
+
+.subNavContent img {
+    background-color: #f2f2f2;
+}
+.subNavContent .subNavStory1,
+.subNavContent .subNavStory2 {
+    font-family: "OpenSansBold",sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+}
+.subNavContent .subNavStory1 img,
+.subNavContent .subNavStory2 img {
+    width: 254px;
+    height: 127px;
+    display: block;
+}
+.subNavContent .subNavStory1 span,
+.subNavContent .subNavStory2 span {
+    margin-top: 6px;
+    display: block;
+}
+.subNavContent .subNavMore a {
+    margin-bottom: 8px;
+}
+.subNavContent .subNavMore img {
+    width: 74px;
+    height: 37px;
+    float: left;
+}
+.subNavContent .subNavMore span {
+    font-size: .75rem;
+    line-height: 1.3;
+    width: 176px;
+    margin-left: 84px;
+    display: block;
+}
+
+
+.subNavContainer {
+    position: relative;
+}
+.subNavContainer .ajaxload {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    margin: 0;
+    z-index: 1;
+}
+.subNavContainer.noStories {
+    height: 42px;
+}
+.subNavContainer.noStories .subNavContent {
+    display: none;
+}
+
+/*
+.subNavContent .subNavSidebar {
+    background-color: #ad5;
+}
+.subNavContent .subNavStory1 {
+    background-color: #da5;
+}
+.subNavContent .subNavStory2 {
+    background-color: #ad5;
+}
+.subNavContent .subNavMore {
+    background-color: #da5;
+}
+.subNavContent .subNavMore a {
+    background-color: #5ad;
+}
+*/
+
+
+/*
+.subNavContent .subNavStory1 img[src="/images/empty.gif"],
+.subNavContent .subNavStory2 img[src="/images/empty.gif"] {
+    height: 1px;
+}
+.subNavContent .subNavMore img[src="/images/empty.gif"] {
+    height: 1px;
+}
+*/

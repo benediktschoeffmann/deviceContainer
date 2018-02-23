@@ -116,13 +116,16 @@ foreach ($articles as $key => $article) {
         if ($lastAd < 3) {
             $ad = $device->getAdUrl($category, $adPositions[$lastAd % 3]);
 
-            $adArray = array(
-                'typ' => 'ad',
-                'url' => $ad,
-                );
+            if ($ad) {
 
-            $device->setConfig("interval_ad_$category", ($lastAd + 1));
-            $device->addData($category, $adArray, 'articles', true);
+                $adArray = array(
+                    'typ' => 'ad',
+                    'url' => $ad,
+                    );
+
+                $device->setConfig("interval_ad_$category", ($lastAd + 1));
+                $device->addData($category, $adArray, 'articles', true);
+            }
         }
 
     }
@@ -134,8 +137,6 @@ foreach ($articles as $key => $article) {
     if ($category != 'frontpage' && $articlesPerCategory >= 19) {
         break;
     }
-
-    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
 
     $counter++;
 
@@ -161,6 +162,13 @@ foreach ($articles as $key => $article) {
                   'portal' => $portal,
                   'layout' => 'smartphone')
             );
+
+    $searchString = 'apaOuterFrame';
+    if (strpos($bodyText, $searchString) !== FALSE) {
+        continue;
+    }
+
+    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
 
     // remove html comment tags
     $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);

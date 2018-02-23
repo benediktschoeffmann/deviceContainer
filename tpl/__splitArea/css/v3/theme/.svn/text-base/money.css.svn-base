@@ -1,0 +1,256 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerMoney
+ */
+
+?>
+
+/* money.at */
+
+#wrap {
+	background: transparent url(<?slp('image', 'rl2014/bg_money_white.gif')?>) repeat-y 0 0;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+.article_box .article_teaser {
+	color: #333; /* von gesund24 gefladert */
+}
+
+::selection {
+	color: #fff;
+	background-color: #184089;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #184089;
+}
+
+
+/* nav main */
+
+.nav_main {
+	-webkit-box-shadow: 0 2px 7px rgba(8, 162, 222, 0.2); /* von gesund24 gefladert */
+	-moz-box-shadow: 0 2px 7px rgba(8, 162, 222, 0.2); /* von gesund24 gefladert */
+	box-shadow: 0 2px 7px rgba(8, 162, 222, 0.2); /* von gesund24 gefladert */
+
+	/*background-color: #002f71;*/
+	/*background-image: linear-gradient(to bottom, #107ec4 0%, #184089 100%);*/
+	background-color: #135fa7;
+	background-image: linear-gradient(to bottom, #0f7dc4 0%, #184089 100%);
+}
+.nav_main_items .nav_main_item {
+	background-color: #107ec4;
+	background-image: linear-gradient(to bottom, #145da4 0%, #107ec4 100%);
+}
+.nav_main_items .nav_main_item > a {
+	background-color: #107ec4;
+	background-image: linear-gradient(to bottom, #145da4 0px, #184089 100%);
+}
+.nav_main .nav_main_items .nav_main_item > a:hover,
+.nav_main .nav_main_items .nav_main_item > a.active {
+	background-color: #184089;
+	background-image: linear-gradient(to bottom, #145da4 0%, #107ec4 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a {
+	background-color: #002f71;
+	background-image: linear-gradient(to bottom, #107ec4 0px, #184089 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a:hover,
+.nav_main.fixed .nav_main_items .nav_main_item > a.active {
+	background-color: #184089;
+	background-image: linear-gradient(to bottom, #145da4 0px, #107ec4 100%);
+}
+
+
+/* nav main logo */
+
+.nav_main .nav_main_logo img {
+	height: 63px;
+	left: 26px;
+	top: 7px;
+	height: 73px;
+	left: 0;
+	top: 0;
+}
+.nav_main.fixed .nav_main_logo img {
+	height: 30px;
+	left: 72px;
+	top: 3px;
+}
+
+
+/* nav weather */
+
+.nav_main_weather:hover .icon_arrow {
+	background-color: #184089;
+	/*background-image: linear-gradient(to bottom, #002f71 0%, #184089 100%);*/
+	background-image: linear-gradient(to bottom, #2966bb 0%, #184089 100%);
+}
+
+
+/* subnav */
+
+.subnav_container {
+	border-bottom: 6px solid #184089;
+}
+.subnav_menu a {
+	color: #184089;
+}
+.subnav_menu a:hover,
+.subnav_menu .active a {
+	background-color: #184089;
+}
+.subnav_content .top_1:hover,
+.subnav_content .top_2:hover,
+.subnav_content .more_1:hover,
+.subnav_content .more_2:hover,
+.subnav_content .more_3:hover {
+	color: #184089;
+}
+
+
+/* row */
+.row_caption_title h2 a,
+.row_caption_title h2 a:hover,
+.row_caption_title h2,
+.row_caption_info span {
+	color: #184089;
+}
+
+.content .channel_box.top_story a:hover .caption,
+.content .channel_box a:hover .story_pretitle,
+.content .channel_box a:hover .story_pagetitle {
+	color: #184089;
+}
+
+
+/* defaultbox */
+
+.sidebar .defaultbox_header_icon,
+.sidebar .defaultbox_header_caption,
+.sidebar .defaultbox_header_subcaption {
+	color: #184089;
+}
+
+
+/* listbox */
+
+.sidebar .listbox_header span {
+    color: #184089;
+}
+.sidebar .listbox .listbox_caption .listbox_pre_title {
+	color: #184089;
+}
+
+
+/* immoads sidebar box */
+
+.sidebar .listbox_footer a span {
+	color: #184089;
+}
+
+
+/* footer */
+.oe2016 footer .footer_caption,
+footer .footer_caption {
+	color: #184089;
+}
+.oe2016 footer .nav_items a:hover,
+footer .nav_items a:hover {
+	color: #184089;
+}
+
+
+/* artikel */
+
+.article_box .overlay_box .caption {
+	background-color: #184089;
+}
+.service .comment, .service .comment:hover {
+	background-color: #184089;
+}
+.article_social {
+	border-right: 2px solid #184089;
+}
+
+.article_box a,
+.live_ticker_body a {
+	color: #184089;
+}
+.article_box a:hover,
+.live_ticker_body a:hover {
+	color: #184089;
+}
+.service a {
+	background-color: #ced2d5;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	padding: 2px 6px;
+}
+
+.service .breadcrumbs a,
+.article_share .socialInlineText,
+.comments .hidePostingDiv,
+.channelTopStoriesHeader,
+.adSlotAdition .cont-header strong,
+.adSlotAdition .content_text strong {
+	color: #184089;
+}
+
+
+/* .content .ticker_box */
+
+.content .ticker_box .ticker_header .ticker_titel {
+	background-color: #184089;
+}
+.content .ticker_box .ticker_header .ticker_titel:after {
+    border-color: #184089 transparent;
+}
+.content .ticker_box .ticker_content .ticker_content_part:hover {
+    color: #184089;
+}
+.content .ticker_box .ticker_arrow {
+	color: #184089;
+}
+.content .ticker_box .ticker_content_time {
+	color: #184089;
+}
+
+
+
+/* oe2016 rebrush */
+.a2016 .relatedArticlesHeadline {
+	color: #184089;
+}
+
+.a2016.story .videoContentBox .videoContentBoxHeadline,
+.oe2016.story .videoContentBox .videoContentBoxHeadline {
+	background-color: #184089;
+}
+
+.oe2016.story .videoContentBox .videoEntry .topVideoCircle,
+.a2016.story .videoContentBox .videoEntry .topVideoCircle {
+	background-color: #184089;
+}
+
+.a2016.story .videoEntry a:hover > .videoTitle,
+.oe2016.story .videoEntry a:hover > .videoTitle {
+	color: #184089;
+}
+
+.a2016.layout_money .oe2016InlineHeadline .type {
+	color: #184089;
+}
+
+.a2016.layout_money .imageSlideShowWrapper .arrow,
+.a2016.layout_money .overlay_box .arrowContainer {
+	background-color: #184089;
+}
+
+.a2016.layout_money .imageSlideShowWrapper .arrow:hover span,
+.a2016.layout_money .overlay_box .arrowContainer:hover {
+	color: #184089;
+}

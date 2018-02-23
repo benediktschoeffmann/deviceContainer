@@ -1,0 +1,104 @@
+
+http://www.aakashweb.com/jquery-plugins/easy-ticker/
+
+
+Documentation
+=============
+
+
+Basic Usage
+
+    Include jquery.js and jquery.easy-ticker.js files to the page
+    Attach the plugin to the elements needed with the easyTicker function.
+
+
+Example
+
+HTML
+----
+<div class="ticker1">
+	<div class="innerWrap">
+		<div class="list"> List 1 </div>
+		<div class="list"> List 2 </div>
+		<div class="list"> List 3 </div>
+		<div class="list"> List 4 </div>
+	</div>
+</div>
+
+<div class="ticker2">
+	<ul>
+		<li> List 1 </li>
+		<li> List 2 </li>
+		<li> List 3 </li>
+		<li> List 4 </li>
+	</ul>
+</div>
+
+jQuery code
+-----------
+
+$('.ticker1, .ticker2').easyTicker({
+	direction: 'up',
+	easing: 'swing',
+	speed: 'slow',
+	interval: 2000,
+	height: 'auto',
+	visible: 0,
+	mousePause: 1,
+	controls: {
+		up: '',
+		down: '',
+		toggle: '',
+		playText: 'Play',
+		stopText: 'Stop'
+	}
+});
+
+
+Available properties
+--------------------
+
+direction
+
+This property determines the direction of movement of the list. Values: up & down. Default: up
+
+
+easing
+
+The easing property allows to add some easing effects to the transition using the easing function available from the Easing plugin. Just download and include the plugin in the page and give the required easing function name as value. Default: ‘swing’. Check out the demo to get an example.
+
+
+speed
+
+This property determines the speed of transition. Values: slow, medium, fast or any value in milliseconds.
+interval
+
+The time for the next transition to take place. Values: time in milliseconds. Default: 2000 (2 seconds delay for next transition)
+
+
+height
+
+The height of the element can be controlled by this property. If the height is set to auto, the height is automatically determined to fit the list. Exact values like 200px or 300px can also be set. Default: auto.
+
+
+visible
+
+The number of visible elements of the list can be set to this property. Values: 0 (display all) or any specific count like 1, 2, 3 etc. Default: 0
+
+
+mousePause
+
+The timer can be stopped when the mouse rolls over the element. Values: 0 – Disable mouse pause & 1 – Enable mouse pause. Default: 1
+
+
+controls
+
+The controls property is used to assign the elements which control the transition. The value is an object with the following properties.
+
+    up – The element to do a “Up” transition. Value: any element selector
+    down – The element to do a “Down” transition. Value: any element selector
+    toggle – The element to “Play/Pause” the transition. Value: any element selector
+
+    Note: A class named et-run is added to the “toggle” element when the transition is in on-state
+    playText – The text of the toggle button, when the ticker is running.
+    stopText – The text of the toggle button, when the ticker is stopped.

@@ -1,0 +1,187 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+.adSlotAdition {
+	text-align: center;
+	margin: 0 auto;
+	background-color: #fff;
+}
+header + #Left1.adSlotAdition {
+	padding-top: 28px;
+}
+.row + #Left1.adSlotAdition {
+	padding-bottom: 28px;
+}
+/* 6px vermeiden */
+#Contentad1.adSlotAdition div {
+	font-size: 1px;
+	line-height: 1px;
+}
+.adSlotAdition div {
+	font-size: 1px;
+	line-height: 1px;
+}
+
+#Fishtank {
+	font-size: 0px;
+}
+/* adSlotAdition Artikel */
+
+.article_box #Left1.adSlotAdition {
+	padding-top: 0;
+}
+.content .adSlotAdition {
+	text-align: left;
+}
+
+/* Skyscaper, Superbanner */
+
+.headerContainer {
+	position: relative;
+}
+.Skyscraper_div {
+	position: absolute;
+	left: 990px;
+	/*top: 145px;*/
+	top: 40px;
+	background-color: transparent;
+}
+
+
+.Skyscraper_div .adSlotAdition {
+	background-color: transparent;
+}
+#Skyscraper2.adSlotAdition {
+	margin-top: 10px;
+}
+
+#Superbanner1.adSlotAdition {
+	text-align: center;
+}
+
+#Superbanner {
+	width: 960px;
+}
+
+#Superbanner div {
+	/*display: inline-block !important;*/
+}
+
+/* (pj) 2014-07-17 */
+/* sticky ContentAds */
+.adSlotAdition.fixed {
+	position: fixed;
+	top: 62px;
+	z-index: 1000;
+	padding: 5px 0;
+	background-color: transparent;
+}
+/* (pj) end */
+
+/* (pj) 2014-07-17 */
+/* sticky Superbanner */
+
+#Superbanner.fixed {
+	background-color: rgba(0, 0, 0, .6);
+	padding: 2px 0px;
+	position: fixed;
+	left: 15px;
+	top: 62px;
+	z-index: 1000; /* damit die Subnavigation weiterhin sichtbar ist, aber die social-buttons beim Artikel verdeckt, mind. 1000 */
+}
+
+/* (pj) Ende */
+
+/* (ws) 2014-07-01 */
+.article_box #ArticleLeft1.adSlotAdition {
+	padding-top: 0;
+	margin: 18px 0 14px;
+}
+
+
+.adSlotFail {
+	width: 100%;
+	padding: 10px;
+	color: #fff;
+	background-color: #f00;
+}
+
+
+
+/* Alle .adSlotAdition in der Content-Seite überarbeiten */
+
+.content .col .adSlotAdition h2 {
+	background-color: #f0a330;
+}
+.content .col .adSlotAdition a {
+	font-size: .875rem;
+	line-height: 1.4;
+	margin: 0;
+}
+.content .col .adSlotAdition strong a {
+	font-family: arial,sans-serif;
+	font-size: .75rem;
+	text-transform: uppercase;
+	display: block;
+	margin: 16px 0 10px;
+	margin: 8px 0 2px;
+	color: #959595;
+}
+.content .col .adSlotAdition strong a:hover {
+	color: #dd1010;
+}
+.content .col .adSlotAdition h3 {
+	margin: 0 0 3px;
+}
+.content .col .adSlotAdition h3 a {
+	/*font-family: "oe24condensed",sans-serif;*/
+	font-family: "oe24",sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 0 0 3px;
+	color: #484848;
+}
+.content .col .adSlotAdition strong a:hover,
+.content .col .adSlotAdition h3 a:hover {
+	color: #dd1010;
+}
+.content .col .adSlotAdition img[height="1"],
+.content .col .adSlotAdition img.image_zp {
+	display: none;
+}
+
+
+/* Responsive iFrames */
+/* http://support.jwplayer.com/customer/en/portal/articles/1406644-making-jw-player-responsive */
+/* https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+
+.adSlotAdition.outstream {
+    width: 100%;
+    /*height: 0;*/
+    padding-top: 20px;
+    padding-bottom: 56%;
+    position: relative;
+    -webkit-transition: height .3s, padding .5s;
+    transition: height .3s,  padding .5s;
+
+    padding: 0;
+}
+.adSlotAdition.outstream iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* (ws) 2016-10-21 Ad aus der Wetter-TabbedBox stosst unmittelbar an ein folgendes Ad an */
+.row.tabbedBox.wetter + .row.row_ad {
+	margin-top: 15px;
+}
+
+

@@ -1,0 +1,12 @@
+<?php
+/**
+ * @collector noauto
+ */
+
+?>
+
+/* Channel Top Stories des Artikel */
+.oe2016 .channelTopStoriesHeader {
+    background-color: #f8ec00;
+    color: #000;
+}

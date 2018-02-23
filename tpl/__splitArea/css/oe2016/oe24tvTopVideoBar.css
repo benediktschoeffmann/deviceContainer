@@ -1,0 +1,65 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.topVideoBar {
+    margin: 0 15px;
+    padding: 10px 0;
+    background-color: #ebebeb;
+}
+.topVideoBar.distanceTop {
+    margin-top: 15px;
+}
+.topVideoBar.distanceBottom {
+    margin-bottom: 15px;
+}
+
+
+.topVideoBar .topVideoStory {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+.topVideoBar .topVideoStory img {
+    display: block;
+    width: 100%;
+}
+
+
+.topVideoBar .topVideoStory .preTitle,
+.topVideoBar .topVideoStory .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.topVideoBar .topVideoStory .preTitle {
+    font-family: Arial,sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 8px 0 2px;
+    margin: 0;
+    color: #8c8c8c;
+}
+.topVideoBar .topVideoStory .title {
+    font-family: "oe24",Arial,sans-serif;
+    font-size: 1.3125rem;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+
+.topVideoBar .topVideoStory:hover {
+    text-decoration: none;
+}
+.topVideoBar .topVideoStory:hover .title {
+    color: #d0013a;
+}
+
+

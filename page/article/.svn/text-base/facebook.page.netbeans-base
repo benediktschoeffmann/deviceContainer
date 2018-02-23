@@ -1,0 +1,78 @@
+<?php
+/**
+* Facebook Scraper Article Page (FB Scraper Trap)
+*
+* @url (?<channel>.*)/_facebook/(?<title>[^/]+)/(?<content>\d+)
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @urlManager oe24.oe24
+* @cache 365d
+*/
+$metaDescription = NULL;
+$metaKeywords = "";
+$tags = $channel->getTags(true);
+
+if($tags){
+    foreach($tags as $tag){
+        $metaKeywords .=  $tag->getName().",";
+    }
+}
+
+if($content instanceof TextualContent){
+    $metaDescription = $content->getRobotsDescription();
+    if(!$metaDescription){
+        $metaDescription = $content->getLeadText(true);
+    }
+    $tags = $content->getTags();
+    if($tags){
+        foreach($tags as $tag){
+            $metaKeywords .=  $tag->getName().", ";
+        }
+    }
+}
+if($content){
+    $options = $content->getOptions(true, true);
+    $optionsNoParent = $channel->getOptions();
+}elseif($channel){
+    $options = $channel->getOptions(true, true);
+    $optionsNoParent = $channel->getOptions();
+}else{
+    return NULL;
+}
+
+if(!$metaDescription && $options->get("metaDescription")){
+    $metaDescription = $options->get("metaDescription");
+}elseif(!$metaDescription){
+    $metaDescription = "Ãsterreich / oe24.at - Das Online-Portal der Tageszeitung &quot;Ãsterreich&quot; bietet aktuelle Text-, Bild- und Video-Nachrichten, sowie Leser- und Redaktions-Blogs.";
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="<?=$metaKeywords?>" />
+        <title><?=$content->getPageTitle()?></title>
+        <?if($content instanceof TextualContent){?>
+            <meta name="description" content="<?=$content->getLeadText(true)?>" />
+            <meta property="og:title" content="<?=$content->getPageTitle()?>" />
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content="<?=$content->getUrl()?>" />
+            <meta property="og:description" content="<?=$content->getLeadText(true)?>" />
+            <? $image = $content->getFirstRelatedImage();
+            if($image){?>
+                <meta property="og:image" content="<?=$image->getFileUrl("consoleMadonnaNoStretch2")?>" />
+            <?}?>
+            <meta property="article:published_time" content="<?=date("o-m-d",$content->getFrontendDate()->getTimestamp())?>" />
+           <?if($tags){
+                foreach($tags as $tag){?>
+                   <meta property="article:tag" content="<?=$tag->getName()?>" />
+               <?}
+           }?>
+            <meta property="article:section" content="<?=$channel->getName()?>" /> 
+        <?}else{?>
+           <meta name="description" content="<?s($metaDescription)?>" />
+        <?}?>
+    </head>
+    <body></body>
+</html>

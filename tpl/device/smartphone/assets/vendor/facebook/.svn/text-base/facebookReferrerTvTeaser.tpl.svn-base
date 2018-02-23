@@ -6,36 +6,17 @@
 *   ausgespielt werden und die mobile Tv Teaser Box dafür.
 *
 */
+
 $device = DeviceContainer::getDevice();
 
-// (bs) 2017-09-26 DAILY-855 addendum:
-// until 2017-09-30, ignore referrer, show tvbox every time.
+// (bs) die Entscheidung, ob der TvTeaser aufgrund von Referrer Facebook ausgespielt wird, wird in der index.tpl getroffen, da die articleOutbrain.tpl vor dem facebookReferrerTvTeaser.tpl ausgespielt wird.
 
+$configShowTvTeaser = $device->getConfig('showTvTeaser');
 
-// (bs) das wird nun in der index.tpl geprüft, da die articleOutbrain.tpl vor dem facebookReferrerTvTeaser.tpl ausgespielt wird.
+// (ws) 2018-02-15 Anforderung - TV Teaser auf jeden Fall im Artikel ausspielen unabhaengig vom Referer
+$configShowTvTeaser = true;
 
-// $requestHeaders = request()->getHeaders();
-// $referer = $requestHeaders['Referer'];
-// // for testing: $referer = 'www.facebook.com';
-// $rc = preg_match("/(.)*(\.(facebook|fb)\.com)(.)*/", $referer, $match);
-// $showBox = (1 === $rc) && (is_array($match) && isset($match[0]) && $match[0] === $referer);
-
-
-
-
-// $showBox = true;
-// (ws) 2017-10-27 Laut Tom/Niki soll bis 2017-10-31 die Box für ALLE gezeigt werden
-// $showBox = true;
-// (bs) dieser Zeitraum ist jetzt vorbei.
-
-
-// (bs) 2017-10-31 Bei TV nicht
-// if ($device->getConfig('channel')->getOptions(true, true)->get('layoutOverride') == 'tv') {
-//     $showBox = false;
-// }
-
-
-if ($device->getConfig('showTvTeaser')) {
+if (true == $configShowTvTeaser) {
 
     $boxId = ($device->getConfig('isDevServer')) ? 161583089 : 273862327;
     $teaserBox = db()->getById($boxId, 'oe24.core.ContentBox', false);
@@ -51,5 +32,3 @@ if ($device->getConfig('showTvTeaser')) {
             )
         );
 }
-
-

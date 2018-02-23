@@ -1,0 +1,293 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerTv
+ */
+?>
+
+/* selected text */
+
+::-moz-selection {
+    color: #fff;
+    background-color: #dd1010;
+}
+::selection {
+    color: #fff;
+    background-color: #dd1010;
+}
+
+/* nav_top */
+
+.nav_top {
+    background: #e6e6e6;
+}
+.nav_top a {
+    background: #f0f0f0;
+}
+
+/* nav main */
+
+.nav_main {
+    -webkit-box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+    -moz-box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+    box-shadow: 0px 2px 5px rgba(221,16,16,.5);
+
+    background-color: #dd1010;
+    background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+}
+.nav_main_items .nav_main_item {
+    background-color: #fc0707;
+    background-image: linear-gradient(to bottom, #e83030 0px, #fc0707 100%);
+}
+.nav_main_items .nav_main_item > a {
+    background-color: #dd1010;
+    background-image: linear-gradient(to bottom, #e83030 0px, #d10a0a 100%);
+}
+.nav_main_items .nav_main_item > a:hover,
+.nav_main_items .nav_main_item > a.active {
+    background-color: #fc0707;
+    background-image: linear-gradient(to bottom, #e83030 0px, #fc0707 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a {
+    background-color: #dd1010;
+    background-image: linear-gradient(to bottom, #ff5858 0px, #d10a0a 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a:hover,
+.nav_main.fixed .nav_main_items .nav_main_item > a.active {
+    background-color: #fc0707;
+    background-image: linear-gradient(to bottom, #ff5858 0px, #fc0707 100%);
+}
+
+/* nav main logo */
+
+.nav_main .nav_main_logo {
+    width: 275px;
+}
+
+.nav_main .nav_main_logo img {
+    /*width: 183px;*/
+    height: 60px;
+    left: 8px;
+    top: 7px;
+    /*transition: all 3s ease;*/
+}
+.nav_main.fixed .nav_main_logo img {
+    /*width: 87px;*/
+    height: 30px;
+    left: 72px;
+    top: 3px;
+}
+
+
+/* addthis buttons */
+.addThisButtons {
+    padding: 8px 0 0;
+}
+
+
+/* (pj) 2015-06-01 Wetter nach links schieben, weil Cover */
+
+/*.nav_main_weather {
+    right: auto;
+    left: 230px;
+}
+
+.nav_main .nav_main_weather_dropdown {
+    width: auto;
+    right: auto;
+    left: 230px;
+}
+*/
+/* (pj) end */
+
+
+header {
+    background: #e6e6e6;
+}
+body {
+    background: #e6e6e6;
+}
+/*
+.layout_tv footer {
+    width: 960px;
+    margin: 0 0 0 15px;
+}
+.layout_tv footer .footer_top .footer_left {
+    width: 630px;
+}
+.layout_tv footer .footer_top .footer_right {
+    width: 300px;
+}
+.layout_tv footer .footer_top .footer_inner {
+    width: 305px;
+}
+*/
+
+a {
+    -webkit-transition: text-decoration 0.4s, color 0.4s;
+    -moz-transition: text-decoration 0.4s, color 0.4s;
+    -o-transition: text-decoration 0.4s, color 0.4s;
+    -ms-transition: text-decoration 0.4s, color 0.4s;
+    transition: text-decoration 0.4s, color 0.4s;
+}
+
+.oe24tvTabBox.moreBoxes {
+    width: 960px;
+    margin: 0 auto 15px;
+    padding: 15px 0 1px;
+    background-color: #f2f2f2;
+}
+
+.oe24tvArticle {
+    width: 960px;
+    margin: 8px auto 0;
+    padding: 15px 0 0;
+    background-color: #fff;
+}
+
+.oe24tvCaption {
+    background-color: #fff;
+    padding: 15px;
+    /* (ws) 2017-07-18 */
+    /*margin: 0 0 15px 15px;*/
+    /*margin: 0 0 15px 0;*/
+    margin-bottom: 15px;
+    /* (ws) 2017-07-18 end */
+}
+
+.oe24tvArticle .videoPreTitle {
+    color: #888;
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.oe24tvArticle .videoPreTitle .videoCopyright {
+    float: right;
+    font-size: 10px;
+}
+
+.oe24tvArticle .videoTitle {
+    font-family: "oe24condensed", Arial, sans-serif;
+    font-size: 55px;
+    margin: 0;
+}
+
+
+.oe24tvArticle .videoLeadText {
+    color: #777;
+    margin: 0;
+    padding: 8px 0;
+}
+
+
+/* (bs) 2017-11-06 DAILY-914 */
+.oe24tvArticle .videoDate {
+    padding: 0;
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 5px;
+}
+/* (bs) end */
+
+
+/* (pj) 2016-06-07 Hintergrundfarbe stand in console_oe24.css */
+#wrap.layout_tv {
+    background: #e6e6e6;
+}
+
+.layout_tv.oe2016 .consoleBoxHeadline {
+    background: transparent;
+}
+/* (pj) 2016-06-07 end */
+
+
+/* (ws) 2017-02-03 */
+
+.layout_tv.a2016 .row {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.layout_tv.a2016 .sidebar.article:after,
+.layout_tv.a2016 .content.article:after {
+}
+.layout_tv.a2016 .sidebar.article,
+.layout_tv.a2016 .content.article {
+    /*background-color: #fff;*/
+}
+.layout_tv.a2016 .sidebar.article {
+    width: 320px;
+    /*margin-left: 15px;*/
+}
+.layout_tv.a2016 .content.article {
+    width: 640px;
+    /*margin-right: 15px;*/
+}
+
+
+.layout_tv.a2016 .channelTopStoriesContent {
+    width: 960px;
+    padding: 0;
+    background-color: transparent;
+}
+.layout_tv.a2016 .channelTopStories {
+    /*background-color: #fff;*/
+}
+.layout_tv.a2016 .channelTopStories .story_pretitle,
+.layout_tv.a2016 .channelTopStories .story_pagetitle,
+.layout_tv.a2016 .channelTopStories .story_leadtext {
+    padding: 0 10px;
+}
+
+
+.layout_tv.a2016 .row_margin_top,
+.layout_tv.a2016 .row_margin_bottom {
+    width: 960px;
+    height: 0;
+    padding: 0;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.layout_tv.a2016 .row_margin_top .row_margin_inner,
+.layout_tv.a2016 .row_margin_bottom .row_margin_inner {
+    height: 14px;
+    border: none;
+    /*background-color: #fff;*/
+}
+
+
+footer {
+    padding: 0;
+    margin: 0 15px;
+}
+footer .footerTop {
+    padding: 30px 0 0;
+}
+footer ul,
+footer li {
+    margin: 0;
+    list-style: none;
+}
+footer ul {
+    padding: 20px 10px;
+    border-top: 1px solid #bababa;
+    /*border-top: 1px solid #ededed;*/
+}
+footer li {
+    float: left;
+    padding: 0 5px;
+    border-left: 1px solid #000;
+    margin: 0 0 5px;
+}
+footer li:first-child {
+    padding: 0 5px 0 0;
+    border-left: none;
+}
+footer li a {
+    text-decoration: none
+}
+footer li a:hover {
+    color: #cc054a;
+}
+
+/* (ws) 2017-02-03 end */

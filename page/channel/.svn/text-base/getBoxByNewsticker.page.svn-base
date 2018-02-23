@@ -1,0 +1,206 @@
+<?php
+/**
+ * Return a Box Template
+ * preferred for Live Ticker
+ *
+ * @url /getBoxByNewsticker/(?<boxId>[0-9]+)/(?<channelId>[0-9]+)/(?<columnId>[0-9]+)/(?<originalDomain>[0-9]?)
+ * @url /getBoxByNewsticker/(?<boxId>[0-9]+)/(?<channelId>[0-9]+)/(?<columnId>[0-9]+)
+ * @var portal oe24.core.Portal
+ * @var boxId string
+ * @var channelId string
+ * @var columnId string
+ * @var originalDomain string
+ * @default originalDomain 0
+ * @urlManager oe24.oe24
+ * @cache 5m
+ */
+
+$box = db()->getById($boxId, "oe24.core.FrontendBox", false);
+if (null === $box) {
+    header("HTTP/1.0 404 Not Found");
+    return;
+}
+$channel = db()->getById($channelId, "oe24.core.Channel", false);
+$channel = !$channel ? Channel::getChannelByChannelstring($portal, "") : $channel;
+if ($originalDomain && $originalDomain == '1') {
+    $channel = Channel::getChannelByChannelstring($portal, "frontpage");
+}
+$column = db()->getById($columnId, "oe24.core.ChannelColumn", false);
+$column = !$column ? new ChannelColumn() : $column;
+if(!$column->getId()){
+    $column->setName("Content Area");
+}
+
+ob_start();
+echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
+echo '<html><head><meta http-equiv="refresh" content="120">';
+if(request()->getGetValue("includeJS")){
+    $js = explode(",", request()->getGetValue("includeJS"));
+    echo '<script type="text/javascript" src="'.l('spunQ.wormhole.js', array('js' => $js)).'"></script>';
+}
+if(request()->getGetValue("includeCSS")){
+    $css = explode(",", request()->getGetValue("includeCSS"));
+    //echo '<link rel="stylesheet" type="text/css" media="all" href="'.l('spunQ.wormhole.css', array('css' => $css)).'"/>';
+	echo '<link rel="stylesheet" type="text/css" media="all" href="/_spunQ/css/oe24.oe24.__splitArea.css.v3.base%2Coe24.oe24.__splitArea.css.v3.font.digital-7%2Coe24.oe24.__splitArea.css.v3.wmLiveTickerIFrame%2Coe24.oe24.__splitArea.css.v3.wmLiveTicker/1.403.864.550"/>';
+}
+
+if(request()->getGetValue("baseTarget")){
+    echo '<base target="'.request()->getGetValue("baseTarget").'" />';
+}
+echo '</head><body>';
+etpl($box->getTemplate(), array("channel" => $channel, "box" => $box, "column" => $column, "portal" => $portal));
+$html = ob_get_contents();
+ob_end_clean();
+
+if(request()->getGetValue("asDocumentWrite")){
+    response()->addHeader("content-type: text/javascript");
+    $html = addcslashes($html, "'");
+    $html = str_replace(array("<", ">", "\r", "\n", "\t"), array("<'+'", ">'+'", "", "", ""), $html);
+    echo "document.write('$html');";
+}else{
+    echo $html;
+}
+echo '
+<style type="text/css">
+
+
+
+.wmSidebarWmLiveTicker {
+	background-color: #157447;
+	background-image: url("http://file.oe24.at/sport/wm-2014/topBox/bg_live_ticker.png");
+	height: 310px;
+}
+.wmSidebarWmLiveTicker h2,
+.wmSidebarWmLiveTicker h3 {
+	margin: 0;
+}
+
+.wmSidebarWmLiveTicker .wmLiveTickerGame {
+	margin: 0px 5px;
+	height: 145px;
+	padding-top: 2px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame:nth-child(1) {
+	border-bottom: 4px solid #ffd900;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0:nth-child(1) {
+	border-bottom: none;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-1 {
+	height: 118px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 {
+	height: 146px;
+	border-bottom: 4px solid #ffd900;
+	float: left;
+	width: 145px;
+	margin: 0px 5px 0px 0px;
+	padding: 8px 0px 0px 3px;
+	border-left: 2px solid #ffd900;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3:nth-child(1) {
+	margin: 0px 0px 0px 5px;
+	padding: 8px 3px 0px 0px;
+	border-right: 2px solid #ffd900;
+	border-left: none;
+}
+
+.wmSidebarWmLiveTicker .wmSidebarLiveTickerBody {
+	padding-top: 72px;
+}
+
+.wmSidebarWmLiveTicker .teams span img {
+	border:none;
+}
+.wmSidebarWmLiveTicker .teams span {
+	display: inline-block;
+	line-height: 29px;
+	vertical-align: middle;
+}
+
+.wmSidebarWmLiveTicker .teamVs {
+	color: #ffffff;
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+.wmSidebarWmLiveTicker .toreVs {
+	color: #ffd900;
+	font-size: 144px;
+	line-height: 100px;	
+	font-size: 9rem;
+	line-height: 7rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .teamVs {
+	font-size: 64px;
+	line-height: 64px;
+	font-size: 4rem;
+	line-height: 4rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-1 .toreVs {
+	font-size: 112px;
+	line-height: 0px;
+	font-size: 7rem;
+	line-height: 5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .tore {
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	left: 0px;
+}
+
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 .teamVs {
+	padding: 9px 0px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 .toreVs {
+	font-size: 80px;
+	line-height: 48px;
+	font-size: 5rem;
+	line-height: 3rem;
+}
+
+.wmSidebarWmLiveTicker .flagSpace {
+	width: 18px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .flagSpace {
+	width: 77px;
+}
+
+
+.wmSidebarWmLiveTicker .wmLiveTickerBottom {
+	padding: 0px 10px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame {
+	float: left;
+	border-left: 4px solid #ffd900;
+	padding-left: 6px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame:nth-child(1) {
+	border-left: none;
+	padding-left: 0px
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom .teamVs {
+	color: #ffffff;
+	font-size: 32px;
+	line-height: 24px;	
+	font-size: 2rem;
+	line-height: 1.5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom .toreVs {
+	color: #ffd900;
+	font-size: 21px;
+	line-height: 1.3125rem;
+	font-size: 1.3125rem;
+	line-height: 1.3125rem;
+}
+
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .wmLiveTickerBottomGame,
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .wmLiveTickerBottomGame {
+	width: 138px;
+	height: 86px;
+	padding-top: 7px;
+}
+
+</style>
+</body></html>';

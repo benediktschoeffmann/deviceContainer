@@ -1,0 +1,34 @@
+<?php
+/**
+ * Article JSON Feeds
+ *
+ * @url /getById/(?<content_id>\d+)/json/(?<jsontemplate>.*)
+ * @var jsontemplate string
+ * @var content_id integer
+ * @urlManager oe24.oe24
+ * @cache 20m
+*/
+set_time_limit(10);
+response()->addHeader('Cache-Control: v-max-age=1200,max-age=1200');
+response()->addHeader('Content-Type: text/plain; charset=utf-8');
+$content = db()->getById($content_id, "oe24.core.Content", false);
+$error = false;
+
+if($content){
+    if($content instanceof Text && $content->isPublished()){
+        $alias = "oe24.frontend.json.story.$jsontemplate";
+        $file = spunQ_Module::aliasToTplFile($alias, false);
+        if($file && $file->exists()){
+            etpl($alias, array("content" => $content));
+            return NULL;
+        }
+    } elseif ($content instanceof SlideShow && $content->isPublished()){
+        $alias = "oe24.frontend.json.slideshow.$jsontemplate";
+        $file = spunQ_Module::aliasToTplFile($alias, false);
+        if($file && $file->exists()){
+            etpl($alias, array("content" => $content));
+            return NULL;
+        }
+    }
+}
+echo json_encode(array('error' => '404'));

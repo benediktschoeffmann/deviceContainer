@@ -1,0 +1,416 @@
+<?php
+
+/**
+ * main page template for splitArea mode.
+ *
+ * @var portal oe24.core.Portal
+ * @var channel oe24.core.Channel
+ * @var object any
+ * @default object 0
+ * @var params array<any>
+ */
+
+// -------------------------------------------
+
+// (bs) for testing
+    $g= request()->getGetValues();
+
+    if (isset($g['p18']) && $g['p18'] === 'o32a') {
+        debug('branching to page2');
+        tpl('oe24.oe24.__splitArea._page.01__page', array(
+            'portal' => $portal,
+            'channel' => $channel,
+            'object' => $object,
+            'params' => $params,
+        ));
+        return;
+    }
+
+// (bs) end
+
+
+
+$useNewCollector = true;
+// $useNewLayout = true;
+
+$option = $channel->getOptions(true,true)->get('useNewLayout');
+$useNewLayout = ($option) ? $option : null;
+
+$option = request()->getGetValue('useSplitArea');
+$useNewLayout = ($option !== NULL) ? $option : $useNewLayout;
+
+// (pj) 2016-02-26 Buggy Part, da im Cookie-Wert der md5-Hash von 'useSplitArea' drinnen steht
+// (pj)            cookie wird in der page/user/panel.page gespeichert
+// $option = request()->getCookieValue('useSplitArea');
+// $useNewLayout = ($option === md5('useSplitArea')) ? $option : $useNewLayout;
+// (pj) 2016-02-26 end
+
+// -------------------------------------------
+
+$showPaidContentMarker = false;
+// kann true, false oder null sein.
+if (!$object instanceof TextualContent && $channel->getOptions(true, true)->get('EntgeltlicherContent')) {
+    $showPaidContentMarker = true;
+}
+
+// -------------------------------------------
+
+$layout = $channel->getOptions(true,false)->get('layoutOverride') ? $channel->getOptions(true,false)->get('layoutOverride') : 'oe24';
+
+// Channel Layouts fuer oe2016
+$oe2016layouts = array(
+    'oe24',
+    'sport',
+    'sport_euro2016',
+    // 'money', // (ws) 2017-03-13
+    'radiooe24',
+    'society',
+    'tv',
+    //'tv2016',
+    'advent', // (bs) 2016-10-31
+    'antenne_salzburg', // (pj) 2016-11-21
+    'antenne_tirol', // (pj) 2016-11-29
+    'reise', // (bs) 2017-02-03
+    'meinauto24', // (ws) 2017-02-15
+    'gesund24', // (db) 2017-03-09
+    'cooking24', // (db) 2017-03-16
+    'madonna',
+    'business',
+    'games24',
+);
+
+// Artikel Layouts fuer oe2016
+if ($object instanceof TextualContent) {
+    $oe2016layouts = array(
+        'oe24',
+        'sport',
+        'sport_euro2016',
+        'money',
+        'radiooe24',
+        'society',
+        'tv',
+        // 'tv2016',
+        'advent', // (pj) 2016-11-21
+        'antenne_salzburg', // (pj) 2016-11-21
+        'antenne_tirol', // (pj) 2016-11-29
+        'reise', // (bs) 2017-02-03
+        'meinauto24', // (ws) 2017-02-15
+        'gesund24', // (db) 2017-03-09
+        'cooking24', // (db) 2017-03-16
+        'madonna',
+        'business',
+        'games24',
+    );
+}
+
+$channelColumnName = 'Split Area';
+$useNewLayout = (in_array($layout, $oe2016layouts)) ? $useNewLayout : null;
+
+// (pj) 2016-03-08 Es wird bei oe2016 nun die Split Area 2016 verwendet
+if ('oe2016' === $useNewLayout) {
+    $splitArea2016 = 'Split Area 2016';
+    if (NULL !== $channel->getColumnByName($splitArea2016, true, true)) {
+        $channelColumnName = $splitArea2016;
+    }
+}
+// (pj) 2016-03-08 end
+
+// (pj) 2016-03-21 wenn ?useSplitArea=oe2016 -> neues layout ausliefern
+$option = request()->getGetValue('useSplitArea');
+if ('oe2016' === $option) {
+
+    // (pj) 2016-03-21 damit neues layout auch funktioniert
+    $useNewLayout = 'oe2016';
+    $oe2016layouts[] = $channel->getOptions(true,false)->get('layoutOverride');
+    // (pj) 2016-03-21 end
+
+    $splitArea2016 = 'Split Area 2016';
+    if (NULL !== $channel->getColumnByName($splitArea2016, true, true)) {
+        $channelColumnName = $splitArea2016;
+    }
+
+}
+// (pj) 2016-03-21 end
+
+// $navigation = new Navigation2014($portal, $channel, $layout);
+
+$navigationItemsConfig = array(
+    'header' => array(
+        'top' => 'top_2014',
+        'tabs' => 'tabs_2014',
+        'menue' => 'main',
+    ),
+    'footer' => array(
+        'footerSub1',
+        'footerSub2',
+        'footerSub3',
+    )
+);
+$navigation = new Navigation($portal, $channel, $layout, $navigationItemsConfig);
+
+// (pj) 2014-08-20 um untenstehendes konzept klein zu halten, hier ein Array, welches auf KEY überprüft und VALUE aufruft
+// $params['templateLeft'] = isset($params['templateLeft']) ? $params['templateLeft'] : null;
+
+$allowedLeftTemplates = array(
+    'oe24.oe24.story.oldLayout.mailTo'          => 'oe24.oe24.__splitArea.story.mailto',
+    'oe24.oe24.popup.mailTo'                    => 'oe24.oe24.__splitArea.story.slideShowMailTo',
+    'oe24.oe24.search.index'                    => 'oe24.oe24.__splitArea.search.index',
+    'oe24.oe24.__splitArea.user.user'           => 'oe24.oe24.__splitArea.user.user',
+    'oe24.oe24.__splitArea.user.login'          => 'oe24.oe24.__splitArea.user.login',
+    'oe24.oe24.__splitArea.user.lostPassword'   => 'oe24.oe24.__splitArea.user.lostPassword',
+    'oe24.oe24.__splitArea.user.lostUsername'   => 'oe24.oe24.__splitArea.user.lostUsername',
+    'oe24.oe24.__splitArea.user.changePass'     => 'oe24.oe24.__splitArea.user.changePass',
+    'oe24.oe24.money.stock'                     => 'oe24.oe24.__splitArea.money.stock',
+    'oe24.oe24.money.stocksearch'               => 'oe24.oe24.__splitArea.money.stocksearch',
+    'oe24.oe24.__splitArea._page.channelTag'    => 'oe24.oe24.__splitArea._page.channelTag',
+
+    // (bs) 2016-11-24 Video Suche
+    'dummy.videoSearch'  => 'oe24.oe24._templateBoxes.oe24tvVideoSearch',
+
+);
+
+$params['templateLeft'] = (isset($params['templateLeft']) && array_key_exists($params['templateLeft'], $allowedLeftTemplates)) ? $allowedLeftTemplates[$params['templateLeft']] : null;
+// (pj) ENDE
+
+etpl('oe24.oe24.__splitArea._page.header', array(
+    'portal' => $portal,
+    'channel' => $channel,
+    'object' => $object,
+    'layout' => $layout,
+    'navigation' => $navigation,
+    'useNewCollector' => $useNewCollector,
+    'useNewLayout' => $useNewLayout,
+    'oe2016layouts' => $oe2016layouts,
+));
+
+
+// ARTICLE
+if ($object) {
+
+    // if ($params['templateLeft'] == 'oe24.oe24.story.oldLayout.mailTo') {
+    //  etpl('oe24.oe24.__splitArea.story.mailto', array(
+    //      'portal' => $portal,
+    //      'channel' => $channel,
+    //      'params' => $params,
+    //      'object' => $object,
+    //  ));
+    // } else if ($params['templateLeft'] == 'oe24.oe24.popup.mailTo') {
+    //  etpl('oe24.oe24.__splitArea.story.slideShowMailTo', array(
+    //      'portal' => $portal,
+    //      'channel' => $channel,
+    //      'params' => $params,
+    //      'object' => $object,
+    //  ));
+    if (null !== $params['templateLeft']) {
+        etpl($params['templateLeft'], array(
+            'portal' => $portal,
+            'channel' => $channel,
+            'params' => $params,
+            'object' => $object,
+        ));
+    } else {
+        // Story - Template
+
+        // Lade Top-Content für den Artikel auf "Split-Story-Teaser Area"
+        if (!in_array($layout, $oe2016layouts)) {
+            etpl('oe24.oe24.__splitArea._page.standardColumnsSplitArea', array(
+                'columnName' => 'Split-Story-Teaser Area',
+                'channel' => $channel,
+                'tabSide' => 'top',
+                'object' => $object,
+                'hide' => array()
+            ));
+        }
+
+        if ($object instanceof SlideShow) {
+            if ($object instanceof SlideShowVoting) {
+                etpl('oe24.oe24.__splitArea.article.articleSlideshowVoting', array(
+                    'portal' => $portal,
+                    'channel' => $channel,
+                    'params' => $params,
+                    'object' => $object,
+                    'layout' => $layout,
+                ));
+            } else {
+                etpl('oe24.oe24.__splitArea.article.articleSlideshow', array(
+                    'portal' => $portal,
+                    'channel' => $channel,
+                    'params' => $params,
+                    'object' => $object,
+                    'layout' => $layout,
+                    'oe2016layouts' => $oe2016layouts,
+                ));
+            }
+        } else if (($object instanceof Text && $object->getVideoOptions()) || $object instanceof Video) {
+            etpl('oe24.oe24.__splitArea.article.articleVideo', array(
+                'portal' => $portal,
+                'channel' => $channel,
+                'params' => $params,
+                'object' => $object,
+                'layout' => $layout,
+            ));
+        // } else if ($object instanceof Recipe && ($object->getId() == 161273306 || $object->getId() == 161272940 || $object->getId() == 161286704)) {
+        //  // zwecks Test
+        //  etpl('oe24.oe24.__splitArea.recipe.index_ws', array(
+        //      'portal' => $portal,
+        //      'channel' => $channel,
+        //      'params' => $params,
+        //      'object' => $object,
+        //      'layout' => $layout,
+        //  ));
+        } else if ($object instanceof Recipe) {
+            if ('oe2016' === $useNewLayout) {
+                etpl('oe24.oe24.__splitArea.recipe.index2016', array(
+                    'portal' => $portal,
+                    'channel' => $channel,
+                    'params' => $params,
+                    'object' => $object,
+                    'layout' => $layout,
+                ));
+            }
+            else {
+                etpl('oe24.oe24.__splitArea.recipe.index', array(
+                    'portal' => $portal,
+                    'channel' => $channel,
+                    'params' => $params,
+                    'object' => $object,
+                    'layout' => $layout,
+                ));
+            }
+
+        // } else if (null !== $object->getOptions(false, true)->get('tickerUrl')) {
+        //  // (pj) 2014-11-17 IF-Abfrage aendern fuer zukuenftige anpassung fuer den Sportticker mit Scoreboard
+        //  etpl('oe24.oe24.__splitArea.article.articleSportticker', array(
+        //      'portal' => $portal,
+        //      'channel' => $channel,
+        //      'params' => $params,
+        //      'object' => $object,
+        //      'layout' => $layout,
+        //  ));
+        } else {
+
+            // (ws) 2015-0223
+
+            // if($layout == 'superbonus') {
+            //  etpl('oe24.oe24.__splitArea.article.articleAutoshop', array(
+            //      'channel' => $channel,
+            //      'text' => $object,
+            //  ));
+            // } else {
+            //  etpl('oe24.oe24.__splitArea.article.articleDefault', array(
+            //      'portal' => $portal,
+            //      'channel' => $channel,
+            //      'params' => $params,
+            //      'object' => $object,
+            //      'layout' => $layout,
+            //      'oe2016layouts' => $oe2016layouts,
+            //  ));
+
+            switch ($layout) {
+                case 'superbonus':
+                    etpl('oe24.oe24.__splitArea.article.articleAutoshop', array(
+                        'channel' => $channel,
+                        'text' => $object,
+                    ));
+                    break;
+                case 'madonna':
+                    // wird vorerst nicht verwendet
+                    // etpl('oe24.oe24.__splitArea.article.articleMadonna', array(
+                    //  'portal' => $portal,
+                    //  'channel' => $channel,
+                    //  'params' => $params,
+                    //  'object' => $object,
+                    //  'layout' => $layout,
+                    // ));
+                    etpl('oe24.oe24.__splitArea.article.articleDefault', array(
+                        'portal' => $portal,
+                        'channel' => $channel,
+                        'params' => $params,
+                        'object' => $object,
+                        'layout' => $layout,
+                        'oe2016layouts' => $oe2016layouts,
+                    ));
+                    break;
+                default:
+                    etpl('oe24.oe24.__splitArea.article.articleDefault', array(
+                        'portal' => $portal,
+                        'channel' => $channel,
+                        'params' => $params,
+                        'object' => $object,
+                        'layout' => $layout,
+                        'oe2016layouts' => $oe2016layouts,
+                    ));
+                    break;
+            }
+
+            // (ws) 2015-0223 //
+        }
+    }
+    // etpl('oe24.oe24.__splitArea.article.sidebar', array("portal" => $portal,'channel' => $channel, 'params' => $params, 'object' => $object));
+
+} else {
+    // if ($params['templateLeft'] === 'oe24.oe24.search.index') {
+    //  etpl('oe24.oe24.__splitArea.search.index', array(
+    //      'channel' => $channel
+    //  ));
+    // } else if ($params['templateLeft'] === 'oe24.oe24.__splitArea.user.user') {
+    //  tpl($params['templateLeft'], array(
+    //      'portal' => $portal,
+    //      'channel' => $channel,
+    //      'params' => $params,
+    //      'object' => $object,
+    //  ));
+
+    if (null !== $params['templateLeft']) {
+        etpl($params['templateLeft'], array(
+            'portal' => $portal,
+            'channel' => $channel,
+            'params' => $params,
+            'object' => $object,
+            'oe2016layouts' => $oe2016layouts,
+            'layout' => $layout,
+        ));
+    } else {
+        // Channel - Template
+        etpl('oe24.oe24.__splitArea._page.standardColumns', array(
+            'portal' => $portal,
+            'columnName' => $channelColumnName,
+            'channel' => $channel,
+            'params' => $params,
+            'object' => $object,
+        ));
+    }
+
+    // oe24TV Layer
+    // nur in (development) 'businesslive'-Channel, (produktiv) /test/db/video einbinden und produktive Startseite
+    $validChannel = ( !spunQ::inMode(spunQ::MODE_DEVELOPMENT) && '317843947' == $channel->getId() ) ? true : false;
+    // development und produktiv hat frontpage 'zufällig' die selbe Idee, daher nicht nach mode abgefragt
+    $validChannel = ( '2846' == $channel->getId() ) ? true : $validChannel;
+
+    if ($useNewLayout && $validChannel) {
+    // if ($useNewLayout) {
+        etpl('oe24.oe24.__splitArea.tpl.content.oe24tvTopVideoLayer', array(
+            'channel' => $channel,
+            'layout' => $layout,
+            'oe2016layouts' => $oe2016layouts,
+        ));
+    }
+}
+
+?>
+
+<? if ($showPaidContentMarker) : ?>
+    <div class="row paidContent">entgeltliche Einschaltung</div>
+<? endif; ?>
+
+<?
+etpl('oe24.oe24.__splitArea._page.footer', array(
+    "portal"            => $portal,
+    "channel"           => $channel,
+    "object"            => $object,
+    'layout'            => $layout,
+    'navigation'        => $navigation,
+    'useNewCollector'   => $useNewCollector,
+    'useNewLayout'      => $useNewLayout,
+    'oe2016layouts'     => $oe2016layouts,
+));

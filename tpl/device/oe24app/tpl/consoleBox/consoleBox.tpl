@@ -10,7 +10,9 @@
  * @nodevmodecomments
  */
 
-if (count($articles) == 0) {
+
+// (bs) 2018-02-14
+if (count($articles) == 0 || $category != 'frontpage') {
     return;
 }
 
@@ -68,7 +70,7 @@ foreach ($articles as $key => $article) {
         break;
     }
 
-    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
+
 
     $id             = $article->getId();
     $hasText        = (isset($articleOptions[$id]['showTitle'])) ? $articleOptions[$id]['showTitle'] : false;
@@ -96,6 +98,14 @@ foreach ($articles as $key => $article) {
                   'layout' => 'smartphone')
             );
 
+
+    $searchString = 'apaOuterFrame';
+    if (strpos($bodyText, $searchString) !== FALSE) {
+        continue;
+    }
+
+    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
+
     // remove html comment tags
     $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);
 
@@ -122,6 +132,8 @@ foreach ($articles as $key => $article) {
             'image'            => $imageUrl,
             'advertorial'      => $advertorial,
             'bodyText'         => $bodyText,
+            'pre_ad'           => $device->getAdUrl($category, 'artikel_top'),
+            'post_ad'          => $device->getAdUrl($category, 'artikel_bottom'),
             'link'             => ($articleUrl != $articleUrlOwn),
             )
     );

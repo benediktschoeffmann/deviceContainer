@@ -1,0 +1,15 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSuperbonus
+ */
+?>
+.nav_main .nav_main_logo img {
+	height: 38px;
+	left: 14px;
+	top: 23px;
+}
+.nav_main.fixed .nav_main_logo img {
+	top: 1px;
+	left: 14px;
+}

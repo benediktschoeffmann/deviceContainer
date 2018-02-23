@@ -1,0 +1,98 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.autoShop {
+    border: 1px solid #ccc;
+    padding: 5px 0 5px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.autoShop .leftAutoshop,
+.autoShop .middleAutoshop,
+.autoShop .rightAutoshop {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.autoShop span {
+    font-family: verdana;
+    font-size: 12px;
+}
+.autoShop .leftAutoshop {
+    height: 85px;
+    margin: 14px 10px 14px 0;
+    padding-top: 15px;
+    width: 170px;
+}
+.autoShop .middleAutoshop {
+    width: 270px;
+}
+.autoShop .middleAutoshop ul {
+    list-style-image: url("http://images01.oe24.at/images/layout/autoshop/list_dot.png");
+    list-style-position: inside;
+}
+.autoShop .middleAutoshop li span {
+    padding-left: 15px;
+}
+.autoShop .rightAutoshop {
+    float: left;
+    margin: 5px 5px 5px 0;
+    padding: 0 5px;
+    width: 150px;
+}
+.autoShop .priceBox {
+    border: none;
+}
+.autoShop .autoShopTitle {
+    margin-bottom: 10px;
+    border: none;
+}
+.autoShop .priceTitle {
+    display: block;
+    font-family: arial,verdana,sans_serif;
+    font-size: 9px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.autoShop .priceValue {
+    display: block;
+    font-family: arial,verdana,sans_serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+
+}
+.autoShop .priceComission {
+    display: block;
+    font-family: arial,verdana,sans_serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.autoShop .priceBox {
+    background-image:url(<? slp('image', 'layout/autoshop/price.png') ?>);
+    height:65px;
+    width:130px;
+
+}
+.autoShop .detailButton {
+    background-image:url(<? slp('image', 'layout/autoshop/detail_button.jpg') ?>);
+    width:126px;
+    height:24px;
+    margin-top:10px;
+    cursor:pointer;
+    padding-left:25px;
+    padding-top:4px;
+    color:#ffffff;
+    font-size:12px;
+    font-family:arial,verdana,sans_serif;
+    display:block;
+}
+.autoshopCaption {
+    background-color: #fcfcfc;
+    background-image: linear-gradient(to bottom, #fcfcfc 0px, #d1d1d1 100%);
+}

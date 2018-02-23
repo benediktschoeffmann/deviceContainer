@@ -1,0 +1,68 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.bundestagswahl {
+    padding: 0 15px;
+}
+.bundestagswahl.distanceTop {
+    margin-top: 15px;
+}
+.bundestagswahl.distanceBottom {
+    margin-bottom: 15px;
+}
+
+.bundestagswahl iframe {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bundestagswahlNavButton {
+    display: none;
+}
+
+.bundestagswahlNav {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #d0113a;
+    border-bottom: 1px solid #fff;
+    background-color: #d0113a;
+}
+
+.bundestagswahlNavItem span {
+    font-family: "OpenSansCondensedLight",sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 3px 0;
+    border-left: 1px solid #d0113a;
+}
+.bundestagswahlNavItem:first-child span {
+    border-left: none;
+}
+
+.bundestagswahlNavItem,
+.bundestagswahlNavItem:link,
+.bundestagswahlNavItem:visited,
+.bundestagswahlNavItem:active {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bundestagswahlNavItem:hover,
+.bundestagswahlNavItem.bundestagswahlNavCurrent {
+    text-decoration: none;
+    color: #d0113a;
+    background-color: #fff;
+}

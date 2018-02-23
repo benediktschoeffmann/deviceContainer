@@ -1,0 +1,22 @@
+<?php
+/**
+* article ad Iframe
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)/adiframeAdition
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @urlManager oe24.oe24
+* @cache 1h
+*/
+
+if(!$content instanceof Text){
+    redirect($content->getUrl(), 301);
+}
+
+$canonicalUrl = $content->getUrl()."/adiframeAdition";
+if($canonicalUrl != getCurrentUrl(true)){
+    redirect($canonicalUrl, 301);
+}
+
+etpl('oe24.frontend.adIframeAdition', array("portal" => $portal, "channel" => $channel, "object" => $content));

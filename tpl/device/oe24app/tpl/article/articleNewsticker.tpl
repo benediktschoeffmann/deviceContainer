@@ -25,6 +25,15 @@ $bodyText = preg_replace("/[^[:print:] | ^[öäüÖÄÜß]]/u", "", $bodyText);
 
 $textSections = $article->getTextSections();
 $articleUrl = $article->getUrl();
+// $base64ArticleUrl = base64_encode($articleUrl);
+
+// $host = 'http://' . (spunQ::inMode(spunQ::MODE_DEVELOPMENT) ? 'oe24dev.oe24.at' : 'www.oe24.at');
+
+// $fbCommentsIFrameSrc = $host . l('oe24.oe24.oe24app.getFacebookComments', array(
+//     'base64' => $base64ArticleUrl,
+//     ));
+
+
 $dataNumPosts = 5;
 $dataColorscheme = 'light';
 ?>
@@ -85,9 +94,9 @@ $dataColorscheme = 'light';
 
                         <div class="newsTickerWrapper">
                             <div class="buttonWrapper">
-                                <div class="reloadButton defaultChannelBackgroundColor" onclick="window.location.reload();">
+                                <a href="<?=$article->getUrl();?>" targer="_blank" class="reloadButton defaultChannelBackgroundColor">
                                     Liveticker aktualisieren
-                                </div>
+                                </a>
                             </div>
                             <?
                                 foreach ($textSections as $section) {
@@ -107,7 +116,7 @@ $dataColorscheme = 'light';
                         ?>
 
                        <!-- <div class="storyBottom">
-                          <div class="OUTBRAIN" data-src="<?= $articleUrl; ?>" data-widget-id="APP_1" data-ob-template="AT_Oe24.at" ></div>
+                          <div class="OUTBRAIN" data-src="<?//= $articleUrl; ?>" data-widget-id="APP_1" data-ob-template="AT_Oe24.at" ></div>
                         </div> -->
 
                     </div>

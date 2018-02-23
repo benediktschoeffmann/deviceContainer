@@ -1,0 +1,24 @@
+<?php
+/**
+ * Channel Sitemap
+ * Show huge article lists for a channel
+ *
+ * @url (?<channel>.*)/articleList/(?<urlParameter>[^/]+)
+ * @url (?<channel>.*)/articleList
+ * @var channel oe24.core.Channel
+ * @var portal oe24.core.Portal
+ * @var urlParameter string
+ * @default urlParameter 0
+ * @urlManager oe24.oe24
+ * @cache 10m
+ */
+
+$sitemapChannel = Channel::getChannelByChannelstring($portal, trim($channel->getRawUrl(), "/")."/sitemap");
+$pageTitle = $channel->getPageTitle();
+if(!trim($pageTitle)){
+    $pageTitle = "Österreich / ".request()->getHost();
+}else{
+    $pageTitle = "Sitemap - ".$channel->getPageTitle()." - Österreich / ".request()->getHost();
+}
+response()->setTitle($pageTitle);
+etpl('oe24.frontend._page', array("channel" => $sitemapChannel, "params" => array("templateLeft" => "oe24.oe24.channelSitemap", "urlParameter" => $urlParameter, "dontShowTopContent" => true, "baseChannel" => $channel)));

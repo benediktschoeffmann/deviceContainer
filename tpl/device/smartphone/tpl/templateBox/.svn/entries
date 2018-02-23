@@ -26,18 +26,6 @@ bschoeffmann
 
 b3528fbe-2e1a-df11-9c31-00e08152a866
 
-lexikon
-dir
-
-oe24Countdown
-dir
-
-bundestagswahl
-dir
-
-nationalratswahl
-dir
-
 xlHeadline
 dir
 
@@ -93,10 +81,10 @@ dir
 contentAdStories
 dir
 
-newsletter
+editorsComment
 dir
 
-editorsComment
+newsletter
 dir
 
 teaserStoryBox
@@ -111,9 +99,24 @@ dir
 tvProgrammSlider
 dir
 
-horoskop
+madonnaVoting
 dir
 
 channelList
+dir
+
+horoskop
+dir
+
+lexikon
+dir
+
+oe24Countdown
+dir
+
+bundestagswahl
+dir
+
+nationalratswahl
 dir
 

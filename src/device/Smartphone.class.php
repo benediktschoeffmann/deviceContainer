@@ -1,6 +1,6 @@
 <?
 
-class Smartphone {
+class Smartphone extends Device {
 
     private static $startTime = null;
 
@@ -231,6 +231,9 @@ class Smartphone {
 
 
     public function getConfig($key = null) {
+        if (null == $key) {
+            return $this->config;
+        }
 
         if (isset($this->config[$key])) {
             return $this->config[$key];
@@ -385,5 +388,9 @@ class Smartphone {
         );
 
         return $contents;
+    }
+
+    public function getDeviceType() {
+        return Device::SMARTPHONE;
     }
 }

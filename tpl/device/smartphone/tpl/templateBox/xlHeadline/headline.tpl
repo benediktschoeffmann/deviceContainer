@@ -91,7 +91,7 @@ switch ($icon) {
 ?>
 <div class="xlHeadLineBox <?= $layoutIdentifier; ?> <?= $classDistanceTop; ?> <?= $classDistanceBottom; ?> <?= $classIcon; ?>">
     <h2 class="xlHeadLine headline defaultChannelBackgroundColor" <?= $styleDefinition; ?>>
-        <a href="<?= $link; ?>"<?= $onClick; ?>>
+        <a href="<?= $link; ?>" <?= $onClick; ?>>
         	<? if (0): ?>
         		<? /* (db) icons vorläufig herausgenommen, falls sie doch auch mobil gewünscht werden im css headline.css einkommentieren */ ?>
 	        	<? if (!empty($iconImage)):?>

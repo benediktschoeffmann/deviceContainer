@@ -1,0 +1,165 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* Row Headline */
+.row_caption {
+	padding: 0 15px;
+}
+.row_caption_body {
+	height: 40px;
+	position: relative;
+}
+.row_caption_body.row_caption_body_noimage {
+	height: 30px;
+}
+.row_caption_title {
+	padding-right: 2px;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	z-index: 99;
+}
+.row_caption_info {
+	text-align: right;
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 98;
+}
+.row_caption_info a {
+	text-decoration: none;
+}
+.row_caption_info a:hover {
+}
+.row_caption_title h2,
+.row_caption_info img,
+.row_caption_info span {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.row_caption_title h2 {
+	font-family: "oe24",sans-serif;
+	font-size: 2.125rem;
+	line-height: 2.125rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	padding: 0;
+	margin: 0;
+}
+.row_caption_title h2 a,
+.row_caption_title h2 a:hover {
+	text-decoration: none;
+	color: #dd1010;
+}
+.row_caption_info img,
+.row_caption_info span {
+	font-size: .8125rem;
+	line-height: 1.2;
+	text-align: right;
+}
+.row_caption img {
+	width: auto;
+	height: 34px;
+	margin: 0 7px 3px;
+}
+/* Colors */
+.row_caption,
+.row_caption_title {
+	background-color: #fff;
+}
+.row_caption_info {
+	border-bottom: 1px solid #e3e3e3;
+}
+.row_caption_title h2,
+.row_caption_info span {
+	color: #dd1010;
+}
+.row_caption_info .row_caption_editor_text {
+	color: #cacaca;
+}
+
+
+.oe2016 .standardHeadline {
+	padding: 0 15px;
+	margin: 15px auto 0;
+}
+.oe2016 .standardHeadline.withBigHeadline {
+	margin-top: 4px;
+}
+.oe2016 .standardHeadline h2 {
+	font-family: "oe24",sans-serif;
+	font-size: 1.5625rem;
+	line-height: 1.3;
+	text-transform: uppercase;
+	/*padding: 5px 10px 0;*/
+	padding: 3px 10px 1px;
+	margin: 0;
+	color: #fff;
+
+	/*letter-spacing: .07em;*/
+	/*height: 28px;*/
+}
+/* (pj) 2016-02-24 Wenn Header in TabbedBox verlinkt ist */
+.oe2016 .standardHeadline h2 a {
+	color: #fff;
+	text-decoration: none;
+
+	display: block;
+	/*margin-top: -4px;*/
+}
+/* (pj) 2016-02-24 end */
+
+
+
+
+.oe2016 .bigHeadline .headlineLeft {
+	float: left;
+}
+.oe2016 .bigHeadline .headlineRight {
+	float: right;
+}
+.oe2016 .bigHeadline h2 {
+	font-size: 2.5rem;
+	padding: 6px 0 0;
+}
+.oe2016 .bigHeadline h2 a {
+    background-color: #ececec;
+    background-image: linear-gradient(to bottom, #ececec, #f9f9f9);
+	padding: 7px 10px 0;
+	margin-top: 2px;
+}
+.oe2016 .bigHeadline {
+	/*padding: 0 15px;*/
+	margin: 15px auto 0;
+}
+
+
+/* (ws) 2016-12-14 */
+
+/*
+.oe2016 .standardHeadline.joe24-logo {
+	position: relative;
+}
+.oe2016 .standardHeadline.joe24-logo .xa:after {
+    content: "";
+    display: inline-block;
+    width: 47px;
+    height: 29px;
+    margin-left: 8px;
+	background: transparent url(<?slp('image', 'oe2016/logo-joe24.png')?>) no-repeat 0 0;
+	background-size: 47px 29px;
+}
+*/
+
+.oe2016 .standardHeadline .headlineLogo {
+	display: inline-block;
+	height: 24px;
+	vertical-align: baseline;
+}
+
+/* (ws) 2016-12-14 end */

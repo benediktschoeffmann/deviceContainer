@@ -1,0 +1,375 @@
+<?php
+/**
+ * @collector noauto
+ * @collector XheaderSplitArea
+ */
+/*
+cooking24.at bzw. wirkochen.at - Portal Color #a10f42
+*/
+?>
+.recipe .article_box .article_body_right span, .recipe .article_box .article_body_right .topbox .icon, .recipe .article_box .add, .recipe .article_box .del{
+    background:url(<?php slp('image', 'rl2014/recipe/rezept_sprite.png'); ?>);
+}
+.recipe .article_box .article_body_right .box ul li {
+    background:url(<?php slp('image', 'rl2014/recipe/dot.png'); ?>);
+}.recipe .headline {
+  margin: 0 !important;
+}
+.recipe input.headline {
+  margin-bottom: 10px !important;
+}
+.recipe .nobg {
+  background: none !important;
+  width: auto !important;
+}
+.recipe input.wide {
+  width: 620px;
+}
+.recipe input.semiwide {
+  width: 217px;
+}
+.recipe input.narrow {
+  width: 40px;
+}
+.recipe textarea {
+  width: 630px;
+  height: 500px;
+}
+.recipe .rezeptError {
+  color: red;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.recipe .add, .recipe .del {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.recipe .add {
+  background-position: -64px -168px !important;
+  margin-bottom: 10px;
+}
+.recipe .del {
+  background-position: -83px -168px !important;
+  display: inline-block;
+}
+.recipe .hedline {
+  border: none !important;
+}
+.recipe .clear {
+  clear: both;
+  height: 0px;
+  font-size: 0px;
+}
+.recipe .button {
+  background: #a10f42;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 2px 20px;
+  margin-left: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.recipe .speichern {
+  width: 120px;
+  margin: 20px 0;
+}
+.recipe .article_box .seperator {
+  background: #e2e2e2;
+  height: 1px;
+  width: 100%;
+  clear: both;
+  margin: 5px 0;
+}
+.recipe .article_box .seperator.zb {
+  margin-top: 20px;
+  float: left;
+}
+.recipe .article_box .overlay_box {
+  clear: both;
+}
+.recipe .article_box .overlay_box .arrowContainer {
+  background: none;
+  top: 38%;
+}
+.recipe .article_box .article_body_left,
+.recipe .article_box .article_body_right {
+  float: left;
+}
+.recipe .article_box .article_body_left {
+  width: 343px;
+  margin-right: 20px;
+}
+.recipe .article_box .article_body_left .berechnen .span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.recipe .article_box .article_body_left .berechnen .tf {
+  border: 1px solid #f0f0f0;
+  width: 50px;
+  height: 24px;
+  text-align: center;
+  font-size: 0.81rem;
+  color: #484848;
+}
+.recipe .article_box .article_body_left .berechnen .button {
+  font-size: 0.75rem;
+}
+.recipe .article_box .article_body_left table.zutaten {
+  width: 100%;
+}
+.recipe .article_box .article_body_left table.zutaten .ingredients_result {
+  width: 250px;
+  display: block;
+  position: absolute;
+  background: #FFF;
+  border: 1px solid #f0f0f0;
+}
+.recipe .article_box .article_body_left table.zutaten .ingredients_result a {
+  display: block;
+  margin-left: 8px;
+}
+.recipe .article_box .article_body_left table.zutaten th {
+  color: #a10f42;
+  font-size: 0.88rem;
+  text-align: left;
+}
+.recipe .article_box .article_body_left table.zutaten .menge, .recipe .article_box .article_body_left table.zutaten .mass {
+  width: 70px;
+}
+.recipe .article_box .article_body_left table.zutaten .mass {
+  text-align: center;
+}
+.recipe .article_box .article_body_left table.zutaten tr {
+  height: 43px;
+}
+.recipe .article_box .article_body_left table.zutaten tr td {
+  font-size: 0.88rem;
+}
+.recipe .article_box .article_body_left table.zutaten tr td select {
+  height: 33px;
+  margin-right: 10px;
+  width: 60px;
+  width: 60px;
+}
+.recipe .article_box .article_body_right {
+  width: 252px;
+}
+.recipe .article_box .article_body_right .topbox {
+  -moz-box-shadow: 0px 2px 3px 6px #f0f0f0;
+  -webkit-box-shadow: 0px 2px 3px 6px #f0f0f0;
+  box-shadow: 0px 2px 3px 6px #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+.recipe .article_box .article_body_right .topbox .icon {
+  background-position: -2px -168px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.recipe .article_box .article_body_right .topbox .headline {
+  color: #a10f42;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  padding-left: 10px;
+  border: none !important;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox {
+  margin: 22px 0 5px 0;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox .drucken, .recipe .article_box .article_body_right .topbox .empfehlungsbox .empfehlen {
+  float: left;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox .drucken .icon {
+  background-position: -17px -165px;
+  width: 21px;
+  height: 18px;
+  margin-right: 5px;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox .empfehlen .icon {
+  background-position: -39px -168px;
+  width: 21px;
+  height: 15px;
+  margin-right: 5px;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox span.label {
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-weight: bold;
+  background: none;
+  color: #a10f42;
+  width: auto;
+}
+.recipe .article_box .article_body_right .topbox .empfehlungsbox .social {
+  clear: both;
+  margin-left: 10px;
+}
+.recipe .article_box .article_body_right .topbox span {
+  display: inline-block;
+  width: 90px;
+  height: 25px;
+}
+.recipe .article_box .article_body_right .topbox span.desc {
+  font-size: 0.88rem;
+  font-weight: bold;
+  width: 130px;
+  background: none;
+  margin-left: 10px;
+}
+.recipe .article_box .article_body_right .topbox span.zubereitungszeit {
+  background-position: 0px 0px;
+}
+.recipe .article_box .article_body_right .topbox span.schwierigkeitsgrad {
+  background-position: 0 -54px;
+}
+.recipe .article_box .article_body_right .topbox span.preiskategorie {
+  background-position: 0 -109px;
+}
+.recipe .article_box .article_body_right .topbox span.zubereitungszeit.inaktiv {
+  background-position: 0 -29px;
+}
+.recipe .article_box .article_body_right .topbox span.schwierigkeitsgrad.inaktiv {
+  background-position: 0 -82px;
+}
+.recipe .article_box .article_body_right .topbox span.preiskategorie.inaktiv {
+  background-position: 0 -138px;
+}
+.recipe .article_box .article_body_right .topbox span.w1 {
+  width: 30px;
+}
+.recipe .article_box .article_body_right .topbox span.w2 {
+  width: 60px;
+}
+.recipe .article_box .article_body_right .topbox span.w3 {
+  width: 90px;
+}
+.recipe .article_box .article_body_right .box {
+  background: #f0dce2;
+  margin-top: 20px;
+}
+.recipe .article_box .article_body_right .box .headline {
+  font-size: 1rem;
+  padding: 8px 0 0 8px;
+}
+.recipe .article_box .article_body_right .box .seperator {
+  background: #6f1e42;
+  margin-top: 8px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$val)";
+  filter: alpha(opacity=25);
+  -moz-opacity: 0.25;
+  -khtml-opacity: 0.25;
+  opacity: 0.25;
+}
+.recipe .article_box .article_body_right .box .headline {
+  color: #a10f42;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.recipe .article_box .article_body_right .box ul li {
+  background-repeat: no-repeat;
+  background-position: 9px 12px;
+  padding-bottom: 8px;
+}
+.recipe .article_box .article_body_right .box ul li a {
+  font-size: 0.81rem;
+  margin-left: 20px;
+  display: block;
+  padding-top: 3px;
+  color: #a10f42;
+}
+.recipe .article_box .article_body * {
+  font-size: 0.94rem;
+}
+.recipe .article_box .article_body h3 {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.recipe .article_box .article_body h3 span {
+  color: #484848;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.recipe .article_box .article_body .strong {
+  color: #a10f42;
+}
+.recipe .article_box h1 {
+  font-size: 3rem;
+  color: #a10f42;
+  width: auto;
+}
+.recipe .article_box h1,
+.recipe .article_box .service,
+.recipe .article_box .article_teaser,
+.recipe .article_box .article_pages,
+.recipe .article_box .article_body,
+.recipe .article_box .article_ticker {
+  width: auto;
+}
+.recipe .article_box h2 {
+  margin: 0 !important;
+}
+.recipe .article_box h1 input {
+  margin: 0 0 10px 0 !important;
+}
+.recipe .kategorien .main {
+  width: 100%;
+  clear: both;
+}
+.recipe .kategorien .sub {
+  margin-left: 50px;
+  width: 100%;
+  display: none;
+}
+.recipe .kategorien .sub .checkbox {
+  width: 32%;
+  float: left;
+}
+.recipe .kategorien label {
+  font-size: 0.75rem;
+}
+.rezeptliste {
+  width: 100%;
+}
+.rezeptliste * {
+  font-size: 0.88rem;
+}
+.rezeptliste a {
+  width: 100%;
+  float: left;
+}
+.rezeptliste a span {
+  display: block;
+  float: left;
+}
+.rezeptliste a:hover {
+  background-color: #e6e6e6;
+}
+.rezeptliste .headboxes div {
+  color: #a10f42;
+  font-weight: bold;
+  float: left;
+}
+.rezeptliste .title {
+  width: 60%;
+  font-weight: bold;
+}
+.rezeptliste .duration, .rezeptliste .effort {
+  width: 20%;
+}
+.rezeptliste .rezeptliste_row {
+  height: 20px;
+  padding: 2px 0;
+}
+.rezeptliste .seperator {
+  background: #e2e2e2;
+  height: 1px;
+  width: 100%;
+  clear: both;
+  margin: 5px 0;
+}

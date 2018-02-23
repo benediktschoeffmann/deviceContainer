@@ -33,6 +33,15 @@ $bodyText = str_replace($searchTag, $replaceTag, $bodyText);
 // filter out non-printable characters
 $bodyText = preg_replace("/[^[:print:] | ^[öäüÖÄÜß]]/u", "", $bodyText);
 $articleUrl = $article->getUrl();
+
+// $base64ArticleUrl = base64_encode($articleUrl);
+
+// $host = 'http://' . (spunQ::inMode(spunQ::MODE_DEVELOPMENT) ? 'oe24dev.oe24.at' : 'www.oe24.at');
+
+// $fbCommentsLink = $host . l('oe24.oe24.oe24app.getFacebookComments', array(
+//     'base64' => $base64ArticleUrl,
+//     ));
+
 ?>
 <body>
     <script>

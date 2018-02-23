@@ -1,0 +1,65 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+ /** @collector headerSplitArea*/
+/*.adSlotAdition {display: none;}*/
+.wm2014TopBox {
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #3b85b6;
+	margin: 0 15px;
+	padding: 60px 13px 10px;
+}
+.wm2014TopBox .wmConsoleContainerHtml,
+.wm2014TopBox .wmConsoleContainer,
+.wm2014TopBox .wmTopVideosContainer {
+	float: left;
+}
+.wm2014TopBox .wmConsoleContainerHtml {
+	margin-right: 14px;
+	width: 610px;
+}
+.wm2014TopBox .wmConsoleContainer {
+	margin-right: 14px;
+}
+.wm2014TopBox .wmTopVideosContainer {
+	width: 300px;
+	text-align: center;
+}
+.wm2014TopBox .wmConsole {
+	position: relative;
+}
+.wm2014TopBox .consoleOverlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.3);
+	color: #ffffff;
+	padding: 0px 10px;
+}
+.wm2014TopBox .arrow {
+	position: absolute;
+	top: 114px;
+	width: 29px;
+	height: 83px;
+}
+.wm2014TopBox .arrowLeft {
+	background-image: url('http://file.oe24.at/sport/wm-2014/topBox/WMLeftNorm2.png');
+	left: 0px;
+}
+.wm2014TopBox .arrowLeft:hover {
+	background-image: url('http://file.oe24.at/sport/wm-2014/topBox/WMLeftHover2.png');
+}
+.wm2014TopBox .arrowRight {
+	background-image: url('http://file.oe24.at/sport/wm-2014/topBox/WMRightNorm2.png');
+	right: 0px;
+}
+.wm2014TopBox .arrowRight:hover {
+	background-image: url('http://file.oe24.at/sport/wm-2014/topBox/WMRightHover2.png');
+}
+.wm2014TopBox .wmSidebarLiveTickerHeader,
+.wm2014TopBox .wmLiveTickerTime {
+	display: none;
+}

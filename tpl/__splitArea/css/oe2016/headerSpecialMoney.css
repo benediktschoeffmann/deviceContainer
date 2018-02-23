@@ -1,0 +1,166 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_money.oe2016 p::-moz-selection,
+.layout_money.oe2016 span::-moz-selection,
+.layout_money.oe2016 strong::-moz-selection,
+.layout_money.oe2016 h1::-moz-selection,
+.layout_money.oe2016 h2::-moz-selection,
+.layout_money.oe2016 h3::-moz-selection,
+.layout_money.oe2016 a::-moz-selection,
+.layout_money.oe2016 div::-moz-selection,
+.layout_money.oe2016 u::-moz-selection,
+.layout_money.oe2016 img::-moz-selection,
+.layout_money.oe2016 br::-moz-selection,
+.layout_money.oe2016 ul::-moz-selection,
+.layout_money.oe2016 li::-moz-selection,
+.layout_money.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #174584;
+}
+.layout_money.oe2016 p::selection,
+.layout_money.oe2016 span::selection,
+.layout_money.oe2016 strong::selection,
+.layout_money.oe2016 h1::selection,
+.layout_money.oe2016 h2::selection,
+.layout_money.oe2016 h3::selection,
+.layout_money.oe2016 a::selection,
+.layout_money.oe2016 div::selection,
+.layout_money.oe2016 u::selection,
+.layout_money.oe2016 img::selection,
+.layout_money.oe2016 br::selection,
+.layout_money.oe2016 ul::selection,
+.layout_money.oe2016 li::selection,
+.layout_money.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #174584;
+}
+
+.layout_money.oe2016 .headerNavContainer {
+    background-color: #135fa7;
+    background-image: -webkit-linear-gradient(top, #0f7dc4 20%, #184089);
+    background-image: linear-gradient(to bottom, #0f7dc4 20%, #184089);
+}
+
+.layout_money.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #a3b7e4;
+    border-right: 1px solid #a3b7e4;
+}
+
+.layout_money.oe2016 .headerNavMain,
+.layout_money.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_money.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #3053a1;
+}
+
+.layout_money.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 50px;
+}
+.layout_money.oe2016 .headerNavLogoCol.logoOesterreich span {
+    width: 104px;
+    left: 146px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_money.oe2016 .stickyHeader .headerNavLogo a,
+.layout_money.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_money.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    left: 436px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_money.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #174584;
+}
+.layout_money.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #174584;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_money.oe2016 .subNavContainer {
+    border-bottom: 8px solid #174584;
+}
+.layout_money.oe2016 .subNavMenu a {
+    color: #174584;
+}
+.layout_money.oe2016 .subNavMenu a:hover,
+.layout_money.oe2016 .subNavMenu .active a {
+    color: #fff;
+    background-color: #174584;
+}
+
+/* ---------------------------------------------------------------- */
+
+.tabbedBox.money .contentSliderBox.money {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ARTIKELDETAIL */
+
+.layout_money.oe2016 .article_box .overlay_box .caption {
+    background-color: #174584;
+    /*background-color: #4aa6e8*/
+}
+
+.layout_money.oe2016 .service .comment,
+.layout_money.oe2016 .service .comment:hover {
+    background-color: #174584;
+}
+
+
+.layout_money.oe2016 .comments .hidePostingDiv,
+.layout_money.oe2016 .service .breadcrumbs a,
+.layout_money.oe2016 .service .breadcrumbs a:hover {
+    color: #174584;
+}
+
+.layout_money.oe2016 .service .comment,
+.layout_money.oe2016 .service .comment:hover {
+    color: #FFF;
+}
+
+.layout_money.oe2016 .article_share .socialInlineText {
+    color: #174584;
+}
+
+.layout_money.oe2016 .channelTopStoriesHeader {
+    background-color: #174584;
+    color: #FFF;
+}
+
+.layout_money.oe2016 footer .footer_caption {
+    color: #174584;
+}
+
+.layout_money.oe2016 .channelTopStories .channel_box a:hover .story_pretitle,
+.layout_money.oe2016 .channelTopStories .channel_box a:hover .story_pagetitle {
+    color: #174584 !important;
+}
+
+.layout_money.oe2016 .service .comment:hover {
+    background-color: #eee;
+    color: #174584;
+}
+
+.layout_money.oe2016 .relatedArticlesHeadline {
+    color: #174584;
+}
+
+.layout_money.oe2016 .sidebar .adSlotAdition {
+    margin-bottom: 20px;
+}
+
+/* Voting Artikel */
+
+.layout_money.oe2016 .slideshowVoting .slideshowItemsContainer .title {
+    background-color: transparent;
+}

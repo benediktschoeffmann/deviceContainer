@@ -1,0 +1,169 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe24tvArticleSidebarVideoBox {
+    width: 300px;
+}
+
+.oe24tvArticleSidebarVideoBox .headline {
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+
+    text-align: center;
+
+    line-height: 1.2;
+
+    padding: 5px 10px;
+}
+
+.oe24tvArticleSidebarVideoBox .headline .title {
+    font-family: "oe24condensed", sans-serif;
+    font-size: 2.125rem;
+
+    color: #fff;
+    text-transform: uppercase;
+
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.oe24tvArticleSidebarVideoBox .headline .logo {
+    font-family: "oe24condensed", sans-serif;
+    font-size: 2.125rem;
+    /*vertical-align: text-top;*/
+}
+.oe24tvArticleSidebarVideoBox .headline .logo img {
+    width: 140px;
+}
+
+
+.oe24tvArticleSidebarVideoBox .videoTeaser {
+    display: block;
+    text-decoration: none;
+}
+
+.oe24tvArticleSidebarVideoBox .videoTeaser .imgContainer {
+    position: relative;
+}
+.oe24tvArticleSidebarVideoBox .videoTeaser .imgContainer img {
+    width: 100%;
+}
+.oe24tvArticleSidebarVideoBox .videoTeaser .imgContainer span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    display: block;
+
+    font-size: 27px;
+
+    width: 40px;
+    height: 40px;
+
+    margin-left: -20px;
+    margin-top: -20px;
+
+    padding-top: 5px;
+    padding-left: 4px;
+
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+    background-color: #d0113a;
+    color: #fff;
+}
+.oe24tvArticleSidebarVideoBox .videoTeaser:hover .imgContainer span {
+    border: 2px solid #d0113a;
+
+    background-color: #fff;
+    color: #d0113a;
+}
+
+.oe24tvArticleSidebarVideoBox .player .videoTeaser .preTitle {
+    font-size: .6875rem;
+    line-height: 1;
+
+    color: #d0013a;
+
+    text-transform: uppercase;
+}
+
+.oe24tvArticleSidebarVideoBox .player .videoTeaser .storyTitle {
+    font-family: "oe24",sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+
+    line-height: 1.2;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.oe24tvArticleSidebarVideoBox .player .videoTeaser:hover .storyTitle {
+    color: #d0013a;
+}
+
+
+.oe24tvArticleSidebarVideoBox .videoClips .headline {
+    padding: 5px 10px 0;
+    margin: 0 0 5px;
+}
+
+.oe24tvArticleSidebarVideoBox .videoClips .headline .title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-right: 0;
+}
+
+.oe24tvArticleSidebarVideoBox .videoClips .videoTeaser {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.oe24tvArticleSidebarVideoBox .videoClips .imgContainer {
+    float: left;
+    width: 140px;
+}
+.oe24tvArticleSidebarVideoBox .videoClips .imgContainer span {
+    font-size: 23px;
+
+    width: 30px;
+    height: 30px;
+
+    padding-top: 1px;
+    padding-left: 1px;
+
+    margin-left: -15px;
+    margin-top: -15px;
+
+    border-radius: 15px;
+}
+
+.oe24tvArticleSidebarVideoBox .videoClips .titleContainer {
+    float: left;
+    width: 160px;
+}
+
+.oe24tvArticleSidebarVideoBox .videoClips .storyTitle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: "oe24",sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+
+    line-height: 1.2;
+
+    height: 58px;
+    padding: 0 0 0 5px;
+    margin: 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.oe24tvArticleSidebarVideoBox .videoClips .videoTeaser:hover .storyTitle {
+    color: #d0013a;
+}

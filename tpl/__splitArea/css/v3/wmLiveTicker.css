@@ -1,0 +1,632 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+ /** @collector headerSplitArea*/
+/* test */
+.wmSidebarWmLiveTicker {
+	background-color: #157447;
+	background-image: url("http://file.oe24.at/sport/wm-2014/topBox/bg_live_ticker.png");
+	height: 310px;
+}
+.wmSidebarWmLiveTicker h2,
+.wmSidebarWmLiveTicker h3 {
+	margin: 0;
+}
+.wmSidebarWmLiveTicker a:hover {
+	text-decoration: none;
+}
+.wmSidebarWmLiveTicker a, .wmSidebarWmLiveTicker a:hover, .wmSidebarWmLiveTicker a:focus {
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame {
+	margin: 0px 5px;
+	height: 145px;
+	padding-top: 2px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame:nth-child(1) {
+	border-bottom: 4px solid #ffd900;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0:nth-child(1) {
+	border-bottom: none;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-1 {
+	height: 118px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 {
+	height: 146px;
+	border-bottom: 4px solid #ffd900;
+	float: left;
+	width: 145px;
+	margin: 0px 5px 0px 0px;
+	padding: 8px 0px 0px 3px;
+	border-left: 2px solid #ffd900;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3:nth-child(1) {
+	margin: 0px 0px 0px 5px;
+	padding: 8px 3px 0px 0px;
+	border-right: 2px solid #ffd900;
+	border-left: none;
+}
+.wmSidebarWmLiveTicker .wmSidebarLiveTickerBody {
+	padding-top: 72px;
+}
+.wmSidebarWmLiveTicker .teams span {
+	display: inline-block;
+	line-height: 29px;
+	vertical-align: middle;
+}
+.wmSidebarWmLiveTicker .teamVs {
+	color: #ffffff;
+	font-size: 2rem;
+}
+.wmSidebarWmLiveTicker .tore {
+	position: absolute;
+	width: 100%;
+	top: 70px;
+	left: 0px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame {
+	position: relative;
+}
+.wmSidebarWmLiveTicker .toreVs {
+	color: #ffd900;
+	font-size: 9rem;
+	line-height: 7rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .toreVs {
+	line-height: 11rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .teamVs {
+	font-size: 4rem;
+	line-height: 4rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-1 .toreVs {
+	font-size: 7rem;
+	line-height: 0rem !important;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 .teamVs {
+	padding: 9px 0px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-3 .toreVs {
+	font-size: 5rem;
+	line-height: 3rem;
+}
+.wmSidebarWmLiveTicker .flagSpace {
+	width: 18px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-0 .flagSpace {
+	width: 77px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame,
+.wmSidebarWmLiveTicker .wmLiveTickerBottom {
+	font-family: 'digital-7',sans-serif;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom {
+	padding: 0px 10px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame {
+	float: left;
+	border-left: 4px solid #ffd900;
+	padding-left: 6px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame:nth-child(1) {
+	border-left: none;
+	padding-left: 0px
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom .teamVs {
+	color: #ffffff;
+	font-size: 2rem;
+	line-height: 1.5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom .toreVs {
+	color: #ffd900;
+	font-size: 1.3125rem;
+	line-height: 1.3125rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .wmLiveTickerBottomGame,
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .wmLiveTickerBottomGame {
+	width: 138px;
+	height: 86px;
+	padding-top: 7px;
+}
+.wmTabs {
+	background-color: #4e0200;
+}
+.wmTitle {
+	background-color: #a81914;
+	background-image: linear-gradient(to bottom, #830400 0%, #eb3630 100%);
+}
+.wmTabs .wmTab {
+	float: left;
+	color: #ffffff;
+	margin: 0px 5px;
+	padding: 2px 5px;
+}
+.wmTabs .wmTab.active,
+.wmTabs .wmTab:hover {
+	text-decoration: none;
+	background-color: #830400;
+	background-image: linear-gradient(to bottom, #4e0200 0%, #830400 100%);
+}
+.wmTabPage {
+	display: none;
+}
+.wmTabPage.active {
+	display: block;
+}
+.wmTitle h2 {
+	text-align: center;
+	color: #ffffff;
+	margin: 0px;
+}
+.wmMatch {
+	background-color: #e1e5e6;
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emtickerbg.gif');
+	text-align: center;
+}
+.wmMatch .wmMatchHelper {
+	display: inline-block;
+}
+.wmMatch .teamHeim,
+.wmMatch .teamGast {
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 135px;
+	line-height: 1;
+	margin: 20px 0 0 0;
+}
+.wmMatch .teamHeim img,
+.wmMatch .teamGast img{
+	margin: 0 0 10px 0;
+}
+.wmMatch .teamName {
+	position: absolute;
+	font-family: 'digital-7',sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #ffffff;
+	bottom: 0;
+	left: 10px;
+}
+.wmMatch .spielstand {
+	font-family: 'digital-7',sans-serif;
+	color: #fff000;
+	float: left;
+	font-size: 10rem;
+	margin: 0px 50px;
+	line-height: 1;
+}
+.wmTimeLine {
+	background-color: #A81914;
+	background-image: linear-gradient(to bottom, #830400 0%, #eb3630 100%);
+	position: relative;
+}
+.wmTimeLine .skala {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emTimeLine.png');
+	height: 30px;
+	background-position: 0px 0px;
+}
+.wmTimeLine .times {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.wmTimeLine .times .time_text {
+	position: absolute;
+	top: 0;
+	color: #ffffff;
+	font-size: 0.75rem;
+}
+.wmTimeLine .times .time_0 {
+	left: 5px;
+}
+.wmTimeLine .times .time_1 {
+	left: 70px;
+}
+.wmTimeLine .times .time_2 {
+	left: 130px;
+}
+.wmTimeLine .times .time_3 {
+	left: 195px;
+}
+.wmTimeLine .times .time_4 {
+	left: 260px;
+}
+.wmTimeLine .times .time_5 {
+	left: 325px;
+}
+.wmTimeLine .times .time_6 {
+	left: 390px;
+}
+.wmTimeLine .times .time_7 {
+	left: 455px;
+}
+.wmTimeLine .times .time_8 {
+	left: 520px;
+}
+.wmTimeLine .times .time_9 {
+	left: 585px;
+}
+.wmTimeLine .events {
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+.wmTimeLine .events .event {
+	position: absolute;
+	top: 0;
+}
+.wmTimeLine .events .anpfiff {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/empipe.png');
+	width: 23px;
+	height: 15px;
+}
+.wmTimeLine .events .yellow {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emyellow.png');
+	width: 14px;
+	height: 20px;
+}
+.wmTimeLine .events .yellowRed {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emyellowred.png');
+	width: 14px;
+	height: 20px;
+}
+.wmTimeLine .events .red {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emred.png');
+	width: 14px;
+	height: 20px;
+}
+.wmTimeLine .events .score {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emgoal.png');
+	width: 15px;
+	height: 20px;
+}
+.wmTimeLine .events .substitution {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/emchange.png');
+	width: 20px;
+	height: 20px;
+}
+.wmTimeLine .arrow {
+	position: absolute;
+	font-size: 1.25rem;
+	color: #ffffff;
+	top: 5px;
+	display: none;
+}
+.wmTimeLine .arrow:hover {
+	text-decoration: none;
+	color: #ffff00;
+}
+.wmTimeLine .arrow.active {
+	display: block;
+}
+.wmTimeLine .arrowLeft {
+	left: -5px;
+}
+.wmTimeLine .arrowRight {
+	right: -5px;
+}
+.wmTabPage .article_ticker {
+	margin-top: 4px;
+}
+.wmTabPage .article_ticker .ticker_body h3 {
+	font-family: "OpenSansBold",sans-serif;
+}
+.wmSidebarWmAufstellung,
+.wmSidebarWmKader,
+.wmSidebarWmStatistik {
+	background-color: #ffffff;
+	box-shadow: 0 0 7px 1px rgba(0, 0, 0, .1);
+	display: none;
+}
+.wmSidebarWmAufstellung.active,
+.wmSidebarWmKader.active,
+.wmSidebarWmStatistik.active {
+	display: block;
+}
+.wmSidebarHeader {
+	font-size: 1.3125rem;
+	color: #dd1010;
+	clear: both;
+	overflow: hidden;
+	padding: 7px 0px;
+	border-bottom: 1px solid #F0F1F3;
+}
+.wmSidebarHeader .wmSidebarIcon {
+	font-family: "icomoon",sans-serif;
+	text-align: center;
+	width: 40px;
+	float: left;
+	vertical-align: baseline;
+}
+.wmSidebarHeader .wmSidebarHeaderCaption {
+	font-family: "OpenSansBold",sans-serif;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+	float: left;
+	vertical-align: baseline;
+}
+.wmSidebarWmAufstellung .wmSidebarBody {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/em_spielfeld2.png');
+	width: 300px;
+	height: 339px;
+	clear: both;
+}
+.wmSidebarWmAufstellung .wmSidebarBody .wmTrikots {
+	position: relative;
+	height: 339px;
+}
+.wmSidebarWmAufstellung .wmSidebarBody .wmTrikots .wmTrikotSpieler {
+	background-image: url('http://webmisc.oe24.at/wm2014/images/1021.png');
+	position: absolute;
+	width: 40px;
+	height: 40px;
+}
+.wmSidebarWmAufstellung .wmSidebarBody .wmTrikots .wmTrikotSpieler .wmTrikotNr {
+	position: absolute;
+	top: 3px;
+	left: 11px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+	width: 19px;
+}
+.wmSidebarWmKader .wmSidebarBody {
+	max-height: 320px;
+	overflow-y: auto;
+}
+.wmSidebarWmKader .wmSidebarBody .teamHeim,
+.wmSidebarWmKader .wmSidebarBody .teamGast {
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+.wmSidebarWmKader .wmSidebarBody .teamHeader {
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+}
+.wmSidebarWmKader .wmSidebarBody .bench {
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable {
+	font-size: 0.75rem;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .rowtype2 {
+	background-color: #F8F8F8;
+	height: 25px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .rowtype1 {
+	height: 25px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .cell1 {
+	padding: 0 0 0 15px;
+	width: 40px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .wmKaderBorder {
+	background-color: #b70e01;
+	border: 0;
+	border-radius: 4px;
+	display: block;
+	margin-right: 5px;
+	text-align: center;
+	color: #ffffff;
+	width: 19px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .cell2 {
+	padding: 0;
+	width: 110px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .cell3 {
+	padding: 0;
+	width: 20px;
+}
+.wmSidebarWmKader .wmSidebarBody .wmKaderTable .cell4 {
+	padding: 0 20px 0 0;
+	width: 130px;
+}
+/*.wmSidebarWmKader .wmSidebarBody .teamSpieler {
+	font-size: 0.75rem;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+	border: 1px solid #cecece;
+	border-radius: 4px;
+	margin: 0 10px 4px;
+	padding: 2px 0;
+	text-align: left;
+}
+.wmSidebarWmKader .wmSidebarBody .teamSpieler .trikotNr {
+	float: left;
+	width: 20px;
+	margin: 0 0 0 3px;
+}
+*/
+.wmSidebarWmStatistik .wmSidebarBody .teamHeim,
+.wmSidebarWmStatistik .wmSidebarBody .teamGast {
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+.wmSidebarWmStatistik .wmSidebarBody .teamHeader {
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable {
+	font-size: 0.75rem;
+	width: 100%;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .rowtype2 {
+	background-color: #F8F8F8;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell {
+	padding: 0 0 0 5px;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell1 {
+	text-align: right;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell2 {
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell3 {
+	text-align: center;
+	height: 25px;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell4 {
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .cell5 {
+	padding: 0 5px;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .wmStatBorder {
+	position: relative;
+	height: 15px;
+	border: 1px solid #000000;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .wmStatBorder .wmStatBorderFill {
+	position: absolute;
+	background-color: #b70e01;
+	background-image: linear-gradient(to bottom, #e01b09 0%, #8e100a 100%);
+	top: 0;
+	height: 13px;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .wmStatBorder .wmStatBorderLeft {
+	right: 0;
+}
+.wmSidebarWmStatistik .wmSidebarBody .wmStatTable .wmStatBorder .wmStatBorderRight {
+	left: 0;
+}
+/*
+.wmSidebarWmLiveTicker .wmSidebarLiveTickerHeader {
+	background-color: #ffde0c;
+	text-align: center;
+	font-family: "OpenSansRegular",sans-serif;
+	color: #2c6b42;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerTime {
+	background-color: #ffde0c;
+	color: #2c6b42;
+	text-align: center;
+	border-top: 1px solid #2c6b42;
+}
+.wmSidebarWmLiveTicker h2,
+.wmSidebarWmLiveTicker h3 {
+	margin: 0;
+	padding: 0;
+}
+.wmSidebarWmLiveTicker a {
+	color: #2c6b42;
+}
+.wmSidebarWmLiveTicker a:hover {
+	text-decoration: none;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame {
+	background-image: url("http://webmisc.oe24.at/wm2014/images/emtickerbg.gif");
+	font-family: 'digital-7',sans-serif;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame .teamVs {
+	font-size: 2rem;
+	color: #ffffff;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame .teams,
+.wmSidebarWmLiveTicker .wmLiveTickerGame .tore {
+	text-align: center;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame .toreVs {
+	color: #fff000;
+	font-size: 6.75rem;
+	line-height: 1;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-2 .toreVs {
+	font-size: 5.6125rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottom {
+	background-color: #ffde0c;
+	padding: 3px 0px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame {
+	background-image: url("http://webmisc.oe24.at/wm2014/images/emtickerbg.gif");
+	font-family: 'digital-7',sans-serif;
+	float: left;
+	margin: 0px 3px;
+	padding: 0px 3px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame img {
+	/*display: none;*//*
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame .teamVs {
+	color: #ffffff;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame .teams,
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame .tore {
+	text-align: center;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomGame .toreVs {
+	color: #fff000;
+	line-height: 1;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerGame-1 .toreVs {
+	font-size: 5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .wmLiveTickerBottomGame {
+	width: 144px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .teamLogos img {
+	height: 39px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .teamVs {
+	font-size: 1.625rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .toreVs {
+	font-size: 3.5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .toreVs.toreDate {
+	font-size: 2.5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-2 .toreVs.toreTime {
+	font-size: 2rem;
+	display: block;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .wmLiveTickerBottomGame {
+	width: 94px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .teamLogos img {
+	height: 24px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .teamVs {
+	font-size: 1.4375rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .toreVs {
+	font-size: 4.0625rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .toreVs.toreDate {
+	font-size: 2.5rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-3 .toreVs.toreTime {
+	font-size: 1.4375rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .wmLiveTickerBottomGame {
+	width: 69px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .teamLogos img {
+	height: 15px;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .teamVs {
+	font-size: 1rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .toreVs {
+	font-size: 2.375rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .toreVs.toreDate {
+	font-size: 2rem;
+}
+.wmSidebarWmLiveTicker .wmLiveTickerBottomSize-4 .toreVs.toreTime {
+	font-size: 1rem;
+}*/

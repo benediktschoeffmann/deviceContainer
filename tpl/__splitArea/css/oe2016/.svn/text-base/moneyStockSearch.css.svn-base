@@ -1,0 +1,33 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+
+.oe2016 .sidebar .moneyStockSearch .defaultbox_body {
+    padding: 10px;
+}
+
+
+.moneyStockSearch form {
+    font-size: 0.875rem;
+}
+.moneyStockSearch form label {
+    margin-left: 2px;
+}
+.moneyStockSearch form input[type="text"] {
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.moneyStockSearch form .button {
+    border: none;
+    border-radius: 3px;
+    padding: 2px 10px;
+    margin-right: 2px;
+    color: #fff;
+    background-color: #174584;
+    float: right;
+}

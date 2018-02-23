@@ -181,7 +181,14 @@
 
 /* (ws) 2017-02-14 */
 /* Facebook-Postings werden redaktionsseitig auch direkt eingebunden */
+/*
 .articleBox .storyBodyText iframe[src*="www.facebook.com"] {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+*/
+/* Generell eingebundene iframes in der Breite beschraenken */
+.articleBox .storyBodyText iframe {
     width: 100% !important;
     max-width: 100% !important;
 }

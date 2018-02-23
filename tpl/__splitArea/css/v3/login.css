@@ -1,0 +1,47 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.content .headline {
+	padding-top: 2px;
+	border-top: 2px solid #f0f0f0;
+	margin: 20px 0px 10px 0px;
+}
+.content .headline:first-child {
+	margin-top: 0px;
+}
+.content .headline .title {
+	background-image: linear-gradient(to bottom, #FF5858 0px, #D10A0A 100%);
+	color: #ffffff;
+	padding: 2px 10px;
+}
+.content .userForm {
+	font-size: 0.875rem;
+}
+.content .userForm .user_pass_lost {
+	font-size: 0.6785rem;
+	text-decoration: none;
+}
+.content .userForm textarea,
+.content .userForm input[type="password"],
+.content .userForm input[type="text"] {
+	margin-bottom: 6px;
+}
+.content .userForm input[type="submit"] {
+	background-color: #DD1010;
+	background-image: linear-gradient(to bottom, #FF5858 0px, #D10A0A 100%);
+	font-size: 1rem;
+	border: 0px none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #ffffff;
+	padding: 0px 10px 3px 10px;
+}
+.content .userForm .fb_button {
+	position: relative;
+	left: 3px;
+	cursor: pointer;
+}

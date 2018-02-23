@@ -1,0 +1,53 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.content .col.bundeslaender {
+	margin-bottom: 0;
+}
+.country_header {
+	width: 612px;
+	margin: 0 auto 28px;
+}
+.country_header h2 {
+	font-family: "oe24condensed",sans-serif;
+	/*font-size: 1.25rem;*/
+	/*line-height: 1.2;*/
+	color: #dd1010;
+}
+.country_header .country_header_nav {
+	margin-top: 20px;
+}
+.country_header a {
+	font-size: .625rem;
+	text-align: center;
+	text-decoration: none;
+	width: 68px;
+	float: left;
+	overflow: hidden;
+	opacity: .4;
+}
+.country_header a:hover,
+.country_header a.active {
+	color: #dd1010;
+	opacity: 1;
+}
+.country_header a img,
+.country_header a span {
+	display: block;
+	margin: 0 auto;
+}
+.country_body {
+}
+.country_body .country {
+	display: none;
+}
+.country_body .country.active {
+	display: block;
+}
+/* Bundesland navigation auf den Channelseiten */
+.col.bundeslaenderNav .country_header_nav {
+	margin-top: 0;
+}

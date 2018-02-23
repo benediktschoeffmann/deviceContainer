@@ -35,3 +35,10 @@
     width: 100%;
     display: block;
 }
+
+.smartphone .marketingTeaser > a img {
+    display: block;
+}
+.smartphone .marketingTeaser + .xlBox {
+    /*margin-top: -10px;*/
+}

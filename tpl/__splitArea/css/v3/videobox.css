@@ -1,0 +1,141 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.sidebar .videoBox a,
+.sidebar .videoBox a:hover {
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+}
+.col.videoBox {
+	padding: 0px 0px 5px 0px;
+	background-color: #394451;
+	background-image: linear-gradient(to bottom, #4f5d71 0%, #22282E 100%);
+	color: #ffffff;
+}
+.col.contentVideoBox {
+	padding: 12px 0px 5px 0px;
+	background-color: #394451;
+	background-image: linear-gradient(to bottom, #22282E 0%, #4f5d71 100%);
+	color: #ffffff;
+}
+.col.contentVideoBox a {
+	color: #ffffff;
+}
+.contentVideoBox .leftBox {
+	float: left;
+	width: 290px;
+}
+.contentVideoBox .rightBox {
+	float: left;
+	margin-left: 10px;
+	margin-top: 3px;
+	padding: 0px 3px 0px 5px;
+	border-left: 2px solid #4f5d71;
+}
+.contentVideoBox .title {
+	margin: 0 0 2px;
+}
+.videoBox .title {
+	padding: 10px 6px;
+	margin: 0px;
+}
+.videoBox .preDate,
+.contentVideoBox .preDate {
+	font-size: 0.75rem;
+	margin-left: 5px;
+}
+
+.videoBox .preTitle,
+.contentVideoBox .preTitle {
+	background-color: #1f1f1f;
+	color: #99b7dc;
+	padding: 0px 8px 2px 8px;
+}
+.videoBox .preTitle .bigVideoTitle,
+.contentVideoBox .preTitle .bigVideoTitle {
+	font-size: 1.25rem;
+}
+.videoBox .big_video {
+	border-bottom: 2px solid #4f5d71;
+	padding-bottom: 4px;
+}
+.contentVideoBox .caption {
+	display: inline-block;
+}
+.videoBox .big_video .title {
+	padding: 3px 8px;
+	font-size: 0.875rem;
+}
+.contentVideoBox .small_videos .small_video {
+	font-size: 0.875rem;
+	width: 160px;
+	float: left;
+	padding-bottom: 4px;
+}
+.videoBox .small_videos .small_video {
+	font-size: 0.875rem;
+	width: 160px;
+	float: left;
+	padding-bottom: 5px;
+}
+.videoBox .small_videos .small_video_left {
+	padding-left: 13px;
+	padding-right: 6px;
+}
+.videoBox .small_videos .small_video_right {
+	padding-left: 7px;
+	padding-right: 12px;
+}
+.videoBox .small_videos img,
+.contentVideoBox .small_videos img {
+	margin-bottom: 5px;
+}
+.contentVideoBox .small_videos .small_video {
+	width: 155px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* ws start */
+.videoBox .big_video .caption,
+.videoBox .small_video .caption,
+.contentVideoBox .big_video .caption,
+.contentVideoBox .small_video .caption {
+	display: block;
+	line-height: 1.2;
+}
+.videoBox .big_video .caption,
+.contentVideoBox .big_video .caption {
+	font-size: 1.2rem;
+	font-size: 1.375rem;
+	padding: 0 5px;
+	margin: 4px 0 0;
+}
+.videoBox .big_video .caption,
+.videoBox .small_video .caption,
+.contentVideoBox .big_video .caption,
+.contentVideoBox .small_video .caption {
+	font-family: "OpenSansBold",Verdana,Arial,sans-serif;
+}
+.videoBox .title span,
+.contentVideoBox .title span {
+	font-family: "OpenSansBold",Verdana,Arial,sans-serif;
+	display: block;
+	padding-left: 28px;
+}
+.videoBox .title .icon,
+.contentVideoBox .title .icon {
+	font-family: "icomoon";
+	float: left;
+	padding-top: 4px;
+	padding-left: 0;
+}
+.videoBox .big_video .videoBoxImage {
+	display: block;
+	width: 310px;
+	margin: 0 auto;
+}
+/* ws end */

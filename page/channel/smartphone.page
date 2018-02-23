@@ -1,0 +1,30 @@
+<?php
+/**
+* smartphone Gewinnspiel channel page
+*
+* @url ^/smartphone
+* @var portal oe24.core.Portal
+* @urlManager oe24.oe24
+* @cache 3m
+*/
+
+$channel = Channel::getChannelByChannelstring($portal, 'smartphone');
+
+// hier noch den richtigen content laden.
+$contentId = 155937847; // echtServer Artikel
+try {
+	$content = db()->getById($contentId, 'oe24.core.Content');
+} catch (Exception $e) {
+	$contentId = 32828598; // devServer Artikel
+	$contentId = 32833192;
+	$content = db()->getById($contentId, 'oe24.core.Content');
+}
+
+tpl('oe24.oe24.__splitArea._page._page', array(
+	'portal' => $portal,
+	'channel' => $channel,
+	'object' => $content,
+	'params' => array(),
+));
+
+?>

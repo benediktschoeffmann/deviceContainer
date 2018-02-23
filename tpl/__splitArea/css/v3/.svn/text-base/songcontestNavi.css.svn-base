@@ -1,0 +1,31 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.navMainSongContest {
+    padding: 15px;
+    position: relative;
+}
+.navMainSongContest .navMainBottom {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+}
+.navMainSongContest .navMainBottomItem {
+    font-family: "oe24",sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #d11;
+    background-color: transparent;
+    display: inline-block;
+}
+.navMainSongContest .navMainBottomItem span {
+    padding: 10px 15px 0px;
+}
+.navMainSongContest .navMainBottomItem:hover span,
+.navMainSongContest .navMainBottomItem.active span {
+    color: #fff;
+    background-color: #d11;
+}

@@ -1,0 +1,77 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* Spezial-Darstellung des Contents ueber die gesamte Seitenbreite */
+.row_topbox_content {
+	position: relative;
+	width: 990px;
+	padding: 0 15px;
+	background-color: #fff;
+}
+.row_topbox_content a,
+.row_topbox_content a:hover {
+	text-decoration: none;
+}
+.row_topbox_content a:hover {
+	cursor: pointer;
+}
+.row_topbox_content img {
+	display: block;
+	margin: 0 auto;
+}
+.row_topbox_content .row_topbox_teaser,
+.row_topbox_content .row_topbox_caption,
+.row_topbox_content .row_topbox_subcaption {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+.row_topbox_content .row_topbox_teaser {
+	font-family: "OpenSansCondensedBold",sans-serif;
+	font-size: 1.25rem;
+	padding: 2px 10px 2px 25px;
+	background-color: #dd1010;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+.row_topbox_content .row_topbox_teaser:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 15px 15px 0;
+	border-color: transparent #ea6a6a transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+.row_topbox_content .row_topbox_caption {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 3rem;
+	text-align: right;
+	padding: 0 10px;
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+.row_topbox_content .row_topbox_subcaption {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.125rem;
+	text-align: left;
+	display: block;
+	width: 960px;
+	padding: 5px 10px;
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.row_topbox_content .row_topbox_subcaption .row_topbox_more {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1rem;
+}

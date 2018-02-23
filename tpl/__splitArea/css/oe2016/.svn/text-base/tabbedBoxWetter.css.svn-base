@@ -1,0 +1,51 @@
+<?
+/**
+ * @collector noauto
+ */
+?>
+.oe2016 .row.tabbedBox.wetter .weatherBox {
+	padding-top: 8px;
+}
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherAtLink,
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a {
+    color: #33bce4;
+	/*color: #405d88;*/
+	/* (bs) 2016-03-08 */
+	color: #007ddc;
+}
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a,
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a:hover,
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a.active {
+	border: none;
+	background-image: none;
+	box-shadow: none;
+	opacity: 1;
+}
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherTitel {
+	display: none;
+}
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherBoxHeader {
+    border-bottom: 1px solid #33bce4;
+/*	border-bottom: 1px solid #405d88;*/
+	border-bottom: 1px solid #007ddc;
+}
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a:hover,
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a.active,
+.oe2016 .row.tabbedBox.wetter .weatherMap p::selection,
+.oe2016 .row.tabbedBox.wetter .weatherMap div::selection,
+.oe2016 .row.tabbedBox.wetter .weatherMap img::selection,
+.oe2016 .row.tabbedBox.wetter .content a::selection,
+.oe2016 .row.tabbedBox.wetter .sidebar a::selection,
+.oe2016 .row.tabbedBox.wetter .sidebar span::selection {
+	/*background-color: #33bce4;*/
+	color: #fff;
+	/*background-color: #405d88;*/
+	background-color: #007ddc;
+}
+
+.oe2016 .row.tabbedBox.wetter .weatherBox .weatherNavi a {
+	margin: 0 1px 0 0;
+}
+
+
+

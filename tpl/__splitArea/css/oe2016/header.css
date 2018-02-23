@@ -1,0 +1,65 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+#wrap {
+    /*background-color: #fff;*/
+    /*margin: 0 auto;*/
+}
+
+/* ---------------------------------------------------------------- */
+
+.headerBox {
+    width: 100%;
+    margin-top: 4px;
+}
+.headerNav {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ---------------------------------------------------------------- */
+
+.headerNav nav {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.headerNav nav .tableRow {
+    display: table-row;
+}
+.headerNav nav a {
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: .75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    /*width: 100%;*/
+    padding: 3px 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.headerNav nav a:hover {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+.headerNavContainer {
+    /*background-color: #dd1b54;*/
+    /*background-image: linear-gradient(to bottom, #e71f61, #d31846);*/
+    /*background-color: #e73239;*/
+    /*background-color: #db2139;*/
+    /*background-color: #d0113a;*/
+    /*background-image: linear-gradient(to bottom, #d0113a, #e73239);*/
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}

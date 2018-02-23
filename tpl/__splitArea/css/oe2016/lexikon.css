@@ -1,0 +1,58 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+.lexikon_leadtext p {
+	padding-right: 180px;
+	margin-bottom: 0;
+}
+.lexikon {
+	table-layout: fixed;
+	/*width: 100%;*/
+	width: 620px;
+	margin-bottom: 28px;
+}
+.lexikon td {
+	padding-right: 14px;
+}
+.lexikon .lexikon_item {
+	position: relative;
+	padding: 0 0 0 22px;
+	overflow: hidden;
+}
+.lexikon .lexikon_kategorie_start {
+	margin-top: 1.75rem;
+}
+.lexikon .lexikon_kategorie,
+.lexikon .lexikon_link {
+	font-size: .875rem;
+	line-height: 1.75rem;
+}
+.lexikon .lexikon_kategorie {
+	font-size: 1.25rem;
+	font-weight: bold;
+	width: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #02a8e6;
+}
+.lexikon .lexikon_link {
+	font-size: .875rem;
+	text-decoration: none;
+	width: 100%;
+	padding: 0 8px;
+	border-left: 1px solid #e6e6e6;
+	display: inline-block;
+	white-space: nowrap;
+}
+.lexikon .lexikon_link:hover {
+	color: #123;
+	background-color: #e6e6e6;
+}

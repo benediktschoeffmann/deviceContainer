@@ -1,0 +1,324 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .content .column {
+    margin-bottom: 12px;
+    float: left;
+}
+.oe2016 .content .column.last {
+    margin-right: 0;
+}
+.oe2016 .content .column.break {
+    clear: both;
+}
+.oe2016 .content .column1 {
+    width: 100%;
+}
+.oe2016 .content .column2 {
+    width: 292px;
+    margin-right: 36px;
+}
+.oe2016 .content .column3 {
+    width: 190px;
+    margin-right: 25px;
+}
+
+
+.oe2016 .content .portrait .columnLeft,
+.oe2016 .content .portrait .columnRight {
+    width: 292px;
+    float: left;
+}
+.oe2016 .content .portrait .columnLeft,
+.oe2016 .content .portrait .columnRight {
+    margin-right: 36px;
+}
+.oe2016 .content .portrait .columnRight {
+    margin-right: 0;
+}
+
+
+.oe2016 .content .portrait .columnLeft .column a {
+    padding: 10px;
+    border: 2px solid #dedede;
+    margin-top: 8px;
+}
+.oe2016 .content .portrait .columnLeft .column a:hover {
+    border: 2px solid #dedede;
+}
+
+
+.oe2016 .content .column a {
+    border-top: 6px solid transparent;
+    padding-top: 2px;
+    display: block;
+}
+.oe2016 .content .column a,
+.oe2016 .content .column a:hover {
+    text-decoration: none;
+}
+
+
+.oe2016 .content .storyImage {
+    margin: 0 0 8px;
+}
+.oe2016 .content .storyImage img {
+    display: block;
+    background-color: #dedede;
+}
+.oe2016 .content .column1 .storyImage img {
+    width: 620px;
+    height: 310px;
+}
+.oe2016 .content .column2 .storyImage img {
+    width: 292px;
+    height: 146px;
+}
+.oe2016 .content .column3 .storyImage img {
+    width: 190px;
+    height: 95px;
+}
+
+
+.oe2016 .content .portrait .columnLeft .storyImage img {
+    width: 268px;
+    height: 268px;
+}
+.oe2016 .content .portrait .columnRight .storyImage img {
+    width: 292px;
+    height: 146px;
+}
+.oe2016 .content .portrait .columnLeft .storyTitle {
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+
+.oe2016 .content .column .storyPreTitleContainer {
+    padding: 0 0 2px;
+}
+.oe2016 .content .column .storyPreTitle,
+.oe2016 .content .column .storyTime {
+    font-family: arial,sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.oe2016 .content .column .storyPreTitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    position: relative;
+}
+.oe2016 .content .column .storyTime {
+    text-align: center;
+    width: 40px;
+    color: #fff;
+    float: right;
+}
+.oe2016 .content .column .storyImage .storyTime {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+    padding: 0 5px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.oe2016 .content .column .storyPreTitle.withMarker {
+    padding-left: 16px;
+}
+/*
+.oe2016 .content .column .storyPreTitle.withMarker .portraitSquare {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}
+*/
+.oe2016 .content .column .storyPreTitle.withMarker:before {
+    content: "▪";
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}
+
+
+.oe2016 .content .withStoryTime .column1 .storyPreTitle {
+    max-width: 578px;
+}
+.oe2016 .content .withStoryTime .column2 .storyPreTitle {
+    max-width: 248px;
+}
+.oe2016 .content .withStoryTime .column3 .storyPreTitle {
+    max-width: 148px;
+}
+.oe2016 .content .withStoryTime .column2 .storyPreTitle.withMarker {
+    max-width: 226px;
+}
+
+
+.oe2016 .content .column .storyTitle {
+    font-family: "oe24",sans-serif;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    width: 100%;
+    padding: 0;
+    margin: 2px 0;
+    color: #010101;
+    clear: both;
+    word-wrap: break-word;
+}
+.oe2016 .content .column3 .storyTitle {
+    font-size: 1.25rem;
+}
+.oe2016 .content .column .storyLeadText {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+
+
+.oe2016 .content .column .storyImage {
+    position: relative;
+}
+.oe2016 .content .column .storyImage .storiesOverlay {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,.9) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.oe2016 .content .column .storyImage .storyTitle {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    padding: 10px 10px 5px;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.oe2016 .content .column1 a:hover .storyImage .storiesOverlay {
+    background-image: none;
+}
+.oe2016 .content .column1 a:hover .storyTitle {
+    background-color: rgba(255,255,255,.8);
+}
+
+
+/* Ausnahme zu weiß halb-transparent:
+   Wegen der hellen Channel-Farbe als Hintergrund schwarz halb-transparent nehmen
+   Update: Die Farbe hat sich geaendert, daher doch wieder weiß als background-color;
+*/
+/*
+.oe2016 .society .content .column1 a:hover .storyTitle {
+    background-color: rgba(0,0,0,.5);
+}
+*/
+
+/*
+.oe2016 .video .content .column1 a:hover .storyTitle,
+.oe2016 .tv .content .column1 a:hover .storyTitle {
+    background-color: rgba(0,0,0,.3);
+}
+*/
+
+
+/* sport24 Ligen */
+
+/*
+.oe2016 .content .ligen .columnLeft,
+.oe2016 .content .ligen .columnRight {
+    width: 292px;
+    margin-right: 36px;
+    float: left;
+}
+.oe2016 .content .ligen .columnRight {
+    margin-right: 0;
+}
+.oe2016 .content .ligen .column a {
+    text-decoration: none;
+    padding: 8px;
+    border-top: none;
+    background-color: #dadada;
+}
+.oe2016 .content .ligen .column a:hover {
+    text-decoration: none;
+    border-top: none;
+}
+*/
+.oe2016 .content .ligen .ligaBox {
+    padding: 8px;
+    background-color: #dadada;
+    display: block;
+}
+.oe2016 .content .ligen .column .ligaTop {
+    padding: 5px;
+    background-color: #fff;
+}
+.oe2016 .content .ligen .column .ligaTop img {
+    width: 100%;
+    height: auto;
+}
+.oe2016 .content .ligen .column .ligaTopHeader {
+    font-family: "oe24condensed";
+    font-size: 1.875rem;
+}
+.oe2016 .content .ligen .column .ligaTopHeader .bundesland {
+    margin-top: 0;
+}
+.oe2016 .content .ligen .column .ligaTopHeader span {
+    vertical-align: top;
+}
+
+
+
+.oe2016 .content .ligen .column .ligaEntry {
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+
+/* (pj) 2016-04-13 Overlaytext fuer Sportkanal hinzugefuegt */
+
+.oe2016 .content .column .storyImage .overlayText {
+
+    /* (pj) 2016-04-29 kleinerer Text */
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    /* (pj) 2016-04-29 end */
+
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0px 5px;
+
+    color: #fff;
+
+}
+
+/* (pj) 2016-04-13 end */

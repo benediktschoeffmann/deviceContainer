@@ -23,13 +23,13 @@ function collectBottomJs($layout) {
 		// (pj) 2016-04-15 end
 
         // (bs) 2017-01-09 switch to 7.8.7.
-        array(0, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
-        array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
+        // array(0, '_shared.1_0.jwplayer.7_8_7.jwplayer.jwplayer'),
+        // array(0, '_shared.1_0.jwplayer.7_8_7.jwplayerSetup'),
         // (bs) end
 
         // (bs) 2018-01-04 switch to 8.0.11
-        // array(1, '_shared.1_0.jwplayer.8_0_11.jwplayer.jwplayer'),
-        // array(1, '_shared.1_0.jwplayer.8_0_11.jwplayerSetup'),
+        array(1, '_shared.1_0.jwplayer.8_0_11.jwplayer.jwplayer'),
+        array(1, '_shared.1_0.jwplayer.8_0_11.jwplayerSetup'),
         // (bs) end
 
 		array(0, 'oe24.oe24.__splitArea.js.v3.lazyload.jqueryLazyload'),
@@ -48,7 +48,7 @@ function collectBottomJs($layout) {
 		// array(0, 'oe24.oe24.__splitArea.js.v3.ePaperOesterreich'), // (pj) 2016-04-19
 		// array(0, 'oe24.oe24.__splitArea.js.v3.easyTicker.2_0_0.easy_ticker'), // (pj) 2016-04-19 fuer was war das?
 		array(0, 'oe24.oe24.__splitArea.js.v3.fishtank'),
-		// array(0, 'oe24.oe24.__splitArea.js.v3.gravity'),
+		array(0, 'oe24.oe24.__splitArea.js.v3.gravity'),
 
         // (ws) 2015-01-14
 		array(0, 'oe24.oe24.__splitArea.js.v3.header'),
@@ -170,6 +170,9 @@ function collectBottomJs($layout) {
 
         // (ws) 2017-11-13
         array(1, 'oe24.oe24.__splitArea.article.slideshowVoting.slideshowVoting'),
+
+        // (db) 2017-09-12 - billboard testscript - soll nicht online gehen
+        array(0, 'oe24.oe24.__splitArea.js.oe2016._db_oe2016BillboardTestPage'),
 
 	);
 

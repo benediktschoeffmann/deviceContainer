@@ -1,0 +1,75 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_meinauto24.oe2016 .headerNavLogo {
+    padding: 4px 8px;
+}
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoPortal {
+    width: 342px;
+    padding: 7px 0;
+}
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 60px;
+}
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 506px;
+    height: 84%;
+}
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoOesterreich span {
+    left: 40px;
+}
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 48px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header meinauto24 */
+
+.layout_meinauto24.oe2016 .headerNavLogo,
+.layout_meinauto24.oe2016 .headerNavLogo a,
+.layout_meinauto24.oe2016 .headerNavLogo a img,
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoPortal,
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoOesterreich,
+.layout_meinauto24.oe2016 .headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.layout_meinauto24.oe2016 .stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogo {
+    height: 30px;
+    padding: 1px 8px 7px;
+    padding: 3px 8px;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogo a,
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogoCol.logoPortal {
+    width: 110px;
+    padding: 0;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    width: 834px;
+    height: 92%;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    left: 545px;
+}
+.layout_meinauto24.oe2016 .stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}

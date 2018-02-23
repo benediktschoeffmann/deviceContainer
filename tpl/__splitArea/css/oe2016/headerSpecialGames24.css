@@ -1,0 +1,236 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_games24.oe2016 p::-moz-selection,
+.layout_games24.oe2016 span::-moz-selection,
+.layout_games24.oe2016 strong::-moz-selection,
+.layout_games24.oe2016 h1::-moz-selection,
+.layout_games24.oe2016 h2::-moz-selection,
+.layout_games24.oe2016 h3::-moz-selection,
+.layout_games24.oe2016 a::-moz-selection,
+.layout_games24.oe2016 div::-moz-selection,
+.layout_games24.oe2016 u::-moz-selection,
+.layout_games24.oe2016 img::-moz-selection,
+.layout_games24.oe2016 br::-moz-selection,
+.layout_games24.oe2016 ul::-moz-selection,
+.layout_games24.oe2016 li::-moz-selection,
+.layout_games24.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #000;
+}
+.layout_games24.oe2016 p::selection,
+.layout_games24.oe2016 span::selection,
+.layout_games24.oe2016 strong::selection,
+.layout_games24.oe2016 h1::selection,
+.layout_games24.oe2016 h2::selection,
+.layout_games24.oe2016 h3::selection,
+.layout_games24.oe2016 a::selection,
+.layout_games24.oe2016 div::selection,
+.layout_games24.oe2016 u::selection,
+.layout_games24.oe2016 img::selection,
+.layout_games24.oe2016 br::selection,
+.layout_games24.oe2016 ul::selection,
+.layout_games24.oe2016 li::selection,
+.layout_games24.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* logos */
+
+.layout_games24.oe2016 .headerNavLogo,
+.layout_games24.oe2016 .games24.standardHeadline h2,
+.layout_games24.oe2016 .games24.bigHeadline .bigHeadlineText,
+.layout_games24.oe2016 .contentSliderBox .contentSliderBoxHeadline {
+    background: #000 url(<?slp('image', 'oe2016/bgi-games64.png')?>) no-repeat center;
+}
+
+/* (bs) 2017-06-09 Keywan wollte das so. */
+.layout_games24.oe2016 .logoPortal img {
+    padding-top: 7px;
+    height: 67px;
+}
+
+.layout_games24.oe2016 .logoOesterreich {
+    width: 728px;
+}
+.layout_games24.oe2016 .logoOesterreich span {
+    line-height: 1.2;
+    left: 433px;
+    top: 39px;
+}
+.layout_games24.oe2016 .logoOesterreich img {
+    height: 60px;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* logos sticky header */
+
+.layout_games24.oe2016 .stickyHeader .logoPortal img {
+    padding-top: 0px;
+    height: 24px;
+}
+
+.layout_games24.oe2016 .stickyHeader .logoOesterreich span {
+    font-size: .625rem;
+    left: 542px;
+    top: 0;
+}
+.layout_games24.oe2016 .stickyHeader .logoOesterreich img {
+    height: 24px;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* main navigation */
+
+/* (bs) 2016-06-08 Keywan wollte das so */
+.layout_games24.oe2016 .headerNavMain {
+    background-color: #646464;
+    /*background-color: #a20fb8;*/
+}
+.layout_games24.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+/* (bs) 2016-06-08 Keywan wollte das so */
+.layout_games24.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_games24.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #646464;
+    /* background-color: #318674; */
+}
+
+/* ---------------------------------------------------------------- */
+
+/* topics navigation */
+
+.layout_games24.oe2016 .headerNav .headerNavTopicsCaption {
+    color: #fff;
+    background-color: #000;
+}
+.layout_games24.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #000;
+}
+
+/* ---------------------------------------------------------------- */
+
+.layout_games24.oe2016 .subNavContainer {
+    border-bottom: 8px solid #000;
+}
+.layout_games24.oe2016 .subNavMenu a {
+    color: #fff;
+    background-color: #000;
+}
+.layout_games24.oe2016 .subNavMenu a:hover,
+.layout_games24.oe2016 .subNavMenu .active a {
+    color: #000;
+    background-color: #fff;
+}
+
+.layout_games24.oe2016 .subNavContent > a:hover,
+.layout_games24.oe2016 .subNavContent .subNavMore > a:hover {
+    color: #a20fb8;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* console */
+
+.layout_games24.oe2016 .consoleBoxHeadline span {
+    background-color: #000;
+}
+.layout_games24.oe2016 .console .buttonPrev,
+.layout_games24.oe2016 .console .buttonNext {
+    color: #767374;
+    background-color: rgba(0,0,0,.7);
+}
+.layout_games24.oe2016 .consoleStoryPreTitle,
+.layout_games24.oe2016 .consoleStoryLiveTicker {
+    color: #fff;
+    background-color: #000;
+}
+.layout_games24.oe2016 .consoleNavigationItem:hover p {
+    color: #a20fb8;
+}
+.layout_games24.oe2016 .consoleStoryCounter {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* stories */
+
+.layout_games24.oe2016 .games24 .slide a .storyPreTitle {
+    color: #000;
+}
+
+/*
+.layout_games24.oe2016 .games24 .defaultChannelColor,
+.layout_games24.oe2016 .games24 .defaultChannelHoverColor:hover,
+.layout_games24.oe2016 .games24 .content .storyWrapper:hover .story_pretitle,
+.layout_games24.oe2016 .games24 .content .storyWrapper:hover .story_pagetitle,
+.layout_games24.oe2016 .games24 .content .column a:hover .storyPreTitle,
+.layout_games24.oe2016 .games24 .content .column a:hover .storyTitle,
+.layout_games24.oe2016 .games24 .content .column .storyPreTitle.withMarker:before,
+.layout_games24.oe2016 .games24 .sidebar .teasers a:hover .storyTitle,
+.layout_games24.oe2016 .games24 .videoEntry a:hover .videoPreTitle,
+.layout_games24.oe2016 .games24 .videoEntry a:hover .videoTitle,
+*/
+.layout_games24.oe2016 .games24 .slide a:hover .storyPreTitle,
+.layout_games24.oe2016 .games24 .slide a:hover .storyTitle {
+    color: #a20fb8;
+}
+
+.layout_games24.oe2016 .video_container:after {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    top: 50%;
+    left: 50%;
+    bottom: inherit;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    background-image: url(/images/oe2016/playButtonGames24.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 140px 70px;
+}
+.layout_games24.oe2016 a:hover .video_container:after {
+    background-position: -70px 0;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* footer */
+
+.layout_games24.oe2016 footer .footer_caption {
+    color: #000;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* (bs) 2017-06-13 Games24 Special Sonderwunsch */
+.layout_games24.oe2016 .games24.bigHeadline h2 a {
+    background: #000 url(<?slp('image', 'oe2016/bgi-games64.png')?>) no-repeat center;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: "oe24",sans-serif;
+    font-size: 1.5625rem;
+    line-height: 1.3;
+}
+/* (bs) end */

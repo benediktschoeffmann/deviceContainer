@@ -1,0 +1,221 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.requiredBefore:before {
+	content: "* ";
+}
+.requiredAfter:after {
+	content: " *";
+}
+.requiredBefore:before,
+.requiredBefore:after {
+	font-size: 1rem;
+	font-size: .875rem;
+	color: #f00;
+}
+.registerErrorMessages {
+	font-size: .875rem;
+	color: #f00;
+	margin: 0 0 18px 20px;
+}
+.registerErrorMessages ul,
+.registerErrorMessages li {
+	list-style-type: disc;
+}
+
+.registerSuccessMessages {
+	font-size: .875rem;
+	color: #00ad00;
+	margin: 0 0 18px 20px;
+}
+#userRegisterForm fieldset {
+	padding-bottom: 0;
+	margin-bottom: 28px;
+	border: 1px dashed #e5e5e5;
+	border-radius: 5px;
+}
+#userRegisterForm fieldset .col2 {
+	width: 278px;
+	margin-right: 36px;
+}
+#userRegisterForm fieldset .col2.last {
+	margin-right: 0;
+}
+#userRegisterForm {
+	display: block;
+}
+#userRegisterForm select {
+	/*
+	In der base.css ist fuer ein select-Element width:100% angegeben.
+	Diese Breitenangabe ist hier *nicht* anzuwenden, muss also ueberschrieben werden.
+	*/
+	width: auto;
+}
+#userRegisterForm label {
+	font-size: .75rem;
+	display: block;
+	width: 100%;
+	margin: 14px 0 2px;
+}
+#userRegisterForm label.usergender {
+	margin-bottom: 10px
+}
+#userRegisterForm label[for="reg_usergender_herr"],
+#userRegisterForm label[for="reg_usergender_frau"] {
+	display: inline;
+	margin: 0 14px 0 4px;
+}
+#userRegisterForm input[type="tel"],
+#userRegisterForm input[type="text"],
+#userRegisterForm input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 8px 8px 5px;
+}
+#userRegisterForm select {
+	font-size: .75rem;
+	display: block;
+	padding: 3px 0;
+}
+#userRegisterForm option {
+	font-size: .875rem;
+	padding: 0 6px;
+}
+#userRegisterForm .selectBox {
+	display: block;
+}
+#userRegisterForm .selectBox.usercountry,
+#userRegisterForm .selectBox.userstate {
+	width: 46%;
+}
+#userRegisterForm .selectBox.usercountry {
+	float: left;
+}
+#userRegisterForm .selectBox.userstate {
+	float: right;
+}
+#userRegisterForm .selectBox select {
+	float: left;
+}
+#userRegisterForm label.reg_usercountry,
+#userRegisterForm label.reg_userstate {
+	float: left;
+	width: 50%;
+}
+#userRegisterForm .selectBox select#reg_usercountry,
+#userRegisterForm .selectBox select#reg_userstate {
+	width: 100%
+}
+#userRegisterForm .selectBox.userbirthday {
+	width: 100%
+}
+#userRegisterForm .selectBox.userbirthday select {
+	float: left;
+}
+#userRegisterForm .selectBox select#reg_userbirthdayDay {
+	margin-right: 4px;
+}
+#userRegisterForm .selectBox select#reg_userbirthdayMonth {
+	margin-right: 4px;
+	width: 138px;
+}
+#userRegisterForm .userAgree {
+	margin-top: 14px;
+}
+#userRegisterForm #reg_agb,
+#userRegisterForm #reg_netiquette {
+	float: left;
+}
+#userRegisterForm label[for="reg_agb"],
+#userRegisterForm label[for="reg_netiquette"] {
+	float: right;
+	width: 272px;
+	width: 256px;
+	padding-left: 9px;
+	margin-top: 0;
+}
+#userRegisterForm label[for="reg_agb"]:before,
+#userRegisterForm label[for="reg_netiquette"]:before {
+	margin-left: -9px;
+}
+#userRegisterForm .userSubmit {
+	text-align: center;
+}
+#userRegisterForm .userSubmit label,
+#userRegisterForm .userSubmit .button {
+	float: none;
+	display: block;
+	margin: 14px auto 0;
+}
+#userRegisterForm .userSubmit a.button {
+	margin: 37px auto 0;
+}
+#userRegisterForm .userSubmit .button {
+    padding: 7px 35px 5px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #d01010;
+}
+#userRegisterForm .userSubmit .button[disabled="disabled"] {
+	background-color: #d0d0d0;
+}
+#userRegisterForm .fb_login {
+	cursor: pointer;
+	margin-top: 20px;
+}
+#userRegisterForm .fb_register {
+	cursor: pointer;
+}
+
+
+#userPasswordChangeForm {
+	display: block;
+}
+#userPasswordChangeForm fieldset {
+	padding-bottom: 0;
+	margin-bottom: 28px;
+	border: 1px dashed #e5e5e5;
+	border-radius: 5px;
+}
+#userPasswordChangeForm label {
+	font-size: .75rem;
+	display: block;
+	width: 100%;
+	margin: 14px 0 2px;
+}
+#userPasswordChangeForm input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 8px 8px 5px;
+}
+#userPasswordChangeForm .userSubmit {
+	text-align: center;
+}
+#userPasswordChangeForm .userSubmit .button {
+	float: none;
+	display: block;
+	margin: 14px auto 0;
+}
+#userPasswordChangeForm .userSubmit .button {
+    padding: 7px 35px 5px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #d01010;
+}
+
+
+/* (bs) 2015-01-29 OE2016-43 - OE2016-46 */
+.oe2016 .row.user_registration .row_caption_title h2,
+.oe2016 .row.user_registration .requiredBefore:before,
+.oe2016 .row.user_registration .requiredBefore:after,
+.oe2016 .row.user_registration .registerErrorMessages {
+	color: #d0113a;
+}
+.oe2016 .row.user_registration #userRegisterForm .userSubmit .button {
+	background-color: #d0113a;
+}

@@ -1,0 +1,182 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.radioOe24Playlist .playlistBox {
+	background-color: #dc1f1f;
+	padding: 4px;
+	font-family: "oe24", Arial, sans-serif;
+}
+/* Titel Bereich */
+.radioOe24Playlist .playlistTitle {
+	margin: 0px 6px 5px 0px;
+}
+.radioOe24Playlist .playlistTitle .radioOe24Logo {
+	padding: 0 0 4px 10px;
+}
+.radioOe24Playlist .playlistTitle .live {
+	font-family: "OpenSansRegular", Arial;
+	font-size: 2.125rem;
+	line-height: 1.2;
+	float: right;
+	background-color: #fff;
+	color: #dc1f1f;
+	padding: 1px 5px;
+	margin: 3px 0 0 0;
+	position: relative;
+}
+.radioOe24Playlist .playlistTitle .live:before {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	left: -27px;
+	width: 27px;
+	height: 30px;
+	background-color: #dc1f1f;
+	background-image: linear-gradient(to bottom, #dc1f1f 0%, #ba2323 100%);
+}
+.radioOe24Playlist .playlistTitle .live:after {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	left: -27px;
+	width: 27px;
+	height: 30px;
+	border-color: transparent transparent #dc1f1f #dc1f1f;
+	border-width: 15px 14px 15px 13px;
+	border-style: solid;
+}
+/* Player Bereich */
+.radioOe24Playlist .playlistBody.popup {
+	cursor: pointer;
+}
+.radioOe24Playlist .playlistBody .now {
+	background-color: #fff;
+}
+.radioOe24Playlist .playlistBody .info {
+	background-image: url('/images/rl2014/radioCoverShadow.png');
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+}
+.radioOe24Playlist .playlistBody .next {
+	background-color: #dbeefa;
+}
+.radioOe24Playlist .playlistBody #btnPlayPause {
+	background-image: url('/images/rl2014/radioPlayPause.png');
+	background-repeat: no-repeat;
+	width: 98px;
+	height: 99px;
+	float: left;
+	margin: 25px 0 0 20px;
+	cursor: pointer;
+}
+.radioOe24Playlist .playlistBody #btnPlayPause.pause:hover,
+.radioOe24Playlist .playlistBody #btnPlayPause.play {
+	background-position: 0 0;
+}
+.radioOe24Playlist .playlistBody #btnPlayPause.play:hover,
+.radioOe24Playlist .playlistBody #btnPlayPause.pause {
+	background-position: -98px 0;
+}
+.radioOe24Playlist .playlistBody #nowCover {
+	margin: 7px 9px 0 30px;
+	background-image: url('/images/layout/radiooe24/coverbg.png');
+	background-image: url('/images/rl2014/radioOe24Cover.png');
+	background-repeat: no-repeat;
+	background-size: 145px 145px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+	position: relative;
+}
+.radioOe24Playlist .playlistBody .nowText,
+.radioOe24Playlist .playlistBody .nextText {
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 1;
+	background-color: #fff;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-radius: 0 0 1px 0;
+	padding: 1px 5px 0;
+	float: left;
+	margin-top: -7px;
+}
+.radioOe24Playlist .playlistBody .nowText {
+	margin-top: -15px;
+}
+.radioOe24Playlist .playlistBody #nowInterpret,
+.radioOe24Playlist .playlistBody #nowTitel,
+.radioOe24Playlist .playlistBody #nextInterpret,
+.radioOe24Playlist .playlistBody #nextTitel {
+	text-align: center;
+}
+.radioOe24Playlist .playlistBody #nowInterpret {
+	color: #dc1f1f;
+	font-size: 1.375rem;
+	line-height: 1.2;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+.radioOe24Playlist .playlistBody #nextInterpret {
+	font-size: 0.9375rem;
+	line-height: 1;
+	color: #000000;
+	float: left;
+	width: 100%;
+	margin-top: -2px;
+}
+.radioOe24Playlist .playlistBody #nowTitel,
+.radioOe24Playlist .playlistBody #nextTitel {
+	font-family: "OpenSansRegular", Arial;
+	font-size: 0.875rem;
+}
+.radioOe24Playlist .playlistBody #nextTitel {
+	clear: both; /* gibt vl. ne andere loesung, der titel soll aber unterm interpret sein.. iPad hat probleme ohne diesem */
+}
+/* Links Bereich */
+.radioOe24Playlist .playlistLinks {
+	background-image: linear-gradient(to bottom, #ff5858 0%, #dc2c2d 100%);
+	margin-top: 1px;
+}
+.radioOe24Playlist .playlistLinks .playlistLink {
+	color: #fff;
+	display: block;
+	font-size: 1.375rem;
+	padding: 3px 7px;
+	border-bottom: 1px solid #f8b4b4;
+}
+.radioOe24Playlist .playlistLinks .playlistLink:hover {
+	text-decoration: none;
+	color: #feff91;
+}
+.radioOe24Playlist .playlistLinks .playlistLink:last-child {
+	border-bottom: none;
+}
+.radioOe24Playlist .playlistLinks .icon_arrow4_right {
+	float: right;
+	font-size: 2rem;
+	position: relative;
+}
+.radioOe24Playlist .playlistLinks .icon_arrow4_right:after {
+	background-image: url('/images/rl2014/radioPlayShadow.png');
+	content: " ";
+	position: absolute;
+	bottom: 8px;
+	left: -2px;
+	width: 11px;
+	height: 16px;
+}
+/* Footer Bereich */
+.radioOe24Playlist .playlistFooter {
+	background-color: #fff;
+	color: #dc1f1f;
+	line-height: 1;
+	padding-top: 8px;
+	text-align: center;
+}
+.radioOe24Playlist .playlistFooter .bigText {
+	font-size: 2.625rem;
+	text-transform: uppercase;
+}

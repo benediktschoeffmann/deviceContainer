@@ -27,7 +27,7 @@ $isTwoToOne      = ($isXlBox && $mobileAsDesktop);
 //$imageFormat2to1 = ($twoColumns) ? 'bigStoryCrop' : 'bigStory';
 $imageFormat2to1 = ($twoColumns) ? 'Oe24AppBigStoryCrop' : 'Oe24AppBigStory';
 //$imageFormat1610 = '620x388';
-$imageFormat1610 = 'Oe24App310x194';
+$imageFormat1610 = 'Oe24App1610';
 
 $imageFormat = ($isTwoToOne || $twoColumns) ? $imageFormat2to1 : $imageFormat1610;
 
@@ -71,6 +71,13 @@ foreach ($articles as $article) {
                   'layout' => 'smartphone')
             );
 
+    $searchString = 'apaOuterFrame';
+    if (strpos($bodyText, $searchString) !== FALSE) {
+        continue;
+    }
+
+    $device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
+
     $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);
     $bodyText = $device->encodeBodyText($bodyText);
     $advertorial = ($article->getOptions(true, true)->get('EntgeltlicherContent')) ? true : false;
@@ -92,6 +99,8 @@ foreach ($articles as $article) {
             'image'            => $imageUrl,
             'advertorial'      => $advertorial,
             'bodyText'         => $bodyText,
+            'pre_ad'           => $device->getAdUrl($category, 'artikel_top'),
+            'post_ad'          => $device->getAdUrl($category, 'artikel_bottom'),
             'link'             => ($articleUrl != $articleUrlOwn),
             ),
         );

@@ -1,0 +1,192 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_sport_euro2016.oe2016 ::selection {
+    color: #fff;
+    background-color: #313b69;
+}
+.layout_sport_euro2016.oe2016 ::-moz-selection {
+    color: #fff;
+    background-color: #313b69;
+}
+
+/* (pj) 2016-05-17 Sport Euro 2016 */
+
+.layout_sport_euro2016.oe2016 .headerNavContainer {
+    background-color: #313b69;
+    /*background-image: linear-gradient(to bottom, #7881a8 20%, #313b69);*/
+    background-image: linear-gradient(to bottom, #7780a7 -10%, #313b69 80%);
+}
+.layout_sport_euro2016.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    /*border-left: 1px solid #313b69;*/
+    /*border-right: 1px solid #313b69;*/
+    border-left: 1px solid #7780a7;
+    border-right: 1px solid #7780a7;
+}
+.layout_sport_euro2016.oe2016 .headerNavMain,
+.layout_sport_euro2016.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_sport_euro2016.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #3d4982;
+    background-color: #313b69;
+}
+
+/* (pj) 2016-05-17 end */
+
+/* ---------------------------------------------------------------- */
+
+.layout_sport_euro2016.oe2016 .headerNavLogo {
+    padding: 2px 8px;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoPortal {
+    width: 342px;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 80px;
+}
+
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 386px;
+    height: 84%;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoOesterreich span {
+    left: 8px;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 36px;
+}
+
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoEuro2016 {
+    padding-top: 4px;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoEuro2016 img {
+    height: 64px;
+}
+
+/* (ws) 2016-05-24 */
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.textEuro2016 {
+    margin-left: 64px;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.textEuro2016 a {
+    height: 100%;
+    position: relative;
+}
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.textEuro2016 span {
+    font-family: "oe24",sans-serif;
+    font-size: 4.3rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    color: #ffea44;
+    background: -webkit-linear-gradient(#ffff79, #fed717);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* (ws) 2016-05-24 // */
+
+/* ---------------------------------------------------------------- */
+
+.layout_sport_euro2016.oe2016 .headerNavLogo,
+.layout_sport_euro2016.oe2016 .headerNavLogo a,
+.layout_sport_euro2016.oe2016 .headerNavLogo a img,
+.layout_sport_euro2016.oe2016 .headerNavLogo a span,
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoOesterreich,
+.layout_sport_euro2016.oe2016 .headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.layout_sport_euro2016.oe2016 .stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogo {
+    height: 30px;
+    padding: 1px 8px 7px;
+    padding: 3px 8px;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogo a,
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    width: 784px;
+    /* added */
+    height: 92%;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    left: 496px;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}
+
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.logoPortal {
+    width: 110px;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.logoEuro2016 {
+    padding-top: 0;
+}
+
+/* (ws) 2016-05-24 */
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 {
+    margin-left: 10px;
+}
+.layout_sport_euro2016.oe2016 .stickyHeader .headerNavLogoCol.textEuro2016 span {
+    font-size: 1rem;
+}
+/* (ws) 2016-05-24 // */
+
+/* ---------------------------------------------------------------- */
+
+/* (pj) 2016-05-17 Sport Euro 2016 */
+
+.layout_sport_euro2016.oe2016 .subNavMenu a {
+    color: #313b69;
+}
+
+.layout_sport_euro2016.oe2016 .subNavMenu .active a,
+.layout_sport_euro2016.oe2016 .subNavMenu a:hover {
+    background-color: #313b69;
+    color: #fff;
+}
+
+.layout_sport_euro2016.oe2016 .subNavContainer {
+    border-bottom: 8px solid #313b69;
+}
+
+.layout_sport_euro2016.oe2016 .subNavContent > a:hover,
+.layout_sport_euro2016.oe2016 .subNavContent .subNavMore > a:hover {
+    color: #313b69;
+}
+
+/* (pj) 2016-05-17 end */
+
+/* ---------------------------------------------------------------- */
+
+/* (pj) 2016-05-17 Sport Euro 2016 */
+
+.layout_sport_euro2016.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #313b69;
+}
+.layout_sport_euro2016.oe2016 .headerNav .headerNavTopicsItems a {
+    color: #313b69;
+}
+
+/* (pj) 2016-05-17 end */

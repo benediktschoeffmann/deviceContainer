@@ -1,0 +1,52 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+.defaultbox.moneyRechner .defaultbox_body {
+	padding: 0;
+	font-size: 0.875rem;
+}
+.moneyRechner .defaultbox_body li {
+	display: block;
+}
+.moneyRechner .defaultbox_body li a {
+	display: block;
+	padding: 5px 10px;
+}
+.moneyRechner .defaultbox_body li a:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+	text-decoration: none;
+}
+.moneyRechner .defaultbox_body .moneyRechnerImg {
+	float: left;
+	margin: 3px 0 0 5px;
+}
+.moneyRechner .defaultbox_body .moneyRechnerTitle {
+	display: block;
+	padding-left: 35px;
+}
+
+
+.defaultbox.lehrstellen .defaultbox_body {
+	padding: 0;
+	font-size: 0.875rem;
+}
+.lehrstellen .defaultbox_body li {
+	display: block;
+}
+.lehrstellen .defaultbox_body li a {
+	display: block;
+	padding: 5px 10px;
+}
+.lehrstellen .defaultbox_body li a:hover {
+	background-color: #f8f8f8;
+	cursor: pointer;
+	text-decoration: none;
+}
+.lehrstellen .defaultbox_body .lehrstellenTitle {
+	display: block;
+}

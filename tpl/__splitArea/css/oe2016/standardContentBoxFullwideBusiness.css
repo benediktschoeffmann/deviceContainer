@@ -1,0 +1,315 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.tabbedBox.businessTradeAndProvince .content {
+    padding: 0 20px 0 15px;
+    margin: 0;
+}
+.tabbedBox.businessTradeAndProvince .sidebar {
+    padding: 0 15px 0 20px;
+    margin: 0;
+}
+.businessTradeAndProvince .content .standardHeadline,
+.businessTradeAndProvince .sidebar .standardHeadline {
+    padding: 0;
+}
+.businessTradeAndProvince .content .standardContentBox,
+.businessTradeAndProvince .sidebar .standardContentBox {
+    padding-top: 12px;
+}
+.businessTradeAndProvince .sidebar .teaserStoryBox {
+    border-top: 6px solid transparent;
+    padding: 2px 0 8px;
+    margin: 0;
+    display: block;
+}
+
+
+/*
+.businessTradeAndProvince .sidebar .teaserStoryBox .teaserStoryBoxMiddle,
+.businessTradeAndProvince .sidebar .teaserStoryBox .teaserStoryBoxTitle,
+.businessTradeAndProvince .sidebar .teaserStoryBox .teaserStoryBoxLeadText {
+    padding: 0 5px;
+}
+*/
+
+
+.businessTradeAndProvince .sidebar.province .standardContentBox {
+    padding: 12px 0 0;
+    /*background-color: #fffafe;*/
+    background-color: #fff9fe;
+}
+.businessTradeAndProvince .sidebar.province .standardContentBox .teaserStoryBoxLeadText {
+    margin: 0;
+}
+
+
+/* Headline Bundesland Wappen */
+.businessTradeAndProvince .sidebar .standardHeadline h2 {
+    position: relative;
+    padding-left: 38px;
+}
+.businessTradeAndProvince .sidebar .standardHeadline h2 a {
+    text-align: center;
+    display: block;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+    background: transparent url('/images/oe2016/wappen/bundeslaenderWappen2.png') no-repeat 0 0;
+
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceBurgenland {
+    background-position: 0 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceKaernten {
+    background-position: -32px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceNiederoesterreich {
+    background-position: -64px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceOberoesterreich {
+    background-position: -96px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceSalzburg {
+    background-position: -128px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceSteiermark {
+    background-position: -160px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceTirol {
+    background-position: -192px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceVorarlberg {
+    background-position: -224px 0;
+}
+.businessTradeAndProvince .sidebar .standardHeadline .crestImage.provinceWien {
+    background-position: -256px 0;
+}
+
+
+.businessTradeAndProvince .colorSchema01 .standardHeadline {
+    background-color: #c30ac6;
+    background-image: linear-gradient(to right, #c30ac6 65%, #f128f4);
+}
+.businessTradeAndProvince .colorSchema01.content .column a:hover,
+.businessTradeAndProvince .colorSchema01.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #c30ac6;
+}
+.businessTradeAndProvince .colorSchema01.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema01.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema01.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema01.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #c30ac6;
+}
+
+/*
+.businessTradeAndProvince .colorSchema02 .standardHeadline {
+    background-color: #da0b42;
+    background-image: linear-gradient(to right, #da0b42 65%, #f53c6d);
+}
+.businessTradeAndProvince .colorSchema02.content .column a:hover,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #da0b42;
+}
+.businessTradeAndProvince .colorSchema02.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema02.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #da0b42;
+}
+*/
+
+.businessTradeAndProvince .colorSchema02 .standardHeadline {
+    background-color: #ef107d;
+    background-image: linear-gradient(to right, #ef107d 65%, #f458a4);
+}
+.businessTradeAndProvince .colorSchema02.content .column a:hover,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #ef107d;
+}
+.businessTradeAndProvince .colorSchema02.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema02.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema02.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #ef107d;
+}
+
+/*
+.businessTradeAndProvince .colorSchema03 .standardHeadline {
+    background-color: #f4300c;
+    background-image: linear-gradient(to right, #f4300c 65%, #f76e55);
+}
+.businessTradeAndProvince .colorSchema03.content .column a:hover,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #f4300c;
+}
+.businessTradeAndProvince .colorSchema03.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema03.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #f4300c;
+}
+*/
+
+.businessTradeAndProvince .colorSchema03 .standardHeadline {
+    background-color: #d0113a;
+    background-image: linear-gradient(to right, #d0113a 65%, #dd1010);
+}
+.businessTradeAndProvince .colorSchema03.content .column a:hover,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #d0113a;
+}
+.businessTradeAndProvince .colorSchema03.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema03.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema03.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #d0113a;
+}
+
+.businessTradeAndProvince .colorSchema04 .standardHeadline {
+    background-color: #f47b0c;
+    background-image: linear-gradient(to right, #f47b0c 65%, #f7a355);
+}
+.businessTradeAndProvince .colorSchema04.content .column a:hover,
+.businessTradeAndProvince .colorSchema04.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #f47b0c;
+}
+.businessTradeAndProvince .colorSchema04.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema04.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema04.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema04.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #f47b0c;
+}
+
+.businessTradeAndProvince .colorSchema05 .standardHeadline {
+    background-color: #f4a90c;
+    background-image: linear-gradient(to right, #f4a90c 65%, #f7c355);
+}
+.businessTradeAndProvince .colorSchema05.content .column a:hover,
+.businessTradeAndProvince .colorSchema05.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #f4a90c;
+}
+.businessTradeAndProvince .colorSchema05.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema05.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema05.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema05.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #f4a90c;
+}
+
+.businessTradeAndProvince .colorSchema06 .standardHeadline {
+    background-color: #f4d80c;
+    background-image: linear-gradient(to right, #f4d80c 65%, #f7e455);
+}
+.businessTradeAndProvince .colorSchema06.content .column a:hover,
+.businessTradeAndProvince .colorSchema06.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #f4d80c;
+}
+.businessTradeAndProvince .colorSchema06.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema06.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema06.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema06.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #f4d80c;
+}
+
+.businessTradeAndProvince .colorSchema07 .standardHeadline {
+    background-color: #dbec0c;
+    background-image: linear-gradient(to right, #dbec0c 65%, #e9f64e);
+}
+.businessTradeAndProvince .colorSchema07.content .column a:hover,
+.businessTradeAndProvince .colorSchema07.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #dbec0c;
+}
+.businessTradeAndProvince .colorSchema07.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema07.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema07.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema07.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #dbec0c;
+}
+
+.businessTradeAndProvince .colorSchema08 .standardHeadline {
+    background-color: #65d40b;
+    background-image: linear-gradient(to right, #65d40b 65%, #e9f64e);
+}
+.businessTradeAndProvince .colorSchema08.content .column a:hover,
+.businessTradeAndProvince .colorSchema08.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #65d40b;
+}
+.businessTradeAndProvince .colorSchema08.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema08.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema08.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema08.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #65d40b;
+}
+
+.businessTradeAndProvince .colorSchema09 .standardHeadline {
+    background-color: #4d0ac6;
+    background-image: linear-gradient(to right, #4d0ac6 65%, #7128f4);
+}
+.businessTradeAndProvince .colorSchema09.content .column a:hover,
+.businessTradeAndProvince .colorSchema09.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #4d0ac6;
+}
+.businessTradeAndProvince .colorSchema09.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema09.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema09.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema09.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #4d0ac6;
+}
+
+.businessTradeAndProvince .colorSchema10 .standardHeadline {
+    background-color: #0ac65e;
+    background-image: linear-gradient(to right, #0ac65e 65%, #8cf537);
+}
+.businessTradeAndProvince .colorSchema10.content .column a:hover,
+.businessTradeAndProvince .colorSchema10.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #0ac65e;
+}
+.businessTradeAndProvince .colorSchema10.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema10.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema10.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema10.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #0ac65e;
+}
+
+.businessTradeAndProvince .colorSchema11 .standardHeadline {
+    background-color: #0a7fc6;
+    background-image: linear-gradient(to right, #0a7fc6 65%, #28a7f4);
+}
+.businessTradeAndProvince .colorSchema11.content .column a:hover,
+.businessTradeAndProvince .colorSchema11.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #0a7fc6;
+}
+.businessTradeAndProvince .colorSchema11.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema11.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema11.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema11.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #0a7fc6;
+}
+
+.businessTradeAndProvince .colorSchema12 .standardHeadline {
+    background-color: #0a2dc6;
+    background-image: linear-gradient(to right, #0a2dc6 65%, #284ef4);
+}
+.businessTradeAndProvince .colorSchema12.content .column a:hover,
+.businessTradeAndProvince .colorSchema12.sidebar .teaserStoryBox:hover {
+    border-top: 6px solid #0a2dc6;
+}
+.businessTradeAndProvince .colorSchema12.content .column a:hover .storyPreTitle,
+.businessTradeAndProvince .colorSchema12.content .column a:hover .storyTitle,
+.businessTradeAndProvince .colorSchema12.sidebar .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.businessTradeAndProvince .colorSchema12.sidebar .teaserStoryBox:hover .teaserStoryBoxTitle {
+    color: #0a2dc6;
+}
+

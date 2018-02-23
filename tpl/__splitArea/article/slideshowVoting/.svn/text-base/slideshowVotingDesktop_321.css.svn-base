@@ -1,0 +1,281 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.votingContainer .votingItem {
+    clear: both;
+    padding: 1px;
+    margin: 1px 0;
+    background-color: #f2f2f2;
+}
+.votingContainer .votingItem:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+
+.votingContainer .votingItem {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+.votingContainer .votingImage,
+.votingContainer .votingText,
+.votingContainer .votingPlayButton,
+.votingContainer .votingButtons {
+    display: table-cell;
+    vertical-align: middle;
+}
+.votingContainer .votingImage {
+    width: 10%;
+    /*background-color: #ad5;*/
+}
+.votingContainer .votingText {
+    width: 50%;
+    padding: 2px 10px;
+    /*background-color: #da5;*/
+}
+.votingContainer .votingPlayButton {
+    width: 10%;
+    /*background-color: #5ad;*/
+}
+.votingContainer .votingButtons {
+    width: 30%;
+    /*background-color: #5da;*/
+}
+
+
+.votingContainer .votingImage img {
+    display: block;
+    width: 100%;
+}
+
+
+.votingContainer .votingImage {
+    position: relative;
+}
+.votingContainer .votingImage .votingImageCounter {
+    padding: 1px 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+
+
+.votingContainer .votingTextTitle,
+.votingContainer .votingTextDescription {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.votingContainer .votingTextTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #d0113a;
+}
+.votingContainer .votingTextDescription {
+    font-size: .9375rem;
+    font-weight: 400;
+}
+/* Styles aus v3/article.css ueberschreiben */
+.article_box .votingContainer .votingTextTitle,
+.article_box .votingContainer .votingTextDescription {
+    padding: 0;
+    margin: 0;
+}
+
+
+.votingContainer .playButton {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+            box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+    position: relative;
+}
+.votingContainer .playButton .playButtonSymbol {
+    display: block;
+    width: 50%;
+    fill: #d0113a;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-40%, -50%);
+        -ms-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%);
+}
+
+
+.votingContainer .votingButtons .votingButtonsBox {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.votingContainer .votingButtons .votingButtonsCell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.votingContainer .votingButton {
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+            box-shadow: 0px 1px 1px 1px rgba(0,0,0,.3);
+}
+
+
+/*
+ * Schriftfarbe des <a>-Tags wird in einem uebergeordneten
+ * Stylesheet gesetzt und muss hier ueberschrieben werden
+ */
+.article_box .article_body .votingButton,
+.article_box .article_body .votingButton:link,
+.article_box .article_body .votingButton:visited,
+.article_box .article_body .votingButton:hover,
+.article_box .article_body .votingButton:active {
+    text-decoration: none;
+    color: #000;
+    background-color: #eee;
+}
+.article_box .article_body .votingButton:hover,
+.article_box .article_body .votingButton.active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d0113a;
+}
+
+
+/* (ws) 2017-11-17 abstimmbar/nicht abstimmbar Ergaenzung */
+.votingContainer .votingButton.disabled {
+    opacity: .3;
+    border: 1px dashed #999;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.votingContainer .votingButton.disabled:hover {
+    color: #000;
+    background-color: #eee;
+    cursor: default;
+}
+/* (ws) 2017-11-17 // */
+
+
+/* How To Create a Modal Box */
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+
+.modalContainer,
+.hintContainer {
+    text-align: center;
+    display: none;
+    position: fixed;
+    /*z-index: 1;*/
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.4);
+}
+.modalContainer.active,
+.hintContainer.active {
+    display: block;
+}
+.modalContent {
+    background-color: #fefefe;
+    margin: 21% auto;
+    padding: 11px;
+    border: 1px solid #eee;
+    /*width: 90%;*/
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(0,0,0,.3);
+            box-shadow: 0px 0px 21px 2px rgba(0,0,0,.3);
+}
+.modalContent p {
+    font-size: .9375rem;
+}
+.modalContent p.modalContentThanks {
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+
+.modalData {
+    margin: 15px 0;
+}
+.modalData input {
+    display: block;
+    width: 100%;
+    padding: 1px 6px;
+    margin: 10px 0;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    outline: none;
+}
+.modalData input:invalid {
+    border: 2px solid #e00;
+}
+
+
+.modalButtons {
+    text-align: center;
+    margin: 17px 0 0;
+}
+.modalButtons button {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 2px 8px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.modalButtons .modalButtonCancel {
+    /*float: left;*/
+    background: #ef5350;
+}
+.modalButtons .modalButtonSubmit {
+    /*float: right;*/
+    background: #66bb6a;
+}
+
+
+.hintContainer .hintThanksVoted,
+.hintContainer .hintAlreadyVoted {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.hintContainer.active .hintThanksVoted.active,
+.hintContainer.active .hintAlreadyVoted.active {
+    display: block;
+}
+.hintContainer .hintButtonClose {
+    background: #ef5350;
+    margin-bottom: 10px;
+}

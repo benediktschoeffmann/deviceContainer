@@ -1,0 +1,190 @@
+<?
+/**
+ * override slideshow voting 3-2-1
+ * @var votingId integer
+ * @var votingUrl string
+ * @var votingItems array<any>
+ * @var maxButtons integer
+ * @var modalData array<any>
+ */
+
+// /var/www/oe24_oe24/page/slideShowVoting.page
+
+// debug($slideshowId);
+// debug($votings);
+// debug($voter);
+
+// 2017-11-09 11:27:03: [  DEBUG  ] oe24.oe24.slideShowVoting.page:require() [14]: 161624401
+// 2017-11-09 11:27:03: [  DEBUG  ] oe24.oe24.slideShowVoting.page:require() [15]: 161624426;jsOption2|161624405;jsOption3|161624423;jsOption1
+// 2017-11-09 11:27:03: [  DEBUG  ] oe24.oe24.slideShowVoting.page:require() [16]: Roman Faraday|01 2367452|rf@upc.at
+
+// Text fuer das Overlay
+// Bitte geben Sie Name, Telefonnummer und E-Mail Adresse an, um an Gewinnspielen teilzunehmen.
+
+// E-Mail für Redaktion
+// hitwahl@radio-oe24.at
+
+// ----------------------------------------------
+
+$emptyImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAQGU/a4AAAAKSURBVHgBY2gAAACCAIFMF9ffAAAAAElFTkSuQmCC';
+
+$imageFormat = '200x200';
+
+// $lazyLoadingClass = 'responsively-lazy';
+$lazyLoadingClass = 'oe24Lazy';
+
+// ----------------------------------------------
+
+$classVotingItem = 'votingItem';
+$classNameButton = 'votingButton';
+$classNameActive = 'active';
+
+// $hintThanksVoted   = 'Wir bedanken uns für’s abstimmen.';
+$hintThanksVoted   = htmlspecialchars('Wir bedanken uns für\'s abstimmen.', ENT_QUOTES);
+$hintAlreadyVoted  = htmlspecialchars('Sie haben bereits abgestimmt, danke.', ENT_QUOTES);
+
+$classThanksVoted  = 'hintThanksVoted';
+$classAlreadyVoted = 'hintAlreadyVoted';
+
+$resetAlreadyVoted = false;
+
+$options = array(
+    'votingId'          => $votingId,
+    'votingUrl'         => $votingUrl,
+    'maxButtons'        => $maxButtons,
+    'classVotingItem'   => $classVotingItem,
+    'classNameButton'   => $classNameButton,
+    'classNameActive'   => $classNameActive,
+    'classThanksVoted'  => $classThanksVoted,
+    'classAlreadyVoted' => $classAlreadyVoted,
+    'resetAlreadyVoted' => $resetAlreadyVoted,
+);
+
+$votingOptions = json_encode($options);
+
+?>
+
+<div class="votingBox" id="votingBox" data-voting-options='<?= $votingOptions; ?>'>
+
+
+    <? if (1): ?>
+
+    <div class="votingContainer maxButtons<?= $maxButtons; ?>">
+
+        <? foreach ($votingItems as $key => $item): ?>
+
+            <? //debug($item['id']); ?>
+
+            <div class="votingItem clearfix ">
+
+                <div class="votingImage">
+                <? if (1): ?>
+                    <img class="<?= $lazyLoadingClass; ?>" src="<?= $emptyImage; ?>" data-original="<?= $item['imageUrl']; ?>" alt="" >
+                    <span class="votingImageCounter"><?= ($key + 1); ?></span>
+                <? endif; ?>
+                </div>
+
+                <div class="votingText">
+                <? if (1): ?>
+                    <h3 class="votingTextTitle"><?= $item['title']; ?></h3>
+                    <p class="votingTextDescription"><?= $item['description']; ?></p>
+                <? endif; ?>
+                </div>
+
+                <div class="votingPlayButton">
+                <? if (1): ?>
+                    <a class="playButton" href="<?= $item['link']; ?>" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 176" class="playButtonSymbol">
+                            <path d="M150 86.6L0 173.2L0 0z"/>
+                        </svg>
+                    </a>
+                <? endif; ?>
+                </div>
+
+                <div class="votingButtons">
+                <? if (1): ?>
+                    <div class="votingButtonsBox">
+                        <? for ($k = $maxButtons; $k > 0; $k--): ?>
+                            <div class="votingButtonsCell">
+                                <a href="#" class="<?= $classNameButton; ?>" onclick="return false;" data-item-info="<?= $item['id'].';jsOption'.$k; ?>">
+                                    <?= $k; ?>
+                                </a>
+                            </div>
+                        <? endfor; ?>
+                    </div>
+                <? endif; ?>
+                </div>
+
+            </div>
+
+        <? endforeach; ?>
+
+    </div>
+
+    <? endif; ?>
+
+
+    <? if (1): ?>
+
+    <div class="modalContainer">
+
+        <div class="modalContent">
+
+            <? if (isset($modalData['overlayHeadline'])): ?>
+                <h2><?= $modalData['overlayHeadline']; ?></h2>
+            <? endif; ?>
+
+            <p>Durch Drücken auf den grünen 'Abschicken'-Button wird Ihre Auswahl gesendet.</p>
+
+            <? if (isset($modalData['overlayText']) && !empty($modalData['overlayText'])): ?>
+
+                <p><?= $modalData['overlayText']; ?></p>
+
+                <div class="modalData" id="modalData">
+
+                    <? if (0): // zwecks Voter-Test ?>
+                    <input class="modalDataName"    type="text"  value="Roman Faraday" name="modalDataName"    maxlength="30" placeholder="Name">
+                    <input class="modalDataTelefon" type="tel"   value="01/2367452"    name="modalDataTelefon" maxlength="30" placeholder="Telefonnummer">
+                    <input class="modalDataEmail"   type="email" value="rf@upc.at"     name="modalDataEmail"   maxlength="30" placeholder="E-Mail Adresse">
+                    <? endif; ?>
+
+                    <? if (1): // Produktiv-Version ?>
+                    <input class="modalDataName"    type="text"  name="modalDataName"    maxlength="30" placeholder="Name">
+                    <input class="modalDataTelefon" type="tel"   name="modalDataTelefon" maxlength="30" placeholder="Telefonnummer">
+                    <input class="modalDataEmail"   type="email" name="modalDataEmail"   maxlength="30" placeholder="E-Mail Adresse">
+                    <? endif; ?>
+
+                </div>
+
+            <? endif; ?>
+
+            <div class="modalButtons clearfix">
+                <button class="modalButtonCancel" type="button">Schließen</button>
+                <button class="modalButtonSubmit" type="button">Abschicken</button>
+            </div>
+
+            <p class="modalContentThanks">Vielen Dank für's Mitmachen!</p>
+
+        </div>
+
+    </div>
+
+    <? endif; ?>
+
+
+    <? if (1): ?>
+
+    <div class="hintContainer">
+        <div class="modalContent">
+            <p class="<?= $classThanksVoted; ?>"><?= $hintThanksVoted; ?></p>
+            <p class="<?= $classAlreadyVoted; ?>"><?= $hintAlreadyVoted; ?></p>
+            <div class="modalButtons">
+                <button class="hintButtonClose" type="button">Schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <? endif; ?>
+
+
+</div>

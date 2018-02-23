@@ -1,0 +1,172 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.chartContainer {
+    font-family: "oe24", sans-serif;
+    display: block;
+    margin: 0 15px;
+}
+.chartContainer.distanceTop {
+    margin-top: 15px;
+}
+.chartContainer.distanceBottom {
+    margin-bottom: 15px;
+}
+
+
+.chartHeader {
+    padding: 0;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.chartHeader:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #d0113a;
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+}
+
+
+
+.chartHeader .chartCaption {
+    /*font-family: "OpenSansCondensedLight",sans-serif;*/
+    font-size: 1.25;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 0;
+    margin: 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+
+
+.chartFooter {
+    padding: 6px 0;
+    color: #fff;
+    background-color: #d0113a;
+}
+.chartFooter .chartSource {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    text-align: right;
+    padding: 0 14px;
+    margin: 5px 0;
+}
+
+
+.chartContent {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+
+.chartContent .chartRow {
+    display: table-row;
+}
+.chartContent .chartRow.chartRowLegend .chartCell {
+    padding: 0 0 16px 0;
+}
+
+
+.chartContent .chartCell {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center;
+    padding: 0;
+    /*position: relative;*/
+}
+
+
+.chartContent .chartRowLegend .chartCell {
+    vertical-align: top;
+}
+
+
+.chartContent .chartCell,
+.chartContent .chartCell:hover {
+    text-decoration: none;
+}
+
+
+.chartContent .chartCell.barChart {
+    width: 70%;
+}
+.chartContent .chartCell.pieChart {
+    width: 30%;
+    padding: 0;
+}
+.chartContent .chartCell.pieChart.pieChartDiagramm {
+    padding: 0 0 17px 0;
+}
+
+
+.chartContent .chartCell.chartCellCaption {
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+.chartContent .chartCell.chartCell[href="#!"]:hover {
+    cursor: default;
+}
+
+
+.chartContent .chartCell.barChart.chartCellCaption span {
+    display: block;
+    width: 310px;
+}
+
+
+.chartContent .legendContainer {
+    width: 100%;
+}
+.chartContent .barChart .legendContainer {
+    padding: 0 14px 0 32px;
+}
+.chartContent .pieChart .legendContainer {
+    padding: 0;
+}
+
+
+.chartContent .legendBox {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.chartContent .legendBox .legend {
+    font-size: .875rem;
+    font-weight: bold;
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    color: #000;
+}
+
+
+.chartContent .legendBox .legend .value {
+    display: block;
+    margin: 0 auto;
+}
+.chartContent .legendBox .legend .divider {
+    display: block;
+    width: 70%;
+    height: 5px;
+    margin: 2px auto;
+}

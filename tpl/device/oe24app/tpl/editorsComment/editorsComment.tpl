@@ -228,6 +228,8 @@ foreach ($editors as $key => $editor) {
             'image'            => $imageUrl,
             'advertorial'      => $advertorial,
             'bodyText'         => $bodyText,
+            'pre_ad'           => $device->getAdUrl($category, 'artikel_top'),
+            'post_ad'          => $device->getAdUrl($category, 'artikel_bottom'),
             'link'             => ($articleUrl != $articleUrlOwn),
         )
     );

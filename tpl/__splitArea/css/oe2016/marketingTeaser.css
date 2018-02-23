@@ -1,0 +1,116 @@
+<?
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .oe2016marketingTeaser {
+	max-width: 960px;
+	/*margin: 10px auto;*/
+    margin: 0 auto;
+}
+
+
+/** SIDEBAR MARKETING TEASER */
+.oe2016 .sidebar .oe2016marketingTeaser  {
+    max-width: 300px;
+    /*margin: 5px 0;*/
+}
+
+/** CONTENT MARKETING TEASER*/
+.oe2016 .content .oe2016marketingTeaser {
+	max-width: 620px;
+	/*padding: 5px 0;*/
+}
+
+.oe2016 .oe2016marketingTeaser.spacerBefore {
+	margin-top: 20px;
+}
+
+.oe2016 .oe2016marketingTeaser.spacerAfter {
+	margin-bottom: 20px;
+}
+
+
+/* speziell fuer die Euro 2016 */
+.layout_sport_euro2016.oe2016 .oe2016marketingTeaser.spacerBefore {
+    margin-top: 5px;
+}
+
+
+/* teaser-box fullwide*/
+.oe2016 .teaserBoxFullWide {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.oe2016 .teaserBoxFullWide.distanceTop {
+    margin-top: 20px;
+}
+.oe2016 .teaserBoxFullWide.distanceBottom {
+    margin-bottom: 20px;
+}
+
+
+/* (ws) 2017-112-01 */
+/* teaser-box fullwide adventkalender */
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender {
+    position: relative;
+    height: 220px;
+}
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender a:hover,
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender a:focus,
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender a:active {
+    text-decoration: none;
+}
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender .adventkalenderStoryImage {
+    display: block;
+    width: 130px;
+    position: absolute;
+    left: 663px;
+    top: 67px;
+}
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender .adventkalenderStoryIndex {
+    font-family: 'oe24', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 46px;
+    text-align: center;
+    text-shadow: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: #5c1c01;
+    background-color: rgba(255,255,255,.75);
+    position: absolute;
+    left: 668px;
+    top: 72px;
+    z-index: 1;
+    /*background-color: #5c1c01;*/
+    /*color: #fff;*/
+    background-color: #fff;
+}
+.oe2016 .oe2016marketingTeaser.oe2016adventkalender .adventkalenderStoryTitle {
+    font-family: "oe24condensed", sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 152px;
+    height: 134px;
+    padding: 13px 18px 0;
+    margin: 0;
+    color: #c90602;
+    position: absolute;
+    left: 798px;
+    top: 62px;
+    z-index: 2;
+}
+/* teaser-box fullwide adventkalender // */

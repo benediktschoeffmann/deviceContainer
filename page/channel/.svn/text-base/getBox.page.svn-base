@@ -1,0 +1,55 @@
+<?php
+/**
+ * Return a Box Template
+ *
+ * @url /getBox/(?<boxId>[0-9]+)/(?<channelId>[0-9]+)/(?<columnId>[0-9]+)
+ * @var portal oe24.core.Portal
+ * @var boxId string
+ * @var channelId string
+ * @var columnId string
+ * @urlManager oe24.oe24
+ * @cache 3m
+ * @cache.browser 3m
+ */
+
+$box = db()->getById($boxId, "oe24.core.FrontendBox", false);
+if (null === $box) {
+    header("HTTP/1.0 404 Not Found");
+    return;
+}
+$channel = db()->getById($channelId, "oe24.core.Channel", false);
+$channel = !$channel ? Channel::getChannelByChannelstring($portal, "") : $channel;
+$column = db()->getById($columnId, "oe24.core.ChannelColumn", false);
+$column = !$column ? new ChannelColumn() : $column;
+if(!$column->getId()){
+    $column->setName("Content Area");
+}
+
+ob_start();
+echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
+//echo '<html><head>';
+if(request()->getGetValue("includeJS")){
+    $js = explode(",", request()->getGetValue("includeJS"));
+    echo '<script type="text/javascript" src="'.l('spunQ.wormhole.js', array('js' => $js)).'"></script>';
+}
+if(request()->getGetValue("includeCSS")){
+    $css = explode(",", request()->getGetValue("includeCSS"));
+    echo '<link rel="stylesheet" type="text/css" media="all" href="'.l('spunQ.wormhole.css', array('css' => $css)).'"/>';
+}
+
+if(request()->getGetValue("baseTarget")){
+    echo '<base target="'.request()->getGetValue("baseTarget").'" />';
+}
+//echo '</head>';
+etpl($box->getTemplate(), array("channel" => $channel, "box" => $box, "column" => $column, "portal" => $portal));
+$html = ob_get_contents();
+ob_end_clean();
+
+if(request()->getGetValue("asDocumentWrite")){
+    response()->addHeader("content-type: text/javascript");
+    $html = addcslashes($html, "'");
+    $html = str_replace(array("<", ">", "\r", "\n", "\t"), array("<'+'", ">'+'", "", "", ""), $html);
+    echo "document.write('$html');";
+}else{
+    echo $html;
+}

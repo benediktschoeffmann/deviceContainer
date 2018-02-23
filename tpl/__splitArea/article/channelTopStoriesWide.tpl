@@ -1,0 +1,342 @@
+<?php
+
+/**
+ * Split Area - Channel Top Stories des Artikel - rl2014
+ *
+ * @var channel oe24.core.Channel
+ * @var content oe24.core.TextualContent
+ * @var oe2016layouts any
+ * @var col_count integer
+ * @default col_count 3
+ * @var row_count integer
+ * @default row_count 1
+ */
+// (bs) 2015-30-11 content war  oe24.core.Text. Hab das in TextualContent geändert,
+// damit dieses Template auch mit z.b. SlideShows aufgerufen werden kann.
+
+// Die Top-Stories des Channels.
+//
+// Es werden auch die Top-Stories der Parent-Channels geholt,
+// um eventuell fehlende Stories aufzufuellen.
+//
+// Die Anzahl der Stories soll so gross sein,
+// dass eine gesamte Reihe befuellt werden kann.
+
+
+debug('channelTopStoriesWide');
+
+$box = new ContentBox();
+$max_stories = $col_count * $row_count;
+$showChannelName = true;
+$channelLayout = $channel->getOptions(true, true)->get('layoutOverride');
+
+// (db) 2017-12-01 bei layout 'reise' keine 'Mehr News' andrucken
+if ('reise' == $channelLayout) {
+	return;
+}
+
+// --------------------------------------------
+
+// Alle moeglichen Stories in umgekehrter Reihenfolge holen.
+// In umgekehrter Reihenfolge deshalb, weil die Stories sind
+// (Parent)-Channel-maessig absteigend angeordnet sind.
+$arrayTopStories = array();
+$parentChannels = array_reverse($channel->getParentChannels(true));
+
+foreach ($parentChannels as $key => $channelTemp) {
+	if($channelTemp->getParent() instanceof Channel){
+		$arrayTopStories[] = $channelTemp->getTopContents(true, true);
+	}
+}
+
+// Nur eine bestimmte Anzahl (<= $max_stories) von Stories weiterverarbeiten.
+$temp = array();
+foreach ($arrayTopStories as $topStories) {
+	foreach ($topStories as $story) {
+
+		if (count($temp) >= $max_stories) {
+			break;
+		}
+
+		$isNotSameArticle = ($story->getId() != $content->getId());
+
+		if (($isNotSameArticle) && ($story instanceof TextualContent)) {
+
+			// $temp[] = $story;
+			// (db) 2017-02-07 - DAILY 648 -> immer aktuellesten news andrucken
+			if(!$story->getExcludeFromGeneratedLists()){
+
+				$frontendDate = (string) $story->getFrontendDate();
+				$timeSpanAgo = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d')-7 ,date('Y')));
+				if($frontendDate >= $timeSpanAgo){
+					$index = $frontendDate.' '.$story->getId();
+					$temp[$index] = $story;
+				}
+			}
+			// (db) 2017-02-07 end
+		}
+	}
+}
+
+// --------------------------------------------
+
+//zu wenige aktuelle Topstories, restliche Positionen mit News belegen
+// (db) 2017-02-07 - DAILY 648 -> immer aktuellesten news andrucken
+if (count($temp) < $max_stories) {
+	debug('channelTopStoriesWide zu wenig stories 1');
+	$arrayNewStories = array();
+	foreach ($parentChannels as $key => $channelTemp) {
+		if($channelTemp->getParent() instanceof Channel){
+			$arrayNewStories[] = $channelTemp->getPublishedTextualContents($max_stories, null, new spunQ_DateTime('-1 month'), false);
+		}
+	}
+
+	$tempNew=array();
+	foreach ($arrayNewStories as $newStories) {
+		foreach ($newStories as $story) {
+
+			$isNotSameArticle = ($story->getId() != $content->getId());
+
+			if (($isNotSameArticle) && ($story instanceof TextualContent)) {
+				// nur news nehmen, die nicht von Listen ausgenommen sein sollen
+				if(!$story->getExcludeFromGeneratedLists()){
+
+					$frontendDate = (string) $story->getFrontendDate();
+					$index = $frontendDate.' '.$story->getId();
+					// keine news, die bereits via top-news kommen
+					if(!isset($temp[$index])){
+						$tempNew[$index] = $story;
+					}
+				}
+			}
+		}
+	}
+	// sortieren und die aktuellsten Artikel als Auffüller hinzufügen
+	krsort($tempNew);
+	$tempNew = array_slice($tempNew, 0, ($max_stories-count($temp)));
+	$temp = array_merge($temp, $tempNew);
+
+}
+krsort($temp);
+$temp2 = array_slice($temp, 0, $max_stories);
+$temp = array();
+foreach($temp2 as $sKey => $story){
+	$temp[] = $story;
+}
+// (db) 2017-02-07 end
+
+// ----------------------------------------------------------
+// Zwecks Test: Param `length` fuer array_slice() von 0 bis 7
+// $temp = array_slice($temp, 0, 4);
+// ----------------------------------------------------------
+
+// Zusammenstellen der Stories mit Ueberpruefung,
+// ob die Story-Reihen auf die notwendige Anzahl ($col_count)
+// aufgefuellt werden koennen.
+//
+// array_chunk() teilt die Liste der Stories in "Packete"
+// zu je $col_count Stories oder kleiner.
+//
+// Sind zu wenige Stories in einem "Packet" als in einer
+// Reihe gezeigt werden sollen, bedeutet das, dass die Liste
+// der Stories fertig zusammengestellt ist.
+
+$stories = array();
+$chunks = array_chunk($temp, $col_count, true);
+foreach ($chunks as $chunk) {
+	// if (count($chunk) == $col_count) {
+	// 	$stories = array_merge($stories, $chunk);
+	// }
+	if (count($chunk) < $col_count) {
+		break;
+	}
+	$stories = array_merge($stories, $chunk);
+}
+
+// Wenn es zuwenige Stories fuer eine Reihe gibt, tja, dann ...
+if (count($stories) < $col_count) {
+	debug(' channelTopStoriesWide:zu wenig stories 2');
+	return null;
+}
+
+// Analog zu oe24.oe24.__splitArea.tpl.content.stories nur dass die
+// Channel-Top-Stories ueber die gesamte Seitenbreite gezeigt werden.
+// Daher ist das Story-Format (Breite) die der zweispaltigen Darstellung.
+
+$image_format = '292x146NoStretch';
+$image_dimension = 'width="292" height="146"';
+$logo_format =  'col2';
+$logo_dimension = 'width="129" height="21"';
+$imageAT_src = lp('image', 'layout/freeHTML/overlay/'.$logo_format.'.jpg');
+
+if ('madonna' == $channelLayout) {
+	// $image_format = '620x388';
+	// $image_dimension = 'width="300" height="188"';
+	$image_format = '300x300';
+	$image_dimension = 'width="300" height="300"';
+}
+
+// (bs) 2016-11-23 OE2016-24
+$showAdInLastRow = false;
+// als letzte Position soll ein Ad kommen,
+// wenns Contentad (3) gibt und bei Artikel auf true ist.
+if (isOe2016Layout($channelLayout, $content)) {
+	$articleOptions = $content->getOptions(true, true);
+	if ($articleOptions->get('AditionAdTags') != 'Keine Werbung laden') {
+		$adSlots = json_decode($articleOptions->get('AditionAdSlots'), true);
+		if (is_array($adSlots)) {
+			foreach ($adSlots as $key => $slot) {
+				if (isset($slot['banner']) && $slot['banner'] == 'Contentad (3)'
+					&& isset($slot['artikel']) && $slot['artikel'] == true) {
+					$showAdInLastRow = true;
+					// schneide die letzte story weg.
+					$dummy = array_pop($stories);
+					// und verlasse die Schleife.
+					break;
+				}
+			}
+		}
+	}
+}
+// (bs) 2016-11-23 OE2016-24 //
+
+// (pj) 2016-10-10 nur noch auf die erste Ebene nach der Frontpage gehen
+// // Wenn nur EINE Story dabei ist, deren Home-Channel NICHT der aktuelle Channel ist,
+// // macht es keinen Sinn, den Channel-Namen in der Ueberschrift "Mehr ... News" auszugeben
+// foreach ($stories as $story) {
+// 	$homeChannel = $story->getHomeChannel();
+// 	if (null === $homeChannel) {
+// 		continue;
+// 	}
+// 	if ($homeChannel->getId() !== $channel->getId()) {
+// 		$showChannelName = false;
+// 	}
+// }
+
+// $moreText = 'Mehr '.$channel->getName().'-News';
+
+$parentChannels = $channel->getParentChannels(true);
+$channelName = (count($parentChannels) >= 2) ? $parentChannels[1]->getName() : $channel->getName();
+$moreText = 'Mehr '.$channelName.'-News';
+// (pj) 2016-10-10 end
+
+// if ('news' === $channel->getName() || false === $showChannelName) {
+if ('news' === $channel->getName()) {
+	$moreText = 'Mehr News';
+}
+if ('cooking24' === $channelLayout) {
+	$moreText = 'Mehr WirKochen-News';
+}
+if ('madonna' === $channelLayout) {
+	$moreText = 'Mehr Madonna-Storys';
+}
+
+?>
+<div class="row">
+	<div class="content channelTopStoriesContent">
+
+		<div class="channelTopStories clearfix">
+
+			<h2 class="channelTopStoriesHeader"><?=$moreText; ?></h2>
+
+			<? foreach ($stories as $key => $content): ?>
+
+				<?
+
+				$additional_class  = ($col_count-1 == ($key % $col_count)) ? 'last' : '';
+				$additional_class .= (0 == ($key % $col_count)) ? ' break' : '';
+				$additional_class .= ('madonna' == $channelLayout) ? ' madonna' : '';
+
+				$link_attr = getContentUrlAttributesArray($content, $box, true, true, true);
+
+				$link_href = (isset($link_attr['href']) && is_string($link_attr['href'])) ? $link_attr['href'] : '#';
+				$link_title = (isset($link_attr['title']) && is_string($link_attr['title'])) ? $link_attr['title'] : '';
+				$link_target = (isset($link_attr['target']) && is_string($link_attr['target']) && '' != $link_attr['target']) ? 'target="'.$link_attr['target'].'"' : '';
+
+				$image = $content->getFirstRelatedImage(true, $box);
+
+				$image_src = (null !== $image) ? $image->getFileUrl($image_format) : 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+				// $preTitle = trim($content->getPreTitle());
+				$preTitle = trim($content->getPreTitle(true, $box));
+
+				// $pageTitle = trim($content->getTitle());
+				$pageTitle = trim($content->getTitle(true, $box)); // mergeOverride = true (Content-Overwrite-Title), $mergeBox = true (Box-Overwrite-Title)
+
+				// $leadText = trim($content->getLeadText());
+				$leadText = trim($content->getLeadText(true, true, $box));
+
+				// Ueberpruefen ob content ein Video ist
+				$videoClass = '';
+				if ($content instanceof Text) {
+					$videoClass = $content->getVideoOptions() ? 'video_container' : '';
+				} else if ($content instanceof Video) {
+					$classVideo = 'video_container';
+				}
+
+				$atClass = '';
+				if (preg_match('/[www|oe24dev].xn--sterreich-z7a.at/i', $link_href)) {
+					$atClass = 'oesterreich_article';
+				}
+
+				// Dev-Stories
+				$pageTitle = preg_replace('/^mad.+ - /', '', $pageTitle);
+				// Dev-Stories //
+
+
+				?>
+
+				<section class="col col2 channel_box <?= $additional_class; ?>">
+					<a href="<?= $link_href; ?>" title="<?= $link_title; ?>" <?= $link_target; ?>>
+						<div class="<?= $videoClass; ?> <?= $atClass; ?>">
+							<? if (!empty($atClass)): ?>
+								<? if (isset($_GET['oe24NoLazy'])): ?>
+									<img src="<?=$imageAT_src?>" alt="" <?=$logo_dimension?> class="oesterreich_logo" />
+								<? else: ?>
+									<img data-original="<?=$imageAT_src?>" src="/images/empty.gif" alt="" <?=$logo_dimension?> class="oe24Lazy oesterreich_logo" />
+								<? endif; ?>
+							<? endif; ?>
+							<? if (isset($_GET['oe24NoLazy'])): ?>
+								<img src="<?=$image_src?>" alt="" <?=$image_dimension?> />
+							<? else: ?>
+								<img data-original="<?=$image_src?>" src="/images/empty.gif" alt="" <?=$image_dimension?> class="oe24Lazy" />
+							<? endif; ?>
+						</div>
+						<? if ('madonna' == $channelLayout): ?>
+							<div class="madonnaStoryInfo">
+								<? if ($preTitle): ?>
+									<strong class="story_pretitle"><?= $preTitle; ?></strong>
+									<br>
+								<? endif; ?>
+								<h2 class="story_pagetitle">
+									<span class="story_pagetitle_background"><?=$pageTitle;?></span>
+								</h2>
+							</div>
+						<? else: ?>
+							<? if ($preTitle): ?>
+								<strong class="story_pretitle"><?=$preTitle?></strong>
+							<? endif; ?>
+							<h2 class="story_pagetitle"><?=$pageTitle?></h2>
+							<? if ('' != $leadText): ?>
+							<p class="story_leadtext"><?=$leadText?></p>
+							<? endif; ?>
+						<? endif; ?>
+					</a>
+				</section>
+
+			<? endforeach ?>
+
+			<? if ($showAdInLastRow) : ?>
+
+				<? $adClassString = 'col col2 channel_box last'; ?>
+				<section class="<?=$adClassString;?>">
+					<? // tpl('oe24.oe24.adition.adSlot', array('channel' => $channel, 'id' => 'TNTSlot1'));?>
+					<? tpl('oe24.oe24.adition.adSlot', array('channel' => $channel, 'id' => 'Contentad3'));?>
+				</section>
+
+			<? endif; ?>
+		</div>
+	</div>
+</div>
+
+<? tpl('oe24.oe24.__splitArea.tpl.row.row_margin', array('position' => 'bottom')); ?>

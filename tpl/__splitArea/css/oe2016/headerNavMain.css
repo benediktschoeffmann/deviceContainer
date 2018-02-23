@@ -1,0 +1,103 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNavMain {
+    width: 100%;
+    display: table;
+    table-layout: auto;
+    border-collapse: collapse;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    vertical-align: top;
+}
+.headerNavMain,
+.headerNavMain .headerNavMainItem.facebook span,
+.headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #b80f33;
+}
+.headerNavMain .headerNavMainItem {
+    display: table-cell;
+}
+.headerNavMain .headerNavMainItem > a,
+.headerNavMain .headerNavMainItem > a:active,
+.headerNavMain .headerNavMainItem > a:focus {
+    font-family: "OpenSansCondensedLight",sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+}
+.headerNavMain .headerNavMainItem:hover > a > span,
+.headerNavMain .headerNavMainItem.active > a span {
+    color: #000;
+    background-color: #fff;
+}
+.headerNavMain .headerNavMainItem > a:hover {
+    text-decoration: none;
+}
+.headerNavMain .headerNavMainItem > a > span {
+    display: block;
+    padding: 2px 3px 0;
+    border-left: 1px solid #d31846;
+    border-right: 1px solid #d31846;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.headerNavMain .headerNavMainItem:after {
+    content: " ";
+    font-size: 1px;
+    line-height: 1px;
+    width: 100%;
+    height: 4px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: #fff;
+}
+/*
+-> channelColors.css
+.headerNavMain .headerNavMainItem:hover:after,
+.headerNavMain .headerNavMainItem.active:after {
+    background-color: #d0113a;
+}
+*/
+.headerNav .headerNavMain .headerNavMainItem.facebook:hover:after {
+    background-color: #fff;
+}
+
+
+/* Spalten mit fester Breite */
+
+.headerNavMain .headerNavMainItem.fixedWide {
+    width: 120px;
+}
+.headerNavMain .headerNavMainItem.facebook {
+    width: 154px;
+}
+
+
+/* Facebook Extras */
+
+.headerNavMain .headerNavMainItem.facebook > a .fbContainer {
+    position: static !important;
+}
+.headerNavMain .headerNavMainItem.facebook > a .fbContainer > span {
+    padding-top: 3px;
+    vertical-align: top !important;
+}
+
+
+/* Portal Extras */
+
+.layout_tv .headerNavMain .headerNavMainItem:after {
+    background-color: #e6e6e6;
+}

@@ -1,0 +1,143 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+.horoskop .horoskop_nav {
+	text-align: center;
+	margin: 0 auto;
+}
+.horoskop .horoskop_nav a {
+	text-decoration: none;
+}
+.horoskop .horoskop_nav_inner {
+	width: 960px;
+}
+.horoskop .horoskop_nav,
+.horoskop .horoskop_prev,
+.horoskop .horoskop_next {
+	/*float: left;*/
+}
+.horoskop .horoskop_prev,
+.horoskop .horoskop_next {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	color: #49a5e8;
+	display: block;
+	width: 70px;
+	height: 90px;
+	top: 10px;
+}
+.horoskop .horoskop_prev {
+	left: 0;
+	background-color: #da5;
+}
+.horoskop .horoskop_next {
+	right: 0;
+	background-color: #da5;
+}
+.horoskop .horoskop_sign {
+	text-align: center;
+	float: left;
+	width: 80px;
+	margin: 0 10px;
+	background-color: transparent;
+}
+.horoskop .horoskop_sign:hover {
+	text-decoration: none;
+}
+.horoskop .horoskop_sign span.sign_sign {
+	display: block;
+	height: 90px;
+	margin: 0 auto;
+	background-image: url(<?slp('image', 'rl2014/horoskopmaske.png')?>);
+	background-repeat: no-repeat;
+	background-color: #ccc;
+}
+.horoskop .horoskop_sign:hover span.sign_sign,
+.horoskop .horoskop_sign.active span.sign_sign {
+	background-color: #49a5e8;
+}
+.horoskop .horoskop_nav_sign1 {
+	margin-top: 0;
+}
+.horoskop .horoskop_nav_sign2 {
+	margin-top: 40px;
+}
+.horoskop .horoskop_nav_type {
+	margin-top: 40px;
+}
+.horoskop .horoskop_nav_type a {
+	font-weight: bold;
+	width: 203px;
+	padding: 4px 0;
+	color: #4aa6e8;
+	background-color: #cccccc;
+	display: inline-block;
+}
+.horoskop .horoskop_nav_type a:hover,
+.horoskop .horoskop_nav_type a.active {
+	background-color: #4aa6e8;
+	color: #ffffff;
+}
+.horoskop .horoskop_sign span.sign_name {
+	font-size: .75rem;
+	color: #4aa6e8;
+}
+.horoskop .horoskop_widder span {
+	background-position: -811px 0;
+	width: 80px;
+}
+.horoskop .horoskop_stier span {
+	background-position: -566px 0;
+	width: 80px;
+}
+.horoskop .horoskop_zwillinge span {
+	background-position: -909px 0;
+	width: 51px;
+}
+.horoskop .horoskop_krebs span {
+	background-position: -170px 0;
+	width: 60px;
+}
+.horoskop .horoskop_loewe span {
+	background-position: -244px 0;
+	width: 80px;
+}
+.horoskop .horoskop_jungfrau span {
+	background-position: -91px 0;
+	width: 58px;
+}
+.horoskop .horoskop_waage span {
+	background-position: -646px 0;
+	width: 80px;
+}
+.horoskop .horoskop_skorpion span {
+	background-position: -408px 0;
+	width: 72px;
+}
+.horoskop .horoskop_schuetze span {
+	background-position: -330px 0;
+	width: 68px;
+}
+.horoskop .horoskop_steinbock span {
+	background-position: -487px 0;
+	width: 78px;
+}
+.horoskop .horoskop_wassermann span {
+	background-position: -735px 0;
+	width: 72px;
+}
+.horoskop .horoskop_fische span {
+	background-position: 0px 0;
+	width: 80px;
+}

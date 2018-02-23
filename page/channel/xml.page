@@ -1,0 +1,24 @@
+<?php
+/**
+ * Channel XML Feeds
+ *
+ * @url (?<channel>.*)/xml/(?<xmltemplate>.*)
+ * @var channel oe24.core.Channel
+ * @var portal oe24.core.Portal
+ * @var xmltemplate string
+ * @urlManager oe24.oe24
+ * @cache 3m
+ * @cache.browser 3m
+ */
+
+$alias = "oe24.frontend.xml.channel.$xmltemplate";
+$file = spunQ_Module::aliasToTplFile($alias, false);
+if($file && $file->exists()){
+    etpl($alias, array("channel" => $channel, "portal" => $portal, "hostUrl" => "http://" . request()->getHost()));
+}else{
+    etpl("oe24.frontend.xml.emptyXml");
+}
+
+# workaround: we're not setting correct headers if we're not delivering html.
+response()->addHeader('Cache-Control: v-max-age=180,max-age=180');
+

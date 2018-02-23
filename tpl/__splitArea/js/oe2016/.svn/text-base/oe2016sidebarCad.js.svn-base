@@ -1,0 +1,230 @@
+<?php
+/**
+ * @collector noauto
+ * @collector footerSplitArea
+ */
+?>
+
+var oe2016SidebarCadFixed = false;
+var oe2016SidebarCadLoaded = {
+    duration: 500,
+    maxTries: 10,
+    tried: 0,
+};
+
+var oe2016SidebarCad = function() {
+
+    var oe2016 = $('#wrap').hasClass('oe2016') ? true : false;
+    var article = ($('#wrap').hasClass('a2016') || $('.a2016 .content.article').length > 0 || $('.a2016 .sidebar.article').length > 0) ? true : false;
+
+    if (!oe2016 || (oe2016 && article) ) {
+        return;
+    }
+    
+    // this.cad1 = $('#Contentad1');
+    this.cad1 = $('#Contentad1.cad_sticky2017');
+    
+    // only if element exists
+    if (this.cad1.length>0) {
+        this.cad1OriginalTop = document.getElementById("Contentad1").offsetTop;
+
+        this.cad1Fixed = false;
+        this.fixedDuration = 2500;
+        this.cadTimer = null;
+
+        this.timeout = {
+            key: 0,
+            counter: 0,
+            interval: 100,
+            limit: 10000        
+        };
+
+        this.header    = $('.headerBox .headerNav');
+        this.navPortal = $('.headerBox .headerNavPortal');
+        this.navMain   = $('.headerBox .headerNavContainer');
+
+        
+        // Hoehe von navPortal und navMain, wenn beide NICHT 'fixed' sind
+        this.navHeight = 100;
+        // this.sidebarContainerPaddingBottom = parseInt($('.a2016 .sidebar.article .sidebarContainer').css('padding-bottom'));
+
+        // for display-reasons - do not display margin for subdiv, while position is fixed
+        this.cad1_subdiv = $('#Contentad1.cad_sticky2017 div');
+
+        this.initCad();
+    }
+    else {
+        // try again, in case ad hasn't been loaded yet
+        oe2016SidebarCadLoaded.tried++;
+        if (oe2016SidebarCadLoaded.tried < oe2016SidebarCadLoaded.maxTries) {
+            setTimeout(function(){
+                new oe2016SidebarCad();
+            }, oe2016SidebarCadLoaded.duration);
+        }
+    }
+}
+
+oe2016SidebarCad.prototype.initCad = function() {
+
+    var self = this;
+    
+    self.cad1.css({'display':'block'});
+    function pollCad() {
+
+        var temp;
+        
+        temp = self.cad1.find('iframe');
+        self.cad1Content = null;
+        if (temp.length > 0) {
+            self.cad1Content = temp;
+        }
+        
+        if ((self.cad1Content !== null) || (self.timeout.counter > self.timeout.limit)) {
+            clearTimeout(self.timeout.key);
+            self.handleWindowScrollEvent();
+        } 
+        else {
+            // no content loaded/has been found, try again in "interval" milliseconds until "limit" has been reached
+            self.timeout.counter += self.timeout.interval;
+            self.timeout.key = setTimeout(pollCad, self.timeout.interval);
+        }
+    }
+
+    pollCad();
+
+
+
+    $(window).on('scroll', function(e) {
+        self.handleWindowScrollEvent();
+    });
+}
+
+
+
+oe2016SidebarCad.prototype.handleWindowScrollEvent = function() {
+    if (!oe2016SidebarCadFixed) {
+        
+        // handle margin for first div
+
+        if (this.navMain.hasClass('fixed') || this.navMain.hasClass('stickyHeader')) {
+            var cad1top = this.cad1OriginalTop - this.navHeight;
+            var gravityHeight = ($('.gravityContainer').length > 0) ? $('.gravityContainer').outerHeight(true) : 0;
+            var scrollTop = $(window).scrollTop() - gravityHeight;
+
+            if (cad1top < scrollTop) {
+                // element "über" Fenster - position fixed
+                this.cad1.css({
+                    'position': 'fixed',
+                    'top': this.navHeight + 'px',
+                    'bottom': 'auto',
+                    'left': 'auto',
+                    'z-index': '9999',
+                });     
+
+                this.cad1_subdiv.css({
+                    'margin-bottom': '0'
+                });
+
+                if (!this.cadTimer) {
+                    this.cadTimer = setTimeout(function(){
+                        $('#Contentad1.cad_sticky2017').css({
+                            'position': 'static',
+                            'top': 'auto',
+                            'bottom': 'auto',
+                            'left': 'auto',
+                            'z-index': '1',
+                        });
+
+                        $('#Contentad1.cad_sticky2017 div').css({
+                            'margin-bottom': '20px'
+                        });
+
+                        oe2016SidebarCadFixed = true;
+
+                    }, this.fixedDuration);
+
+                    
+                }
+            }
+            else {
+                // element im Fenster oder darunter -> alles normal
+                this.cad1.css({
+                    'position': 'static',
+                    'top': 'auto',
+                    'bottom': 'auto',
+                    'left': 'auto',
+                    'z-index': '1',
+                });     
+
+                this.cad1_subdiv.css({
+                    'margin-bottom': '20px'
+                });           
+            }
+                
+        }
+        else {
+            this.cad1.css({
+                'position': 'static'
+            });
+            this.cad1_subdiv.css({
+                'margin-bottom': '20px'
+            });
+        }
+    }
+    
+}
+
+$(document).ready(function() {
+    new oe2016SidebarCad();
+});
+
+
+// Displayed in Viewport
+// var oe2016SidebarCadInViewport = {
+//     timeVisible: 0,
+//     lastState: false,
+//     lastTime: 0
+// };
+
+// $(window).scroll(function(){
+//     if (!oe2016SidebarCadFixed) {
+        
+//         //Window Object
+//         var win = $(window);
+//         //Object to Check
+//         // var obj = $('#Contentad1');
+//         var obj = $('#Contentad1.cad_sticky2017');
+//         if (obj.length>0) {
+//             //the top Scroll Position in the page
+//             var scrollPosition = win.scrollTop();
+//             //the end of the visible area in the page, starting from the scroll position
+//             var visibleArea = win.scrollTop() + win.height();
+//             //the end of the object to check
+//             var objEndPos = (obj.offset().top + obj.outerHeight());
+            
+//             var inViewport = (visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false);
+
+//             if (inViewport) {
+//                 if (false == oe2016SidebarCadInViewport.lastState) {
+//                     // start counter
+//                     oe2016SidebarCadInViewport.lastTime = new Date().getTime();
+//                 }
+//                 else if (true == oe2016SidebarCadInViewport.lastState) {
+//                     var now = new Date().getTime();
+                    
+//                     oe2016SidebarCadInViewport.timeVisible += now-oe2016SidebarCadInViewport.lastTime;
+//                     if (2500 < oe2016SidebarCadInViewport.timeVisible) {
+//                         // ad was visible long enough
+//                         oe2016SidebarCadFixed = true;
+//                     }
+
+//                     oe2016SidebarCadInViewport.lastTime = now;
+//                 }
+//             }
+
+//             oe2016SidebarCadInViewport.lastState = inViewport;
+//         }
+//     }
+// });
+
+

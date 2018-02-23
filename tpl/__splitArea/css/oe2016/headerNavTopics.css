@@ -1,0 +1,78 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNavTopicsCaption,
+.headerNavTopicsItems,
+.headerNavTopicsItems li,
+.headerNavTopicsItems li a {
+    font-size: 1rem;
+    line-height: 1;
+}
+.headerNav .headerNavTopics {
+    padding: 0 10px 0 0;
+    margin-top: 2px;
+    float: left;
+    width: 830px;
+
+}
+.headerNav .headerNavTopicsCaption,
+.headerNav .headerNavTopicsItems {
+    /*float: left;*/ /* (pj) 2016-04-19 wird als table-cell gefuehrt */
+}
+.headerNav .headerNavTopicsCaption {
+    font-family: "OpenSansCondensedLight",sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 6px 2px 8px;
+    margin: 0 6px 0 0;
+    color: #fff;
+    background-color: #b80f33;
+
+}
+.headerNav .headerNavTopicsItems,
+.headerNav .headerNavTopicsItems li {
+    list-style-type: none;
+}
+.headerNav .headerNavTopicsItems li {
+    /*margin-top: 4px;*/
+    margin: 4px 0; /* (pj) 2016-04-19 damit die zeilen untereinander nicht dran picken */
+    display: inline-block;
+}
+.headerNav .headerNavTopicsItems a {
+    padding: 0 2px;
+    padding: 0 1px; /* (pj) 2016-04-20 auf http://sport.oe24.at/fussball/international kein umbruch erzeugen */
+    color: #b80f33;
+}
+
+
+/* --------------------------------- */
+/* (pj) 2016-04-19 Topics als table */
+.headerNav .headerNavTopics {
+    /*display: table;*/
+}
+.headerNav .headerNavTopicsCaptionWrapper,
+.headerNav .headerNavTopicsItems {
+    /*display: table-cell;*/
+}
+.headerNav .headerNavTopicsCaption {
+    white-space: nowrap;
+}
+/* (pj) 2016-04-19 end */
+
+/* (bs) 2017-06-09 Keywan wollte das so. */
+.layout_games24 .headerNavTopics {
+    display: none;
+}
+
+
+.headerNav .headerNavTopicsCaptionWrapper {
+    float: left;
+}
+.headerNav .headerNavTopicsCaption {
+    line-height: 1.5;
+}

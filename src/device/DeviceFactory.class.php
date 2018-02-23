@@ -25,27 +25,27 @@ class DeviceFactory {
 
         switch ($config['deviceType']) {
 
-            case 'smartphone':
+            case Device::SMARTPHONE:
                 $device = Smartphone::getInstance();
-                $device->init($config);
+
                 break;
 
-            case 'oe24app':
+            case Device::OE24APP:
                 $device = Oe24App::getInstance();
-                $device->init($config);
+
                 break;
 
-            // case 'mobile2017':
-            //     break;
+            case Device::DESKTOP:
+                $device = Desktop::getInstance();
 
-            // case 'app':
-            //     break;
-
+                break;
 
             default:
                 throw new DeviceInitialisationException('Unrecognized device type' . $config['deviceType']);
                 break;
         }
+
+        $device->init($config);
 
         return $device;
     }

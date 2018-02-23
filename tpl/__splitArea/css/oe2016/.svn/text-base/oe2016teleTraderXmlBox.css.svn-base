@@ -1,0 +1,214 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.teleTraderBox {
+    padding: 0 15px;
+    margin: 8px 0;
+    background-color: #fff;
+}
+.tabbedBox .content .teleTraderBox {
+    padding: 0;
+}
+
+
+.teleTraderBox.business.distanceTop {
+    /*padding-top: 15px;*/
+    padding-top: 20px;
+}
+.teleTraderBox.business.distanceBottom {
+    /*padding-bottom: 15px;*/
+    padding-bottom: 20px;
+}
+
+
+.teleTraderBoxHeader {
+    padding: 6px 10px;
+    /*padding: 4px 5px;*/
+    margin-bottom: 1px;
+    background-color: #eee;
+}
+.teleTraderBoxHeader .teleTraderBoxHeaderCaption {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #184089;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    position: relative;
+    left: -2px;
+}
+.teleTraderBoxHeader .teleTraderBoxHeaderCaption .icon {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-block;
+    width: 20px;
+    margin-right: 8px;
+}
+
+
+/* --- */
+/*
+.teleTraderBoxHeader .teleTraderBoxHeaderCaption {
+    position: relative;
+    left: -18px;
+}
+.teleTraderBoxHeader .teleTraderBoxHeaderCaption:after {
+    content: " ";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #184089;
+}
+*/
+/* --- // */
+
+
+.teleTraderBox .teleTraderSlider {
+    padding: 0 40px;
+    position: relative;
+    opacity: 0; /* (1) */
+    height: 0;  /* (2) */
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.teleTraderBox .teleTraderSlider.flickity-enabled {
+    opacity: 1;   /* (1) */
+    height: auto; /* (2) */
+}
+
+
+.teleTraderBoxSlider {
+    height: 94px;
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+
+.teleTraderBox.colCount3 .teleTraderEntry {
+    width: 33.333333%;
+}
+.teleTraderBox.colCount4 .teleTraderEntry {
+    width: 25%;
+}
+.teleTraderBox.colCount5 .teleTraderEntry {
+    width: 20%;
+}
+
+
+.teleTraderEntry {
+    padding: 6px 10px;
+    /*float: left;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.teleTraderEntry:hover {
+    text-decoration: none;
+    background-color: #e1e5e6;
+}
+
+
+.teleTraderEntry table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+.teleTraderEntry th,
+.teleTraderEntry td {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    font-size: .75rem;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.teleTraderEntry th:first-child,
+.teleTraderEntry td:first-child {
+    text-align: left;
+}
+
+
+.teleTraderEntry th {
+    font-size: .875rem;
+    font-weight: 700;
+}
+.teleTraderEntry th .teleTraderEntryHeader {
+    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 4px;
+}
+.teleTraderEntry th .teleTraderEntryHeaderText,
+.teleTraderEntry th .teleTraderEntryHeaderImage {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+.teleTraderEntry th .teleTraderEntryHeaderText {
+    text-align: left;
+    width: 90%;
+}
+.teleTraderEntry th .teleTraderEntryHeaderImage {
+    text-align: right;
+    width: 10%;
+}
+
+
+.teleTraderEntry.teleTraderEntryWinner th .teleTraderEntryHeaderText {
+    color: #019c0f;
+}
+.teleTraderEntry.teleTraderEntryLoser th .teleTraderEntryHeaderText {
+    color: #ff0000;
+}
+
+
+.teleTraderEntry td.teleTraderChangePercent {
+    font-weight: 700;
+}
+.teleTraderEntry td.teleTraderGreen {
+    color: #019c0f;
+}
+.teleTraderEntry td.teleTraderRed {
+    color: #ff0000;
+}
+
+
+.teleTraderBox .teleTraderSlider .flickity-prev-next-button,
+.teleTraderBox .teleTraderSlider .flickity-prev-next-button:hover {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.teleTraderBox .teleTraderSlider .flickity-prev-next-button.previous:hover {
+    left: -2px;
+}
+.teleTraderBox .teleTraderSlider .flickity-prev-next-button.next:hover {
+    right: -2px;
+}
+.teleTraderBox .teleTraderSlider .flickity-prev-next-button svg .arrow {
+    fill: #184089;
+    stroke: #184089;
+}
+

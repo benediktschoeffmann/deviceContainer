@@ -1,0 +1,100 @@
+<?
+/**
+ * @collector noauto
+ */
+?>
+
+.tvProgrammSliderBox {
+	margin: 0 15px;
+	padding: 10px 40px;
+
+	background-color: #fff;
+}
+.tvProgrammSliderBox .flktySliderHidden {
+	visibility: hidden;
+}
+.tvProgrammSliderBox.slider-enabled .flktySliderHidden {
+	visibility: visible;
+}
+
+/* navigation */
+
+.tvProgrammSliderBox .flickity-prev-next-button.previous {
+	left: -32px;
+}
+.tvProgrammSliderBox .flickity-prev-next-button.next {
+	right: -32px;
+}
+
+/* individuel slides */
+.tvProgrammSliderBox .tvProgammSliderEntry {
+	width: 33.3%;
+	
+	padding: 5px;
+	
+	text-decoration: none;
+	cursor: default;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvHl {
+	background-color: #114086;
+	color: #FFF;
+
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	padding: 2px 0;
+
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvHl {
+	background-color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvMain {
+	height: 190px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	border-right: 2px solid #114086;
+	border-bottom: 2px solid #114086;
+	border-left: 2px solid #114086;
+
+	color: #000;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry.first .tvMain {
+	border-right: 2px solid #c71137;
+	border-bottom: 2px solid #c71137;
+	border-left: 2px solid #c71137;
+
+	color: #c71137;
+}
+
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTbl td {
+	border-bottom: 2px solid #c1c1c3;
+	padding-top: 8px;
+
+	font-size: 14px;
+	font-weight: 700;
+
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .currentShow td {
+	background-color: #fdf001;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvTime {
+	width: 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+.tvProgrammSliderBox .tvProgammSliderEntry .tvShow {
+	width: 70%;
+	text-align: left;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+

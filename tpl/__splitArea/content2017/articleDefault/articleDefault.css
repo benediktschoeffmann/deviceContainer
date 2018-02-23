@@ -1,0 +1,23 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.content2017 .articleContent {
+    float: right;
+    width: 655px;
+    padding: 20px 15px 0 20px;
+    background-color: #ad5;
+}
+.content2017 .articleSidebar {
+    float: left;
+    width: 335px;
+    padding: 20px 20px 0 15px;
+    background-color: #da5;
+}
+.content2017 .articleContent .articleDateTime {
+    font-size: .75rem;
+    text-align: right;
+}
+

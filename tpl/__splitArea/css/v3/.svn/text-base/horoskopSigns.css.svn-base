@@ -1,0 +1,95 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+
+.horoskopBox .storySliderBox {
+    padding: 0 15px;
+}
+
+
+/* Horoskop Tierkreiszeichen */
+.horoskopSigns {
+    text-align: center;
+}
+.horoskopSigns.spaceTop {
+    padding-top: 20px;
+}
+.horoskopSigns.spaceBottom {
+    padding-bottom: 20px;
+}
+.horoskopSign {
+    text-decoration: none;
+    padding: 0 1px;
+    display: inline-block;
+}
+.horoskopSign:hover,
+.horoskopSign.active {
+    opacity: .7;
+    text-decoration: none;
+}
+.horoskopSign:hover .horoskopSignText,
+.horoskopSign.active .horoskopSignText {
+    color: #cc054a;
+}
+.horoskopSignIcon,
+.horoskopSignText {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.horoskopSignIcon {
+    width: 72px;
+    height: 72px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(<? slp('image', 'rl2014/zodiacRound.png'); ?>);
+    background-position: 0 0;
+}
+.horoskopSignText {
+    font-size: .6875rem;
+    font-weight: bold;
+    text-align: center;
+}
+.horoskopSignIcon.widder {
+    background-position: 0 0;
+}
+.horoskopSignIcon.stier {
+    background-position: -72px 0;
+}
+.horoskopSignIcon.zwillinge {
+    background-position: -144px 0;
+}
+.horoskopSignIcon.krebs {
+    background-position: -216px 0;
+}
+.horoskopSignIcon.loewe {
+    background-position: -288px 0;
+}
+.horoskopSignIcon.jungfrau {
+    background-position: -360px 0;
+}
+.horoskopSignIcon.waage {
+    background-position: -432px 0;
+}
+.horoskopSignIcon.skorpion {
+    background-position: -504px 0;
+}
+.horoskopSignIcon.schuetze {
+    background-position: -576px 0;
+}
+.horoskopSignIcon.steinbock {
+    background-position: -648px 0;
+}
+.horoskopSignIcon.wassermann {
+    background-position: -720px 0;
+}
+.horoskopSignIcon.fische {
+    background-position: -792px 0;
+}
+.row .horoskopSignsBox {
+    padding: 0 15px;
+}

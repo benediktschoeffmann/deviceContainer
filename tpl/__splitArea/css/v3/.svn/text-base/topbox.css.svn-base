@@ -1,0 +1,80 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* Spezial-Darstellung des Contents ueber die gesamte Seitenbreite */
+.topbox_content {
+	position: relative;
+	width: 990px;
+	padding: 28px 15px 0;
+	background-color: #fff;
+}
+.topbox_content a,
+.topbox_content a:hover {
+	text-decoration: none;
+}
+.topbox_content a:hover {
+	cursor: pointer;
+}
+.topbox_content img {
+	display: block;
+	margin: 0 auto;
+}
+.topbox_content .topbox_teaser,
+.topbox_content .topbox_caption,
+.topbox_content .topbox_subcaption {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+.topbox_content .topbox_teaser {
+	font-family: "OpenSansCondensedBold",sans-serif;
+	font-size: 1.125rem;
+	padding: 0 10px 0 25px;
+	background-color: #dd1010;
+	position: absolute;
+	left: 0;
+	left: 5px;
+	top: 38px;
+}
+.topbox_content .topbox_teaser:after {
+	content: " ";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	bottom: -10px;
+	border-style: solid;
+	border-width: 0 15px 15px 0;
+	border-width: 0 10px 10px 0;
+	border-color: transparent #ad0d0d transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+.topbox_content .topbox_caption {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 3rem;
+	text-align: right;
+	padding: 0 10px;
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+.topbox_content .topbox_subcaption {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.125rem;
+	text-align: left;
+	display: block;
+	width: 960px;
+	padding: 5px 10px;
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.topbox_content .topbox_subcaption .topbox_more {
+	font-family: "OpenSansRegular",sans-serif;
+	font-size: 1rem;
+}

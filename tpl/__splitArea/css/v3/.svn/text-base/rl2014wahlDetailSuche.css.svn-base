@@ -1,0 +1,46 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+/* https://goodies.pixabay.com/jquery/auto-complete/demo.html */
+.autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+
+    /* core styles should not be changed */
+    position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; font-size: 1.02em; color: #333; }
+.autocomplete-suggestion b { font-weight: normal; color: #1f8dd6; }
+.autocomplete-suggestion.selected { background: #f0f0f0; }
+
+/* ---------------------------------------------------------- */
+
+#electionSearch {
+    text-align: right;
+    width: 960px;
+    height: 54px;
+    padding: 6px 10px;
+    margin: 0 15px;
+    background-color: #dd1010;
+    position: relative;
+}
+#electionSearch .electionSearchInput,
+#electionSearch .electionSearchSubmit {
+    font-family: "oe24",sans-serif;
+    font-size: 1.4rem;
+    padding: 8px 10px 4px;
+    vertical-align: middle;
+}
+#electionSearch .electionSearchInput {
+    width: 366px;
+}
+#electionSearch .electionSearchSubmit {
+    border: 1px solid #fdf001;
+    border-radius: 4px;
+    color: #2f2e29;
+    background-color: #fdf001;
+    box-shadow: 0px 0px 1px 1px #8a8a89;
+}

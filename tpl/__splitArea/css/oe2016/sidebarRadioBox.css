@@ -1,0 +1,253 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.radioPlayer {
+	padding: 15px;
+	background-color: #ebebeb;
+    max-width: 300px;
+}
+
+
+.radioPlayer .radioPlayerHeader {
+	padding: 4px 10px;
+	/*background-color: #d31846;*/
+	background-color: #d0113a;
+
+}
+.radioPlayer .radioPlayerHeader.antenne{
+    padding: 4px 10px;
+    /*background-color: #d31846;*/
+    background-color: #F8EC00;
+
+}
+
+/*.radioPlayer .radioPlayerHeaderWrapper .iconPlayPause {
+
+	float: left;
+
+	font-size: 1.625rem;
+    line-height: 32px;
+
+    width: 36px;
+    height: 36px;
+    padding-left: 2px;
+    border: 2px solid #fff;
+
+    border-radius: 18px;
+    border-color: #fe467a;
+
+    text-align: left;
+    text-decoration: none;
+
+    color: #fff;
+
+    background-color: #e71f61;
+    background-image: linear-gradient(to right, #d31846, #e71f61);
+
+    background-color: #d0113a;
+    background-image: linear-gradient(to right, #d0113a, #e73239);
+
+
+}
+.radioPlayer .radioPlayerHeaderWrapper:hover .iconPlayPause {
+    color: #fe92b1;
+}*/
+
+.radioPlayer .radioPlayerHeader .radioPlayerLogo {
+	/*float: right;*/
+	display: block;
+	margin: 0 auto;
+
+	height: 36px;
+}
+
+
+.radioPlayer .radioPlayerBox {
+	border-bottom: 1px solid #ebebeb;
+	margin: 10px 0 0;
+}
+
+.radioPlayer .radioPlayerBox,
+.radioPlayer .radioPlayerBoxNext {
+	padding: 10px 15px;
+	background-color: #fff;
+}
+
+.radioPlayer .radioPlayerNowPlaying,
+.radioPlayer .radioPlayerNowInterpret,
+.radioPlayer .radioPlayerNowTitle,
+.radioPlayer .radioPlayerNextPlaying,
+.radioPlayer .radioPlayerNextSong {
+	display: block;
+}
+
+.radioPlayer .radioPlayerNowPlaying,
+.radioPlayer .radioPlayerNextPlaying {
+	font-size: .6875rem;
+	line-height: 1.5;
+
+	/*color: #d31846;*/
+	color: #d0113a;
+
+	text-transform: uppercase;
+}
+
+.radioPlayer .radioPlayerNowInterpret,
+.radioPlayer .radioPlayerNowTitle,
+.radioPlayer .radioPlayerNextInterpret,
+.radioPlayer .radioPlayerNextSeparator,
+.radioPlayer .radioPlayerNextTitle {
+	font-size: .875rem;
+	line-height: 1.3;
+
+	/*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.radioPlayer .radioPlayerCover {
+	position: relative;
+
+	width: 170px;
+	margin: 10px auto 4px;
+
+	/*background-image: url('/images/rl2014/radioCoverShadow.png');*/
+	background-image: linear-gradient(to bottom, #fff, #ccc);
+}
+.radioPlayer .radioPlayerCoverImage {
+	width: 100%;
+}
+.radioPlayer .radioPlayerCoverWrapper .iconPlayPause {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 1.625rem;
+	line-height: 34px;
+
+    width: 36px;
+    height: 36px;
+    padding-left: 2px;
+    border: 2px solid #fff;
+    margin: -18px 0 0 -18px;
+
+    border-radius: 18px;
+    /*border-color: #fff;*/
+    border-color: #d0113a;
+
+    text-align: left;
+    text-decoration: none;
+
+    /*color: #fff;*/
+    color: #d0113a;
+
+    /*background-color: transparent;*/
+    background-color: rgba(255, 255, 255, .6);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+}
+.radioPlayer .radioPlayerCoverWrapper:hover .iconPlayPause {
+	color: #666;
+    color: #f47794;
+}
+
+
+.radioPlayer .radioPlayerLinks {
+	padding: 4px 10px;
+}
+
+.radioPlayer .radioPlayerLink {
+	display: block;
+
+	text-decoration: none;
+}
+.oe2016 .radioPlayer .radioPlayerLink,
+.oe2016 .radioPlayer .radioPlayerLink:focus {
+	/* (pj) override color */
+	/*color: #d31846;*/
+	color: #d0113a;
+}
+
+.radioPlayer .radioPlayerLink .icon {
+	float: right;
+	font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.radioPlayer .radioPlayerHitwahlWrapper {
+	display: block;
+	text-decoration: none;
+}
+
+/*MH 20161129: added FooterImage */
+.radioPlayer .radioPlayerHitwahlImage,
+.radioPlayer .radioPlayerFooterImage{
+	width: 100%;
+}
+
+.radioPlayer .radioPlayerVotingList {
+    padding: 5px;
+    margin-top: 10px;
+
+	background-color: #fff;
+}
+
+.radioPlayer .radioPlayerVotingEntry {
+	padding: 5px 0;
+}
+
+.radioPlayer .radioPlayerVotingEntryCover {
+	width: 60px;
+    /* (ws) 2016-02-08 */
+	/*padding: 0 5px;*/
+    margin: 0 8px;
+    /* (ws) 2016-02-08 end */
+}
+
+.radioPlayer .radioPlayerVotingEntrySong {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.radioPlayer .radioPlayerVotingEntryInterpret,
+.radioPlayer .radioPlayerVotingEntryTitle {
+	display: block;
+    /* (ws) 2016-02-08 */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* (ws) 2016-02-08 end */
+}
+
+/* (ws) 2016-02-08 */
+
+.radioPlayer .radioPlayerVotingEntrySong {
+    width: 164px;
+}
+.radioPlayer.popup .radioPlayerVotingEntrySong {
+    width: 194px;
+}
+
+.radioPlayer .radioPlayerVotingEntryTitle {
+    font-size: .875rem;
+}
+
+.radioPlayer .radioPlayerVotingEntry {
+    clear: both;
+}
+.radioPlayer .radioPlayerVotingEntryNumber,
+.radioPlayer .radioPlayerVotingEntryCover,
+.radioPlayer .radioPlayerVotingEntrySong {
+    float: left;
+}
+.radioPlayer .radioPlayerVotingEntryNumber {
+    text-align: center;
+    width: 16px;
+}
+
+/* (ws) 2016-02-08 end */

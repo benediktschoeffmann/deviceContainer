@@ -1,0 +1,40 @@
+<?php
+/**
+ * Channel get Content
+ *
+ * @url (?<channel>.*)/_get
+ * @url (?<channel>.*)/_get/(?<week>[^/]+)
+ * @url (?<channel>.*)/_get/(?<week>[^/]+)/(?<year>[^/]+)
+ * @url (?<channel>.*)/_get/(?<week>[^/]+)/(?<year>[^/]+)/(?<template>[^/]+)
+ * @var channel oe24.core.Channel
+ * @var portal oe24.core.Portal
+ * @var week string
+ * @default week 0
+ * @var year string
+ * @default year 0
+ * @var template string
+ * @default template default
+ * @urlManager oe24.oe24
+ * @cache 1h
+ * @cache.browser 30m
+ */
+
+ 
+# workaround: we're not setting correct headers if we're not delivering html.
+response()->addHeader('Cache-Control: v-max-age=1800,max-age=1800');
+response()->addHeader('Content-Type: application/json; charset=utf-8');
+
+if((int)$week === 0 || (int)$week > 53 || (int)$year < 2000 || ((strftime("%V") - $week) < 0 ) && strftime("%G") <= (int)$year){
+    # week or year out of range/invalid
+    echo json_encode(false);
+    return;
+}
+
+
+$time = strtotime($year . '0104 +' . ($week - 1) . ' weeks');
+$mondayTime = strtotime('-' . (date('w', $time) - 1) . ' days', $time);
+$sundayTime = strtotime('+' . 7 . ' days', $mondayTime)-1;
+$maxPublishTime = new spunQ_DateTime($mondayTime);
+$minPublishTime = new spunQ_DateTime($sundayTime);
+etpl('oe24.oe24.json.channel.getContents', array('channel' => $channel, 'portal' => $portal, 'maxPublishTime' => $maxPublishTime, 'minPublishTime' => $minPublishTime, 'template' => $template));
+?>

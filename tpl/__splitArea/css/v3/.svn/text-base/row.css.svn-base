@@ -1,0 +1,472 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* Row Clearfix */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+.row {
+	*zoom: 1;
+}
+.row_margin_top,
+.row_margin_bottom {
+	width: 100%;
+	height: 14px;
+	padding: 0 15px;
+	background-color: #fff;
+}
+.row_margin_bottom .row_margin_inner {
+	border-top: 1px solid #e3e3e3;
+}
+/* Row Ad */
+.row.row_ad {
+	clear: both;
+	text-align: center;
+	padding: 0 0 14px;
+	margin: 0;
+	background-color: #fff;
+}
+.row.row_ad_hide {
+	display: none;
+}
+.row.row_ad img,
+.row.row_ad_hide img {
+	width: auto;
+	height: auto;
+}
+/* Row Content */
+.content .col {
+	float: left;
+	margin-bottom: 28px;
+}
+.content .col1 {
+	width: 100%;
+}
+.content .col2 {
+	width: 292px;
+	margin-right: 36px;
+}
+.content .col3 {
+	width: 190px;
+	margin-right: 25px;
+}
+.content .col.last {
+	margin-right: 0;
+}
+.content .col.break {
+	clear: both;
+}
+.sidebar .col_default.channel_box {
+	width: 292px;
+	margin: 0 14px;
+}
+/* Story */
+.sidebar .channel_box a,
+.sidebar .channel_box a:hover,
+.content .channel_box a,
+.content .channel_box a:hover {
+	display: block;
+	text-decoration: none;
+}
+.sidebar .channel_box a:hover .story_pretitle,
+.sidebar .channel_box a:hover .story_pagetitle,
+.content .channel_box a:hover .story_pretitle,
+.content .channel_box a:hover .story_pagetitle {
+	color: #dd1010;
+}
+.sidebar .channel_box.top_story a:hover .caption,
+.content .channel_box.top_story a:hover .caption {
+	color: #dd1010;
+	background-color: rgba(256,256,256, 0.8);
+}
+.sidebar .channel_box img,
+.content .channel_box img {
+	width: 100%;
+}
+.sidebar .channel_box .story_pretitle,
+.content .channel_box .story_pretitle {
+	font-family: arial,sans-serif;
+	font-size: .75rem;
+	text-transform: uppercase;
+	display: block;
+	margin: 8px 0 2px;
+	color: #959595;
+}
+.sidebar .channel_box .story_pagetitle,
+.content .channel_box .story_pagetitle {
+	font-family: "oe24condensed",sans-serif;
+	font-family: "oe24",sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	margin: 0 0 3px;
+	color: #484848;
+    word-wrap: break-word;
+}
+.sidebar .channel_box .story_leadtext,
+.content .channel_box .story_leadtext {
+	font-size: .875rem;
+	line-height: 1.4;
+	margin: 0;
+}
+.sidebar .channel_box .story_leadtext a,
+.content .channel_box .story_leadtext a {
+	color: #ad0d0d;
+	display: inline;
+}
+.sidebar .channel_box .story_leadtext a:hover,
+.content .channel_box .story_leadtext a:hover {
+	color: #dd1010;
+}
+.content .channel_box.top_story,
+.content .channel_box.top_story .overlay_box {
+	height: 250px;
+}
+.content .channel_box.top_story {
+	position: relative;
+	clip: rect(25px, auto, 25px, auto);
+	overflow: hidden;
+}
+.content .channel_box.top_story img {
+	position: absolute;
+	left: 0;
+	top: -30px;
+}
+/* Story auch auf Oesterreich veroeffentlicht */
+.sidebar .channel_box .oesterreich_article,
+.content .channel_box .oesterreich_article {
+	position: relative;
+}
+.sidebar .channel_box .oesterreich_article img,
+.content .channel_box .oesterreich_article img {
+	border: 3px solid #e2020f;
+}
+.sidebar .channel_box .oesterreich_article img.oesterreich_logo,
+.content .channel_box .oesterreich_article img.oesterreich_logo {
+	width: auto;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* Overlay */
+.overlay_box {
+	position: relative;
+	display: block;
+}
+.overlay_box img {
+	width: 100%;
+}
+.overlay_box .caption {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 1.9rem;
+	width: 100%;
+	padding: 2px 6px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.overlay_box .copyright {
+	font-size: .75rem;
+	position: absolute;
+	right: 6px;
+	bottom: 4px;
+	bottom: -22px;
+}
+.overlay_box .caption,
+.overlay_box .copyright {
+	color: #fff;
+}
+.article_box .copyright {
+	text-align: right;
+	font-size: .75rem;
+	margin: -22px 0 10px;
+}
+/* (ws) 140707 IE Top-Story Caption START */
+/* http://css-tricks.com/snippets/css/cross-browser-opacity/ */
+.top_story .overlay_box .captionBg {
+	font-family: "oe24condensed",sans-serif;
+	font-size: 2.2rem;
+	line-height: 1.1;
+	width: 100%;
+	height: 40px;
+	display: block;
+	color: transparent;
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	/* IE 5-7 */
+	filter: alpha(opacity=50);
+}
+.top_story a:hover .overlay_box .captionBg {
+	background-color: #fff;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	/* IE 5-7 */
+	filter: alpha(opacity=80);
+}
+/* (ws) 140707 IE Top-Story Caption END */
+/* 140705 */
+.col.col1 .overlay_box .caption {
+	font-size: 2.2rem;
+	line-height: 1.1;
+}
+.col.col2 .story_pagetitle {
+	font-size: 1.625rem;
+	line-height: 1.1;
+}
+/* 140705 end */
+.article_box .article_date_time {
+	text-align: right;
+	font-size: .75rem;
+	margin: -4px 0 4px;
+}
+.article_box .overlay_box .caption {
+	font-family: "oe24condensed";
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	width: auto;
+	/*padding: 0px 6px;*/
+	padding: 4px 6px 0;
+	color: #fff;
+	background-color: #dd1010;
+}
+.article_box .slideshow .overlay_box .caption {
+	width: 100%;
+	padding: 0px 6px;
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+}
+
+.row.paidContent {
+	font-size: 0.75rem;
+	text-align: right;
+	margin-right: 15px;
+}
+
+/* --- */
+.dummy_960x100 {
+	line-height: 100px;
+	text-align: center;
+	width: 960px;
+	height: 100px;
+	color: #ccc;
+	background: #f2f2f2;
+}
+
+
+
+
+.a2016 .content .channel_box .storyWrapper,
+.oe2016 .content .channel_box .storyWrapper {
+	/*padding-top: 6px;*/
+	padding-top: 2px;
+	border-top: 6px solid transparent;
+}
+
+.a2016 .sidebar .channel_box .story_pretitle,
+.a2016 .content .channel_box .story_pretitle,
+.oe2016 .sidebar .channel_box .story_pretitle,
+.oe2016 .content .channel_box .story_pretitle {
+	color: #010101;
+}
+.a2016 .sidebar .channel_box .story_pagetitle,
+.a2016 .content .channel_box .story_pagetitle,
+.oe2016 .sidebar .channel_box .story_pagetitle,
+.oe2016 .content .channel_box .story_pagetitle {
+	margin-top: 2px;
+	color: #010101;
+}
+.oe2016 .sidebar .channel_box .story_leadtext,
+.oe2016 .content .channel_box .story_leadtext {
+	/*color: #959595;*/
+}
+
+
+.oe2016 .content .col {
+    /*margin-bottom: 16px;*/
+    margin-bottom: 12px;
+}
+
+
+/* Spezialfall Default Content Box Portrait Layout in der TabbedBox */
+
+.oe2016 .content .storyBox_Portrait .col1 {
+	width: 325px;
+}
+.oe2016 .content .channel_box.storyBox_Portrait .storyWrapper.col1,
+.oe2016 .content .channel_box.storyBox_Portrait .storyWrapper.col1:hover {
+	margin-top: 8px;
+	padding: 10px;
+	border: 2px solid #dedede;
+}
+
+.oe2016 .content .storyBox_Portrait .col1 .story_pretitle {
+	/*font-size: 1rem;*/
+}
+
+.oe2016 .content .storyBox_Portrait .col1 .story_pagetitle {
+	/*font-size: 2.5rem;*/
+	font-size: 2.3rem;
+	line-height: 1.1;
+}
+
+.oe2016 .content .storyBox_Portrait .col1 .story_leadtext {
+	/*font-size: 1.125rem;*/
+}
+
+.oe2016 .content .storyBox_Portrait .col2 {
+	width: 275px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.oe2016 .content .storyBox_Portrait .col2 .story_pagetitle {
+	font-size: 1.5625rem;
+}
+
+.oe2016 .story_pretitle .portraitSquare {
+	font-size: 1rem;
+}
+
+/* Spezialfall Default Content Box Portrait Layout in der TabbedBox END */
+
+/*  Spezialfall Default Content Box mit Uhrzeit */
+
+.oe2016 .content .oe2016defaultContentBox .firstLineContainer .story_time {
+	float: right;
+	color: #fff;
+	padding: 0 3px;
+	font-size: .75rem;
+	margin-top: 7px;
+}
+.oe2016 .content .oe2016defaultContentBox .firstLineContainer .story_pretitle {
+	float: left;
+}
+
+/*  Spezialfall Default Content Box mit Uhrzeit END */
+
+/* Spezialfall Default Content Box mit Breiten Bild als Erstes */
+.oe2016 .content .channel_box.oe2016defaultContentBox .imgContainer {
+    position: relative;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .imgContainer .story_pagetitle {
+    /*font-size: 3rem;*/
+    font-size: 2.875rem;
+    line-height: 1.1;
+    padding: 10px 10px 5px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.oe2016 .content .channel_box.storyBox_1x2 .story_leadtext,
+.oe2016 .content .channel_box.storyBox_1x3 .story_leadtext {
+    margin-top: 8px;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .storyWrapper:hover .imgContainer .story_pagetitle {
+    color: #fff;
+}
+/* Spezialfall Default Content Box mit Breiten Bild als Erstes END */
+
+/* (bs) 2016-02-05 Begrenzung des PreTitles wenn Uhrzeit gesetzt ist */
+.oe2016 .content .channel_box.oe2016defaultContentBox .story_pretitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .col3 .firstLineContainer.withTime .story_pretitle {
+	max-width: 150px;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .col2 .firstLineContainer.withTime .story_pretitle {
+	max-width: 250px;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .col3 .story_pretitle {
+	max-width: 190px;
+}
+.oe2016 .content .channel_box.oe2016defaultContentBox .col2 .story_pretitle {
+	max-width: 290px;
+}
+
+
+/* (pj) 2016-03-08 14px padding-bottom entfernen bei .row.row_ad */
+.oe2016 .row.row_ad {
+	padding: 0;
+}
+/* (pj) 2016-03-08 end */
+
+
+/* (ws) 2016-04-06 Sport Fussball Regional Ligen */
+.oe2016 .sportFussballLiga {
+	padding: 0 7px;
+}
+.oe2016 .sportFussballLiga iframe {
+	display: block;
+	border: none;
+}
+/* (ws) 2016-04-06 Sport Fussball Regional Ligen // */
+
+/* (db) 2017-04-27 Platzierung für neue Ad Ligatus */
+.row.contentAd {
+	width: 990px;
+	padding: 0 15px;
+	background-color: #fff;
+}
+/* (db) 2017-04-27 end */
+
+
+/* TabbedBox mit Hintergrundfarbe */
+
+/*
+.oe2016 .tabbedBox.withBackgroundColor .content {
+	width: 640px;
+	padding: 12px 10px 0 10px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .sidebar {
+	width: 320px;
+	padding: 20px 10px 8px 10px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content .column1 {
+	width: 610px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content .column1 .storyImage img {
+	width: 610px;
+	height: 305px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content .column2 {
+	margin-right: 26px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content .column3 {
+	margin-right: 20px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content .column.last {
+	margin-right: 0;
+}
+*/
+
+.oe2016 .tabbedBox.withBackgroundColor .tabbedBoxContainer {
+	margin: 0 15px;
+}
+.oe2016 .tabbedBox.withBackgroundColor .content {
+	width: 640px;
+	padding-left: 0;
+}
+.oe2016 .tabbedBox.withBackgroundColor .sidebar {
+	width: 320px;
+	padding-right: 0;
+}

@@ -76,9 +76,9 @@
     name[]      = 'gewinnspiele'
     id[]        = 225188312
     oewa[]      = 'UnterhaltungGames/Games/Gewinnspiele/moewa'
-    name[]      = 'testmebaby'
-    id[]        = 290097790
-    oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
+    ;name[]      = 'testmebaby'
+    ;id[]        = 290097790
+    ;oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'
     ;name[]      = 'apptesting'
     ;id[]        = 305624072
     ;oewa[]      = 'RedCont/Nachrichten/NachrichtenUeberblick/moewa'

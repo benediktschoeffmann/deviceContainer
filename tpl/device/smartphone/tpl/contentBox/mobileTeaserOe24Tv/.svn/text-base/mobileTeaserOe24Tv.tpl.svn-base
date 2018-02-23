@@ -18,51 +18,129 @@
 
 // Am Development-Server: Neue Box ID: 161583089
 
+// ------------------------------------
+
+
+
+// // (ws) 2018-01-30
+// // Niki Anforderung: Box aus den Artikeln rausnehmen
+
+// $device = DeviceContainer::getDevice();
+// $configArticle = $device->getConfig('article');
+// $isArticle = (null == $configArticle) ? false : true;
+
+// // (db) 2018-02-15 - Artikel wieder reinnehmen
+// // if ($isArticle) {
+// //     return;
+// // }
+
+// // ------------------------------------
+
+// // (ws) 2018-01-30
+// // Niki Anforderung:
+// // Box soll NUR auf der Startseite (frontpage) gezeigt werden
+// // Development-Server frontpage ID: 2846
+// // Produktions-Server frontpage ID: 2846
+
+// $httpHost = $_SERVER['HTTP_HOST'];
+// $httpHostParts = explode('.', $httpHost);
+// $isDevServer = ('oe24dev' == $httpHostParts[0]) ? true : false;
+
+// $validChannelIdsDev = array(
+//     2846, // /frontpage
+//     2849, // /welt (zwecks Test)
+//     161632987, // /test/ws/smartphone/cookiesOverlay (zwecks Test)
+// );
+
+// $validChannelIdsProd = array(
+//     2846,
+// );
+
+// $validChannels = ($isDevServer) ? $validChannelIdsDev : $validChannelIdsProd;
+
+// $channelId = $channel->getId();
+
+// if ( ! in_array($channelId, $validChannels)) {
+//     return;
+// }
+
+
 
 // ------------------------------------
 
-// (ws) 2018-01-30
-// Niki Anforderung: Box aus den Artikeln rausnehmen
+// (ws) 2018-02-15 Anforderung
+// $showBox = $isValidLayout && ($isValidChannel | $isArticle)
+// siehe auch tpl/device/smartphone/assets/vendor/facebook/facebookReferrerTvTeaser.tpl
+
+// ------------
 
 $device = DeviceContainer::getDevice();
-$configArticle = $device->getConfig('article');
-$isArticle = (null == $configArticle) ? false : true;
-
-if ($isArticle) {
-    return;
-}
-
-// ------------------------------------
-
-// (ws) 2018-01-30
-// Niki Anforderung:
-// Box soll NUR auf der Startseite (frontpage) gezeigt werden
-// Development-Server frontpage ID: 2846
-// Produktions-Server frontpage ID: 2846
 
 $httpHost = $_SERVER['HTTP_HOST'];
 $httpHostParts = explode('.', $httpHost);
 $isDevServer = ('oe24dev' == $httpHostParts[0]) ? true : false;
 
+// ------------
+
 $validChannelIdsDev = array(
     2846, // /frontpage
     2849, // /welt (zwecks Test)
+    161632987, // /test/ws/smartphone/cookiesOverlay (zwecks Test)
 );
-
 $validChannelIdsProd = array(
     2846,
 );
-
 $validChannels = ($isDevServer) ? $validChannelIdsDev : $validChannelIdsProd;
 
-$channelId = $channel->getId();
+$layoutsBlacklist = array(
+    'madonna',
+);
 
-if ( ! in_array($channelId, $validChannels)) {
-    return;
+// ------------
+
+$channelId = $channel->getId();
+$isValidChannel = in_array($channelId, $validChannels) ? true : false;
+
+// ------------
+
+$configLayout = $device->getConfig('layout');
+$isValidLayout = (in_array($configLayout, $layoutsBlacklist)) ? false : true;
+
+// ------------
+
+$configArticle = $device->getConfig('article');
+$isArticle = (null == $configArticle) ? false : true;
+
+// ------------------------------------
+
+// Box zeigen, wenn der Artikel KEIN Video enthaelt
+
+$hasNoVideo = true;
+
+if ($isArticle) {
+
+    // Assoziierte Videos
+    $relatedVideos = $configArticle->getRelatedVideos();
+    $countRelatedVideos = count($relatedVideos);
+    $hasNoVideo = ($countRelatedVideos > 0) ? ($hasNoVideo && false) : ($hasNoVideo && true);
+
+    // Videos im Artikel-Body
+    $pattern = '~<spunQ:Video id="\d*"/>~';
+    $subject = $configArticle->getBodyText();
+    $result = preg_match($pattern, $subject, $matches);
+    $hasNoVideo = (0 === $result || false === $result) ? ($hasNoVideo && true) : ($hasNoVideo && false);
 }
 
 // ------------------------------------
 
+// $showBox = $isValidLayout && ($isValidChannel | $isArticle);
+$showBox = $isValidLayout && $hasNoVideo && ($isValidChannel | $isArticle);
+
+if (!$showBox) {
+    return;
+}
+
+// ------------------------------------
 
 // in 'tv'-channels mobile-Teaser nicht andrucken
 

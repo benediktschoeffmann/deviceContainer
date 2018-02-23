@@ -1,0 +1,148 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* XL Headline */
+
+.xlHeadLineBox {
+    padding: 0 15px;
+    display: block;
+}
+.xlHeadLineBox.distanceTop {
+    padding-top: 15px;
+}
+.xlHeadLineBox.distanceBottom {
+    padding-bottom: 15px;
+}
+.xlHeadLineBox .xlHeadLine {
+    width: 100%;
+    padding: 7px 10px 0;
+    margin: 0;
+    display: block;
+}
+.xlHeadLineBox .xlHeadLine a {
+    font-family: "oe24condensed",sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.xlHeadLineBox .xlHeadLine a:hover {
+    text-decoration: none;
+}
+.xlHeadLineBox .xlHeadLine a[href="#!"] {
+    cursor: default;
+}
+
+/* XL Headline Erweiterung */
+
+.xlHeadLineBox .xlHeadLine a {
+    display: table;
+    width: 100%;
+}
+
+.xlHeadLineBox .xlHeadLine .xlHeadLineIcon,
+.xlHeadLineBox .xlHeadLine .xlHeadLineText,
+.xlHeadLineBox .xlHeadLine .xlHeadLineImage,
+.xlHeadLineBox .xlHeadLine .xlHeadLineEditor {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.xlHeadLineBox .xlHeadLine .xlHeadLineText {
+    text-align: left;
+}
+
+.xlHeadLineBox .xlHeadLine .xlHeadLineEditor {
+    font-size: .9375rem;
+    text-align: right;
+}
+.xlHeadLineBox .xlHeadLine .xlHeadLineEditor .xlHeadLineEditorLine2 {
+    font-weight: 300;
+    text-transform: none;
+}
+
+.xlHeadLineBox .xlHeadLine .xlHeadLineIcon {
+    text-align: left;
+    position: relative;
+}
+.xlHeadLineBox .xlHeadLine .xlHeadLineIcon img {
+    position: absolute;
+}
+
+.xlHeadLineBox .xlHeadLine .xlHeadLineImage {
+    text-align: left;
+    position: relative;
+}
+.xlHeadLineBox .xlHeadLine .xlHeadLineImage img {
+    position: absolute;
+}
+
+/* Editor */
+
+.xlHeadLineBox.editorSellnerAngela .xlHeadLine .xlHeadLineImage {
+    width: 52px;
+}
+.xlHeadLineBox.editorSellnerAngela .xlHeadLine .xlHeadLineImage img {
+    width: 54px;
+    height: 70px;
+    top: -30px;
+    right: -10px;
+}
+
+.xlHeadLineBox.editorSachsAlbert .xlHeadLine .xlHeadLineImage {
+    width: 44px;
+}
+.xlHeadLineBox.editorSachsAlbert .xlHeadLine .xlHeadLineImage img {
+    width: 46px;
+    height: 70px;
+    top: -30px;
+    right: -10px;
+}
+
+/* Icon */
+
+.xlHeadLineBox.oesterreichFlagge .xlHeadLine .xlHeadLineIcon {
+    width: 110px;
+}
+.xlHeadLineBox.oesterreichFlagge .xlHeadLine .xlHeadLineIcon img {
+    width: 99px;
+    height: 65px;
+    top: -15px;
+    left: 0;
+}
+
+.xlHeadLineBox.weltkugel .xlHeadLine .xlHeadLineIcon {
+    width: 76px;
+}
+.xlHeadLineBox.weltkugel .xlHeadLine .xlHeadLineIcon img {
+    width: 65px;
+    height: 65px;
+    top: -15px;
+    left: 0;
+}
+
+.xlHeadLineBox.geld .xlHeadLine .xlHeadLineIcon {
+    width: 85px;
+}
+.xlHeadLineBox.geld .xlHeadLine .xlHeadLineIcon img {
+    width: 78px;
+    height: 65px;
+    top: -17px;
+    left: 0;
+}
+
+.xlHeadLineBox.rakete .xlHeadLine .xlHeadLineIcon {
+    width: 90px;
+}
+.xlHeadLineBox.rakete .xlHeadLine .xlHeadLineIcon img {
+    width: 99px;
+    height: 65px;
+    top: -15px;
+    left: -12px;
+}
+

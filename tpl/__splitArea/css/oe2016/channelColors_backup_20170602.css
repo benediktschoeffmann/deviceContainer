@@ -1,0 +1,1953 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .oe24 .defaultChannelColor,
+.oe2016 .oe24 .defaultChannelHoverColor:hover,
+.oe2016 .oe24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .oe24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .oe24 .content .column a:hover .storyPreTitle,
+.oe2016 .oe24 .content .column a:hover .storyTitle,
+.oe2016 .oe24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .oe24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .oe24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .oe24 .videoEntry a:hover .videoTitle,
+.oe2016 .oe24 .slide a:hover .storyPreTitle,
+.oe2016 .oe24 .slide a:hover .storyTitle,
+.oe2016 .oe24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .oe24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #d0113a;
+}
+.oe2016 .oe24 .defaultChannelBackgroundColor,
+.oe2016 .oe24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.oe24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.oe24.active:after,
+.oe2016 .oe24 .videoEntry .topVideoCircle {
+        background-color: #d0113a;
+}
+.oe2016 .oe24.standardHeadline h2,
+.oe2016 .oe24.bigHeadline .bigHeadlineText {
+        background-color: #d0113a;
+        background-image: linear-gradient(to right, #d0113a 65%, #f20c55);
+}
+.oe2016 .oe24 .commentLineLink {
+        border-bottom: 1px solid #d0113a;
+}
+.oe2016 .oe24 .commentLineLink:hover {
+        border-bottom: 1px solid #d0113a;
+        text-decoration: none;
+        color: #fff;
+        background-color: #d0113a;
+        background-image: linear-gradient(to right, #d0113a, #f20c55);
+}
+.oe2016 .oe24 .content .storyWrapper:hover,
+.oe2016 .oe24 .content .column a:hover {
+        border-top: 6px solid #d0113a;
+}
+.oe2016 .news .defaultChannelColor,
+.oe2016 .news .defaultChannelHoverColor:hover,
+.oe2016 .news .content .storyWrapper:hover .story_pretitle,
+.oe2016 .news .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .news .content .column a:hover .storyPreTitle,
+.oe2016 .news .content .column a:hover .storyTitle,
+.oe2016 .news .content .column .storyPreTitle.withMarker:before,
+.oe2016 .news .sidebar .teasers a:hover .storyTitle,
+.oe2016 .news .videoEntry a:hover .videoPreTitle,
+.oe2016 .news .videoEntry a:hover .videoTitle,
+.oe2016 .news .slide a:hover .storyPreTitle,
+.oe2016 .news .slide a:hover .storyTitle,
+.oe2016 .news .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .news .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #d0013a;
+}
+.oe2016 .news .defaultChannelBackgroundColor,
+.oe2016 .news .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.news:hover:after,
+.oe2016 .headerNav .headerNavMainItem.news.active:after,
+.oe2016 .news .videoEntry .topVideoCircle {
+        background-color: #d0013a;
+}
+.oe2016 .news.standardHeadline h2,
+.oe2016 .news.bigHeadline .bigHeadlineText {
+        background-color: #d0013a;
+        background-image: linear-gradient(to right, #d0013a 65%, #f20c55);
+}
+.oe2016 .news .commentLineLink {
+        border-bottom: 1px solid #d0013a;
+}
+.oe2016 .news .commentLineLink:hover {
+        border-bottom: 1px solid #d0013a;
+        text-decoration: none;
+        color: #fff;
+        background-color: #d0013a;
+        background-image: linear-gradient(to right, #d0013a, #f20c55);
+}
+.oe2016 .news .content .storyWrapper:hover,
+.oe2016 .news .content .column a:hover {
+        border-top: 6px solid #d0013a;
+}
+.oe2016 .politik .defaultChannelColor,
+.oe2016 .politik .defaultChannelHoverColor:hover,
+.oe2016 .politik .content .storyWrapper:hover .story_pretitle,
+.oe2016 .politik .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .politik .content .column a:hover .storyPreTitle,
+.oe2016 .politik .content .column a:hover .storyTitle,
+.oe2016 .politik .content .column .storyPreTitle.withMarker:before,
+.oe2016 .politik .sidebar .teasers a:hover .storyTitle,
+.oe2016 .politik .videoEntry a:hover .videoPreTitle,
+.oe2016 .politik .videoEntry a:hover .videoTitle,
+.oe2016 .politik .slide a:hover .storyPreTitle,
+.oe2016 .politik .slide a:hover .storyTitle,
+.oe2016 .politik .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .politik .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #d0013a;
+}
+.oe2016 .politik .defaultChannelBackgroundColor,
+.oe2016 .politik .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.politik:hover:after,
+.oe2016 .headerNav .headerNavMainItem.politik.active:after,
+.oe2016 .politik .videoEntry .topVideoCircle {
+        background-color: #d0013a;
+}
+.oe2016 .politik.standardHeadline h2,
+.oe2016 .politik.bigHeadline .bigHeadlineText {
+        background-color: #d0013a;
+        background-image: linear-gradient(to right, #d0013a 65%, #f20c55);
+}
+.oe2016 .politik .commentLineLink {
+        border-bottom: 1px solid #d0013a;
+}
+.oe2016 .politik .commentLineLink:hover {
+        border-bottom: 1px solid #d0013a;
+        text-decoration: none;
+        color: #fff;
+        background-color: #d0013a;
+        background-image: linear-gradient(to right, #d0013a, #f20c55);
+}
+.oe2016 .politik .content .storyWrapper:hover,
+.oe2016 .politik .content .column a:hover {
+        border-top: 6px solid #d0013a;
+}
+.oe2016 .welt .defaultChannelColor,
+.oe2016 .welt .defaultChannelHoverColor:hover,
+.oe2016 .welt .content .storyWrapper:hover .story_pretitle,
+.oe2016 .welt .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .welt .content .column a:hover .storyPreTitle,
+.oe2016 .welt .content .column a:hover .storyTitle,
+.oe2016 .welt .content .column .storyPreTitle.withMarker:before,
+.oe2016 .welt .sidebar .teasers a:hover .storyTitle,
+.oe2016 .welt .videoEntry a:hover .videoPreTitle,
+.oe2016 .welt .videoEntry a:hover .videoTitle,
+.oe2016 .welt .slide a:hover .storyPreTitle,
+.oe2016 .welt .slide a:hover .storyTitle,
+.oe2016 .welt .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .welt .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #0051b2;
+}
+.oe2016 .welt .defaultChannelBackgroundColor,
+.oe2016 .welt .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.welt:hover:after,
+.oe2016 .headerNav .headerNavMainItem.welt.active:after,
+.oe2016 .welt .videoEntry .topVideoCircle {
+        background-color: #0051b2;
+}
+.oe2016 .welt.standardHeadline h2,
+.oe2016 .welt.bigHeadline .bigHeadlineText {
+        background-color: #0051b2;
+        background-image: linear-gradient(to right, #0051b2 65%, #5989ff);
+}
+.oe2016 .welt .commentLineLink {
+        border-bottom: 1px solid #0051b2;
+}
+.oe2016 .welt .commentLineLink:hover {
+        border-bottom: 1px solid #0051b2;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0051b2;
+        background-image: linear-gradient(to right, #0051b2, #5989ff);
+}
+.oe2016 .welt .content .storyWrapper:hover,
+.oe2016 .welt .content .column a:hover {
+        border-top: 6px solid #0051b2;
+}
+.oe2016 .oesterreich .defaultChannelColor,
+.oe2016 .oesterreich .defaultChannelHoverColor:hover,
+.oe2016 .oesterreich .content .storyWrapper:hover .story_pretitle,
+.oe2016 .oesterreich .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .oesterreich .content .column a:hover .storyPreTitle,
+.oe2016 .oesterreich .content .column a:hover .storyTitle,
+.oe2016 .oesterreich .content .column .storyPreTitle.withMarker:before,
+.oe2016 .oesterreich .sidebar .teasers a:hover .storyTitle,
+.oe2016 .oesterreich .videoEntry a:hover .videoPreTitle,
+.oe2016 .oesterreich .videoEntry a:hover .videoTitle,
+.oe2016 .oesterreich .slide a:hover .storyPreTitle,
+.oe2016 .oesterreich .slide a:hover .storyTitle,
+.oe2016 .oesterreich .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .oesterreich .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #f50f39;
+}
+.oe2016 .oesterreich .defaultChannelBackgroundColor,
+.oe2016 .oesterreich .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.oesterreich:hover:after,
+.oe2016 .headerNav .headerNavMainItem.oesterreich.active:after,
+.oe2016 .oesterreich .videoEntry .topVideoCircle {
+        background-color: #f50f39;
+}
+.oe2016 .oesterreich.standardHeadline h2,
+.oe2016 .oesterreich.bigHeadline .bigHeadlineText {
+        background-color: #f50f39;
+        background-image: linear-gradient(to right, #f50f39 65%, #dc2567);
+}
+.oe2016 .oesterreich .commentLineLink {
+        border-bottom: 1px solid #f50f39;
+}
+.oe2016 .oesterreich .commentLineLink:hover {
+        border-bottom: 1px solid #f50f39;
+        text-decoration: none;
+        color: #fff;
+        background-color: #f50f39;
+        background-image: linear-gradient(to right, #f50f39, #dc2567);
+}
+.oe2016 .oesterreich .content .storyWrapper:hover,
+.oe2016 .oesterreich .content .column a:hover {
+        border-top: 6px solid #f50f39;
+}
+.oe2016 .bundeslaender .defaultChannelColor,
+.oe2016 .bundeslaender .defaultChannelHoverColor:hover,
+.oe2016 .bundeslaender .content .storyWrapper:hover .story_pretitle,
+.oe2016 .bundeslaender .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .bundeslaender .content .column a:hover .storyPreTitle,
+.oe2016 .bundeslaender .content .column a:hover .storyTitle,
+.oe2016 .bundeslaender .content .column .storyPreTitle.withMarker:before,
+.oe2016 .bundeslaender .sidebar .teasers a:hover .storyTitle,
+.oe2016 .bundeslaender .videoEntry a:hover .videoPreTitle,
+.oe2016 .bundeslaender .videoEntry a:hover .videoTitle,
+.oe2016 .bundeslaender .slide a:hover .storyPreTitle,
+.oe2016 .bundeslaender .slide a:hover .storyTitle,
+.oe2016 .bundeslaender .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .bundeslaender .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #f50f39;
+}
+.oe2016 .bundeslaender .defaultChannelBackgroundColor,
+.oe2016 .bundeslaender .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.bundeslaender:hover:after,
+.oe2016 .headerNav .headerNavMainItem.bundeslaender.active:after,
+.oe2016 .bundeslaender .videoEntry .topVideoCircle {
+        background-color: #f50f39;
+}
+.oe2016 .bundeslaender.standardHeadline h2,
+.oe2016 .bundeslaender.bigHeadline .bigHeadlineText {
+        background-color: #f50f39;
+        background-image: linear-gradient(to right, #f50f39 65%, #dc2567);
+}
+.oe2016 .bundeslaender .commentLineLink {
+        border-bottom: 1px solid #f50f39;
+}
+.oe2016 .bundeslaender .commentLineLink:hover {
+        border-bottom: 1px solid #f50f39;
+        text-decoration: none;
+        color: #fff;
+        background-color: #f50f39;
+        background-image: linear-gradient(to right, #f50f39, #dc2567);
+}
+.oe2016 .bundeslaender .content .storyWrapper:hover,
+.oe2016 .bundeslaender .content .column a:hover {
+        border-top: 6px solid #f50f39;
+}
+.oe2016 .wetter .defaultChannelColor,
+.oe2016 .wetter .defaultChannelHoverColor:hover,
+.oe2016 .wetter .content .storyWrapper:hover .story_pretitle,
+.oe2016 .wetter .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .wetter .content .column a:hover .storyPreTitle,
+.oe2016 .wetter .content .column a:hover .storyTitle,
+.oe2016 .wetter .content .column .storyPreTitle.withMarker:before,
+.oe2016 .wetter .sidebar .teasers a:hover .storyTitle,
+.oe2016 .wetter .videoEntry a:hover .videoPreTitle,
+.oe2016 .wetter .videoEntry a:hover .videoTitle,
+.oe2016 .wetter .slide a:hover .storyPreTitle,
+.oe2016 .wetter .slide a:hover .storyTitle,
+.oe2016 .wetter .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .wetter .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #007ddc;
+}
+.oe2016 .wetter .defaultChannelBackgroundColor,
+.oe2016 .wetter .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.wetter:hover:after,
+.oe2016 .headerNav .headerNavMainItem.wetter.active:after,
+.oe2016 .wetter .videoEntry .topVideoCircle {
+        background-color: #007ddc;
+}
+.oe2016 .wetter.standardHeadline h2,
+.oe2016 .wetter.bigHeadline .bigHeadlineText {
+        background-color: #007ddc;
+        background-image: linear-gradient(to right, #007ddc 65%, #8aacff);
+}
+.oe2016 .wetter .commentLineLink {
+        border-bottom: 1px solid #007ddc;
+}
+.oe2016 .wetter .commentLineLink:hover {
+        border-bottom: 1px solid #007ddc;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007ddc;
+        background-image: linear-gradient(to right, #007ddc, #8aacff);
+}
+.oe2016 .wetter .content .storyWrapper:hover,
+.oe2016 .wetter .content .column a:hover {
+        border-top: 6px solid #007ddc;
+}
+.oe2016 .sport .defaultChannelColor,
+.oe2016 .sport .defaultChannelHoverColor:hover,
+.oe2016 .sport .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport .content .column a:hover .storyPreTitle,
+.oe2016 .sport .content .column a:hover .storyTitle,
+.oe2016 .sport .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport .videoEntry a:hover .videoTitle,
+.oe2016 .sport .slide a:hover .storyPreTitle,
+.oe2016 .sport .slide a:hover .storyTitle,
+.oe2016 .sport .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #22b480;
+}
+.oe2016 .sport .defaultChannelBackgroundColor,
+.oe2016 .sport .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport.active:after,
+.oe2016 .sport .videoEntry .topVideoCircle {
+        background-color: #22b480;
+}
+.oe2016 .sport.standardHeadline h2,
+.oe2016 .sport.bigHeadline .bigHeadlineText {
+        background-color: #22b480;
+        background-image: linear-gradient(to right, #22b480 65%, #71db80);
+}
+.oe2016 .sport .commentLineLink {
+        border-bottom: 1px solid #22b480;
+}
+.oe2016 .sport .commentLineLink:hover {
+        border-bottom: 1px solid #22b480;
+        text-decoration: none;
+        color: #fff;
+        background-color: #22b480;
+        background-image: linear-gradient(to right, #22b480, #71db80);
+}
+.oe2016 .sport .content .storyWrapper:hover,
+.oe2016 .sport .content .column a:hover {
+        border-top: 6px solid #22b480;
+}
+.oe2016 .sport24 .defaultChannelColor,
+.oe2016 .sport24 .defaultChannelHoverColor:hover,
+.oe2016 .sport24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport24 .content .column a:hover .storyPreTitle,
+.oe2016 .sport24 .content .column a:hover .storyTitle,
+.oe2016 .sport24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport24 .videoEntry a:hover .videoTitle,
+.oe2016 .sport24 .slide a:hover .storyPreTitle,
+.oe2016 .sport24 .slide a:hover .storyTitle,
+.oe2016 .sport24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #d2123b;
+}
+.oe2016 .sport24 .defaultChannelBackgroundColor,
+.oe2016 .sport24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport24.active:after,
+.oe2016 .sport24 .videoEntry .topVideoCircle {
+        background-color: #d2123b;
+}
+.oe2016 .sport24.standardHeadline h2,
+.oe2016 .sport24.bigHeadline .bigHeadlineText {
+        background-color: #d2123b;
+        background-image: linear-gradient(to right, #d2123b 65%, #e6323b);
+}
+.oe2016 .sport24 .commentLineLink {
+        border-bottom: 1px solid #d2123b;
+}
+.oe2016 .sport24 .commentLineLink:hover {
+        border-bottom: 1px solid #d2123b;
+        text-decoration: none;
+        color: #fff;
+        background-color: #d2123b;
+        background-image: linear-gradient(to right, #d2123b, #e6323b);
+}
+.oe2016 .sport24 .content .storyWrapper:hover,
+.oe2016 .sport24 .content .column a:hover {
+        border-top: 6px solid #d2123b;
+}
+.oe2016 .sport-euro .defaultChannelColor,
+.oe2016 .sport-euro .defaultChannelHoverColor:hover,
+.oe2016 .sport-euro .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-euro .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-euro .content .column a:hover .storyPreTitle,
+.oe2016 .sport-euro .content .column a:hover .storyTitle,
+.oe2016 .sport-euro .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-euro .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-euro .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-euro .videoEntry a:hover .videoTitle,
+.oe2016 .sport-euro .slide a:hover .storyPreTitle,
+.oe2016 .sport-euro .slide a:hover .storyTitle,
+.oe2016 .sport-euro .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-euro .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #313b69;
+}
+.oe2016 .sport-euro .defaultChannelBackgroundColor,
+.oe2016 .sport-euro .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-euro:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-euro.active:after,
+.oe2016 .sport-euro .videoEntry .topVideoCircle {
+        background-color: #313b69;
+}
+.oe2016 .sport-euro.standardHeadline h2,
+.oe2016 .sport-euro.bigHeadline .bigHeadlineText {
+        background-color: #313b69;
+        background-image: linear-gradient(to right, #313b69 65%, #7881a8);
+}
+.oe2016 .sport-euro .commentLineLink {
+        border-bottom: 1px solid #313b69;
+}
+.oe2016 .sport-euro .commentLineLink:hover {
+        border-bottom: 1px solid #313b69;
+        text-decoration: none;
+        color: #fff;
+        background-color: #313b69;
+        background-image: linear-gradient(to right, #313b69, #7881a8);
+}
+.oe2016 .sport-euro .content .storyWrapper:hover,
+.oe2016 .sport-euro .content .column a:hover {
+        border-top: 6px solid #313b69;
+}
+.oe2016 .sport-fussball .defaultChannelColor,
+.oe2016 .sport-fussball .defaultChannelHoverColor:hover,
+.oe2016 .sport-fussball .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-fussball .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-fussball .content .column a:hover .storyPreTitle,
+.oe2016 .sport-fussball .content .column a:hover .storyTitle,
+.oe2016 .sport-fussball .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-fussball .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-fussball .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-fussball .videoEntry a:hover .videoTitle,
+.oe2016 .sport-fussball .slide a:hover .storyPreTitle,
+.oe2016 .sport-fussball .slide a:hover .storyTitle,
+.oe2016 .sport-fussball .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-fussball .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #22b480;
+}
+.oe2016 .sport-fussball .defaultChannelBackgroundColor,
+.oe2016 .sport-fussball .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-fussball:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-fussball.active:after,
+.oe2016 .sport-fussball .videoEntry .topVideoCircle {
+        background-color: #22b480;
+}
+.oe2016 .sport-fussball.standardHeadline h2,
+.oe2016 .sport-fussball.bigHeadline .bigHeadlineText {
+        background-color: #22b480;
+        background-image: linear-gradient(to right, #22b480 65%, #71db80);
+}
+.oe2016 .sport-fussball .commentLineLink {
+        border-bottom: 1px solid #22b480;
+}
+.oe2016 .sport-fussball .commentLineLink:hover {
+        border-bottom: 1px solid #22b480;
+        text-decoration: none;
+        color: #fff;
+        background-color: #22b480;
+        background-image: linear-gradient(to right, #22b480, #71db80);
+}
+.oe2016 .sport-fussball .content .storyWrapper:hover,
+.oe2016 .sport-fussball .content .column a:hover {
+        border-top: 6px solid #22b480;
+}
+.oe2016 .sport-motorsport .defaultChannelColor,
+.oe2016 .sport-motorsport .defaultChannelHoverColor:hover,
+.oe2016 .sport-motorsport .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-motorsport .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-motorsport .content .column a:hover .storyPreTitle,
+.oe2016 .sport-motorsport .content .column a:hover .storyTitle,
+.oe2016 .sport-motorsport .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-motorsport .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-motorsport .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-motorsport .videoEntry a:hover .videoTitle,
+.oe2016 .sport-motorsport .slide a:hover .storyPreTitle,
+.oe2016 .sport-motorsport .slide a:hover .storyTitle,
+.oe2016 .sport-motorsport .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-motorsport .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #1d1d1b;
+}
+.oe2016 .sport-motorsport .defaultChannelBackgroundColor,
+.oe2016 .sport-motorsport .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-motorsport:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-motorsport.active:after,
+.oe2016 .sport-motorsport .videoEntry .topVideoCircle {
+        background-color: #1d1d1b;
+}
+.oe2016 .sport-motorsport.standardHeadline h2,
+.oe2016 .sport-motorsport.bigHeadline .bigHeadlineText {
+        background-color: #1d1d1b;
+        background-image: linear-gradient(to right, #1d1d1b 65%, #8698be);
+}
+.oe2016 .sport-motorsport .commentLineLink {
+        border-bottom: 1px solid #1d1d1b;
+}
+.oe2016 .sport-motorsport .commentLineLink:hover {
+        border-bottom: 1px solid #1d1d1b;
+        text-decoration: none;
+        color: #fff;
+        background-color: #1d1d1b;
+        background-image: linear-gradient(to right, #1d1d1b, #8698be);
+}
+.oe2016 .sport-motorsport .content .storyWrapper:hover,
+.oe2016 .sport-motorsport .content .column a:hover {
+        border-top: 6px solid #1d1d1b;
+}
+.oe2016 .sport-sportmix .defaultChannelColor,
+.oe2016 .sport-sportmix .defaultChannelHoverColor:hover,
+.oe2016 .sport-sportmix .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-sportmix .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-sportmix .content .column a:hover .storyPreTitle,
+.oe2016 .sport-sportmix .content .column a:hover .storyTitle,
+.oe2016 .sport-sportmix .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-sportmix .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-sportmix .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-sportmix .videoEntry a:hover .videoTitle,
+.oe2016 .sport-sportmix .slide a:hover .storyPreTitle,
+.oe2016 .sport-sportmix .slide a:hover .storyTitle,
+.oe2016 .sport-sportmix .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-sportmix .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #007edc;
+}
+.oe2016 .sport-sportmix .defaultChannelBackgroundColor,
+.oe2016 .sport-sportmix .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-sportmix:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-sportmix.active:after,
+.oe2016 .sport-sportmix .videoEntry .topVideoCircle {
+        background-color: #007edc;
+}
+.oe2016 .sport-sportmix.standardHeadline h2,
+.oe2016 .sport-sportmix.bigHeadline .bigHeadlineText {
+        background-color: #007edc;
+        background-image: linear-gradient(to right, #007edc 65%, #6da2f8);
+}
+.oe2016 .sport-sportmix .commentLineLink {
+        border-bottom: 1px solid #007edc;
+}
+.oe2016 .sport-sportmix .commentLineLink:hover {
+        border-bottom: 1px solid #007edc;
+        text-decoration: none;
+        color: #fff;
+        background-color: #007edc;
+        background-image: linear-gradient(to right, #007edc, #6da2f8);
+}
+.oe2016 .sport-sportmix .content .storyWrapper:hover,
+.oe2016 .sport-sportmix .content .column a:hover {
+        border-top: 6px solid #007edc;
+}
+.oe2016 .sport-stars .defaultChannelColor,
+.oe2016 .sport-stars .defaultChannelHoverColor:hover,
+.oe2016 .sport-stars .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-stars .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-stars .content .column a:hover .storyPreTitle,
+.oe2016 .sport-stars .content .column a:hover .storyTitle,
+.oe2016 .sport-stars .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-stars .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-stars .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-stars .videoEntry a:hover .videoTitle,
+.oe2016 .sport-stars .slide a:hover .storyPreTitle,
+.oe2016 .sport-stars .slide a:hover .storyTitle,
+.oe2016 .sport-stars .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-stars .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #b1177a;
+}
+.oe2016 .sport-stars .defaultChannelBackgroundColor,
+.oe2016 .sport-stars .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-stars:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-stars.active:after,
+.oe2016 .sport-stars .videoEntry .topVideoCircle {
+        background-color: #b1177a;
+}
+.oe2016 .sport-stars.standardHeadline h2,
+.oe2016 .sport-stars.bigHeadline .bigHeadlineText {
+        background-color: #b1177a;
+        background-image: linear-gradient(to right, #b1177a 65%, #ee5688);
+}
+.oe2016 .sport-stars .commentLineLink {
+        border-bottom: 1px solid #b1177a;
+}
+.oe2016 .sport-stars .commentLineLink:hover {
+        border-bottom: 1px solid #b1177a;
+        text-decoration: none;
+        color: #fff;
+        background-color: #b1177a;
+        background-image: linear-gradient(to right, #b1177a, #ee5688);
+}
+.oe2016 .sport-stars .content .storyWrapper:hover,
+.oe2016 .sport-stars .content .column a:hover {
+        border-top: 6px solid #b1177a;
+}
+.oe2016 .sport-wintersport .defaultChannelColor,
+.oe2016 .sport-wintersport .defaultChannelHoverColor:hover,
+.oe2016 .sport-wintersport .content .storyWrapper:hover .story_pretitle,
+.oe2016 .sport-wintersport .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .sport-wintersport .content .column a:hover .storyPreTitle,
+.oe2016 .sport-wintersport .content .column a:hover .storyTitle,
+.oe2016 .sport-wintersport .content .column .storyPreTitle.withMarker:before,
+.oe2016 .sport-wintersport .sidebar .teasers a:hover .storyTitle,
+.oe2016 .sport-wintersport .videoEntry a:hover .videoPreTitle,
+.oe2016 .sport-wintersport .videoEntry a:hover .videoTitle,
+.oe2016 .sport-wintersport .slide a:hover .storyPreTitle,
+.oe2016 .sport-wintersport .slide a:hover .storyTitle,
+.oe2016 .sport-wintersport .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .sport-wintersport .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #0052b3;
+}
+.oe2016 .sport-wintersport .defaultChannelBackgroundColor,
+.oe2016 .sport-wintersport .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.sport-wintersport:hover:after,
+.oe2016 .headerNav .headerNavMainItem.sport-wintersport.active:after,
+.oe2016 .sport-wintersport .videoEntry .topVideoCircle {
+        background-color: #0052b3;
+}
+.oe2016 .sport-wintersport.standardHeadline h2,
+.oe2016 .sport-wintersport.bigHeadline .bigHeadlineText {
+        background-color: #0052b3;
+        background-image: linear-gradient(to right, #0052b3 65%, #5989ff);
+}
+.oe2016 .sport-wintersport .commentLineLink {
+        border-bottom: 1px solid #0052b3;
+}
+.oe2016 .sport-wintersport .commentLineLink:hover {
+        border-bottom: 1px solid #0052b3;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0052b3;
+        background-image: linear-gradient(to right, #0052b3, #5989ff);
+}
+.oe2016 .sport-wintersport .content .storyWrapper:hover,
+.oe2016 .sport-wintersport .content .column a:hover {
+        border-top: 6px solid #0052b3;
+}
+.oe2016 .money .defaultChannelColor,
+.oe2016 .money .defaultChannelHoverColor:hover,
+.oe2016 .money .content .storyWrapper:hover .story_pretitle,
+.oe2016 .money .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .money .content .column a:hover .storyPreTitle,
+.oe2016 .money .content .column a:hover .storyTitle,
+.oe2016 .money .content .column .storyPreTitle.withMarker:before,
+.oe2016 .money .sidebar .teasers a:hover .storyTitle,
+.oe2016 .money .videoEntry a:hover .videoPreTitle,
+.oe2016 .money .videoEntry a:hover .videoTitle,
+.oe2016 .money .slide a:hover .storyPreTitle,
+.oe2016 .money .slide a:hover .storyTitle,
+.oe2016 .money .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .money .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #174584;
+}
+.oe2016 .money .defaultChannelBackgroundColor,
+.oe2016 .money .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.money:hover:after,
+.oe2016 .headerNav .headerNavMainItem.money.active:after,
+.oe2016 .money .videoEntry .topVideoCircle {
+        background-color: #174584;
+}
+.oe2016 .money.standardHeadline h2,
+.oe2016 .money.bigHeadline .bigHeadlineText {
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584 65%, #00a3e1);
+}
+.oe2016 .money .commentLineLink {
+        border-bottom: 1px solid #174584;
+}
+.oe2016 .money .commentLineLink:hover {
+        border-bottom: 1px solid #174584;
+        text-decoration: none;
+        color: #fff;
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584, #00a3e1);
+}
+.oe2016 .money .content .storyWrapper:hover,
+.oe2016 .money .content .column a:hover {
+        border-top: 6px solid #174584;
+}
+.oe2016 .business .defaultChannelColor,
+.oe2016 .business .defaultChannelHoverColor:hover,
+.oe2016 .business .content .storyWrapper:hover .story_pretitle,
+.oe2016 .business .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .business .content .column a:hover .storyPreTitle,
+.oe2016 .business .content .column a:hover .storyTitle,
+.oe2016 .business .content .column .storyPreTitle.withMarker:before,
+.oe2016 .business .sidebar .teasers a:hover .storyTitle,
+.oe2016 .business .videoEntry a:hover .videoPreTitle,
+.oe2016 .business .videoEntry a:hover .videoTitle,
+.oe2016 .business .slide a:hover .storyPreTitle,
+.oe2016 .business .slide a:hover .storyTitle,
+.oe2016 .business .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .business .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #174584;
+}
+.oe2016 .business .defaultChannelBackgroundColor,
+.oe2016 .business .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.business:hover:after,
+.oe2016 .headerNav .headerNavMainItem.business.active:after,
+.oe2016 .business .videoEntry .topVideoCircle {
+        background-color: #174584;
+}
+.oe2016 .business.standardHeadline h2,
+.oe2016 .business.bigHeadline .bigHeadlineText {
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584 65%, #00a3e1);
+}
+.oe2016 .business .commentLineLink {
+        border-bottom: 1px solid #174584;
+}
+.oe2016 .business .commentLineLink:hover {
+        border-bottom: 1px solid #174584;
+        text-decoration: none;
+        color: #fff;
+        background-color: #174584;
+        background-image: linear-gradient(to right, #174584, #00a3e1);
+}
+.oe2016 .business .content .storyWrapper:hover,
+.oe2016 .business .content .column a:hover {
+        border-top: 6px solid #174584;
+}
+.oe2016 .madonna .defaultChannelColor,
+.oe2016 .madonna .defaultChannelHoverColor:hover,
+.oe2016 .madonna .content .storyWrapper:hover .story_pretitle,
+.oe2016 .madonna .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .madonna .content .column a:hover .storyPreTitle,
+.oe2016 .madonna .content .column a:hover .storyTitle,
+.oe2016 .madonna .content .column .storyPreTitle.withMarker:before,
+.oe2016 .madonna .sidebar .teasers a:hover .storyTitle,
+.oe2016 .madonna .videoEntry a:hover .videoPreTitle,
+.oe2016 .madonna .videoEntry a:hover .videoTitle,
+.oe2016 .madonna .slide a:hover .storyPreTitle,
+.oe2016 .madonna .slide a:hover .storyTitle,
+.oe2016 .madonna .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .madonna .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ec589f;
+}
+.oe2016 .madonna .defaultChannelBackgroundColor,
+.oe2016 .madonna .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.madonna:hover:after,
+.oe2016 .headerNav .headerNavMainItem.madonna.active:after,
+.oe2016 .madonna .videoEntry .topVideoCircle {
+        background-color: #ec589f;
+}
+.oe2016 .madonna.standardHeadline h2,
+.oe2016 .madonna.bigHeadline .bigHeadlineText {
+        background-color: #ec589f;
+        background-image: linear-gradient(to right, #ec589f 65%, #ffbfad);
+}
+.oe2016 .madonna .commentLineLink {
+        border-bottom: 1px solid #ec589f;
+}
+.oe2016 .madonna .commentLineLink:hover {
+        border-bottom: 1px solid #ec589f;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ec589f;
+        background-image: linear-gradient(to right, #ec589f, #ffbfad);
+}
+.oe2016 .madonna .content .storyWrapper:hover,
+.oe2016 .madonna .content .column a:hover {
+        border-top: 6px solid #ec589f;
+}
+.oe2016 .leute .defaultChannelColor,
+.oe2016 .leute .defaultChannelHoverColor:hover,
+.oe2016 .leute .content .storyWrapper:hover .story_pretitle,
+.oe2016 .leute .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .leute .content .column a:hover .storyPreTitle,
+.oe2016 .leute .content .column a:hover .storyTitle,
+.oe2016 .leute .content .column .storyPreTitle.withMarker:before,
+.oe2016 .leute .sidebar .teasers a:hover .storyTitle,
+.oe2016 .leute .videoEntry a:hover .videoPreTitle,
+.oe2016 .leute .videoEntry a:hover .videoTitle,
+.oe2016 .leute .slide a:hover .storyPreTitle,
+.oe2016 .leute .slide a:hover .storyTitle,
+.oe2016 .leute .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .leute .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ff2b22;
+}
+.oe2016 .leute .defaultChannelBackgroundColor,
+.oe2016 .leute .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.leute:hover:after,
+.oe2016 .headerNav .headerNavMainItem.leute.active:after,
+.oe2016 .leute .videoEntry .topVideoCircle {
+        background-color: #ff2b22;
+}
+.oe2016 .leute.standardHeadline h2,
+.oe2016 .leute.bigHeadline .bigHeadlineText {
+        background-color: #ff2b22;
+        background-image: linear-gradient(to right, #ff2b22 65%, #ff2b22);
+}
+.oe2016 .leute .commentLineLink {
+        border-bottom: 1px solid #ff2b22;
+}
+.oe2016 .leute .commentLineLink:hover {
+        border-bottom: 1px solid #ff2b22;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff2b22;
+        background-image: linear-gradient(to right, #ff2b22, #ff2b22);
+}
+.oe2016 .leute .content .storyWrapper:hover,
+.oe2016 .leute .content .column a:hover {
+        border-top: 6px solid #ff2b22;
+}
+.oe2016 .society .defaultChannelColor,
+.oe2016 .society .defaultChannelHoverColor:hover,
+.oe2016 .society .content .storyWrapper:hover .story_pretitle,
+.oe2016 .society .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .society .content .column a:hover .storyPreTitle,
+.oe2016 .society .content .column a:hover .storyTitle,
+.oe2016 .society .content .column .storyPreTitle.withMarker:before,
+.oe2016 .society .sidebar .teasers a:hover .storyTitle,
+.oe2016 .society .videoEntry a:hover .videoPreTitle,
+.oe2016 .society .videoEntry a:hover .videoTitle,
+.oe2016 .society .slide a:hover .storyPreTitle,
+.oe2016 .society .slide a:hover .storyTitle,
+.oe2016 .society .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .society .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ff2b22;
+}
+.oe2016 .society .defaultChannelBackgroundColor,
+.oe2016 .society .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.society:hover:after,
+.oe2016 .headerNav .headerNavMainItem.society.active:after,
+.oe2016 .society .videoEntry .topVideoCircle {
+        background-color: #ff2b22;
+}
+.oe2016 .society.standardHeadline h2,
+.oe2016 .society.bigHeadline .bigHeadlineText {
+        background-color: #ff2b22;
+        background-image: linear-gradient(to right, #ff2b22 65%, #ff2b22);
+}
+.oe2016 .society .commentLineLink {
+        border-bottom: 1px solid #ff2b22;
+}
+.oe2016 .society .commentLineLink:hover {
+        border-bottom: 1px solid #ff2b22;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff2b22;
+        background-image: linear-gradient(to right, #ff2b22, #ff2b22);
+}
+.oe2016 .society .content .storyWrapper:hover,
+.oe2016 .society .content .column a:hover {
+        border-top: 6px solid #ff2b22;
+}
+.oe2016 .tv .defaultChannelColor,
+.oe2016 .tv .defaultChannelHoverColor:hover,
+.oe2016 .tv .content .storyWrapper:hover .story_pretitle,
+.oe2016 .tv .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .tv .content .column a:hover .storyPreTitle,
+.oe2016 .tv .content .column a:hover .storyTitle,
+.oe2016 .tv .content .column .storyPreTitle.withMarker:before,
+.oe2016 .tv .sidebar .teasers a:hover .storyTitle,
+.oe2016 .tv .videoEntry a:hover .videoPreTitle,
+.oe2016 .tv .videoEntry a:hover .videoTitle,
+.oe2016 .tv .slide a:hover .storyPreTitle,
+.oe2016 .tv .slide a:hover .storyTitle,
+.oe2016 .tv .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .tv .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #59cad2;
+}
+.oe2016 .tv .defaultChannelBackgroundColor,
+.oe2016 .tv .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.tv:hover:after,
+.oe2016 .headerNav .headerNavMainItem.tv.active:after,
+.oe2016 .tv .videoEntry .topVideoCircle {
+        background-color: #59cad2;
+}
+.oe2016 .tv.standardHeadline h2,
+.oe2016 .tv.bigHeadline .bigHeadlineText {
+        background-color: #59cad2;
+        background-image: linear-gradient(to right, #59cad2 65%, #b7ffff);
+}
+.oe2016 .tv .commentLineLink {
+        border-bottom: 1px solid #59cad2;
+}
+.oe2016 .tv .commentLineLink:hover {
+        border-bottom: 1px solid #59cad2;
+        text-decoration: none;
+        color: #fff;
+        background-color: #59cad2;
+        background-image: linear-gradient(to right, #59cad2, #b7ffff);
+}
+.oe2016 .tv .content .storyWrapper:hover,
+.oe2016 .tv .content .column a:hover {
+        border-top: 6px solid #59cad2;
+}
+.oe2016 .video .defaultChannelColor,
+.oe2016 .video .defaultChannelHoverColor:hover,
+.oe2016 .video .content .storyWrapper:hover .story_pretitle,
+.oe2016 .video .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .video .content .column a:hover .storyPreTitle,
+.oe2016 .video .content .column a:hover .storyTitle,
+.oe2016 .video .content .column .storyPreTitle.withMarker:before,
+.oe2016 .video .sidebar .teasers a:hover .storyTitle,
+.oe2016 .video .videoEntry a:hover .videoPreTitle,
+.oe2016 .video .videoEntry a:hover .videoTitle,
+.oe2016 .video .slide a:hover .storyPreTitle,
+.oe2016 .video .slide a:hover .storyTitle,
+.oe2016 .video .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .video .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #59cad2;
+}
+.oe2016 .video .defaultChannelBackgroundColor,
+.oe2016 .video .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.video:hover:after,
+.oe2016 .headerNav .headerNavMainItem.video.active:after,
+.oe2016 .video .videoEntry .topVideoCircle {
+        background-color: #59cad2;
+}
+.oe2016 .video.standardHeadline h2,
+.oe2016 .video.bigHeadline .bigHeadlineText {
+        background-color: #59cad2;
+        background-image: linear-gradient(to right, #59cad2 65%, #b7ffff);
+}
+.oe2016 .video .commentLineLink {
+        border-bottom: 1px solid #59cad2;
+}
+.oe2016 .video .commentLineLink:hover {
+        border-bottom: 1px solid #59cad2;
+        text-decoration: none;
+        color: #fff;
+        background-color: #59cad2;
+        background-image: linear-gradient(to right, #59cad2, #b7ffff);
+}
+.oe2016 .video .content .storyWrapper:hover,
+.oe2016 .video .content .column a:hover {
+        border-top: 6px solid #59cad2;
+}
+.oe2016 .gesund24 .defaultChannelColor,
+.oe2016 .gesund24 .defaultChannelHoverColor:hover,
+.oe2016 .gesund24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .gesund24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .gesund24 .content .column a:hover .storyPreTitle,
+.oe2016 .gesund24 .content .column a:hover .storyTitle,
+.oe2016 .gesund24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .gesund24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .gesund24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .gesund24 .videoEntry a:hover .videoTitle,
+.oe2016 .gesund24 .slide a:hover .storyPreTitle,
+.oe2016 .gesund24 .slide a:hover .storyTitle,
+.oe2016 .gesund24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .gesund24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #6a9dff;
+}
+.oe2016 .gesund24 .defaultChannelBackgroundColor,
+.oe2016 .gesund24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.gesund24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.gesund24.active:after,
+.oe2016 .gesund24 .videoEntry .topVideoCircle {
+        background-color: #6a9dff;
+}
+.oe2016 .gesund24.standardHeadline h2,
+.oe2016 .gesund24.bigHeadline .bigHeadlineText {
+        background-color: #6a9dff;
+        background-image: linear-gradient(to right, #6a9dff 65%, #55d1ff);
+}
+.oe2016 .gesund24 .commentLineLink {
+        border-bottom: 1px solid #6a9dff;
+}
+.oe2016 .gesund24 .commentLineLink:hover {
+        border-bottom: 1px solid #6a9dff;
+        text-decoration: none;
+        color: #fff;
+        background-color: #6a9dff;
+        background-image: linear-gradient(to right, #6a9dff, #55d1ff);
+}
+.oe2016 .gesund24 .content .storyWrapper:hover,
+.oe2016 .gesund24 .content .column a:hover {
+        border-top: 6px solid #6a9dff;
+}
+.oe2016 .kochen .defaultChannelColor,
+.oe2016 .kochen .defaultChannelHoverColor:hover,
+.oe2016 .kochen .content .storyWrapper:hover .story_pretitle,
+.oe2016 .kochen .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .kochen .content .column a:hover .storyPreTitle,
+.oe2016 .kochen .content .column a:hover .storyTitle,
+.oe2016 .kochen .content .column .storyPreTitle.withMarker:before,
+.oe2016 .kochen .sidebar .teasers a:hover .storyTitle,
+.oe2016 .kochen .videoEntry a:hover .videoPreTitle,
+.oe2016 .kochen .videoEntry a:hover .videoTitle,
+.oe2016 .kochen .slide a:hover .storyPreTitle,
+.oe2016 .kochen .slide a:hover .storyTitle,
+.oe2016 .kochen .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .kochen .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #b11679;
+}
+.oe2016 .kochen .defaultChannelBackgroundColor,
+.oe2016 .kochen .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.kochen:hover:after,
+.oe2016 .headerNav .headerNavMainItem.kochen.active:after,
+.oe2016 .kochen .videoEntry .topVideoCircle {
+        background-color: #b11679;
+}
+.oe2016 .kochen.standardHeadline h2,
+.oe2016 .kochen.bigHeadline .bigHeadlineText {
+        background-color: #b11679;
+        background-image: linear-gradient(to right, #b11679 65%, #ff678c);
+}
+.oe2016 .kochen .commentLineLink {
+        border-bottom: 1px solid #b11679;
+}
+.oe2016 .kochen .commentLineLink:hover {
+        border-bottom: 1px solid #b11679;
+        text-decoration: none;
+        color: #fff;
+        background-color: #b11679;
+        background-image: linear-gradient(to right, #b11679, #ff678c);
+}
+.oe2016 .kochen .content .storyWrapper:hover,
+.oe2016 .kochen .content .column a:hover {
+        border-top: 6px solid #b11679;
+}
+.oe2016 .cooking24 .defaultChannelColor,
+.oe2016 .cooking24 .defaultChannelHoverColor:hover,
+.oe2016 .cooking24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .cooking24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .cooking24 .content .column a:hover .storyPreTitle,
+.oe2016 .cooking24 .content .column a:hover .storyTitle,
+.oe2016 .cooking24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .cooking24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .cooking24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .cooking24 .videoEntry a:hover .videoTitle,
+.oe2016 .cooking24 .slide a:hover .storyPreTitle,
+.oe2016 .cooking24 .slide a:hover .storyTitle,
+.oe2016 .cooking24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .cooking24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #b11679;
+}
+.oe2016 .cooking24 .defaultChannelBackgroundColor,
+.oe2016 .cooking24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.cooking24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.cooking24.active:after,
+.oe2016 .cooking24 .videoEntry .topVideoCircle {
+        background-color: #b11679;
+}
+.oe2016 .cooking24.standardHeadline h2,
+.oe2016 .cooking24.bigHeadline .bigHeadlineText {
+        background-color: #b11679;
+        background-image: linear-gradient(to right, #b11679 65%, #ff678c);
+}
+.oe2016 .cooking24 .commentLineLink {
+        border-bottom: 1px solid #b11679;
+}
+.oe2016 .cooking24 .commentLineLink:hover {
+        border-bottom: 1px solid #b11679;
+        text-decoration: none;
+        color: #fff;
+        background-color: #b11679;
+        background-image: linear-gradient(to right, #b11679, #ff678c);
+}
+.oe2016 .cooking24 .content .storyWrapper:hover,
+.oe2016 .cooking24 .content .column a:hover {
+        border-top: 6px solid #b11679;
+}
+.oe2016 .digital .defaultChannelColor,
+.oe2016 .digital .defaultChannelHoverColor:hover,
+.oe2016 .digital .content .storyWrapper:hover .story_pretitle,
+.oe2016 .digital .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .digital .content .column a:hover .storyPreTitle,
+.oe2016 .digital .content .column a:hover .storyTitle,
+.oe2016 .digital .content .column .storyPreTitle.withMarker:before,
+.oe2016 .digital .sidebar .teasers a:hover .storyTitle,
+.oe2016 .digital .videoEntry a:hover .videoPreTitle,
+.oe2016 .digital .videoEntry a:hover .videoTitle,
+.oe2016 .digital .slide a:hover .storyPreTitle,
+.oe2016 .digital .slide a:hover .storyTitle,
+.oe2016 .digital .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .digital .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #708ab9;
+}
+.oe2016 .digital .defaultChannelBackgroundColor,
+.oe2016 .digital .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.digital:hover:after,
+.oe2016 .headerNav .headerNavMainItem.digital.active:after,
+.oe2016 .digital .videoEntry .topVideoCircle {
+        background-color: #708ab9;
+}
+.oe2016 .digital.standardHeadline h2,
+.oe2016 .digital.bigHeadline .bigHeadlineText {
+        background-color: #708ab9;
+        background-image: linear-gradient(to right, #708ab9 65%, #c7bbff);
+}
+.oe2016 .digital .commentLineLink {
+        border-bottom: 1px solid #708ab9;
+}
+.oe2016 .digital .commentLineLink:hover {
+        border-bottom: 1px solid #708ab9;
+        text-decoration: none;
+        color: #fff;
+        background-color: #708ab9;
+        background-image: linear-gradient(to right, #708ab9, #c7bbff);
+}
+.oe2016 .digital .content .storyWrapper:hover,
+.oe2016 .digital .content .column a:hover {
+        border-top: 6px solid #708ab9;
+}
+.oe2016 .reise .defaultChannelColor,
+.oe2016 .reise .defaultChannelHoverColor:hover,
+.oe2016 .reise .content .storyWrapper:hover .story_pretitle,
+.oe2016 .reise .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .reise .content .column a:hover .storyPreTitle,
+.oe2016 .reise .content .column a:hover .storyTitle,
+.oe2016 .reise .content .column .storyPreTitle.withMarker:before,
+.oe2016 .reise .sidebar .teasers a:hover .storyTitle,
+.oe2016 .reise .videoEntry a:hover .videoPreTitle,
+.oe2016 .reise .videoEntry a:hover .videoTitle,
+.oe2016 .reise .slide a:hover .storyPreTitle,
+.oe2016 .reise .slide a:hover .storyTitle,
+.oe2016 .reise .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .reise .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ff6200;
+}
+.oe2016 .reise .defaultChannelBackgroundColor,
+.oe2016 .reise .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.reise:hover:after,
+.oe2016 .headerNav .headerNavMainItem.reise.active:after,
+.oe2016 .reise .videoEntry .topVideoCircle {
+        background-color: #ff6200;
+}
+.oe2016 .reise.standardHeadline h2,
+.oe2016 .reise.bigHeadline .bigHeadlineText {
+        background-color: #ff6200;
+        background-image: linear-gradient(to right, #ff6200 65%, #ff9915);
+}
+.oe2016 .reise .commentLineLink {
+        border-bottom: 1px solid #ff6200;
+}
+.oe2016 .reise .commentLineLink:hover {
+        border-bottom: 1px solid #ff6200;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff6200;
+        background-image: linear-gradient(to right, #ff6200, #ff9915);
+}
+.oe2016 .reise .content .storyWrapper:hover,
+.oe2016 .reise .content .column a:hover {
+        border-top: 6px solid #ff6200;
+}
+.oe2016 .auto .defaultChannelColor,
+.oe2016 .auto .defaultChannelHoverColor:hover,
+.oe2016 .auto .content .storyWrapper:hover .story_pretitle,
+.oe2016 .auto .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .auto .content .column a:hover .storyPreTitle,
+.oe2016 .auto .content .column a:hover .storyTitle,
+.oe2016 .auto .content .column .storyPreTitle.withMarker:before,
+.oe2016 .auto .sidebar .teasers a:hover .storyTitle,
+.oe2016 .auto .videoEntry a:hover .videoPreTitle,
+.oe2016 .auto .videoEntry a:hover .videoTitle,
+.oe2016 .auto .slide a:hover .storyPreTitle,
+.oe2016 .auto .slide a:hover .storyTitle,
+.oe2016 .auto .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .auto .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #2c3564;
+}
+.oe2016 .auto .defaultChannelBackgroundColor,
+.oe2016 .auto .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.auto:hover:after,
+.oe2016 .headerNav .headerNavMainItem.auto.active:after,
+.oe2016 .auto .videoEntry .topVideoCircle {
+        background-color: #2c3564;
+}
+.oe2016 .auto.standardHeadline h2,
+.oe2016 .auto.bigHeadline .bigHeadlineText {
+        background-color: #2c3564;
+        background-image: linear-gradient(to right, #2c3564 65%, #7f80ff);
+}
+.oe2016 .auto .commentLineLink {
+        border-bottom: 1px solid #2c3564;
+}
+.oe2016 .auto .commentLineLink:hover {
+        border-bottom: 1px solid #2c3564;
+        text-decoration: none;
+        color: #fff;
+        background-color: #2c3564;
+        background-image: linear-gradient(to right, #2c3564, #7f80ff);
+}
+.oe2016 .auto .content .storyWrapper:hover,
+.oe2016 .auto .content .column a:hover {
+        border-top: 6px solid #2c3564;
+}
+.oe2016 .joe24 .defaultChannelColor,
+.oe2016 .joe24 .defaultChannelHoverColor:hover,
+.oe2016 .joe24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .joe24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .joe24 .content .column a:hover .storyPreTitle,
+.oe2016 .joe24 .content .column a:hover .storyTitle,
+.oe2016 .joe24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .joe24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .joe24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .joe24 .videoEntry a:hover .videoTitle,
+.oe2016 .joe24 .slide a:hover .storyPreTitle,
+.oe2016 .joe24 .slide a:hover .storyTitle,
+.oe2016 .joe24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .joe24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #324291;
+}
+.oe2016 .joe24 .defaultChannelBackgroundColor,
+.oe2016 .joe24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.joe24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.joe24.active:after,
+.oe2016 .joe24 .videoEntry .topVideoCircle {
+        background-color: #324291;
+}
+.oe2016 .joe24.standardHeadline h2,
+.oe2016 .joe24.bigHeadline .bigHeadlineText {
+        background-color: #324291;
+        background-image: linear-gradient(to right, #324291 65%, #4e61c2);
+}
+.oe2016 .joe24 .commentLineLink {
+        border-bottom: 1px solid #324291;
+}
+.oe2016 .joe24 .commentLineLink:hover {
+        border-bottom: 1px solid #324291;
+        text-decoration: none;
+        color: #fff;
+        background-color: #324291;
+        background-image: linear-gradient(to right, #324291, #4e61c2);
+}
+.oe2016 .joe24 .content .storyWrapper:hover,
+.oe2016 .joe24 .content .column a:hover {
+        border-top: 6px solid #324291;
+}
+.oe2016 .joe24-logo .defaultChannelColor,
+.oe2016 .joe24-logo .defaultChannelHoverColor:hover,
+.oe2016 .joe24-logo .content .storyWrapper:hover .story_pretitle,
+.oe2016 .joe24-logo .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .joe24-logo .content .column a:hover .storyPreTitle,
+.oe2016 .joe24-logo .content .column a:hover .storyTitle,
+.oe2016 .joe24-logo .content .column .storyPreTitle.withMarker:before,
+.oe2016 .joe24-logo .sidebar .teasers a:hover .storyTitle,
+.oe2016 .joe24-logo .videoEntry a:hover .videoPreTitle,
+.oe2016 .joe24-logo .videoEntry a:hover .videoTitle,
+.oe2016 .joe24-logo .slide a:hover .storyPreTitle,
+.oe2016 .joe24-logo .slide a:hover .storyTitle,
+.oe2016 .joe24-logo .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .joe24-logo .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #324291;
+}
+.oe2016 .joe24-logo .defaultChannelBackgroundColor,
+.oe2016 .joe24-logo .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.joe24-logo:hover:after,
+.oe2016 .headerNav .headerNavMainItem.joe24-logo.active:after,
+.oe2016 .joe24-logo .videoEntry .topVideoCircle {
+        background-color: #324291;
+}
+.oe2016 .joe24-logo.standardHeadline h2,
+.oe2016 .joe24-logo.bigHeadline .bigHeadlineText {
+        background-color: #324291;
+        background-image: linear-gradient(to right, #324291 65%, #4e61c2);
+}
+.oe2016 .joe24-logo .commentLineLink {
+        border-bottom: 1px solid #324291;
+}
+.oe2016 .joe24-logo .commentLineLink:hover {
+        border-bottom: 1px solid #324291;
+        text-decoration: none;
+        color: #fff;
+        background-color: #324291;
+        background-image: linear-gradient(to right, #324291, #4e61c2);
+}
+.oe2016 .joe24-logo .content .storyWrapper:hover,
+.oe2016 .joe24-logo .content .column a:hover {
+        border-top: 6px solid #324291;
+}
+.oe2016 .stars-oesterreich .defaultChannelColor,
+.oe2016 .stars-oesterreich .defaultChannelHoverColor:hover,
+.oe2016 .stars-oesterreich .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-oesterreich .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-oesterreich .content .column a:hover .storyPreTitle,
+.oe2016 .stars-oesterreich .content .column a:hover .storyTitle,
+.oe2016 .stars-oesterreich .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-oesterreich .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-oesterreich .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-oesterreich .videoEntry a:hover .videoTitle,
+.oe2016 .stars-oesterreich .slide a:hover .storyPreTitle,
+.oe2016 .stars-oesterreich .slide a:hover .storyTitle,
+.oe2016 .stars-oesterreich .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-oesterreich .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ff776e;
+}
+.oe2016 .stars-oesterreich .defaultChannelBackgroundColor,
+.oe2016 .stars-oesterreich .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-oesterreich:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-oesterreich.active:after,
+.oe2016 .stars-oesterreich .videoEntry .topVideoCircle {
+        background-color: #ff776e;
+}
+.oe2016 .stars-oesterreich.standardHeadline h2,
+.oe2016 .stars-oesterreich.bigHeadline .bigHeadlineText {
+        background-color: #ff776e;
+        background-image: linear-gradient(to right, #ff776e 65%, #ffca49);
+}
+.oe2016 .stars-oesterreich .commentLineLink {
+        border-bottom: 1px solid #ff776e;
+}
+.oe2016 .stars-oesterreich .commentLineLink:hover {
+        border-bottom: 1px solid #ff776e;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff776e;
+        background-image: linear-gradient(to right, #ff776e, #ffca49);
+}
+.oe2016 .stars-oesterreich .content .storyWrapper:hover,
+.oe2016 .stars-oesterreich .content .column a:hover {
+        border-top: 6px solid #ff776e;
+}
+.oe2016 .stars-international .defaultChannelColor,
+.oe2016 .stars-international .defaultChannelHoverColor:hover,
+.oe2016 .stars-international .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-international .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-international .content .column a:hover .storyPreTitle,
+.oe2016 .stars-international .content .column a:hover .storyTitle,
+.oe2016 .stars-international .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-international .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-international .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-international .videoEntry a:hover .videoTitle,
+.oe2016 .stars-international .slide a:hover .storyPreTitle,
+.oe2016 .stars-international .slide a:hover .storyTitle,
+.oe2016 .stars-international .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-international .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #0052b3;
+}
+.oe2016 .stars-international .defaultChannelBackgroundColor,
+.oe2016 .stars-international .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-international:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-international.active:after,
+.oe2016 .stars-international .videoEntry .topVideoCircle {
+        background-color: #0052b3;
+}
+.oe2016 .stars-international.standardHeadline h2,
+.oe2016 .stars-international.bigHeadline .bigHeadlineText {
+        background-color: #0052b3;
+        background-image: linear-gradient(to right, #0052b3 65%, #ffca49);
+}
+.oe2016 .stars-international .commentLineLink {
+        border-bottom: 1px solid #0052b3;
+}
+.oe2016 .stars-international .commentLineLink:hover {
+        border-bottom: 1px solid #0052b3;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0052b3;
+        background-image: linear-gradient(to right, #0052b3, #ffca49);
+}
+.oe2016 .stars-international .content .storyWrapper:hover,
+.oe2016 .stars-international .content .column a:hover {
+        border-top: 6px solid #0052b3;
+}
+.oe2016 .stars-deutschland .defaultChannelColor,
+.oe2016 .stars-deutschland .defaultChannelHoverColor:hover,
+.oe2016 .stars-deutschland .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-deutschland .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-deutschland .content .column a:hover .storyPreTitle,
+.oe2016 .stars-deutschland .content .column a:hover .storyTitle,
+.oe2016 .stars-deutschland .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-deutschland .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-deutschland .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-deutschland .videoEntry a:hover .videoTitle,
+.oe2016 .stars-deutschland .slide a:hover .storyPreTitle,
+.oe2016 .stars-deutschland .slide a:hover .storyTitle,
+.oe2016 .stars-deutschland .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-deutschland .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #d0113a;
+}
+.oe2016 .stars-deutschland .defaultChannelBackgroundColor,
+.oe2016 .stars-deutschland .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-deutschland:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-deutschland.active:after,
+.oe2016 .stars-deutschland .videoEntry .topVideoCircle {
+        background-color: #d0113a;
+}
+.oe2016 .stars-deutschland.standardHeadline h2,
+.oe2016 .stars-deutschland.bigHeadline .bigHeadlineText {
+        background-color: #d0113a;
+        background-image: linear-gradient(to right, #d0113a 65%, #ffca49);
+}
+.oe2016 .stars-deutschland .commentLineLink {
+        border-bottom: 1px solid #d0113a;
+}
+.oe2016 .stars-deutschland .commentLineLink:hover {
+        border-bottom: 1px solid #d0113a;
+        text-decoration: none;
+        color: #fff;
+        background-color: #d0113a;
+        background-image: linear-gradient(to right, #d0113a, #ffca49);
+}
+.oe2016 .stars-deutschland .content .storyWrapper:hover,
+.oe2016 .stars-deutschland .content .column a:hover {
+        border-top: 6px solid #d0113a;
+}
+.oe2016 .stars-royals .defaultChannelColor,
+.oe2016 .stars-royals .defaultChannelHoverColor:hover,
+.oe2016 .stars-royals .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-royals .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-royals .content .column a:hover .storyPreTitle,
+.oe2016 .stars-royals .content .column a:hover .storyTitle,
+.oe2016 .stars-royals .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-royals .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-royals .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-royals .videoEntry a:hover .videoTitle,
+.oe2016 .stars-royals .slide a:hover .storyPreTitle,
+.oe2016 .stars-royals .slide a:hover .storyTitle,
+.oe2016 .stars-royals .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-royals .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #313b69;
+}
+.oe2016 .stars-royals .defaultChannelBackgroundColor,
+.oe2016 .stars-royals .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-royals:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-royals.active:after,
+.oe2016 .stars-royals .videoEntry .topVideoCircle {
+        background-color: #313b69;
+}
+.oe2016 .stars-royals.standardHeadline h2,
+.oe2016 .stars-royals.bigHeadline .bigHeadlineText {
+        background-color: #313b69;
+        background-image: linear-gradient(to right, #313b69 65%, #ffca49);
+}
+.oe2016 .stars-royals .commentLineLink {
+        border-bottom: 1px solid #313b69;
+}
+.oe2016 .stars-royals .commentLineLink:hover {
+        border-bottom: 1px solid #313b69;
+        text-decoration: none;
+        color: #fff;
+        background-color: #313b69;
+        background-image: linear-gradient(to right, #313b69, #ffca49);
+}
+.oe2016 .stars-royals .content .storyWrapper:hover,
+.oe2016 .stars-royals .content .column a:hover {
+        border-top: 6px solid #313b69;
+}
+.oe2016 .stars-partys .defaultChannelColor,
+.oe2016 .stars-partys .defaultChannelHoverColor:hover,
+.oe2016 .stars-partys .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-partys .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-partys .content .column a:hover .storyPreTitle,
+.oe2016 .stars-partys .content .column a:hover .storyTitle,
+.oe2016 .stars-partys .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-partys .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-partys .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-partys .videoEntry a:hover .videoTitle,
+.oe2016 .stars-partys .slide a:hover .storyPreTitle,
+.oe2016 .stars-partys .slide a:hover .storyTitle,
+.oe2016 .stars-partys .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-partys .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #b1167f;
+}
+.oe2016 .stars-partys .defaultChannelBackgroundColor,
+.oe2016 .stars-partys .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-partys:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-partys.active:after,
+.oe2016 .stars-partys .videoEntry .topVideoCircle {
+        background-color: #b1167f;
+}
+.oe2016 .stars-partys.standardHeadline h2,
+.oe2016 .stars-partys.bigHeadline .bigHeadlineText {
+        background-color: #b1167f;
+        background-image: linear-gradient(to right, #b1167f 65%, #ffca49);
+}
+.oe2016 .stars-partys .commentLineLink {
+        border-bottom: 1px solid #b1167f;
+}
+.oe2016 .stars-partys .commentLineLink:hover {
+        border-bottom: 1px solid #b1167f;
+        text-decoration: none;
+        color: #fff;
+        background-color: #b1167f;
+        background-image: linear-gradient(to right, #b1167f, #ffca49);
+}
+.oe2016 .stars-partys .content .storyWrapper:hover,
+.oe2016 .stars-partys .content .column a:hover {
+        border-top: 6px solid #b1167f;
+}
+.oe2016 .stars-mode .defaultChannelColor,
+.oe2016 .stars-mode .defaultChannelHoverColor:hover,
+.oe2016 .stars-mode .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-mode .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-mode .content .column a:hover .storyPreTitle,
+.oe2016 .stars-mode .content .column a:hover .storyTitle,
+.oe2016 .stars-mode .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-mode .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-mode .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-mode .videoEntry a:hover .videoTitle,
+.oe2016 .stars-mode .slide a:hover .storyPreTitle,
+.oe2016 .stars-mode .slide a:hover .storyTitle,
+.oe2016 .stars-mode .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-mode .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #ec5a9d;
+}
+.oe2016 .stars-mode .defaultChannelBackgroundColor,
+.oe2016 .stars-mode .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-mode:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-mode.active:after,
+.oe2016 .stars-mode .videoEntry .topVideoCircle {
+        background-color: #ec5a9d;
+}
+.oe2016 .stars-mode.standardHeadline h2,
+.oe2016 .stars-mode.bigHeadline .bigHeadlineText {
+        background-color: #ec5a9d;
+        background-image: linear-gradient(to right, #ec5a9d 65%, #ffca49);
+}
+.oe2016 .stars-mode .commentLineLink {
+        border-bottom: 1px solid #ec5a9d;
+}
+.oe2016 .stars-mode .commentLineLink:hover {
+        border-bottom: 1px solid #ec5a9d;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ec5a9d;
+        background-image: linear-gradient(to right, #ec5a9d, #ffca49);
+}
+.oe2016 .stars-mode .content .storyWrapper:hover,
+.oe2016 .stars-mode .content .column a:hover {
+        border-top: 6px solid #ec5a9d;
+}
+.oe2016 .stars-beauty .defaultChannelColor,
+.oe2016 .stars-beauty .defaultChannelHoverColor:hover,
+.oe2016 .stars-beauty .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-beauty .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-beauty .content .column a:hover .storyPreTitle,
+.oe2016 .stars-beauty .content .column a:hover .storyTitle,
+.oe2016 .stars-beauty .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-beauty .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-beauty .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-beauty .videoEntry a:hover .videoTitle,
+.oe2016 .stars-beauty .slide a:hover .storyPreTitle,
+.oe2016 .stars-beauty .slide a:hover .storyTitle,
+.oe2016 .stars-beauty .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-beauty .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #cd0849;
+}
+.oe2016 .stars-beauty .defaultChannelBackgroundColor,
+.oe2016 .stars-beauty .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-beauty:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-beauty.active:after,
+.oe2016 .stars-beauty .videoEntry .topVideoCircle {
+        background-color: #cd0849;
+}
+.oe2016 .stars-beauty.standardHeadline h2,
+.oe2016 .stars-beauty.bigHeadline .bigHeadlineText {
+        background-color: #cd0849;
+        background-image: linear-gradient(to right, #cd0849 65%, #ffca49);
+}
+.oe2016 .stars-beauty .commentLineLink {
+        border-bottom: 1px solid #cd0849;
+}
+.oe2016 .stars-beauty .commentLineLink:hover {
+        border-bottom: 1px solid #cd0849;
+        text-decoration: none;
+        color: #fff;
+        background-color: #cd0849;
+        background-image: linear-gradient(to right, #cd0849, #ffca49);
+}
+.oe2016 .stars-beauty .content .storyWrapper:hover,
+.oe2016 .stars-beauty .content .column a:hover {
+        border-top: 6px solid #cd0849;
+}
+.oe2016 .stars-musik .defaultChannelColor,
+.oe2016 .stars-musik .defaultChannelHoverColor:hover,
+.oe2016 .stars-musik .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-musik .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-musik .content .column a:hover .storyPreTitle,
+.oe2016 .stars-musik .content .column a:hover .storyTitle,
+.oe2016 .stars-musik .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-musik .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-musik .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-musik .videoEntry a:hover .videoTitle,
+.oe2016 .stars-musik .slide a:hover .storyPreTitle,
+.oe2016 .stars-musik .slide a:hover .storyTitle,
+.oe2016 .stars-musik .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-musik .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #f89845;
+}
+.oe2016 .stars-musik .defaultChannelBackgroundColor,
+.oe2016 .stars-musik .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-musik:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-musik.active:after,
+.oe2016 .stars-musik .videoEntry .topVideoCircle {
+        background-color: #f89845;
+}
+.oe2016 .stars-musik.standardHeadline h2,
+.oe2016 .stars-musik.bigHeadline .bigHeadlineText {
+        background-color: #f89845;
+        background-image: linear-gradient(to right, #f89845 65%, #ffca49);
+}
+.oe2016 .stars-musik .commentLineLink {
+        border-bottom: 1px solid #f89845;
+}
+.oe2016 .stars-musik .commentLineLink:hover {
+        border-bottom: 1px solid #f89845;
+        text-decoration: none;
+        color: #fff;
+        background-color: #f89845;
+        background-image: linear-gradient(to right, #f89845, #ffca49);
+}
+.oe2016 .stars-musik .content .storyWrapper:hover,
+.oe2016 .stars-musik .content .column a:hover {
+        border-top: 6px solid #f89845;
+}
+.oe2016 .stars-kultur .defaultChannelColor,
+.oe2016 .stars-kultur .defaultChannelHoverColor:hover,
+.oe2016 .stars-kultur .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-kultur .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-kultur .content .column a:hover .storyPreTitle,
+.oe2016 .stars-kultur .content .column a:hover .storyTitle,
+.oe2016 .stars-kultur .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-kultur .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-kultur .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-kultur .videoEntry a:hover .videoTitle,
+.oe2016 .stars-kultur .slide a:hover .storyPreTitle,
+.oe2016 .stars-kultur .slide a:hover .storyTitle,
+.oe2016 .stars-kultur .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-kultur .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #52aada;
+}
+.oe2016 .stars-kultur .defaultChannelBackgroundColor,
+.oe2016 .stars-kultur .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-kultur:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-kultur.active:after,
+.oe2016 .stars-kultur .videoEntry .topVideoCircle {
+        background-color: #52aada;
+}
+.oe2016 .stars-kultur.standardHeadline h2,
+.oe2016 .stars-kultur.bigHeadline .bigHeadlineText {
+        background-color: #52aada;
+        background-image: linear-gradient(to right, #52aada 65%, #ffca49);
+}
+.oe2016 .stars-kultur .commentLineLink {
+        border-bottom: 1px solid #52aada;
+}
+.oe2016 .stars-kultur .commentLineLink:hover {
+        border-bottom: 1px solid #52aada;
+        text-decoration: none;
+        color: #fff;
+        background-color: #52aada;
+        background-image: linear-gradient(to right, #52aada, #ffca49);
+}
+.oe2016 .stars-kultur .content .storyWrapper:hover,
+.oe2016 .stars-kultur .content .column a:hover {
+        border-top: 6px solid #52aada;
+}
+.oe2016 .stars-tv .defaultChannelColor,
+.oe2016 .stars-tv .defaultChannelHoverColor:hover,
+.oe2016 .stars-tv .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-tv .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-tv .content .column a:hover .storyPreTitle,
+.oe2016 .stars-tv .content .column a:hover .storyTitle,
+.oe2016 .stars-tv .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-tv .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-tv .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-tv .videoEntry a:hover .videoTitle,
+.oe2016 .stars-tv .slide a:hover .storyPreTitle,
+.oe2016 .stars-tv .slide a:hover .storyTitle,
+.oe2016 .stars-tv .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-tv .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #5272da;
+}
+.oe2016 .stars-tv .defaultChannelBackgroundColor,
+.oe2016 .stars-tv .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-tv:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-tv.active:after,
+.oe2016 .stars-tv .videoEntry .topVideoCircle {
+        background-color: #5272da;
+}
+.oe2016 .stars-tv.standardHeadline h2,
+.oe2016 .stars-tv.bigHeadline .bigHeadlineText {
+        background-color: #5272da;
+        background-image: linear-gradient(to right, #5272da 65%, #ffca49);
+}
+.oe2016 .stars-tv .commentLineLink {
+        border-bottom: 1px solid #5272da;
+}
+.oe2016 .stars-tv .commentLineLink:hover {
+        border-bottom: 1px solid #5272da;
+        text-decoration: none;
+        color: #fff;
+        background-color: #5272da;
+        background-image: linear-gradient(to right, #5272da, #ffca49);
+}
+.oe2016 .stars-tv .content .storyWrapper:hover,
+.oe2016 .stars-tv .content .column a:hover {
+        border-top: 6px solid #5272da;
+}
+.oe2016 .stars-kino .defaultChannelColor,
+.oe2016 .stars-kino .defaultChannelHoverColor:hover,
+.oe2016 .stars-kino .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-kino .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-kino .content .column a:hover .storyPreTitle,
+.oe2016 .stars-kino .content .column a:hover .storyTitle,
+.oe2016 .stars-kino .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-kino .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-kino .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-kino .videoEntry a:hover .videoTitle,
+.oe2016 .stars-kino .slide a:hover .storyPreTitle,
+.oe2016 .stars-kino .slide a:hover .storyTitle,
+.oe2016 .stars-kino .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .stars-kino .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #c9542f;
+}
+.oe2016 .stars-kino .defaultChannelBackgroundColor,
+.oe2016 .stars-kino .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-kino:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-kino.active:after,
+.oe2016 .stars-kino .videoEntry .topVideoCircle {
+        background-color: #c9542f;
+}
+.oe2016 .stars-kino.standardHeadline h2,
+.oe2016 .stars-kino.bigHeadline .bigHeadlineText {
+        background-color: #c9542f;
+        background-image: linear-gradient(to right, #c9542f 65%, #ffca49);
+}
+.oe2016 .stars-kino .commentLineLink {
+        border-bottom: 1px solid #c9542f;
+}
+.oe2016 .stars-kino .commentLineLink:hover {
+        border-bottom: 1px solid #c9542f;
+        text-decoration: none;
+        color: #fff;
+        background-color: #c9542f;
+        background-image: linear-gradient(to right, #c9542f, #ffca49);
+}
+.oe2016 .stars-kino .content .storyWrapper:hover,
+.oe2016 .stars-kino .content .column a:hover {
+        border-top: 6px solid #c9542f;
+}
+.oe2016 .games24 .defaultChannelColor,
+.oe2016 .games24 .defaultChannelHoverColor:hover,
+.oe2016 .games24 .content .storyWrapper:hover .story_pretitle,
+.oe2016 .games24 .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .games24 .content .column a:hover .storyPreTitle,
+.oe2016 .games24 .content .column a:hover .storyTitle,
+.oe2016 .games24 .content .column .storyPreTitle.withMarker:before,
+.oe2016 .games24 .sidebar .teasers a:hover .storyTitle,
+.oe2016 .games24 .videoEntry a:hover .videoPreTitle,
+.oe2016 .games24 .videoEntry a:hover .videoTitle,
+.oe2016 .games24 .slide a:hover .storyPreTitle,
+.oe2016 .games24 .slide a:hover .storyTitle,
+.oe2016 .games24 .teaserStoryBox:hover .teaserStoryBoxPreTitle,
+.oe2016 .games24 .teaserStoryBox:hover .teaserStoryBoxTitle {
+        color: #000000;
+}
+.oe2016 .games24 .defaultChannelBackgroundColor,
+.oe2016 .games24 .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.games24:hover:after,
+.oe2016 .headerNav .headerNavMainItem.games24.active:after,
+.oe2016 .games24 .videoEntry .topVideoCircle {
+        background-color: #000000;
+}
+.oe2016 .games24.standardHeadline h2,
+.oe2016 .games24.bigHeadline .bigHeadlineText {
+        background-color: #000000;
+        background-image: linear-gradient(to right, #000000 65%, #333333);
+}
+.oe2016 .games24 .commentLineLink {
+        border-bottom: 1px solid #000000;
+}
+.oe2016 .games24 .commentLineLink:hover {
+        border-bottom: 1px solid #000000;
+        text-decoration: none;
+        color: #fff;
+        background-color: #000000;
+        background-image: linear-gradient(to right, #000000, #333333);
+}
+.oe2016 .games24 .content .storyWrapper:hover,
+.oe2016 .games24 .content .column a:hover {
+        border-top: 6px solid #000000;
+}
+
+
+/* (ws) 2016-03-07 Ausnahmen */
+
+.oe2016 .society.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #ff746e);
+}
+
+.oe2016 .society .defaultChannelBackgroundColor,
+.oe2016 .society .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.society:hover::after,
+.oe2016 .headerNav .headerNavMainItem.society.active::after,
+.oe2016 .society .videoEntry .topVideoCircle {
+    background-color: #ffca49;
+}
+
+/* (pj) 2016-04-26 Ausnahmen Stars24 */
+
+.oe2016 .society .storyTime.defaultChannelBackgroundColor {
+    background-color: #ff2b22;
+}
+
+.oe2016 .stars-oesterreich.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #ff776e);
+}
+
+.oe2016 .stars-international.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #0052b3);
+}
+
+.oe2016 .stars-deutschland.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #d0113a);
+}
+
+.oe2016 .stars-royals.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #313b69);
+}
+
+.oe2016 .stars-partys.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #b1167f);
+}
+
+.oe2016 .stars-mode.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #ec5a9d);
+}
+
+.oe2016 .stars-beauty.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #cd0849);
+}
+
+.oe2016 .stars-musik.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #f89845);
+}
+
+.oe2016 .stars-kultur.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #52aada);
+}
+
+.oe2016 .stars-tv.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #5272da);
+}
+
+.oe2016 .stars-kino.standardHeadline h2 {
+    background-color: #ffca49;
+    background-image: linear-gradient(to right, #ffca49 65%, #c9542f);
+}
+
+.oe2016 .stars-oesterreich .defaultChannelColor,
+.oe2016 .stars-oesterreich .defaultChannelHoverColor:hover,
+.oe2016 .stars-oesterreich .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-oesterreich .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-oesterreich .content .column a:hover .storyPreTitle,
+.oe2016 .stars-oesterreich .content .column a:hover .storyTitle,
+.oe2016 .stars-oesterreich .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-oesterreich .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-oesterreich .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-oesterreich .videoEntry a:hover .videoTitle,
+.oe2016 .stars-oesterreich .slide a:hover .storyPreTitle,
+.oe2016 .stars-oesterreich .slide a:hover .storyTitle {
+    color: #ff2b22;
+}
+
+.oe2016 .stars-oesterreich .defaultChannelBackgroundColor,
+.oe2016 .stars-oesterreich .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-oesterreich:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-oesterreich.active:after,
+.oe2016 .stars-oesterreich .videoEntry .topVideoCircle {
+        background-color: #ff2b22;
+}
+
+.oe2016 .stars-oesterreich .content .storyWrapper:hover,
+.oe2016 .stars-oesterreich .content .column a:hover {
+        border-top: 6px solid #ff2b22;
+}
+
+.oe2016 .stars-deutschland .defaultChannelColor,
+.oe2016 .stars-deutschland .defaultChannelHoverColor:hover,
+.oe2016 .stars-deutschland .content .storyWrapper:hover .story_pretitle,
+.oe2016 .stars-deutschland .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .stars-deutschland .content .column a:hover .storyPreTitle,
+.oe2016 .stars-deutschland .content .column a:hover .storyTitle,
+.oe2016 .stars-deutschland .content .column .storyPreTitle.withMarker:before,
+.oe2016 .stars-deutschland .sidebar .teasers a:hover .storyTitle,
+.oe2016 .stars-deutschland .videoEntry a:hover .videoPreTitle,
+.oe2016 .stars-deutschland .videoEntry a:hover .videoTitle,
+.oe2016 .stars-deutschland .slide a:hover .storyPreTitle,
+.oe2016 .stars-deutschland .slide a:hover .storyTitle {
+    color: #000;
+}
+
+.oe2016 .stars-deutschland .defaultChannelBackgroundColor,
+.oe2016 .stars-deutschland .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.stars-deutschland:hover:after,
+.oe2016 .headerNav .headerNavMainItem.stars-deutschland.active:after,
+.oe2016 .stars-deutschland .videoEntry .topVideoCircle {
+        background-color: #000;
+}
+
+.oe2016 .stars-deutschland .content .storyWrapper:hover,
+.oe2016 .stars-deutschland .content .column a:hover {
+        border-top: 6px solid #000;
+}
+
+/* (mh) 2016-11-22 antennesalzburg.oe24.at // */
+.oe2016 .antenne .defaultChannelColor,
+.oe2016 .antenne .defaultChannelHoverColor:hover,
+.oe2016 .antenne .content .storyWrapper:hover .story_pretitle,
+.oe2016 .antenne .content .storyWrapper:hover .story_pagetitle,
+.oe2016 .antenne .content .column a:hover .storyPreTitle,
+.oe2016 .antenne .content .column a:hover .storyTitle,
+.oe2016 .antenne .content .column .storyPreTitle.withMarker:before,
+.oe2016 .antenne .sidebar .teasers a:hover .storyTitle,
+.oe2016 .antenne .videoEntry a:hover .videoPreTitle,
+.oe2016 .antenne .videoEntry a:hover .videoTitle,
+.oe2016 .antenne .slide a:hover .storyPreTitle,
+.oe2016 .antenne .slide a:hover .storyTitle {
+        color: #E3001D;
+}
+.oe2016 .antenne .defaultChannelBackgroundColor,
+.oe2016 .antenne .sidebar .defaultChannelBackgroundColor,
+.oe2016 .headerNav .headerNavMainItem.antenne:hover:after,
+.oe2016 .headerNav .headerNavMainItem.antenne.active:after,
+.oe2016 .antenne .videoEntry .topVideoCircle {
+        background-color: #F8EC00;
+        color: #000;
+}
+.oe2016 .antenne.standardHeadline h2,
+.oe2016 .antenne.bigHeadline .bigHeadlineText {
+        background-color: #F8EC00;
+        background-image: linear-gradient(to right, #F8EC00 65%, #fff);
+}
+.oe2016 .antenne .commentLineLink {
+        border-bottom: 1px solid #F8EC00;
+}
+.oe2016 .antenne .commentLineLink:hover {
+        border-bottom: 1px solid #F8EC00;
+        text-decoration: none;
+        color: #fff;
+        background-color: #F8EC00;
+        background-image: linear-gradient(to right, #F8EC00, #fff);
+}
+.oe2016 .antenne .content .storyWrapper:hover,
+.oe2016 .antenne .content .column a:hover {
+        border-top: 6px solid #F8EC00;
+}
+.oe2016 .antenne.standardHeadline h2 a {
+        color:#000;
+}
+.oe2016 .antenne .contentSliderBoxHeadline {
+        color: #000;
+}
+/* (mh) 2016-11-22 antennesalzburg.oe24.at // */

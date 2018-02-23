@@ -1,0 +1,105 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.headerNavPortal {
+    background-color: #2b3349;
+}
+.headerNavPortal a,
+.headerNavPortal a:link,
+.headerNavPortal a:visited,
+.headerNavPortal a:active {
+    color: #6bb5c6;
+}
+.headerNavPortal a:hover {
+    color: #fff;
+    background-color: #3e4969;
+}
+
+.headerNavPortal .headerNavWeather {
+    width: 160px;
+    position: relative;
+    color: #e2e2e2;
+}
+.headerNavPortal .headerNavWeather:hover {
+    color: #fff;
+}
+.headerNavPortal .headerNavWeather .icon_weather {
+    font-size: 1.375rem;
+    position: absolute;
+    top: -1px;
+    top: 0;
+}
+.headerNavPortal .headerNavWeatherDegree {
+    padding-left: 28px;
+}
+.headerNavPortal .headerNavSearch {
+    font-size: 1rem;
+    width: 38px;
+    position: relative;
+    /*background-color: #ad5;*/
+}
+.headerNavPortal .headerNavSearch .icon {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.headerNavWeatherDropdown {
+    background-color: #2b3349;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    display: none;
+    /*z-index: 1;*/
+    z-index: 2;
+
+    /*width: 160px;*/
+}
+.headerNavWeatherDropdown.show {
+    display: block;
+}
+.headerNavWeatherDropdown li {
+    clear: both;
+    border-top: 1px solid #6778a6;
+
+    /*width: 100%;*/
+    /*display: block;*/
+}
+.headerNavWeatherDropdown li:first-child {
+    border-top: none;
+}
+.headerNavWeatherDropdown a {
+    display: block;
+}
+.headerNavWeatherDropdown a:hover {
+    background-color: #3e4969;
+}
+.headerNavWeatherDropdown span {
+    font-size: .75rem;
+    line-height: 1.8;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 1px 4px;
+    color: #e2e2e2;
+    float: left;
+}
+.headerNavWeatherDropdown .icon_weather {
+    font-size: 1.375rem;
+    line-height: 1;
+    width: 30px;
+}
+.headerNavWeatherDropdown .headerNavWeatherDegree {
+    text-align: right;
+    width: 30px;
+}
+.headerNavWeatherDropdown .headerNavWeatherCity {
+    width: 100px;
+}
+

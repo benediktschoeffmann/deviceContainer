@@ -446,6 +446,17 @@ class Oe24App {
             $this->setConfig('articlesPerCategory', 0);
             $boxesOfCategory = $category['boxes'];
 
+            // (bs) 2018-02-19 Niki suddenly wants to use headlines for categories again.
+            if ($categoryName != 'frontpage') {
+                tpl('oe24.oe24.device.oe24app.tpl.categoryHeadline.categoryHeadline',
+                    array(
+                        'device'    => $this,
+                        'category'  => $categoryName,
+                        'channelColor'     => $this->getColorFromCategory($category),
+                    )
+                );
+            }
+
             foreach ($boxesOfCategory as $key => $boxEntry) {
 
                 // (bs) 2017-11-24 Niki will, dass in allen Kategorien ausser Frontpage max. 19

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/oe24_oe24/!svn/ver/6829/release/1.2/tpl/__splitArea/user
+END
+lostUsername.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/oe24_oe24/!svn/ver/6829/release/1.2/tpl/__splitArea/user/lostUsername.tpl
+END
+lostPassword.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/oe24_oe24/!svn/ver/6829/release/1.2/tpl/__splitArea/user/lostPassword.tpl
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/oe24_oe24/!svn/ver/4531/release/1.2/tpl/__splitArea/user/index.tpl
+END
+login.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/oe24_oe24/!svn/ver/7413/release/1.2/tpl/__splitArea/user/login.tpl
+END
+changePass.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/oe24_oe24/!svn/ver/7402/release/1.2/tpl/__splitArea/user/changePass.tpl
+END
+user.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/oe24_oe24/!svn/ver/6829/release/1.2/tpl/__splitArea/user/user.tpl
+END

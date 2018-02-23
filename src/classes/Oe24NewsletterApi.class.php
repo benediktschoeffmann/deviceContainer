@@ -1201,6 +1201,12 @@ class Oe24NewsletterApi
                 }
             }
 
+            // do not register entries with first- or lastname consists of at least one number
+            if ($sessionCheck) {
+                $sessionCheck = (preg_match('/[0-9]/i', $firstname)) ? false : $sessionCheck;
+                $sessionCheck = (preg_match('/[0-9]/i', $firstname)) ? false : $sessionCheck;
+            }
+
         }
 
         // -------------------------------------------------------------------------------------

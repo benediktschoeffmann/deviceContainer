@@ -1,0 +1,47 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.content .marketingTeaser {
+	font-size: 1px;
+	line-height: 1px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	background-color: #fff;
+}
+.content .marketingTeaser a {
+	text-align: center;
+	display: block;
+}
+.content .marketingTeaser img {
+	width: auto;
+	max-width: 620px;
+}
+.sidebar .marketingTeaser {
+	font-size: 1px;
+	line-height: 1px;
+	text-align: right;
+	width: 300px;
+	height: 153px;
+	max-width: 300px;
+	max-height: 153px;
+	overflow: hidden;
+	margin-left: 20px;
+	background-color: #fff;
+	position: relative;
+}
+.sidebar .marketingTeaser a {
+	text-align: right;
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+.sidebar .marketingTeaser img {
+	width: 300px;
+	max-width: 300px;
+}
+

@@ -1,0 +1,582 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+
+.xlBox{
+    padding: 0;
+}
+
+.xlBoxHeadline {
+	width: 960px;
+    margin: 0 auto !important;
+    padding: 5px 5px 5px 5px;
+}
+.xlBoxHeadlineInner{
+    width: 940px;
+    padding: 5px 0 0;
+}
+
+
+.xlBox .xlBoxTop{
+	padding: 0 5px 0 10px;
+}
+
+.xlBox .xlBoxTop img{
+	max-width:940px;
+	border: 1px solid #FFF;
+}
+
+.xlBox .textContainerOverlay{
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+.xlBox .xlBoxBottomHeadline{
+	margin: 0 5px;
+}
+.xlBox .textContainerOverlayInner{
+	bottom: 1px;
+	left: 1px;
+	overflow: hidden;
+	padding: 5px;
+	position: absolute;
+	width: 938px;
+	height: 400px;
+
+	/* Old Browsers */
+    background: rgba(0,0,0,0);
+    /* FF3.6+ */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* Chrome, Safari4+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(65%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.8)));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* IE 10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* W3C */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+}
+.xlBox .xlBoxTop .xlBoxBottomTitle{
+	font-size: 3rem;
+}
+
+.xlBox.marginTop {
+    margin-top: 10px;
+}
+.xlBox.marginBottom {
+    margin-bottom: 10px;
+}
+.xlBox .paddingBottom{
+	padding-bottom: 5px;
+}
+.xlBox .paddingTop{
+	padding-top: 5px;
+}
+.xlBox .xlBoxHeadline.paddingTop{
+	padding-top: 10px;
+}
+
+.xlBoxTop {
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px 0 0;
+}
+.xlBoxTop{
+    padding: 0;
+}
+.xlBoxTop.marginTop {
+    margin-top: 10px;
+}
+.xlBoxTop.marginBottom {
+    margin-bottom: 10px;
+}
+
+/* Box bottom mit bis zu drei Artikeln */
+.xlBoxBottom {
+    padding: 0 15px;
+}
+.xlBoxBottom.marginTop {
+    margin-top: 10px;
+}
+.xlBoxBottom.marginBottom {
+    margin-bottom: 10px;
+}
+
+.xlBoxBottomInner {
+    padding: 0 5px;
+    /*background-color: #204d6e;*/
+    background-color: #ebebeb;
+}
+.xlBoxBottomInner.paddingTop {
+    padding-top: 5px;
+}
+.xlBoxBottomInner.paddingBottom {
+    padding-bottom: 5px;
+}
+
+
+.xlBoxBottomHeadline {
+    display: block;
+
+    padding: 0 10px;
+    /*margin: 5px;*/
+
+    margin: 5px 5px -6px;
+    /*margin: 5px 5px -4px;*/
+    /*margin: 5px 5px -2px;*/
+
+    border: 1px solid #fff;
+
+    -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+    z-index: 1;
+}
+
+.xlBoxBottomHeadline span {
+    font-family: "oe24",sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: .4rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+.xlBoxBottomHeadline a:hover{
+    text-decoration: none;
+}
+
+.xlBoxBottomStory {
+    padding: 5px;
+    float: left;
+}
+.xlBoxBottomStory.columnSmall {
+    width: 316px;
+    margin-left: 1px;
+}
+.xlBoxBottomStory.columnSmall.firstStory {
+    margin-left: 0;
+}
+.xlBoxBottomStory.columnBig {
+    width: 633px;
+    height: 312px;
+}
+
+
+.xlBoxBottomImageBox {
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.xlBoxBottomStory.columnSmall img {
+    width: 100%;
+}
+.xlBoxBottomStory.columnBig img {
+    width: 100%;
+    margin-top: -10px;
+}
+
+
+.xlBoxBottomStoryBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+}
+
+
+.xlBoxBottomOverlay {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,.6) 100%);*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+    /* http://www.cssmatic.com/gradient-generator ... */
+
+    /* Old Browsers */
+    background: rgba(0,0,0,0);
+    /* FF3.6+ */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* Chrome, Safari4+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(65%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.8)));
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* IE 10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+    /* W3C */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 65%, rgba(0,0,0,0.8) 100%);
+}
+
+.xlBoxBottomStoryText {
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    z-index: 20;
+    color: #fff;
+}
+
+
+.xlBoxBottomLiveTicker,
+.xlBoxBottomPreTitle,
+.xlBoxBottomTitle {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.xlBoxBottomLiveTicker {
+    display: none;
+}
+.xlBoxBottomPreTitle {
+    font-size: .875rem;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    margin-bottom: 3px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xlBoxBottomTitle {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    display: block;
+}
+.xlBoxBottomStory.columnBig .xlBoxBottomTitle {
+    font-size: 3rem;
+}
+
+
+.xlBoxBottomStory .videoButtonOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.xlBoxBottomStory .videoButtonOverlay svg {
+    width: 140px;
+    height: 49px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+.xlBoxBottomStory:hover .videoButtonOverlay svg .svgTriangle {
+    fill: #fff;
+    stroke: #d0113a;
+}
+
+
+/* Making SVGs Responsive with CSS */
+/* http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/ */
+
+
+.oe2016 .oe24 .svgCaptionBox,
+.oe2016 .oe24 .svgTriangle {
+    fill: #d0113a;
+}
+.oe2016 .oe24 .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #d0113a;
+}
+.oe2016 .news .svgCaptionBox,
+.oe2016 .news .svgTriangle {
+    fill: #d0013a;
+}
+.oe2016 .news .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #d0013a;
+}
+.oe2016 .politik .svgCaptionBox,
+.oe2016 .politik .svgTriangle {
+    fill: #d0013a;
+}
+.oe2016 .politik .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #d0013a;
+}
+.oe2016 .welt .svgCaptionBox,
+.oe2016 .welt .svgTriangle {
+    fill: #0051b2;
+}
+.oe2016 .welt .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #0051b2;
+}
+.oe2016 .oesterreich .svgCaptionBox,
+.oe2016 .oesterreich .svgTriangle {
+    fill: #f50f39;
+}
+.oe2016 .oesterreich .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #f50f39;
+}
+.oe2016 .bundeslaender .svgCaptionBox,
+.oe2016 .bundeslaender .svgTriangle {
+    fill: #f50f39;
+}
+.oe2016 .bundeslaender .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #f50f39;
+}
+.oe2016 .wetter .svgCaptionBox,
+.oe2016 .wetter .svgTriangle {
+    fill: #007ddc;
+}
+.oe2016 .wetter .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #007ddc;
+}
+.oe2016 .sport .svgCaptionBox,
+.oe2016 .sport .svgTriangle {
+    fill: #22b480;
+}
+.oe2016 .sport .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #22b480;
+}
+.oe2016 .sport24 .svgCaptionBox,
+.oe2016 .sport24 .svgTriangle {
+    fill: #d2123b;
+}
+.oe2016 .sport24 .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #d2123b;
+}
+.oe2016 .sport-euro .svgCaptionBox,
+.oe2016 .sport-euro .svgTriangle {
+    fill: #313b69;
+}
+.oe2016 .sport-euro .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #313b69;
+}
+.oe2016 .sport-fussball .svgCaptionBox,
+.oe2016 .sport-fussball .svgTriangle {
+    fill: #22b480;
+}
+.oe2016 .sport-fussball .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #22b480;
+}
+.oe2016 .sport-motorsport .svgCaptionBox,
+.oe2016 .sport-motorsport .svgTriangle {
+    fill: #1d1d1b;
+}
+.oe2016 .sport-motorsport .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #1d1d1b;
+}
+.oe2016 .sport-sportmix .svgCaptionBox,
+.oe2016 .sport-sportmix .svgTriangle {
+    fill: #007edc;
+}
+.oe2016 .sport-sportmix .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #007edc;
+}
+.oe2016 .sport-stars .svgCaptionBox,
+.oe2016 .sport-stars .svgTriangle {
+    fill: #b1177a;
+}
+.oe2016 .sport-stars .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #b1177a;
+}
+.oe2016 .sport-wintersport .svgCaptionBox,
+.oe2016 .sport-wintersport .svgTriangle {
+    fill: #0052b3;
+}
+.oe2016 .sport-wintersport .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #0052b3;
+}
+.oe2016 .money .svgCaptionBox,
+.oe2016 .money .svgTriangle {
+    fill: #174584;
+}
+.oe2016 .money .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #174584;
+}
+.oe2016 .madonna .svgCaptionBox,
+.oe2016 .madonna .svgTriangle {
+    fill: #ec589f;
+}
+.oe2016 .madonna .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ec589f;
+}
+.oe2016 .leute .svgCaptionBox,
+.oe2016 .leute .svgTriangle {
+    fill: #ff2b22;
+}
+.oe2016 .leute .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ff2b22;
+}
+.oe2016 .society .svgCaptionBox,
+.oe2016 .society .svgTriangle {
+    fill: #ff2b22;
+}
+.oe2016 .society .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ff2b22;
+}
+.oe2016 .tv .svgCaptionBox,
+.oe2016 .tv .svgTriangle {
+    fill: #59cad2;
+}
+.oe2016 .tv .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #59cad2;
+}
+.oe2016 .video .svgCaptionBox,
+.oe2016 .video .svgTriangle {
+    fill: #59cad2;
+}
+.oe2016 .video .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #59cad2;
+}
+.oe2016 .gesund24 .svgCaptionBox,
+.oe2016 .gesund24 .svgTriangle {
+    fill: #6a9dff;
+}
+.oe2016 .gesund24 .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #6a9dff;
+}
+.oe2016 .kochen .svgCaptionBox,
+.oe2016 .kochen .svgTriangle {
+    fill: #b11679;
+}
+.oe2016 .kochen .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #b11679;
+}
+.oe2016 .digital .svgCaptionBox,
+.oe2016 .digital .svgTriangle {
+    fill: #708ab9;
+}
+.oe2016 .digital .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #708ab9;
+}
+.oe2016 .reise .svgCaptionBox,
+.oe2016 .reise .svgTriangle {
+    fill: #ff6200;
+}
+.oe2016 .reise .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ff6200;
+}
+.oe2016 .auto .svgCaptionBox,
+.oe2016 .auto .svgTriangle {
+    fill: #2c3564;
+}
+.oe2016 .auto .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #2c3564;
+}
+.oe2016 .stars-oesterreich .svgCaptionBox,
+.oe2016 .stars-oesterreich .svgTriangle {
+    fill: #ff776e;
+}
+.oe2016 .stars-oesterreich .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ff776e;
+}
+.oe2016 .stars-international .svgCaptionBox,
+.oe2016 .stars-international .svgTriangle {
+    fill: #0052b3;
+}
+.oe2016 .stars-international .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #0052b3;
+}
+.oe2016 .stars-deutschland .svgCaptionBox,
+.oe2016 .stars-deutschland .svgTriangle {
+    fill: #d0113a;
+}
+.oe2016 .stars-deutschland .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #d0113a;
+}
+.oe2016 .stars-royals .svgCaptionBox,
+.oe2016 .stars-royals .svgTriangle {
+    fill: #313b69;
+}
+.oe2016 .stars-royals .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #313b69;
+}
+.oe2016 .stars-partys .svgCaptionBox,
+.oe2016 .stars-partys .svgTriangle {
+    fill: #b1167f;
+}
+.oe2016 .stars-partys .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #b1167f;
+}
+.oe2016 .stars-mode .svgCaptionBox,
+.oe2016 .stars-mode .svgTriangle {
+    fill: #ec5a9d;
+}
+.oe2016 .stars-mode .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #ec5a9d;
+}
+.oe2016 .stars-beauty .svgCaptionBox,
+.oe2016 .stars-beauty .svgTriangle {
+    fill: #cd0849;
+}
+.oe2016 .stars-beauty .xlBoxBottomStory:hover .svgTriangle {
+    fill: #fff;
+    stroke: #cd0849;
+}
+
+
+/* SINGLE Box */
+.xlBox.singleImage .xlBoxBottomHeadline {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+.xlBox.singleImage .xlBoxHeadline {
+    padding: 10px 0 0 0;
+}
+.xlBox.singleImage .xlBoxTop {
+    padding: 0 0 0 0;
+    max-width: 100%;
+}
+.xlBox.singleImage .xlBoxTop img {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-top: 1px solid #FFF;
+}

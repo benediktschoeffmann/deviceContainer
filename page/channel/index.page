@@ -1,0 +1,73 @@
+<?php
+/**
+* channel page
+*
+* @url (?<channel>.*)
+* @var channel oe24.core.Channel
+* @var portal oe24.core.Portal
+* @urlManager oe24.oe24
+* @cache 3m
+*/
+
+$legacyService = request()->getGetValue('service');
+if ($legacyService !== NULL) {
+    switch($legacyService) {
+        case 'sitemap':
+            response()->addHeader('Content-type:text/xml');
+            print Sitemap::getRegularSitemapForChannel($channel, true);
+        return NULL;
+        case 'sitemapNews':
+            response()->addHeader('Content-type:text/xml');
+            print Sitemap::getNewsSitemapForChannel($channel, true);
+        return NULL;
+		//NEW:
+		case 'sitemapVideo':
+			response()->addHeader('Content-type:text/xml');
+			print Sitemap::getVideoSitemapForChannel($channel, true);
+        return NULL;
+        case 'sitemapRecipe':
+            response()->addHeader('Content-type:text/xml');
+            print Sitemap::getRecipeSitemapForChannel(Channel::getChannelByChannelstring($portal, 'wirkochen/rezepte'), true);
+        return NULL;
+    }
+
+    $mapping = array(
+        'rss' => 'rss',
+        'rssAll' => 'rssAll',
+        'rssipadfeed' => 'rssipadfeed',
+        'rssImage' => 'rssImage',
+    );
+    if (isset($mapping[$legacyService])) {
+        $xmlTemplate = $mapping[$legacyService];
+        $getParameters = array();
+        $id = request()->getGetValue('id');
+        if ($id !== NULL) {
+            $result = db()->getByMember('oe24.core.TextualContent', 'oe24Id', $id);
+            if (isset($result[0])) {
+                $getParameters['id'] = $result[0]->getId();
+            }
+        }
+        $max = request()->getGetValue('max');
+        if ($max !== NULL) {
+            $getParameters['max'] = $max;
+        }
+        $link = l('oe24.oe24.channel.xml', array('channel' => '/' . $channel, 'portal' => $portal, 'xmltemplate' => $xmlTemplate));
+        $queryString = http_build_query($getParameters);
+        if ($queryString !== '') {
+            $link .= '?' . $queryString;
+        }
+        redirect($link, 301);
+    }
+}
+
+$pageTitle = $channel->getSeoPageTitle();
+response()->setTitle($pageTitle);
+$rawUrl = $channel->getRawUrl();
+# LG Netcast Special
+$strToCheck = "/lg-netcast";
+if(substr($rawUrl, 0, strlen($strToCheck)) == $strToCheck){
+    etpl('oe24.oe24.LGNetcast._page', array("channel" => $channel, "params" => array()));
+# Default
+}else{
+    etpl('oe24.frontend._page', array("channel" => $channel, "params" => array()));
+}

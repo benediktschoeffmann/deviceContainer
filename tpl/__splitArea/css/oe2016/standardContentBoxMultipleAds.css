@@ -1,0 +1,68 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/*.oe2016 .standardContentBox.multipleAds .*/
+
+.oe2016 .standardContentBox.multipleAds .column {
+    width: 300px;
+    margin-left: 30px;
+}
+.oe2016 .standardContentBox.multipleAds .column:first-child {
+    margin-left: 0px;
+}
+
+.oe2016 .standardContentBox.multipleAds .column .imageWrapper img {
+    display: block;
+    width: 100%;
+}
+.oe2016 .standardContentBox.multipleAds .column .imageWrapper {
+    padding-bottom: 8px;
+}
+
+
+.oe2016 .standardContentBox.multipleAds span {
+    display: block;
+}
+
+.oe2016 .standardContentBox.multipleAds .column a{
+    padding-top: 0;
+    border-top: 0;
+    background: none;
+}
+.oe2016 .standardContentBox.multipleAds .column .title {
+    font-family: "oe24",sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 100%;
+    padding: 0;
+    margin: 2px 0;
+    color: #010101;
+    clear: both;
+    word-wrap: break-word;
+}
+
+.oe2016 .standardContentBox.multipleAds .column .preTitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*float: left;*/
+    /*position: relative;*/
+    font-family: arial,sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 2px;
+    font-weight: bold;
+}
+.oe2016 .standardContentBox.multipleAds {
+    background: none;
+    background-color: #fff;
+}
+
+.oe2016 .standardContentBox.multipleAds .content {
+    float: none;
+}

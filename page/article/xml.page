@@ -1,0 +1,33 @@
+<?php
+/**
+* Article XML Feeds
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)/xml/(?<xmltemplate>.*)
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @var xmltemplate string
+* @urlManager oe24.oe24
+* @cache 10m
+*/
+
+if(!$content instanceof Text){
+    redirect($content->getUrl(), 301);
+}
+
+$canonicalUrl = $content->getUrl()."/xml/$xmltemplate";
+if($canonicalUrl != getCurrentUrl(true)){
+    redirect($canonicalUrl, 301);
+}
+
+$alias = "oe24.frontend.xml.story.$xmltemplate";
+$file = spunQ_Module::aliasToTplFile($alias, false);
+if($file && $file->exists()){
+    etpl($alias, array("content" => $content, "portal" => $portal, "hostUrl" => "http://" . request()->getHost()));
+}else{
+    etpl("oe24.frontend.xml.emptyXml");
+}
+
+# workaround: we're not setting correct headers if we're not delivering html.
+response()->addHeader('Cache-Control: v-max-age=60,max-age=60');
+

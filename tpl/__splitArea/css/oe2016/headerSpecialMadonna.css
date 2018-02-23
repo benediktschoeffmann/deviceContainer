@@ -1,0 +1,724 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.layout_madonna.oe2016 p::-moz-selection,
+.layout_madonna.oe2016 span::-moz-selection,
+.layout_madonna.oe2016 strong::-moz-selection,
+.layout_madonna.oe2016 h1::-moz-selection,
+.layout_madonna.oe2016 h2::-moz-selection,
+.layout_madonna.oe2016 h3::-moz-selection,
+.layout_madonna.oe2016 a::-moz-selection,
+.layout_madonna.oe2016 div::-moz-selection,
+.layout_madonna.oe2016 u::-moz-selection,
+.layout_madonna.oe2016 img::-moz-selection,
+.layout_madonna.oe2016 br::-moz-selection,
+.layout_madonna.oe2016 ul::-moz-selection,
+.layout_madonna.oe2016 li::-moz-selection,
+.layout_madonna.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #cc054a;
+}
+.layout_madonna.oe2016 p::selection,
+.layout_madonna.oe2016 span::selection,
+.layout_madonna.oe2016 strong::selection,
+.layout_madonna.oe2016 h1::selection,
+.layout_madonna.oe2016 h2::selection,
+.layout_madonna.oe2016 h3::selection,
+.layout_madonna.oe2016 a::selection,
+.layout_madonna.oe2016 div::selection,
+.layout_madonna.oe2016 u::selection,
+.layout_madonna.oe2016 img::selection,
+.layout_madonna.oe2016 br::selection,
+.layout_madonna.oe2016 ul::selection,
+.layout_madonna.oe2016 li::selection,
+.layout_madonna.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #cc054a;
+}
+
+/* Tabbed-Box */
+
+.layout_madonna.oe2016 .tabbedBox .content,
+.layout_madonna.oe2016 .tabbedBox .sidebar,
+.layout_madonna.oe2016 .tabbedBox .sidebar.pushDownSidebar {
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+/* Übersicht - Headline von Tabbedboxen */
+
+.layout_madonna.oe2016 .standardHeadline.madonna h2 {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 0 0;
+    margin: 0;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+}
+
+.layout_madonna.oe2016 .standardHeadline.madonna h2 a:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #cc054a;
+    position: relative;
+    top: 1px;
+}
+
+.layout_madonna.oe2016 .standardHeadline.madonna h2,
+.layout_madonna.oe2016 .standardHeadline.madonna h2 a:after {
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+}
+
+.layout_madonna.oe2016 .standardHeadline.madonna h2 a,
+.layout_madonna.oe2016 .standardHeadline.madonna h2 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Sidebar DefaultBox */
+
+.layout_madonna.oe2016 .sidebar .defaultbox {
+    width: 300px;
+    box-shadow: 0 0 0 1px rgba(213,209,219,.7);
+}
+
+.layout_madonna.oe2016 .sidebar .defaultbox .defaultbox_header {
+    border-bottom: 1px solid #f0f1f3;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .sidebar .defaultbox .defaultbox_body {
+    padding: 10px;
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .sidebar .defaultbox .defaultbox_header .headline {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: none;
+    margin: .75rem 0;
+    color: #cc054a;
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .sidebar .defaultbox .defaultbox_body .teaserText {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: left;
+    text-transform: none;
+}
+
+
+/* Sidebar Magazin Gewinnspiel */
+
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel {
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .defaultbox_header .headline {
+    padding: 0;
+}
+
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body {
+    padding-bottom: 0;
+}
+
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .listbox_body span.teaserImage,
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body span.teaserImage {
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .listbox_body span.teaserImage img,
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body span.teaserImage img {
+    max-width: 100%;
+}
+
+.layout_madonna.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body .storyWrapper a:hover {
+    color: #cc054a;
+}
+
+
+/* Sidebar Instagram Box */
+
+.layout_madonna.oe2016 .sidebar .defaultbox.madonnaInstagramBox .defaultbox_body {
+    max-height: 294px;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+
+
+/* Sidebar Facebook Box */
+
+.layout_madonna.oe2016 .sidebar .defaultbox.madonnaFacebook .defaultbox_body {
+    padding: 10px 10px 3px;
+}
+.layout_madonna.oe2016 .sidebar.article .defaultbox.madonnaFacebook .defaultbox_body {
+    padding: 10px 0;
+}
+
+
+/* Madonna TV */
+
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer {
+    margin: 0 0 20px 0;
+    box-shadow: rgba(213, 209, 219, 0.701961) 0 0 0 1px;
+    width: 300px;
+}
+
+.layout_madonna.oe2016 .oe24tvArticle .videoTitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #000000;
+
+    margin: 2px 0;
+}
+
+.layout_madonna.oe2016 .oe24tvArticle .videoPreTitle {
+    font-family: "oe24";
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFF;
+
+    margin: 10px 0 0 0;
+    padding: 4px 10px 0;
+
+    background-color: #cc054a;
+    display: inline-block;
+    white-space: normal;
+
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis;
+
+
+}
+
+.layout_madonna.oe2016 .oe24tvArticle .videoLeadText,
+.layout_madonna.oe2016 .oe24tvArticle .addThisButtons {
+    display: none;
+}
+
+/* (db) 2017-05-10 0Spezialfall Videobox auf Madonna-Seite ohne Layout-Definition -> Videobox mit Headline */
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .headline,
+.layout_madonna.oe2016 .sidebar .fbPluginBox .defaultbox_header_caption,
+.layout_madonna.oe2016 .sidebar .twitterPluginBox .defaultbox_header_caption {
+	background-color: transparent;
+	border-bottom: 1px solid #f0f1f3;
+	padding: 12px 10px;
+
+	color: #cc054a;
+	font-family: "PTSerifItalic",sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: left;
+	line-height: 1.3;
+	text-transform: none;
+}
+.layout_madonna.oe2016 .sidebar .fbPluginBox .defaultbox_header_caption,
+.layout_madonna.oe2016 .sidebar .twitterPluginBox .defaultbox_header_caption {
+	padding: 12px 0;
+}
+
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .textBox {
+    padding: 0;
+    margin-top: 0;
+}
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .sidebarVideoBox .title {
+    width: 100%;
+    margin: 0;
+}
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .textBox span {
+    font-family: "PTSerifItalic", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 3px 0;
+    color: #000;
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    overflow: hidden;
+}
+
+
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .sidebarVideoBoxStory {
+    padding: 0 20px;
+
+}
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxStory.firstVideoBoxStory {
+    padding: 20px 20px 0 20px;
+}
+
+
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .sidebarVideoBoxStory:hover .textBox span {
+    color: #cc054a;
+}
+.layout_madonna.oe2016 .sidebar .sidebarVideoBoxContainer .vBoxFooter {
+    padding: 2px 10px 10px 10px;
+}
+
+
+.layout_madonna.oe2016 .sidebarVideoBoxContainer .sidebarVideoBox .preTitle,
+.layout_madonna.oe2016 .sidebarVideoBoxContainer .sidebarVideoBox .title,
+.layout_madonna.oe2016 .sidebarVideoBoxContainer .sidebarVideoBox .videoLength {
+    text-transform: none;
+}
+
+
+.layout_madonna.oe2016 a:hover .vBoxPlayButton,
+.layout_madonna.oe2016 .storySliderBox a:hover .vBoxPlayButton {
+    background-color: #f90b5e;
+}
+
+.layout_madonna.oe2016 .sidebar .madonnaSidebarVoting.distanceTop {
+    margin-top: 15px;
+}
+.layout_madonna.oe2016 .sidebar .madonnaSidebarVoting.distanceBottom {
+    margin-bottom: 15px;
+}
+
+/* Big Headline */
+/*
+.layout_madonna.oe2016 .standardHeadline.madonna .bigHeadLine a:after {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+*/
+
+
+
+.layout_madonna.oe2016 .xlHeadLineBox h2 {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 0 0;
+    margin: 0;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+}
+.layout_madonna.oe2016 .xlHeadLineBox h2 span:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    color: #cc054a;
+    position: relative;
+    top: 1px;
+}
+
+
+.layout_madonna.oe2016 .tabbedBox .content,
+.layout_madonna.oe2016 .tabbedBox .sidebar,
+.layout_madonna.oe2016 .tabbedBox .sidebar.pushDownSidebar {
+    padding-top: 14px;
+    margin-top: 0;
+}
+
+
+.layout_madonna.oe2016 .content .storyText {
+    width: 85%;
+    padding: 0 0 0 5px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+}
+.layout_madonna.oe2016 .content .storyText .storyPreTitle {
+    font-family: "oe24";
+    font-size: .9375rem;
+    text-transform: uppercase;
+    width: auto;
+    padding: 4px 10px 0;
+    color: #fff;
+    background-color: #cc054a;
+    display: inline-block;
+    white-space: normal;
+}
+.layout_madonna.oe2016 .content .storyText .storyTitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    width: auto;
+    padding: 0;
+    margin: 1px 0;
+    border-left: 7px solid #fff;
+    color: #000;
+    background-color: transparent;
+    display: block;
+    overflow: hidden;
+    position: static;
+}
+.layout_madonna.oe2016 .content .storyText .storyTitle .storyTitleBackground {
+    padding-right: 7px;
+    background-color: #fff;
+    white-space: pre-wrap;
+}
+
+
+.layout_madonna.oe2016 .content .column3 .storyText {
+    bottom: 6px;
+}
+.layout_madonna.oe2016 .content .column3 .storyText .storyTitle {
+    font-size: 1.125rem;
+}
+
+
+.layout_madonna.oe2016 .content a:hover .storyText .storyPreTitle {
+    color: #fff;
+    background-color: #f70b60;
+}
+.layout_madonna.oe2016 .content a:hover .storyText .storyTitle {
+    color: #cc054a;
+}
+
+
+.layout_madonna.oe2016 .content .column a {
+    padding-top: 0;
+    border-top: none;
+}
+.layout_madonna.oe2016 .content .storyWrapper:hover,
+.layout_madonna.oe2016 .content .column a:hover {
+    border-top: none;
+}
+
+
+.layout_madonna.oe2016 .content .column1 .storyImage img {
+    width: 620px;
+    height: 388px;
+}
+.layout_madonna.oe2016 .content .column2 .storyImage img {
+    width: 292px;
+    height: 292px;
+}
+.layout_madonna.oe2016 .content .column3 .storyImage img {
+    width: 190px;
+    height: 190px;
+}
+
+
+/* Portrait */
+.layout_madonna.oe2016 .content .portrait .column a {
+    padding: 0;
+    border: none;
+    margin-top: 0;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft .column2 .storyImage img {
+    width: 292px;
+    height: 603px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight .column2 .storyImage img {
+    width: 292px;
+    height: 292px;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft .column a:hover {
+    border: none;
+}
+
+
+.layout_madonna.oe2016 .content .column2 {
+    width: 300px;
+    margin-right: 20px;
+}
+.layout_madonna.oe2016 .content .column2.last {
+    margin-right: 0;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft,
+.layout_madonna.oe2016 .content .portrait .columnRight {
+    width: 300px;
+}
+.layout_madonna.oe2016 .content .portrait .columnLeft {
+    margin-right: 20px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight {
+    margin-right: 0;
+}
+
+
+.layout_madonna.oe2016 .content .column1 .storyImage img {
+    width: 620px;
+    height: 388px;
+}
+.layout_madonna.oe2016 .content .column2 .storyImage img {
+    width: 300px;
+    height: 300px;
+}
+.layout_madonna.oe2016 .content .column3 .storyImage img {
+    width: 190px;
+    height: 190px;
+}
+
+
+.layout_madonna.oe2016 .content .portrait .columnLeft .column2 .storyImage img {
+    width: 300px;
+    height: 620px;
+}
+.layout_madonna.oe2016 .content .portrait .columnRight .column2 .storyImage img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Slick */
+
+.layout_madonna.oe2016 .article_box .arrow {
+    color: #cc054a;
+}
+
+
+/* Flickity Slider  */
+
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxHeadline {
+    background-color: transparent;
+    padding: 4px 10px 0 0;
+    margin: 0;
+}
+
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxCaption {
+    background-color: #1a1a1a;
+    color: #fff;
+
+    font-family: "oe24";
+    font-size: 0.9375rem;
+    line-height: 23px;
+    text-transform: uppercase;
+
+    height: 20px;
+    padding: 0;
+    margin: 0;
+
+    display: inline-block;
+    overflow: visible;
+}
+
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxCaption:before,
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxCaption:after {
+    content: '';
+    font-size: 1px;
+    line-height: 0px;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxCaption:before {
+    float: left;
+    margin-right: 38px;
+    border-width: 20px 20px 0 0;
+    border-color: #fff transparent transparent transparent;
+}
+.layout_madonna.oe2016 .contentSliderBox .contentSliderBoxCaption:after {
+    float: right;
+    margin-left: 38px;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.layout_madonna.oe2016 .contentSliderBox .contentSlider {
+    padding: 10px 34px 25px 34px;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    margin-bottom: 10px;
+
+}
+
+.layout_madonna.oe2016 .contentSliderBox .slideBox1 {
+    width: 100%;
+    height: 100% !important;
+}
+.layout_madonna.oe2016 .contentSliderBox .storyText {
+    background-color: #1a1a1a;
+
+    line-height: 1;
+    color: #c8aae3;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+
+    padding: 3px 5px 7px 5px;
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+.layout_madonna.oe2016 .contentSliderBox .slideBox1:hover .storyText {
+    background-color: #cc054a;
+}
+.layout_madonna.oe2016 .contentSliderBox .storyText .storyTitle,
+.layout_madonna.oe2016 .contentSliderBox .storyText .storyPreTitle {
+    color: #fff;
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: .9375rem;
+    display: inline;
+    line-height: 1;
+}
+.layout_madonna.oe2016 .contentSliderBox .storyText .storyPreTitle,
+.layout_madonna.oe2016 .contentSliderBox .slideBox1:hover .storyPreTitle {
+    color: #c8aae3;
+    margin: 0;
+}
+.layout_madonna.oe2016 .contentSliderBox .slideBox1:hover .storyTitle {
+    color: #fff;
+}
+.layout_madonna.oe2016 .contentSliderBox .slideBox1 .storyNumber {
+	background-color: #cc054a;
+}
+
+.layout_madonna.oe2016 .contentSliderBox .next,
+.layout_madonna.oe2016 .contentSliderBox .previous {
+    background-color: #cc054a;
+    color: #fff;
+    text-align: center;
+
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: medium none;
+    border-radius: 20px;
+}
+.layout_madonna.oe2016 .contentSliderBox .next:hover,
+.layout_madonna.oe2016 .contentSliderBox .previous:hover {
+    background-color: #f90b5e;
+}
+.layout_madonna.oe2016 .contentSliderBox .next {
+    right: 0;
+}
+.layout_madonna.oe2016 .contentSliderBox .previous {
+    left: 0;
+}
+.layout_madonna.oe2016 .contentSliderBox .next .arrow,
+.layout_madonna.oe2016 .contentSliderBox .previous .arrow {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+.layout_madonna.oe2016 .textSlideshow .textSlideshowHeadline {
+    color: #cc054a;
+    display: block;
+    background-color: transparent;
+}
+
+/* Doppel Teaser - Lifestyle Videos - Template Sidebar 2x2 */
+
+.layout_madonna.oe2016 .sidebar .contentBox .defaultbox_body {
+	padding-bottom: 0;
+}
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem:hover,
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem:hover a,
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem:hover h2 {
+    text-decoration: none;
+}
+
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem .teaserStoryPagetitle {
+    height: 45px;
+}
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem:hover .teaserStoryPagetitle {
+    color: #cc054a;
+}
+
+.layout_madonna.oe2016 .sidebar .contentBox .teaserStoryItem:hover .vBoxPlayButton {
+    /*background-position: -58px 0;*/
+}
+
+/* GoogleAd */
+
+.layout_madonna.oe2016 .sidebar .defaultHtmlBox.googleAdRight {
+	margin: 0;
+}
+
+/* Madonna Coverbox */
+
+.layout_madonna.oe2016 .sidebar .ePaper,
+.layout_madonna.oe2016 .sidebar .ePaper .defaultChannelBackgroundColor {
+    background-color: transparent;
+}
+
+.layout_madonna.oe2016 .sidebar .ePaper .defaultbox_header_caption,
+.layout_madonna.oe2016 .sidebar .ePaper .defaultbox_header_subcaption,
+.layout_madonna.oe2016 .sidebar .ePaper .defaultbox_header .headline {
+    color: #cc054a;
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: none;
+    padding: 0 10px;
+}
+.layout_madonna.oe2016 .sidebar .ePaper .defaultbox_header_caption {
+	text-align: left;
+	line-height: 1.3;
+	padding: 0;
+	margin: .75rem 0;
+}
+.layout_madonna.oe2016 .sidebar .ePaper .title.defaultChannelColor {
+    color: #000;
+}
+
+.layout_madonna.oe2016 .sidebar .ePaper a,
+.layout_madonna.oe2016 .sidebar .ePaper a span {
+    color: #000;
+}
+
+.layout_madonna.oe2016 .sidebar .ePaper a:hover,
+.layout_madonna.oe2016 .sidebar .ePaper a:hover span,
+.layout_madonna.oe2016 .sidebar .ePaper .defaultbox_header a:hover .headline {
+    color: #cc054a;
+    text-decoration: none;
+}
+
+.layout_madonna.oe2016 .sidebar .ePaper .bottom {
+    padding: 5px 20px 0 20px;
+    border-top: none;
+}
+
+/* Voting Artikel */
+
+.layout_madonna.oe2016 .slideshowVoting .slideshowItemsContainer .title {
+    background-color: transparent;
+}
+
+/* Artikeldetail Mehr Storys */
+
+.layout_madonna.oe2016 .channelTopStoriesHeader {
+	background-color: transparent;
+	color: #000;
+	padding: 0;
+}
+.layout_madonna.oe2016 .content.channelTopStoriesContent .story_pretitle {
+	color: #fff;
+}
+.layout_madonna.oe2016 .content.channelTopStoriesContent a:hover .story_pretitle {
+	color: #fff;
+}

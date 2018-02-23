@@ -6,7 +6,7 @@
  * Additional files are page/oe24app/*.page and tpl/device/oe24app/*
  *
  */
-class Oe24App {
+class Oe24App extends Device {
 
     /**
      * Singleton Instance
@@ -445,6 +445,17 @@ class Oe24App {
 
             $this->setConfig('articlesPerCategory', 0);
             $boxesOfCategory = $category['boxes'];
+
+            // (bs) 2018-02-19 Niki suddenly wants to use headlines for categories again.
+            if ($categoryName != 'frontpage') {
+                tpl('oe24.oe24.device.oe24app.tpl.categoryHeadline.categoryHeadline',
+                    array(
+                        'device'    => $this,
+                        'category'  => $categoryName,
+                        'channelColor'     => $this->getColorFromCategory($category),
+                    )
+                );
+            }
 
             foreach ($boxesOfCategory as $key => $boxEntry) {
 
@@ -1191,6 +1202,14 @@ class Oe24App {
         } else {
             return null;
         }
+    }
+
+    /**
+     * Returns Device::OE24APP
+     * @return Device::OE24APP
+     */
+    public function getDeviceType() {
+        return Device::OE24APP;
     }
 
 }

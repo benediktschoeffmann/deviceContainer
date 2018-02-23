@@ -1,0 +1,213 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.otherPortalTeaser {
+    width: 960px;
+    margin: 15px auto;
+}
+
+.otherPortalTeaser .container {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    /*background-color: #ebebeb;*/
+
+    height: 100%;
+}
+
+
+/*************/
+/* LOGO AREA */
+/*************/
+.otherPortalTeaser .logoArea {
+    display: table-cell;
+
+    width: 320px;
+    padding: 5px;
+
+    vertical-align: top;
+
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+}
+.otherPortalTeaser.buzz .logoArea {
+    background-color: #fc0f39;
+    background-image: linear-gradient(to bottom, #fc0f39, #ff1c67);
+    padding: 0;
+}
+.otherPortalTeaser.shop24 .logoArea {
+    background-color: #c90f39;
+    /*background-image: linear-gradient(to bottom, #ffe943, #e7c402);*/
+    background-image: linear-gradient(to bottom, #c90f39, #ff1c67);
+}
+
+.otherPortalTeaser .logoArea .logoContainer {
+    /*padding: 15px;*/
+    padding: 10px 15px;
+    display: block;
+}
+.otherPortalTeaser .logoArea .logoContainer a {
+    display: block;
+}
+.otherPortalTeaser .logoArea .logo {
+    width: 100%;
+    height: auto;
+}
+
+.otherPortalTeaser .logoArea .buzzFlames {
+    width: 270px;
+    width: 291px;
+    margin: 0 auto;
+}
+.otherPortalTeaser .logoArea .buzzFlame {
+    position: relative;
+
+    display: inline-block;
+    /* Width und Height gleiche Angabe wie die BuzzFlames in der .tpl-Datei */
+    /* $flameWidth und $flameHeight */
+    width: 45px;
+    height: 50px;
+
+    text-decoration: none;
+}
+.otherPortalTeaser .logoArea .buzzFlame .buzzFlameTitle {
+    position: absolute;
+    top: 19px;
+    left: 3px;
+
+    font-family: "OpenSansCondensedBold",sans-serif;
+    font-size: .8125rem;
+
+    width: 40px;
+
+    color: #fff;
+    text-align: center;
+}
+
+.otherPortalTeaser .logoArea .teasers {
+    /*padding: 10px 20px;*/
+    padding: 16px 20px 0px;
+    border-top: 1px solid #fff;
+}
+.otherPortalTeaser .logoArea .teaserText1,
+.otherPortalTeaser .logoArea .teaserText2 {
+    display: block;
+
+    font-family: "oe24",sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.2;
+
+    color: #fff;
+
+    text-align: center;
+}
+.otherPortalTeaser.buzz .logoArea .teaserText1 {
+    font-size: 1.875rem;
+    padding-bottom: 10px;
+}
+.otherPortalTeaser.shop24 .logoArea .teaserText1 {
+    font-family: "OpenSansItalic",sans-serif;
+    font-size: 2.125rem;
+}
+.otherPortalTeaser.shop24 .logoArea .teaserText2 {
+    padding-top: 10px;
+}
+
+
+/***************/
+/* STORY ITEMS */
+/***************/
+.otherPortalTeaser .storyItem {
+    display: table-cell;
+
+    padding: 10px 0 10px 10px;
+
+    height: 100%;
+    vertical-align: top;
+
+    background-color: #ebebeb;
+}
+.otherPortalTeaser.buzz .storyItem:last-child {
+    padding: 10px;
+}
+.otherPortalTeaser.shop24 .storyItem {
+    width: 640px;
+    padding: 10px;
+
+    background-color: #ebebeb;
+}
+
+.otherPortalTeaser.shop24 .storyItem .shop24Iframe {
+    position: absolute;
+    top: -154px;
+    left: -135px;
+
+    width: 1237px;
+    height: 1344px;
+}
+
+.otherPortalTeaser .storyWrapper {
+    width: 200px;
+    background-color: #fff;
+    height: 100%;
+}
+.otherPortalTeaser.buzz .storyWrapper {
+    /*min-height: 300px;*/
+    min-height: 250px;
+}
+.otherPortalTeaser.shop24 .storyWrapper {
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.otherPortalTeaser .storyData {
+    display: block;
+    padding: 10px;
+}
+.otherPortalTeaser .storyData .shop24Iframe {
+    border: none;
+}
+
+.otherPortalTeaser .storyData .storyImage {
+    width: 100%;
+    background-color: #ebebeb;
+    display: block;
+}
+
+.otherPortalTeaser .storyData .story_pretitle,
+.otherPortalTeaser .storyData .story_pagetitle,
+.otherPortalTeaser .storyData .story_leadtext {
+    display: block;
+}
+.otherPortalTeaser .storyData .story_pretitle {
+    font-family: Arial,sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 8px 0 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.otherPortalTeaser .storyData .story_pagetitle {
+    font-family: "oe24",sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin: 0 0 3px;
+}
+.otherPortalTeaser .storyData .story_leadtext {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.otherPortalTeaser .storyData:hover {
+    text-decoration: none;
+}
+.otherPortalTeaser .storyData:hover .story_pretitle,
+.otherPortalTeaser .storyData:hover .story_pagetitle {
+    color: #d0113a;
+}

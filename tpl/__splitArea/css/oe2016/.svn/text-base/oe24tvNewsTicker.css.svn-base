@@ -1,0 +1,100 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.tvTickerBox {
+    padding: 0;
+    margin: 0 15px;
+    background-color: #fff;
+}
+.tvTickerBox.distanceTop {
+    /* (ws) 2016-11-29 Ticker wird jetzt fuer BP-Wahl verwendet */
+    /*padding-top: 1px;*/
+    padding-top: 10px;
+}
+.tvTickerBox.distanceBottom {
+    /* (ws) 2016-11-29 Ticker wird jetzt fuer BP-Wahl verwendet */
+    /*padding-bottom: 5px;*/
+    padding-bottom: 10px;
+}
+
+
+.tvTicker {
+    /*margin: 0 15px;*/
+    background-color: #000;
+}
+
+
+.tvTickerTeaser,
+.tvTickerMessages {
+    font-family: "oe24condensed",sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    /*vertical-align: baseline;*/
+}
+.tvTickerTeaser {
+    width: 210px;
+    padding: 2px 10px 0;
+    color: #000;
+    background-color: #fdfd77;
+    background-image: -webkit-linear-gradient(#fdfd77, #ffd920);
+    background-image: linear-gradient(#fdfd77, #ffd920);
+    position: relative;
+    border-right: 10px solid #000;
+}
+.tvTickerMessages {
+    width: 750px;
+    padding: 2px 0 0;
+    border-right: 10px solid #000;
+    color: #fff;
+}
+.tvTickerTeaser span,
+.tvTickerMessages a {
+    line-height: 50px;
+}
+.tvTickerTeaser span {
+    text-align: center;
+    width: 88%;
+    display: inline-block;
+}
+.tvTickerMessages a.noLink {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+.tvTickerTeaser:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 25px solid #000;
+    border-bottom: 25px solid #000;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    position: absolute;
+    right: -24px;
+    top: 0;
+}
+
+
+.tvTickerMessage {
+    padding: 0 10px;
+    float: left;
+    margin: 0;
+}
+.tvTickerMessage a {
+    color: #fff;
+}
+
+
+.tvTickerMessage:after {
+    content: "+++";
+    display: inline;
+    padding-left: 10px;
+}

@@ -1,0 +1,17 @@
+<?
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .standardHeadline.joe24angebote {
+    padding: 0;
+}
+
+.oe2016 .standardContentBox.joe24angebote .storyTitle,
+.oe2016 .standardContentBox.joe24angebote .storyPreTitle {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}

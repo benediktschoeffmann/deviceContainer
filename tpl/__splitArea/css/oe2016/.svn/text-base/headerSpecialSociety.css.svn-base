@@ -1,0 +1,148 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+/* ---------------------------------------------------------------- */
+
+/* (pj) 2016-04-26 stars24 */
+
+.layout_society.oe2016 .headerNavContainer {
+    background-color: #ffca49;
+    background-image: linear-gradient(to bottom, #ffca49 20%, #ffb652);
+}
+.layout_society.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #ffca49;
+    border-right: 1px solid #ffca49;
+}
+.layout_society.oe2016 .headerNavMain,
+.layout_society.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_society.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #ffaa00;
+}
+
+/* (pj) 2016-04-26 end */
+
+/* (pj) 2016-04-28 Stars24 */
+
+.layout_society.oe2016 .headerNavMain .headerNavMainItem > a,
+.layout_society.oe2016 .headerNavMain .headerNavMainItem > a:active,
+.layout_society.oe2016 .headerNavMain .headerNavMainItem > a:focus {
+    color: #3c3c3c;
+}
+
+/* (pj) 2016-04-28 end */
+
+
+/* ---------------------------------------------------------------- */
+
+.layout_society.oe2016 .headerNavLogo {
+    padding: 2px 8px;
+}
+.layout_society.oe2016 .headerNavLogoCol.logoPortal {
+    /*width: 294px;*/
+}
+.layout_society.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 80px;
+}
+.layout_society.oe2016 .headerNavLogoCol.logoOesterreich {
+    /*width: 556px;*/
+    height: 84%;
+}
+.layout_society.oe2016 .headerNavLogoCol.logoOesterreich span {
+    left: 162px;
+}
+.layout_society.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 48px;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+/* sticky header sport24 */
+
+.layout_society.oe2016 .headerNavLogo,
+.layout_society.oe2016 .headerNavLogo a,
+.layout_society.oe2016 .headerNavLogo a img,
+.layout_society.oe2016 .headerNavLogoCol.logoOesterreich,
+.layout_society.oe2016 .headerNavLogoCol.logoOesterreich span {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.layout_society.oe2016 .stickyHeader {
+    width: 960px;
+    position: fixed;
+    left: 15px;
+    top: 0;
+    z-index: 1000;
+}
+.layout_society.oe2016 .stickyHeader .headerNavLogo {
+    height: 30px;
+    padding: 1px 8px 7px;
+    padding: 3px 8px;
+}
+.layout_society.oe2016 .stickyHeader .headerNavLogo a,
+.layout_society.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+
+.layout_society.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    width: 729px;
+    /* added */
+    height: 92%;
+}
+.layout_society.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    font-size: .6875rem;
+    left: 440px;
+}
+.layout_society.oe2016 .stickyHeader .headerNavLogoCol.latestCover {
+    display: none;
+}
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-04-26 Stars24 */
+
+.layout_society.oe2016 .subNavMenu a {
+    color: #ffaa00;
+}
+
+.layout_society.oe2016 .subNavMenu .active a,
+.layout_society.oe2016 .subNavMenu a:hover {
+    background-color: #ffca49;
+    color: #fff;
+}
+
+.layout_society.oe2016 .subNavContainer {
+    border-bottom: 8px solid #ffca49;
+}
+
+.layout_society.oe2016 .subNavContent > a:hover,
+.layout_society.oe2016 .subNavContent .subNavMore > a:hover {
+    color: #ffaa00;
+}
+
+/* (pj) 2016-04-26 end */
+
+
+/* --------------------------------- */
+
+/* (pj) 2016-04-26 Stars24 */
+
+.layout_society.oe2016 .headerNav .headerNavTopicsCaption {
+    background-color: #ffaa00;
+    color: #3c3c3c;
+}
+.layout_society.oe2016 .headerNav .headerNavTopicsItems a {
+    /* (ws) 2017-09-06 color: #ff2b22;*/
+    color: #b80f33;
+}
+
+/* (pj) 2016-04-26 end */
+

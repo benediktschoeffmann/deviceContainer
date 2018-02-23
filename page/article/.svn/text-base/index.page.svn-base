@@ -1,0 +1,133 @@
+<?php
+/**
+* article page
+*
+* @url (?<channel>.*)/(?<title>[^/]+)/(?<content>\d+)
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var content oe24.core.Content
+* @urlManager oe24.oe24
+* @cache 60m
+* @cache.dependency user
+*/
+
+if(!$content instanceof Text && !$content instanceof Video){
+    redirect($content->getUrl(), 301);
+}
+
+$canonicalUrl = $content->getUrl();
+if($canonicalUrl != getCurrentUrl(true)){
+    redirect($canonicalUrl, 301);
+}
+
+if($content instanceof Video || $content->getVideoId() !== NULL || $content->getVideoOptions() !== NULL || $content->getLiveVideoOptions() !== NULL){
+    $video = $content;
+
+	$pageTitle = $video->getPageTitle();
+	if(!trim($pageTitle)){
+		$pageTitle = "Österreich / ".request()->getHost();
+	}
+	response()->setTitle($pageTitle." - Video");
+	etpl('oe24.frontend._page', array("channel" => $channel, "params" => array(), "object" => $video));
+	/*
+	$homeChannel = $content->getHomeChannel();
+    redirect($homeChannel->getUrl()."/videoArticle/".slugify($content->getTitle())."/".$content->getId(), 301);
+	*/
+    return NULL;
+}
+
+$options = $content->getOptions(true, true);
+$postingTemplate = ($options->getByKey("postingTemplate")) ? $options->getByKey("postingTemplate") : "Kommentare";
+
+response()->setTitle($content->getPageTitle());
+
+# Kommentar Template Save
+if($postingTemplate == "Kommentare" || $postingTemplate == "Petition"){
+    $saveObject = $content;
+    $username = user()->getGuest() == user() ? trim(request()->getPostValue("username")) : user()->getUsername();
+    $form = spunQ_FormFactory::getByName('oe24.oe24.story._postingTemplates.'.$postingTemplate);
+    $form->setUseSubmittedValues(false);
+    if($form->wasSubmittedSuccessfully()) {
+        $submittedText = $form->getField('text')->getSubmittedValue();
+        if(!$username || ($username == "Benutzername" &&  user()->getGuest() == user())){
+            if($submittedText){
+                response()->setSessionValue("userCommentText", $submittedText);
+            }
+            redirect(request()->getUri(true)."?commentError=noUsername#commentForm");
+            return NULL;
+        }
+        # check if user with the same username is already there
+		$oldUser = User::getUserByName($username, $portal);
+        //$oldUser = db()->getByCondition('spunQ.user.User', 'usernameLower = {0}', array(0=> strtolower($username)));
+        if((user()->getGuest() == user()) && $oldUser){
+            if($submittedText){
+                response()->setSessionValue("userCommentText", $submittedText);
+            }
+            redirect(request()->getUri(true)."?commentError=takenUsername#commentForm");
+            return NULL;
+        }
+        $commentId = (int)request()->getGetValue("answerTo");
+        if($commentId){
+            $object = db()->getById($commentId, "strg.comment.Comment", false);
+            if($object instanceof strg_Comment){
+                if($object->getStorableObject()->getId() === $content->getId()){
+                    $saveObject = $object;
+                }
+            }
+        }
+        # add string to guest username
+        if(user()->getGuest() == user()) {
+            $username .= " (GAST)";
+        }
+        $comment = new strg_Comment();
+        $comment->setUser(user());
+        $comment->setUsername($username);
+        $comment->setText($form->getField('text')->getSubmittedValue());
+        $comment->setStorableObject($saveObject);
+        $comment->setDate(new spunQ_DateTime());
+        $comment->setIp(request()->getClientInformation()->getIp());
+        if(!$options->get("checkPostings")){
+            $comment->setPublished();
+        }
+        $comment->store();
+        redirect(request()->getUri(true)."?commentSuccess#commentForm");
+    }
+}
+
+# Kondolenzbuch Template Save
+if($postingTemplate == "Kondolenzbuch"){
+    # Nothing to do at the moment
+}
+
+# check for special article layout types
+$isAnyAntenneOverride =
+    (
+        isOverride("antenne_wien", $channel) or
+        isOverride("antenne_tirol", $channel) or
+        isOverride("antenne_salzburg", $channel) or
+        isOverride("antenne", $channel)
+    )
+;
+$useTemplate = "oe24.oe24.story.index";
+$useTemplateRight = NULL;
+# old layout for antenne
+if($isAnyAntenneOverride){
+    $useTemplate = "oe24.oe24.story.oldLayout.index";
+}
+$useTemplateFirstRight = NULL;
+# if show top stories is active include that template
+if($options->get("showRightTopStories")){
+    $useTemplateFirstRight = "oe24.oe24.story.topContents_right";
+}
+
+etpl('oe24.frontend._page', array(
+    "channel" => $channel,
+    "params" => array(
+        "templateLeft" => $useTemplate,
+        "text" => $content,
+        "columnNameRight" => "Story-Teaser Area",
+        "templateRight" => $useTemplateRight,
+        "templateFirstRight" => $useTemplateFirstRight
+    ),
+    "object" => $content
+));

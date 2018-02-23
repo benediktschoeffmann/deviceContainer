@@ -1,0 +1,14 @@
+<?php
+/**
+* tag page
+*
+* @url (?<channel>.*)/kategorie-(?<channelTag>[äöüa-z-_&]+)
+* @var portal oe24.core.Portal
+* @var channel oe24.core.Channel
+* @var channelTag strg.tagging.Tag
+* @urlManager oe24.oe24
+* @cache 60m
+* @cache.dependency user
+*/
+
+etpl('oe24.frontend._page', array("channel" => $channel, "params" => array("templateLeft" => "oe24.oe24.__splitArea._page.channelTag", "channelTag" => $channelTag)));

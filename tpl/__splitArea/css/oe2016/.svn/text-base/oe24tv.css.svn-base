@@ -1,0 +1,258 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+/* ------------------------------------------- */
+
+/* Ueberschreiben von bestehenden Regeln */
+
+
+#wrap.layout_tv {
+    background-color: #f3f3f3;
+}
+.oe2016 .headerNavMain .headerNavMainItem:after {
+    background-color: #fff;
+}
+
+
+#wrap.layout_tv .headerNav .headerNavTopics {
+    margin-bottom: 5px;
+}
+#wrap.layout_tv .contentSliderBoxHeadline {
+    margin-bottom: 0;
+}
+
+
+#wrap.layout_tv .contentSlider .slideCol3 .storyTitle,
+#wrap.layout_tv .contentSlider .slideCol4 .storyTitle {
+    font-size: 1.3125rem;
+    max-height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#wrap.layout_tv .contentSliderBox.withContentAd .contentSliderAd {
+    margin: 15px 0 0 0;
+}
+
+
+#wrap.layout_tv .tabbedBoxTvSidebar > .content_ad {
+    margin-top: 15px;
+}
+
+
+/* ------------------------------------------- */
+
+/* Ueberschreiben von bestehenden Regeln */
+
+
+.layout_tv .headerNavLogoCol.logoPortal img {
+    height: 70px;
+}
+.layout_tv .headerNavLogoCol.logoOesterreich span {
+    left: 152px;
+}
+.layout_tv .headerNavLogoCol.logoOesterreich img {
+    height: 50px;
+}
+.layout_tv .stickyHeader .headerNavLogo a,
+.layout_tv .stickyHeader .headerNavLogo a img {
+    height: 24px;
+}
+.layout_tv .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    left: 440px;
+}
+
+
+/* ------------------------------------------- */
+
+/* Ueberschreiben von bestehenden Regeln */
+
+
+.tabbedBoxTv .contentSliderBox {
+    padding: 0 10px;
+}
+.tabbedBoxTv .storyImage.video_container:after {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+
+.tabbedBoxTv .headerNavMain .headerNavMainItem > a,
+.tabbedBoxTv .headerNavMain .headerNavMainItem > a:active,
+.tabbedBoxTv .headerNavMain .headerNavMainItem > a:focus {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+.tabbedBoxTv .headerNavLogoCol.logoOesterreich span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/*
+.tabbedBoxTv .contentSlider .storyTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.tabbedBoxTv .contentSlider .storyLeadText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+*/
+
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+
+/* Ab hier neue Regeln */
+
+
+/* ------------------------------------------- */
+
+
+.tabbedBoxTv {
+    padding: 0;
+    margin: 0 15px;
+}
+.tabbedBoxTv.distanceTop .tabbedBoxTvContainer {
+    padding-top: 5px;
+}
+.tabbedBoxTv.distanceBottom .tabbedBoxTvContainer {
+    padding-bottom: 5px;
+}
+
+
+.tabbedBoxTvContainer {
+    background-color: #fff;
+}
+
+.tabbedBoxTv .videoTopBox {
+    /*margin: 15px 0 0 0;*/
+}
+
+.tabbedBoxTv .oe24tvCaption {
+    /*margin: 0 0 15px 0;*/
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------- */
+
+
+.tabbedBoxTv .standardHeadline {
+    padding: 0;
+    margin: 0;
+}
+.tabbedBoxTv .standardHeadline h2 {
+    font-family: "oe24",sans-serif;
+    font-weight: 400;
+    padding: 0;
+}
+.tabbedBoxTv .standardHeadline a[href="#!"] {
+    cursor: default;
+}
+
+
+.tvHeadlineCaption {
+    padding: 0;
+}
+.tvHeadlineLeft,
+.tvHeadlineRight {
+    font-size: 1.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px 10px 0;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tvHeadlineLeft:link,
+.tvHeadlineLeft:visited,
+.tvHeadlineLeft:hover,
+.tvHeadlineLeft:focus,
+.tvHeadlineLeft:active,
+.tvHeadlineRight:link,
+.tvHeadlineRight:visited,
+.tvHeadlineRight:hover,
+.tvHeadlineRight:focus,
+.tvHeadlineRight:active {
+    text-decoration: none;
+    color: #fff;
+}
+.tvHeadlineLeft {
+    width: 620px;
+    float: left;
+}
+.tvHeadlineRight {
+    text-align: center;
+    width: 300px;
+    float: right;
+}
+
+
+.tvHeadlineRightArrow {
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    display: inline-block;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #fff;
+    border-top: 16px solid rgba(255,255,255,.7);
+}
+
+
+/* ------------------------------------------- */
+
+
+.tabbedBoxTvWrapper {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.tabbedBoxTvContent,
+.tabbedBoxTvSidebar {
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+}
+
+
+.tabbedBoxTvContent {
+    width: 660px;
+}
+.tabbedBoxTvSidebar {
+    width: 300px;
+    /*background: #e8e8e8;*/
+    opacity: 0; /* (1) */
+    height: 0;  /* (2) */
+}
+.tabbedBoxTvSidebar.active {
+    /* die active Class wird per JS gesetzt, sobald der Slider initialisiert ist */
+    opacity: 1;   /* (1) */
+    height: auto; /* (2) */
+}
+
+
+/* ------------------------------------------- */
+
+
+/* Mobile Sticky Teaser fuer oe24tv ausblenden */
+.oe24tvTeaser {
+    display: none;
+}
+
+

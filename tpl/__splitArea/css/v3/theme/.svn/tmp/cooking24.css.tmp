@@ -1,0 +1,109 @@
+<<<<<<< .mine
+<?php
+/**
+ * @collector noauto
+ * @collector headerCooking24
+ */
+
+?>
+
+/* cooking24.at bzw. wirkochen.at - portal color #991239 */
+
+#wrap {
+	background: transparent url(<?slp('image', 'rl2014/bg_cooking24_white.gif')?>) repeat-y 0 0;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+.article_box .article_teaser {
+	color: #333;
+}
+
+::-moz-selection {
+	color: #fff;
+	background-color: #991239;
+}
+::selection {
+	color: #fff;
+	background-color: #991239;
+}
+
+
+/* nav portal */
+
+.nav_portal li {
+	width: 100px;
+}
+.nav_portal li.nav_portal_facebook {
+	width: 138px;
+}
+.nav_portal li.nav_portal_search {
+	width: 21px;
+}
+
+
+/* nav main */
+
+.nav_main {
+	-webkit-box-shadow: 0 2px 7px rgba(76, 14, 25, 0.2);
+	-moz-box-shadow: 0 2px 7px rgba(76, 14, 25, 0.2);
+	box-shadow: 0 2px 7px rgba(76, 14, 25, 0.2);
+
+	background-color: #991239;
+	background-image: linear-gradient(to bottom, #b41152 0px, #8f0c34 100%);
+}
+.nav_main_items .nav_main_item {
+	background-color: #a38489;
+	background-image: linear-gradient(to bottom, #b41152 0px, #8f0c34 100%);
+}
+.nav_main_items .nav_main_item > a {
+	background-color: #a38489;
+	background-image: linear-gradient(to bottom, #991239 0px, #8f0c34 100%);
+}
+.nav_main_items .nav_main_item > a:hover,
+.nav_main_items .nav_main_item > a.active {
+	background-color: #a38489;
+	background-image: linear-gradient(to bottom, #991239 0px, #8f0c34 100%);
+}
+
+.nav_main.fixed .nav_main_items .nav_main_item > a {
+	background-color: #a38489;
+	background-image: linear-gradient(to bottom, #991239 0px, #8f0c34 100%);
+}
+.nav_main.fixed .nav_main_items .nav_main_item > a:hover,
+.nav_main.fixed .nav_main_items .nav_main_item > a.active {
+	background-color: #a38489;
+	background-image: linear-gradient(to bottom, #991239 0px, #8f0c34 100%);
+}
+
+
+/* nav main logo */
+
+.nav_main .nav_main_logo {
+	width: 290px;
+}
+.nav_main .nav_main_logo img {
+	height: 38px;
+	left: 26px;
+	top: 17px;
+}
+.nav_main.fixed .nav_main_logo img {
+	height: 24px;
+	left: 72px;
+	top: 4px;
+}
+
+
+/* nav weather */
+
+.nav_main_weather:hover .icon_arrow {
+	background-color: #9b2a3f;
+	background-image: linear-gradient(to bottom, #9b2a3f 0px, #771627 100%);
+}
+
+
+footer .footer_caption {
+    color: #8f0c34;
+}
+=======
+>>>>>>> .r5309

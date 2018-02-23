@@ -1,0 +1,336 @@
+<?php
+/**
+ * @url /themen
+ * @url /themen/(?<levelName>.*)/(?<levelId>[0-9]+)
+ * @url /themen/(?<topLevelName>.*)/(?<levelName>.*)/(?<levelId>[0-9]+)
+ * @var portal oe24.core.Portal
+ * @var levelName string
+ * @var levelId integer
+ * @var topLevelName string
+ * @default topLevelName Themen
+ * @default levelId 0
+ * @default levelName Themen
+ * @urlManager oe24.oe24
+ * @cache 1d
+ */
+ #@url /themen/(?<channel>.*)
+
+
+
+$oe2016layouts = array(
+	'oe24',
+	'sport',
+	'money',
+	'society',
+);
+
+
+
+//ContentTag::updateContentTag2Items();
+if($levelId){
+	$contentLevel = ContentLevel::getLevelById($levelId);
+	if($contentLevel){
+		$levelNameById = $contentLevel->getName();
+		$topLevelById = ContentLevel::getParentsRecursive($contentLevel->getId());
+		$url='/themen';
+		if($topLevelById && !empty($topLevelById)){
+			$topLevelById = $topLevelById[0];
+			$topLevelNameById = $topLevelById->getName();
+			if(strtoLower($topLevelNameById) != 'themen'){
+				$url.='/' . strtoLower(slugify($topLevelNameById));
+			}
+		} else {
+			$topLevelNameById = 'Themen';
+		}
+		if(strtoLower(slugify($topLevelNameById)) != strtoLower($topLevelName) ||strtoLower(slugify($levelNameById)) != $levelName){
+			$url.='/' . strtoLower(slugify($levelNameById)) .'/'.$contentLevel->getId();
+			//echo $url;
+			redirect('http://'. request()->getHost() . $url,301);
+			exit;
+		}
+		$topContentLevel = $topLevelById;
+	}
+} else {
+	$contentLevel = ContentLevel::getLevelByName($levelName);
+	$topContentLevel=$contentLevel;
+}
+$portalChannel = $portal->getChannel('frontpage');
+$useSplitArea = $portalChannel->getOptions(true, true)->get('useSplitArea');
+$useNewLayout = $portalChannel->getOptions(true, true)->get('useNewLayout');
+// $useSplitArea = false;
+
+if ($useSplitArea === true) {
+	$layout = $portalChannel->getOptions(true,false)->get('layoutOverride') ? $portalChannel->getOptions(true,false)->get('layoutOverride') : 'oe24';
+	// $navigation = new Navigation2014($portal, $portalChannel, $layout);
+	$navigationItemsConfig = array(
+		'header' => array(
+			'top' => 'top_2014',
+			'tabs' => 'tabs_2014',
+			'menue' => 'main'
+		),
+		'footer' => array(
+			'footerSub1',
+			'footerSub2',
+			'footerSub3'
+		)
+	);
+	$navigation = new Navigation($portal, $portalChannel, $layout, $navigationItemsConfig);
+}
+
+if(!$contentLevel || !$topContentLevel){
+    debug('LEVEL-NAME NOT FOUND: ' .  $levelName);
+	if ($useSplitArea === true) {
+		$portalChannel->setPageTitle('Themen - Thema nicht vorhanden');
+		etpl('oe24.oe24.__splitArea._page.header', array(
+            "portal" => $portal,
+            "channel" => $portalChannel,
+            'layout' => $layout,
+            'navigation' => $navigation,
+            'oe2016layouts' => $oe2016layouts,
+            'useNewCollector' => true,
+            'useNewLayout' => $useNewLayout,
+        ));
+		?>
+		<div class="row">
+		<div class="content contentThemen">
+		<?
+	} else {
+    	etpl('oe24.oe24._page.header',array('channel'=> $portalChannel, 'object' => null, 'customPageTitle' => 'Themen - Thema nicht vorhanden'));
+    }
+?>
+  <div class="themenTitel">
+            <h1><a href="javascript:void(0)">Zu diesem Thema gibt es leider keine Seite!</a></h1>
+            <div class="clear"></div>
+        </div>
+<?
+	if ($useSplitArea === true) {
+		etpl('oe24.oe24.__splitArea._page.footer', array("portal" => $portal,"channel" => $portalChannel, 'layout' => $layout, 'navigation' => $navigation, 'oe2016layouts' => $oe2016layouts));
+		?>
+		</div></div>
+		<?
+	} else {
+	    etpl('oe24.oe24._page.footer',array('channel'=> $portalChannel, 'object' => null ));
+	}
+    return NULL;
+}
+
+$levelId=$contentLevel->getId();
+$mainLevels = array($contentLevel);
+$box = new ContentBox();
+$channel = new Channel();
+$loadedContents = array();
+$catNames = array();
+$imageFormat = "consoleMadonnaNoStretch2";
+$levelNameUnsluged='';
+$title='';
+$pageTitle='';
+$levelNameUnsluged=$contentLevel->getName();
+$title = $contentLevel->getTitle();
+$pageTitle = $contentLevel->getPageTitle();
+if ($useSplitArea === true) {
+	$pageTitleHeader = ($pageTitle == '') ? 'Themen - ' . $levelNameUnsluged : $pageTitle;
+	$portalChannel->setPageTitle($pageTitleHeader);
+	etpl('oe24.oe24.__splitArea._page.header', array("portal" => $portal, "channel" => $portalChannel, 'layout' => $layout, 'navigation' => $navigation, 'oe2016layouts' => $oe2016layouts));
+} else {
+	if($pageTitle == ''){
+		etpl('oe24.oe24._page.header',array('channel'=> $portalChannel, 'object' => null ,'customPageTitle' => 'Themen - ' . $levelNameUnsluged));
+	}else{
+		etpl('oe24.oe24._page.header',array('channel'=> $portalChannel, 'object' => null ,'customPageTitle' => $pageTitle));
+	}
+}
+
+if ($useSplitArea === true) {
+	?>
+	<div class="row">
+	<div class="content contentThemen">
+	<?
+}
+
+foreach($mainLevels as $mainCat){
+        $subLevels = $mainCat->getMappedLevels();
+        $subMappedTags = $mainCat->getMappedTags();
+        $image = $mainCat->getFirstAssociatedImage();
+        foreach($subLevels as $subLevel){
+			array_push($catNames,Array(strtolower(slugify($subLevel->getName())),$subLevel->getId(),$subLevel->getName()));
+		}
+
+        if(strtoLower(slugify($mainCat->getName())) == $levelName){
+        ?>
+        <div class="themenBreadcrumb">
+        	<?
+        		if($levelName != 'themen'){
+        	?>
+        	<a href="/themen">&Uuml;bersicht</a>
+        	<?
+        	}if($topLevelName!= 'Themen'){?>
+        	    	 <a href="/themen/<?=strtolower(slugify($topLevelName))?>/<?=$topContentLevel->getId()?>"><?=$topContentLevel->getName()?></a>
+        	  <? } ?>
+           <a href="javascript:void(0)"><?=$levelNameUnsluged?></a>
+            <div class="clear"></div>
+        </div>
+        <?
+        }
+
+        if(count($loadedContents)<=5){
+	        foreach($subMappedTags as $tag){
+
+	            $allContentTags  = array();
+	            $contentTag2Items = ContentTag::getContentTag2Items($tag);
+
+	            foreach ($contentTag2Items as $contentTag2Item) {
+	                if(isset($contentTag2Item['itemId']) && $contentTag2Item['itemId']){
+	                    $allContentTags[] = $contentTag2Item['itemId'];
+	                }
+	            }
+	            foreach($allContentTags as $id){
+	               if(count($loadedContents)>=20)
+	               		break;
+	                $content = db()->getById($id,'oe24.core.TextualContent');
+	                if($content){
+	                    $loadedContents[] = $content;
+	                }
+	            }
+	        }
+       }
+    }
+?>
+<?php if($title != ''): ?>
+<h1 id="themenTitel"><?php echo $title;?></h1>
+<?php else:?>
+<h1 id="themenTitel"><?php echo $levelNameUnsluged;?></h1>
+<?php endif;?>
+<?php
+if(isset($loadedContents[0])){
+$tagImage=$contentLevel->getFirstAssociatedImage();
+$tagDescription=$contentLevel->getDescriptionFrontend();
+$firstArticleTag = false;
+if($tagImage && $tagDescription != ''){
+	$firstArticle=$loadedContents[0];
+	$firstArticleTag = true;
+?>
+	<div class="themenBigArticleBox">
+		<div class="left"><img src="<?=$tagImage->getFileUrl($imageFormat)?>" alt="<?= $tagImage->getRobotsDescription() ?>"/></div>
+		<div class="right">
+		<h2 class="firstH2"><?=$levelNameUnsluged?></h2>
+		<p><?= $tagDescription ?></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+<?
+}else{
+$firstArticle=$loadedContents[0];
+$firstArticleImg = $firstArticle->getFirstRelatedImage(true, $box);
+?>
+<a href="<?= $firstArticle->getUrl()?>">
+<div class="themenBigArticleBox">
+<?
+if (isset($firstArticleImg)) {
+?>
+<div class="left"><img src="<?=$firstArticleImg->getFileUrl($imageFormat)?>" alt="<?s($firstArticle->getTitle(true, $box))?>" /></div>
+<?}?>
+<div class="right">
+<h2 class="firstH2"><?s($firstArticle->getTitle(true, $box))?></h2>
+<p><?= $firstArticle->getLeadText(true); ?></p>
+</div>
+<div class="clear"></div>
+</div>
+</a>
+<?}?>
+<div class="themenSideBar left">
+<? if(isset($catNames) && !empty($catNames)){
+?>
+<div class="themenTitelTop"><h2>Rund um <?=$levelNameUnsluged?></h2></div>
+<div class="themenRundUm">
+<?
+foreach($catNames as $catName){
+if($catName[0] != $levelName){
+?>
+<div class="themenSideNav">
+<? if($levelName != 'Themen'){
+?>
+           <a href="/themen/<?=$levelName?>/<?=$catName[0]?>/<?=$catName[1]?>"><?=$catName[2]?></a>
+ <? }else{?>
+ 		<a href="/themen/<?=$catName[0]?>/<?=$catName[1]?>"><?=$catName[2]?></a>
+ <? }?>
+ </div>
+<?
+}
+}
+?>
+</div>
+<?
+}
+$relatedStories=$firstArticle->getRelatedStories();
+if(isset($relatedStories) && count($relatedStories)>0){
+?>
+ <div class="themenTitelTop"><h2>Topstories <?= ($levelNameUnsluged== 'Themen') ? '' :  $levelNameUnsluged?></h2></div>
+ <div class="themenRelatedStories right" style="float:none;">
+ <?
+
+ etpl('oe24.oe24.mostReadedRelContent',array('box' => $box,'contents'=> $relatedStories));
+ ?>
+ </div>
+ <?}?>
+</div>
+<div class="themenArticleBox" >
+<div class="oe24 content" >
+<div class="flow">
+<?
+
+if ($useSplitArea === true) {
+	array_shift($loadedContents);
+	etpl('oe24.oe24.__splitArea.tpl.content.stories', array('box' => new ContentBox, 'drop_areas_content' => $loadedContents, 'col_count' => 3, 'row_count' => 0, 'max_stories' => count($loadedContents)));
+} else {
+	foreach($loadedContents as $content){
+		if($content != $firstArticle || $firstArticleTag){
+			etpl('oe24.oe24._boxes.article_3_per_row', array('content' => $content, 'box' => $box,  'column' => $portalChannel->getColumnByName('Content Area'), 'channel' => $channel, 'options' => null));
+		}
+	}
+}
+?>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<?
+}else{?>
+<div class="themenSideBar left">
+<? if(isset($catNames) && !empty($catNames)){
+?>
+<div class="themenTitelTop"><h2>Rund um <?=$levelNameUnsluged?></h2></div>
+<div class="themenRundUm">
+<?
+foreach($catNames as $catName){
+if($catName[0] != $levelName){
+?>
+<div class="themenSideNav">
+<? if($levelName != 'Themen'){
+?>
+           <a href="/themen/<?=$levelName?>/<?=$catName[0]?>/<?=$catName[1]?>"><?=$catName[2]?></a>
+ <? }else{?>
+ 		<a href="/themen/<?=$catName[0]?>/<?=$catName[1]?>"><?=$catName[2]?></a>
+ <? }?>
+ </div>
+<?
+}
+}
+?>
+</div>
+<?
+}
+?>
+</div>
+<div class="clear"></div>
+<?
+}
+if ($useSplitArea === true) {
+	?>
+	</div></div>
+	<?
+	etpl('oe24.oe24.__splitArea._page.footer', array("portal" => $portal,"channel" => $portalChannel, 'layout' => $layout, 'navigation' => $navigation, 'oe2016layouts' => $oe2016layouts));
+} else {
+	etpl('oe24.oe24._page.footer',array('channel'=> $portalChannel, 'object' => null ));
+}
+?>

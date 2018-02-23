@@ -1,0 +1,111 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.breakingNewsWrap {
+    display: none;
+}
+
+.breakingNews {
+    padding: 8px 0;
+    margin: 0 15px;
+    overflow: hidden;
+    background-color: #fdf001;
+}
+
+.breakingNews.distanceTop {
+    margin-top: 15px;
+}
+.breakingNews.distanceBottom {
+    margin-bottom: 15px;
+}
+
+.breakingNews .breakingNewsLine {
+    font-family: "OpenSansRegular",Verdana,Arial,sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    color: #000;
+}
+.breakingNews .breakingNewsTeaser {
+    font-size: 1.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 5px;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+.breakingNews .breakingNewsHeadline {
+    font-size: 1.125rem;
+    font-weight: 900;
+    padding: 0 1px;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+/* Animation */
+
+.breakingNews .breakingNewsLine {
+
+    padding-left: 100%;
+    white-space: nowrap;
+
+    -webkit-animation: 30s linear 0ms infinite;
+            animation: 30s linear 0ms infinite;
+
+    /*
+    Wegen eines Safari-Bugs wird der Animationsname
+    hier auf "none" gesetzt und per JavaScript gesetzt
+    -webkit-animation-name: breakingNewsAnimation;
+            animation-name: breakingNewsAnimation;
+    */
+    -webkit-animation-name: none;
+            animation-name: none;
+}
+
+.breakingNews.breakingNewsSlow .breakingNewsLine {
+    -webkit-animation-duration: 35s;
+            animation-duration: 35s;
+}
+.breakingNews.breakingNewsNormal .breakingNewsLine {
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+}
+.breakingNews.breakingNewsFast .breakingNewsLine {
+    -webkit-animation-duration: 25s;
+            animation-duration: 25s;
+}
+
+.breakingNews .breakingNewsLine:hover {
+    text-decoration: none;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+@-webkit-keyframes breakingNewsAnimation {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes breakingNewsAnimation {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}

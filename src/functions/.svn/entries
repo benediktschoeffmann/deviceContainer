@@ -26,77 +26,6 @@ ws
 
 b3528fbe-2e1a-df11-9c31-00e08152a866
 
-getJoe24ReiseAngebote.function.php
-file
-10754
-
-
-
-2017-11-29T15:56:27.435880Z
-3daaf8c35d20ea8072584dddde5108f1
-2017-11-30T09:04:06.041286Z
-10754
-d_berger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4319
-
-getAdventkalenderData.function.php
-file
-7918
-
-
-
-2016-11-29T12:29:48.595882Z
-dbb2b4b398fc0af696b8c5e806573efc
-2016-11-29T12:32:12.427939Z
-7918
-ws
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5535
-
-device
-dir
-
 getTextSectionPages.function.php
 file
 
@@ -233,40 +162,6 @@ pjarnig
 
 4641
 
-_iterateFrontendBoxes.function.php
-file
-
-
-
-
-2017-04-20T11:13:08.492309Z
-7394033726ebaf6c4993867a6b433785
-2016-01-05T12:08:40.358417Z
-6603
-bschoeffmann
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-371
-
 parseTickerXml.function.php
 file
 
@@ -300,6 +195,40 @@ nb
 
 
 2386
+
+_iterateFrontendBoxes.function.php
+file
+
+
+
+
+2017-04-20T11:13:08.492309Z
+7394033726ebaf6c4993867a6b433785
+2016-01-05T12:08:40.358417Z
+6603
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+371
 
 getTvProgramm.function.php
 file
@@ -440,6 +369,74 @@ nb
 amp
 dir
 
+isOe2016Layout.function.php
+file
+11049
+
+
+
+2018-02-06T12:01:45.344706Z
+e3925e6df2621905084bb7130f543480
+2018-02-07T10:47:46.319696Z
+11049
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1202
+
+isParamsTemplateLeftValid.function.php
+file
+11049
+
+
+
+2018-02-06T10:24:43.744102Z
+1215190203c87e8afa87b8f6a0fad9fd
+2018-02-07T10:47:46.319696Z
+11049
+bschoeffmann
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1595
+
 getChannelColor.function.php
 file
 10239
@@ -477,40 +474,6 @@ bschoeffmann
 collectorOe2016
 dir
 
-isBoxInTabBox.function.php
-file
-8622
-
-
-
-2017-03-10T12:28:42.883443Z
-cff5be806b154abb0de3e702eebc6cdf
-2017-03-15T09:26:39.024076Z
-8622
-d_berger
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1290
-
 getLexikonTableData.function.php
 file
 
@@ -545,6 +508,40 @@ pjarnig
 
 1163
 
+isBoxInTabBox.function.php
+file
+8622
+
+
+
+2017-03-10T12:28:42.883443Z
+cff5be806b154abb0de3e702eebc6cdf
+2017-03-15T09:26:39.024076Z
+8622
+d_berger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1290
+
 getNationalTeam.function.php
 file
 8233
@@ -578,4 +575,75 @@ mhartl
 
 
 16264
+
+getJoe24ReiseAngebote.function.php
+file
+10754
+
+
+
+2017-11-29T15:56:27.435880Z
+3daaf8c35d20ea8072584dddde5108f1
+2017-11-30T09:04:06.041286Z
+10754
+d_berger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4319
+
+getAdventkalenderData.function.php
+file
+7918
+
+
+
+2016-11-29T12:29:48.595882Z
+dbb2b4b398fc0af696b8c5e806573efc
+2016-11-29T12:32:12.427939Z
+7918
+ws
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5535
+
+device
+dir
 

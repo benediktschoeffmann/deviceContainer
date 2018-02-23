@@ -1,0 +1,50 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.oe2016 .sidebar .magazinGewinnspiel {
+	/*background-color: transparent;*/
+	background-color: #ebebeb;
+}
+.oe2016 .sidebar .magazinGewinnspiel .defaultbox_header,
+.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body {
+	background-color: transparent;
+}
+.oe2016 .sidebar .magazinGewinnspiel .listbox_body span.teaserImage,
+.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body span.teaserImage {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.oe2016 .sidebar .magazinGewinnspiel .listbox_body span.teaserImage img,
+.oe2016 .sidebar .magazinGewinnspiel .defaultbox_body span.teaserImage img {
+	height: 68px;
+}
+
+.oe2016 .sidebar .magazinGewinnspiel .storyWrapper .teaserText {
+	font-family: "OpenSansRegular", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.oe2016 .sidebar .magazinGewinnspiel a:hover {
+	text-decoration: none;
+}
+
+.oe2016 .sidebar .magazinGewinnspiel .defaultbox_header .headline {
+	font-family: "oe24",sans-serif;
+	font-weight: 400;
+	line-height: 1.3;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 4px 6px 0 6px;
+	margin: 0 0 5px 0;
+	color: #fff;
+}
+

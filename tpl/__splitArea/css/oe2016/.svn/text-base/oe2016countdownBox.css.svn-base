@@ -1,0 +1,125 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+
+.countdownBox {
+    font-family: "oe24",sans-serif;
+    width: 960px;
+    height: 84px;
+    padding: 0;
+    margin: 10px 15px 0;
+    background-color: #e73239;
+    background-image: linear-gradient(to bottom, #e73239, #d0113a);
+    position: relative;
+    display: none;
+}
+.countdownBox.countdownRunning {
+    display: block;
+}
+.countdownBox.countdownFinished {
+    display: none;
+}
+
+
+.countdownBoxText,
+.countdownTable {
+    float: left;
+}
+.countdownBoxText {
+    font-size: 3.8rem;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    top: 19px;
+}
+.countdownBoxTextLeft {
+    left: 20px;
+}
+.countdownBoxTextRight {
+    right: 20px;
+
+    /* BP Wahl 2016 */
+    right: 54px;
+    /* BP Wahl 2016 */
+}
+
+
+.countdownTable {
+    display: table;
+    width: 290px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    position: absolute;
+    left: 178px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* BP Wahl 2016 */
+    left: 40px;
+    /* BP Wahl 2016 end */
+}
+.countdownRow {
+    display: table-row;
+}
+.countdownRowTop {
+    font-family: "OpenSans",sans-serif;
+}
+.countdownCell {
+    font-size: .75rem;
+    display: table-cell;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+.countdownCounter .countdownCell {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+
+
+/* (ws) 2016-12-28 Silvester Countdown */
+
+.countdownBox.countdownFinished {
+    display: block;
+}
+.countdownBox.countdownRunning,
+.countdownBox.countdownFinished {
+    display: block;
+}
+.countdownBox.countdownRunning .countdownBoxRunning {
+    display: block;
+}
+.countdownBox.countdownRunning .countdownBoxFinished {
+    display: none;
+}
+.countdownBox.countdownFinished .countdownBoxRunning {
+    display: none;
+}
+.countdownBox.countdownFinished .countdownBoxFinished {
+    display: block;
+}
+
+
+.countdownBoxFinished {
+    position: relative;
+}
+.countdownBoxTextCenter {
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 12px;
+}
+
+
+.countdownTable {
+    left: 20px;
+}
+.countdownBoxTextRight {
+    right: 26px;
+}
+
+/* (ws) 2016-12-28 Silvester Countdown end */

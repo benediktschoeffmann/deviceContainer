@@ -1,0 +1,238 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.layout_gesund24.oe2016 p::-moz-selection,
+.layout_gesund24.oe2016 span::-moz-selection,
+.layout_gesund24.oe2016 strong::-moz-selection,
+.layout_gesund24.oe2016 h1::-moz-selection,
+.layout_gesund24.oe2016 h2::-moz-selection,
+.layout_gesund24.oe2016 h3::-moz-selection,
+.layout_gesund24.oe2016 a::-moz-selection,
+.layout_gesund24.oe2016 div::-moz-selection,
+.layout_gesund24.oe2016 u::-moz-selection,
+.layout_gesund24.oe2016 img::-moz-selection,
+.layout_gesund24.oe2016 br::-moz-selection,
+.layout_gesund24.oe2016 ul::-moz-selection,
+.layout_gesund24.oe2016 li::-moz-selection,
+.layout_gesund24.oe2016 iframe::-moz-selection {
+    color: #fff;
+    background-color: #6a9dff;
+}
+.layout_gesund24.oe2016 p::selection,
+.layout_gesund24.oe2016 span::selection,
+.layout_gesund24.oe2016 strong::selection,
+.layout_gesund24.oe2016 h1::selection,
+.layout_gesund24.oe2016 h2::selection,
+.layout_gesund24.oe2016 h3::selection,
+.layout_gesund24.oe2016 a::selection,
+.layout_gesund24.oe2016 div::selection,
+.layout_gesund24.oe2016 u::selection,
+.layout_gesund24.oe2016 img::selection,
+.layout_gesund24.oe2016 br::selection,
+.layout_gesund24.oe2016 ul::selection,
+.layout_gesund24.oe2016 li::selection,
+.layout_gesund24.oe2016 iframe::selection {
+    color: #fff;
+    background-color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .headerNavLogo {
+    padding: 14px 8px 0;
+}
+.layout_gesund24.oe2016 .headerNavLogoCol.logoPortal {
+    width: 262px;
+}
+.layout_gesund24.oe2016 .headerNavLogoCol.logoPortal img {
+    height: 67px;
+}
+.layout_gesund24.oe2016 .headerNavLogoCol.logoOesterreich {
+    width: 590px;
+}
+.layout_gesund24.oe2016 .headerNavLogoCol.logoOesterreich img {
+    height: 52px;
+    bottom: 16px;
+}
+.layout_gesund24.oe2016 .headerNavLogoCol.logoOesterreich span {
+    width: 120px;
+    left: 74px;
+    bottom: 16px;
+}
+
+
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogo {
+    padding: 3px 8px;
+}
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogo a,
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogo a img {
+    height: 25px;
+}
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich {
+    height: 24px;
+    width: 682px;
+}
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich img {
+    right: 0;
+    bottom: 0;
+}
+.layout_gesund24.oe2016 .stickyHeader .headerNavLogoCol.logoOesterreich span {
+    left: 366px;
+    bottom: 0;
+}
+
+
+/* color-change (reise->gesund) 2b4a90->61b6f4 ... 25407c->3194dd */
+.layout_gesund24.oe2016 .headerNavContainer {
+    background-color: #61b6f4;
+    background-image: -webkit-linear-gradient(top, #61b6f4 20%, #3194dd);
+    background-image: linear-gradient(to bottom, #61b6f4 20%, #3194dd);
+}
+
+.layout_gesund24.oe2016 .headerNav .headerNavTopicsCaption,
+.layout_gesund24.oe2016 .consoleStoryPreTitle, 
+.layout_gesund24.oe2016 .consoleStoryLiveTicker {
+	background-color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .headerNavMain .headerNavMainItem > a > span {
+    border-left: 1px solid #3194dd;
+    border-right: 1px solid #3194dd;
+}
+
+.layout_gesund24.oe2016 .headerNavMain,
+.layout_gesund24.oe2016 .headerNavMain .headerNavMainItem.facebook span,
+.layout_gesund24.oe2016 .headerNavMain .headerNavMainItem.facebook:hover span {
+    background-color: #297dbb;
+}
+
+/* CONSOLE */
+.layout_gesund24.oe2016 .consoleStoryText {
+	width: 850px;
+}
+
+.layout_gesund24.oe2016 .consoleStoryText .consoleStoryTitle {
+	/*font-size: 3rem;*/
+}
+
+.layout_gesund24.oe2016 .tabbedBox.gesund24 .sidebar {
+	margin-top: 0px;
+	padding: 20px 15px 8px 20px;
+}
+
+.layout_gesund24.oe2016 .console .consoleBoxHeadline span {
+    background-color: #6a9dff;
+}
+.layout_gesund24.oe2016 .console .consoleStoryCounter {
+    background-color: #6a9dff;
+}
+.layout_gesund24.oe2016 .console .buttonPrev, 
+.layout_gesund24.oe2016 .console .buttonNext {
+    color: #6a9dff;   
+}
+.layout_gesund24.oe2016 .consoleNavigationItem:hover p,
+.layout_gesund24.oe2016 .imageSlideShowWrapper .arrow span:hover {
+    color: #6a9dff;     
+}
+
+.layout_gesund24.oe2016 .imageSlideShowWrapper .arrow, 
+.layout_gesund24.oe2016 .imageSlideShowWrapper .slideshowOverlayBanner,
+.layout_gesund24.oe2016 .imageSlideShowWrapper .bigSlideShow .caption .title {
+    background-color: #6a9dff;
+}
+.layout_gesund24.oe2016 .imageSlideShowWrapper .arrow:hover {
+    color: #6a9dff;    
+    background-color: #fff;
+}
+
+/* ARTIKELDETAIL */
+
+.layout_gesund24.oe2016 .article_box .overlay_box .caption {
+	background-color: #6a9dff;
+	/*background-color: #4aa6e8*/
+}
+
+.layout_gesund24.oe2016 .service .comment,
+.layout_gesund24.oe2016 .service .comment:hover {
+	background-color: #6a9dff;
+}
+
+
+.layout_gesund24.oe2016 .comments .hidePostingDiv,
+.layout_gesund24.oe2016 .service .breadcrumbs a,
+.layout_gesund24.oe2016 .service .breadcrumbs a:hover {
+	color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .service .comment,
+.layout_gesund24.oe2016 .service .comment:hover {
+	color: #FFF;
+}
+
+.layout_gesund24.oe2016 .article_share .socialInlineText {
+	color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .channelTopStoriesHeader {
+	background-color: #6a9dff;
+	color: #FFF;
+}
+
+.layout_gesund24.oe2016 footer .footer_caption {
+	color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .channelTopStories .channel_box a:hover .story_pretitle,
+.layout_gesund24.oe2016 .channelTopStories .channel_box a:hover .story_pagetitle {
+	color: #6a9dff !important;
+}
+
+.layout_gesund24.oe2016 .service .comment:hover {
+	background-color: #eee;
+	color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .relatedArticlesHeadline {
+	color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 .content .channel_box .story_pretitle {
+    background-color: transparent;
+}
+
+.layout_gesund24.oe2016 .sidebar .adSlotAdition {
+	margin-bottom: 20px;
+}
+
+.layout_gesund24.oe2016 .article_pages a {
+    color: #6a9dff;
+}
+.layout_gesund24.oe2016 .article_pages a.active, 
+.layout_gesund24.oe2016 .article_pages a:hover {
+    background-color: #6a9dff;
+    color: #fff;
+}
+
+/* Article Content Slider */
+.layout_gesund24.oe2016 .articleContentSliderBox button,
+.layout_gesund24.oe2016 .articleContentSliderBox .sliderCounter{
+    background-color: #6a9dff;
+}
+.layout_gesund24.oe2016 .articleContentSliderBox button:hover {
+    background-color: #fff;
+}
+.layout_gesund24.oe2016 .articleContentSliderBox button:hover path.arrow {
+    fill: #6a9dff;
+    stroke: #6a9dff;
+}
+
+/* Ligatus */
+.layout_gesund24.oe2016 #ligatusframe_78827_7159 .ad_wrapper_78827_7159::before {
+    background-color: #6a9dff;
+}
+
+.layout_gesund24.oe2016 #ligatusframe_78827_7159 a:hover .ligatus_cuc_headline,
+.layout_gesund24.oe2016 #ligatusframe_78827_7159 a:hover .ligatus_cuc_teaser {
+    color: #6a9dff !important;
+}

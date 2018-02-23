@@ -1,0 +1,1664 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerMadonna
+ */
+?>
+
+/* pt-serif (madonna24.at) */
+
+@font-face {
+    font-family: 'PTSerifRegular';
+    src: url('/images/fonts/rl2014/pt-serif/PTF55F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF55F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF55F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF55F-webfont.svg#PTSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSerifItalic';
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF56F-webfont.svg#PTSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSerifBold';
+    src: url('/images/fonts/rl2014/pt-serif/PTF75F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF75F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF75F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF75F-webfont.svg#PTSerifBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSerifBoldItalic';
+    src: url('/images/fonts/rl2014/pt-serif/PTF76F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTF76F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTF76F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTF76F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTF76F-webfont.svg#PTSerifBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSerifCaptionRegular';
+    src: url('/images/fonts/rl2014/pt-serif/PTZ55F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTZ55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTZ55F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTZ55F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTZ55F-webfont.svg#PTSerifCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PTSerifCaptionItalic';
+    src: url('/images/fonts/rl2014/pt-serif/PTZ56F-webfont.eot');
+    src: url('/images/fonts/rl2014/pt-serif/PTZ56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/images/fonts/rl2014/pt-serif/PTZ56F-webfont.woff') format('woff'),
+         url('/images/fonts/rl2014/pt-serif/PTZ56F-webfont.ttf') format('truetype'),
+         url('/images/fonts/rl2014/pt-serif/PTZ56F-webfont.svg#PTSerifCaptionItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* -------------------- */
+
+::selection {
+    color: #fff;
+    background-color: #cc054a;
+}
+::-moz-selection {
+    color: #fff;
+    background-color: #cc054a;
+}
+
+
+body,
+a {
+    color: #000;
+    background: #fff;
+}
+a:hover,
+a:focus {
+    color: #000;
+}
+
+
+noscript {
+    display: block;
+    height: 0;
+}
+
+
+#wrap {
+    background: #fff;
+}
+
+
+header {
+    padding-top: 0;
+}
+
+
+footer .footer_bottom {
+    border-top: none;
+}
+
+
+/* Madonna Box-Ueberschrift */
+
+.boxCaptionBox {
+    border-bottom: 1px solid #e3e3e3;
+}
+.boxCaption {
+    padding: 0;
+    margin: 0;
+    line-height: 16px;
+}
+.boxCaptionTitle,
+.boxCaptionSubTitle {
+    font-size: .75rem;
+    line-height: 23px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+.boxCaption,
+.boxCaptionTitle {
+    font-size: 0.9375rem;
+}
+.boxCaptionTitle,
+.boxCaptionSubTitle {
+    display: inline-block;
+}
+.boxCaptionTitle {
+    font-family: "oe24";
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+.boxCaptionTitle:before,
+.boxCaptionTitle:after {
+    content: '';
+    font-size: 1px;
+    line-height: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    background-color: transparent;
+}
+.boxCaptionTitle:before {
+    float: left;
+    margin-right: 38px;
+    border-width: 20px 20px 0 0;
+    border-color: #fff transparent transparent transparent;
+}
+.boxCaptionTitle:after {
+    float: right;
+    margin-left: 38px;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #fff transparent;
+}
+.boxCaptionSubTitle {
+    font-family: "PTSerifItalic";
+    font-size: .875rem;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+
+/* Portal Navigation */
+
+.nav_portal {
+    background-color: #6590b2;
+    background-image: linear-gradient(to bottom, #6590b2 0px, #4c6778 100%);
+    background-color: #d5d1db;
+    background-image: linear-gradient(to bottom, #d5d1db 0px, #e2dfe6 100%);
+}
+.nav_portal a,
+.nav_portal a:focus {
+    font-family: "OpenSansBold",sans-serif;
+    color: #343434;
+    background-color: #4e7796;
+    background-image: linear-gradient(to bottom, #4e7796 0px, #4c6778 100%);
+    background-color: #d5d1db;
+    background-image: linear-gradient(to bottom, #e2dfe6 0px, #d5d1db 100%);
+}
+.nav_portal li.nav_portal_facebook {
+    background-color: #4e7796;
+    background-image: linear-gradient(to bottom, #4e7796 0px, #4c6778 100%);
+    background-color: #d5d1db;
+    background-image: linear-gradient(to bottom, #e2dfe6 0px, #d5d1db 100%);
+}
+.nav_portal a:hover,
+.nav_portal a.active {
+    background-color: #5085ad;
+    background-image: linear-gradient(to bottom, #5085ad 0px, #50768d 100%);
+    color: #fff;
+    background-color: #c8c3d0;
+    background-image: linear-gradient(to bottom, #c8c3d0 0px, #d5d1db 100%);
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+
+/* Main Navigation */
+
+.nav_main {
+    /*height: 212px;*/
+    /*padding-bottom: 18px;*/
+    /*background: transparent url(<?slp('image', 'rl2014/madonnaShadow.jpg')?>) repeat-x 0 bottom;*/
+    height: auto;
+}
+.nav_main_logo {
+    width: 548px;
+    height: 124px;
+    margin: 12px auto 0;
+    display: block;
+    float: none;
+
+    width: 760px;
+    margin: 12px 0 0;
+    text-align: center;
+
+    width: 640px;
+    margin: 12px 0 0 0;
+    text-align: center;
+}
+.nav_main_logo img {
+    position: static;
+}
+.nav_main_logo_small {
+    width: 120px;
+    height: 38px;
+    line-height: 29px;
+    padding: 0 3px;
+    display: none;
+}
+
+.nav_main_bottom {
+    padding: 3px 0;
+    margin-top: 22px;
+    border-top: 1px solid #c8c7c8;
+    border-bottom: 1px solid #c8c7c8;
+}
+
+
+.nav_main .nav_main_logo,
+.nav_main .madonnaHeaderSocialBox {
+    float: left;
+}
+.nav_main .madonnaHeaderSocialBox {
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    margin: 98px 0 0 16px;
+}
+.nav_main .madonnaHeaderSocialBox a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    color: #000;
+    background-color: #ecebee;
+    border-radius: 17px;
+}
+.nav_main .madonnaHeaderSocialBox a:hover {
+    text-decoration: none;
+    color: #cc054a;
+}
+
+
+.nav_main_top {
+    /*position: relative;*/
+}
+.nav_main .madonnaNavSpecialHoroskop {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+.nav_main .horoskopListItem a:hover .horoskopName {
+    text-decoration: none;
+    color: #cc054a;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign {
+    width: 85px;
+    height: 54px;
+    margin: 0 auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(<? slp('image', 'rl2014/zodiacRect.png'); ?>);
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.widder {
+    background-position: 0 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.stier {
+    background-position: -85px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.zwillinge {
+    background-position: -170px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.krebs {
+    background-position: -255px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.loewe {
+    background-position: -340px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.jungfrau {
+    background-position: -425px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.waage {
+    background-position: -510px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.skorpion {
+    background-position: -595px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.schuetze {
+    background-position: -680px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.steinbock {
+    background-position: -765px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.wassermann {
+    background-position: -850px 0;
+}
+.nav_main .madonnaNavSpecialHoroskop .zodiakSign.fische {
+    background-position: -935px 0;
+}
+
+.nav_main .madonnaNavSpecialHoroskop .horoskopName,
+.nav_main .madonnaNavSpecialHoroskop .horoskopDate {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    display: block;
+    white-space: nowrap;
+}
+.nav_main .madonnaNavSpecialHoroskop .horoskopName {
+    font-size: .75rem;
+    margin-top: 3px;
+}
+.nav_main .madonnaNavSpecialHoroskop .horoskopDate {
+    font-size: 1rem;
+    color: #d5d1db;
+}
+.nav_main .madonnaNavSpecialHoroskop .horoskopListItem {
+    display: none;
+}
+.nav_main .madonnaNavSpecialHoroskop .horoskopListItem.active {
+    display: block;
+}
+
+
+.nav_main .madonnaHeaderCoverBox {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+}
+.nav_main .headerCover {
+    text-align: right;
+    display: block;
+}
+.nav_main .headerCoverImage {
+    width: 164px;
+    height: 196px;
+    padding: 16px;
+    display: block;
+    overflow: hidden;
+}
+.nav_main .headerCoverImage img {
+    width: 139px;
+    height: 187px;
+    /*display: block;*/
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-box-shadow: -3px -2px 7px -1px #ccc;
+    -moz-box-shadow:    -3px -2px 7px -1px #ccc;
+    box-shadow:         -3px -2px 7px -1px #ccc;
+}
+
+
+.nav_main_items {
+    margin: 0 16px;
+    max-height: none;
+}
+.nav_main_items .nav_main_item {
+    float: none;
+    display: inline-block;
+}
+.nav_main_items,
+.nav_main_items .nav_main_item,
+.nav_main_items .nav_main_item:first-child {
+    padding: 0;
+}
+.nav_main_items .nav_main_item > a {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.375rem;
+    font-weight: 300;
+    padding: 3px 0;
+    color: #000;
+    text-transform: none;
+    position: relative;
+}
+.nav_main_items .nav_main_item > a:hover,
+.nav_main_items .nav_main_item > a.active {
+    color: #cc054a;
+}
+
+
+.nav_main_items .nav_main_item .nav_main_item_seperator {
+    font-size: .625rem;
+    color: #000;
+    padding: 0 2px;
+    display: inline-block;
+}
+.nav_main_items .nav_main_item:first-child .nav_main_item_seperator {
+    display: none;
+}
+
+
+.nav_main_item.nav_main_item_pandora a {
+    color: #c5c2cb;
+}
+
+
+.subnav_container_outer {
+    top: 197px;
+    top: 201px;
+    background-color: transparent;
+    /*visibility: visible;*/
+}
+.subnav_container {
+    height: 38px;
+    border-top: 1px solid #d5d1db;
+    border-bottom: 1px solid #d5d1db;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 5px #fefefe;
+}
+.subnav_menu {
+    padding: 6px 10px 0;
+    /*display: inline-block;*/
+}
+.subnav_menu a {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-transform: none;
+    padding: 0 8px;
+    color: #000;
+    background-color: transparent;
+}
+.subnav_menu a:hover,
+.subnav_menu .active a {
+    color: #cc054a;
+    background-color: transparent;
+}
+
+
+/* Main Navigation END */
+
+
+
+/* Content */
+
+.content .channel_box.top_story,
+.content .channel_box.top_story .overlay_box {
+    height: 388px;
+}
+.content .channel_box.top_story img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.row_margin_top,
+.row_margin_bottom {
+    height: 20px;
+}
+/*
+.row_margin_bottom .row_margin_inner {
+    height: 15px;
+    border-top: none;
+    background: transparent url(<?slp('image', 'rl2014/madonnaShadow.jpg')?>) repeat-x 0 top;
+}
+.storySliderBox:after {
+    content: "";
+    display: block;
+    height: 15px;
+    margin: 20px 0;
+    background: transparent url(<?slp('image', 'rl2014/madonnaShadow.jpg')?>) repeat-x 0 bottom;
+}
+*/
+
+
+.row_caption_body,
+.row_caption_title {
+/* MH START 20150513 Rechte Spalte TabbedBox
+    position: static;
+MH END 20150513 Rechte Spalte TabbedBox */
+    padding: 0;
+    margin: 0
+}
+.row_caption_title h2 {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: #000;
+}
+.row_caption_title h2:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: #cc054a;
+    position: relative;
+    top: 5px;
+}
+.row_caption_title h2 a,
+.row_caption_title h2 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.row_caption_title h2 a:hover {
+    color: #000;
+}
+.row_caption_info {
+/* MH START 20150513 Rechte Spalte TabbedBox
+    display: none; */
+    bottom: -2px;
+/* MH END 20150513 Rechte Spalte TabbedBox */
+    border-bottom: none;
+}
+
+.row_caption_info img, .row_caption_info span {
+    /* MH START 20150513 Rechte Spalte TabbedBox */
+    line-height: 1.5;
+    height: 30px;
+    color: #cc054a;
+    /* MH END 20150513 Rechte Spalte TabbedBox */
+}
+
+
+.content .col {
+    margin-bottom: 20px;
+}
+.content .col2 {
+    width: 300px;
+    margin-right: 20px;
+}
+
+
+.col.madonna a {
+    position: relative;
+}
+
+
+.col.madonna .storyImage {
+    width: 300px;
+    height: 300px;
+}
+.col.madonna.portrait .storyImage {
+    height: 620px;
+    position: relative;
+}
+.col.madonna.portrait.missing .storyImage {
+    background-color: #efefef;
+}
+.col.madonna.portrait.missing .storyImage:after {
+    content: "";
+    font-size: .625rem;
+    color: #ccc;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.col.madonna .storyImage img {
+    width: 100%;
+}
+
+
+.col.madonna .madonnaStoryInfo {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    width: 85%;
+    padding: 0 0 0 5px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+}
+.col.madonna.portrait .madonnaStoryInfo {
+    bottom: 24px;
+}
+.col.madonna .story_copyright,
+.col.madonna .story_pretitle,
+.col.madonna .story_pagetitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    display: inline-block;
+}
+.col.madonna .story_copyright {
+    font-size: .8125rem;
+    color: #fff;
+    background-color: #cc054a;
+}
+.col.madonna .story_pretitle {
+    font-family: "OpenSansRegular",sans-serif;
+    font-size: .8125rem;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #cc054a;
+
+    font-family: "oe24";
+    font-size: .9375rem;
+    text-transform: uppercase;
+    padding: 4px 10px 0;
+}
+.col.madonna .story_pagetitle {
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0;
+    margin: 1px 0;
+    border-left: 7px solid #fff;
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+.col.madonna .story_pagetitle_background {
+    padding-right: 7px;
+    background-color: #fff;
+    white-space: pre-wrap;
+}
+.col.madonna a:hover .story_pretitle {
+    color: #fff;
+    background-color: #f90b5e;
+}
+.col.madonna a:hover .story_pagetitle {
+    color: #cc054a;
+}
+
+
+/* Konsole */
+
+.consoleContent {
+    height: 420px;
+    position: relative;
+}
+.consoleContent .consoleTop {
+    height: 354px;
+    overflow: hidden;
+    position: relative;
+}
+.consoleContent .consoleTopItem {
+    display: block;
+    position: relative;
+}
+.consoleContent .consoleTop consoleItemImage {
+    width: 620px;
+    height: 388px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.consoleContent .consoleTopText {
+    /*width: 70%;*/
+    width: 100%;
+    /*padding: 0 5px;*/
+    /*padding: 0 5px 0 40px;*/
+    padding: 0 40px;
+    position: absolute;
+    left: 0;
+    bottom: 34px;
+
+}
+.consoleContent .consoleTopText .consolePreTitle {
+    font-family: "oe24";
+    font-size: .9375rem;
+    text-transform: uppercase;
+    padding: 4px 10px 0;
+    display: inline-block;
+    color: #fff;
+    background-color: #cc054a;
+}
+.consoleContent .consoleTopText .consolePageTitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 2.375rem;
+    font-weight: 300;
+    line-height: 1.3;
+    padding: 0;
+    border-left: 7px solid #fff;
+    margin: 1px 0;
+    color: #000;
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+}
+.consoleContent .consoleTopText .consolePageTitleBackground {
+    padding-right: 7px;
+    background-color: #fff;
+    white-space: pre-wrap;
+}
+
+
+/*
+.consoleContent .consoleTopItems {
+    opacity: 0;
+    height: 0;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.consoleContent .consoleTopItems.slick-initialized {
+    opacity: 1;
+    height: auto;
+}
+*/
+
+
+/* 6px "iframe-Bug" */
+.sidebar_console_row {
+    position: relative;
+}
+.sidebar_console_row .col_wide_right.imageOnlyBox {
+    position: absolute;
+    left: 0;
+    top: 270px;
+}
+/* 6px "iframe-Bug" end */
+
+
+.consoleContent .consoleBottom {
+    height: 66px;
+    overflow: hidden;
+    position: relative;
+}
+.consoleContent .consoleBottomItems {
+    background-color: #1a1a1a;
+}
+.consoleContent .consoleBottomItem {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: .8125rem;
+    text-decoration: none;
+    margin: 0;
+    width: 155px;
+    height: 100%;
+    background-color: #1a1a1a;
+    float: left;
+}
+.consoleContent .consoleBottomItem:hover {
+    text-decoration: none;
+}
+.consoleContent .consoleBottomChannel,
+.consoleContent .consoleBottomText {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    font-size: .8125rem;
+    padding: 0 5px;
+    margin: 0;
+    display: block;
+}
+.consoleContent .consoleBottomChannel {
+    text-transform: uppercase;
+    height: 20px;
+    line-height: 20px;
+    color: #000;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.consoleContent .consoleBottomText {
+    height: 46px;
+    padding: 7px 5px 5px;
+    margin: 0;
+    overflow: hidden;
+}
+.consoleContent .consoleBottomText .consolePreTitle {
+    color: #c8aae3;
+}
+.consoleContent .consoleBottomText .consoleLeadText {
+    line-height: 1.2;
+    height: 32px;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.consoleContent .consoleBottomItem:hover .consoleBottomChannel,
+.consoleContent .consoleBottomItem.current .consoleBottomChannel {
+    color: #cc054a;
+}
+.consoleContent .consoleBottomItem:hover .consoleBottomText,
+.consoleContent .consoleBottomItem.current .consoleBottomText {
+    background-color: #cc054a;
+    background-color: #544f5b;
+}
+
+
+.slick-list {
+    box-shadow: -1px 0 0 #1a1a1a, 1px 0 0 #1a1a1a;
+}
+
+
+.consoleContent .consoleCounter {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 0.8125rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 2px 8px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #1a1a1a;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+
+.consoleContent .consoleButtonPrev,
+.consoleContent .consoleButtonNext {
+    width: 34px;
+    height: 96px;
+    padding: 5px;
+    background-color: #1a1a1a;
+    background-color: rgba(26,26,26,.95);
+    outline: none;
+    position: absolute;
+    top: 120px;
+}
+.consoleContent .consoleButtonPrev {
+    border-radius: 0 3px 3px 0;
+    left: 0;
+    background-position: 0 0;
+}
+.consoleContent .consoleButtonNext {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+    background-position: -24px 0;
+}
+.consoleContent .consoleButtonPrev,
+.consoleContent .consoleButtonNext,
+.consoleContent .consoleButtonPrev:hover,
+.consoleContent .consoleButtonNext:hover {
+    text-decoration: none;
+}
+.consoleContent .consoleButtonPrev span,
+.consoleContent .consoleButtonNext span {
+    width: 27px;
+    height: 86px;
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(<?slp('image', 'rl2014/madonnaConsoleArrows.png')?>);
+}
+.consoleContent .consoleButtonPrev span {
+    background-position: 0 0;
+}
+.consoleContent .consoleButtonNext span {
+    background-position: -27px 0;
+}
+.consoleContent .consoleButtonPrev:hover span {
+    background-position: 0 -86px;
+}
+.consoleContent .consoleButtonNext:hover span {
+    background-position: -27px -86px;
+}
+
+
+
+.consoleContent .consoleBottomBorder {
+    width: 100%;
+    height: 66px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.consoleContent .consoleBottomBorderOuter {
+    height: 20px;
+    border-right: 1px solid #d5d1db;
+    border-left: 1px solid #d5d1db;
+}
+
+
+/*
+.consoleContent .consoleBottomBorder {
+    width: 100%;
+    height: 66px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.consoleContent .consoleBottomBorderOuter,
+.consoleContent .consoleBottomBorderInner {
+    width: 100%;
+}
+.consoleContent .consoleBottomBorderOuter div,
+.consoleContent .consoleBottomBorderInner div {
+    width: 155px;
+}
+.consoleContent .consoleBottomBorderOuter {
+    height: 20px;
+}
+.consoleContent .consoleBottomBorderInner {
+    height: 46px;
+}
+.consoleContent .consoleBottomBorderOuter div {
+    height: 20px;
+    border-left: 1px solid #d5d1db;
+    float: left;
+}
+.consoleContent .consoleBottomBorderOuter div.last {
+    border-right: 1px solid #d5d1db;
+}
+.consoleContent .consoleBottomBorderInner div {
+    height: 30px;
+    margin-top: 8px;
+    border-left: 1px solid #c8aae3;
+    float: left;
+}
+.consoleContent .consoleBottomBorderInner div.first {
+    border-left: none;
+}
+*/
+
+
+/* Artikel */
+
+.content.channelTopStoriesContent .col2 {
+    width: 300px;
+    margin-right: 30px;
+}
+.content.channelTopStoriesContent .col.last {
+    margin-right: 0;
+}
+
+
+.article_box h1 {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 400;
+}
+.article_box .overlay_box .caption {
+    font-family: "PTSerifRegular",sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    color: #fff;
+    background-color: #cc054a;
+    display: inline-block;
+}
+.article_box .slideshow .overlay_box .caption {
+    font-family: "oe24condensed";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    text-transform: none;
+}
+.service .comment, .service .comment:hover {
+    background-color: #cc054a;
+}
+.service .breadcrumbs a {
+    color: #cc054a;
+}
+.article_social {
+    border-right: 2px solid #cc054a;
+}
+.article_share .socialInlineText {
+    color: #cc054a;
+}
+.comments .hidePostingDiv {
+    color: #cc054a;
+}
+
+
+.channelTopStoriesHeader {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 2.125rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+}
+.channelTopStoriesHeader:after {
+    content: "//";
+    font-family: "OpenSansLight",sans-serif;
+    font-size: 2.5rem;
+    margin-left: 10px;
+    color: #cc054a;
+    position: relative;
+    top: 5px;
+}
+
+
+.article_share .icon_googleplus {
+    color: #cc054a;
+}
+
+.slideshow .slideshowOverlayBanner {
+    background-color: #cc054a;
+}
+.imageSlideShowWrapper .slideshowOverlayBanner {
+    background-color: #cc054a;
+}
+.slideshowContainer p.copyright {
+    background-color: #000;
+}
+
+.textSlideshow .textSlideshowHeadline {
+    font-family: "PTSerifItalic",sans-serif;
+    color: #000;
+    background-color: #ecebee;
+}
+.textSlideshow .arrow {
+    background-color: #cc054a;
+    background-image: none;
+}
+
+
+/* Voting Artikel */
+
+.votingResult section h1 {
+    font-size: 2rem;
+}
+.votingResult .votingImg,
+.votingResult .barWrapper {
+    float: left;
+}
+.votingResult .votingImg {
+    width: 140px;
+    margin-bottom: 1px;
+    clear: left;
+    border: 1px solid #efefef;
+}
+.votingResult .barWrapper {
+    width: 442px;
+    height: 71px;
+    padding: 10px;
+    margin-bottom: 1px;
+    background-color: #efefef;
+}
+.votingResult .barWrapper .bar {
+    height: 10px;
+    margin-top: 6px;
+    display: block;
+    background-color: #cc054a;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    background: #cc3b6b;
+    background: -moz-linear-gradient(top,  #cc3b6b 0%, #cc054a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc3b6b), color-stop(100%,#cc054a));
+    background: -webkit-linear-gradient(top,  #cc3b6b 0%,#cc054a 100%);
+    background: -o-linear-gradient(top,  #cc3b6b 0%,#cc054a 100%);
+    background: -ms-linear-gradient(top,  #cc3b6b 0%,#cc054a 100%);
+    background: linear-gradient(to bottom,  #cc3b6b 0%,#cc054a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3b6b', endColorstr='#cc054a',GradientType=0 );
+}
+.votingResult .barWrapper .ranking {
+    font-weight: bold;
+    display: inline;
+    margin-right: 10px;
+}
+.votingResult .barWrapper .ranking:after {
+    content: ":";
+}
+
+
+/* --------- */
+
+.content.channelTopStoriesContent section a {
+    position: relative;
+}
+.content.channelTopStoriesContent .madonnaStoryInfo {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    width: 100%;
+    padding: 0 20px 0 5px;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+}
+.content.channelTopStoriesContent .story_copyright,
+.content.channelTopStoriesContent .story_pretitle,
+.content.channelTopStoriesContent .story_pagetitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    display: inline-block;
+}
+.content.channelTopStoriesContent .story_copyright {
+    font-size: .8125rem;
+    color: #fff;
+    background-color: #cc054a;
+}
+.content.channelTopStoriesContent .story_pretitle {
+    /*font-family: "PTSerifRegular",sans-serif;*/
+    /*font-size: .8125rem;*/
+    font-family: "OpenSansRegular";
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #cc054a;
+}
+.content.channelTopStoriesContent .story_pagetitle {
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0;
+    background-color: transparent;
+}
+.content.channelTopStoriesContent a:hover .story_pretitle {
+    color: #fff;
+}
+.content.channelTopStoriesContent a:hover .story_pagetitle {
+    color: #cc054a;
+}
+
+
+/* Buchstaben mit Unterlaengen fliesen sonst ineinander */
+.col.col2 .story_pagetitle {
+    line-height: 1.25;
+}
+
+
+.sidebar .listbox .listbox_body .listbox_key {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+}
+
+
+/*
+.content .channelTopStories section a {
+    position: relative;
+}
+.content .channelTopStories section .story_pretitle {
+    font-family: "PTSerifRegular",sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #cc054a;
+    position: absolute;
+    left: 0;
+    top: 196px;
+}
+.content .channelTopStories section .story_pagetitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 60%;
+    padding: 0 10px 4px;
+    color: #000;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    left: 0;
+    top: 220px;
+}
+.content .channelTopStories section a:hover .story_pagetitle {
+    color: #cc054a;
+}
+*/
+
+
+/* Sidebar */
+
+.sidebar .listbox {
+    border-right: none;
+}
+
+
+.sidebar .channel_box .story_pagetitle,
+.content .channel_box .story_pagetitle {
+    color: #000;
+}
+.sidebar .channel_box a:hover .story_pretitle,
+.content .channel_box a:hover .story_pretitle {
+    color: #fff;
+}
+.sidebar .channel_box a:hover .story_pagetitle,
+.content .channel_box a:hover .story_pagetitle {
+    color: #cc054a;
+}
+
+
+.sidebar .defaultbox,
+.sidebar .listbox  {
+    box-shadow: 0 0 0px 1px rgba(213,209,219,.7);
+}
+.sidebar .col_default {
+    margin: 0 0 20px 20px;
+}
+.sidebar .listbox_header span {
+    color: #cc054a;
+}
+.sidebar .listbox_header .listbox_header_icon {
+    display: none;
+}
+.sidebar .listbox_header .listbox_header_caption {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: none;
+    padding: 0 10px;
+}
+.sidebar .listbox .listbox_body {
+    max-height: 249px;
+    background-color: #fff;
+}
+.sidebar .listbox li {
+    margin-bottom: 1px;
+}
+.sidebar .listbox li a {
+    float: left;
+    overflow: hidden;
+    padding: 11px;
+}
+.sidebar .listbox .listbox_image {
+    width: 96px;
+    height: 60px;
+}
+.sidebar .listbox .listbox_caption {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: .875rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3;
+    padding-left: 150px;
+}
+
+
+/* Facebook Like Box */
+
+.sidebar .listbox.fbLikeBox .listbox_header {
+    padding: 11px 0;
+}
+
+
+/* Sidebar Instagram Box */
+
+.sidebar .listbox.madonnaInstagramBox .listbox_body {
+    max-height: 298px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+/* Madonna Coverbox */
+
+.sidebar .coverbox_madonna .defaultbox_header_icon,
+.sidebar .coverbox_madonna .defaultbox_header_caption,
+.sidebar .coverbox_madonna .coverbox_teasertext {
+    color: #cc054a;
+}
+.sidebar .coverbox_madonna .defaultbox_header_icon {
+    display: none;
+}
+.sidebar .coverbox_madonna .defaultbox_header_caption {
+    font-family: "PTSerifItalic",sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    padding: 0 10px;
+}
+.sidebar .coverbox_madonna.marginTop {
+    margin-top: 20px;
+}
+.sidebar .coverbox_madonna.marginBottom {
+    margin-bottom: 20px;
+}
+
+
+/* Madonna TV */
+
+.vBoxHeader img {
+    display: block;
+}
+.vBoxBody {
+    padding: 20px 20px 0;
+}
+.vBoxVideoItem {
+    width: 260px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.vBoxVideoItem:hover {
+    text-decoration: none;
+}
+.vBoxBody .vBoxImage {
+    display: block;
+    position: relative;
+}
+
+
+.vBoxBody .vBoxImage img {
+    display: block;
+    width: 260px;
+    height: 163px;
+}
+.vBoxBody .vBoxCaption {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.3;
+    display: block;
+    padding: 3px 0;
+
+    height: 53px;
+    overflow: hidden;
+}
+
+
+.vBoxFooter {
+    padding: 2px 10px 10px;
+}
+
+
+.vBoxPlayButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-color: #cc054a;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.vBoxPlayButton .icon {
+    font-family: "icomoon";
+    font-size: 2rem;
+    text-align: center;
+    line-height: 42px;
+    padding-left: 3px;
+    color: #fff;
+    display: block;
+}
+.vBoxVideoItem:hover .vBoxCaption {
+    color: #cc054a;
+}
+.vBoxVideoItem:hover .vBoxPlayButton {
+    background-color: #f90b5e;
+}
+.col a:hover .vBoxPlayButton,
+.storySliderBox a:hover .vBoxPlayButton {
+    background-color: #f90b5e;
+}
+
+
+/* Doppel Teaser */
+
+.teaserStories .defaultbox_body {
+    padding-bottom: 0;
+}
+.teaserStoryItem {
+    width: 135px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.teaserStoryItem.odd {
+    margin-right: 0;
+}
+.teaserStoryImage {
+    display: inline-block;
+    position: relative;
+}
+.teaserStoryImage img {
+    width: 100%;
+}
+.teaserStoryPagetitle {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: .875rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3;
+    padding: 3px 0;
+    margin: 0;
+
+    height: 47px;
+    overflow: hidden;
+}
+.teaserStoryItem:hover {
+    text-decoration: none;
+}
+.teaserStoryItem:hover .teaserStoryPagetitle {
+    color: #cc054a;
+}
+.teaserStoryItem:hover .vBoxPlayButton {
+    background-position: -58px 0;
+}
+
+
+
+/* Sidebar Google Werbung */
+
+.defaultHtmlBox.googleAdRight {
+    margin: 0 0 0 20px;
+}
+
+
+
+/* Footer */
+
+/*
+footer {
+    padding-top: 0;
+}
+footer .footer_col1,
+footer .footer_col2,
+footer .footer_col3 {
+    float: left;
+    width: 320px;
+    padding-right: 40px;
+}
+footer .footer_col3 {
+    padding-right: 0;
+}
+footer p,
+footer a,
+footer strong {
+    color: #000;
+}
+*/
+
+footer {
+    padding: 0 15px 20px;
+}
+footer ul,
+footer li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+footer li:first-child {
+    padding: 0 5px 0 0;
+    border-left: none;
+}
+footer li {
+    float: left;
+    padding: 0 5px;
+    border-left: 1px solid #000;
+    margin: 0 0 5px;
+}
+footer li a {
+    text-decoration: none
+}
+footer li a:hover {
+    color: #cc054a;
+}
+
+
+/* Horoskop Page */
+
+.horoskopContent {
+    text-align: center;
+    width: 100%;
+    padding: 0 15px 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    background-image: url(<? slp('image', 'rl2014/zodiacBackground.jpg'); ?>);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.horoskopContent .horoskopHeader {
+    color: #fff;
+}
+.horoskopContent .horoskopHeaderCaption {
+    font-family: "PTSerifBoldItalic";
+    font-weight: 300;
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+.horoskopContent .horoskopHeaderText,
+.horoskopContent .horoskopHeaderSignName,
+.horoskopContent .horoskopHeaderSignDate {
+    font-family: "PTSerifItalic";
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+}
+.horoskopContent .horoskopHeaderText {
+    font-size: 1.125rem;
+    padding: 0;
+    margin: 0;
+}
+.horoskopContent .horoskopHeaderSignName {
+    font-size: 1.5rem;
+    color: #cc054a;
+}
+.horoskopContent .horoskopHeaderSignDate {
+    font-size: .875rem;
+}
+.horoskopContent .horoskopHeaderSignIcon {
+    width: 96px;
+    height: 96px;
+    margin: 10px auto;
+    border-radius: 48px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(<? slp('image', 'rl2014/zodiac96.png'); ?>);
+    background-position: 0 0;
+}
+.horoskopContent .iconWidder {
+    background-position: 0 0;
+}
+.horoskopContent .iconStier {
+    background-position: -96px 0;
+}
+.horoskopContent .iconZwillinge {
+    background-position: -192px 0;
+}
+.horoskopContent .iconKrebs {
+    background-position: -288px 0;
+}
+.horoskopContent .iconLoewe {
+    background-position: -384px 0;
+}
+.horoskopContent .iconJungfrau {
+    background-position: -480px 0;
+}
+.horoskopContent .iconWaage {
+    background-position: -576px 0;
+}
+.horoskopContent .iconSkorpion {
+    background-position: -672px 0;
+}
+.horoskopContent .iconSchuetze {
+    background-position: -768px 0;
+}
+.horoskopContent .iconSteinbock {
+    background-position: -864px 0;
+}
+.horoskopContent .iconWassermann {
+    background-position: -960px 0;
+}
+.horoskopContent .iconFische {
+    background-position: -1056px 0;
+}
+
+
+.horoskopContainer .horoskopAd {
+    width: 320px;
+    height: 250px;
+    margin-top: 121px;
+    float: left;
+    overflow: hidden;
+}
+.horoskopContainer .horoskopAdLeft {
+    padding-right: 20px;
+}
+.horoskopContainer .horoskopAdRight {
+    padding-left: 20px;
+}
+
+
+.horoskopBody {
+    float: left;
+    text-align: left;
+    width: 320px;
+    padding: 20px;
+    margin: 10px auto 0;
+    color: #000;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+.horoskopBodyText {
+    height: 276px;
+    max-height: 276px;
+    overflow: auto;
+}
+.horoskopBodyText p {
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+.horoskopBodyTitle {
+    display: block;
+}
+
+
+horoskopContentTag .horoskopBodyText {
+    padding-right: 0;
+}
+horoskopContentJahr .horoskopBodyText {
+    padding-right: 20px;
+}
+
+
+.horoskopBodyTop {
+    margin-bottom: 20px;
+}
+.horoskopBodyTop a {
+    font-family: "PTSerifItalic",sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    width: 134px;
+    padding: 1px 0;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ecebee;
+    background-color: #c4beb5;
+}
+.horoskopBodyTop a.horoskopBodyTopTag {
+    float: left;
+}
+.horoskopBodyTop a.horoskopBodyTopJahr {
+    float: right;
+}
+.horoskopBodyTop a:hover,
+.horoskopBodyTop a.active {
+    text-decoration: none;
+    color: #cc054a;
+}
+
+/* ------------------------ */
+/*.layout_madonna .article_box .video_player {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #edebeb;
+    border-top: 1px solid #edebeb;
+    padding-bottom: 5px;
+}
+.layout_madonna .article_box .video_player.noHeadline {
+    border-bottom: none;
+    border-top: none;
+}
+.layout_madonna .article_box .video_player.noHeadline .oe2016InlineHeadline {
+    display: none;
+}
+*/

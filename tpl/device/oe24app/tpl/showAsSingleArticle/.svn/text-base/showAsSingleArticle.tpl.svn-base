@@ -27,7 +27,6 @@ $articlesPerCategory = $device->getConfig('articlesPerCategory');
 if ($category != 'frontpage' && $articlesPerCategory >= 19) {
     return;
 }
-$device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
 
 
 $article = reset($articles);
@@ -68,6 +67,15 @@ $bodyText   = templateAsString(
               'portal' => $portal,
               'layout' => 'smartphone')
         );
+
+$searchString = 'apaOuterFrame';
+if (strpos($bodyText, $searchString) !== FALSE) {
+    continue;
+}
+
+$device->setConfig('articlesPerCategory', ($articlesPerCategory+1));
+
+
 
 // remove html comment tags
 $bodyText = preg_replace('/<!--(.*)-->/Uis', '', $bodyText);

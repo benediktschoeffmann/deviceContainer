@@ -1,0 +1,97 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+.sidebar .coverbox_gesund24 .defaultbox_header_icon,
+.sidebar .coverbox_gesund24 .defaultbox_header_caption,
+.sidebar .coverbox_gesund24 .coverbox_teasertext {
+	color: #4aa6e8;
+}
+.sidebar .coverbox_gesund24 .coverbox_story a {
+	color: #484848;
+}
+.sidebar .coverbox_madonna .defaultbox_header_icon,
+.sidebar .coverbox_madonna .defaultbox_header_caption,
+.sidebar .coverbox_madonna .coverbox_teasertext {
+	color: #51265F;
+}
+.sidebar .coverbox_wirkochen .defaultbox_header_icon,
+.sidebar .coverbox_wirkochen .defaultbox_header_caption,
+.sidebar .coverbox_wirkochen .coverbox_teasertext {
+	color: #a10f42;
+}
+
+.sidebar .coverbox_oesterreich .defaultbox_header_icon,
+.sidebar .coverbox_oesterreich .defaultbox_header_caption,
+.sidebar .coverbox_oesterreich .coverbox_teasertext {
+	color: #ed1c24;
+}
+.sidebar .coverbox_madonna .coverbox_story a {
+	color: #000;
+}
+.sidebar .coverbox .defaultbox_body {
+	padding: 10px 0;
+}
+.sidebar .coverbox_left,
+.sidebar .coverbox_right {
+	float: left;
+}
+.sidebar .coverbox.col_default .coverbox_left {
+	width: 151px;
+}
+.sidebar .coverbox.col_wide_left .coverbox_left,
+.sidebar .coverbox.col_wide_right .coverbox_left {
+	width: 161px;
+}
+.sidebar .coverbox.col_fullwide .coverbox_left {
+	width: 171px;
+}
+.sidebar .coverbox_right {
+	text-align: right;
+	width: 139px;
+}
+.sidebar .coverbox_teasertext {
+	font-family: "OpenSansBold";
+	font-size: .75rem;
+	padding: 0 10px;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+.sidebar .coverbox_story a {
+	font-size: .75rem;
+	text-decoration: none;
+	display: block;
+	padding: 3px 10px;
+}
+.sidebar .coverbox_story a:hover {
+	background-color: #f8f8f8;
+}
+.sidebar .coverbox_right {
+	width: 138px;
+}
+.sidebar .coverbox.col_default {
+	margin-left: 20px;
+}
+.sidebar .coverbox_teasertext,
+.sidebar .coverbox_story a {
+	line-height: 1.3;
+}
+.sidebar .coverbox_right img {
+	width: 136px;
+	height: 183px;
+}
+.sidebar .coverbox.col_default .coverbox_teasertext {
+	font-size: .72rem;
+}
+.sidebar .coverbox .defaultbox_footer {
+	text-align: center;
+	height: 52px;
+	padding: 10px;
+	border-top: 1px solid #f0f1f3;
+}
+.sidebar .coverbox .defaultbox_footer .coverbox_teaser {
+	line-height: 32px;
+	display: block;
+}

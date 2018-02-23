@@ -1,0 +1,72 @@
+<?php
+/**
+ * @collector noauto
+ * @collector headerSplitArea
+ */
+?>
+/* oesterreich konsole */
+#oesterreich_konsole .oeat_header {
+	text-align: center;
+	padding: 10px 0;
+}
+#oesterreich_konsole .oeat_header_caption {
+	text-decoration: none;
+	color: #262626;
+}
+#oesterreich_konsole .oeat_header_caption:hover {
+	text-decoration: none;
+	color: #dd1010;
+}
+#oesterreich_konsole .oeat_body {
+	position: relative;
+	padding-bottom: 10px;
+}
+#oesterreich_konsole .oeat_body .oeat_item {
+	padding: 0 9px;
+	display: none;
+}
+#oesterreich_konsole .oeat_body .oeat_item.active {
+	display: block;
+}
+#oesterreich_konsole .oeat_body .oeat_item a {
+	display: block;
+	text-align: center;
+}
+#oesterreich_konsole .oeat_body .oeat_item .oeat_caption {
+	font-size: .8125rem;
+	line-height: 1.2;
+	text-align: center;
+	display: block;
+	width: 220px;
+	padding-top: 19px;
+	margin: 0 auto;
+
+	height: 52px;
+	overflow: hidden;
+}
+#oesterreich_konsole .oeat_body .oeat_prev,
+#oesterreich_konsole .oeat_body .oeat_next {
+	font-size: 3rem;
+	line-height: 3rem;
+	text-decoration: none;
+	display: block;
+	width: 32px;
+	padding: 0;
+	margin: 0;
+	color: #c3c3c3;
+	position: absolute;
+}
+#oesterreich_konsole .oeat_body .oeat_prev,
+#oesterreich_konsole .oeat_body .oeat_next {
+	text-decoration: none;
+	color: #a9a9a9;
+	bottom: 10px;
+}
+#oesterreich_konsole .oeat_body .oeat_prev {
+	text-align: left;
+	left: 9px;
+}
+#oesterreich_konsole .oeat_body .oeat_next {
+	text-align: right;
+	right: 9px;
+}

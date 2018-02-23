@@ -1,0 +1,127 @@
+<?php
+/**
+ * @collector noauto
+ */
+?>
+
+.nationalratswahl {
+    width: 960px;
+    margin: 0 15px;
+    padding: 0;
+}
+.nationalratswahl.nrpos_content {
+	width: 620px;
+	margin: 0;
+}
+.nationalratswahl.nrpos_sidebar {
+	width: 300px;
+	margin: 0;
+}
+.nationalratswahl.distanceTop {
+    margin-top: 15px;
+}
+.nationalratswahl.distanceBottom {
+    margin-bottom: 15px;
+} 
+
+.nationalratswahl .standardHeadline {
+	padding: 0;
+	margin-bottom: 5px;
+}
+.nationalratswahl.nrpos_sidebar .standardHeadline,
+.nationalratswahl.nrpos_sidebar .standardHeadline h2 {
+	background-image: none;
+	text-align: center;
+}
+
+.nationalratswahlNavigation {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #d0113a;
+    border-bottom: 1px solid #fff;
+    background-color: #d0113a;
+}
+.nationalratswahlNavigation .nationalwahlrow {	
+	display: table-row;
+}
+.nationalratswahlNavigation span {
+    font-family: "OpenSansCondensedLight",sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 3px 0;
+    border-left: 1px solid #d0113a;
+}
+.nationalratswahlNavigationItem:first-child span {
+    border-left: none;
+}
+
+.nationalratswahlNavigationItem,
+.nationalratswahlNavigationItem:link,
+.nationalratswahlNavigationItem:visited,
+.nationalratswahlNavigationItem:active {
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nationalratswahlNavigationItem:hover,
+.nationalratswahlNavigationItem.nationalratswahlActive {
+    text-decoration: none;
+    color: #d0113a;
+    background-color: #fff;
+}
+
+/************************************************************************/
+
+.nationalratswahlSearch {
+    width: 960px;
+    margin: 10px 15px;
+}
+.nationalratswahlSearch.top {
+    padding: 20px 10px;
+    background-color: #d5e8f9;
+}
+.nationalratswahlSearch.distanceTop {
+    margin-top: 25px;
+}
+.nationalratswahlSearch.distanceBottom {
+    margin-bottom: 25px;
+}
+
+.nationalratswahlSearch .form_search .textfield {
+    width: 620px;
+    height: 35px;
+    padding: 3px 5px;
+    font-size: 1rem;
+    float: left;
+
+    border: 1px solid #000;     
+}
+.nationalratswahlSearch .form_search .textfield::-webkit-input-placeholder,
+.nationalratswahlSearch .form_search .textfield::-moz-placeholder,
+.nationalratswahlSearch .form_search .textfield::placeholder,
+.nationalratswahlSearch .form_search .textfield::-ms-input-placeholder {
+    color: #000;
+}
+
+.nationalratswahlSearch .form_search .button {
+    width: 300px;
+}
+
+.nationalratswahl.autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+
+    /* core styles should not be changed */
+    position: absolute; display: none; z-index: 9999; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+    margin: 0;
+}
+.nationalratswahl.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.nationalratswahl.autocomplete-suggestion b { font-weight: normal; color: #69b5f9; }
+.nationalratswahl.autocomplete-suggestion.selected { background: #f0f0f0; }

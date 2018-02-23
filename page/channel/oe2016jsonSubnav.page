@@ -1,0 +1,100 @@
+<?
+/**
+ * OE2016 Header Subnav
+ *
+ * @url (?<channel>.*)/json/subnav/oe2016/(?<jsonparams>.*)
+ * @var channel oe24.core.Channel
+ * @var portal oe24.core.Portal
+ * @var jsonparams string
+ * @urlManager oe24.oe24
+ * @cache 30m
+ * @cache.browser 20m
+ */
+
+$data = array();
+$maxItems = 5;
+$imgEmptySrc = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+// if ($jsonparams == "timeStamp") {
+
+// 	$data = array(
+// 		'stories' => array(),
+// 		'timestamp' => $channel->_getMember('updateDateTime')->__toString(),
+// 		'jsonUrl' => $channel->getUrl() . '/json/subnav/oe2016/' . $jsonparams,
+// 	);
+
+// } else {
+
+	$data = array(
+		'stories' => array(),
+		'jsonUrl' => $channel->getUrl() . '/json/subnav/oe2016/' . $jsonparams,
+	);
+
+	$contents = array();
+	switch ($jsonparams) {
+		case 'newest':
+			$contents = $channel->getPublishedTextualContents(10);
+			break;
+
+		case 'top':
+			$contents = $channel->getTopContents(true, true);
+			break;
+
+		default:
+			break;
+	}
+
+	foreach ($contents as $content) {
+
+		if (count($data['stories']) >= $maxItems) {
+			break;
+		}
+
+		if (NULL === $content->getHomeChannel()) {
+			continue;
+		}
+
+		if ($content->getExcludeFromGeneratedLists()) {
+			continue;
+		}
+
+		$img = $content->getFirstRelatedImage();
+		$title = $content->getTitle();
+
+		$imgUrlType = (count($data['stories']) < 2) ? "292x146NoStretch" : "92x46NoStretch";
+		$imgUrl = ($img) ? $img->getFileUrl($imgUrlType) : $imgEmptySrc;
+
+		$data['stories'][] = array(
+			'image' => $imgUrl,
+			'caption' => $title,
+			'href' => $content->getUrl(),
+		);
+
+	}
+
+// }
+
+// Testsimulation eines laaaangen Ajax-Calls
+// $testUrls = array(
+// 	'/oesterreich/politik',
+// );
+// $rawUrl = $channel->getRawUrl();
+// if (in_array($rawUrl, $testUrls)) {
+// 	sleep(20);
+// }
+// Testsimulation Ende
+
+// debug(count($data['stories']).' - '.$channel->getRawUrl());
+
+header('Access-Control-Allow-Methods: GET');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Content-Type, *');
+$json = json_encode($data);
+if(isset($_GET['jsonCallbackSubNav'])){
+	echo 'jsonCallbackSubNav(' . $json . ');';
+} else {
+	echo $json;
+}
+
+?>
